@@ -1,0 +1,25 @@
+id: AD0081-NI
+version: 1
+status: Published
+standard: ADaM
+category: Presence
+sensitivity: Record
+executability: Fully Executable
+description: If TRTxxP is present and xx is greater than 01 then TRT{xx-1} must be
+  present.  this ensures there are no gaps in sequence.   Having TRT01P,TRT03P,TRT04P
+  will cause an error that TRT02P is not present.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: __TRTxxP__
+      operator: sequential_present
+outcome:
+  message: TRTxxP is present and xx is greater than 01 and TRT{xx-1} is not present
+  severity: Warning
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: AD0081-NI
+

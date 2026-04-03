@@ -1,0 +1,28 @@
+id: SD1478
+version: 1
+status: Published
+standard: SDTM
+category: Conformance
+sensitivity: Record
+executability: Fully Executable
+description: All subjects should have at least one Last Observation Before Exposure
+  observation (--LOBXFL = 'Y') in EG, LB, LC, MB, MS, PC and VS domains, except for
+  subjects who failed screening (ARMNRS = 'SCREEN FAILURE'), or were not fully assigned
+  to an Arm (ARMNRS = 'NOT ASSIGNED'), or were not treated (ARMNRS = 'ASSIGNED, NOT
+  TREATED').
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: __LOBXFL__
+      operator: has_flag_record
+      value: 'Y'
+outcome:
+  message: No Last Observation Before Exposure flag record in Domain for subject
+  severity: Error
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: SD1478
+

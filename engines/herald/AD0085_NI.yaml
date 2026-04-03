@@ -1,0 +1,25 @@
+id: AD0085-NI
+version: 1
+status: Published
+standard: ADaM
+category: Consistency
+sensitivity: Record
+executability: Fully Executable
+description: A variable is present in ADaM with the same name as a variable present
+  in ADSL but the variables do not have identical labels.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: __shared_variables__
+      operator: label_match
+      value: __cross_dataset__
+outcome:
+  message: Variable name present in both %domain% and ADSL do not have identical labels
+  severity: Warning
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: AD0085-NI
+

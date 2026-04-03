@@ -1,0 +1,25 @@
+id: SD2247B
+version: 1
+status: Published
+standard: SDTM
+category: Presence
+sensitivity: Record
+executability: Fully Executable
+description: Study Start Date must be populated in TS dataset. TSPARMCD=<U+201D>SSTDTC<U+201D>,
+  TSVAL != null.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TSVAL
+      operator: non_empty_when
+      value: TSPARMCD == SSTDTC
+outcome:
+  message: Missing TSVAL when TSPARMCD=SSTDTC
+  severity: Error
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: SD2247B
+

@@ -1,0 +1,25 @@
+id: AD0185
+version: 1
+status: Published
+standard: Define-XML
+category: Conformance
+sensitivity: Record
+executability: Fully Executable
+description: The variable name PARCATyN needs to be modified by replacing 'y' with
+  an integer ranging from 1 to 9. Clinical Programmer to update program.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: __variable_names__
+      operator: valid_naming_pattern
+outcome:
+  message: The variable name PARCATyN needs to be modified by replacing 'y' with an
+    integer ranging from 1 to 9. Clinical Programmer to update program.
+  severity: Error
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: AD0185
+

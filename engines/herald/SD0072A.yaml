@@ -1,0 +1,27 @@
+id: SD0072A
+version: 1
+status: Published
+standard: SDTM
+category: Format
+sensitivity: Record
+executability: Fully Executable
+description: Related Domain Abbreviation (RDOMAIN) must have a valid value of Domains
+  included in the study data. This RELREC-specific version of the rule allows for
+  the exception provided in the SDTMIG stating "RDOMAIN may contain up to 4 characters
+  to effectively describe the relationship between the CE parent records and the FACE
+  child records."
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RDOMAIN
+      operator: is_valid_domain_code
+outcome:
+  message: Invalid RDOMAIN
+  severity: Error
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: SD0072A
+

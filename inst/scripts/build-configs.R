@@ -30,15 +30,17 @@ collect_ids <- function(engine_dir) {
   ids[nzchar(ids)]
 }
 
-cdisc_ids <- collect_ids("cdisc")
-fda_ids   <- collect_ids("fda")
-pmda_ids  <- collect_ids("pmda")
-ct_ids    <- collect_ids("ct")
+cdisc_ids  <- collect_ids("cdisc")
+fda_ids    <- collect_ids("fda")
+pmda_ids   <- collect_ids("pmda")
+ct_ids     <- collect_ids("ct")
+herald_ids <- collect_ids("herald")
 
-cat(sprintf("  CDISC: %d IDs\n", length(cdisc_ids)))
-cat(sprintf("  FDA:   %d IDs\n", length(fda_ids)))
-cat(sprintf("  PMDA:  %d IDs\n", length(pmda_ids)))
-cat(sprintf("  CT:    %d IDs\n", length(ct_ids)))
+cat(sprintf("  CDISC:  %d IDs\n", length(cdisc_ids)))
+cat(sprintf("  FDA:    %d IDs\n", length(fda_ids)))
+cat(sprintf("  PMDA:   %d IDs\n", length(pmda_ids)))
+cat(sprintf("  CT:     %d IDs\n", length(ct_ids)))
+cat(sprintf("  Herald: %d IDs\n", length(herald_ids)))
 
 # --- Filter by standard/IG version -------------------------------------------
 
@@ -106,43 +108,43 @@ pmda_adam_11 <- filter_pmda_by_ig("1\\.1")
 cat("\nWriting configs...\n")
 
 write_config("fda-sdtm-ig-3.3", "FDA", "SDTM-IG", "3.3",
-             c("CDISC SDTM-IG v3.3", "FDA Validator Rules v1.6"),
-             c(cdisc_ids, fda_sdtm, ct_ids))
+             c("CDISC SDTM-IG v3.3", "FDA Validator Rules v1.6", "Herald custom rules"),
+             c(cdisc_ids, fda_sdtm, ct_ids, herald_ids))
 
 write_config("fda-sdtm-ig-3.2", "FDA", "SDTM-IG", "3.2",
-             c("CDISC SDTM-IG v3.2", "FDA Validator Rules v1.6"),
-             c(cdisc_ids, fda_sdtm, ct_ids))
+             c("CDISC SDTM-IG v3.2", "FDA Validator Rules v1.6", "Herald custom rules"),
+             c(cdisc_ids, fda_sdtm, ct_ids, herald_ids))
 
 write_config("fda-adam-ig-1.1", "FDA", "ADaM-IG", "1.1",
-             c("CDISC ADaM-IG v1.1", "FDA Validator Rules v1.6"),
-             c(fda_sdtm, ct_ids))
+             c("CDISC ADaM-IG v1.1", "FDA Validator Rules v1.6", "Herald custom rules"),
+             c(fda_sdtm, ct_ids, herald_ids))
 
 write_config("fda-adam-ig-1.2", "FDA", "ADaM-IG", "1.2",
-             c("CDISC ADaM-IG v1.2", "FDA Validator Rules v1.6"),
-             c(fda_sdtm, ct_ids))
+             c("CDISC ADaM-IG v1.2", "FDA Validator Rules v1.6", "Herald custom rules"),
+             c(fda_sdtm, ct_ids, herald_ids))
 
 write_config("fda-define-xml-2.1", "FDA", "Define-XML", "2.1",
-             c("CDISC Define-XML v2.1", "FDA Validator Rules v1.6"),
-             c(fda_ids, ct_ids))
+             c("CDISC Define-XML v2.1", "FDA Validator Rules v1.6", "Herald custom rules"),
+             c(fda_ids, ct_ids, herald_ids))
 
 write_config("pmda-sdtm-ig-3.3", "PMDA", "SDTM-IG", "3.3",
-             c("CDISC SDTM-IG v3.3", "PMDA Validation Rules v6.0"),
-             c(cdisc_ids, pmda_sdtm_33, ct_ids))
+             c("CDISC SDTM-IG v3.3", "PMDA Validation Rules v6.0", "Herald custom rules"),
+             c(cdisc_ids, pmda_sdtm_33, ct_ids, herald_ids))
 
 write_config("pmda-sdtm-ig-3.2", "PMDA", "SDTM-IG", "3.2",
-             c("CDISC SDTM-IG v3.2", "PMDA Validation Rules v6.0"),
-             c(cdisc_ids, pmda_sdtm_32, ct_ids))
+             c("CDISC SDTM-IG v3.2", "PMDA Validation Rules v6.0", "Herald custom rules"),
+             c(cdisc_ids, pmda_sdtm_32, ct_ids, herald_ids))
 
 write_config("pmda-adam-ig-1.1", "PMDA", "ADaM-IG", "1.1",
-             c("CDISC ADaM-IG v1.1", "PMDA Validation Rules v6.0"),
-             c(pmda_adam_11, ct_ids))
+             c("CDISC ADaM-IG v1.1", "PMDA Validation Rules v6.0", "Herald custom rules"),
+             c(pmda_adam_11, ct_ids, herald_ids))
 
 write_config("pmda-define-xml-2.1", "PMDA", "Define-XML", "2.1",
-             c("CDISC Define-XML v2.1", "PMDA Validation Rules v6.0"),
-             c(pmda_ids, ct_ids))
+             c("CDISC Define-XML v2.1", "PMDA Validation Rules v6.0", "Herald custom rules"),
+             c(pmda_ids, ct_ids, herald_ids))
 
 write_config("all", "Combined", "All", "2026.2",
              c("All herald rules"),
-             c(cdisc_ids, fda_ids, pmda_ids, ct_ids))
+             c(cdisc_ids, fda_ids, pmda_ids, ct_ids, herald_ids))
 
 cat("\nDone.\n")

@@ -1,0 +1,26 @@
+id: SD1482
+version: 1
+status: Published
+standard: SDTM
+category: Format
+sensitivity: Record
+executability: Fully Executable
+description: Reference record defined by Related Domain Abbreviation (RDOMAIN), Associated
+  Person Identifier (APID), Identifying Variable (IDVAR) and Identifying Variable
+  Value (IDVARVAL) must exist in the target domain defined by Related Domain Abbreviation
+  (RDOMAIN).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: __reference__
+      operator: valid_reference
+outcome:
+  message: Invalid referenced record
+  severity: Error
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: SD1482
+

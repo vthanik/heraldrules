@@ -1,0 +1,26 @@
+id: TS0057
+version: 1
+status: Published
+standard: Define-XML
+category: Conformance
+sensitivity: Record
+executability: Fully Executable
+description: For laboratory tests where normal ranges are applicable, if a numeric
+  result is provided (LBSTRESN is populated), a normal range high should be provided
+  (LBSTNRHI).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: LBSTNRHI
+      operator: non_empty_when
+      value: LBSTRESN is populated
+outcome:
+  message: LBSTRESN is populated, but LBSTNRHI is not populated
+  severity: Error
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: TS0057
+

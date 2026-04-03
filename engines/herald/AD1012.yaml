@@ -1,0 +1,29 @@
+id: AD1012
+version: 1
+status: Published
+standard: Define-XML
+category: Conformance
+sensitivity: Record
+executability: Fully Executable
+description: Variables with an "C" suffix are considered secondary variables linked
+  to a primary variable with the same name, minus the suffix. The primary variable
+  must be present in the dataset to include its corresponding secondary variable.
+  Clinical Programmer to ensure primary and secondary variables are aligned accordingly.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: __variable_names__
+      operator: valid_naming_pattern
+outcome:
+  message: Variables with an "C" suffix are considered secondary variables linked
+    to a primary variable with the same name, minus the suffix. The primary variable
+    must be present in the dataset to include its corresponding secondary variable.
+    Clinical Programmer to ensure primary and secondary variables are aligned accordingly.
+  severity: Error
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: AD1012
+

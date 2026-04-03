@@ -11,7 +11,7 @@ if (!requireNamespace("jsonlite", quietly = TRUE)) stop("jsonlite required")
 cat("=== Building Manifest ===\n\n")
 
 # Count engine files
-engines <- c("cdisc", "ct", "fda", "pmda")
+engines <- c("cdisc", "ct", "fda", "herald", "pmda")
 by_engine <- list()
 total_engine <- 0L
 for (eng in engines) {
@@ -47,7 +47,8 @@ manifest <- list(
     cdisc = "CDISC Library API (library.cdisc.org)",
     fda = "FDA Validator Rules v1.6 (December 2022) + Business Rules v1.5",
     pmda = "PMDA Validation Rules v6.0 (March 2025)",
-    ct = "NCI EVS CDISC Controlled Terminology (2025-09-26)"
+    ct = "NCI EVS CDISC Controlled Terminology (2025-09-26)",
+    herald = "Herald-original rules (gap-fill for P21 parity)"
   ),
   stats = list(
     total_engine_rules = total_engine,

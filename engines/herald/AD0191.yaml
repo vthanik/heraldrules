@@ -1,0 +1,25 @@
+id: AD0191
+version: 1
+status: Published
+standard: Define-XML
+category: Conformance
+sensitivity: Record
+executability: Fully Executable
+description: When using the variable R2AyHI, replace the field 'y' with an integer
+  ranging from 1 to 9. Clinical programmer to update program.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: __variable_names__
+      operator: valid_naming_pattern
+outcome:
+  message: When using the variable R2AyHI, replace the field 'y' with an integer ranging
+    from 1 to 9. Clinical programmer to update program.
+  severity: Error
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: AD0191
+

@@ -1,0 +1,27 @@
+id: SD1477
+version: 1
+status: Published
+standard: SDTM
+category: Presence
+sensitivity: Record
+executability: Fully Executable
+description: Variables requested by the relevant regulatory agency in policy documents
+  (e.g., EPOCH) should be included in the dataset and populated. EPOCH variable should
+  be populated for records where Collection Date of Observation (--DTC) is collected
+  as complete date and this date is not before Subject Informed Consent Date (RFICDTC).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EPOCH
+      operator: non_empty_when
+      value: __collection_date_present__
+outcome:
+  message: Missing EPOCH value when collection date is provided
+  severity: Error
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: SD1477
+

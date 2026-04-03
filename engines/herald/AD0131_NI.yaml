@@ -1,0 +1,25 @@
+id: AD0131-NI
+version: 1
+status: Published
+standard: ADaM
+category: Conformance
+sensitivity: Record
+executability: Fully Executable
+description: If BASETYPE is populated for at least one record within a parameter,
+  then it must be populated for all records within that parameter.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BASETYPE
+      operator: consistent_population
+      value: PARAMCD
+outcome:
+  message: BASETYPE is populated for only some records within a PARAMCD
+  severity: Warning
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: AD0131-NI
+

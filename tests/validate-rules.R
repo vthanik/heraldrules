@@ -38,7 +38,7 @@ pass <- function(msg) { cat(sprintf("  PASS: %s\n", msg)) }
 # --- 1. Parse all YAML files -------------------------------------------------
 cat("[1/6] Parsing YAML files...\n")
 
-engines <- c("cdisc", "ct", "fda", "pmda")
+engines <- c("cdisc", "ct", "fda", "herald", "pmda")
 all_ids <- list()
 parse_errors <- 0L
 

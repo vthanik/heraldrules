@@ -1,0 +1,28 @@
+id: AD0895
+version: 1
+status: Published
+standard: ADaM
+category: Consistency
+sensitivity: Record
+executability: Fully Executable
+description: Within a study, all Category y (*CATy) variable values must be the same
+  for each unique value of the variable it categorizes within a PARAMCD. [AVAL:AVALCATy],
+  [AVALC:AVALCATy], [BASE:BASECATy], [BASEC:BASECATy], [CHG:CHGCATy], [PCHG:PCHGCATy],
+  [BCHG:BCHGCATy]. A Category may be the same across values. This rule checks AVALC:AVALCATy
+  and BASEC:BASECATy specifically, while AD0221 covers AVAL:AVALCATy, BASE:BASECATy,
+  CHG:CHGCATy, PCHG:PCHGCATy, and BCHG:BCHGCATy.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: __CATy__
+      operator: consistent_within_subject
+outcome:
+  message: Inconsistent value for *CATy
+  severity: Error
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: AD0895
+

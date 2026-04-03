@@ -1,0 +1,27 @@
+id: SD1483
+version: 1
+status: Published
+standard: SDTM
+category: Uniqueness
+sensitivity: Record
+executability: Fully Executable
+description: All SQAPxxxx Domains records are associated with a single parent record
+  and must have a unique combination of Study Identifier (STUDYID), Associated Person
+  (APID), Identifying Variable (IDVAR), Identifying Variable Value (IDVARVAL) and
+  Qualifier Variable Name (QNAM) variable value. For all AP SUPPQUAL (SQAPxxxx) domain
+  records, all the QNAM variable values should be unique for each parent record.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: __key_variables__
+      operator: is_unique
+outcome:
+  message: duplicate records
+  severity: Error
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: SD1483
+

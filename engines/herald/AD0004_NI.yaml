@@ -1,0 +1,25 @@
+id: AD0004-NI
+version: 1
+status: Published
+standard: ADaM
+category: Consistency
+sensitivity: Record
+executability: Fully Executable
+description: A variable is present in ADaM with the same name as a variable present
+  in SDTM but the variables do not have identical lengths.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: __shared_variables__
+      operator: length_match
+      value: __cross_dataset__
+outcome:
+  message: Variable name present in both ADaM and SDTM do not have identical lengths
+  severity: Warning
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: AD0004-NI
+

@@ -1,0 +1,26 @@
+id: AD0017-NI
+version: 1
+status: Published
+standard: ADaM
+category: Limit
+sensitivity: Record
+executability: Fully Executable
+description: All ADaM variable values must be no more than 200 characters in length.
+  This should not be possible to fail with sas v5 xpt. Dataset-XML or .csv can fail
+  this rule. Testing this on every single data cell may be costly.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: __all_character__
+      operator: max_length
+      value: 200
+outcome:
+  message: Character value length is greater than 200 characters
+  severity: Warning
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: AD0017-NI
+

@@ -1,0 +1,26 @@
+id: TS0053
+version: 1
+status: Published
+standard: Define-XML
+category: Conformance
+sensitivity: Record
+executability: Fully Executable
+description: Either Severity/Intensity (AESEV) or Standard Toxicity Grade (AETOXGR)
+  variables values must be populated.
+scope:
+  classes: []
+  domains: []
+check:
+  any:
+    - name: AESEV
+      operator: non_empty
+    - name: AETOXGR
+      operator: non_empty
+outcome:
+  message: Neither AESEV nor AETOXGR is populated
+  severity: Error
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: TS0053
+

@@ -1,0 +1,27 @@
+id: AD2001
+version: 1
+status: Published
+standard: ADaM
+category: Conformance
+sensitivity: Record
+executability: Fully Executable
+description: The combination of Study Identifier (STUDYID) and Unique Subject Identifier
+  (USUBJID) values in ADaM Analysis Subject Level (ADSL) dataset should be populated
+  by values of the same variables from the study SDTM Demographics (DM) domain.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: USUBJID
+      operator: exists_in_dataset
+      value: ADSL
+outcome:
+  message: The combination of STUDYID and USUBJID value from SDTM DM does not exist
+    in ADSL
+  severity: Error
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: AD2001
+

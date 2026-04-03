@@ -1,0 +1,24 @@
+id: TS0012
+version: 1
+status: Published
+standard: Define-XML
+category: Conformance
+sensitivity: Record
+executability: Fully Executable
+description: These variables assist regulatory review and analysis and must be included
+  in the dataset.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: __required_variable__
+      operator: exists
+outcome:
+  message: Analysis Required variable not found
+  severity: Error
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: TS0012
+

@@ -1,0 +1,23 @@
+id: AD0162
+version: 1
+status: Published
+standard: Define-XML
+category: Conformance
+sensitivity: Record
+executability: Fully Executable
+description: N/A
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: __variable_names__
+      operator: valid_naming_pattern
+outcome:
+  message: N/A
+  severity: Error
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: AD0162
+

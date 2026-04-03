@@ -1,0 +1,26 @@
+id: TS0019
+version: 1
+status: Published
+standard: Define-XML
+category: Presence
+sensitivity: Record
+executability: Fully Executable
+description: At least one of Start Date/Time (--STDTC) or Start Day of Event or Exposure
+  (--STDY) variables values must be populated for Analysis.
+scope:
+  classes: []
+  domains: []
+check:
+  any:
+    - name: __STDTC__
+      operator: non_empty
+    - name: __STDY__
+      operator: non_empty
+outcome:
+  message: Both --STDTC and --STDY values are missing
+  severity: Error
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: TS0019
+

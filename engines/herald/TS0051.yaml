@@ -1,0 +1,24 @@
+id: TS0051
+version: 1
+status: Published
+standard: Define-XML
+category: Presence
+sensitivity: Record
+executability: Fully Executable
+description: Pharmacokinetic Parameters (PP) dataset should be included in every submission
+  with pharmacokinetics observations.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PP
+      operator: dataset_exists
+outcome:
+  message: Missing PP dataset
+  severity: Error
+provenance:
+  source_doc: Herald-original (gap analysis vs P21 Community catalog)
+  authority: Herald
+  p21_reference: TS0051
+

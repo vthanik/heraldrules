@@ -1,0 +1,61 @@
+id: HRL-CT-0385
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR17TC (European Organization for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Information 25 Items Test Code) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR17TC
+      operator: in
+      value:
+        - EOR1731
+        - EOR1732
+        - EOR1733
+        - EOR1734
+        - EOR1735
+        - EOR1736
+        - EOR1737
+        - EOR1738
+        - EOR1739
+        - EOR1740
+        - EOR1741
+        - EOR1742
+        - EOR1743
+        - EOR1744
+        - EOR1745
+        - EOR1746
+        - EOR1747
+        - EOR1748
+        - EOR1749
+        - EOR1750
+        - EOR1751
+        - EOR1752
+        - EOR1753A
+        - EOR1753B
+        - EOR1754A
+        - EOR1754B
+        - EOR1755
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Information 25
+    Items Test Code (C219725)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219725
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Information 25 Items Test Code
+  codelist_submission_value: EOR17TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 27
+

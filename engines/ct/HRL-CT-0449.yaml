@@ -1,0 +1,76 @@
+id: HRL-CT-0449
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC017TC (Functional Assessment of Cancer Therapy-Leukemia Version 4
+  Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC017TC
+      operator: in
+      value:
+        - FAC01701
+        - FAC01702
+        - FAC01703
+        - FAC01704
+        - FAC01705
+        - FAC01706
+        - FAC01707
+        - FAC01708
+        - FAC01709
+        - FAC01710
+        - FAC01711
+        - FAC01712
+        - FAC01713
+        - FAC01714
+        - FAC01715
+        - FAC01716
+        - FAC01717
+        - FAC01718
+        - FAC01719
+        - FAC01720
+        - FAC01721
+        - FAC01722
+        - FAC01723
+        - FAC01724
+        - FAC01725
+        - FAC01726
+        - FAC01727
+        - FAC01728
+        - FAC01729
+        - FAC01730
+        - FAC01731
+        - FAC01732
+        - FAC01733
+        - FAC01734
+        - FAC01735
+        - FAC01736
+        - FAC01737
+        - FAC01738
+        - FAC01739
+        - FAC01740
+        - FAC01741
+        - FAC01742
+        - FAC01743
+        - FAC01744
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Leukemia Version 4 Questionnaire Test Code (C130253)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130253
+  codelist_name: Functional Assessment of Cancer Therapy-Leukemia Version 4 Questionnaire
+    Test Code
+  codelist_submission_value: FAC017TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 44
+

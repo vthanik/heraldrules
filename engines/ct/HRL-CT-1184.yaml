@@ -1,0 +1,39 @@
+id: HRL-CT-1184
+version: 1
+status: Published
+standard: ADaM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: STRATA (Analysis Stratum) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: STRATA
+      operator: in
+      value:
+        - AGE
+        - RACE
+        - SEX
+        - TOBACCO PRODUCT CATEGORY
+        - TOBACCO PRODUCT USE STATUS POST-TRANSITION
+        - TOBACCO PRODUCT USE STATUS PRE-TRANSITION
+        - TOBACCO PRODUCT USE STATUS
+        - TOBACCO PRODUCT USE TRANSITION TYPE
+        - YEAR
+outcome:
+  message: Value not found in non-extensible codelist Analysis Stratum (C204411)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204411
+  codelist_name: Analysis Stratum
+  codelist_submission_value: STRATA
+  extensible: no
+  parent_rule: CT2001
+  term_count: 9
+

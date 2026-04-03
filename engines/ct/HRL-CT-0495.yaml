@@ -1,0 +1,39 @@
+id: HRL-CT-0495
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GAD02TN (Generalized Anxiety Disorder - 7 Version 2 Questionnaire Test
+  Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GAD02TN
+      operator: in
+      value:
+        - GAD02-Becoming Easily Annoyed/Irritable
+        - GAD02-Being Restless Hard to Sit Still
+        - GAD02-Feel Afraid/Something Awful Happen
+        - GAD02-Feeling Nervous Anxious or On Edge
+        - GAD02-Not Able to Stop/Control Worrying
+        - GAD02-Total Score
+        - GAD02-Trouble Relaxing
+        - GAD02-Worrying Too Much About Things
+outcome:
+  message: Value not found in non-extensible codelist Generalized Anxiety Disorder
+    - 7 Version 2 Questionnaire Test Name (C163388)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C163388
+  codelist_name: Generalized Anxiety Disorder - 7 Version 2 Questionnaire Test Name
+  codelist_submission_value: GAD02TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 8
+

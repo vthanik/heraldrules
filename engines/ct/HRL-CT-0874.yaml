@@ -1,0 +1,36 @@
+id: HRL-CT-0874
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RSKASMT (Protocol Risk Assessment Response) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RSKASMT
+      operator: in
+      value:
+        - HIGH RISK
+        - INTERMEDIATE RISK
+        - LOW RISK
+        - MINIMAL RISK
+        - UNKNOWN
+outcome:
+  message: Value not found in non-extensible codelist Protocol Risk Assessment Response
+    (C101848)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101848
+  codelist_name: Protocol Risk Assessment Response
+  codelist_submission_value: RSKASMT
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

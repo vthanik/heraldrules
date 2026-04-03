@@ -1,0 +1,67 @@
+id: HRL-CT-0919
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: AVL02TC (Rey Auditory Verbal Learning Test Functional Test Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: AVL02TC
+      operator: in
+      value:
+        - AVL0201
+        - AVL0202
+        - AVL0203
+        - AVL0204
+        - AVL0205
+        - AVL0206
+        - AVL0207
+        - AVL0208
+        - AVL0209
+        - AVL0210
+        - AVL0211
+        - AVL0212
+        - AVL0213
+        - AVL0214
+        - AVL0215
+        - AVL0216
+        - AVL0217
+        - AVL0218
+        - AVL0219
+        - AVL0220
+        - AVL0221
+        - AVL0222
+        - AVL0223
+        - AVL0224
+        - AVL0225
+        - AVL0226
+        - AVL0227
+        - AVL0228
+        - AVL0229
+        - AVL0230
+        - AVL0231
+        - AVL0232
+        - AVL0233
+        - AVL0234
+        - AVL0235
+        - AVL0236
+outcome:
+  message: Value not found in non-extensible codelist Rey Auditory Verbal Learning
+    Test Functional Test Test Code (C123655)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C123655
+  codelist_name: Rey Auditory Verbal Learning Test Functional Test Test Code
+  codelist_submission_value: AVL02TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 36
+

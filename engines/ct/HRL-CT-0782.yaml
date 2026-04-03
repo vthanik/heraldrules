@@ -1,0 +1,42 @@
+id: HRL-CT-0782
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PHQ01TC (Patient Health Questionnaire - 9 Item Questionnaire Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PHQ01TC
+      operator: in
+      value:
+        - PHQ0101
+        - PHQ0102
+        - PHQ0103
+        - PHQ0104
+        - PHQ0105
+        - PHQ0106
+        - PHQ0107
+        - PHQ0108
+        - PHQ0109
+        - PHQ0110
+        - PHQ0111
+outcome:
+  message: Value not found in non-extensible codelist Patient Health Questionnaire
+    - 9 Item Questionnaire Test Code (C103481)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103481
+  codelist_name: Patient Health Questionnaire - 9 Item Questionnaire Test Code
+  codelist_submission_value: PHQ01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 11
+

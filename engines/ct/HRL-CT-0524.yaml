@@ -1,0 +1,36 @@
+id: HRL-CT-0524
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HBI0101OR (Harvey-Bradshaw Index Clinical Classification ORRES for HBI0101
+  TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HBI0101OR
+      operator: in
+      value:
+        - poor
+        - slightly below par
+        - terrible
+        - very poor
+        - very well
+outcome:
+  message: Value not found in non-extensible codelist Harvey-Bradshaw Index Clinical
+    Classification ORRES for HBI0101 TN/TC (C190885)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C190885
+  codelist_name: Harvey-Bradshaw Index Clinical Classification ORRES for HBI0101 TN/TC
+  codelist_submission_value: HBI0101OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

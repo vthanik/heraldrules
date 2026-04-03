@@ -1,0 +1,39 @@
+id: HRL-CT-0494
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GAD02TC (Generalized Anxiety Disorder - 7 Version 2 Questionnaire Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GAD02TC
+      operator: in
+      value:
+        - GAD0201
+        - GAD0202
+        - GAD0203
+        - GAD0204
+        - GAD0205
+        - GAD0206
+        - GAD0207
+        - GAD0208
+outcome:
+  message: Value not found in non-extensible codelist Generalized Anxiety Disorder
+    - 7 Version 2 Questionnaire Test Code (C163389)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C163389
+  codelist_name: Generalized Anxiety Disorder - 7 Version 2 Questionnaire Test Code
+  codelist_submission_value: GAD02TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 8
+

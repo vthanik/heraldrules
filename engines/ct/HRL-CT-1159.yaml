@@ -1,0 +1,36 @@
+id: HRL-CT-1159
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HEPENCGR (West Haven Hepatic Encephalopathy Grade) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HEPENCGR
+      operator: in
+      value:
+        - GRADE 0
+        - GRADE 1
+        - GRADE 2
+        - GRADE 3
+        - GRADE 4
+outcome:
+  message: Value not found in non-extensible codelist West Haven Hepatic Encephalopathy
+    Grade (C117746)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C117746
+  codelist_name: West Haven Hepatic Encephalopathy Grade
+  codelist_submission_value: HEPENCGR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

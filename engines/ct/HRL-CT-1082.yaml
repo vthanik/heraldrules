@@ -1,0 +1,51 @@
+id: HRL-CT-1082
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PCL01TC (The PTSD Checklist for DSM-5 Questionnaire Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PCL01TC
+      operator: in
+      value:
+        - PCL0101
+        - PCL0102
+        - PCL0103
+        - PCL0104
+        - PCL0105
+        - PCL0106
+        - PCL0107
+        - PCL0108
+        - PCL0109
+        - PCL0110
+        - PCL0111
+        - PCL0112
+        - PCL0113
+        - PCL0114
+        - PCL0115
+        - PCL0116
+        - PCL0117
+        - PCL0118
+        - PCL0119
+        - PCL0120
+outcome:
+  message: Value not found in non-extensible codelist The PTSD Checklist for DSM-5
+    Questionnaire Test Code (C135692)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C135692
+  codelist_name: The PTSD Checklist for DSM-5 Questionnaire Test Code
+  codelist_submission_value: PCL01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 20
+

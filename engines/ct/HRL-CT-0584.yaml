@@ -1,0 +1,65 @@
+id: HRL-CT-0584
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: IDSR1TC (Inventory of Depressive Symptomatology Self-Report Version Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: IDSR1TC
+      operator: in
+      value:
+        - IDSR101
+        - IDSR102
+        - IDSR103
+        - IDSR104
+        - IDSR105
+        - IDSR106
+        - IDSR107
+        - IDSR108
+        - IDSR109
+        - IDSR109A
+        - IDSR109B
+        - IDSR110
+        - IDSR111
+        - IDSR112
+        - IDSR113
+        - IDSR114
+        - IDSR115
+        - IDSR116
+        - IDSR117
+        - IDSR118
+        - IDSR119
+        - IDSR120
+        - IDSR121
+        - IDSR122
+        - IDSR123
+        - IDSR124
+        - IDSR125
+        - IDSR126
+        - IDSR127
+        - IDSR128
+        - IDSR129
+        - IDSR130
+        - IDSR131
+outcome:
+  message: Value not found in non-extensible codelist Inventory of Depressive Symptomatology
+    Self-Report Version Questionnaire Test Code (C130261)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130261
+  codelist_name: Inventory of Depressive Symptomatology Self-Report Version Questionnaire
+    Test Code
+  codelist_submission_value: IDSR1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 33
+

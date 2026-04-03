@@ -1,0 +1,63 @@
+id: HRL-CT-0467
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC084TC (Functional Assessment of Chronic Illness Therapy-Dyspnea 10
+  Item Short Form Questionnaire Test Code) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC084TC
+      operator: in
+      value:
+        - FAC08401
+        - FAC08402
+        - FAC08403
+        - FAC08404
+        - FAC08405
+        - FAC08406
+        - FAC08407
+        - FAC08408
+        - FAC08409
+        - FAC08410
+        - FAC08411
+        - FAC08412
+        - FAC08413
+        - FAC08414
+        - FAC08415
+        - FAC08416
+        - FAC08417
+        - FAC08418
+        - FAC08419
+        - FAC08420
+        - FAC08421
+        - FAC08422
+        - FAC08423
+        - FAC08424
+        - FAC08425
+        - FAC08426
+        - FAC08427
+        - FAC08428
+        - FAC08429
+        - FAC08430
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Chronic
+    Illness Therapy-Dyspnea 10 Item Short Form Questionnaire Test Code (C147542)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C147542
+  codelist_name: Functional Assessment of Chronic Illness Therapy-Dyspnea 10 Item
+    Short Form Questionnaire Test Code
+  codelist_submission_value: FAC084TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 30
+

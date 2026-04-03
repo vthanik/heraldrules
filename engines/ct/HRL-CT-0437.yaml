@@ -1,0 +1,77 @@
+id: HRL-CT-0437
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC005TC (Functional Assessment of Cancer Therapy-Breast Version 4 Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC005TC
+      operator: in
+      value:
+        - FAC00501
+        - FAC00502
+        - FAC00503
+        - FAC00504
+        - FAC00505
+        - FAC00506
+        - FAC00507
+        - FAC00508
+        - FAC00509
+        - FAC00510
+        - FAC00511
+        - FAC00512
+        - FAC00513
+        - FAC00514
+        - FAC00515
+        - FAC00516
+        - FAC00517
+        - FAC00518
+        - FAC00519
+        - FAC00520
+        - FAC00521
+        - FAC00522
+        - FAC00523
+        - FAC00524
+        - FAC00525
+        - FAC00526
+        - FAC00527
+        - FAC00528
+        - FAC00529
+        - FAC00530
+        - FAC00531
+        - FAC00532
+        - FAC00533
+        - FAC00534
+        - FAC00535
+        - FAC00536
+        - FAC00537
+        - FAC00538
+        - FAC00539
+        - FAC00540
+        - FAC00541
+        - FAC00542
+        - FAC00543
+        - FAC00544
+        - FAC00545
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Breast Version 4 Questionnaire Test Code (C129094)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C129094
+  codelist_name: Functional Assessment of Cancer Therapy-Breast Version 4 Questionnaire
+    Test Code
+  codelist_submission_value: FAC005TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 45
+

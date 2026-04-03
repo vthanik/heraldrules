@@ -1,0 +1,89 @@
+id: HRL-CT-1084
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SF362TC (The Short Form 36 Health Survey Acute, US Version 1.0 Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SF362TC
+      operator: in
+      value:
+        - SF36201
+        - SF36202
+        - SF36203A
+        - SF36203B
+        - SF36203C
+        - SF36203D
+        - SF36203E
+        - SF36203F
+        - SF36203G
+        - SF36203H
+        - SF36203I
+        - SF36203J
+        - SF36204A
+        - SF36204B
+        - SF36204C
+        - SF36204D
+        - SF36205A
+        - SF36205B
+        - SF36205C
+        - SF36206
+        - SF36207
+        - SF36208
+        - SF36209A
+        - SF36209B
+        - SF36209C
+        - SF36209D
+        - SF36209E
+        - SF36209F
+        - SF36209G
+        - SF36209H
+        - SF36209I
+        - SF36210
+        - SF36211A
+        - SF36211B
+        - SF36211C
+        - SF36211D
+        - SF36212
+        - SF36213
+        - SF36214
+        - SF36215
+        - SF36216
+        - SF36217
+        - SF36218
+        - SF36219
+        - SF36220
+        - SF36221
+        - SF36222
+        - SF36223
+        - SF36224
+        - SF36225
+        - SF36226
+        - SF36227
+        - SF36228
+        - SF36229
+        - SF36230
+        - SF36231
+        - SF36232
+outcome:
+  message: Value not found in non-extensible codelist The Short Form 36 Health Survey
+    Acute, US Version 1.0 Questionnaire Test Code (C101823)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101823
+  codelist_name: The Short Form 36 Health Survey Acute, US Version 1.0 Questionnaire
+    Test Code
+  codelist_submission_value: SF362TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 57
+

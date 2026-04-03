@@ -1,0 +1,35 @@
+id: HRL-CT-0006
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: D4STR1TN (4-Stair Descend Functional Test Test Name) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: D4STR1TN
+      operator: in
+      value:
+        - D4STR1-Test Grade
+        - D4STR1-Time to Do 4-Stair Descend
+        - D4STR1-Was 4-Stair Descend Performed
+        - D4STR1-Wear Orthoses
+outcome:
+  message: Value not found in non-extensible codelist 4-Stair Descend Functional Test
+    Test Name (C141660)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C141660
+  codelist_name: 4-Stair Descend Functional Test Test Name
+  codelist_submission_value: D4STR1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

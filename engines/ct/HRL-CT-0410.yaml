@@ -1,0 +1,39 @@
+id: HRL-CT-0410
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FTCD01TC (Fagerstrom Test for Cigarette Dependence Questionnaire Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FTCD01TC
+      operator: in
+      value:
+        - FTCD0101
+        - FTCD0102
+        - FTCD0103
+        - FTCD0104
+        - FTCD0105
+        - FTCD0106
+        - FTCD0107
+        - FTCD01A
+outcome:
+  message: Value not found in non-extensible codelist Fagerstrom Test for Cigarette
+    Dependence Questionnaire Test Code (C208372)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C208372
+  codelist_name: Fagerstrom Test for Cigarette Dependence Questionnaire Test Code
+  codelist_submission_value: FTCD01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 8
+

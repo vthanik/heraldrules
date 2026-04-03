@@ -1,0 +1,52 @@
+id: HRL-CT-0392
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR20TN (European Organization for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Oesophageal Cancer 18 Items Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR20TN
+      operator: in
+      value:
+        - EOR20-Acid Indigestion/Heartburn
+        - EOR20-Choked When Swallowing
+        - EOR20-Drink Liquids
+        - EOR20-Dry Mouth
+        - EOR20-Eat Liquidised/Soft Food
+        - EOR20-Eat Solid Food
+        - EOR20-Felt Full Too Quickly
+        - EOR20-Food & Drink Taste Different
+        - EOR20-Pain in Chest
+        - EOR20-Pain in Stomach
+        - EOR20-Pain When Eat
+        - EOR20-Trouble Acid/Bile Into Mouth
+        - EOR20-Trouble Eating in Front of People
+        - EOR20-Trouble Eating
+        - EOR20-Trouble Enjoying Meals
+        - EOR20-Trouble Swallowing Saliva
+        - EOR20-Trouble With Coughing
+        - EOR20-Trouble With Talking
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Oesophageal Cancer
+    18 Items Test Name (C219732)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219732
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Oesophageal Cancer 18 Items Test Name
+  codelist_submission_value: EOR20TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 18
+

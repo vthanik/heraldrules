@@ -1,0 +1,33 @@
+id: HRL-CT-0355
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ESPARM (Environmental Storage Conditions Parameter Name) must contain
+  valid extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ESPARM
+      operator: in
+      value:
+        - Humidity
+        - Temperature
+outcome:
+  message: Value not found in extensible codelist Environmental Storage Conditions
+    Parameter Name (C204422)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204422
+  codelist_name: Environmental Storage Conditions Parameter Name
+  codelist_submission_value: ESPARM
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 2
+

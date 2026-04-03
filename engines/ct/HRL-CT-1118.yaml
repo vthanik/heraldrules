@@ -1,0 +1,35 @@
+id: HRL-CT-1118
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TRTINTNT (Treatment Intent) must contain valid extensible codelist terms
+  (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TRTINTNT
+      operator: in
+      value:
+        - CURATIVE
+        - PALLIATIVE
+        - PREVENTATIVE
+        - SUPPORTIVE CARE
+        - UNKNOWN
+outcome:
+  message: Value not found in extensible codelist Treatment Intent (C124307)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124307
+  codelist_name: Treatment Intent
+  codelist_submission_value: TRTINTNT
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 5
+

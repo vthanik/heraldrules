@@ -1,0 +1,56 @@
+id: HRL-CT-0375
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR24TC (European Organization for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Cholangiocarcinoma and Gallbladder Cancer 21 Items
+  Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR24TC
+      operator: in
+      value:
+        - EOR2431
+        - EOR2432
+        - EOR2433
+        - EOR2434
+        - EOR2435
+        - EOR2436
+        - EOR2437
+        - EOR2438
+        - EOR2439
+        - EOR2440
+        - EOR2441
+        - EOR2442
+        - EOR2443
+        - EOR2444
+        - EOR2445
+        - EOR2446
+        - EOR2447
+        - EOR2448
+        - EOR2449
+        - EOR2450
+        - EOR2451
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Cholangiocarcinoma
+    and Gallbladder Cancer 21 Items Questionnaire Test Code (C219715)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219715
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Cholangiocarcinoma and Gallbladder Cancer 21 Items Questionnaire
+    Test Code
+  codelist_submission_value: EOR24TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 21
+

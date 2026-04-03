@@ -1,0 +1,72 @@
+id: HRL-CT-0465
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC057TC (Functional Assessment of Cancer Therapy/Gynecologic Oncology
+  Group-Neurotoxicity Version 4 Questionnaire Test Code) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC057TC
+      operator: in
+      value:
+        - FAC05701
+        - FAC05702
+        - FAC05703
+        - FAC05704
+        - FAC05705
+        - FAC05706
+        - FAC05707
+        - FAC05708
+        - FAC05709
+        - FAC05710
+        - FAC05711
+        - FAC05712
+        - FAC05713
+        - FAC05714
+        - FAC05715
+        - FAC05716
+        - FAC05717
+        - FAC05718
+        - FAC05719
+        - FAC05720
+        - FAC05721
+        - FAC05722
+        - FAC05723
+        - FAC05724
+        - FAC05725
+        - FAC05726
+        - FAC05727
+        - FAC05728
+        - FAC05729
+        - FAC05730
+        - FAC05731
+        - FAC05732
+        - FAC05733
+        - FAC05734
+        - FAC05735
+        - FAC05736
+        - FAC05737
+        - FAC05738
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy/Gynecologic Oncology Group-Neurotoxicity Version 4 Questionnaire Test
+    Code (C150780)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150780
+  codelist_name: Functional Assessment of Cancer Therapy/Gynecologic Oncology Group-Neurotoxicity
+    Version 4 Questionnaire Test Code
+  codelist_submission_value: FAC057TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 38
+

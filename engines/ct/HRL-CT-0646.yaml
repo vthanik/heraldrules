@@ -1,0 +1,33 @@
+id: HRL-CT-0646
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MPSTATRS (Menopause Status Response) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MPSTATRS
+      operator: in
+      value:
+        - PERIMENOPAUSAL
+        - POSTMENOPAUSAL
+        - PREMENOPAUSAL
+outcome:
+  message: Value not found in non-extensible codelist Menopause Status Response (C185847)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C185847
+  codelist_name: Menopause Status Response
+  codelist_submission_value: MPSTATRS
+  extensible: no
+  parent_rule: CT2001
+  term_count: 3
+

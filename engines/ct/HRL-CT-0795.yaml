@@ -1,0 +1,45 @@
+id: HRL-CT-0795
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC099TN (Pediatric Functional Assessment of Chronic Illness Therapy-Fatigue
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC099TN
+      operator: in
+      value:
+        - FAC099-Being Tired Made Me Mad
+        - FAC099-Being Tired Made Me Sad
+        - FAC099-Could Do My Usual Things at Home
+        - FAC099-Hard for Me to Play With Friends
+        - FAC099-I Feel Tired
+        - FAC099-I Feel Weak
+        - FAC099-I Have Energy
+        - FAC099-I Needed to Sleep During the Day
+        - FAC099-I Was Too Tired to Eat
+        - FAC099-Needed Help Doing Usual Things
+        - FAC099-Trouble Finishing Things
+        - FAC099-Trouble Starting Things
+        - FAC099-Upset by Being Too Tired
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Functional Assessment
+    of Chronic Illness Therapy-Fatigue Questionnaire Test Name (C147545)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C147545
+  codelist_name: Pediatric Functional Assessment of Chronic Illness Therapy-Fatigue
+    Questionnaire Test Name
+  codelist_submission_value: FAC099TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 13
+

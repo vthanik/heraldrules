@@ -1,0 +1,38 @@
+id: HRL-CT-0094
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ADSD01TN (Asthma Daytime Symptom Diary v1.0 Questionnaire Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ADSD01TN
+      operator: in
+      value:
+        - ADSD01-Rate Breathing at Its Worst
+        - ADSD01-Rate Chest Pain at Its Worst
+        - ADSD01-Rate Chest Tightness at Its Worst
+        - ADSD01-Rate Cough at Its Worst
+        - ADSD01-Rate Shortness of Breath at Worst
+        - ADSD01-Rate Wheezing at Its Worst
+        - ADSD01-Total Score
+outcome:
+  message: Value not found in non-extensible codelist Asthma Daytime Symptom Diary
+    v1.0 Questionnaire Test Name (C163384)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C163384
+  codelist_name: Asthma Daytime Symptom Diary v1.0 Questionnaire Test Name
+  codelist_submission_value: ADSD01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

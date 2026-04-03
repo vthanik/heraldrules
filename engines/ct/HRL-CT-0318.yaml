@@ -1,0 +1,80 @@
+id: HRL-CT-0318
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DAD01TN (Disability Assessment for Dementia Questionnaire Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DAD01TN
+      operator: in
+      value:
+        - DAD01-Adequately Organize an Outing
+        - DAD01-Adequately Organize Correspondence
+        - DAD01-Adequately Plan Light Meal Snack
+        - DAD01-Brush Teeth Take Care of Dentures
+        - DAD01-Carry Out Telephone Conversation
+        - DAD01-Choose Appropriate Clothing
+        - DAD01-Choose Appropriate Utensils
+        - DAD01-Complete Household Chores
+        - DAD01-Decide That He/She Needs to Eat
+        - DAD01-Decide to Brush Teeth Dentures
+        - DAD01-Decide to Care For Hair
+        - DAD01-Decide to Dress
+        - DAD01-Decide to Go Out
+        - DAD01-Decide to Prepare Meal Snack
+        - DAD01-Decide to Wash
+        - DAD01-Dress Completely
+        - DAD01-Dress in Appropriate Order
+        - DAD01-Eat at Normal Pace With Manners
+        - DAD01-Effective Perf Num Applic Items
+        - DAD01-Find and Dial Telephone Number
+        - DAD01-Go Out Without Getting Lost
+        - DAD01-Handle Money Adequately
+        - DAD01-Initiation Num Applic Items
+        - DAD01-Organize Finances to Pay Bills
+        - DAD01-Plan & Org Num Applic Items
+        - DAD01-Plan Organize Household Chores
+        - DAD01-Prepare For Washing Bath Shower
+        - DAD01-Prepare or Cook Light Meal Snack
+        - DAD01-Return From Store With Items
+        - DAD01-Safely Take Transportation
+        - DAD01-Show Interest in Leisure Activity
+        - DAD01-Show Interest in Personal Affairs
+        - DAD01-Stay Safely at Home When Needed
+        - DAD01-Sub-Total Effective Performance
+        - DAD01-Sub-Total Initiation
+        - DAD01-Sub-Total Planning & Organization
+        - DAD01-Take Care of Hair
+        - DAD01-Take Interest in Household Chores
+        - DAD01-Take Medications as Prescribed
+        - DAD01-Take Medications at Correct Time
+        - DAD01-Telephone Someone at Suitable Time
+        - DAD01-Total %
+        - DAD01-Total Num of Applic Items
+        - DAD01-Total Score
+        - DAD01-Undress Completely
+        - DAD01-Use Toilet at Appropriate Times
+        - DAD01-Use Toilet Without Accidents
+        - DAD01-Wash and Dry Body Safely
+        - DAD01-Write Convey Telephone Message
+outcome:
+  message: Value not found in non-extensible codelist Disability Assessment for Dementia
+    Questionnaire Test Name (C105129)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C105129
+  codelist_name: Disability Assessment for Dementia Questionnaire Test Name
+  codelist_submission_value: DAD01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 49
+

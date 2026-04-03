@@ -1,0 +1,39 @@
+id: HRL-CT-0967
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SOFA01TN (Sepsis-related Organ Failure Assessment 27MAR2024 Clinical
+  Classification Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SOFA01TN
+      operator: in
+      value:
+        - 'SOFA01-Cardiovascular: Hypotension'
+        - 'SOFA01-CNS: Glasgow Coma Score'
+        - 'SOFA01-Coagulation: Platelets'
+        - 'SOFA01-Liver: Bilirubin'
+        - 'SOFA01-Renal: Creatinine or Urine Output'
+        - 'SOFA01-Respiration: PaO2/FiO2'
+        - SOFA01-Total SOFA Score
+outcome:
+  message: Value not found in non-extensible codelist Sepsis-related Organ Failure
+    Assessment 27MAR2024 Clinical Classification Test Name (C204223)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204223
+  codelist_name: Sepsis-related Organ Failure Assessment 27MAR2024 Clinical Classification
+    Test Name
+  codelist_submission_value: SOFA01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

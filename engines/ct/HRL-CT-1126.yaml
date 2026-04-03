@@ -1,0 +1,160 @@
+id: HRL-CT-1126
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TSPARM (Trial Summary Parameter Test Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TSPARM
+      operator: in
+      value:
+        - Actual Number of Subjects
+        - Adaptive Design
+        - Added on to Existing Treatments
+        - Additional Outcome Measure
+        - Applicant
+        - Biospecimen Retention Contains DNA Ind
+        - Biospecimen Retention Indicator
+        - CDISC Therapeutic Area User Guide
+        - Challenge Agent Name
+        - Citation Used in Study
+        - Clinical Study Report Archive Date
+        - Clinical Study Sponsor
+        - Commercial Sponsor Status
+        - Comparative Treatment Name
+        - Confirmed Response Minimum Duration
+        - Contact E-Mail Address
+        - Contact Mailing Address
+        - Contact Name
+        - Contact Phone Number
+        - Contact Role
+        - Control Type
+        - Country of Manufacture
+        - Current Therapy or Treatment
+        - Data Cutoff Date
+        - Data Cutoff Description
+        - Data Monitoring Committee Indicator
+        - Delayed Graft Function Dx Criteria
+        - Diagnosis Group
+        - Diagnostic Criteria
+        - Dose Form
+        - Dose per Administration
+        - Dose Regimen
+        - Dose Units
+        - Dosing Frequency
+        - ECG Continuous Monitoring
+        - ECG Planned Primary Lead
+        - ECG Read Method
+        - ECG Reading Blinded
+        - ECG Replicates at Baseline
+        - ECG Replicates On-Treatment
+        - ECG Twave Algorithm
+        - ECG Used Same Lead
+        - EMA Decision Number for PIP
+        - Email Address for XML File
+        - Epi/Pandemic Related Disruption Ind
+        - EudraCT Resubmission Indicator
+        - EudraVigilance Sender ID
+        - EudraVigilance Sender Organization
+        - Expanded Access Record NCT Number
+        - Expanded Access Status
+        - Exploratory Outcome Measure
+        - Extension Trial Indicator
+        - FDA Technical Specification
+        - FDA-Regulated Device Study Indicator
+        - FDA-Regulated Drug Study Indicator
+        - Healthy Subject Indicator
+        - Intervention Model
+        - Intervention Type
+        - Investigational Therapy or Treatment
+        - Multiple Site EU State Trial Indicator
+        - Name of Epi/Pandemic
+        - Number of Groups/Cohorts
+        - Number of Trial Sites EU State
+        - Obs Study Population Description
+        - Obs Study Sampling Method Description
+        - Observational Model
+        - Observational Study Sampling Method
+        - Observational Time Perspective
+        - Ongoing Study Indicator
+        - Pediatric Investigation Plan Indicator
+        - Pediatric Postmarket Study Indicator
+        - Pediatric Study Indicator
+        - Pharmacologic Class
+        - Planned Country of Investigational Sites
+        - Planned Maximum Age of Subjects
+        - Planned Minimum Age of Subjects
+        - Planned Number of Arms
+        - Planned Number of Subjects
+        - Planned Treatment Duration
+        - Planned Trial Duration
+        - Post Authorization Safety Study Ind
+        - Primary Outcome Measure
+        - Protocol Keyword
+        - Protocol Risk Assessment
+        - PubMed ID for Citation Used in Study
+        - Randomization Quotient
+        - Rare Disease Indicator
+        - Registry Identifier
+        - Relapse Criteria
+        - Request for XML Copy of Study Indicator
+        - Resubmission Letter
+        - Retained Biospecimen Description
+        - Route of Administration
+        - SDTM IG Version
+        - SDTM Version
+        - SDTMIG Medical Device Version
+        - Secondary Outcome Measure
+        - Secure Delivery XML Required Indicator
+        - Severity Criteria
+        - Sex of Participants
+        - Single Site EU State Trial Indicator
+        - Sponsor's Study Reference ID
+        - Stable Disease Minimum Duration
+        - Stratification Factor
+        - Study End Date
+        - Study Start Date
+        - Study Stop Rules
+        - Study Type
+        - Substudy Details
+        - Substudy Planned Indicator
+        - SUSAR Reporting to EVCTM Indicator
+        - SUSAR Reporting to NCA Indicator
+        - Target Follow-Up Duration
+        - Therapeutic Area
+        - Tobacco IG Version
+        - Tobacco Product
+        - Trial Blinding Schema
+        - Trial Disease/Condition Indication
+        - Trial Exploratory Objective
+        - Trial Intent Type
+        - Trial is Randomized
+        - Trial Length
+        - Trial Phase Classification
+        - Trial Primary Objective
+        - Trial Secondary Objective
+        - Trial Title
+        - Trial Type
+        - URL Related to Study Description
+        - URL Related to Study
+outcome:
+  message: Value not found in extensible codelist Trial Summary Parameter Test Name
+    (C67152)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C67152
+  codelist_name: Trial Summary Parameter Test Name
+  codelist_submission_value: TSPARM
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 129
+

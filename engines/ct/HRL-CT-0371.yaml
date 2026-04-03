@@ -1,0 +1,56 @@
+id: HRL-CT-0371
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR03TC (European Organization for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Bone Metastases 22 Items Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR03TC
+      operator: in
+      value:
+        - EOR0301
+        - EOR0302
+        - EOR0303
+        - EOR0304
+        - EOR0305
+        - EOR0306
+        - EOR0307
+        - EOR0308
+        - EOR0309
+        - EOR0310
+        - EOR0311
+        - EOR0312
+        - EOR0313
+        - EOR0314
+        - EOR0315
+        - EOR0316
+        - EOR0317
+        - EOR0318
+        - EOR0319
+        - EOR0320
+        - EOR0321
+        - EOR0322
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Bone Metastases
+    22 Items Test Code (C219717)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219717
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Bone Metastases 22 Items Test Code
+  codelist_submission_value: EOR03TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 22
+

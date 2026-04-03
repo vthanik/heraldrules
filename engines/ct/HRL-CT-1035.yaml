@@ -1,0 +1,74 @@
+id: HRL-CT-1035
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SIQ01TN (Suicidal Ideation Questionnaire Test Name) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SIQ01TN
+      operator: in
+      value:
+        - SIQ01-Critical Item 1
+        - SIQ01-Critical Item 2
+        - SIQ01-Critical Item 3
+        - SIQ01-Critical Item 4
+        - SIQ01-Critical Item 5
+        - SIQ01-Critical Item 6
+        - SIQ01-Critical Item 7
+        - SIQ01-Critical Item 8
+        - SIQ01-How Easy It Would Be to End It All
+        - SIQ01-How People Feel If I Killed Myself
+        - SIQ01-Hurting Myself but Not Kill Myself
+        - SIQ01-I Thought About Death
+        - SIQ01-I Thought About Killing Myself
+        - SIQ01-I Thought About People Dying
+        - SIQ01-I Thought About Writing a Will
+        - SIQ01-I Thought How I Would Kill Myself
+        - SIQ01-I Thought When I Would Kill Myself
+        - SIQ01-I Wished I Were Dead
+        - SIQ01-If Had Chance I Would Kill Myself
+        - SIQ01-If Things Not Better I Kill Myself
+        - SIQ01-Killing Myself Would Solve Problem
+        - SIQ01-My Life Was Too Rotten to Continue
+        - SIQ01-No One Cared If I Lived or Died
+        - SIQ01-Only Way Be Noticed Is Kill Myself
+        - SIQ01-Others Better Off If I Was Dead
+        - SIQ01-People Happier If Not Around
+        - SIQ01-People Realize Worth Caring About
+        - 'SIQ01-Specific %: Standard Sample 1'
+        - 'SIQ01-Specific %: Standard Sample 2'
+        - 'SIQ01-Specific %: Standard Sample 3'
+        - SIQ01-Tell People I Plan to Kill Myself
+        - SIQ01-Thought About Having Bad Accident
+        - SIQ01-Thought Killing Myself Not Do It
+        - SIQ01-Thought Life Was Not Worth Living
+        - SIQ01-Thought Way People Kill Themselves
+        - SIQ01-Total %
+        - SIQ01-TS
+        - SIQ01-What to Write in a Suicide Note
+        - SIQ01-Wished I Had Never Been Born
+        - SIQ01-Wished I Had Right to Kill Myself
+        - SIQ01-Wished I Had the Nerve Kill Myself
+        - SIQ01-Wondered If Had Nerve Kill Myself
+        - SIQ01-Would Be Better If I Was Not Alive
+outcome:
+  message: Value not found in non-extensible codelist Suicidal Ideation Questionnaire
+    Test Name (C150789)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150789
+  codelist_name: Suicidal Ideation Questionnaire Test Name
+  codelist_submission_value: SIQ01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 43
+

@@ -1,0 +1,33 @@
+id: HRL-CT-0636
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: LUFATSCD (Lung Cancer Findings About Test Code) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: LUFATSCD
+      operator: in
+      value:
+        - ORCANIND
+        - RESCTIND
+outcome:
+  message: Value not found in extensible codelist Lung Cancer Findings About Test
+    Code (C154687)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C154687
+  codelist_name: Lung Cancer Findings About Test Code
+  codelist_submission_value: LUFATSCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 2
+

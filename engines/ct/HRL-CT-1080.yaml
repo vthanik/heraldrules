@@ -1,0 +1,42 @@
+id: HRL-CT-1080
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PROS01TC (The Prostate Cancer Specific Quality of Life Instrument Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PROS01TC
+      operator: in
+      value:
+        - PROS0101
+        - PROS0102
+        - PROS0103
+        - PROS0104
+        - PROS0105
+        - PROS0106
+        - PROS0107
+        - PROS0108
+        - PROS0109
+        - PROS0110
+outcome:
+  message: Value not found in non-extensible codelist The Prostate Cancer Specific
+    Quality of Life Instrument Questionnaire Test Code (C127360)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C127360
+  codelist_name: The Prostate Cancer Specific Quality of Life Instrument Questionnaire
+    Test Code
+  codelist_submission_value: PROS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 10
+

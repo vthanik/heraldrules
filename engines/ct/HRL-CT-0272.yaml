@@ -1,0 +1,32 @@
+id: HRL-CT-0272
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TIMG01TC (Coronary Thrombus TIMI Grade Clinical Classification Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TIMG01TC
+      operator: in
+      value:
+        - TIMG0101
+outcome:
+  message: Value not found in non-extensible codelist Coronary Thrombus TIMI Grade
+    Clinical Classification Test Code (C119074)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C119074
+  codelist_name: Coronary Thrombus TIMI Grade Clinical Classification Test Code
+  codelist_submission_value: TIMG01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

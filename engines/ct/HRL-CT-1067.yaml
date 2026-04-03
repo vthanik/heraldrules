@@ -1,0 +1,64 @@
+id: HRL-CT-1067
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC001TN (The Functional Assessment of Cancer Therapy-General Version
+  4 Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC001TN
+      operator: in
+      value:
+        - FAC001-Bothered by Treatment Side Effect
+        - FAC001-Content With Quality of My Life
+        - FAC001-Emotional Subscale Score
+        - FAC001-Enjoy Things I Usually Do for Fun
+        - FAC001-Functional Subscale Score
+        - FAC001-Get Emotional Support From Family
+        - FAC001-I Am Able to Enjoy Life
+        - FAC001-I Am Able to Work
+        - FAC001-I Am Forced to Spend Time in Bed
+        - FAC001-I Am Satisfied With My Sex Life
+        - FAC001-I Am Sleeping Well
+        - FAC001-I Feel Close to My Friends
+        - FAC001-I Feel Close to My Partner
+        - FAC001-I Feel Ill
+        - FAC001-I Feel Nervous
+        - FAC001-I Feel Sad
+        - FAC001-I Get Support From My Friends
+        - FAC001-I Have a Lack of Energy
+        - FAC001-I Have Accepted My Illness
+        - FAC001-I Have Nausea
+        - FAC001-I Have Pain
+        - FAC001-I Worry About Dying
+        - FAC001-Losing Hope Against Illness
+        - FAC001-My Family Has Accepted My Illness
+        - FAC001-My Work Is Fulfilling
+        - FAC001-Physical Subscale Score
+        - FAC001-Satisfied Communication Illness
+        - FAC001-Satisfied With How I Am Coping
+        - FAC001-Social/Family Subscale Score
+        - FAC001-Total Score
+        - FAC001-Trouble Meeting Needs of Family
+        - FAC001-Worry My Condition Will Get Worse
+outcome:
+  message: Value not found in non-extensible codelist The Functional Assessment of
+    Cancer Therapy-General Version 4 Questionnaire Test Name (C127353)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C127353
+  codelist_name: The Functional Assessment of Cancer Therapy-General Version 4 Questionnaire
+    Test Name
+  codelist_submission_value: FAC001TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 32
+

@@ -1,0 +1,73 @@
+id: HRL-CT-1178
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: WD6TC (World Health Organization Disability Assessment Schedule 2.0 -
+  36-Item Proxy Questionnaire Test Code) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: WD6TC
+      operator: in
+      value:
+        - WD6D1_1
+        - WD6D1_2
+        - WD6D1_3
+        - WD6D1_4
+        - WD6D1_5
+        - WD6D1_6
+        - WD6D2_1
+        - WD6D2_2
+        - WD6D2_3
+        - WD6D3_1
+        - WD6D3_2
+        - WD6D3_3
+        - WD6D3_4
+        - WD6D4_1
+        - WD6D4_2
+        - WD6D4_3
+        - WD6D4_4
+        - WD6D4_5
+        - WD6D5_1
+        - WD6D5_2
+        - WD6D5_3
+        - WD6D5_4
+        - WD6D5_5
+        - WD6D5_6
+        - WD6D5_7
+        - WD6D5_8
+        - WD6D6_1
+        - WD6D6_2
+        - WD6D6_3
+        - WD6D6_4
+        - WD6D6_5
+        - WD6D6_6
+        - WD6D6_7
+        - WD6D6_8
+        - WD6H1
+        - WD6H2
+        - WD6H3
+        - WD6H4
+        - WD6SD2_4
+        - WD6SD2_5
+outcome:
+  message: Value not found in non-extensible codelist World Health Organization Disability
+    Assessment Schedule 2.0 - 36-Item Proxy Questionnaire Test Code (C130271)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130271
+  codelist_name: World Health Organization Disability Assessment Schedule 2.0 - 36-Item
+    Proxy Questionnaire Test Code
+  codelist_submission_value: WD6TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 40
+

@@ -1,0 +1,164 @@
+id: HRL-CT-0479
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FSLPTC (Functional Assessment of Chronic Illness Therapy-Searchable Item
+  Library Pediatric Questionnaire Test Code) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FSLPTC
+      operator: in
+      value:
+        - FSLP0001
+        - FSLP0002
+        - FSLP0003
+        - FSLP0004
+        - FSLP0005
+        - FSLP0006
+        - FSLP0007
+        - FSLP0008
+        - FSLP0009
+        - FSLP0010
+        - FSLP0011
+        - FSLP0012
+        - FSLP0013
+        - FSLP0014
+        - FSLP0015
+        - FSLP0016
+        - FSLP0017
+        - FSLP0018
+        - FSLP0019
+        - FSLP0020
+        - FSLP0021
+        - FSLP0022
+        - FSLP0023
+        - FSLP0024
+        - FSLP0025
+        - FSLP0026
+        - FSLP0027
+        - FSLP0028
+        - FSLP0029
+        - FSLP0030
+        - FSLP0031
+        - FSLP0032
+        - FSLP0033
+        - FSLP0034
+        - FSLP0035
+        - FSLP0036
+        - FSLP0037
+        - FSLP0038
+        - FSLP0039
+        - FSLP0040
+        - FSLP0041
+        - FSLP0042
+        - FSLP0043
+        - FSLP0044
+        - FSLP0045
+        - FSLP0046
+        - FSLP0047
+        - FSLP0048
+        - FSLP0049
+        - FSLP0050
+        - FSLP0051
+        - FSLP0052
+        - FSLP0053
+        - FSLP0054
+        - FSLP0055
+        - FSLP0056
+        - FSLP0057
+        - FSLP0058
+        - FSLP0059
+        - FSLP0060
+        - FSLP0061
+        - FSLP0062
+        - FSLP0063
+        - FSLP0064
+        - FSLP0065
+        - FSLP0066
+        - FSLP0067
+        - FSLP0068
+        - FSLP0069
+        - FSLP0070
+        - FSLP0071
+        - FSLP0072
+        - FSLP0073
+        - FSLP0074
+        - FSLP0075
+        - FSLP0076
+        - FSLP0077
+        - FSLP0078
+        - FSLP0079
+        - FSLP0080
+        - FSLP0081
+        - FSLP0082
+        - FSLP0083
+        - FSLP0084
+        - FSLP0085
+        - FSLP0086
+        - FSLP0087
+        - FSLP0088
+        - FSLP0089
+        - FSLP0090
+        - FSLP0091
+        - FSLP0092
+        - FSLP0093
+        - FSLP0094
+        - FSLP0095
+        - FSLP0096
+        - FSLP0097
+        - FSLP0098
+        - FSLP0099
+        - FSLP0100
+        - FSLP0101
+        - FSLP0102
+        - FSLP0103
+        - FSLP0104
+        - FSLP0105
+        - FSLP0106
+        - FSLP0107
+        - FSLP0108
+        - FSLP0109
+        - FSLP0110
+        - FSLP0111
+        - FSLP0112
+        - FSLP0113
+        - FSLP0114
+        - FSLP0115
+        - FSLP0116
+        - FSLP0117
+        - FSLP0118
+        - FSLP0119
+        - FSLP0120
+        - FSLP0121
+        - FSLP0122
+        - FSLP0123
+        - FSLP0124
+        - FSLP0125
+        - FSLP0126
+        - FSLP0127
+        - FSLP0128
+        - FSLP0129
+        - FSLP0130
+        - FSLP0131
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Chronic
+    Illness Therapy-Searchable Item Library Pediatric Questionnaire Test Code (C200915)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C200915
+  codelist_name: Functional Assessment of Chronic Illness Therapy-Searchable Item
+    Library Pediatric Questionnaire Test Code
+  codelist_submission_value: FSLPTC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 131
+

@@ -1,0 +1,94 @@
+id: HRL-CT-1102
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PDPARMCD (Tobacco Product Design Parameters Code) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PDPARMCD
+      operator: in
+      value:
+        - AIRFLRT
+        - BATCAPC
+        - BATNOMV
+        - BTCHTPL
+        - BTCRATE
+        - BTCRTORG
+        - BTDCTMPL
+        - BTENDCV
+        - BTMXCHC
+        - BTMXDCC
+        - BTULCHV
+        - BTVLTORG
+        - CBPPERM
+        - CBPPOR
+        - CIGPLGTH
+        - CIRCUMF
+        - CPBDIFF
+        - CPBPERM
+        - CPBPOR
+        - CPBSPC
+        - CPBWID
+        - CRTVOL
+        - CTMDDIAM
+        - DPF
+        - DRWRST
+        - ELQDVISC
+        - ELQDVOL
+        - FLTRDEN
+        - FLTRDRP
+        - FLTREFF
+        - FLTRLGTH
+        - HTEDIAM
+        - HTELCFG
+        - HTELGTH
+        - HTELNUM
+        - HTELRNG
+        - HTELRST
+        - INHAERT
+        - LENGTH
+        - MOISTCTT
+        - NICTDSRT
+        - PDUCOR
+        - PDUCRCOF
+        - PDUTCTOF
+        - PDUVOR
+        - PDUWTOR
+        - PM2.5
+        - PNUMCNC
+        - PRTLENG
+        - PRTMASS
+        - PRTMPOR
+        - PRTMWGT
+        - PRTTHICK
+        - PRTWDTH
+        - PUFCNT
+        - TBFLMASS
+        - TDENIER
+        - TOCUTSIZ
+        - TOPRTSIZ
+        - TORODDEN
+        - TPNPLGTH
+        - VENTLFLT
+        - VENTLTOT
+outcome:
+  message: Value not found in extensible codelist Tobacco Product Design Parameters
+    Code (C204425)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204425
+  codelist_name: Tobacco Product Design Parameters Code
+  codelist_submission_value: PDPARMCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 63
+

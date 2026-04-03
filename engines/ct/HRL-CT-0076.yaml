@@ -1,0 +1,111 @@
+id: HRL-CT-0076
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ADL01TC (Alzheimer's Disease Cooperative Study-Activities of Daily Living
+  Inventory Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ADL01TC
+      operator: in
+      value:
+        - ADL0101
+        - ADL0102
+        - ADL0103
+        - ADL0104
+        - ADL0105
+        - ADL0106
+        - ADL0106A
+        - ADL0106B
+        - ADL0107
+        - ADL0107A
+        - ADL0108
+        - ADL0108A
+        - ADL0108B
+        - ADL0108C
+        - ADL0109
+        - ADL0109A
+        - ADL0110
+        - ADL0110A
+        - ADL0111
+        - ADL0111A
+        - ADL0112
+        - ADL0112A
+        - ADL0113
+        - ADL0113A
+        - ADL0114
+        - ADL0114A
+        - ADL0115
+        - ADL0115A
+        - ADL0116
+        - ADL0116A
+        - ADL0116B
+        - ADL0117
+        - ADL0117A
+        - ADL0118
+        - ADL0118A
+        - ADL0118B
+        - ADL0118C
+        - ADL0119
+        - ADL0119A
+        - ADL0119B
+        - ADL0119C
+        - ADL0120
+        - ADL0120A
+        - ADL0120B
+        - ADL0121
+        - ADL0121A
+        - ADL0122
+        - ADL0122A
+        - ADL0122B
+        - ADL0122C
+        - ADL0122D
+        - ADL0122E
+        - ADL0122F
+        - ADL0122G
+        - ADL0122H
+        - ADL0122I
+        - ADL0122J
+        - ADL0122K
+        - ADL0122L
+        - ADL0122M
+        - ADL0122N
+        - ADL0122O
+        - ADL0122P
+        - ADL0122Q
+        - ADL0123
+        - ADL0123A
+        - ADL0123B
+        - ADL0123C
+        - ADL0123D
+        - ADL0123E
+        - ADL0123F
+        - ADL0123G
+        - ADL0123H
+        - ADL0123I
+        - ADL0123J
+        - ADL0123K
+        - ADL0123L
+        - ADL0124
+        - ADL0125
+outcome:
+  message: Value not found in non-extensible codelist Alzheimer's Disease Cooperative
+    Study-Activities of Daily Living Inventory Questionnaire Test Code (C105140)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C105140
+  codelist_name: Alzheimer's Disease Cooperative Study-Activities of Daily Living
+    Inventory Questionnaire Test Code
+  codelist_submission_value: ADL01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 79
+

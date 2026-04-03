@@ -1,0 +1,54 @@
+id: HRL-CT-0202
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CRQ01TN (Chronic Respiratory Questionnaire Self-Administered Standardized
+  Format First Administration Version Questionnaire Test Name) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CRQ01TN
+      operator: in
+      value:
+        - CRQ01-Confident to Deal With Illness
+        - CRQ01-Control of Breathing Problems
+        - CRQ01-Embarrassed by Coughing
+        - CRQ01-Energy
+        - CRQ01-Fatigue
+        - CRQ01-Feel Relaxed and Free of Tension
+        - CRQ01-Feel Upset Diff Getting Breath
+        - CRQ01-Feel Upset, Worried or Depressed
+        - CRQ01-Feeling Emotional
+        - CRQ01-Feeling of Fear or Panic
+        - CRQ01-Felt Discouraged or Down
+        - CRQ01-Felt Frustrated or Impatient
+        - CRQ01-Felt Low in Energy
+        - CRQ01-Felt Restless, Tense or Uptight
+        - CRQ01-Felt Worn Out or Sluggish
+        - CRQ01-Happy, Satisfied or Pleased
+        - CRQ01-Participate in Social Activities
+        - CRQ01-Performing Chores
+        - CRQ01-Take Care of Basic Needs
+        - CRQ01-Walking
+outcome:
+  message: Value not found in non-extensible codelist Chronic Respiratory Questionnaire
+    Self-Administered Standardized Format First Administration Version Questionnaire
+    Test Name (C120978)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C120978
+  codelist_name: Chronic Respiratory Questionnaire Self-Administered Standardized
+    Format First Administration Version Questionnaire Test Name
+  codelist_submission_value: CRQ01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 20
+

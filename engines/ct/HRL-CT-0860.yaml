@@ -1,0 +1,34 @@
+id: HRL-CT-0860
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PRITBCON (Priority of Tuberculosis Contact) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PRITBCON
+      operator: in
+      value:
+        - HIGH-PRIORITY TUBERCULOSIS CONTACT
+        - LOW-PRIORITY TUBERCULOSIS CONTACT
+        - MEDIUM-PRIORITY TUBERCULOSIS CONTACT
+outcome:
+  message: Value not found in extensible codelist Priority of Tuberculosis Contact
+    (C102582)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C102582
+  codelist_name: Priority of Tuberculosis Contact
+  codelist_submission_value: PRITBCON
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 3
+

@@ -1,0 +1,35 @@
+id: HRL-CT-0188
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CPS0105BOR (Child-Pugh Classification Clinical Classification ORRES for
+  CPS0105B TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CPS0105BOR
+      operator: in
+      value:
+        - 1.7-2.3
+        - <1.7
+        - '>2.3'
+outcome:
+  message: Value not found in non-extensible codelist Child-Pugh Classification Clinical
+    Classification ORRES for CPS0105B TN/TC (C208388)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C208388
+  codelist_name: Child-Pugh Classification Clinical Classification ORRES for CPS0105B
+    TN/TC
+  codelist_submission_value: CPS0105BOR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 3
+

@@ -1,0 +1,61 @@
+id: HRL-CT-0879
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PASI02TC (Psoriasis Area and Severity Index Version Feldman Clinical
+  Classification Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PASI02TC
+      operator: in
+      value:
+        - PASI0201
+        - PASI0202
+        - PASI0203
+        - PASI0204
+        - PASI0205
+        - PASI0206
+        - PASI0207
+        - PASI0208
+        - PASI0209
+        - PASI0210
+        - PASI0211
+        - PASI0212
+        - PASI0213
+        - PASI0214
+        - PASI0215
+        - PASI0216
+        - PASI0217
+        - PASI0218
+        - PASI0219
+        - PASI0220
+        - PASI0221
+        - PASI0222
+        - PASI0223
+        - PASI0224
+        - PASI0225
+        - PASI0226
+        - PASI0227
+        - PASI0228
+        - PASI0229
+outcome:
+  message: Value not found in non-extensible codelist Psoriasis Area and Severity
+    Index Version Feldman Clinical Classification Test Code (C179936)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C179936
+  codelist_name: Psoriasis Area and Severity Index Version Feldman Clinical Classification
+    Test Code
+  codelist_submission_value: PASI02TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 29
+

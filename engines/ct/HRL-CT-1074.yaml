@@ -1,0 +1,42 @@
+id: HRL-CT-1074
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ODI01TC (The Oswestry Disability Index Version 2.1a Questionnaire Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ODI01TC
+      operator: in
+      value:
+        - ODI0101
+        - ODI0102
+        - ODI0103
+        - ODI0104
+        - ODI0105
+        - ODI0106
+        - ODI0107
+        - ODI0108
+        - ODI0109
+        - ODI0110
+        - ODI0111
+outcome:
+  message: Value not found in non-extensible codelist The Oswestry Disability Index
+    Version 2.1a Questionnaire Test Code (C103479)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103479
+  codelist_name: The Oswestry Disability Index Version 2.1a Questionnaire Test Code
+  codelist_submission_value: ODI01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 11
+

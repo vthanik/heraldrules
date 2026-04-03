@@ -1,0 +1,58 @@
+id: HRL-CT-0621
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: LBANMET (Laboratory Analytical Method Calculation Formula) must contain
+  valid extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: LBANMET
+      operator: in
+      value:
+        - ASH FIBROSURE FORMULA
+        - CKD CHILDREN AND YOUNG ADULT CYSTATIN C BASED 2021 FORMULA
+        - CKD-EPI CREATININE 2021 FORMULA
+        - CKD-EPI CREATININE FORMULA
+        - CKD-EPI CREATININE-CYSTATIN C 2021 FORMULA
+        - CKD-EPI CREATININE-CYSTATIN C FORMULA
+        - CKD-EPI CYSTATIN C FORMULA
+        - CKD-EPI FORMULA
+        - CKD-EPI JAPANESE MODIFICATION 2010 FORMULA
+        - COCKCROFT-GAULT FORMULA
+        - FIBROMETER FORMULA
+        - FIBROSIS 4 FORMULA
+        - FIBROTEST FORMULA
+        - FRIEDEWALD 1972 FORMULA
+        - GMI % FORMULA
+        - GMI MMOL/MOL FORMULA
+        - HEPASCORE FORMULA
+        - IDMS-MDRD STUDY EQUATION WITH JSN-CKDI COEFFICIENT 0.741 IMAI 2007
+        - MDRD 4 VARIABLE FORMULA
+        - MDRD 5 VARIABLE FORMULA
+        - MDRD 6 VARIABLE FORMULA
+        - MDRD ENZYMATIC FORMULA
+        - MDRD ENZYMATIC JAPANESE FORMULA
+        - MDRD FORMULA
+        - NASH FIBROSURE FORMULA
+        - NEPHROCHECK AKI RISK 2013 FORMULA
+        - SCHWARTZ METHOD FOR CHILDREN FORMULA
+outcome:
+  message: Value not found in extensible codelist Laboratory Analytical Method Calculation
+    Formula (C160922)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C160922
+  codelist_name: Laboratory Analytical Method Calculation Formula
+  codelist_submission_value: LBANMET
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 27
+

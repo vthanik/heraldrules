@@ -1,0 +1,160 @@
+id: HRL-CT-1125
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TSPARMCD (Trial Summary Parameter Test Code) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TSPARMCD
+      operator: in
+      value:
+        - ACTSUB
+        - ADAPT
+        - ADDON
+        - AGEMAX
+        - AGEMIN
+        - APPLCNT
+        - BRDNAIND
+        - BRIND
+        - CAGTNAM
+        - CITNSTDY
+        - CMSPSTAT
+        - COMPTRT
+        - CONEMAIL
+        - CONMAIL
+        - CONNAME
+        - CONPHONE
+        - CONROLE
+        - CRMDUR
+        - CSRARDTC
+        - CTAUG
+        - CURTRT
+        - DCUTDESC
+        - DCUTDTC
+        - DGFCRIT
+        - DMCIND
+        - DOSE
+        - DOSFRM
+        - DOSFRQ
+        - DOSRGM
+        - DOSU
+        - DXCRIT
+        - EGBLIND
+        - EGCTMON
+        - EGLEADPR
+        - EGLEADSM
+        - EGRDMETH
+        - EGREPLBL
+        - EGREPLTR
+        - EGTWVALG
+        - EMAILXML
+        - EMPIPDCN
+        - EPDISIND
+        - EPIDEMIC
+        - EURSBIND
+        - EVSNDID
+        - EVSNDORG
+        - EXPARECN
+        - EXPASTAT
+        - EXTTIND
+        - FCNTRY
+        - FDADEIND
+        - FDADRIND
+        - FDATCHSP
+        - HLTSUBJI
+        - INDIC
+        - INTMODEL
+        - INTTYPE
+        - KEYWORD
+        - LENGTH
+        - MNFCNTRY
+        - MSEUTIND
+        - NARMS
+        - NCOHORT
+        - NUMSEUST
+        - OBJEXP
+        - OBJPRIM
+        - OBJSEC
+        - OBSMODEL
+        - OBSTIMP
+        - OBSTPOPD
+        - OBSTSMM
+        - OBSTSMMD
+        - ONGOSIND
+        - OUTMSADD
+        - OUTMSEXP
+        - OUTMSPRI
+        - OUTMSSEC
+        - PASSIND
+        - PCLAS
+        - PDPSTIND
+        - PDSTIND
+        - PIPIND
+        - PLANSUB
+        - PLNTRDUR
+        - PROTRSK
+        - PTRTDUR
+        - PUBMEDID
+        - RANDOM
+        - RANDQT
+        - RDIND
+        - REGID
+        - RESUBLTR
+        - RLPSCRIT
+        - ROUTE
+        - RTSPCDES
+        - RXMLCIND
+        - SDMDUR
+        - SDTIGVER
+        - SDTMDVER
+        - SDTMVER
+        - SDXMLIND
+        - SENDTC
+        - SEVCRIT
+        - SEXPOP
+        - SPONSOR
+        - SPREFID
+        - SREVIND
+        - SRNCAIND
+        - SSEUTIND
+        - SSTDTC
+        - SSTDYDTL
+        - SSTDYIND
+        - STOPRULE
+        - STRATFCT
+        - STYPE
+        - TBLIND
+        - TBPRD
+        - TCNTRL
+        - TDIGRP
+        - THERAREA
+        - TIGVER
+        - TINDTP
+        - TITLE
+        - TPHASE
+        - TRGFUDUR
+        - TRT
+        - TTYPE
+        - URLSTDY
+        - URLSTDYD
+outcome:
+  message: Value not found in extensible codelist Trial Summary Parameter Test Code
+    (C66738)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C66738
+  codelist_name: Trial Summary Parameter Test Code
+  codelist_submission_value: TSPARMCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 129
+

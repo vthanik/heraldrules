@@ -1,0 +1,58 @@
+id: HRL-CT-0807
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL13TN (Pediatric Quality of Life Neuromuscular Module Acute Version
+  3 Teen Parent Report Questionnaire Test Name) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL13TN
+      operator: in
+      value:
+        - PQL13-Back Feels Stiff
+        - PQL13-Do Not Have Equipment Need
+        - PQL13-Family Has Lot of Problems
+        - PQL13-Feel Tired
+        - PQL13-Get Hurt Accidentally
+        - PQL13-Get Sick Easily
+        - PQL13-Get Sores and/or Rashes
+        - PQL13-Hands Are Weak
+        - PQL13-Hard Ask Doctors/Nurses Questions
+        - PQL13-Hard Explain Illness to People
+        - PQL13-Hard for Family to Plan Activities
+        - PQL13-Hard for Family to Rest
+        - PQL13-Hard Tell Doctors/Nurses How Feel
+        - PQL13-Hard to Breathe
+        - PQL13-Hard to Gain/Lose Weight
+        - PQL13-Hard to Go Places With Equipment
+        - PQL13-Hard to Swallow Food
+        - PQL13-Hard to Turn During Night
+        - PQL13-Hard to Use Bathroom
+        - PQL13-Hard to Use Hands
+        - PQL13-Legs Hurt
+        - PQL13-Long Time to Bathe/Shower
+        - PQL13-Money Problem in Our Family
+        - PQL13-Take Long Time to Eat
+        - PQL13-Wake Up Tired
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Acute Version 3 Teen Parent Report Questionnaire Test Name (C138232)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138232
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Acute Version 3 Teen
+    Parent Report Questionnaire Test Name
+  codelist_submission_value: PQL13TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

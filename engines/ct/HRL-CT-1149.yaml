@@ -1,0 +1,46 @@
+id: HRL-CT-1149
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: VNFATSCD (Vaccines Findings About Test Code) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: VNFATSCD
+      operator: in
+      value:
+        - AEDCHIND
+        - AERCHIND
+        - APPEAR
+        - DISTR
+        - EPSDNUM
+        - GCIRCPI
+        - LDIAM
+        - LESNUM
+        - NDLGAUGE
+        - NEARJNT
+        - OCCUR
+        - PDAIND
+        - PRURIND
+        - SEV
+        - TOXGR
+outcome:
+  message: Value not found in extensible codelist Vaccines Findings About Test Code
+    (C142187)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C142187
+  codelist_name: Vaccines Findings About Test Code
+  codelist_submission_value: VNFATSCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 15
+

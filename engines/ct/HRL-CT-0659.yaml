@@ -1,0 +1,65 @@
+id: HRL-CT-0659
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MMS2TC (Mini-Mental State Examination 2 Standard Version Functional Test
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MMS2TC
+      operator: in
+      value:
+        - MMS201A
+        - MMS201B
+        - MMS201C
+        - MMS202A
+        - MMS202B
+        - MMS202C
+        - MMS202D
+        - MMS202E
+        - MMS203A
+        - MMS203B
+        - MMS203C
+        - MMS203D
+        - MMS203E
+        - MMS204A
+        - MMS204B
+        - MMS204C
+        - MMS205A
+        - MMS205B
+        - MMS205C
+        - MMS205D
+        - MMS205E
+        - MMS206A
+        - MMS206B
+        - MMS207
+        - MMS208A
+        - MMS208B
+        - MMS208C
+        - MMS209
+        - MMS210
+        - MMS211
+        - MMS212
+        - MMS213
+        - MMS214
+outcome:
+  message: Value not found in non-extensible codelist Mini-Mental State Examination
+    2 Standard Version Functional Test Test Code (C150770)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150770
+  codelist_name: Mini-Mental State Examination 2 Standard Version Functional Test
+    Test Code
+  codelist_submission_value: MMS2TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 33
+

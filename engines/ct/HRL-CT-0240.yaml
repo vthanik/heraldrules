@@ -1,0 +1,66 @@
+id: HRL-CT-0240
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSS02TN (Columbia-Suicide Severity Rating Scale Since Last Visit Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSS02TN
+      operator: in
+      value:
+        - CSS02-Aborted Attempt
+        - CSS02-Aborted Attempt, Describe
+        - CSS02-Actual Attempt
+        - CSS02-Actual Attempt, Describe
+        - CSS02-Ideation With Intent No Plan Descr
+        - CSS02-Ideation With Intent, No Plan
+        - CSS02-Ideation With Plan/Intent
+        - CSS02-Ideation With Plan/Intent, Descr
+        - CSS02-Interrupted Attempt
+        - CSS02-Interrupted Attempt, Describe
+        - CSS02-Most Lethal Attempt Damage
+        - CSS02-Most Lethal Attempt Date
+        - CSS02-Most Lethal Attempt Potential
+        - CSS02-Most Severe Ideation
+        - CSS02-Most Severe Ideation, Control
+        - CSS02-Most Severe Ideation, Description
+        - CSS02-Most Severe Ideation, Deterrents
+        - CSS02-Most Severe Ideation, Duration
+        - CSS02-Most Severe Ideation, Frequency
+        - CSS02-Most Severe Ideation, Reasons
+        - CSS02-Non-Specific Suicid Thought, Descr
+        - CSS02-Non-Specific Suicidal Thought
+        - CSS02-Non-suicidal Self-injurious Behav
+        - CSS02-Number of Aborted Attempts
+        - CSS02-Number of Actual Attempts
+        - CSS02-Number of Interrupted Attempts
+        - CSS02-Preparatory Acts/Behavior
+        - CSS02-Preparatory Acts/Behavior, Descr
+        - CSS02-Suicidal Behavior
+        - CSS02-Suicidal Ideation-No Intent
+        - CSS02-Suicidal Ideation-No Intent, Descr
+        - CSS02-Suicide
+        - CSS02-Wish to be Dead
+        - CSS02-Wish to be Dead, Describe
+outcome:
+  message: Value not found in non-extensible codelist Columbia-Suicide Severity Rating
+    Scale Since Last Visit Questionnaire Test Name (C103460)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103460
+  codelist_name: Columbia-Suicide Severity Rating Scale Since Last Visit Questionnaire
+    Test Name
+  codelist_submission_value: CSS02TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 34
+

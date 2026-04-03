@@ -1,0 +1,50 @@
+id: HRL-CT-1130
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TUTESTCD (Tumor or Lesion Identification Test Code) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TUTESTCD
+      operator: in
+      value:
+        - CVLIND
+        - DRCRLTLC
+        - FIBLIND
+        - GRLIDENT
+        - HPTMIND
+        - LESIDENT
+        - LMLIDENT
+        - MEASIND
+        - METIND
+        - NTIND
+        - PTSIND
+        - SPLMIND
+        - TIND
+        - TUBNIND
+        - TUEXMIND
+        - TUMERGE
+        - TUMIDENT
+        - TUSPLIT
+        - VSLIDENT
+outcome:
+  message: Value not found in extensible codelist Tumor or Lesion Identification Test
+    Code (C96784)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C96784
+  codelist_name: Tumor or Lesion Identification Test Code
+  codelist_submission_value: TUTESTCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 19
+

@@ -1,0 +1,40 @@
+id: HRL-CT-0493
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GAD01TN (Generalized Anxiety Disorder - 7 Questionnaire Test Name) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GAD01TN
+      operator: in
+      value:
+        - GAD01-Becoming Easily Annoyed/Irritable
+        - GAD01-Being Restless Hard to Sit Still
+        - GAD01-Difficult to Work/Take Care Things
+        - GAD01-Feel Afraid/Something Awful Happen
+        - GAD01-Feeling Nervous Anxious or On Edge
+        - GAD01-Not Able to Stop/Control Worrying
+        - GAD01-Total Score
+        - GAD01-Trouble Relaxing
+        - GAD01-Worrying Too Much About Things
+outcome:
+  message: Value not found in non-extensible codelist Generalized Anxiety Disorder
+    - 7 Questionnaire Test Name (C103466)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103466
+  codelist_name: Generalized Anxiety Disorder - 7 Questionnaire Test Name
+  codelist_submission_value: GAD01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 9
+

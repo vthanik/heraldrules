@@ -1,0 +1,50 @@
+id: HRL-CT-0993
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SF82TN (Short Form 8 Health Survey Acute, US Version 1.0 Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SF82TN
+      operator: in
+      value:
+        - SF82-Bodily Pain Norm-Based Score
+        - SF82-Bothered by Emotional Problems
+        - SF82-Difficulty Doing Daily Work
+        - SF82-Emotional Problems Keep From Work
+        - SF82-General Health Norm-Based Score
+        - SF82-How Much Bodily Pain Have You Had
+        - SF82-How Much Energy Did You Have
+        - SF82-How Much Limit Physical Activities
+        - SF82-Mental Component Score
+        - SF82-Mental Health Norm-Based Score
+        - SF82-Overall How You Rate Your Health
+        - SF82-Phys. Functioning Norm-Based Score
+        - SF82-Physical Component Score
+        - SF82-Physical/Emotional Limit Activities
+        - SF82-Role Emotional Norm-Based Score
+        - SF82-Role Physical Norm-Based Score
+        - SF82-Social Functioning Norm-Based Score
+        - SF82-Vitality Norm-Based Score
+outcome:
+  message: Value not found in non-extensible codelist Short Form 8 Health Survey Acute,
+    US Version 1.0 Questionnaire Test Name (C177705)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C177705
+  codelist_name: Short Form 8 Health Survey Acute, US Version 1.0 Questionnaire Test
+    Name
+  codelist_submission_value: SF82TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 18
+

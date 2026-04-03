@@ -1,0 +1,33 @@
+id: HRL-CT-1049
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TANN02TC (Tanner Scale Boy Clinical Classification Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TANN02TC
+      operator: in
+      value:
+        - TANN0201
+        - TANN0202
+outcome:
+  message: Value not found in non-extensible codelist Tanner Scale Boy Clinical Classification
+    Test Code (C124662)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124662
+  codelist_name: Tanner Scale Boy Clinical Classification Test Code
+  codelist_submission_value: TANN02TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 2
+

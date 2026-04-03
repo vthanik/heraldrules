@@ -1,0 +1,70 @@
+id: HRL-CT-0362
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR06TN (European Organisation for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Colorectal Cancer Version 2.1 29 Items Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR06TN
+      operator: in
+      value:
+        - EOR06-Been Dissatisfied With Your Body
+        - EOR06-Bloated Feeling in Your Abdomen
+        - EOR06-Did You Have a Dry Mouth
+        - EOR06-Did You Have Abdominal Pain
+        - EOR06-Do You Have Stoma Bag
+        - EOR06-Embarrassed Because Bowel Movement
+        - EOR06-Feel Embarrassed Because of Stoma
+        - EOR06-Feeling Less Feminine/Masculine
+        - EOR06-Felt Physically Less Attractive
+        - EOR06-Frequent Bag Changes During Day
+        - EOR06-Frequent Bag Changes During Night
+        - EOR06-Frequent Bowel Movements Day
+        - EOR06-Frequent Bowel Movements Night
+        - EOR06-Have You Had Blood in Your Stools
+        - EOR06-Have You Had Mucus in Your Stools
+        - EOR06-Leakage of Stools Back Passage
+        - EOR06-Leakage of Stools From Stoma Bag
+        - EOR06-Lost Hair as Result of Treatment
+        - 'EOR06-Men: Difficulty Getting Erection'
+        - 'EOR06-Men: Extent Interested in Sex'
+        - EOR06-Pain in Buttocks/Anal Area/Rectum
+        - EOR06-Pain When You Urinated
+        - EOR06-Problems Caring for Your Stoma
+        - EOR06-Problems With Your Sense of Taste
+        - EOR06-Sore Skin Around Your Anal Area
+        - EOR06-Sore Skin Around Your Stoma
+        - EOR06-Unintentional Gas Back Passage
+        - EOR06-Unintentional Gas From Stoma Bag
+        - EOR06-Unintentional Release of Urine
+        - EOR06-Urinate Frequently During Day
+        - EOR06-Urinate Frequently During Night
+        - 'EOR06-Women: Extent Interested in Sex'
+        - 'EOR06-Women: Pain/Discomfort Intercourse'
+        - EOR06-Worried About Your Health Future
+        - EOR06-Worried About Your Weight
+outcome:
+  message: Value not found in non-extensible codelist European Organisation for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Colorectal Cancer
+    Version 2.1 29 Items Questionnaire Test Name (C170524)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C170524
+  codelist_name: European Organisation for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Colorectal Cancer Version 2.1 29 Items Questionnaire Test
+    Name
+  codelist_submission_value: EOR06TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 35
+

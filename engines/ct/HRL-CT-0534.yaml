@@ -1,0 +1,38 @@
+id: HRL-CT-0534
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HSB01TC (HAS-BLED Bleeding Risk Score Clinical Classification Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HSB01TC
+      operator: in
+      value:
+        - HSB0101
+        - HSB0102
+        - HSB0103
+        - HSB0104
+        - HSB0105
+        - HSB0106
+        - HSB0107
+outcome:
+  message: Value not found in non-extensible codelist HAS-BLED Bleeding Risk Score
+    Clinical Classification Test Code (C138213)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138213
+  codelist_name: HAS-BLED Bleeding Risk Score Clinical Classification Test Code
+  codelist_submission_value: HSB01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

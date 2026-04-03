@@ -1,0 +1,82 @@
+id: HRL-CT-0432
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC061TN (Functional Assessment of Cancer Therapy-Bone Marrow Transplant
+  Version 4 Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC061TN
+      operator: in
+      value:
+        - FAC061-Bothered by Change in Food Tastes
+        - FAC061-Bothered by Treatment Side Effect
+        - FAC061-Concerns Ability to Have Children
+        - FAC061-Confidence in My Nurse(s)
+        - FAC061-Content With Quality of My Life
+        - FAC061-Cost of Treatment Is Burden on Me
+        - FAC061-Enjoy Things I Usually Do for Fun
+        - FAC061-Get Emotional Support From Family
+        - FAC061-I Am Able to Concentrate
+        - FAC061-I Am Able to Enjoy Life
+        - FAC061-I Am Able to Get Around by Myself
+        - FAC061-I Am Able to Work
+        - FAC061-I Am Bothered by Skin Problems
+        - FAC061-I Am Concerned About Keeping Job
+        - FAC061-I Am Forced to Spend Time in Bed
+        - FAC061-I Am Interested in Sex
+        - FAC061-I Am Satisfied With My Sex Life
+        - FAC061-I Am Sleeping Well
+        - FAC061-I Can Remember Things
+        - FAC061-I Feel Close to My Friends
+        - FAC061-I Feel Close to My Partner
+        - FAC061-I Feel Distant From Other People
+        - FAC061-I Feel Ill
+        - FAC061-I Feel Nervous
+        - FAC061-I Feel Sad
+        - FAC061-I Get Support From My Friends
+        - FAC061-I Get Tired Easily
+        - FAC061-I Have a Good Appetite
+        - FAC061-I Have a Lack of Energy
+        - FAC061-I Have Accepted My Illness
+        - FAC061-I Have Been Short of Breath
+        - FAC061-I Have Frequent Colds/Infections
+        - FAC061-I Have Nausea
+        - FAC061-I Have Pain
+        - FAC061-I Have Tremors
+        - FAC061-I Have Trouble With My Bowels
+        - FAC061-I Like the Appearance of My Body
+        - FAC061-I Regret Bone Marrow Transplant
+        - FAC061-I Worry About Dying
+        - FAC061-I Worry Transplant Will Not Work
+        - FAC061-Illness Is Hardship for My Family
+        - FAC061-Losing Hope Against Illness
+        - FAC061-My Eyesight Is Blurry
+        - FAC061-My Family Has Accepted My Illness
+        - FAC061-My Work Is Fulfilling
+        - FAC061-Satisfied Communication Illness
+        - FAC061-Satisfied With How I Am Coping
+        - FAC061-Side Effect of Treatment Worse
+        - FAC061-Trouble Meeting Needs of Family
+        - FAC061-Worry My Condition Will Get Worse
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Bone Marrow Transplant Version 4 Questionnaire Test Name (C147539)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C147539
+  codelist_name: Functional Assessment of Cancer Therapy-Bone Marrow Transplant Version
+    4 Questionnaire Test Name
+  codelist_submission_value: FAC061TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 50
+

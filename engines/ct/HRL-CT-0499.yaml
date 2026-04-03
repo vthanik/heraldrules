@@ -1,0 +1,68 @@
+id: HRL-CT-0499
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GFTSDTL (Genomic Findings Test Detail) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GFTSDTL
+      operator: in
+      value:
+        - ALLELE SEQUENCE
+        - ALLELE TYPE
+        - CENTROMERE SIGNALS
+        - COPY NUMBER ALTERATION INTERPRETATION
+        - COPY NUMBER RATIO
+        - DETECTION
+        - DIPLOTYPE
+        - FRAGMENT COUNT
+        - GENETIC TRANSCRIPTION INDICATOR
+        - GENETIC TRANSCRIPTION INTERPRETATION
+        - GENOME-SPECIFIC TARGET SIGNALS
+        - GENOTYPE
+        - HAPLOTYPE
+        - MICROSATELLITE INSTABILITY OVERALL STATUS
+        - NORMALIZED LEVEL
+        - NORMALIZED NUMBER OF SEQUENCE VARIANTS
+        - NUCLEOTIDE SEQUENCE
+        - NUMBER OF ALTERED EXONS
+        - NUMBER OF CAG REPEATS
+        - NUMBER OF GENE COPIES
+        - NUMBER OF SEQUENCE VARIANTS
+        - PERCENTILE RANK
+        - PREDICTED AMINO ACID CHANGE
+        - PREDICTED CODING SEQUENCE CHANGE
+        - PREDICTED DIPLOTYPE
+        - PREDICTED IN-FRAME INDICATOR
+        - PREDICTED NUMBER OF CAG REPEATS
+        - PREDICTED PHENOTYPE
+        - READ DEPTH
+        - REARRANGEMENT GENE 1
+        - REARRANGEMENT GENE 2
+        - REARRANGEMENT IMPACT CLASSIFICATION
+        - REARRANGEMENT TYPE
+        - SCORE
+        - VARIANT IMPACT CLASSIFICATION
+        - VARIANT READ DEPTH
+        - VARIANT READ DEPTH/READ DEPTH
+        - VARIANT SEQUENCE BURDEN INTERPRETATION
+outcome:
+  message: Value not found in extensible codelist Genomic Findings Test Detail (C181180)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C181180
+  codelist_name: Genomic Findings Test Detail
+  codelist_submission_value: GFTSDTL
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 38
+

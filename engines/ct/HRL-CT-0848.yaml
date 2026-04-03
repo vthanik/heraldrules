@@ -1,0 +1,34 @@
+id: HRL-CT-0848
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PKANMET (PK Analytical Method) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PKANMET
+      operator: in
+      value:
+        - LIN-LOG TRAPEZOIDAL METHOD
+        - LINEAR TRAPEZOIDAL - LOG INTERPOLATION METHOD
+        - LINEAR TRAPEZOIDAL METHOD
+        - LINEAR UP LOG DOWN METHOD
+outcome:
+  message: Value not found in extensible codelist PK Analytical Method (C172330)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C172330
+  codelist_name: PK Analytical Method
+  codelist_submission_value: PKANMET
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 4
+

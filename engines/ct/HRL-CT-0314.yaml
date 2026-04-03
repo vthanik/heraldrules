@@ -1,0 +1,42 @@
+id: HRL-CT-0314
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DIBC01TN (Diary for Irritable Bowel Syndrome Symptoms-Constipation v1.0
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DIBC01TN
+      operator: in
+      value:
+        - DIBC01-Abdominal Symptom Subscale
+        - DIBC01-Completely Emptied Bowels
+        - DIBC01-Describe Consistency of Stool
+        - DIBC01-How Much Did You Strain
+        - DIBC01-Other Bowel Movements to Report
+        - DIBC01-Rate Worst Abdominal Bloating
+        - DIBC01-Rate Worst Abdominal Discomfort
+        - DIBC01-Rate Worst Abdominal Pain
+        - DIBC01-Stool Frequency Weekly Complete
+        - DIBC01-Stool Frequency Weekly Total
+outcome:
+  message: Value not found in non-extensible codelist Diary for Irritable Bowel Syndrome
+    Symptoms-Constipation v1.0 Questionnaire Test Name (C183548)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C183548
+  codelist_name: Diary for Irritable Bowel Syndrome Symptoms-Constipation v1.0 Questionnaire
+    Test Name
+  codelist_submission_value: DIBC01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 10
+

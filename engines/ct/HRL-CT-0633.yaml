@@ -1,0 +1,134 @@
+id: HRL-CT-0633
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: LEC01TN (Life Events Checklist for DSM-5 Standard Version Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: LEC01TN
+      operator: in
+      value:
+        - 'LEC01-Assault With a Weapon: Happened'
+        - 'LEC01-Assault With a Weapon: Job'
+        - 'LEC01-Assault With a Weapon: Learned'
+        - 'LEC01-Assault With a Weapon: Not Apply'
+        - 'LEC01-Assault With a Weapon: Not Sure'
+        - 'LEC01-Assault With a Weapon: Witnessed'
+        - 'LEC01-Captivity: Happened'
+        - 'LEC01-Captivity: Job'
+        - 'LEC01-Captivity: Learned'
+        - 'LEC01-Captivity: Not Apply'
+        - 'LEC01-Captivity: Not Sure'
+        - 'LEC01-Captivity: Witnessed'
+        - 'LEC01-Combat/Exp to War-Zone: Happened'
+        - 'LEC01-Combat/Exp to War-Zone: Job'
+        - 'LEC01-Combat/Exp to War-Zone: Learned'
+        - 'LEC01-Combat/Exp to War-Zone: Not Apply'
+        - 'LEC01-Combat/Exp to War-Zone: Not Sure'
+        - 'LEC01-Combat/Exp to War-Zone: Witnessed'
+        - 'LEC01-Fire or Explosion: Happened'
+        - 'LEC01-Fire or Explosion: Job'
+        - 'LEC01-Fire or Explosion: Learned'
+        - 'LEC01-Fire or Explosion: Not Apply'
+        - 'LEC01-Fire or Explosion: Not Sure'
+        - 'LEC01-Fire or Explosion: Witnessed'
+        - 'LEC01-Life-threatening Illness: Happened'
+        - 'LEC01-Life-threatening Illness: Job'
+        - 'LEC01-Life-threatening Illness: Learned'
+        - 'LEC01-Life-threatening Illness: No Apply'
+        - 'LEC01-Life-threatening Illness: Not Sure'
+        - 'LEC01-Life-threatening Illness: Witness'
+        - 'LEC01-Natural Disaster: Happened'
+        - 'LEC01-Natural Disaster: Job'
+        - 'LEC01-Natural Disaster: Learned'
+        - 'LEC01-Natural Disaster: Not Apply'
+        - 'LEC01-Natural Disaster: Not Sure'
+        - 'LEC01-Natural Disaster: Witnessed'
+        - 'LEC01-Other Stressful Event: Happened'
+        - 'LEC01-Other Stressful Event: Job'
+        - 'LEC01-Other Stressful Event: Learned'
+        - 'LEC01-Other Stressful Event: Not Apply'
+        - 'LEC01-Other Stressful Event: Not Sure'
+        - 'LEC01-Other Stressful Event: Witnessed'
+        - 'LEC01-Physical Assault: Happened'
+        - 'LEC01-Physical Assault: Job'
+        - 'LEC01-Physical Assault: Learned'
+        - 'LEC01-Physical Assault: Not Apply'
+        - 'LEC01-Physical Assault: Not Sure'
+        - 'LEC01-Physical Assault: Witnessed'
+        - 'LEC01-Serious Accident: Happened'
+        - 'LEC01-Serious Accident: Job'
+        - 'LEC01-Serious Accident: Learned'
+        - 'LEC01-Serious Accident: Not Apply'
+        - 'LEC01-Serious Accident: Not Sure'
+        - 'LEC01-Serious Accident: Witnessed'
+        - 'LEC01-Serious Injury Caused: Happened'
+        - 'LEC01-Serious Injury Caused: Job'
+        - 'LEC01-Serious Injury Caused: Learned'
+        - 'LEC01-Serious Injury Caused: Not Apply'
+        - 'LEC01-Serious Injury Caused: Not Sure'
+        - 'LEC01-Serious Injury Caused: Witnessed'
+        - 'LEC01-Severe Human Suffering: Happened'
+        - 'LEC01-Severe Human Suffering: Job'
+        - 'LEC01-Severe Human Suffering: Learned'
+        - 'LEC01-Severe Human Suffering: Not Apply'
+        - 'LEC01-Severe Human Suffering: Not Sure'
+        - 'LEC01-Severe Human Suffering: Witnessed'
+        - 'LEC01-Sexual Assault: Happened'
+        - 'LEC01-Sexual Assault: Job'
+        - 'LEC01-Sexual Assault: Learned'
+        - 'LEC01-Sexual Assault: Not Apply'
+        - 'LEC01-Sexual Assault: Not Sure'
+        - 'LEC01-Sexual Assault: Witnessed'
+        - 'LEC01-Sudden Accidental Death: Happened'
+        - 'LEC01-Sudden Accidental Death: Job'
+        - 'LEC01-Sudden Accidental Death: Learned'
+        - 'LEC01-Sudden Accidental Death: Not Apply'
+        - 'LEC01-Sudden Accidental Death: Not Sure'
+        - 'LEC01-Sudden Accidental Death: Witnessed'
+        - 'LEC01-Sudden Violent Death: Happened'
+        - 'LEC01-Sudden Violent Death: Job'
+        - 'LEC01-Sudden Violent Death: Learned'
+        - 'LEC01-Sudden Violent Death: Not Apply'
+        - 'LEC01-Sudden Violent Death: Not Sure'
+        - 'LEC01-Sudden Violent Death: Witnessed'
+        - 'LEC01-Toxic Substance: Happened'
+        - 'LEC01-Toxic Substance: Job'
+        - 'LEC01-Toxic Substance: Learned'
+        - 'LEC01-Toxic Substance: Not Apply'
+        - 'LEC01-Toxic Substance: Not Sure'
+        - 'LEC01-Toxic Substance: Witnessed'
+        - 'LEC01-Transportation Accident: Happened'
+        - 'LEC01-Transportation Accident: Job'
+        - 'LEC01-Transportation Accident: Learned'
+        - 'LEC01-Transportation Accident: Not Apply'
+        - 'LEC01-Transportation Accident: Not Sure'
+        - 'LEC01-Transportation Accident: Witnessed'
+        - 'LEC01-Unwanted Sex Experience: Happened'
+        - 'LEC01-Unwanted Sex Experience: Job'
+        - 'LEC01-Unwanted Sex Experience: Learned'
+        - 'LEC01-Unwanted Sex Experience: Not Apply'
+        - 'LEC01-Unwanted Sex Experience: Not Sure'
+        - 'LEC01-Unwanted Sex Experience: Witnessed'
+outcome:
+  message: Value not found in non-extensible codelist Life Events Checklist for DSM-5
+    Standard Version Questionnaire Test Name (C135689)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C135689
+  codelist_name: Life Events Checklist for DSM-5 Standard Version Questionnaire Test
+    Name
+  codelist_submission_value: LEC01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 102
+

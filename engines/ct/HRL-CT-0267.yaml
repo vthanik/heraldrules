@@ -1,0 +1,35 @@
+id: HRL-CT-0267
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CADSYMP (Coronary Artery Disease Symptoms) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CADSYMP
+      operator: in
+      value:
+        - ATYPICAL CORONARY ARTERY DISEASE SYMPTOMS
+        - NO SYMPTOMS
+        - NON-CARDIAC CHEST PAIN
+        - TYPICAL CORONARY ARTERY DISEASE SYMPTOMS
+outcome:
+  message: Value not found in non-extensible codelist Coronary Artery Disease Symptoms
+    (C101844)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101844
+  codelist_name: Coronary Artery Disease Symptoms
+  codelist_submission_value: CADSYMP
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

@@ -1,0 +1,52 @@
+id: HRL-CT-0896
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: QIDSR1TC (Quick Inventory of Depressive Symptomatology Self-Report Version
+  Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: QIDSR1TC
+      operator: in
+      value:
+        - QIDSR101
+        - QIDSR102
+        - QIDSR103
+        - QIDSR104
+        - QIDSR105
+        - QIDSR106
+        - QIDSR107
+        - QIDSR108
+        - QIDSR109
+        - QIDSR110
+        - QIDSR111
+        - QIDSR112
+        - QIDSR113
+        - QIDSR114
+        - QIDSR115
+        - QIDSR116
+        - QIDSR117
+        - QIDSR118
+        - QIDSR119
+        - QIDSR120
+outcome:
+  message: Value not found in non-extensible codelist Quick Inventory of Depressive
+    Symptomatology Self-Report Version Questionnaire Test Code (C130263)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130263
+  codelist_name: Quick Inventory of Depressive Symptomatology Self-Report Version
+    Questionnaire Test Code
+  codelist_submission_value: QIDSR1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 20
+

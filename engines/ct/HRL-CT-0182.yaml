@@ -1,0 +1,38 @@
+id: HRL-CT-0182
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CELSTATE (Cell State Response) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CELSTATE
+      operator: in
+      value:
+        - ACTIVATED
+        - APOPTOTIC
+        - EXHAUSTED
+        - NON-PROLIFERATING
+        - NON-VIABLE
+        - PROLIFERATING
+        - SENESCENT
+        - VIABLE
+outcome:
+  message: Value not found in extensible codelist Cell State Response (C181172)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C181172
+  codelist_name: Cell State Response
+  codelist_submission_value: CELSTATE
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 8
+

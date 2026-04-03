@@ -1,0 +1,33 @@
+id: HRL-CT-1020
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: STCG01TC (Stent Thrombosis Coronary ARC Grade Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: STCG01TC
+      operator: in
+      value:
+        - STCG0101
+outcome:
+  message: Value not found in non-extensible codelist Stent Thrombosis Coronary ARC
+    Grade Clinical Classification Test Code (C119080)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C119080
+  codelist_name: Stent Thrombosis Coronary ARC Grade Clinical Classification Test
+    Code
+  codelist_submission_value: STCG01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

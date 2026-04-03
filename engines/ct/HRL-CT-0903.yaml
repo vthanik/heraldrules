@@ -1,0 +1,50 @@
+id: HRL-CT-0903
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RSSS01TN (RAND Social Support Survey Instrument Questionnaire Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RSSS01TN
+      operator: in
+      value:
+        - RSSS01-Advice You Really Want
+        - RSSS01-Confide in/Talk to About Yourself
+        - RSSS01-Count on to Listen to You
+        - RSSS01-Do Something Enjoyable With
+        - RSSS01-Get Together With for Relaxation
+        - RSSS01-Give You Advice About a Crisis
+        - RSSS01-Give You Info to Help Understand
+        - RSSS01-Have a Good Time With
+        - RSSS01-Help If You Were Confined to Bed
+        - RSSS01-Help With Daily Chores If Sick
+        - RSSS01-Help You Get Your Mind Off Things
+        - RSSS01-Hugs You
+        - RSSS01-Love and Make You Feel Wanted
+        - RSSS01-Prepare Your Meals If Unable
+        - RSSS01-Share Your Private Worries/Fears
+        - RSSS01-Shows You Love and Affection
+        - RSSS01-Take You to the Doctor If Needed
+        - RSSS01-Turn to Suggestions Personal Prob
+        - RSSS01-Understands Your Problems
+outcome:
+  message: Value not found in non-extensible codelist RAND Social Support Survey Instrument
+    Questionnaire Test Name (C135699)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C135699
+  codelist_name: RAND Social Support Survey Instrument Questionnaire Test Name
+  codelist_submission_value: RSSS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 19
+

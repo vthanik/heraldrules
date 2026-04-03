@@ -1,0 +1,33 @@
+id: HRL-CT-1055
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TANN01TC (Tanner Scale Girl Clinical Classification Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TANN01TC
+      operator: in
+      value:
+        - TANN0101
+        - TANN0102
+outcome:
+  message: Value not found in non-extensible codelist Tanner Scale Girl Clinical Classification
+    Test Code (C124664)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124664
+  codelist_name: Tanner Scale Girl Clinical Classification Test Code
+  codelist_submission_value: TANN01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 2
+

@@ -1,0 +1,58 @@
+id: HRL-CT-0944
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SOAPR1TC (Screener and Opioid Assessment for Patients with Pain - Revised
+  Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SOAPR1TC
+      operator: in
+      value:
+        - SOAPR101
+        - SOAPR102
+        - SOAPR103
+        - SOAPR104
+        - SOAPR105
+        - SOAPR106
+        - SOAPR107
+        - SOAPR108
+        - SOAPR109
+        - SOAPR110
+        - SOAPR111
+        - SOAPR112
+        - SOAPR113
+        - SOAPR114
+        - SOAPR115
+        - SOAPR116
+        - SOAPR117
+        - SOAPR118
+        - SOAPR119
+        - SOAPR120
+        - SOAPR121
+        - SOAPR122
+        - SOAPR123
+        - SOAPR124
+        - SOAPR125
+        - SOAPR126
+outcome:
+  message: Value not found in non-extensible codelist Screener and Opioid Assessment
+    for Patients with Pain - Revised Questionnaire Test Code (C100160)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100160
+  codelist_name: Screener and Opioid Assessment for Patients with Pain - Revised Questionnaire
+    Test Code
+  codelist_submission_value: SOAPR1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 26
+

@@ -1,0 +1,60 @@
+id: HRL-CT-0872
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PA261TN (PROMIS-29 Profile v2.1 Questionnaire Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PA261TN
+      operator: in
+      value:
+        - PA261-Able Do Chores Such as Vacuuming
+        - PA261-Able to Run Errands and Shop
+        - PA261-Able Up & Down Stairs Normal Pace
+        - PA261-Able Walk at Least 15 Minutes
+        - PA261-Hard Focus Anything Other Anxiety
+        - PA261-How Fatigued on Average
+        - PA261-How Run-down Feel on Average
+        - PA261-How You Rate Your Pain on Average
+        - PA261-I Feel Fatigued
+        - PA261-I Felt Depressed
+        - PA261-I Felt Fearful
+        - PA261-I Felt Helpless
+        - PA261-I Felt Hopeless
+        - PA261-I Felt Uneasy
+        - PA261-I Felt Worthless
+        - PA261-I Had a Problem With My Sleep
+        - PA261-I Had Difficulty Falling Asleep
+        - PA261-My Sleep Quality Was
+        - PA261-My Sleep Was Refreshing
+        - PA261-My Worries Overwhelmed Me
+        - PA261-Pain Interfere Day to Day Activ
+        - PA261-Pain Interfere Household Chores
+        - PA261-Pain Interfere Participate Social
+        - PA261-Pain Interfere Work Around Home
+        - PA261-Trouble Doing Activities Friends
+        - PA261-Trouble Doing All of My Usual Work
+        - PA261-Trouble Doing Family Activities
+        - PA261-Trouble Leisure Activities Others
+        - PA261-Trouble Starting Things I Am Tired
+outcome:
+  message: Value not found in non-extensible codelist PROMIS-29 Profile v2.1 Questionnaire
+    Test Name (C208377)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C208377
+  codelist_name: PROMIS-29 Profile v2.1 Questionnaire Test Name
+  codelist_submission_value: PA261TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 29
+

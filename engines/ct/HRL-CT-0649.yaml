@@ -1,0 +1,68 @@
+id: HRL-CT-0649
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MNSI1TN (Michigan Neuropathy Screening Instrument Questionnaire Test
+  Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MNSI1TN
+      operator: in
+      value:
+        - MNSI1-Able to Sense Feet When Walking
+        - MNSI1-Able to Tell Hot from Cold Water
+        - MNSI1-Are Feet Too Sensitive to Touch
+        - MNSI1-Are Your Legs and/or Feet Numb
+        - MNSI1-Doctor Says Diabetic Neuropathy
+        - MNSI1-Ever Had Amputation
+        - MNSI1-Ever Had Open Sore on Foot
+        - MNSI1-Ever Have Burning Pain Legs/Feet
+        - MNSI1-Ever Prickling Feelings Legs/Feet
+        - MNSI1-Feel Weak All Over Most Times
+        - MNSI1-Get Muscle Cramps Legs/Feet
+        - MNSI1-Hurt When Bed Covers Touch Skin
+        - MNSI1-Left Ankle Reflexes
+        - MNSI1-Left Foot Appears Normal
+        - MNSI1-Left Foot Deformities
+        - MNSI1-Left Foot Dry Skin, Callus
+        - MNSI1-Left Foot Fissure
+        - MNSI1-Left Foot Infection
+        - MNSI1-Left Foot Monofilament
+        - MNSI1-Left Foot Other Abnormal Specify
+        - MNSI1-Left Foot Ulceration
+        - MNSI1-Left Foot Vibration Great Toe
+        - MNSI1-Legs Hurt When Walking
+        - MNSI1-Right Ankle Reflexes
+        - MNSI1-Right Foot Appears Normal
+        - MNSI1-Right Foot Deformities
+        - MNSI1-Right Foot Dry Skin, Callus
+        - MNSI1-Right Foot Fissure
+        - MNSI1-Right Foot Infection
+        - MNSI1-Right Foot Monofilament
+        - MNSI1-Right Foot Other Abnormal Specify
+        - MNSI1-Right Foot Ulceration
+        - MNSI1-Right Foot Vibration Great Toe
+        - MNSI1-Skin So Dry That Feet Crack Open
+        - MNSI1-Symptoms Worse at Night
+        - MNSI1-Total Score
+        - MNSI1-Total
+outcome:
+  message: Value not found in non-extensible codelist Michigan Neuropathy Screening
+    Instrument Questionnaire Test Name (C100151)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100151
+  codelist_name: Michigan Neuropathy Screening Instrument Questionnaire Test Name
+  codelist_submission_value: MNSI1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 37
+

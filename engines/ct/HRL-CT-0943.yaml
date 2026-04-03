@@ -1,0 +1,42 @@
+id: HRL-CT-0943
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SZFATS (Schizophrenia Findings About Test Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SZFATS
+      operator: in
+      value:
+        - Age At First Episode
+        - Age At First Hospitalization
+        - Age At First Treatment
+        - Clinic Stay Indicator
+        - Longitudinal Course
+        - Most Severe Acute Stressor
+        - Most Severe Chronic Stressor
+        - Number of Episodes
+        - Number Of Hospitalizations
+        - Occurrence Indicator
+        - Treatment Setting
+outcome:
+  message: Value not found in extensible codelist Schizophrenia Findings About Test
+    Name (C124303)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124303
+  codelist_name: Schizophrenia Findings About Test Name
+  codelist_submission_value: SZFATS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 11
+

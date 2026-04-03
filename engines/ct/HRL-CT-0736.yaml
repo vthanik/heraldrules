@@ -1,0 +1,33 @@
+id: HRL-CT-0736
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: NY (No Yes Response) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: NY
+      operator: in
+      value:
+        - 'N'
+        - NA
+        - U
+        - 'Y'
+outcome:
+  message: Value not found in non-extensible codelist No Yes Response (C66742)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C66742
+  codelist_name: No Yes Response
+  codelist_submission_value: NY
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

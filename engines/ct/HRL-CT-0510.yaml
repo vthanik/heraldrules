@@ -1,0 +1,37 @@
+id: HRL-CT-0510
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HAMA101T14OR (Hamilton Anxiety Rating Scale Clinical Classification ORRES
+  for HAMA101 Through HAMA114 TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HAMA101T14OR
+      operator: in
+      value:
+        - Mild
+        - Moderate
+        - Not present
+        - Severe
+        - Very severe
+outcome:
+  message: Value not found in non-extensible codelist Hamilton Anxiety Rating Scale
+    Clinical Classification ORRES for HAMA101 Through HAMA114 TN/TC (C182468)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C182468
+  codelist_name: Hamilton Anxiety Rating Scale Clinical Classification ORRES for HAMA101
+    Through HAMA114 TN/TC
+  codelist_submission_value: HAMA101T14OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

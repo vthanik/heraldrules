@@ -1,0 +1,53 @@
+id: HRL-CT-0895
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: QIDSC1TN (Quick Inventory of Depressive Symptomatology Clinician-Rated
+  Version Clinical Classification Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: QIDSC1TN
+      operator: in
+      value:
+        - QIDSC1-Appetite (Decreased)
+        - QIDSC1-Appetite (Increased)
+        - QIDSC1-Concentration/Decision Making
+        - QIDSC1-Early Morning Insomnia
+        - QIDSC1-Energy/Fatiguability
+        - QIDSC1-High Score Appetite/Weight Items
+        - QIDSC1-Highest Score Psychomotor Items
+        - QIDSC1-Highest Score Sleep Items
+        - QIDSC1-Hypersomnia
+        - QIDSC1-Involvement
+        - QIDSC1-Mid-Nocturnal Insomnia
+        - QIDSC1-Mood (Sad)
+        - QIDSC1-Outlook (Self)
+        - QIDSC1-Psychomotor Agitation
+        - QIDSC1-Psychomotor Slowing
+        - QIDSC1-Sleep Onset Insomnia
+        - QIDSC1-Suicidal Ideation
+        - QIDSC1-Total Score
+        - QIDSC1-Weight (Decrease)
+        - QIDSC1-Weight (Increase)
+outcome:
+  message: Value not found in non-extensible codelist Quick Inventory of Depressive
+    Symptomatology Clinician-Rated Version Clinical Classification Test Name (C130248)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130248
+  codelist_name: Quick Inventory of Depressive Symptomatology Clinician-Rated Version
+    Clinical Classification Test Name
+  codelist_submission_value: QIDSC1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 20
+

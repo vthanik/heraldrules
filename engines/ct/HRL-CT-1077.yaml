@@ -1,0 +1,64 @@
+id: HRL-CT-1077
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: OABQ01TN (The Overactive Bladder Questionnaire Questionnaire Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: OABQ01TN
+      operator: in
+      value:
+        - OABQ01-Accidental Loss of Urine
+        - OABQ01-Adjust Travel Plans Near Restroom
+        - OABQ01-Affected Relationships
+        - OABQ01-Amount of Time Spend in Restroom
+        - OABQ01-Avoid Act Away From Restroom
+        - OABQ01-Awakened You During Sleep
+        - OABQ01-Carefully Plan Your Commute
+        - OABQ01-Caused Problems Partner/Spouse
+        - OABQ01-Caused You Anxiety or Worry
+        - OABQ01-Caused You Distress
+        - OABQ01-Caused You Embarrassment
+        - OABQ01-Decrease Participating Gatherings
+        - OABQ01-Decrease Your Physical Activities
+        - OABQ01-Feel Drowsy or Sleepy During Day
+        - OABQ01-Feel Something Wrong with You
+        - OABQ01-Frequent Urination During Daytime
+        - OABQ01-Frustrated Family and Friends
+        - OABQ01-Frustrated You
+        - OABQ01-Interfered with Getting Sleep
+        - OABQ01-Interfered with Good Night's Rest
+        - OABQ01-Locate Closest Restroom
+        - OABQ01-Nighttime Urination
+        - OABQ01-Plan 'Escape Routes' to Restrooms
+        - OABQ01-Plan Activities More Carefully
+        - OABQ01-Prevented From Feeling Rested
+        - OABQ01-Stay Home More Often Than Prefer
+        - OABQ01-Sudden Urge to Urinate No Warning
+        - OABQ01-Uncomfortable Travel with Others
+        - OABQ01-Uncomfortable Urge to Urinate
+        - OABQ01-Uncontrollable Urge to Urinate
+        - OABQ01-Urine Loss Strong Desire Urinate
+        - OABQ01-Waking Up at Night had to Urinate
+        - OABQ01-Worry About Odor or Hygiene
+outcome:
+  message: Value not found in non-extensible codelist The Overactive Bladder Questionnaire
+    Questionnaire Test Name (C103474)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103474
+  codelist_name: The Overactive Bladder Questionnaire Questionnaire Test Name
+  codelist_submission_value: OABQ01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 33
+

@@ -1,0 +1,95 @@
+id: HRL-CT-0397
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EVAL (Evaluator) must contain valid extensible codelist terms (new terms
+  allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EVAL
+      operator: in
+      value:
+        - ADJUDICATION COMMITTEE
+        - ADJUDICATOR
+        - AUDIOLOGIST
+        - CARDIOLOGIST
+        - CAREGIVER
+        - CERTIFIED ASSESSOR
+        - CHILD
+        - CLINICAL PATHOLOGIST
+        - CLINICAL RESEARCH ASSOCIATE
+        - CLINICAL RESEARCH COORDINATOR
+        - CLINICAL STUDY SPONSOR
+        - DERMATOLOGIST
+        - DEVELOPMENTAL BEHAVIORAL PEDIATRICIAN
+        - DEVELOPMENTAL PSYCHOLOGIST
+        - DOMESTIC PARTNER
+        - ENDOCRINOLOGIST
+        - EPIDEMIOLOGIST
+        - FAMILY MEMBER
+        - FAMILY PRACTITIONER
+        - FORENSIC PATHOLOGIST
+        - FRIEND
+        - GUARDIAN
+        - GYNECOLOGIST
+        - HEALTH CARE PROFESSIONAL
+        - HEMATOLOGIST
+        - INDEPENDENT ASSESSOR
+        - INTERNIST
+        - INTERVIEWER
+        - INVESTIGATOR
+        - MICROSCOPIST
+        - MIDWIFE
+        - NEUROLOGIST
+        - NEUROONCOLOGIST
+        - NEURORADIOLOGIST
+        - NON-HEALTH CARE PROFESSIONAL
+        - NUCLEAR MEDICINE PHYSICIAN
+        - NURSE PRACTITIONER
+        - OBSTETRICIAN
+        - ONCOLOGIST
+        - OPHTHALMOLOGIST
+        - OPTOMETRIST
+        - OTOLARYNGOLOGIST
+        - PARENT
+        - PATHOLOGIST
+        - PEDIATRIC CARDIOLOGIST
+        - PEDIATRIC NEUROLOGIST
+        - PEDIATRICIAN
+        - PHARMACOKINETICIST
+        - PHYSIOTHERAPIST
+        - PRIMARY CARE PHYSICIAN
+        - PRINCIPAL INVESTIGATOR
+        - PROXY
+        - RADIOLOGIST
+        - RATER
+        - READER
+        - SIBLING
+        - SIGNIFICANT OTHER
+        - SONOGRAPHER
+        - SPOUSE
+        - STATISTICIAN
+        - STUDY PHYSICIAN
+        - STUDY SUBJECT
+        - SUBINVESTIGATOR
+        - UROLOGIST
+        - VENDOR
+outcome:
+  message: Value not found in extensible codelist Evaluator (C78735)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C78735
+  codelist_name: Evaluator
+  codelist_submission_value: EVAL
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 65
+

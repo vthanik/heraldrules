@@ -1,0 +1,49 @@
+id: HRL-CT-0885
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: QRSMTHOD (QRS Method) must contain valid extensible codelist terms (new
+  terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: QRSMTHOD
+      operator: in
+      value:
+        - LIKERT SCALE 3-POINT
+        - LIKERT SCALE 5-POINT
+        - LIKERT SCALE 7-POINT
+        - NUMERICAL RATING SCALE 10-POINT
+        - NUMERICAL RATING SCALE 11-POINT
+        - NUMERICAL RATING SCALE 21-POINT
+        - NUMERICAL RATING SCALE 5-POINT
+        - NUMERICAL RATING SCALE 6-POINT
+        - NUMERICAL RATING SCALE 7-POINT
+        - VERBAL RATING SCALE 4-POINT
+        - VERBAL RATING SCALE 5-POINT
+        - VERBAL RATING SCALE 6-POINT
+        - VISUAL ANALOG SCALE (0-100)
+        - VISUAL ANALOG SCALE (1-10)
+        - VISUAL ANALOG SCALE (1-100)
+        - VISUAL ANALOG SCALE (1-50)
+        - VISUAL ANALOG SCALE (10 CM)
+        - VISUAL ANALOG SCALE (100 MM)
+        - VISUAL ANALOG SCALE (50 MM)
+outcome:
+  message: Value not found in extensible codelist QRS Method (C158113)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C158113
+  codelist_name: QRS Method
+  codelist_submission_value: QRSMTHOD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 19
+

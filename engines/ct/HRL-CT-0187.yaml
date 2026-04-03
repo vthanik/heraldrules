@@ -1,0 +1,35 @@
+id: HRL-CT-0187
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CPS0105AOR (Child-Pugh Classification Clinical Classification ORRES for
+  CPS0105A TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CPS0105AOR
+      operator: in
+      value:
+        - 4 to 6
+        - <4
+        - '>6'
+outcome:
+  message: Value not found in non-extensible codelist Child-Pugh Classification Clinical
+    Classification ORRES for CPS0105A TN/TC (C208387)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C208387
+  codelist_name: Child-Pugh Classification Clinical Classification ORRES for CPS0105A
+    TN/TC
+  codelist_submission_value: CPS0105AOR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 3
+

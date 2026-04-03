@@ -1,0 +1,58 @@
+id: HRL-CT-0389
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR28TC (European Organization for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Non-Muscle-Invasive Bladder Cancer 24 Items Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR28TC
+      operator: in
+      value:
+        - EOR2831
+        - EOR2832
+        - EOR2833
+        - EOR2834
+        - EOR2835
+        - EOR2836
+        - EOR2837
+        - EOR2838
+        - EOR2839
+        - EOR2840
+        - EOR2841
+        - EOR2842
+        - EOR2843
+        - EOR2844
+        - EOR2845
+        - EOR2846
+        - EOR2847
+        - EOR2848
+        - EOR2849
+        - EOR2850
+        - EOR2851
+        - EOR2852
+        - EOR2853
+        - EOR2854
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Non-Muscle-Invasive
+    Bladder Cancer 24 Items Test Code (C219731)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219731
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Non-Muscle-Invasive Bladder Cancer 24 Items Test Code
+  codelist_submission_value: EOR28TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 24
+

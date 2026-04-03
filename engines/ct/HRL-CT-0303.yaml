@@ -1,0 +1,97 @@
+id: HRL-CT-0303
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DUTEST (Device-In-Use Test Name) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DUTEST
+      operator: in
+      value:
+        - Anatomical Plane
+        - Attenuation Correction Type
+        - Carbohydrate to Insulin Ratio Setting
+        - Checkerboard Square Size
+        - Coil Strength
+        - Continuous Audio Recording Indicator
+        - Decay Correction Indicator
+        - Echo Time
+        - Field of View
+        - Flip Angle
+        - Glucose Alert Threshold
+        - Glucose Target Level
+        - Image Acquisition Dimensionality
+        - Image Acquisition Matrix Size
+        - Image Weighting Type
+        - Insulin Delivery Automation Mode
+        - Interslice Distance
+        - Inversion Time
+        - Maximum Bolus
+        - Missed Bolus Reminder Status
+        - Number of Coil Channels
+        - Number of ECG Electrodes
+        - Number of EEG Electrodes
+        - Number of EMG Electrodes
+        - Number of EOG Electrodes
+        - Number of Puffs
+        - Number of Slices
+        - Number of Unsuppressed Water Averages
+        - Positive End Expiratory Pressure Setting
+        - Pressure Support Setting
+        - Puff Block
+        - Puff Duration
+        - Puff Interval
+        - Puff Pause Interval
+        - Puff Pause
+        - Puff Profile
+        - Puff Range
+        - Puff Volume
+        - Pulse Oximeter Indicator
+        - Pulse Sequence
+        - Randoms Correction Indicator
+        - Receiver Bandwidth
+        - Reconstruction Filter Type
+        - Reconstruction of Raw Data Type
+        - Reference Equation
+        - Repetition Time
+        - Respiratory Rate Setting
+        - Signal Amplitude
+        - Signal Frequency
+        - Signal Width
+        - Slice Number
+        - Slice Thickness
+        - Software Version
+        - Spectral Width
+        - STEAM Pulse Sequence Mixing Time
+        - Stimulation Parameter
+        - Tidal Volume Setting
+        - Treatment Amount
+        - Ultrasound Mode
+        - Ventilator Mode
+        - Voxel Orientation
+        - Water Signal Suppression Method
+        - X-axis Pixel Spacing
+        - X-Axis Voxel Dimension
+        - Y-axis Pixel Spacing
+        - Y-Axis Voxel Dimension
+        - Z-Axis Voxel Dimension
+outcome:
+  message: Value not found in extensible codelist Device-In-Use Test Name (C106482)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106482
+  codelist_name: Device-In-Use Test Name
+  codelist_submission_value: DUTEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 67
+

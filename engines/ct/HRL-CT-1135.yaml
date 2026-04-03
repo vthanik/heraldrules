@@ -1,0 +1,53 @@
+id: HRL-CT-1135
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TRPROPRS (Tumor or Lesion Properties Test Result) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TRPROPRS
+      operator: in
+      value:
+        - ABSENT
+        - DECREASED
+        - DIFFUSELY INCREASED
+        - ENLARGEMENT FROM NADIR
+        - ENLARGEMENT
+        - EQUIVOCAL
+        - FOCALLY INCREASED
+        - FURTHER ENLARGEMENT FROM NADIR
+        - FURTHER ENLARGEMENT
+        - INCREASED
+        - NE
+        - NEGATIVE
+        - NON-PATHOLOGICAL
+        - NONPALPABLE
+        - NORMAL
+        - PALPABLE
+        - PATHOLOGICAL
+        - POSITIVE
+        - PRESENT
+        - TUMOR MERGED
+        - UNCHANGED
+        - UNEQUIVOCAL
+outcome:
+  message: Value not found in extensible codelist Tumor or Lesion Properties Test
+    Result (C124309)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124309
+  codelist_name: Tumor or Lesion Properties Test Result
+  codelist_submission_value: TRPROPRS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 22
+

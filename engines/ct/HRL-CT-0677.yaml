@@ -1,0 +1,52 @@
+id: HRL-CT-0677
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MFIS01TN (Modified Fatigue Impact Scale Questionnaire Test Name) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MFIS01TN
+      operator: in
+      value:
+        - MFIS01-Been Clumsy and Uncoordinated
+        - MFIS01-Been Physically Uncomfortable
+        - MFIS01-Difficulty Organizing My Thoughts
+        - MFIS01-Have Been Unable to Think Clearly
+        - MFIS01-Have Difficulty Making Decisions
+        - MFIS01-Have Difficulty Paying Attention
+        - MFIS01-Have Limited My Physical Activity
+        - MFIS01-I Have Been Forgetful
+        - MFIS01-I Have Been Less Alert
+        - MFIS01-I Have Had Trouble Concentrating
+        - MFIS01-Less Able Complete Physical Tasks
+        - MFIS01-Less Motivated, Physical Effort
+        - MFIS01-Less Motivated, Social Activity
+        - MFIS01-Less Motivated, Thinking
+        - MFIS01-Limited in Ability Away From Home
+        - MFIS01-My Muscles Have Felt Weak
+        - MFIS01-My Thinking Has Been Slowed Down
+        - MFIS01-Need to Rest More Often or Longer
+        - MFIS01-Pace Myself in Physical Activity
+        - MFIS01-Trouble Finishing Thinking Tasks
+        - MFIS01-Trouble Maintain Physical Effort
+outcome:
+  message: Value not found in non-extensible codelist Modified Fatigue Impact Scale
+    Questionnaire Test Name (C113857)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C113857
+  codelist_name: Modified Fatigue Impact Scale Questionnaire Test Name
+  codelist_submission_value: MFIS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 21
+

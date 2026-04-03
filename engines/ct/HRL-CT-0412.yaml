@@ -1,0 +1,42 @@
+id: HRL-CT-0412
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FES01TC (Falls Efficacy Scale Questionnaire Test Code) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FES01TC
+      operator: in
+      value:
+        - FES0101
+        - FES0102
+        - FES0103
+        - FES0104
+        - FES0105
+        - FES0106
+        - FES0107
+        - FES0108
+        - FES0109
+        - FES0110
+        - FES0111
+outcome:
+  message: Value not found in non-extensible codelist Falls Efficacy Scale Questionnaire
+    Test Code (C193276)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C193276
+  codelist_name: Falls Efficacy Scale Questionnaire Test Code
+  codelist_submission_value: FES01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 11
+

@@ -1,0 +1,33 @@
+id: HRL-CT-1025
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DSSCAT (Subcategory for Disposition Event) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DSSCAT
+      operator: in
+      value:
+        - STUDY PARTICIPATION
+        - STUDY TREATMENT
+outcome:
+  message: Value not found in extensible codelist Subcategory for Disposition Event
+    (C170443)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C170443
+  codelist_name: Subcategory for Disposition Event
+  codelist_submission_value: DSSCAT
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 2
+

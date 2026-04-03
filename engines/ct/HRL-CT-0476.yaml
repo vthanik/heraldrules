@@ -1,0 +1,33 @@
+id: HRL-CT-0476
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC101TN (Functional Assessment of Chronic Illness Therapy-Item GP5 Version
+  4 Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC101TN
+      operator: in
+      value:
+        - FAC101-Bothered by Treatment Side Effect
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Chronic
+    Illness Therapy-Item GP5 Version 4 Questionnaire Test Name (C199492)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C199492
+  codelist_name: Functional Assessment of Chronic Illness Therapy-Item GP5 Version
+    4 Questionnaire Test Name
+  codelist_submission_value: FAC101TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

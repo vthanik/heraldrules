@@ -1,0 +1,61 @@
+id: HRL-CT-0282
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CHSF2TC (Craig Handicap Assessment and Reporting Technique - Short Form
+  Paper Version Questionnaire Test Code) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CHSF2TC
+      operator: in
+      value:
+        - CHSF201A
+        - CHSF201B
+        - CHSF202
+        - CHSF203
+        - CHSF204
+        - CHSF205
+        - CHSF206
+        - CHSF207A
+        - CHSF207B
+        - CHSF208
+        - CHSF209
+        - CHSF210
+        - CHSF211
+        - CHSF212
+        - CHSF213
+        - CHSF214
+        - CHSF215
+        - CHSF216
+        - CHSF217
+        - CHSF218
+        - CHSF219
+        - CHSF220
+        - CHSF221
+        - CHSF222
+        - CHSF223
+        - CHSF224
+        - CHSF225
+        - CHSF226
+outcome:
+  message: Value not found in non-extensible codelist Craig Handicap Assessment and
+    Reporting Technique - Short Form Paper Version Questionnaire Test Code (C119068)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C119068
+  codelist_name: Craig Handicap Assessment and Reporting Technique - Short Form Paper
+    Version Questionnaire Test Code
+  codelist_submission_value: CHSF2TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 28
+

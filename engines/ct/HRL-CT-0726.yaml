@@ -1,0 +1,118 @@
+id: HRL-CT-0726
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: NVTESTCD (Nervous System Findings Test Code) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: NVTESTCD
+      operator: in
+      value:
+        - ABRIAL
+        - ABRVA
+        - ABRVAL
+        - ABRVP
+        - ATNRFX
+        - BLDFLRT
+        - BODMVT
+        - BODMVTSP
+        - BRADYKIN
+        - BSI
+        - CHOCTN
+        - CHOLINE
+        - CRAWLABL
+        - CREATINE
+        - CTNCH
+        - CTNPCTN
+        - DYSESTHE
+        - DYSTONIA
+        - FACSYM
+        - FCGPCPC
+        - GLMC4
+        - GLMC4GLM
+        - GLN
+        - GLNC4
+        - GLNC4GLN
+        - GLNCTN
+        - GLNTRFX
+        - GLUCTN
+        - GLUTAM
+        - GLX
+        - GLXC3
+        - GLXC3GLX
+        - GLXCYR
+        - GPCPC
+        - GRAESTHE
+        - INOSM
+        - INOSMCTN
+        - LACCTN
+        - MORORFX
+        - MSCLTONE
+        - MSCSTR
+        - MUSCRIG
+        - N145LAT
+        - N1SLPDUR
+        - N1SLPTST
+        - N2SLPDUR
+        - N2SLPTST
+        - N3SLPDUR
+        - N3SLPTST
+        - N75LAT
+        - NAA
+        - NAACHO
+        - NAACTN
+        - NAACTNCH
+        - NAANAAG
+        - NVEXAM
+        - NYSTGMS
+        - OHEARAS
+        - P100AMP
+        - P100LAT
+        - PEAKRA
+        - PEAKRAL
+        - PHYSCORD
+        - PLMGRRFX
+        - PLTGRRFX
+        - REFLEX
+        - REMDUR
+        - REMLAT
+        - REMTST
+        - ROOTRFX
+        - SE
+        - SKNCUDNC
+        - SOL
+        - STANDABL
+        - STEPRFX
+        - SUCKRFX
+        - SUV
+        - SUVR
+        - TCACYR
+        - THICK
+        - TREMOR
+        - TREMPSTR
+        - TREMREST
+        - TST
+        - VOLUME
+        - WALKABL
+        - WASO
+outcome:
+  message: Value not found in extensible codelist Nervous System Findings Test Code
+    (C116104)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C116104
+  codelist_name: Nervous System Findings Test Code
+  codelist_submission_value: NVTESTCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 87
+

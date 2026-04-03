@@ -1,0 +1,47 @@
+id: HRL-CT-0436
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC029TN (Functional Assessment of Cancer Therapy-Brain Symptom Index
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC029TN
+      operator: in
+      value:
+        - FAC029-Able to Find the Right Words
+        - FAC029-Difficulty Expressing My Thoughts
+        - FAC029-Frustrated I Cannot Do Things
+        - FAC029-Have Weakness in My Arms or Legs
+        - FAC029-I Am Able to Enjoy Life
+        - FAC029-I Am Afraid of Having a Seizure
+        - FAC029-I Get Headaches
+        - FAC029-I Have a Lack of Energy
+        - FAC029-I Have Had Seizures
+        - FAC029-I Have Nausea
+        - FAC029-I Have Trouble With Coordination
+        - FAC029-I Need Help in Caring for Myself
+        - FAC029-Losing Hope Against Illness
+        - FAC029-Trouble Meeting Needs of Family
+        - FAC029-Worry My Condition Will Get Worse
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Brain Symptom Index Questionnaire Test Name (C138220)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138220
+  codelist_name: Functional Assessment of Cancer Therapy-Brain Symptom Index Questionnaire
+    Test Name
+  codelist_submission_value: FAC029TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 15
+

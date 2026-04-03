@@ -1,0 +1,36 @@
+id: HRL-CT-0490
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GCGI01TC (General Clinical Global Impressions Questionnaire Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GCGI01TC
+      operator: in
+      value:
+        - GCGI0101
+        - GCGI0102
+        - GCGI0103
+        - GCGI0104
+        - GCGI0105
+outcome:
+  message: Value not found in non-extensible codelist General Clinical Global Impressions
+    Questionnaire Test Code (C105138)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C105138
+  codelist_name: General Clinical Global Impressions Questionnaire Test Code
+  codelist_submission_value: GCGI01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

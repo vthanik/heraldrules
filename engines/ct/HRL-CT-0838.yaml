@@ -1,0 +1,43 @@
+id: HRL-CT-0838
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PSECD1TC (Penn State Electronic Cigarette Dependence Index Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PSECD1TC
+      operator: in
+      value:
+        - PSECD101
+        - PSECD102
+        - PSECD103
+        - PSECD104
+        - PSECD105
+        - PSECD106
+        - PSECD107
+        - PSECD108
+        - PSECD109
+        - PSECD110
+        - PSECD111
+outcome:
+  message: Value not found in non-extensible codelist Penn State Electronic Cigarette
+    Dependence Index Questionnaire Test Code (C204222)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204222
+  codelist_name: Penn State Electronic Cigarette Dependence Index Questionnaire Test
+    Code
+  codelist_submission_value: PSECD1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 11
+

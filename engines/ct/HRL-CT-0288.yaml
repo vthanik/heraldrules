@@ -1,0 +1,42 @@
+id: HRL-CT-0288
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CLTMDTYP (Culture Medium Type) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CLTMDTYP
+      operator: in
+      value:
+        - BLOOD AGAR
+        - CHROMOGENIC SELECTIVE MEDIUM
+        - CYCLOSERINE-CEFOXITIN FRUCTOSE AGAR
+        - KIRCHNER MEDIUM
+        - LOWENSTEIN JENSEN MEDIUM
+        - MB REDOX BROTH
+        - MIDDLEBROOK 7H10 AGAR
+        - MIDDLEBROOK 7H10S AGAR
+        - MIDDLEBROOK 7H11 AGAR
+        - MIDDLEBROOK 7H11S AGAR
+        - MIDDLEBROOK 7H12 BROTH
+        - MIDDLEBROOK 7H9 BROTH
+outcome:
+  message: Value not found in extensible codelist Culture Medium Type (C127264)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C127264
+  codelist_name: Culture Medium Type
+  codelist_submission_value: CLTMDTYP
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 12
+

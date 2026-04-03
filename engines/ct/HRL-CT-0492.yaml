@@ -1,0 +1,40 @@
+id: HRL-CT-0492
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GAD01TC (Generalized Anxiety Disorder - 7 Questionnaire Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GAD01TC
+      operator: in
+      value:
+        - GAD0101
+        - GAD0102
+        - GAD0103
+        - GAD0104
+        - GAD0105
+        - GAD0106
+        - GAD0107
+        - GAD0108
+        - GAD0109
+outcome:
+  message: Value not found in non-extensible codelist Generalized Anxiety Disorder
+    - 7 Questionnaire Test Code (C103467)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103467
+  codelist_name: Generalized Anxiety Disorder - 7 Questionnaire Test Code
+  codelist_submission_value: GAD01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 9
+

@@ -1,0 +1,44 @@
+id: HRL-CT-0532
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HBI01TC (Harvey-Bradshaw Index Clinical Classification Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HBI01TC
+      operator: in
+      value:
+        - HBI0101
+        - HBI0102
+        - HBI0103
+        - HBI0104
+        - HBI0105A
+        - HBI0105B
+        - HBI0105C
+        - HBI0105D
+        - HBI0105E
+        - HBI0105F
+        - HBI0105G
+        - HBI0105H
+        - HBI0106
+outcome:
+  message: Value not found in non-extensible codelist Harvey-Bradshaw Index Clinical
+    Classification Test Code (C190926)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C190926
+  codelist_name: Harvey-Bradshaw Index Clinical Classification Test Code
+  codelist_submission_value: HBI01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 13
+

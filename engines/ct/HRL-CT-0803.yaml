@@ -1,0 +1,58 @@
+id: HRL-CT-0803
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL15TN (Pediatric Quality of Life Neuromuscular Module Acute Version
+  3 Child Parent Report Questionnaire Test Name) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL15TN
+      operator: in
+      value:
+        - PQL15-Back Feels Stiff
+        - PQL15-Do Not Have Equipment Need
+        - PQL15-Family Has Lot of Problems
+        - PQL15-Feel Tired
+        - PQL15-Get Hurt Accidentally
+        - PQL15-Get Sick Easily
+        - PQL15-Get Sores and/or Rashes
+        - PQL15-Hands Are Weak
+        - PQL15-Hard Ask Doctors/Nurses Questions
+        - PQL15-Hard Explain Illness to People
+        - PQL15-Hard for Family to Plan Activities
+        - PQL15-Hard for Family to Rest
+        - PQL15-Hard Tell Doctors/Nurses How Feel
+        - PQL15-Hard to Breathe
+        - PQL15-Hard to Gain/Lose Weight
+        - PQL15-Hard to Go Places With Equipment
+        - PQL15-Hard to Swallow Food
+        - PQL15-Hard to Turn During Night
+        - PQL15-Hard to Use Bathroom
+        - PQL15-Hard to Use Hands
+        - PQL15-Legs Hurt
+        - PQL15-Long Time to Bathe/Shower
+        - PQL15-Money Problem in Our Family
+        - PQL15-Take Long Time to Eat
+        - PQL15-Wake Up Tired
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Acute Version 3 Child Parent Report Questionnaire Test Name (C138230)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138230
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Acute Version 3 Child
+    Parent Report Questionnaire Test Name
+  codelist_submission_value: PQL15TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

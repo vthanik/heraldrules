@@ -1,0 +1,58 @@
+id: HRL-CT-1065
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EPIC1TN (The Expanded Prostate Cancer Index Composite Short Form Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EPIC1TN
+      operator: in
+      value:
+        - EPIC1-Best Describes Urinary Control
+        - EPIC1-Frequency of Your Erections
+        - EPIC1-How Often Have You Leaked Urine
+        - EPIC1-Overall Problem Bowel Habits
+        - EPIC1-Overall Problem Sexual Function
+        - EPIC1-Overall Problem Urinary Function
+        - EPIC1-Pads or Adult Diapers per Day
+        - EPIC1-Problem Abdom/Pelvic/Rectal Pain
+        - EPIC1-Problem Bleeding With Urination
+        - EPIC1-Problem Bloody Stools
+        - EPIC1-Problem Breast Tender/Enlargement
+        - EPIC1-Problem Change in Body Weight
+        - EPIC1-Problem Dripping or Leaking Urine
+        - EPIC1-Problem Feeling Depressed
+        - EPIC1-Problem Hot Flashes
+        - EPIC1-Problem Increased Freq Bowel Move
+        - EPIC1-Problem Lack of Energy
+        - EPIC1-Problem Losing Control of Stools
+        - EPIC1-Problem Need to Urinate Frequently
+        - EPIC1-Problem Pain/Burning on Urination
+        - EPIC1-Problem Urgency of Bowel Movement
+        - EPIC1-Problem Weak Urine Stream/Emptying
+        - EPIC1-Quality of Your Erections
+        - EPIC1-Rate Ability to Function Sexually
+        - EPIC1-Rate Ability to Have an Erection
+        - EPIC1-Rate Ability to Reach Orgasm
+outcome:
+  message: Value not found in non-extensible codelist The Expanded Prostate Cancer
+    Index Composite Short Form Questionnaire Test Name (C127349)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C127349
+  codelist_name: The Expanded Prostate Cancer Index Composite Short Form Questionnaire
+    Test Name
+  codelist_submission_value: EPIC1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 26
+

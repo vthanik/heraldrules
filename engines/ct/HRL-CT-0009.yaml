@@ -1,0 +1,38 @@
+id: HRL-CT-0009
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: AIMS0101T07OR (Abnormal Involuntary Movement Scale Clinical Classification
+  ORRES for AIMS0101 Through AIMS0107 TN/TC) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: AIMS0101T07OR
+      operator: in
+      value:
+        - Mild
+        - Minimal, may be extreme normal
+        - Moderate
+        - None
+        - Severe
+outcome:
+  message: Value not found in non-extensible codelist Abnormal Involuntary Movement
+    Scale Clinical Classification ORRES for AIMS0101 Through AIMS0107 TN/TC (C182464)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C182464
+  codelist_name: Abnormal Involuntary Movement Scale Clinical Classification ORRES
+    for AIMS0101 Through AIMS0107 TN/TC
+  codelist_submission_value: AIMS0101T07OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

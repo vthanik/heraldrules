@@ -1,0 +1,35 @@
+id: HRL-CT-0002
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TENMW1TN (10-Meter Walk/Run Functional Test Test Name) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TENMW1TN
+      operator: in
+      value:
+        - TENMW1-Test Grade
+        - TENMW1-Time to Walk/Run 10 Meters
+        - TENMW1-Was Walk/Run Performed
+        - TENMW1-Wear Orthoses
+outcome:
+  message: Value not found in non-extensible codelist 10-Meter Walk/Run Functional
+    Test Test Name (C141656)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C141656
+  codelist_name: 10-Meter Walk/Run Functional Test Test Name
+  codelist_submission_value: TENMW1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

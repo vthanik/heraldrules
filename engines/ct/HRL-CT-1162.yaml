@@ -1,0 +1,33 @@
+id: HRL-CT-1162
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: WHIVS1TC (WHO Clinical Staging of HIV/AIDS for Adults and Adolescents
+  Clinical Classification Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: WHIVS1TC
+      operator: in
+      value:
+        - WHIVS101
+outcome:
+  message: Value not found in non-extensible codelist WHO Clinical Staging of HIV/AIDS
+    for Adults and Adolescents Clinical Classification Test Code (C124674)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124674
+  codelist_name: WHO Clinical Staging of HIV/AIDS for Adults and Adolescents Clinical
+    Classification Test Code
+  codelist_submission_value: WHIVS1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

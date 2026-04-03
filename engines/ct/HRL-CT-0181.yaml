@@ -1,0 +1,960 @@
+id: HRL-CT-0181
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CPTEST (Cell Phenotyping Test Name) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CPTEST
+      operator: in
+      value:
+        - Abn Blast Cells
+        - Abn Blast Cells/Total Cells
+        - Abn Kappa+ PC/Abn Lambda+ PC
+        - Abn Kappa+ Plasma Cells
+        - Abn Lambda+ Plasma Cells
+        - B-Lymphocytes
+        - B-Lymphocytes/Lymphocytes
+        - B-Lymphocytes/Total Cells
+        - Basophils Sub
+        - Basophils Sub/Basophils
+        - Basophils
+        - Basophils/Leukocytes
+        - BLym Ab-Secreting Sub/BLym AbSc
+        - BLym Ab-Secreting
+        - BLym Ab-Secreting/BLym
+        - BLym Ab-Secreting/BLymMSw
+        - BLym Ab-Secreting/Leuk
+        - BLym Aty Sub/BLym Aty Sub
+        - BLym Aty Sub/BLym Aty
+        - BLym Aty/BLym
+        - BLym B1 Sub
+        - BLym B1 Trans
+        - BLym B1
+        - BLym B1a
+        - BLym B1b
+        - BLym B2 Immat
+        - BLym B2 Mat
+        - BLym B2 Trans
+        - BLym Classic Mem Sub/BLym Classic Mem
+        - BLym Classic Mem/BLym
+        - BLym Classic MemSub/BLym Classic MemSub
+        - BLym Dbl Neg Sub
+        - BLym Dbl Neg Sub/BLym Dbl Neg
+        - BLym Dbl Neg Sub/BLym
+        - BLym Dbl Neg
+        - BLym Dbl Neg/BLym
+        - BLym Eff 1 Sub
+        - BLym Eff 1
+        - BLym Eff 2 Sub
+        - BLym Eff 2
+        - BLym Eff Sub
+        - BLym Eff
+        - BLym Foll Sub
+        - BLym Foll
+        - BLym Germ Ctr Sub
+        - BLym Germ Ctr
+        - BLym IgG+
+        - BLym IgG+/BLym
+        - BLym IgM+
+        - BLym IgM+/BLym
+        - BLym Immat
+        - BLym Marg Zn
+        - BLym Mat
+        - BLym Mem cB1
+        - BLym Mem cB2
+        - BLym Mem cB3
+        - BLym Mem Immat
+        - BLym Mem Mat
+        - BLym Mem NSw IgG+
+        - BLym Mem NSw IgG+/BLymMNSw
+        - BLym Mem NSw IgM+
+        - BLym Mem NSw IgM+/BLymMNSw
+        - BLym Mem NSw Sub
+        - BLym Mem NSw Sub/BLym
+        - BLym Mem NSw Sub/BLymMNSw
+        - BLym Mem NSw
+        - BLym Mem NSw/BLym
+        - BLym Mem NSw/Leuk
+        - BLym Mem Sub
+        - BLym Mem Sub/BLym Mem Sub
+        - BLym Mem Sub/BLym Mem
+        - BLym Mem Sub/BLym
+        - BLym Mem Sw IgG+
+        - BLym Mem Sw IgG+/BLym Mem Sw
+        - BLym Mem Sw IgM+
+        - BLym Mem Sw IgM+/BLym Mem Sw
+        - BLym Mem Sw Sub
+        - BLym Mem Sw Sub/BLym
+        - BLym Mem Sw Sub/BLymMSw
+        - BLym Mem Sw Sub/BLymMSwS
+        - BLym Mem Sw Sub/Leuk
+        - BLym Mem Sw Uncv IgG+
+        - BLym Mem Sw Uncv IgG+/BLym Mem Sw Uncv
+        - BLym Mem Sw Uncv IgM+
+        - BLym Mem Sw Uncv IgM+/BLymMSwU
+        - BLym Mem Sw Uncv Sub
+        - BLym Mem Sw Uncv Sub/BLym Mem Sw Uncv
+        - BLym Mem Sw Uncv
+        - BLym Mem Sw Uncv/BLym
+        - BLym Mem Sw Uncv/Leuk
+        - BLym Mem Sw
+        - BLym Mem Sw/Blym
+        - BLym Mem Sw/Leuk
+        - BLym Mem
+        - BLym Mem/BLym
+        - BLym Naive IgG+
+        - BLym Naive IgG+/BLymN
+        - BLym Naive IgM+
+        - BLym Naive IgM+/BLymN
+        - BLym Naive Mat Sub
+        - BLym Naive Mat Sub/BLymNM
+        - BLym Naive Mat
+        - BLym Naive Mat/BLym
+        - BLym Naive Sub
+        - BLym Naive Sub/BLym Naive
+        - BLym Naive Sub/BLym
+        - BLym Naive
+        - BLym Naive/BLym
+        - BLym Naive/Leuk
+        - BLym Reg Mem Sub
+        - BLym Reg Mem Sub/BLym Reg Mem
+        - BLym Reg Mem Sub/BLym Reg
+        - BLym Reg Mem Sub/BLym
+        - BLym Reg Mem
+        - BLym Reg Mem/BLym Reg
+        - BLym Reg Mem/BLym
+        - BLym Reg Sub
+        - BLym Reg
+        - BLym Sub
+        - BLym Sub/BLym Sub
+        - BLym Sub/BLym
+        - BLym Sub/Leuk
+        - BLym Sub/Lym
+        - BLym Trans 1
+        - BLym Trans 2 Sub/BLym Trans 2
+        - BLym Trans 2 Sub/BLym
+        - BLym Trans 2
+        - BLym Trans 2/BLym
+        - BLym Trans 3
+        - BLym Trans Sub
+        - BLym Trans Sub/BLym Trans
+        - BLym Trans Sub/BLym
+        - BLym Trans
+        - BLym Trans/BLym
+        - BLym Trans/BLymN
+        - BLym/Leuk
+        - BLym/Lym+Mono
+        - BLym/Non-TNK Leuk
+        - cCD223 Expression
+        - CD117 Expression
+        - CD123 Expression
+        - CD134 Expression
+        - CD137 Expression
+        - CD152 Expression
+        - CD154 Expression
+        - CD156c Expression
+        - CD159a Expression
+        - CD159c Expression
+        - CD16 Expression
+        - CD163 Expression
+        - CD169 Expression
+        - CD192 Expression
+        - CD198 Expression
+        - CD21 Expression
+        - CD223 Expression
+        - CD226 Expression
+        - CD25 Expression
+        - CD269 Expression
+        - CD274 Expression
+        - CD278 Expression
+        - CD279 Expression
+        - CD28 Expression
+        - CD288 Expression
+        - CD294 Expression
+        - CD31 Expression
+        - CD314 Expression
+        - CD32 Expression
+        - CD32b Expression
+        - CD337 Expression
+        - CD366 Expression
+        - CD38 Expression
+        - CD40 Expression
+        - CD5 Expression
+        - CD57 Expression
+        - CD64 Expression
+        - CD69 Expression
+        - CD71 Expression
+        - CD73 Expression
+        - CD79b Expression
+        - CD80 Expression
+        - CD83 Expression
+        - CD86 Expression
+        - CD95 Expression
+        - CD96 Expression
+        - Clonal Plasma Cells
+        - Clonal Plasma Cells/Total Cells
+        - DC Myeloid 1 Sub
+        - DC Myeloid 1 Sub/DC Myeloid 1
+        - DC Myeloid 1 Sub/DC
+        - DC Myeloid 1 Sub/DCM
+        - DC Myeloid 1
+        - DC Myeloid 1/DC
+        - DC Myeloid 1/DCM
+        - DC Myeloid 1/Leuk
+        - DC Myeloid 2 Sub
+        - DC Myeloid 2 Sub/DC Myeloid 2
+        - DC Myeloid 2 Sub/DC
+        - DC Myeloid 2 Sub/DCM
+        - DC Myeloid 2
+        - DC Myeloid 2/DC
+        - DC Myeloid 2/DCM
+        - DC Myeloid 2/Leuk
+        - DC Myeloid 3 Sub/DC Myeloid 3
+        - DC Myeloid 3
+        - DC Myeloid 3/Leuk
+        - DC Myeloid 4 Sub/DC Myeloid 4
+        - DC Myeloid 4
+        - DC Myeloid 4/Leuk
+        - DC Myeloid Dbl Neg
+        - DC Myeloid Dbl Neg/DC Myeloid
+        - DC Myeloid Sub
+        - DC Myeloid Sub/DC
+        - DC Myeloid Sub/DCM
+        - DC Myeloid Sub/DCMS
+        - DC Myeloid
+        - DC Myeloid/DC
+        - DC Myeloid/Leuk
+        - DC Myeloid/Myeloid Cells
+        - DC Plasmacytoid Sub
+        - DC Plasmacytoid Sub/DC Plasmacytoid
+        - DC Plasmacytoid Sub/DCPS
+        - DC Plasmacytoid
+        - DC Plasmacytoid/DC
+        - DC Plasmacytoid/Leuk
+        - DC Plasmacytoid/Myeloid Cells
+        - DC Sub
+        - DC Sub/DC
+        - DC/Leuk
+        - DC/Non-TBNK Leuk
+        - Dendritic Cells
+        - Dendritic Cells/Lym+Mono
+        - Dendritic Cells/Myeloid Cells
+        - Dendritic Cells/Total Cells
+        - Endothelial Cells
+        - Eosinophils
+        - Eosinophils/Leukocytes
+        - Eosinophils/Nucleated Cells
+        - Eosinophils/Total Cells
+        - Epithelial Cells
+        - Epithelial Cells/Total Cells
+        - Erythrocytes
+        - Fibroblasts
+        - FoxP3 Expression
+        - Gran/Leuk
+        - Granulocytes Sub
+        - Granulocytes Sub/Granulocytes Sub
+        - Granulocytes Sub/Granulocytes
+        - Granulocytes
+        - Granulocytes/Non-TBNK Leuk
+        - GZB Expression
+        - HLADR Expression
+        - IE Lym
+        - IgD Expression
+        - IgG Expression
+        - IgM Expression
+        - Immature Monocytes
+        - Innate LC Sub/ILC Sub
+        - Innate LC Sub/ILC
+        - Innate LC Sub/Leuk
+        - Innate LC1 Sub
+        - Innate LC1 Sub/ILC Sub
+        - Innate LC1 Sub/ILC
+        - Innate LC1 Sub/ILC1 Sub
+        - Innate LC1 Sub/ILC1
+        - Innate LC1 Sub/Leuk
+        - Innate LC1
+        - Innate LC1/ILC
+        - Innate LC1/Leuk
+        - Innate LC2 Sub
+        - Innate LC2 Sub/ILC Sub
+        - Innate LC2 Sub/ILC
+        - Innate LC2 Sub/ILC2 Sub
+        - Innate LC2 Sub/ILC2
+        - Innate LC2 Sub/Leuk
+        - Innate LC2
+        - Innate LC2/ILC
+        - Innate LC2/Leuk
+        - Innate LC3 Sub
+        - Innate LC3 Sub/ILC Sub
+        - Innate LC3 Sub/ILC
+        - Innate LC3 Sub/ILC3 Sub
+        - Innate LC3 Sub/ILC3
+        - Innate LC3 Sub/Leuk
+        - Innate LC3
+        - Innate LC3/ILC
+        - Innate LC3/Leuk
+        - Innate Lymphoid Cells Sub
+        - Innate Lymphoid Cells
+        - Interpretation
+        - Kappa+ PC/Lambda+ PC
+        - Kappa+ Plasma Cells
+        - Ki67 Expression
+        - KLRG1 Expression
+        - Lambda+ Plasma Cells
+        - Leuk NonViable/Leuk
+        - Leuk Sub
+        - Leuk Sub/Leuk Sub
+        - Leuk Sub/Leuk
+        - Leuk Viable/Leuk NonViable
+        - Leuk Viable/Leuk
+        - Leukocytes
+        - Leukocytes/Total Cells
+        - Leukocytes/Viable Cells
+        - Lym Sub
+        - Lym Sub/Leuk
+        - Lym Sub/Lym Sub
+        - Lym Sub/Lym
+        - Lym+Mono Sub
+        - Lym+Mono Sub, Lin-
+        - Lym+Mono
+        - Lym+Mono, Lin-
+        - Lym+Mono/Leuk
+        - Lymphocytes
+        - Lymphocytes/Leukocytes
+        - Lymphocytes/Total Cells
+        - Macrophages M1
+        - Macrophages M2
+        - Macrophages Sub
+        - Macrophages
+        - Macrophages/Leukocytes
+        - Macrophages/Monocytes
+        - Macrophages/Myeloid Cells
+        - Macrophages/Total Cells
+        - MAIT Sub/MAIT
+        - MAIT/Leuk
+        - MAIT/TLym
+        - Mast Cells
+        - Mast Cells/Total Cells
+        - MDSC Dbl Neg Sub
+        - MDSC Dbl Neg Sub/MDSC Dbl Neg
+        - MDSC Dbl Neg Sub/MDSC
+        - MDSC Dbl Neg
+        - MDSC Dbl Neg/MDSC
+        - MDSC Gran Sub
+        - MDSC Gran Sub/MDSC Gran
+        - MDSC Gran Sub/MDSC
+        - MDSC Gran
+        - MDSC Gran/Gran
+        - MDSC Gran/Leuk
+        - MDSC Gran/Lym Sub
+        - MDSC Gran/MDSC
+        - MDSC Mono Sub
+        - MDSC Mono Sub/MDSC Mono
+        - MDSC Mono Sub/MDSC
+        - MDSC Mono
+        - MDSC Mono/Leuk
+        - MDSC Mono/MDSC
+        - MDSC Mono/Mono
+        - MDSC Sub
+        - MDSC Sub/Leuk
+        - MDSC Sub/MDSC Sub
+        - MDSC Sub/MDSC
+        - MDSC Sub/Non-TBNK Leuk
+        - MDSC
+        - MDSC/Leuk Sub
+        - MDSC/Leuk
+        - MDSC/Non-Gran Leuk
+        - MDSC/Non-TBNK Leuk
+        - Megakaryocytes/Leukocytes
+        - Megakaryocytes/Total Cells
+        - Mono Classic Sub
+        - Mono Classic Sub/Mono Classic
+        - Mono Classic Sub/Non-TBNK Leuk
+        - Mono Classic
+        - Mono Classic/Leuk Sub
+        - Mono Classic/Leuk
+        - Mono Classic/Lym Sub
+        - Mono Classic/Mono
+        - Mono Classic/Myeloid Cells
+        - Mono Classic/Non-TBNK Leuk
+        - Mono Inflamm
+        - Mono Intermed Sub
+        - Mono Intermed Sub/Mono Intermed
+        - Mono Intermed Sub/Non-TBNK Leuk
+        - Mono Intermed
+        - Mono Intermed/Leuk Sub
+        - Mono Intermed/Leuk
+        - Mono Intermed/Lym Sub
+        - Mono Intermed/Mono
+        - Mono Intermed/Myeloid Cells
+        - Mono Intermed/Non-TBNK Leuk
+        - Mono Mat
+        - Mono NonClassic Sub
+        - Mono NonClassic Sub/Mono Intermed
+        - Mono NonClassic Sub/Mono NonClassic
+        - Mono NonClassic Sub/Non-TBNK Leuk
+        - Mono NonClassic
+        - Mono NonClassic/Leuk Sub
+        - Mono NonClassic/Leuk
+        - Mono NonClassic/Lym Sub
+        - Mono NonClassic/Mono
+        - Mono NonClassic/Myeloid Cells
+        - Mono NonClassic/Non-TBNK Leuk
+        - Mono Proinflam Sub
+        - Mono Proinflam Sub/MonoPI
+        - Mono Proinflam
+        - Mono Proinflam/Mono
+        - Mono Resident
+        - Mono Sub
+        - Mono Sub/Leuk
+        - Mono Sub/Mono Sub
+        - Mono Sub/Mono
+        - Mono/Leuk Sub
+        - Mono/Lym Sub
+        - Mono/Myeloid Cells
+        - Mono/Non-TBNK Leuk
+        - Monocytes and Macrophages/Leukocytes
+        - Monocytes
+        - Monocytes/Leukocytes
+        - Monocytes/Total Cells
+        - Mucosal-Associated Invariant T-Lym
+        - MX1 Expression
+        - Myeloid Cells
+        - Myeloid Cells/Leuk
+        - Natural Killer Cells
+        - Natural Killer Cells/Total Cells
+        - Neoplastic Plasma Cells
+        - Neoplastic Plasma Cells/Total Cells
+        - Neutrophils
+        - NK Cells Immat Int Sub/NK Immat Int
+        - NK Cells Immat Int
+        - NK Cells Immat Int/Leuk
+        - NK Cells Immat Int/NK Cells
+        - NK Cells Immat Sub
+        - NK Cells Immat Sub/NK Immat
+        - NK Cells Immat
+        - NK Cells Immat/Leuk
+        - NK Cells Immat/Lym Sub
+        - NK Cells Immat/Lym
+        - NK Cells Immat/NK
+        - NK Cells Intermed Sub
+        - NK Cells Intermed Sub/Leuk
+        - NK Cells Intermed Sub/Lym
+        - NK Cells Intermed Sub/NK Intermed
+        - NK Cells Intermed
+        - NK Cells Intermed/Leuk
+        - NK Cells Intermed/Lym Sub
+        - NK Cells Intermed/Lym
+        - NK Cells Intermed/NK
+        - NK Cells Mat Sub
+        - NK Cells Mat Sub/Leuk
+        - NK Cells Mat Sub/Lym
+        - NK Cells Mat Sub/NK Mat
+        - NK Cells Mat Sub/NK
+        - NK Cells Mat
+        - NK Cells Mat/Leuk
+        - NK Cells Mat/Lym Sub
+        - NK Cells Mat/Lym
+        - NK Cells Mat/NK
+        - NK Cells Sub
+        - NK Cells Sub/Leuk
+        - NK Cells Sub/Lym Sub
+        - NK Cells Sub/NK Cells Sub
+        - NK Cells Sub/NK Cells
+        - NK Cells/Leuk
+        - NK Cells/Lym Sub
+        - NK Cells/Lym
+        - NK Cells/Non-TB Leuk
+        - NK TLym Invar Sub
+        - NK TLym Invar Sub/NKT Invar Sub
+        - NK TLym Invar Sub/NKT Invar
+        - NK TLym Invar
+        - NK TLym Invar/NKT
+        - NK TLym Sub
+        - NK TLym Sub/NK TLym Sub
+        - NK TLym Sub/NKT
+        - NK TLym Sub/TLym
+        - NK TLym
+        - NK TLym/Leuk
+        - NK TLym/Lym
+        - NK TLym/TLym
+        - Non-Gran Leuk
+        - Non-TBNK Leuk Sub/Non-TBNK Leuk
+        - Non-TBNK Leuk
+        - Non-TBNK Leuk/Leuk
+        - pERK Expression
+        - Plasma Cells Sub
+        - Plasma Cells Sub/BLym
+        - Plasma Cells Sub/Leuk
+        - Plasma Cells Sub/Plasma Cells Sub
+        - Plasma Cells Sub/Plasma Cells
+        - Plasma Cells
+        - Plasma Cells/BLym Ab-Secreting
+        - Plasma Cells/BLym
+        - Plasma Cells/BLymMSw
+        - Plasma Cells/Leuk
+        - Plasmablasts IgG+ Sub
+        - Plasmablasts IgG+ Sub/PB IgG+
+        - Plasmablasts IgG+
+        - Plasmablasts IgG+/PB
+        - Plasmablasts IgM+ Sub
+        - Plasmablasts IgM+ Sub/PB IgM+
+        - Plasmablasts IgM+
+        - Plasmablasts IgM+/PB
+        - Plasmablasts Sub
+        - Plasmablasts Sub/BLym
+        - Plasmablasts Sub/Leuk
+        - Plasmablasts Sub/PB
+        - Plasmablasts
+        - Plasmablasts/BLym
+        - Platelets Sub
+        - Platelets
+        - Pre-BLym
+        - Pre-Dendritic Cells Sub
+        - Pre-Dendritic Cells
+        - Pre-Dendritic Cells/DC
+        - Pro-BLym
+        - Pro-BLym/Total Cells
+        - Prostate Circulating Tumor Cells
+        - sCD223 Expression
+        - Stimulation Index
+        - T-Lymphocytes
+        - Target Bound
+        - Target Bound, Background
+        - Target Bound, Delta Bound Background
+        - Target Free
+        - Target Free, Background
+        - Target Free, Delta Free Background
+        - Target Occupancy
+        - Target Total
+        - Target Total, Background
+        - Target Total, Delta Total Background
+        - TCF7 Expression
+        - TIGIT Expression
+        - TLym AB Sub
+        - TLym AB Sub/TLym AB
+        - TLym AB
+        - TLym AB/TLym
+        - TLym Cen Mem
+        - TLym Conv Cen Mem Sub
+        - TLym Conv Cen Mem Sub/TLymCvCM
+        - TLym Conv Cen Mem
+        - TLym Conv Cen Mem/TLym
+        - TLym Conv Cen Mem/TLymCv
+        - TLym Conv Cen Mem/TLymH
+        - TLym Conv Eff Mem Sub
+        - TLym Conv Eff Mem Sub/TLymCvEM
+        - TLym Conv Eff Mem
+        - TLym Conv Eff Mem/TLym
+        - TLym Conv Eff Mem/TLymCv
+        - TLym Conv Eff Mem/TLymH
+        - TLym Conv Naive Sub
+        - TLym Conv Naive Sub/TLymCvN
+        - TLym Conv Naive
+        - TLym Conv Naive/TLym
+        - TLym Conv Naive/TLymCv
+        - TLym Conv Naive/TLymH
+        - TLym Conv SC Mem Sub
+        - TLym Conv SC Mem Sub/TLymCvSCM
+        - TLym Conv SC Mem
+        - TLym Conv SC Mem/TLym
+        - TLym Conv SC Mem/TLymCv
+        - TLym Conv SC Mem/TLymH
+        - TLym Conv Sub
+        - TLym Conv Sub/TLymCv
+        - TLym Conv Term Mem Sub
+        - TLym Conv Term Mem Sub/TLymCvTM
+        - TLym Conv Term Mem
+        - TLym Conv Term Mem/TLym
+        - TLym Conv Term Mem/TLymCv
+        - TLym Conv Term Mem/TLymH
+        - TLym Conv
+        - TLym Conv/Leuk
+        - TLym Conv/TLym
+        - TLym Conv/TLymH
+        - TLym Cytx AB Sub
+        - TLym Cytx AB
+        - TLym Cytx Cen Mem GH Sub
+        - TLym Cytx Cen Mem GH Sub/TLymC
+        - TLym Cytx Cen Mem GH Sub/TLymCCM
+        - TLym Cytx Cen Mem GH Sub/TLymCCMGH
+        - TLym Cytx Cen Mem GH Sub/TLymCCMGHS
+        - TLym Cytx Cen Mem GH
+        - TLym Cytx Cen Mem GH/TLymC
+        - TLym Cytx Cen Mem GH/TLymCCM
+        - TLym Cytx Cen Mem SH Sub
+        - TLym Cytx Cen Mem SH Sub/TLymC
+        - TLym Cytx Cen Mem SH Sub/TLymCCM
+        - TLym Cytx Cen Mem SH Sub/TLymCCMSH
+        - TLym Cytx Cen Mem SH Sub/TLymCCMSHS
+        - TLym Cytx Cen Mem SH
+        - TLym Cytx Cen Mem SH/TLymC
+        - TLym Cytx Cen Mem SH/TLymCCM
+        - TLym Cytx Cen Mem Sub
+        - TLym Cytx Cen Mem Sub/TLymC
+        - TLym Cytx Cen Mem Sub/TLymCCM
+        - TLym Cytx Cen Mem Sub/TLymCCMS
+        - TLym Cytx Cen Mem
+        - TLym Cytx Cen Mem/TLym Cytx
+        - TLym Cytx Eff Mem GH Sub
+        - TLym Cytx Eff Mem GH Sub/TLymC
+        - TLym Cytx Eff Mem GH Sub/TLymCEM
+        - TLym Cytx Eff Mem GH Sub/TLymCEMGH
+        - TLym Cytx Eff Mem GH Sub/TLymCEMGHS
+        - TLym Cytx Eff Mem GH
+        - TLym Cytx Eff Mem GH/TLymC
+        - TLym Cytx Eff Mem GH/TLymCEM
+        - TLym Cytx Eff Mem SH Sub
+        - TLym Cytx Eff Mem SH Sub/TLymC
+        - TLym Cytx Eff Mem SH Sub/TLymCEM
+        - TLym Cytx Eff Mem SH Sub/TLymCEMSH
+        - TLym Cytx Eff Mem SH Sub/TLymCEMSHS
+        - TLym Cytx Eff Mem SH
+        - TLym Cytx Eff Mem SH/TLymC
+        - TLym Cytx Eff Mem SH/TLymCEM
+        - TLym Cytx Eff Mem Sub
+        - TLym Cytx Eff Mem Sub/TLymC
+        - TLym Cytx Eff Mem Sub/TLymCEM
+        - TLym Cytx Eff Mem Sub/TLymCEMS
+        - TLym Cytx Eff Mem
+        - TLym Cytx Eff Mem/TLym Cytx
+        - TLym Cytx Eff Sub
+        - TLym Cytx Eff
+        - TLym Cytx Exh Pre Sub
+        - TLym Cytx Exh Pre Sub/TLymCExhPre
+        - TLym Cytx Exh Pre
+        - TLym Cytx Exh Pre/TLym Cytx
+        - TLym Cytx GD Sub
+        - TLym Cytx GD
+        - TLym Cytx Mem GH Sub
+        - TLym Cytx Mem GH Sub/TLymC
+        - TLym Cytx Mem GH Sub/TLymCM
+        - TLym Cytx Mem GH Sub/TLymCMGH
+        - TLym Cytx Mem GH Sub/TLymCMGHS
+        - TLym Cytx Mem GH
+        - TLym Cytx Mem GH/TLymC
+        - TLym Cytx Mem GH/TLymCM
+        - TLym Cytx Mem SH Sub
+        - TLym Cytx Mem SH Sub/TLymC
+        - TLym Cytx Mem SH Sub/TLymCM
+        - TLym Cytx Mem SH Sub/TLymCMSH
+        - TLym Cytx Mem SH Sub/TLymCMSHS
+        - TLym Cytx Mem SH
+        - TLym Cytx Mem SH/TLymC
+        - TLym Cytx Mem SH/TLymCM
+        - TLym Cytx Mem Sub
+        - TLym Cytx Mem Sub/TLymC
+        - TLym Cytx Mem Sub/TLymCM
+        - TLym Cytx Mem
+        - TLym Cytx Mem/TLym Cytx
+        - TLym Cytx Naive Sub
+        - TLym Cytx Naive Sub/TLymC
+        - TLym Cytx Naive Sub/TLymCN
+        - TLym Cytx Naive Sub/TLymCNS
+        - TLym Cytx Naive
+        - TLym Cytx Naive/TLym Cytx
+        - TLym Cytx Reg Sub
+        - TLym Cytx Reg Sub/TLym Cytx
+        - TLym Cytx Reg Sub/TLymCR
+        - TLym Cytx Reg
+        - TLym Cytx Reg/TLym Cytx
+        - TLym Cytx SC Mem Sub
+        - TLym Cytx SC Mem Sub/TLym Cytx
+        - TLym Cytx SC Mem Sub/TLymCSCM
+        - TLym Cytx SC Mem Sub/TLymCSCMS
+        - TLym Cytx SC Mem
+        - TLym Cytx SC Mem/TLym Cytx
+        - TLym Cytx SC Mem/TLymCN
+        - TLym Cytx Sub
+        - TLym Cytx Sub/TLym Cytx Sub
+        - TLym Cytx Sub/TLym Cytx
+        - TLym Cytx Sub/TLym Sub
+        - TLym Cytx Sub/TLym
+        - TLym Cytx Term Diff Exh Sub
+        - TLym Cytx Term Diff Exh Sub/TLymCTDExh
+        - TLym Cytx Term Diff Exh
+        - TLym Cytx Term Diff Exh/TLym Cytx
+        - TLym Cytx Term Mem GH Sub
+        - TLym Cytx Term Mem GH Sub/TLymC
+        - TLym Cytx Term Mem GH Sub/TLymCTM
+        - TLym Cytx Term Mem GH Sub/TLymCTMGH
+        - TLym Cytx Term Mem GH Sub/TLymCTMGHS
+        - TLym Cytx Term Mem GH
+        - TLym Cytx Term Mem GH/TLymC
+        - TLym Cytx Term Mem GH/TLymCTM
+        - TLym Cytx Term Mem SH Sub
+        - TLym Cytx Term Mem SH Sub/TLymC
+        - TLym Cytx Term Mem SH Sub/TLymCTM
+        - TLym Cytx Term Mem SH Sub/TLymCTMSH
+        - TLym Cytx Term Mem SH Sub/TLymCTMSHS
+        - TLym Cytx Term Mem SH
+        - TLym Cytx Term Mem SH/TLymC
+        - TLym Cytx Term Mem SH/TLymCTM
+        - TLym Cytx Term Mem Sub
+        - TLym Cytx Term Mem Sub/TLym Cytx
+        - TLym Cytx Term Mem Sub/TLymCTM
+        - TLym Cytx Term Mem Sub/TLymCTMS
+        - TLym Cytx Term Mem
+        - TLym Cytx Term Mem/TLymC
+        - TLym Cytx
+        - TLym Cytx/Leuk
+        - TLym Cytx/Lym
+        - TLym Cytx/TLym
+        - TLym Cytx/Total Cells
+        - TLym Dbl Neg Sub
+        - TLym Dbl Neg Sub/TLym Dbl Neg
+        - TLym Dbl Neg
+        - TLym Dbl Neg/Lym
+        - TLym Dbl Neg/TLym
+        - TLym Dbl Pos Sub
+        - TLym Dbl Pos Sub/TLym Dbl Pos
+        - TLym Dbl Pos
+        - TLym Dbl Pos/Lym
+        - TLym Dbl Pos/TLym
+        - TLym Eff Mem Sub
+        - TLym Eff Mem
+        - TLym GD Sub
+        - TLym GD Sub/TLym GD
+        - TLym GD
+        - TLym GD/Leuk
+        - TLym GD/Lym
+        - TLym GD/TLym
+        - TLym Help 1 Sub
+        - TLym Help 1 Sub/TLym Help
+        - TLym Help 1 Sub/TLymH1
+        - TLym Help 1
+        - TLym Help 1/TLym Help
+        - TLym Help 17 Sub
+        - TLym Help 17 Sub/TLym Help
+        - TLym Help 17 Sub/TLymH17
+        - TLym Help 17
+        - TLym Help 17.1 Sub
+        - TLym Help 17.1 Sub/TLym Help
+        - TLym Help 17.1 Sub/TLymH17.1
+        - TLym Help 17.1
+        - TLym Help 17.1/TLym Help
+        - TLym Help 17/TLym Help
+        - TLym Help 2 Sub
+        - TLym Help 2 Sub/TLym Help
+        - TLym Help 2 Sub/TLymH2
+        - TLym Help 2
+        - TLym Help 2/TLym Help
+        - TLym Help 22 Sub
+        - TLym Help 22 Sub/TLym Help
+        - TLym Help 22 Sub/TLymH22
+        - TLym Help 22
+        - TLym Help 22/TLym Help
+        - TLym Help 9 Sub
+        - TLym Help 9 Sub/TLym Help
+        - TLym Help 9 Sub/TLymH9
+        - TLym Help 9
+        - TLym Help 9/TLym Help
+        - TLym Help AB Sub
+        - TLym Help AB
+        - TLym Help Cen Mem GH Sub
+        - TLym Help Cen Mem GH Sub/TLymH
+        - TLym Help Cen Mem GH Sub/TLymHCM
+        - TLym Help Cen Mem GH Sub/TLymHCMGH
+        - TLym Help Cen Mem GH Sub/TLymHCMGHS
+        - TLym Help Cen Mem GH
+        - TLym Help Cen Mem GH/TLymH
+        - TLym Help Cen Mem GH/TLymHCM
+        - TLym Help Cen Mem SH Sub
+        - TLym Help Cen Mem SH Sub/TLymH
+        - TLym Help Cen Mem SH Sub/TLymHCM
+        - TLym Help Cen Mem SH Sub/TLymHCMSH
+        - TLym Help Cen Mem SH Sub/TLymHCMSHS
+        - TLym Help Cen Mem SH
+        - TLym Help Cen Mem SH/TLymH
+        - TLym Help Cen Mem SH/TLymHCM
+        - TLym Help Cen Mem Sub
+        - TLym Help Cen Mem Sub/TLym Help
+        - TLym Help Cen Mem Sub/TLymHCM
+        - TLym Help Cen Mem Sub/TLymHCMS
+        - TLym Help Cen Mem
+        - TLym Help Cen Mem/TLym Help
+        - TLym Help Eff Mem GH Sub
+        - TLym Help Eff Mem GH Sub/TLymH
+        - TLym Help Eff Mem GH Sub/TLymHEM
+        - TLym Help Eff Mem GH Sub/TLymHEMGH
+        - TLym Help Eff Mem GH Sub/TLymHEMGHS
+        - TLym Help Eff Mem GH
+        - TLym Help Eff Mem GH/TLymH
+        - TLym Help Eff Mem GH/TLymHEM
+        - TLym Help Eff Mem SH Sub
+        - TLym Help Eff Mem SH Sub/TLymH
+        - TLym Help Eff Mem SH Sub/TLymHEM
+        - TLym Help Eff Mem SH Sub/TLymHEMSH
+        - TLym Help Eff Mem SH Sub/TLymHEMSHS
+        - TLym Help Eff Mem SH
+        - TLym Help Eff Mem SH/TLymH
+        - TLym Help Eff Mem SH/TLymHEM
+        - TLym Help Eff Mem Sub
+        - TLym Help Eff Mem Sub/TLym Help
+        - TLym Help Eff Mem Sub/TLymHEM
+        - TLym Help Eff Mem Sub/TLymHEMS
+        - TLym Help Eff Mem
+        - TLym Help Eff Mem/TLym Help
+        - TLym Help Eff Sub
+        - TLym Help Eff
+        - TLym Help Foll Sub
+        - TLym Help Foll Sub/TLym Help Sub
+        - TLym Help Foll Sub/TLym Help
+        - TLym Help Foll Sub/TLym Mem Sub
+        - TLym Help Foll Sub/TLymHF
+        - TLym Help Foll Sub/TLymHFS
+        - TLym Help Foll
+        - TLym Help Foll/TLym Help
+        - TLym Help GD Sub
+        - TLym Help GD
+        - TLym Help Mem GH Sub
+        - TLym Help Mem GH Sub/TLymH
+        - TLym Help Mem GH Sub/TLymHM
+        - TLym Help Mem GH Sub/TLymHMGH
+        - TLym Help Mem GH Sub/TLymHMGHS
+        - TLym Help Mem GH
+        - TLym Help Mem GH/TLymH
+        - TLym Help Mem GH/TLymHM
+        - TLym Help Mem SH Sub
+        - TLym Help Mem SH Sub/TLymH
+        - TLym Help Mem SH Sub/TLymHM
+        - TLym Help Mem SH Sub/TLymHMSH
+        - TLym Help Mem SH Sub/TLymHMSHS
+        - TLym Help Mem SH
+        - TLym Help Mem SH/TLymH
+        - TLym Help Mem SH/TLymHM
+        - TLym Help Mem Sub
+        - TLym Help Mem Sub/TLym Help
+        - TLym Help Mem Sub/TLymHM
+        - TLym Help Mem
+        - TLym Help Mem/TLym Help
+        - TLym Help Naive Sub
+        - TLym Help Naive Sub/TLym Help
+        - TLym Help Naive Sub/TLymHN
+        - TLym Help Naive Sub/TLymHNS
+        - TLym Help Naive
+        - TLym Help Naive/TLym Help
+        - TLym Help Peripheral Sub
+        - TLym Help Peripheral Sub/TLymH
+        - TLym Help Peripheral Sub/TLymHMS
+        - TLym Help Peripheral Sub/TLymHP
+        - TLym Help Peripheral Sub/TLymHPS
+        - TLym Help Peripheral
+        - TLym Help Peripheral/TLymH
+        - TLym Help Peripheral/TLymHS
+        - TLym Help Reg Eff Sub
+        - TLym Help Reg Eff Sub/TLymHRE
+        - TLym Help Reg Eff Sub/TLymHRES
+        - TLym Help Reg Eff Th1 Sub/TLymHRE Th1
+        - TLym Help Reg Eff Th1/TLym Help Reg
+        - TLym Help Reg Eff Th17 Sub/TLymHRE Th17
+        - TLym Help Reg Eff Th17/TLym Help Reg
+        - TLym Help Reg Eff Th2 Sub/TLymHRE Th2
+        - TLym Help Reg Eff Th2/TLym Help Reg
+        - TLym Help Reg Eff
+        - TLym Help Reg Eff/Leuk
+        - TLym Help Reg Eff/Lym
+        - TLym Help Reg Eff/TLym Help
+        - TLym Help Reg Eff/TLym
+        - TLym Help Reg Eff/TLymHR
+        - TLym Help Reg Mem Sub
+        - TLym Help Reg Mem Sub/TLymHRM
+        - TLym Help Reg Mem Sub/TLymHRMS
+        - TLym Help Reg Mem
+        - TLym Help Reg Mem/TLymHR
+        - TLym Help Reg Naive Sub
+        - TLym Help Reg Naive Sub/TLymHR
+        - TLym Help Reg Naive Sub/TLymHRN
+        - TLym Help Reg Naive Sub/TLymHRNS
+        - TLym Help Reg Naive
+        - TLym Help Reg Naive/Leuk
+        - TLym Help Reg Naive/TLym Help
+        - TLym Help Reg Naive/TLym
+        - TLym Help Reg Naive/TLymHR
+        - TLym Help Reg Sub
+        - TLym Help Reg Sub/TLym Help
+        - TLym Help Reg Sub/TLymHR
+        - TLym Help Reg Sub/TLymHRS
+        - TLym Help Reg
+        - TLym Help Reg/Leuk
+        - TLym Help Reg/Lym
+        - TLym Help Reg/TLym Help
+        - TLym Help Reg/TLym
+        - TLym Help SC Mem Sub
+        - TLym Help SC Mem Sub/TLym Help
+        - TLym Help SC Mem Sub/TLymHSCM
+        - TLym Help SC Mem
+        - TLym Help SC Mem/TLym Help
+        - TLym Help SC Mem/TLymHN
+        - TLym Help Sub
+        - TLym Help Sub/Lym
+        - TLym Help Sub/TLym Help Sub
+        - TLym Help Sub/TLym Help
+        - TLym Help Sub/TLym Sub
+        - TLym Help Term Mem GH Sub
+        - TLym Help Term Mem GH Sub/TLymH
+        - TLym Help Term Mem GH Sub/TLymHTM
+        - TLym Help Term Mem GH Sub/TLymHTMGH
+        - TLym Help Term Mem GH Sub/TLymHTMGHS
+        - TLym Help Term Mem GH
+        - TLym Help Term Mem GH/TLymH
+        - TLym Help Term Mem GH/TLymHTM
+        - TLym Help Term Mem SH Sub
+        - TLym Help Term Mem SH Sub/TLymH
+        - TLym Help Term Mem SH Sub/TLymHTM
+        - TLym Help Term Mem SH Sub/TLymHTMSH
+        - TLym Help Term Mem SH Sub/TLymHTMSHS
+        - TLym Help Term Mem SH
+        - TLym Help Term Mem SH/TLymH
+        - TLym Help Term Mem SH/TLymHTM
+        - TLym Help Term Mem Sub
+        - TLym Help Term Mem Sub/TLym Help
+        - TLym Help Term Mem Sub/TLymHTM
+        - TLym Help Term Mem Sub/TLymHTMS
+        - TLym Help Term Mem
+        - TLym Help Term Mem/TLym Help
+        - TLym Help
+        - TLym Help/Leuk
+        - TLym Help/Lym
+        - TLym Help/TLym Cytx
+        - TLym Help/TLym
+        - TLym Help/Total Cells
+        - TLym Naive
+        - TLym Reg
+        - TLym Reg/Lym
+        - TLym Sub
+        - TLym Sub/Leuk
+        - TLym Sub/Lym
+        - TLym Sub/TLym Sub
+        - TLym Sub/TLym
+        - TLym Term Mem
+        - TLym/Leuk
+        - TLym/Lym
+        - Total Cells
+        - Total Nucleated Cells
+        - Total Plasma Cells/Total Cells
+        - TOX1+TOX2 Expression
+        - Viable Cells
+        - Viable Cells/Total Cells
+        - Viable Leukocytes/Total Cells
+outcome:
+  message: Value not found in extensible codelist Cell Phenotyping Test Name (C181174)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C181174
+  codelist_name: Cell Phenotyping Test Name
+  codelist_submission_value: CPTEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 930
+

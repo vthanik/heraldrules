@@ -1,0 +1,92 @@
+id: HRL-CT-0458
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC019TN (Functional Assessment of Cancer Therapy-Melanoma Version 4
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC019TN
+      operator: in
+      value:
+        - FAC019-Additional Concern Subscale Score
+        - FAC019-Additional Concern Surgery Score
+        - FAC019-Bothered by Amount of Swelling
+        - FAC019-Bothered by Treatment Side Effect
+        - FAC019-Content With Quality of My Life
+        - FAC019-Emotional Subscale Score
+        - FAC019-Enjoy Things I Usually Do for Fun
+        - FAC019-FACT-G Total Score
+        - FAC019-Feel Numbness at My Surgical Site
+        - FAC019-Feel Overwhelmed by My Condition
+        - FAC019-Functional Subscale Score
+        - FAC019-Get Emotional Support From Family
+        - FAC019-Good Range of Movement in Arm/Leg
+        - FAC019-Have Difficulty Thinking Clearly
+        - FAC019-Have Swelling at My Melanoma Site
+        - FAC019-I Am Able to Enjoy Life
+        - FAC019-I Am Able to Work
+        - FAC019-I Am Forced to Spend Time in Bed
+        - FAC019-I Am Satisfied With My Sex Life
+        - FAC019-I Am Sleeping Well
+        - FAC019-I Feel Close to My Friends
+        - FAC019-I Feel Close to My Partner
+        - FAC019-I Feel Fatigued
+        - FAC019-I Feel Ill
+        - FAC019-I Feel Nervous
+        - FAC019-I Feel Sad
+        - FAC019-I Get Headaches
+        - FAC019-I Get Support From My Friends
+        - FAC019-I Have a Good Appetite
+        - FAC019-I Have a Lack of Energy
+        - FAC019-I Have Accepted My Illness
+        - FAC019-I Have Aches and Pains My Bones
+        - FAC019-I Have Been Short of Breath
+        - FAC019-I Have Had Fevers
+        - FAC019-I Have Nausea
+        - FAC019-I Have Noticed Blood in My Stool
+        - FAC019-I Have Pain
+        - FAC019-I Worry About Dying
+        - FAC019-Isolate From Others B/c Condition
+        - FAC019-Limit My Social Activity
+        - FAC019-Limit Physical Activ B/c Cond
+        - FAC019-Losing Hope Against Illness
+        - FAC019-Movement of Swollen Area Painful
+        - FAC019-My Family Has Accepted My Illness
+        - FAC019-My Work Is Fulfilling
+        - FAC019-Noticed New Changes in My Skin
+        - FAC019-Pain at My Melanoma/Surgical Site
+        - FAC019-Physical Subscale Score
+        - FAC019-Satisfied Communication Illness
+        - FAC019-Satisfied With How I Am Coping
+        - FAC019-Social/Family Subscale Score
+        - FAC019-Swelling as a Result of Surgery
+        - FAC019-Swelling Keeps From Doing Things
+        - FAC019-Swelling Keeps Me From Wearing
+        - FAC019-Swelling/Cramps in Stomach Area
+        - FAC019-Total Score
+        - FAC019-Trial Outcome Index Score
+        - FAC019-Trouble Meeting Needs of Family
+        - FAC019-Worry Appearance Surgical Scars
+        - FAC019-Worry My Condition Will Get Worse
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Melanoma Version 4 Questionnaire Test Name (C213931)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C213931
+  codelist_name: Functional Assessment of Cancer Therapy-Melanoma Version 4 Questionnaire
+    Test Name
+  codelist_submission_value: FAC019TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 60
+

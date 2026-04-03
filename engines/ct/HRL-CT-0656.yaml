@@ -1,0 +1,585 @@
+id: HRL-CT-0656
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MBTEST (Microbiology Test Name) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MBTEST
+      operator: in
+      value:
+        - A. calcoaceticus-baumannii Complex DNA
+        - A. calcoaceticus-baumannii Complex
+        - Achromobacter denitrificans
+        - Achromobacter xylosoxidans
+        - Acid-Fast Bacilli
+        - Acinetobacter anitratus
+        - Acinetobacter baumannii
+        - Acinetobacter johnsonii
+        - Acinetobacter lactucae
+        - Acinetobacter lwoffii
+        - Acinetobacter pittii
+        - Acinetobacter ursingii
+        - Acinetobacter
+        - Acinetobacter, Carbapenem-resistant
+        - Adenoviridae
+        - Adenovirus Antigen
+        - Adenovirus DNA
+        - Adenovirus Nucleic Acid
+        - Aerobic Bacteria
+        - Aerococcus urinae
+        - Aeromonas DNA
+        - Aeromonas
+        - Anaerobic Bacteria
+        - Anaplasma DNA
+        - Anaplasma
+        - Aspergillus Antigen
+        - Aspergillus DNA
+        - Aspergillus fumigatus
+        - Aspergillus niger
+        - Aspergillus
+        - Babesia DNA
+        - Bacilli
+        - Bacilli/Leukocytes
+        - Bacillota
+        - Bacteria
+        - Bacterial Beta-lactamase
+        - Bacterial Lipopolysaccharide Antigen
+        - Bacterial Sialidase
+        - Bacteroidia
+        - Beta-lactamase Negative Bacteria
+        - Beta-lactamase Positive Bacteria
+        - Blastocystis hominis DNA
+        - Bordetella parapertussis DNA
+        - Bordetella parapertussis
+        - Bordetella pertussis Antigen
+        - Bordetella pertussis DNA
+        - Bordetella pertussis
+        - Borrelia DNA
+        - Burkholderia ambifaria
+        - Burkholderia anthina
+        - Burkholderia cenocepacia
+        - Burkholderia cepacia
+        - Burkholderia dolosa
+        - Burkholderia multivorans
+        - Burkholderia pyrrocinia
+        - Burkholderia stabilis
+        - Burkholderia vietnamiensis
+        - Burkholderia
+        - C. coli/jejuni/upsaliensis DNA
+        - C. difficile Glutamate Dehydrogenase
+        - Campylobacter coli
+        - Campylobacter DNA
+        - Campylobacter jejuni
+        - Campylobacter
+        - Candida albicans DNA
+        - Candida albicans
+        - Candida Antigen
+        - Candida dubliniensis
+        - Candida glabrata
+        - Candida parapsilosis Complex
+        - Candida parapsilosis
+        - Candida rugosa
+        - Candida tropicalis
+        - Candida
+        - Candidozyma auris
+        - Chikungunya Virus RNA
+        - Chlamydia pneumoniae DNA
+        - Chlamydia pneumoniae Nucleic Acid
+        - Chlamydia pneumoniae
+        - Chlamydia trachomatis Antigen
+        - Chlamydia trachomatis DNA
+        - Chlamydia trachomatis RNA
+        - Chlamydia trachomatis
+        - Chlamydia
+        - Chlamydophila psittaci DNA
+        - Citrobacter braakii
+        - Citrobacter freundi
+        - Citrobacter koseri
+        - Clostridium botulinum
+        - Clostridium difficile 027/NAP1/BI
+        - Clostridium difficile A Toxin
+        - Clostridium difficile A/B Toxin
+        - Clostridium difficile B Toxin
+        - Clostridium difficile cdt DNA
+        - Clostridium difficile DNA
+        - Clostridium difficile tcdA DNA
+        - Clostridium difficile tcdB DNA
+        - Clostridium difficile tcdC DNA
+        - Clostridium difficile Toxin
+        - Clostridium difficile
+        - Coronaviridae
+        - Coronavirus RNA
+        - Corynebacterium amycolatum
+        - Corynebacterium aurimucosum
+        - Corynebacterium jeikeium
+        - Corynebacterium striatum
+        - Corynebacterium tuberculostearicum
+        - Corynebacterium urealyticum
+        - Corynebacterium
+        - Cryptococcus Antigen
+        - Cryptococcus neoformans/gattii DNA
+        - Cryptosporidium Antigen
+        - Cryptosporidium DNA
+        - Cryptosporidium parvum Antigen
+        - Curved Bacillus
+        - Cyanobacteria
+        - Cyclospora cayetanensis DNA
+        - Cytomegalovirus Antigen
+        - Cytomegalovirus DNA
+        - Cytomegalovirus pp65 Antigen
+        - Cytomegalovirus
+        - Dengue Virus 1 RNA
+        - Dengue Virus 1/2/3/4 RNA
+        - Dengue Virus 2 RNA
+        - Dengue Virus 3 RNA
+        - Dengue Virus 4 RNA
+        - Dengue Virus NS1 Antigen
+        - Dengue Virus RNA
+        - Dientamoeba fragilis DNA
+        - E.Coli K1/N.Meningitidis Serogroup B Ag
+        - EAEC pAA Plasmid aggR/aatA DNA
+        - Ebola Virus
+        - Ehrlichia DNA
+        - Entamoeba dispar DNA
+        - Entamoeba dispar
+        - Entamoeba histolytica DNA
+        - Enterobacter cloacae Complex DNA
+        - Enterobacter cloacae Complex
+        - Enterobacter cloacae
+        - Enterobacter hormaechei
+        - Enterobacter
+        - Enterobacterales, Carbapenem-resistant
+        - Enterococcus avium
+        - Enterococcus faecalis DNA
+        - Enterococcus faecalis
+        - Enterococcus faecium
+        - Enterococcus gallinarum
+        - Enterococcus
+        - Enterococcus, Vancomycin-resistant
+        - Enterohemorrhagic Escherichia coli
+        - Enterovirus RNA
+        - Enterovirus
+        - EPEC eae DNA
+        - Epstein-Barr DNA
+        - Epstein-Barr Early Antigen
+        - Epstein-Barr Nuclear Antigen
+        - Epstein-Barr Virus LMP1
+        - Epstein-Barr Virus
+        - Escherichia coli DNA
+        - Escherichia coli K1 DNA
+        - Escherichia coli O Antigen
+        - Escherichia coli O157 Antigen
+        - Escherichia coli O157 DNA
+        - Escherichia coli Shiga-like Toxin
+        - Escherichia coli Verotoxin
+        - Escherichia coli
+        - Escherichia fergusonii
+        - ETEC LtA/ST1a/ST1b DNA
+        - Firmicutes/Bacteroidetes Ratio
+        - Flagellates
+        - Fungi
+        - Fungi, Filamentous
+        - Fungi, Yeast-Like
+        - Fusobacterium nucleatum
+        - Galactomannan Antigen
+        - Gardnerella vaginalis DNA
+        - Gardnerella vaginalis
+        - Gardnerella
+        - Giardia DNA
+        - Giardia lamblia Antigen
+        - Giardia lamblia DNA
+        - Giardia lamblia/Cryptosporidium Antigen
+        - Gram Negative Bacteria
+        - Gram Negative Cocci
+        - Gram Positive Bacteria
+        - Haemophilus influenzae DNA
+        - Haemophilus influenzae
+        - Haemophilus parahaemolyticus DNA
+        - Haemophilus
+        - HCoV-229E Nucleic Acid
+        - HCoV-229E RNA
+        - HCoV-HKU1 Nucleic Acid
+        - HCoV-HKU1 RNA
+        - HCoV-NL63 Nucleic Acid
+        - HCoV-NL63 RNA
+        - HCoV-NL63/HCoV-HKU1 RNA
+        - HCoV-OC43 Nucleic Acid
+        - HCoV-OC43 RNA
+        - Helicobacter pylori Antigen
+        - Helicobacter pylori DNA
+        - Helicobacter pylori
+        - Hemozoin
+        - Hepatitis A Virus RNA
+        - Hepatitis A Virus Surface Antigen
+        - Hepatitis B Virus Core Antigen
+        - Hepatitis B Virus DNA
+        - Hepatitis B Virus e Antigen
+        - Hepatitis B Virus Nucleic Acid
+        - Hepatitis B Virus RNA
+        - Hepatitis B Virus Surface Antigen
+        - Hepatitis B Virus
+        - Hepatitis C Virus Antigen
+        - Hepatitis C Virus Core Antigen
+        - Hepatitis C Virus Nucleic Acid
+        - Hepatitis C Virus RNA
+        - Hepatitis C Virus
+        - Hepatitis D Virus RNA
+        - Hepatitis E Virus Antigen
+        - Hepatitis E Virus RNA
+        - Herpes Simplex Virus 1 DNA
+        - Herpes Simplex Virus 1
+        - Herpes Simplex Virus 1/2 Antigen
+        - Herpes Simplex Virus 1/2 DNA
+        - Herpes Simplex Virus 1/2
+        - Herpes Simplex Virus 2 DNA
+        - Herpes Simplex Virus 2
+        - High-Risk HPV Types DNA, MLTTRG
+        - High-Risk HPV Types mRNA, MLTTRG
+        - Histoplasma capsulatum Antigen
+        - HIV Antigen/Antibody
+        - HIV-1 Antibody + HIV-1 p24 Antigen
+        - HIV-1 Antigen
+        - HIV-1 Group M and O Nucleic Acid
+        - HIV-1 Nucleic Acid
+        - HIV-1 p24 Antigen
+        - HIV-1 RNA
+        - HIV-1/2 Antibody + HIV-1 p24 Antigen
+        - HIV-1/2 Antigen/Antibody
+        - HIV-1/2 RNA
+        - HIV-2 Antibody + HIV-1 p24 Antigen
+        - HIV-2 Nucleic Acid
+        - HIV-2 RNA
+        - Human adenovirus 40/41 DNA
+        - Human astrovirus 1/2/3/4/5/6/7/8 RNA
+        - Human Bocavirus Antigen
+        - Human bocavirus DNA
+        - Human Bocavirus Nucleic Acid
+        - Human Coronavirus 229E
+        - Human Coronavirus HKU1
+        - Human Coronavirus NL63
+        - Human Coronavirus OC43
+        - Human Herpes Virus 8
+        - Human Herpesvirus 6 DNA
+        - Human Herpesvirus 6
+        - Human Herpesvirus 7 DNA
+        - Human Herpesvirus 7
+        - Human Herpesvirus 8 DNA
+        - Human Immunodeficiency Virus
+        - Human Metapneumovirus Antigen
+        - Human Metapneumovirus Nucleic Acid
+        - Human Metapneumovirus RNA
+        - Human Metapneumovirus
+        - Human Papillomavirus DNA
+        - Human Papillomavirus E6/E7 mRNA
+        - Human Papillomavirus Type 11 DNA
+        - Human Papillomavirus Type 16 DNA
+        - Human Papillomavirus Type 18 DNA
+        - Human Papillomavirus Type 31 DNA
+        - Human Papillomavirus Type 31
+        - Human Papillomavirus Type 33 DNA
+        - Human Papillomavirus Type 33
+        - Human Papillomavirus Type 34
+        - Human Papillomavirus Type 35 DNA
+        - Human Papillomavirus Type 35
+        - Human Papillomavirus Type 39 DNA
+        - Human Papillomavirus Type 39
+        - Human Papillomavirus Type 40
+        - Human Papillomavirus Type 42
+        - Human Papillomavirus Type 43
+        - Human Papillomavirus Type 44
+        - Human Papillomavirus Type 45 DNA
+        - Human Papillomavirus Type 45
+        - Human Papillomavirus Type 51 DNA
+        - Human Papillomavirus Type 51
+        - Human Papillomavirus Type 52 DNA
+        - Human Papillomavirus Type 52
+        - Human Papillomavirus Type 53 DNA
+        - Human Papillomavirus Type 53
+        - Human Papillomavirus Type 54
+        - Human Papillomavirus Type 56 DNA
+        - Human Papillomavirus Type 56
+        - Human Papillomavirus Type 57 DNA
+        - Human Papillomavirus Type 58 DNA
+        - Human Papillomavirus Type 58
+        - Human Papillomavirus Type 59 DNA
+        - Human Papillomavirus Type 59
+        - Human Papillomavirus Type 6 DNA
+        - Human Papillomavirus Type 66 DNA
+        - Human Papillomavirus Type 66
+        - Human Papillomavirus Type 67 DNA
+        - Human Papillomavirus Type 68 DNA
+        - Human Papillomavirus Type 68
+        - Human Papillomavirus Type 69
+        - Human Papillomavirus Type 70
+        - Human Papillomavirus Type 74
+        - Human Papillomavirus
+        - Human Parainfluenza Antigen
+        - Human Parainfluenza Virus 1 Antigen
+        - Human Parainfluenza Virus 1 Nucleic Acid
+        - Human Parainfluenza Virus 1 RNA
+        - Human Parainfluenza Virus 1
+        - Human Parainfluenza Virus 1/2/3 Antigen
+        - Human Parainfluenza Virus 1/2/3 RNA
+        - Human Parainfluenza Virus 1/2/3/4 RNA
+        - Human Parainfluenza Virus 2 Antigen
+        - Human Parainfluenza Virus 2 Nucleic Acid
+        - Human Parainfluenza Virus 2 RNA
+        - Human Parainfluenza Virus 2
+        - Human Parainfluenza Virus 3 Antigen
+        - Human Parainfluenza Virus 3 Nucleic Acid
+        - Human Parainfluenza Virus 3 RNA
+        - Human Parainfluenza Virus 3
+        - Human Parainfluenza Virus 4 Nucleic Acid
+        - Human Parainfluenza Virus 4 RNA
+        - Human Parainfluenza Virus 4
+        - Human Parainfluenza Virus 4B NC
+        - Human Parainfluenza virus RNA
+        - Human Parvovirus B19 DNA
+        - Human Parvovirus B19
+        - Human rhinovirus A/B/C Antigen
+        - Human rhinovirus A/B/C
+        - Human rhinovirus
+        - Human rhinovirus/enterovirus Nuc Acid
+        - Human rhinovirus/enterovirus RNA
+        - Human rhinovirus/enterovirus
+        - Human T-Lymphotropic Virus RNA
+        - Influenza A Antigen
+        - Influenza A H1 Nucleic Acid
+        - Influenza A H1 RNA
+        - Influenza A H3 Nucleic Acid
+        - Influenza A H3 RNA
+        - Influenza A Nucleic Acid
+        - Influenza A RNA
+        - Influenza A Virus
+        - Influenza A/B Antigen
+        - Influenza A/B RNA
+        - Influenza A/B Virus
+        - Influenza B Antigen
+        - Influenza B Nucleic Acid
+        - Influenza B RNA
+        - Influenza B Virus
+        - JC Virus DNA
+        - JC Virus
+        - K. pneumoniae, Carbapenem-resistant
+        - Klebsiella aerogenes DNA
+        - Klebsiella aerogenes
+        - Klebsiella oxytoca DNA
+        - Klebsiella oxytoca
+        - Klebsiella pneumoniae DNA
+        - Klebsiella pneumoniae
+        - Klebsiella variicola
+        - Klebsiella
+        - Lactobacillus crispatus DNA
+        - Lactobacillus crispatus
+        - Lactobacillus jensenii
+        - Lactobacillus
+        - Legionella longbeachae DNA
+        - Legionella pneumophila Antigen
+        - Legionella pneumophila DNA
+        - Legionella pneumophila Sg 1 Antigen
+        - Legionella pneumophila
+        - Listeria monocytogenes DNA
+        - Listeria monocytogenes
+        - M. tuberculosis IFN Gamma Response
+        - M. tuberculosis, Rifampin-resistant
+        - MERS-CoV RNA
+        - Microbial Organism Identification
+        - Microfilaria
+        - Molluscum Contagiosum Virus DNA
+        - Monkeypox Virus DNA
+        - Monkeypox Virus
+        - Moraxella catarrhalis DNA
+        - Moraxella catarrhalis
+        - Morganella morganii
+        - Morganella
+        - Mumps Virus RNA
+        - Murine Pneumonia Virus
+        - Mycobacterium abscessus
+        - Mycobacterium avium Complex
+        - Mycobacterium chelonae
+        - Mycobacterium fortuitum
+        - Mycobacterium kansasii
+        - Mycobacterium simiae
+        - Mycobacterium tuberculosis Complex
+        - Mycobacterium tuberculosis Nucleic Acid
+        - Mycobacterium tuberculosis
+        - Mycobacterium
+        - Mycoplasma genitalium DNA
+        - Mycoplasma genitalium
+        - Mycoplasma hominis DNA
+        - Mycoplasma pneumoniae DNA
+        - Mycoplasma pneumoniae Nucleic Acid
+        - Mycoplasma pneumoniae
+        - Mycoplasma
+        - N. gonorrhoeae, Beta-lactamase Negative
+        - N. gonorrhoeae, Beta-lactamase Positive
+        - Neisseria gonorrhoeae DNA
+        - Neisseria gonorrhoeae RNA
+        - Neisseria gonorrhoeae
+        - Neisseria meningitidis A Antigen
+        - Neisseria meningitidis C Antigen
+        - Neisseria meningitidis DNA
+        - Nocardia cyriacigeorgica
+        - Nontuberculous Mycobacteria Nucleic Acid
+        - Nontuberculous Mycobacteria
+        - Norovirus Genogroup I RNA
+        - Norovirus Genogroup I/II RNA
+        - Norovirus Genogroup II RNA
+        - Norovirus RNA
+        - Norovirus
+        - Norwalk virus RNA
+        - Ova and Parasite
+        - P. aeruginosa, Mucoid
+        - P. aeruginosa, Non-mucoid
+        - P. aeruginosa, Small-colony Variant
+        - Parechovirus RNA
+        - Peptostreptococcus
+        - Plasmodium Antigen, MLTTRG
+        - Plasmodium Histidine Rich Protein 2
+        - Plasmodium knowlesi, Asexual
+        - Plasmodium knowlesi, Sexual
+        - Plasmodium Lactate Dehydrogenase
+        - Plasmodium
+        - Plasmodium, Asexual
+        - Plasmodium, Sexual
+        - Plesiomonas shigelloides DNA
+        - Pneumocystis jiroveci Antigen
+        - Pneumocystis jiroveci DNA
+        - Pneumocystis jiroveci
+        - Prevotella bivia
+        - Proteus DNA
+        - Proteus hauseri
+        - Proteus mirabilis
+        - Proteus penneri
+        - Proteus vulgaris
+        - Protozoa
+        - Providencia rettgeri
+        - Providencia stuartii
+        - Pseudomonas aeruginosa DNA
+        - Pseudomonas aeruginosa
+        - Pseudomonas mendocina
+        - Pseudomonas putida
+        - Pseudomonas
+        - Raoultella ornithinolytica
+        - Replication Competent Lentivirus RNA
+        - Respiratory Syncytial Virus Antigen
+        - Respiratory Syncytial Virus RNA
+        - Respiratory Syncytial Virus Type A RNA
+        - Respiratory Syncytial Virus Type A
+        - Respiratory Syncytial Virus Type B RNA
+        - Respiratory Syncytial Virus Type B
+        - Respiratory Syncytial Virus
+        - Rickettsia DNA
+        - Rotavirus A RNA
+        - Rotavirus Antigen
+        - Rotavirus RNA
+        - Rotavirus
+        - RSV Type A Nucleic Acid
+        - RSV Type B Nucleic Acid
+        - Rubeola Antigen
+        - S. aureus, Methicillin-resistant
+        - S. aureus, Methicillin-susceptible
+        - Salmonella Antigen
+        - Salmonella DNA
+        - Salmonella enterica
+        - Salmonella enterica/bongori DNA
+        - Salmonella
+        - Sapovirus Genogroups I/II/IV/V RNA
+        - SARS-CoV-1/SARS-CoV-2 Antigen
+        - SARS-CoV-2 Antigen
+        - SARS-CoV-2 Nucleocapsid Protein Antigen
+        - SARS-CoV-2 RdRp RNA
+        - SARS-CoV-2 RNA
+        - SARS-CoV-2 S RNA
+        - SARS-related Coronavirus RNA
+        - SARS-related Coronavirus RNA/MERS RNA
+        - Serratia marcescens DNA
+        - Serratia marcescens
+        - Serratia
+        - Severe Acute Resp Syndro-Rel Coronavirus
+        - Severe Acute Resp Syndrome Coronavirus 2
+        - Shiga Toxin
+        - Shigella Antigen
+        - Shigella DNA
+        - Shigella
+        - Shigella/EIEC ipaH DNA
+        - Shigella/EIEC
+        - Spirochaetales
+        - Staphylococcus aureus DNA
+        - Staphylococcus aureus
+        - Staphylococcus epidermidis
+        - Staphylococcus haemolyticus
+        - Staphylococcus hominis
+        - Staphylococcus saprophyticus
+        - Staphylococcus, Coagulase Negative
+        - Staphylococcus, Coagulase Positive
+        - Stenotrophomonas maltophilia
+        - Streptococcus agalactiae Antigen
+        - Streptococcus agalactiae DNA
+        - Streptococcus agalactiae
+        - Streptococcus anginosus Group
+        - Streptococcus anginosus
+        - Streptococcus beta-hemolytic
+        - Streptococcus gallolyticus
+        - Streptococcus gamma-hemolytic
+        - Streptococcus Group A
+        - Streptococcus Group B
+        - Streptococcus mitis
+        - Streptococcus pneumoniae Antigen
+        - Streptococcus pneumoniae DNA
+        - Streptococcus pneumoniae
+        - Streptococcus pyogenes Antigen
+        - Streptococcus pyogenes DNA
+        - Streptococcus pyogenes
+        - Streptococcus salivarius
+        - Streptococcus thoraltensis
+        - Streptococcus viridans
+        - Streptococcus
+        - Toxigenic Clostridium difficile
+        - Toxin B-Producing Clostridium difficile
+        - Toxoplasma gondii DNA
+        - Treponema pallidum DNA
+        - Treponema pallidum
+        - Trichomonas RNA
+        - Trichomonas vaginalis DNA
+        - Trichomonas vaginalis
+        - Trichomonas
+        - Ureaplasma parvum DNA
+        - Ureaplasma parvum
+        - Ureaplasma urealyticum DNA
+        - Ureaplasma urealyticum
+        - Urease
+        - V. chol/parahaemolyticus/vulnificus DNA
+        - Vaccinia Virus
+        - Varicella Zoster Virus DNA
+        - Varicella Zoster Virus
+        - Vibrio cholerae DNA
+        - Vibrio parahaemolyticus DNA
+        - Yeast Budding
+        - Yeast Cells
+        - Yeast Hyphae
+        - Yersinia enterocolitica DNA
+        - Yersinia
+        - Zaire Ebolavirus
+        - Zika Virus RNA
+outcome:
+  message: Value not found in extensible codelist Microbiology Test Name (C120528)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C120528
+  codelist_name: Microbiology Test Name
+  codelist_submission_value: MBTEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 555
+

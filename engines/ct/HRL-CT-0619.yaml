@@ -1,0 +1,42 @@
+id: HRL-CT-0619
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: KFSS1TC (Kurtzke Functional Systems Scores Clinical Classification Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: KFSS1TC
+      operator: in
+      value:
+        - KFSS101
+        - KFSS102
+        - KFSS102A
+        - KFSS103
+        - KFSS104
+        - KFSS105
+        - KFSS106
+        - KFSS106A
+        - KFSS107
+        - KFSS108
+        - KFSS108A
+outcome:
+  message: Value not found in non-extensible codelist Kurtzke Functional Systems Scores
+    Clinical Classification Test Code (C112443)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C112443
+  codelist_name: Kurtzke Functional Systems Scores Clinical Classification Test Code
+  codelist_submission_value: KFSS1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 11
+

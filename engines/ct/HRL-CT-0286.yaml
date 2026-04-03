@@ -1,0 +1,59 @@
+id: HRL-CT-0286
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CRFATSCD (Crohn's Disease Findings About Test Code) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CRFATSCD
+      operator: in
+      value:
+        - ABSCNUM
+        - AGESYMST
+        - BIOPSIND
+        - BIOPSNUM
+        - BPSPTHAP
+        - DCDEPIND
+        - DEVPNUM
+        - DVCINSN
+        - EXETRIND
+        - EXTRSCT
+        - FISTATYP
+        - FISTNUM
+        - FNDOSAMT
+        - FNDOSFRQ
+        - ICJRIND
+        - LENRSCT
+        - LESNUM
+        - MXDOSAMT
+        - MXDOSFRQ
+        - PLLDIAM
+        - PLLOC
+        - PROCPRFN
+        - RLDEPIND
+        - SBDEPIND
+        - SEV
+        - SSDISC
+        - STRCTNUM
+        - TPDEPIND
+outcome:
+  message: Value not found in extensible codelist Crohn's Disease Findings About Test
+    Code (C174223)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C174223
+  codelist_name: Crohn's Disease Findings About Test Code
+  codelist_submission_value: CRFATSCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 28
+

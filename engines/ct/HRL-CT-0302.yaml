@@ -1,0 +1,97 @@
+id: HRL-CT-0302
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DUTESTCD (Device-In-Use Test Code) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DUTESTCD
+      operator: in
+      value:
+        - ANTPLANE
+        - AQMTRXSZ
+        - ATTCRCT
+        - CAUDRIND
+        - CBINRATS
+        - CHCKSIZE
+        - COILNUM
+        - COILSTR
+        - DECCORR
+        - ECGELCTN
+        - ECHOTIME
+        - EEGELCTN
+        - EMGELCTN
+        - EOGELCTN
+        - FLDVIEW
+        - FLIPANGL
+        - GLUCALTH
+        - GLUCTLEV
+        - H2OSUPPR
+        - IMAQDIM
+        - IMWGTTYP
+        - INDLAUMD
+        - INTDISTM
+        - INVRTIME
+        - MAXBOLUS
+        - MBRMST
+        - NUMSLICE
+        - PEEPST
+        - PIXSPCX
+        - PIXSPCY
+        - PSST
+        - PUFFBLCK
+        - PUFFDUR
+        - PUFFINT
+        - PUFFNUM
+        - PUFFPAUS
+        - PUFFPINT
+        - PUFFPROF
+        - PUFFRNG
+        - PUFFVOL
+        - PULOXIND
+        - PULSSEQ
+        - RANDCORR
+        - RCBDWDTH
+        - RCFLTRTP
+        - RECONDAT
+        - REFEQU
+        - REPTIME
+        - RESPST
+        - SFTWRVER
+        - SIGAMP
+        - SIGFREQ
+        - SIGW
+        - SLICNUM
+        - SPECTWD
+        - SPSMTIME
+        - STHICK
+        - STIMPARM
+        - TRTAMT
+        - TVST
+        - ULTRMODE
+        - USH2OAVN
+        - VMODE
+        - VOXDIMX
+        - VOXDIMY
+        - VOXDIMZ
+        - VOXORIEN
+outcome:
+  message: Value not found in extensible codelist Device-In-Use Test Code (C106483)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106483
+  codelist_name: Device-In-Use Test Code
+  codelist_submission_value: DUTESTCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 67
+

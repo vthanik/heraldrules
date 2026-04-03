@@ -1,0 +1,73 @@
+id: HRL-CT-1010
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SGRQC1TC (St. George's Respiratory Questionnaire for COPD Patients Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SGRQC1TC
+      operator: in
+      value:
+        - SGRQC101
+        - SGRQC102
+        - SGRQC103
+        - SGRQC104
+        - SGRQC105
+        - SGRQC106
+        - SGRQC107
+        - SGRQC108
+        - SGRQC109
+        - SGRQC110
+        - SGRQC111
+        - SGRQC112
+        - SGRQC113
+        - SGRQC114
+        - SGRQC115
+        - SGRQC116
+        - SGRQC117
+        - SGRQC118
+        - SGRQC119
+        - SGRQC120
+        - SGRQC121
+        - SGRQC122
+        - SGRQC123
+        - SGRQC124
+        - SGRQC125
+        - SGRQC126
+        - SGRQC127
+        - SGRQC128
+        - SGRQC129
+        - SGRQC130
+        - SGRQC131
+        - SGRQC132
+        - SGRQC133
+        - SGRQC134
+        - SGRQC135
+        - SGRQC136
+        - SGRQC137
+        - SGRQC138
+        - SGRQC139
+        - SGRQC140
+        - SGRQC141
+outcome:
+  message: Value not found in non-extensible codelist St. George's Respiratory Questionnaire
+    for COPD Patients Questionnaire Test Code (C106671)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106671
+  codelist_name: St. George's Respiratory Questionnaire for COPD Patients Questionnaire
+    Test Code
+  codelist_submission_value: SGRQC1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 41
+

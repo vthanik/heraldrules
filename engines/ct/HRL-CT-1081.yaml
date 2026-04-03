@@ -1,0 +1,42 @@
+id: HRL-CT-1081
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PROS01TN (The Prostate Cancer Specific Quality of Life Instrument Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PROS01TN
+      operator: in
+      value:
+        - PROS01-Appetite
+        - PROS01-Constipation
+        - PROS01-Enjoying Time Friends/Family
+        - PROS01-Fatigue
+        - PROS01-Mood
+        - PROS01-Overall Well-Being
+        - PROS01-Pain
+        - PROS01-Physical Activity
+        - PROS01-Present Pain Intensity
+        - PROS01-Urinary Problems
+outcome:
+  message: Value not found in non-extensible codelist The Prostate Cancer Specific
+    Quality of Life Instrument Questionnaire Test Name (C127359)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C127359
+  codelist_name: The Prostate Cancer Specific Quality of Life Instrument Questionnaire
+    Test Name
+  codelist_submission_value: PROS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 10
+

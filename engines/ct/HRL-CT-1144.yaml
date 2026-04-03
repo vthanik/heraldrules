@@ -1,0 +1,32 @@
+id: HRL-CT-1144
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: UPS01TC (Urgency Perception Scale Questionnaire Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: UPS01TC
+      operator: in
+      value:
+        - UPS0101
+outcome:
+  message: Value not found in non-extensible codelist Urgency Perception Scale Questionnaire
+    Test Code (C103489)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103489
+  codelist_name: Urgency Perception Scale Questionnaire Test Code
+  codelist_submission_value: UPS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

@@ -1,0 +1,57 @@
+id: HRL-CT-0805
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL14TN (Pediatric Quality of Life Neuromuscular Module Acute Version
+  3 Child Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL14TN
+      operator: in
+      value:
+        - PQL14-Back Feels Stiff
+        - PQL14-Do Not Have Equipment Need
+        - PQL14-Family Has Lot of Problems
+        - PQL14-Feel Tired
+        - PQL14-Get Hurt Accidentally
+        - PQL14-Get Sick Easily
+        - PQL14-Get Sores and/or Rashes
+        - PQL14-Hands Are Weak
+        - PQL14-Hard Ask Doctors/Nurses Questions
+        - PQL14-Hard Explain Illness to People
+        - PQL14-Hard for Family to Plan Activities
+        - PQL14-Hard for Family to Rest
+        - PQL14-Hard Tell Doctors/Nurses How Feel
+        - PQL14-Hard to Breathe
+        - PQL14-Hard to Gain/Lose Weight
+        - PQL14-Hard to Go Places With Equipment
+        - PQL14-Hard to Swallow Food
+        - PQL14-Hard to Turn During Night
+        - PQL14-Hard to Use Bathroom
+        - PQL14-Hard to Use Hands
+        - PQL14-Legs Hurt
+        - PQL14-Long Time to Bathe/Shower
+        - PQL14-Money Problem in Our Family
+        - PQL14-Take Long Time to Eat
+        - PQL14-Wake Up Tired
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Acute Version 3 Child Questionnaire Test Name (C138226)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138226
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Acute Version 3 Child
+    Questionnaire Test Name
+  codelist_submission_value: PQL14TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

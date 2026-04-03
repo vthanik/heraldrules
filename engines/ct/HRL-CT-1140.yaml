@@ -1,0 +1,100 @@
+id: HRL-CT-1140
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: UPD1TC (Unified Parkinson's Disease Rating Scale Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: UPD1TC
+      operator: in
+      value:
+        - UPD101
+        - UPD102
+        - UPD103
+        - UPD104
+        - UPD105
+        - UPD106
+        - UPD107
+        - UPD108
+        - UPD109
+        - UPD110
+        - UPD111
+        - UPD112
+        - UPD113
+        - UPD114
+        - UPD115
+        - UPD116
+        - UPD117
+        - UPD118
+        - UPD119
+        - UPD120A
+        - UPD120B
+        - UPD120C
+        - UPD120D
+        - UPD120E
+        - UPD121A
+        - UPD121B
+        - UPD122A
+        - UPD122B
+        - UPD122C
+        - UPD122D
+        - UPD122E
+        - UPD123A
+        - UPD123B
+        - UPD124A
+        - UPD124B
+        - UPD125A
+        - UPD125B
+        - UPD126A
+        - UPD126B
+        - UPD127
+        - UPD128
+        - UPD129
+        - UPD130
+        - UPD131
+        - UPD132
+        - UPD133
+        - UPD134
+        - UPD135
+        - UPD136
+        - UPD137
+        - UPD138
+        - UPD139
+        - UPD140
+        - UPD141
+        - UPD142
+        - UPD142A
+        - UPD142B
+        - UPD142C
+        - UPD142D
+        - UPD142E
+        - UPD142F
+        - UPD143
+        - UPD144A
+        - UPD144B
+        - UPD145
+        - UPD146
+        - UPD147
+        - UPD148
+outcome:
+  message: Value not found in non-extensible codelist Unified Parkinson's Disease
+    Rating Scale Clinical Classification Test Code (C100148)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100148
+  codelist_name: Unified Parkinson's Disease Rating Scale Clinical Classification
+    Test Code
+  codelist_submission_value: UPD1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 68
+

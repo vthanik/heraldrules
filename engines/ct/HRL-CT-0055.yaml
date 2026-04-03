@@ -1,0 +1,34 @@
+id: HRL-CT-0055
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ADTNQRS (Administration Technique Response) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ADTNQRS
+      operator: in
+      value:
+        - HEAF
+        - MANTOUX
+        - TINE
+outcome:
+  message: Value not found in extensible codelist Administration Technique Response
+    (C132311)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C132311
+  codelist_name: Administration Technique Response
+  codelist_submission_value: ADTNQRS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 3
+

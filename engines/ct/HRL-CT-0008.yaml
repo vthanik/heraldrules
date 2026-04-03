@@ -1,0 +1,37 @@
+id: HRL-CT-0008
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SIXMW1TN (6 Minute Walk Functional Test Test Name) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SIXMW1TN
+      operator: in
+      value:
+        - SIXMW1-Distance at 1 Minute
+        - SIXMW1-Distance at 2 Minutes
+        - SIXMW1-Distance at 3 Minutes
+        - SIXMW1-Distance at 4 Minutes
+        - SIXMW1-Distance at 5 Minutes
+        - SIXMW1-Distance at 6 Minutes
+outcome:
+  message: Value not found in non-extensible codelist 6 Minute Walk Functional Test
+    Test Name (C115387)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C115387
+  codelist_name: 6 Minute Walk Functional Test Test Name
+  codelist_submission_value: SIXMW1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

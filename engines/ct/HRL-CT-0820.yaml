@@ -1,0 +1,58 @@
+id: HRL-CT-0820
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL06TC (Pediatric Quality of Life Neuromuscular Module Version 3 Child
+  Parent Report Questionnaire Test Code) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL06TC
+      operator: in
+      value:
+        - PQL0601
+        - PQL0602
+        - PQL0603
+        - PQL0604
+        - PQL0605
+        - PQL0606
+        - PQL0607
+        - PQL0608
+        - PQL0609
+        - PQL0610
+        - PQL0611
+        - PQL0612
+        - PQL0613
+        - PQL0614
+        - PQL0615
+        - PQL0616
+        - PQL0617
+        - PQL0618
+        - PQL0619
+        - PQL0620
+        - PQL0621
+        - PQL0622
+        - PQL0623
+        - PQL0624
+        - PQL0625
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Version 3 Child Parent Report Questionnaire Test Code (C138249)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138249
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Version 3 Child Parent
+    Report Questionnaire Test Code
+  codelist_submission_value: PQL06TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

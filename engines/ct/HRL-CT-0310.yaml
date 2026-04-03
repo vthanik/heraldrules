@@ -1,0 +1,34 @@
+id: HRL-CT-0310
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DIABTHPY (Diabetes Therapy) must contain valid extensible codelist terms
+  (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DIABTHPY
+      operator: in
+      value:
+        - DIET
+        - INSULIN
+        - NO TREATMENT
+        - ORAL MEDICATION
+outcome:
+  message: Value not found in extensible codelist Diabetes Therapy (C101857)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101857
+  codelist_name: Diabetes Therapy
+  codelist_submission_value: DIABTHPY
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 4
+

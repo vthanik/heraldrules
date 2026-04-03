@@ -1,0 +1,86 @@
+id: HRL-CT-0644
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MEDEVAL (Medical Evaluator Identifier) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MEDEVAL
+      operator: in
+      value:
+        - ADJUDICATOR 1
+        - ADJUDICATOR 2
+        - ADJUDICATOR 3
+        - CARDIOLOGIST 1
+        - CARDIOLOGIST 2
+        - CERTIFIED ASSESSOR 1
+        - CLINICAL PATHOLOGIST 1
+        - CLINICAL PATHOLOGIST 2
+        - DERMATOLOGIST 1
+        - DERMATOLOGIST 2
+        - DEVELOPMENTAL BEHAVIORAL PEDIATRICIAN 1
+        - DEVELOPMENTAL BEHAVIORAL PEDIATRICIAN 2
+        - DEVELOPMENTAL PSYCHOLOGIST 1
+        - DEVELOPMENTAL PSYCHOLOGIST 2
+        - ENDOCRINOLOGIST 1
+        - ENDOCRINOLOGIST 2
+        - FORENSIC PATHOLOGIST 1
+        - FORENSIC PATHOLOGIST 2
+        - HEMATOLOGIST 1
+        - HEMATOLOGIST 2
+        - INTERNIST 1
+        - INTERNIST 2
+        - MICROSCOPIST 1
+        - MICROSCOPIST 2
+        - MICROSCOPIST 3
+        - NEUROLOGIST 1
+        - NEUROLOGIST 2
+        - NEUROONCOLOGIST 1
+        - NEURORADIOLOGIST 1
+        - NEURORADIOLOGIST 2
+        - NUCLEAR MEDICINE PHYSICIAN 1
+        - ONCOLOGIST 1
+        - ONCOLOGIST 2
+        - OPHTHALMOLOGIST 1
+        - OPHTHALMOLOGIST 2
+        - OPTOMETRIST 1
+        - OPTOMETRIST 2
+        - OTOLARYNGOLOGIST 1
+        - OTOLARYNGOLOGIST 2
+        - PATHOLOGIST 1
+        - PATHOLOGIST 2
+        - PEDIATRIC NEUROLOGIST 1
+        - PEDIATRIC NEUROLOGIST 2
+        - PHARMACOKINETICIST 1
+        - PHYSIOTHERAPIST 1
+        - PHYSIOTHERAPIST 2
+        - RADIOLOGIST 1
+        - RADIOLOGIST 2
+        - RADIOLOGIST 3
+        - RATER 1
+        - RATER 2
+        - READER 1
+        - READER 2
+        - READER 3
+        - UROLOGIST 1
+        - UROLOGIST 2
+outcome:
+  message: Value not found in extensible codelist Medical Evaluator Identifier (C96777)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C96777
+  codelist_name: Medical Evaluator Identifier
+  codelist_submission_value: MEDEVAL
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 56
+

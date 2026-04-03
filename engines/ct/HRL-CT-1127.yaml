@@ -1,0 +1,61 @@
+id: HRL-CT-1127
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TTYPE (Trial Type Response) must contain valid extensible codelist terms
+  (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TTYPE
+      operator: in
+      value:
+        - ADHESION PERFORMANCE
+        - ALCOHOL EFFECT
+        - BIO-AVAILABILITY
+        - BIO-EQUIVALENCE
+        - BIOSIMILARITY
+        - DEVICE-DRUG INTERACTION
+        - DIAGNOSIS
+        - DOSE FINDING
+        - DOSE PROPORTIONALITY
+        - DOSE RESPONSE
+        - DRUG-DRUG INTERACTION
+        - ECG
+        - EFFICACY
+        - FOOD EFFECT
+        - IMMUNOGENICITY
+        - MASS BALANCE
+        - PHARMACODYNAMIC
+        - PHARMACOECONOMIC
+        - PHARMACOGENETIC
+        - PHARMACOGENOMIC
+        - PHARMACOKINETIC
+        - POSITION EFFECT
+        - PREVENTION
+        - REACTOGENICITY
+        - SAFETY
+        - SWALLOWING FUNCTION
+        - THOROUGH QT
+        - TOLERABILITY
+        - TREATMENT
+        - USABILITY TESTING
+        - WATER EFFECT
+outcome:
+  message: Value not found in extensible codelist Trial Type Response (C66739)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C66739
+  codelist_name: Trial Type Response
+  codelist_submission_value: TTYPE
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 31
+

@@ -1,0 +1,33 @@
+id: HRL-CT-0421
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FCVD1TN (Framingham Heart Study Cardiovascular Disease 10-Year Risk Score
+  Clinical Classification Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FCVD1TN
+      operator: in
+      value:
+        - FCVD1-Framingham CVD 10-Year Risk Score
+outcome:
+  message: Value not found in non-extensible codelist Framingham Heart Study Cardiovascular
+    Disease 10-Year Risk Score Clinical Classification Test Name (C124669)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124669
+  codelist_name: Framingham Heart Study Cardiovascular Disease 10-Year Risk Score
+    Clinical Classification Test Name
+  codelist_submission_value: FCVD1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

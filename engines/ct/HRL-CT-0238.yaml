@@ -1,0 +1,71 @@
+id: HRL-CT-0238
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSS09TN (Columbia-Suicide Severity Rating Scale Screening Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSS09TN
+      operator: in
+      value:
+        - CSS09-Aborted Attempt
+        - CSS09-Aborted Attempt, Describe
+        - CSS09-Actual Attempt
+        - CSS09-Actual Attempt, Describe
+        - CSS09-First Attempt Damage
+        - CSS09-First Attempt Date
+        - CSS09-First Attempt Potential
+        - CSS09-Idea, Intent, No Plan
+        - CSS09-Idea, Intent, No Plan, Describe
+        - CSS09-Idea, No Intent, No Plan
+        - CSS09-Idea, No Intent, No Plan, Describe
+        - CSS09-Idea, Plan, Intent
+        - CSS09-Idea, Plan, Intent, Describe
+        - CSS09-Interrupted Attempt
+        - CSS09-Interrupted Attempt, Describe
+        - CSS09-Most Lethal Attempt Damage
+        - CSS09-Most Lethal Attempt Date
+        - CSS09-Most Lethal Attempt Potential
+        - CSS09-Most Recent Attempt Damage
+        - CSS09-Most Recent Attempt Date
+        - CSS09-Most Recent Attempt Potential
+        - CSS09-Most Severe Idea
+        - CSS09-Most Severe Idea, Controllability
+        - CSS09-Most Severe Idea, Desc
+        - CSS09-Most Severe Idea, Deterrents
+        - CSS09-Most Severe Idea, Duration
+        - CSS09-Most Severe Idea, Frequency
+        - CSS09-Most Severe Idea, Reasons
+        - CSS09-Non-Spec Suicid Thought
+        - CSS09-Non-Spec Suicid Thought, Describe
+        - CSS09-Non-suicidal Self-injur Behav
+        - CSS09-Number of Aborted Attempts
+        - CSS09-Number of Actual Attempts
+        - CSS09-Number of Interrupt Attempts
+        - CSS09-Preparatory Acts/Behavior
+        - CSS09-Preparatory Acts/Behavior, Descr
+        - CSS09-Suicidal Behavior
+        - CSS09-Wish to be Dead
+        - CSS09-Wish to be Dead, Describe
+outcome:
+  message: Value not found in non-extensible codelist Columbia-Suicide Severity Rating
+    Scale Screening Questionnaire Test Name (C111341)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C111341
+  codelist_name: Columbia-Suicide Severity Rating Scale Screening Questionnaire Test
+    Name
+  codelist_submission_value: CSS09TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 39
+

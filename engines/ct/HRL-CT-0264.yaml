@@ -1,0 +1,34 @@
+id: HRL-CT-0264
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CPFATS (COPD Findings About Test Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CPFATS
+      operator: in
+      value:
+        - Cumulative Exposure
+        - Number of Mild Episodes
+        - Number of Moderate Episodes
+        - Number of Severe Episodes
+outcome:
+  message: Value not found in extensible codelist COPD Findings About Test Name (C122006)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C122006
+  codelist_name: COPD Findings About Test Name
+  codelist_submission_value: CPFATS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 4
+

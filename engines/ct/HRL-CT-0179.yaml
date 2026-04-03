@@ -1,0 +1,79 @@
+id: HRL-CT-0179
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CTAUGRS (CDISC Therapeutic Area User Guide Response) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CTAUGRS
+      operator: in
+      value:
+        - Acute Kidney Injury Therapeutic Area User Guide v1.0
+        - Alzheimer's Therapeutic Area User Guide v1.0
+        - Alzheimer's Therapeutic Area User Guide v2.0
+        - Asthma Therapeutic Area User Guide v1.0
+        - Breast Cancer Therapeutic Area User Guide v1.0
+        - Cardiovascular Studies Therapeutic Area User Guide v1.0
+        - CDAD Therapeutic Area User Guide v1.0
+        - Chronic Hepatitis C Therapeutic Area User Guide v1.0
+        - Colorectal Cancer Therapeutic Area User Guide v1.0
+        - COPD Therapeutic Area User Guide v1.0
+        - Crohn's Disease Therapeutic Area User Guide v1.0
+        - Diabetes - Type 1 Therapeutic Area User Guide v1.0 - Pediatrics and Devices
+          Modules
+        - Diabetes Therapeutic Area User Guide v1.0 - Supplement for ADaM
+        - Diabetic Kidney Disease Therapeutic Area User Guide v1.0
+        - Duchenne Muscular Dystrophy Therapeutic Area User Guide v1.0
+        - Dyslipidemia Therapeutic Area User Guide v1.0
+        - Ebola Therapeutic Area User Guide v1.0
+        - Heart Failure Therapeutic Area User Guide v1.0
+        - HIV Therapeutic Area User Guide v1.0
+        - Huntington's Disease Therapeutic Area User Guide v1.0
+        - Influenza Therapeutic Area User Guide v1.0
+        - Influenza Therapeutic Area User Guide v1.1
+        - Interim User Guide for COVID-19 v1.0
+        - Kidney Transplant Therapeutic Area User Guide v1.0
+        - Lung Cancer Therapeutic Area User Guide v1.0
+        - Major Depressive Disorder Therapeutic Area User Guide v1.0
+        - Malaria Therapeutic Area User Guide v1.0
+        - Multiple Sclerosis Therapeutic Area User Guide v1.0
+        - Nutrition Therapeutic Area User Guide v1.0
+        - Pain Therapeutic Area User Guide v1.0
+        - Pain Therapeutic Area User Guide v1.1
+        - Parkinson's Disease Therapeutic Area User Guide v1.0
+        - Polycystic Kidney Disease (PKD) Therapeutic Area User Guide v1.0
+        - Post Traumatic Stress Disorder Therapeutic Area User Guide v1.0
+        - Prostate Cancer Therapeutic Area User Guide v1.0
+        - Psoriasis Therapeutic Area User Guide v1.0
+        - QT Studies Therapeutic Area User Guide v1.0
+        - Rheumatoid Arthritis Therapeutic Area User Guide v1.0
+        - Schizophrenia Therapeutic Area User Guide v1.0
+        - Schizophrenia Therapeutic Area User Guide v1.1
+        - Traditional Chinese Medicine - Coronary Artery Disease-Angina Therapeutic
+          Area User Guide v1.0
+        - Traumatic Brain Injury Therapeutic Area User Guide v1.0
+        - Tuberculosis Therapeutic Area User Guide v2.0
+        - Vaccines Therapeutic Area User Guide v1.1
+        - Virology Therapeutic Area User Guide v2.0
+        - Virology Therapeutic Area User Guide v2.1
+outcome:
+  message: Value not found in extensible codelist CDISC Therapeutic Area User Guide
+    Response (C160925)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C160925
+  codelist_name: CDISC Therapeutic Area User Guide Response
+  codelist_submission_value: CTAUGRS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 46
+

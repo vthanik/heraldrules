@@ -1,0 +1,60 @@
+id: HRL-CT-0871
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PA261TC (PROMIS-29 Profile v2.1 Questionnaire Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PA261TC
+      operator: in
+      value:
+        - PA261001
+        - PA261002
+        - PA261003
+        - PA261004
+        - PA261005
+        - PA261006
+        - PA261007
+        - PA261008
+        - PA261009
+        - PA261010
+        - PA261011
+        - PA261012
+        - PA261013
+        - PA261014
+        - PA261015
+        - PA261016
+        - PA261017
+        - PA261018
+        - PA261019
+        - PA261020
+        - PA261021
+        - PA261022
+        - PA261023
+        - PA261024
+        - PA261025
+        - PA261026
+        - PA261027
+        - PA261028
+        - PA261029
+outcome:
+  message: Value not found in non-extensible codelist PROMIS-29 Profile v2.1 Questionnaire
+    Test Code (C208378)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C208378
+  codelist_name: PROMIS-29 Profile v2.1 Questionnaire Test Code
+  codelist_submission_value: PA261TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 29
+

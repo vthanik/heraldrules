@@ -1,0 +1,76 @@
+id: HRL-CT-0721
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: VFQ2TN (National Eye Institute Visual Functioning Questionnaire - 25
+  Version 2000 Self-Administered Format Questionnaire Test Name) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: VFQ2TN
+      operator: in
+      value:
+        - VFQ2-Accomplish Less Than You Would Like
+        - VFQ2-Are You Currently Driving
+        - VFQ2-Difficulty Doing Work/Hobbies
+        - VFQ2-Difficulty Driving at Night
+        - VFQ2-Difficulty Driving During Daytime
+        - VFQ2-Difficulty Entertaining Friends
+        - VFQ2-Difficulty Figure Out Bill Accuracy
+        - VFQ2-Difficulty Finding on Crowded Shelf
+        - VFQ2-Difficulty Going Down Step at Night
+        - VFQ2-Difficulty Going Out to See Movies
+        - VFQ2-Difficulty Noticing Objects to Side
+        - VFQ2-Difficulty Picking Out Own Clothes
+        - VFQ2-Difficulty Reading Newspapers
+        - VFQ2-Difficulty Reading Small Print
+        - VFQ2-Difficulty Reading Street Signs
+        - VFQ2-Difficulty Recognizing People
+        - VFQ2-Difficulty Seeing How People React
+        - VFQ2-Difficulty Seeing Programs on TV
+        - VFQ2-Difficulty Shaving or Styling Hair
+        - VFQ2-Difficulty Taking Part in Sports
+        - VFQ2-Difficulty Visiting With People
+        - VFQ2-Do You Have More Help From Others
+        - VFQ2-Driving in Difficult Conditions
+        - VFQ2-Eye Pain Keep From Doing What Like
+        - VFQ2-Eyesight Using Both Eyes Is
+        - VFQ2-How Much Pain in and Around Eyes
+        - VFQ2-How Often You Worry About Eyesight
+        - VFQ2-I Don't Go Out of My Home Alone
+        - VFQ2-I Feel Frustrated a Lot of the Time
+        - VFQ2-I Need a Lot of Help From Others
+        - VFQ2-I Stay Home Most of the Time
+        - VFQ2-Limited in How Long You Can Work
+        - VFQ2-Limited in Kinds of Things Can Do
+        - VFQ2-Main Reason You Gave Up Driving
+        - VFQ2-Much Less Control Over What I Do
+        - VFQ2-Never Driven or Given Up Driving
+        - VFQ2-Often Irritable Because Eyesight
+        - VFQ2-Rate Your Eyesight Now
+        - VFQ2-Rate Your Overall Health
+        - VFQ2-Rely Too Much on What Others Tell
+        - VFQ2-Worry I'll Do Embarrassing Things
+        - VFQ2-Your Overall Health Is
+outcome:
+  message: Value not found in non-extensible codelist National Eye Institute Visual
+    Functioning Questionnaire - 25 Version 2000 Self-Administered Format Questionnaire
+    Test Name (C112454)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C112454
+  codelist_name: National Eye Institute Visual Functioning Questionnaire - 25 Version
+    2000 Self-Administered Format Questionnaire Test Name
+  codelist_submission_value: VFQ2TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 42
+

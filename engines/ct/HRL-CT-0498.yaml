@@ -1,0 +1,41 @@
+id: HRL-CT-0498
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GFTESTCD (Genomic Findings Test Code) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GFTESTCD
+      operator: in
+      value:
+        - CPNUMAMP
+        - CPNUMVAR
+        - GENESIG
+        - MICRISTB
+        - SEQREAR
+        - SHRTVAR
+        - SNV
+        - TMB
+        - TRNSCPTN
+        - VARPROF
+        - VNTR
+outcome:
+  message: Value not found in extensible codelist Genomic Findings Test Code (C181178)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C181178
+  codelist_name: Genomic Findings Test Code
+  codelist_submission_value: GFTESTCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 11
+

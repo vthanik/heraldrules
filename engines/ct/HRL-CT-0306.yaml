@@ -1,0 +1,67 @@
+id: HRL-CT-0306
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DDS02TC (Diabetes Distress Scale for Parents of Teens with Type 1 Diabetes
+  Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DDS02TC
+      operator: in
+      value:
+        - DDS0201
+        - DDS0202
+        - DDS0203
+        - DDS0204
+        - DDS0205
+        - DDS0206
+        - DDS0207
+        - DDS0208
+        - DDS0209
+        - DDS0210
+        - DDS0211
+        - DDS0212
+        - DDS0213
+        - DDS0214
+        - DDS0215
+        - DDS0216
+        - DDS0217
+        - DDS0218
+        - DDS0219
+        - DDS0220
+        - DDS0221
+        - DDS0222
+        - DDS0223
+        - DDS0224
+        - DDS0225
+        - DDS0226
+        - DDS0227
+        - DDS0228
+        - DDS0229
+        - DDS0230
+        - DDS0231
+        - DDS0232
+        - DDS0233
+        - DDS0234
+        - DDS0235
+outcome:
+  message: Value not found in non-extensible codelist Diabetes Distress Scale for
+    Parents of Teens with Type 1 Diabetes Questionnaire Test Code (C163395)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C163395
+  codelist_name: Diabetes Distress Scale for Parents of Teens with Type 1 Diabetes
+    Questionnaire Test Code
+  codelist_submission_value: DDS02TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 35
+

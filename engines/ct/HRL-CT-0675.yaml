@@ -1,0 +1,49 @@
+id: HRL-CT-0675
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MCEQ01TN (Modified Cigarette Evaluation Questionnaire Test Name) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MCEQ01TN
+      operator: in
+      value:
+        - MCEQ01-Aversion Score
+        - MCEQ01-Craving Reduction Score
+        - MCEQ01-Did Cigarettes Taste Good
+        - MCEQ01-Did Smoking Calm You Down
+        - MCEQ01-Did Smoking Feel Less Irritable
+        - MCEQ01-Did Smoking Help You Concentrate
+        - MCEQ01-Did Smoking Make Feel More Awake
+        - MCEQ01-Did Smoking Make You Dizzy
+        - MCEQ01-Did Smoking Make You Nauseous
+        - MCEQ01-Did Smoking Reduce Your Hunger
+        - MCEQ01-Did Smoking Relieve Craving
+        - MCEQ01-Did You Enjoy Sensations Throat
+        - MCEQ01-Did You Enjoy Smoking
+        - MCEQ01-Enjoy Respiratory Sensation Score
+        - MCEQ01-Psychological Reward Score
+        - MCEQ01-Smoking Satisfaction Score
+        - MCEQ01-Total Score
+        - MCEQ01-Was Smoking Satisfying
+outcome:
+  message: Value not found in non-extensible codelist Modified Cigarette Evaluation
+    Questionnaire Test Name (C213933)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C213933
+  codelist_name: Modified Cigarette Evaluation Questionnaire Test Name
+  codelist_submission_value: MCEQ01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 18
+

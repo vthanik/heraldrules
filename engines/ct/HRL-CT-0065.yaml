@@ -1,0 +1,35 @@
+id: HRL-CT-0065
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ADTC01TN (Alcohol Use Disorder Identification Test-Consumption Questions
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ADTC01TN
+      operator: in
+      value:
+        - ADTC01-Alcohol Drinks on a Typical Day
+        - ADTC01-How Often Drink Alcohol
+        - ADTC01-Six or More Drinks One Occasion
+outcome:
+  message: Value not found in non-extensible codelist Alcohol Use Disorder Identification
+    Test-Consumption Questions Questionnaire Test Name (C119061)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C119061
+  codelist_name: Alcohol Use Disorder Identification Test-Consumption Questions Questionnaire
+    Test Name
+  codelist_submission_value: ADTC01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 3
+

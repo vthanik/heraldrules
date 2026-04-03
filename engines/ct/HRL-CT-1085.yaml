@@ -1,0 +1,89 @@
+id: HRL-CT-1085
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SF362TN (The Short Form 36 Health Survey Acute, US Version 1.0 Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SF362TN
+      operator: in
+      value:
+        - SF362-Bodily Pain 0-100 Score
+        - SF362-Bodily Pain Norm-Based Score
+        - SF362-Comp Week Ago Rate Gen Health Now
+        - SF362-Did You Feel Full of Pep
+        - SF362-Did You Feel Tired
+        - SF362-Did You Feel Worn Out
+        - SF362-Did You Have a Lot of Energy
+        - 'SF362-Emotional: Accomplished Less'
+        - 'SF362-Emotional: Cut Down Time on Work'
+        - 'SF362-Emotional: Did Work Less Carefully'
+        - SF362-Extent Phys/Emotional Interfered
+        - SF362-Felt Down Nothing Cheer You Up
+        - SF362-General Health 0-100 Score
+        - SF362-General Health Norm-Based Score
+        - SF362-Get Sick Little Easier Than Other
+        - SF362-Have You Been a Happy Person
+        - SF362-Have You Been Very Nervous Person
+        - SF362-Have You Felt Calm and Peaceful
+        - SF362-How Much Bodily Pain Have You Had
+        - SF362-I Am as Healthy as Anybody I Know
+        - SF362-I Expect My Health to Get Worse
+        - SF362-In General You Say Your Health Is
+        - SF362-Limit Bathing or Dressing Yourself
+        - SF362-Limit Bending/Kneeling/Stooping
+        - SF362-Limit Climbing One Flight Stairs
+        - SF362-Limit Climbing Several Flights
+        - SF362-Limit Lifting or Carrying
+        - SF362-Limit Moderate Activities
+        - SF362-Limit Vigorous Activities
+        - SF362-Limit Walking More Than a Mile
+        - SF362-Limit Walking One Block
+        - SF362-Limit Walking Several Blocks
+        - SF362-Mental Component Score
+        - SF362-Mental Health 0-100 Score
+        - SF362-Mental Health Norm-Based Score
+        - SF362-My Health is Excellent
+        - SF362-Pain Interfere With Normal Work
+        - SF362-Phys Functioning Norm-Based Score
+        - SF362-Physical Component Score
+        - SF362-Physical Functioning 0-100 Score
+        - 'SF362-Physical: Accomplished Less'
+        - 'SF362-Physical: Cut Down Time on Work'
+        - 'SF362-Physical: Difficulty Perform Work'
+        - 'SF362-Physical: Limited Kind of Work'
+        - SF362-Response Consistency Score
+        - SF362-Role Emotional 0-100 Score
+        - SF362-Role Emotional Norm-Based Score
+        - SF362-Role Physical 0-100 Score
+        - SF362-Role Physical Norm-Based Score
+        - SF362-SF-6D (Utility Index) Score
+        - SF362-SF-6D_R2 (Util Index Rel 2) Score
+        - SF362-Social Function Norm-Based Score
+        - SF362-Social Functioning 0-100 Score
+        - SF362-Time Phys/Emotional Interfered
+        - SF362-Vitality 0-100 Score
+        - SF362-Vitality Norm-Based Score
+        - SF362-You Felt Downhearted and Blue
+outcome:
+  message: Value not found in non-extensible codelist The Short Form 36 Health Survey
+    Acute, US Version 1.0 Questionnaire Test Name (C101824)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101824
+  codelist_name: The Short Form 36 Health Survey Acute, US Version 1.0 Questionnaire
+    Test Name
+  codelist_submission_value: SF362TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 57
+

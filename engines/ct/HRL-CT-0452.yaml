@@ -1,0 +1,38 @@
+id: HRL-CT-0452
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC043TN (Functional Assessment of Cancer Therapy-Lung Symptom Index
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC043TN
+      operator: in
+      value:
+        - FAC043-Certain Parts of Body Have Pain
+        - FAC043-I Am Losing Weight
+        - FAC043-I Have a Lack of Energy
+        - FAC043-I Have Been Coughing
+        - FAC043-I Have Been Short of Breath
+        - FAC043-I Have Pain
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Lung Symptom Index Questionnaire Test Name (C138224)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138224
+  codelist_name: Functional Assessment of Cancer Therapy-Lung Symptom Index Questionnaire
+    Test Name
+  codelist_submission_value: FAC043TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

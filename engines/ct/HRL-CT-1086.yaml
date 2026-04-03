@@ -1,0 +1,94 @@
+id: HRL-CT-1086
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SF364TC (The Short Form 36 Health Survey Acute, US Version 2.0 Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SF364TC
+      operator: in
+      value:
+        - SF36401
+        - SF36402
+        - SF36403A
+        - SF36403B
+        - SF36403C
+        - SF36403D
+        - SF36403E
+        - SF36403F
+        - SF36403G
+        - SF36403H
+        - SF36403I
+        - SF36403J
+        - SF36404A
+        - SF36404B
+        - SF36404C
+        - SF36404D
+        - SF36405A
+        - SF36405B
+        - SF36405C
+        - SF36406
+        - SF36407
+        - SF36408
+        - SF36409A
+        - SF36409B
+        - SF36409C
+        - SF36409D
+        - SF36409E
+        - SF36409F
+        - SF36409G
+        - SF36409H
+        - SF36409I
+        - SF36410
+        - SF36411A
+        - SF36411B
+        - SF36411C
+        - SF36411D
+        - SF36412
+        - SF36413
+        - SF36414
+        - SF36415
+        - SF36416
+        - SF36417
+        - SF36418
+        - SF36419
+        - SF36420
+        - SF36421
+        - SF36422
+        - SF36423
+        - SF36424
+        - SF36425
+        - SF36426
+        - SF36427
+        - SF36428
+        - SF36429
+        - SF36430
+        - SF36431
+        - SF36432
+        - SF36433
+        - SF36434
+        - SF36435
+        - SF36436
+        - SF36437
+outcome:
+  message: Value not found in non-extensible codelist The Short Form 36 Health Survey
+    Acute, US Version 2.0 Questionnaire Test Code (C101884)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101884
+  codelist_name: The Short Form 36 Health Survey Acute, US Version 2.0 Questionnaire
+    Test Code
+  codelist_submission_value: SF364TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 62
+

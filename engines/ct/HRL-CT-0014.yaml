@@ -1,0 +1,38 @@
+id: HRL-CT-0014
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: AIMS0108T09STR (Abnormal Involuntary Movement Scale Clinical Classification
+  STRESC for AIMS0108 Through AIMS0109 TN/TC) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: AIMS0108T09STR
+      operator: in
+      value:
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+outcome:
+  message: Value not found in non-extensible codelist Abnormal Involuntary Movement
+    Scale Clinical Classification STRESC for AIMS0108 Through AIMS0109 TN/TC (C182503)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C182503
+  codelist_name: Abnormal Involuntary Movement Scale Clinical Classification STRESC
+    for AIMS0108 Through AIMS0109 TN/TC
+  codelist_submission_value: AIMS0108T09STR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

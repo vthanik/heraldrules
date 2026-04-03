@@ -1,0 +1,67 @@
+id: HRL-CT-0901
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: R3601TN (RAND 36-Item Health Survey 1.0 Questionnaire Test Name) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: R3601TN
+      operator: in
+      value:
+        - R3601-Amt Time Interfere Social Activity
+        - R3601-Did Pain Interfere With Your Work
+        - R3601-Did You Feel Full of Pep
+        - R3601-Did You Feel Tired
+        - R3601-Did You Feel Worn Out
+        - R3601-Did You Have a Lot of Energy
+        - 'R3601-Emotional Problem: Accomplish Less'
+        - 'R3601-Emotional Problem: Cut Work Time'
+        - 'R3601-Emotional Problem: Less Careful'
+        - R3601-Extent Interfered Social Activity
+        - R3601-Get Sick Easier Than Other People
+        - R3601-Have Been a Very Nervous Person
+        - R3601-Have Felt Downhearted and Blue
+        - R3601-Have Felt So Down in the Dumps
+        - R3601-Have You Been a Happy Person
+        - R3601-Have You Felt Calm and Peaceful
+        - R3601-Health Limit Bathing/Dressing Self
+        - R3601-Health Limit Bending or Kneeling
+        - R3601-Health Limit Carrying Groceries
+        - R3601-Health Limit Climb One Flight
+        - R3601-Health Limit Climb Several Flights
+        - R3601-Health Limit Moderate Activities
+        - R3601-Health Limit Vigorous Activities
+        - R3601-Health Limit Walk More Than Mile
+        - R3601-Health Limit Walk One Block
+        - R3601-Health Limit Walk Several Blocks
+        - R3601-Health Now Compared to 1 Year Ago
+        - R3601-How Much Bodily Pain Have You Had
+        - R3601-I Am as Healthy as Anybody I Know
+        - R3601-I Expect My Health to Get Worse
+        - R3601-My Health Is Excellent
+        - 'R3601-Phys Health: Accomplish Less'
+        - 'R3601-Phys Health: Cut Work Time'
+        - 'R3601-Phys Health: Difficulty Performing'
+        - 'R3601-Phys Health: Limit Kind of Work'
+        - R3601-Would You Say Your Health Is
+outcome:
+  message: Value not found in non-extensible codelist RAND 36-Item Health Survey 1.0
+    Questionnaire Test Name (C113861)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C113861
+  codelist_name: RAND 36-Item Health Survey 1.0 Questionnaire Test Name
+  codelist_submission_value: R3601TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 36
+

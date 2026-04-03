@@ -1,0 +1,46 @@
+id: HRL-CT-1150
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: VNFATS (Vaccines Findings About Test Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: VNFATS
+      operator: in
+      value:
+        - AE Improve/Resolve with Dechallenge Ind
+        - AE Reappear/Worsen with Rechallenge Ind
+        - Appearance
+        - Distribution
+        - Greatest Circ at Point of Interest
+        - Longest Diameter
+        - Nearest Joint
+        - Needle Gauge
+        - Number of Episodes
+        - Number of Lesions
+        - Occurrence Indicator
+        - Prevents Daily Activities Indicator
+        - Pruritus Indicator
+        - Severity/Intensity
+        - Toxicity Grade
+outcome:
+  message: Value not found in extensible codelist Vaccines Findings About Test Name
+    (C142189)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C142189
+  codelist_name: Vaccines Findings About Test Name
+  codelist_submission_value: VNFATS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 15
+

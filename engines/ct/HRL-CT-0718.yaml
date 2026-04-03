@@ -1,0 +1,76 @@
+id: HRL-CT-0718
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: VFQ1TC (National Eye Institute Visual Functioning Questionnaire - 25
+  Version 2000 Interviewer-Administered Format Questionnaire Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: VFQ1TC
+      operator: in
+      value:
+        - VFQ101
+        - VFQ102
+        - VFQ103
+        - VFQ104
+        - VFQ105
+        - VFQ106
+        - VFQ107
+        - VFQ108
+        - VFQ109
+        - VFQ110
+        - VFQ111
+        - VFQ112
+        - VFQ113
+        - VFQ114
+        - VFQ115
+        - VFQ115A
+        - VFQ115B
+        - VFQ115C
+        - VFQ116
+        - VFQ116A
+        - VFQ117
+        - VFQ118
+        - VFQ119
+        - VFQ120
+        - VFQ121
+        - VFQ122
+        - VFQ123
+        - VFQ124
+        - VFQ125
+        - VFQ1A01
+        - VFQ1A02
+        - VFQ1A03
+        - VFQ1A04
+        - VFQ1A05
+        - VFQ1A06
+        - VFQ1A07
+        - VFQ1A08
+        - VFQ1A09
+        - VFQ1A11A
+        - VFQ1A11B
+        - VFQ1A12
+        - VFQ1A13
+outcome:
+  message: Value not found in non-extensible codelist National Eye Institute Visual
+    Functioning Questionnaire - 25 Version 2000 Interviewer-Administered Format Questionnaire
+    Test Code (C112453)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C112453
+  codelist_name: National Eye Institute Visual Functioning Questionnaire - 25 Version
+    2000 Interviewer-Administered Format Questionnaire Test Code
+  codelist_submission_value: VFQ1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 42
+

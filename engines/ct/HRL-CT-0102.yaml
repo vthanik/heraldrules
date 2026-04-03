@@ -1,0 +1,33 @@
+id: HRL-CT-0102
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ATLAS102OR (ATLAS Clinical Classification ORRES for ATLAS102 TN/TC) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ATLAS102OR
+      operator: in
+      value:
+        - 'No'
+        - 'Yes'
+outcome:
+  message: Value not found in non-extensible codelist ATLAS Clinical Classification
+    ORRES for ATLAS102 TN/TC (C182471)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C182471
+  codelist_name: ATLAS Clinical Classification ORRES for ATLAS102 TN/TC
+  codelist_submission_value: ATLAS102OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 2
+

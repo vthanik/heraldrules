@@ -1,0 +1,52 @@
+id: HRL-CT-0930
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RPQ01TN (Rivermead Post Concussion Symptoms Questionnaire Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RPQ01TN
+      operator: in
+      value:
+        - RPQ01-Any Other Difficulties 1 (Text)
+        - RPQ01-Any Other Difficulties 1
+        - RPQ01-Any Other Difficulties 2 (Text)
+        - RPQ01-Any Other Difficulties 2
+        - RPQ01-Being Irritable, Easily Angered
+        - RPQ01-Blurred Vision
+        - RPQ01-Double Vision
+        - RPQ01-Fatigue, Tiring More Easily
+        - RPQ01-Feeling Depressed or Tearful
+        - RPQ01-Feeling Frustrated or Impatient
+        - RPQ01-Feelings of Dizziness
+        - RPQ01-Forgetfulness, Poor Memory
+        - RPQ01-Headaches
+        - RPQ01-Light Sensitivity/Bright Light
+        - RPQ01-Nausea and/or Vomiting
+        - RPQ01-Noise Sensitivity/Loud Noise
+        - RPQ01-Poor Concentration
+        - RPQ01-Restlessness
+        - RPQ01-Sleep Disturbance
+        - RPQ01-Taking Longer to Think
+outcome:
+  message: Value not found in non-extensible codelist Rivermead Post Concussion Symptoms
+    Questionnaire Questionnaire Test Name (C119071)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C119071
+  codelist_name: Rivermead Post Concussion Symptoms Questionnaire Questionnaire Test
+    Name
+  codelist_submission_value: RPQ01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 20
+

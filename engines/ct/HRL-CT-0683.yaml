@@ -1,0 +1,32 @@
+id: HRL-CT-0683
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MRS01TN (Modified Rankin Scale Clinical Classification Test Name) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MRS01TN
+      operator: in
+      value:
+        - MRS01-Modified Rankin Scale Score
+outcome:
+  message: Value not found in non-extensible codelist Modified Rankin Scale Clinical
+    Classification Test Name (C111347)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C111347
+  codelist_name: Modified Rankin Scale Clinical Classification Test Name
+  codelist_submission_value: MRS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

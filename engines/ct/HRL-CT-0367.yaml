@@ -1,0 +1,49 @@
+id: HRL-CT-0367
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR02TC (European Organisation for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Palliative Care Version 1.0 Questionnaire Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR02TC
+      operator: in
+      value:
+        - EOR0201
+        - EOR0202
+        - EOR0203
+        - EOR0204
+        - EOR0205
+        - EOR0206
+        - EOR0207
+        - EOR0208
+        - EOR0209
+        - EOR0210
+        - EOR0211
+        - EOR0212
+        - EOR0213
+        - EOR0214
+        - EOR0215
+outcome:
+  message: Value not found in non-extensible codelist European Organisation for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Palliative Care
+    Version 1.0 Questionnaire Test Code (C161617)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C161617
+  codelist_name: European Organisation for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Palliative Care Version 1.0 Questionnaire Test Code
+  codelist_submission_value: EOR02TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 15
+

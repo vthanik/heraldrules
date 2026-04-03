@@ -1,0 +1,32 @@
+id: HRL-CT-0772
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PDDS01TC (Patient Determined Disease Steps Questionnaire Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PDDS01TC
+      operator: in
+      value:
+        - PDDS0101
+outcome:
+  message: Value not found in non-extensible codelist Patient Determined Disease Steps
+    Questionnaire Test Code (C112447)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C112447
+  codelist_name: Patient Determined Disease Steps Questionnaire Test Code
+  codelist_submission_value: PDDS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

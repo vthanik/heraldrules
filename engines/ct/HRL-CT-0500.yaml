@@ -1,0 +1,41 @@
+id: HRL-CT-0500
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GFTEST (Genomic Findings Test Name) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GFTEST
+      operator: in
+      value:
+        - Copy Number Amplification
+        - Copy Number Variation
+        - Gene Signature
+        - Microsatellite Instability
+        - Sequence Rearrangement
+        - Short Variation
+        - Single Nucleotide Variation
+        - Transcription
+        - Tumor Mutation Burden
+        - Variable Number Tandem Repeats
+        - Variant Profile
+outcome:
+  message: Value not found in extensible codelist Genomic Findings Test Name (C181179)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C181179
+  codelist_name: Genomic Findings Test Name
+  codelist_submission_value: GFTEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 11
+

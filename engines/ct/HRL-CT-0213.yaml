@@ -1,0 +1,44 @@
+id: HRL-CT-0213
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: COWS1TC (Clinical Opiate Withdrawal Scale Questionnaire Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: COWS1TC
+      operator: in
+      value:
+        - COWS101
+        - COWS101A
+        - COWS102
+        - COWS103
+        - COWS104
+        - COWS105
+        - COWS106
+        - COWS107
+        - COWS108
+        - COWS109
+        - COWS110
+        - COWS111
+        - COWS112
+outcome:
+  message: Value not found in non-extensible codelist Clinical Opiate Withdrawal Scale
+    Questionnaire Test Code (C101813)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101813
+  codelist_name: Clinical Opiate Withdrawal Scale Questionnaire Test Code
+  codelist_submission_value: COWS1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 13
+

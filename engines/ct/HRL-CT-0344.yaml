@@ -1,0 +1,66 @@
+id: HRL-CT-0344
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EGMETHOD (ECG Test Method) must contain valid extensible codelist terms
+  (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EGMETHOD
+      operator: in
+      value:
+        - 10 LEAD STANDARD
+        - 12 LEAD 1 LEAD MISSING
+        - 12 LEAD CABRERA
+        - 12 LEAD CONTINUOUS ECG
+        - 12 LEAD EASI DOWER TRANSFORMATION
+        - 12 LEAD ECG EXTRACTED FROM 12 LEAD CONTINUOUS ECG RECORDING
+        - 12 LEAD MASON LIKAR
+        - 12 LEAD MODIFIED MASON LIKAR
+        - 12 LEAD NON-STANDARD
+        - 12 LEAD RIGHT-SIDED PRECORDIAL LEADS
+        - 12 LEAD SINGLE PAD
+        - 12 LEAD STANDARD
+        - 12 LEAD UNSPECIFIED
+        - 12-LEAD EXTENDED RIGHT
+        - 15 LEAD INCLUDING V3R-V5R
+        - 15 LEAD INCLUDING V7-V9
+        - 6 LEAD NEHB-SPORI
+        - 6 LEAD STANDARD
+        - 7 LEAD STANDARD, NON-HUMAN
+        - 8 LEAD STANDARD
+        - BIPOLAR UNCORRECTED XYZ LEAD SYSTEM
+        - CONTINUOUS AMBULATORY ECG
+        - CONTINUOUS ECG RECORDING FOR NON-HUMAN SPECIES USING IMPLANTED LEADS
+        - CONTINUOUS SURFACE ECG RECORDING FOR NON-HUMAN SPECIES
+        - CUBE LEAD SYSTEM
+        - FRANK LEAD SYSTEM
+        - HOLTER CONTINUOUS ECG RECORDING
+        - MCFEE-PARUNGAO LEAD SYSTEM
+        - PSEUDO-ORTHOGONAL XYZ LEAD SYSTEM
+        - STANDARD 12-LEAD AND CC5-CM5-ML
+        - STANDARD 12-LEAD AND CM5-CC5-CH5
+        - STANDARD 12-LEAD EXTENDED LEFT
+        - STANDARD LEADS FOR BICYCLE EXERCISE
+        - STANDARD LEADS ONE INTERCOSTAL SPACE HIGHER
+        - VECTORCARDIOGRAPH CORRECTED
+        - VECTORCARDIOGRAPH UNCORRECTED
+outcome:
+  message: Value not found in extensible codelist ECG Test Method (C71151)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C71151
+  codelist_name: ECG Test Method
+  codelist_submission_value: EGMETHOD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 36
+

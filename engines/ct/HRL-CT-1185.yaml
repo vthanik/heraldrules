@@ -1,0 +1,60 @@
+id: HRL-CT-1185
+version: 1
+status: Published
+standard: ADaM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CHSFPC (Craig Handicap Assessment and Reporting Technique-Short Form
+  Questionnaires Parameter Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CHSFPC
+      operator: in
+      value:
+        - CHSF01A
+        - CHSF01B
+        - CHSF02
+        - CHSF03
+        - CHSF04
+        - CHSF05
+        - CHSF06
+        - CHSF07A
+        - CHSF07B
+        - CHSF08
+        - CHSF09
+        - CHSF10
+        - CHSF11
+        - CHSF12
+        - CHSF13
+        - CHSF14
+        - CHSF15
+        - CHSF16
+        - CHSF17
+        - CHSF18
+        - CHSF19
+        - CHSFCS
+        - CHSFES
+        - CHSFMS
+        - CHSFOS
+        - CHSFPS
+        - CHSFSS
+        - CHSFTS
+outcome:
+  message: Value not found in non-extensible codelist Craig Handicap Assessment and
+    Reporting Technique-Short Form Questionnaires Parameter Code (C187458)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C187458
+  codelist_name: Craig Handicap Assessment and Reporting Technique-Short Form Questionnaires
+    Parameter Code
+  codelist_submission_value: CHSFPC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 28
+

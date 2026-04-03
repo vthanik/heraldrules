@@ -1,0 +1,36 @@
+id: HRL-CT-0131
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BWCS01TC (Bowel Control Scale Questionnaire Test Code) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BWCS01TC
+      operator: in
+      value:
+        - BWCS0101
+        - BWCS0102
+        - BWCS0103
+        - BWCS0104
+        - BWCS0105
+outcome:
+  message: Value not found in non-extensible codelist Bowel Control Scale Questionnaire
+    Test Code (C113854)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C113854
+  codelist_name: Bowel Control Scale Questionnaire Test Code
+  codelist_submission_value: BWCS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

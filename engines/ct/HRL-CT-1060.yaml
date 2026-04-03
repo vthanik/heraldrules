@@ -1,0 +1,39 @@
+id: HRL-CT-1060
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BODE01TC (The Body-Mass Index, Airflow Obstruction, Dyspnea, and Exercise
+  Capacity Index Clinical Classification Test Code) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BODE01TC
+      operator: in
+      value:
+        - BODE0101
+        - BODE0102
+        - BODE0103
+        - BODE0104
+        - BODE0105
+outcome:
+  message: Value not found in non-extensible codelist The Body-Mass Index, Airflow
+    Obstruction, Dyspnea, and Exercise Capacity Index Clinical Classification Test
+    Code (C120987)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C120987
+  codelist_name: The Body-Mass Index, Airflow Obstruction, Dyspnea, and Exercise Capacity
+    Index Clinical Classification Test Code
+  codelist_submission_value: BODE01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

@@ -1,0 +1,92 @@
+id: HRL-CT-0457
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC019TC (Functional Assessment of Cancer Therapy-Melanoma Version 4
+  Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC019TC
+      operator: in
+      value:
+        - FAC01901
+        - FAC01902
+        - FAC01903
+        - FAC01904
+        - FAC01905
+        - FAC01906
+        - FAC01907
+        - FAC01908
+        - FAC01909
+        - FAC01910
+        - FAC01911
+        - FAC01912
+        - FAC01913
+        - FAC01914
+        - FAC01915
+        - FAC01916
+        - FAC01917
+        - FAC01918
+        - FAC01919
+        - FAC01920
+        - FAC01921
+        - FAC01922
+        - FAC01923
+        - FAC01924
+        - FAC01925
+        - FAC01926
+        - FAC01927
+        - FAC01928
+        - FAC01929
+        - FAC01930
+        - FAC01931
+        - FAC01932
+        - FAC01933
+        - FAC01934
+        - FAC01935
+        - FAC01936
+        - FAC01937
+        - FAC01938
+        - FAC01939
+        - FAC01940
+        - FAC01941
+        - FAC01942
+        - FAC01943
+        - FAC01944
+        - FAC01945
+        - FAC01946
+        - FAC01947
+        - FAC01948
+        - FAC01949
+        - FAC01950
+        - FAC01951
+        - FAC01952
+        - FAC01953
+        - FAC01954
+        - FAC01955
+        - FAC01956
+        - FAC01957
+        - FAC01958
+        - FAC01959
+        - FAC01960
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Melanoma Version 4 Questionnaire Test Code (C213932)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C213932
+  codelist_name: Functional Assessment of Cancer Therapy-Melanoma Version 4 Questionnaire
+    Test Code
+  codelist_submission_value: FAC019TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 60
+

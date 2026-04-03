@@ -1,0 +1,65 @@
+id: HRL-CT-0585
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: IDSR1TN (Inventory of Depressive Symptomatology Self-Report Version Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: IDSR1TN
+      operator: in
+      value:
+        - IDSR1-Aches and Pains
+        - IDSR1-Concentration/Decision Making
+        - IDSR1-Constipation/Diarrhea
+        - IDSR1-Decreased Appetite
+        - IDSR1-Energy Level
+        - IDSR1-Falling Asleep
+        - IDSR1-Feeling Anxious or Tense
+        - IDSR1-Feeling Irritable
+        - IDSR1-Feeling Restless
+        - IDSR1-Feeling Sad
+        - IDSR1-Feeling Slowed Down
+        - IDSR1-General Interest
+        - IDSR1-Increased Appetite
+        - IDSR1-Interest in Sex
+        - IDSR1-Interpersonal Sensitivity
+        - IDSR1-Leaden Paralysis/Physical Energy
+        - IDSR1-Mood Attributed to Environment
+        - IDSR1-Mood in Relation to Time of Day
+        - IDSR1-Mood Worse Morn/Afternoon/Night
+        - IDSR1-Other Bodily Symptoms
+        - IDSR1-Panic/Phobic Symptoms
+        - IDSR1-Pleasure/Enjoyment (Exclude Sex)
+        - IDSR1-Quality of Your Mood
+        - IDSR1-Score
+        - IDSR1-Sleep During the Night
+        - IDSR1-Sleeping Too Much
+        - IDSR1-Thoughts of Death or Suicide
+        - IDSR1-View of My Future
+        - IDSR1-View of Myself
+        - IDSR1-Waking Up Too Early
+        - IDSR1-Weight (Decrease)
+        - IDSR1-Weight (Increase)
+        - IDSR1-Your Mood to Good/Desired Events
+outcome:
+  message: Value not found in non-extensible codelist Inventory of Depressive Symptomatology
+    Self-Report Version Questionnaire Test Name (C130260)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130260
+  codelist_name: Inventory of Depressive Symptomatology Self-Report Version Questionnaire
+    Test Name
+  codelist_submission_value: IDSR1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 33
+

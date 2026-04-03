@@ -1,0 +1,76 @@
+id: HRL-CT-0374
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR35TN (European Organization for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Breast Cancer 42 Items Test Name) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR35TN
+      operator: in
+      value:
+        - EOR35-Aches/Pains in Bones
+        - EOR35-Affected Breast Oversensitive
+        - EOR35-Affected Breast Swollen
+        - EOR35-Discomfort in Vagina
+        - EOR35-Dissatisfied With Body
+        - EOR35-Dizzy
+        - EOR35-Dry Mouth
+        - EOR35-Eyes Painful/Irritated/Watery
+        - EOR35-Felt Ill/Unwell
+        - EOR35-Felt Less Feminine
+        - EOR35-Felt Physically Less Attractive
+        - EOR35-Food & Drink Taste Different
+        - EOR35-Gained Weight
+        - EOR35-Headaches
+        - EOR35-Hot Flushes
+        - EOR35-Interested in Sex
+        - EOR35-Lost Any Hair
+        - 'EOR35-Lost Hair: Upset by Loss of Hair'
+        - EOR35-Mood Swings
+        - EOR35-Numbness in Fingers/Toes
+        - EOR35-Pain in Affected Breast
+        - EOR35-Pain in Arm/Shoulder
+        - EOR35-Pain in Hands/Feet
+        - EOR35-Pain in Joints
+        - EOR35-Prob Raising Arm/Moving Sideways
+        - EOR35-Problems Looking at Yourself Naked
+        - EOR35-Problems With Joints
+        - EOR35-Redness in Mouth
+        - EOR35-Redness on Hands/Feet
+        - EOR35-Satisfied With Appearance of Skin
+        - EOR35-Satisfied With Cosmetic Result
+        - EOR35-Sex Enjoyable
+        - 'EOR35-Sexual: Dry Vagina During Sex'
+        - 'EOR35-Sexual: Pain in Vagina During Sex'
+        - EOR35-Sexually Active
+        - EOR35-Skin Problems on Affected Breast
+        - EOR35-Soreness in Mouth
+        - EOR35-Stiffness in Joints
+        - EOR35-Sweated Excessively
+        - EOR35-Swollen Arm/Hand
+        - EOR35-Tingling in Fingers/Toes
+        - EOR35-Worried About Health in Future
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Breast Cancer
+    42 Items Test Name (C219718)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219718
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Breast Cancer 42 Items Test Name
+  codelist_submission_value: EOR35TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 42
+

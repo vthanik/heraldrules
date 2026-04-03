@@ -1,0 +1,90 @@
+id: HRL-CT-0482
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAMS01TN (Functional Assessment of Multiple Sclerosis Version 4 Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAMS01TN
+      operator: in
+      value:
+        - FAMS01-Bothered by Treatment Side Effect
+        - FAMS01-Content With Quality of My Life
+        - FAMS01-Enjoy Things I Usually Do for Fun
+        - FAMS01-Feel Overwhelmed by My Condition
+        - FAMS01-Feel Sense of Purpose in My Life
+        - FAMS01-Get Emotional Support From Family
+        - FAMS01-Have Trouble Controlling My Urine
+        - FAMS01-Heat Worsens My Symptoms
+        - FAMS01-I Am Able to Enjoy Life
+        - FAMS01-I Am Able to Work
+        - FAMS01-I Am Bothered by Fevers
+        - FAMS01-I Am Bothered by Headaches
+        - FAMS01-I Am Bothered by Muscle Pains
+        - FAMS01-I Am Bothered by Muscle Spasms
+        - FAMS01-I Am Bothered by the Chills
+        - FAMS01-I Am Depressed About My Condition
+        - FAMS01-I Am Forced to Spend Time in Bed
+        - FAMS01-I Am Frustrated by My Condition
+        - FAMS01-I Am Satisfied With My Sex Life
+        - FAMS01-I Am Sleeping Well
+        - FAMS01-I Feel Close to My Friends
+        - FAMS01-I Feel Close to My Partner
+        - FAMS01-I Feel Ill
+        - FAMS01-I Feel Left Out of Things
+        - FAMS01-I Feel Motivated to Do Things
+        - FAMS01-I Feel Nervous
+        - FAMS01-I Feel Sad
+        - FAMS01-I Feel Tired
+        - FAMS01-I Feel Trapped by My Condition
+        - FAMS01-I Feel Useless
+        - FAMS01-I Feel Weak All Over
+        - FAMS01-I Get Support From My Friends
+        - FAMS01-I Have a Lack of Energy
+        - FAMS01-I Have Accepted My Illness
+        - FAMS01-I Have Nausea
+        - FAMS01-I Have Pain in My Joints
+        - FAMS01-I Have Pain
+        - FAMS01-I Have Strength in My Legs
+        - FAMS01-I Have Trouble Concentrating
+        - FAMS01-I Have Trouble Learning New Tasks
+        - FAMS01-I Have Trouble Remembering Things
+        - FAMS01-I Have Trouble Walking
+        - FAMS01-I Need to Rest During the Day
+        - FAMS01-I Urinate More Frequently
+        - FAMS01-Limit My Social Activity
+        - FAMS01-Losing Hope Against Illness
+        - FAMS01-My Family Has Accepted My Illness
+        - FAMS01-My Thinking Is Slower Than Before
+        - FAMS01-My Work Is Fulfilling
+        - FAMS01-Satisfied Communication Illness
+        - FAMS01-Satisfied With How I Am Coping
+        - FAMS01-Take My Condition Into Account
+        - FAMS01-Trouble Finishing Things
+        - FAMS01-Trouble Getting Around in Public
+        - FAMS01-Trouble Meeting Needs of Family
+        - FAMS01-Trouble Starting Things
+        - FAMS01-Trouble Understanding Worsening
+        - FAMS01-Worry My Condition Will Get Worse
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Multiple
+    Sclerosis Version 4 Questionnaire Test Name (C112440)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C112440
+  codelist_name: Functional Assessment of Multiple Sclerosis Version 4 Questionnaire
+    Test Name
+  codelist_submission_value: FAMS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 58
+

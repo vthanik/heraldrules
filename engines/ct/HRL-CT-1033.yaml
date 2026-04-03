@@ -1,0 +1,35 @@
+id: HRL-CT-1033
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SDTHSDTP (Sudden Death Syndrome Type) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SDTHSDTP
+      operator: in
+      value:
+        - BRUGADA SYNDROME
+        - CATECHOLAMINERGIC POLYMORPHIC VENTRICULAR TACHYCARDIA
+        - IDIOPATHIC PRIMARY VENTRICULAR TACHYCARDIA/VENTRICULAR FLUTTER
+        - LONG QT SYNDROME
+        - SHORT QT SYNDROME
+outcome:
+  message: Value not found in non-extensible codelist Sudden Death Syndrome Type (C101852)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101852
+  codelist_name: Sudden Death Syndrome Type
+  codelist_submission_value: SDTHSDTP
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

@@ -1,0 +1,35 @@
+id: HRL-CT-0012
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: AIMS0111T12OR (Abnormal Involuntary Movement Scale Clinical Classification
+  ORRES for AIMS0111 Through AIMS0112 TN/TC) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: AIMS0111T12OR
+      operator: in
+      value:
+        - 'No'
+        - 'Yes'
+outcome:
+  message: Value not found in non-extensible codelist Abnormal Involuntary Movement
+    Scale Clinical Classification ORRES for AIMS0111 Through AIMS0112 TN/TC (C182467)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C182467
+  codelist_name: Abnormal Involuntary Movement Scale Clinical Classification ORRES
+    for AIMS0111 Through AIMS0112 TN/TC
+  codelist_submission_value: AIMS0111T12OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 2
+

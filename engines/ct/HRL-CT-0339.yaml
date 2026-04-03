@@ -1,0 +1,56 @@
+id: HRL-CT-0339
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EGLEAD (ECG Lead) must contain valid extensible codelist terms (new terms
+  allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EGLEAD
+      operator: in
+      value:
+        - LEAD aV6
+        - LEAD aVF
+        - LEAD aVF-VENTRAL
+        - LEAD aVL
+        - LEAD aVL-AXIAL
+        - LEAD aVR
+        - LEAD aVR-DORSAL
+        - LEAD AXIAL
+        - LEAD CM5
+        - LEAD CV5RL
+        - LEAD CV6LL
+        - LEAD CV6LU
+        - LEAD DORSAL
+        - LEAD I
+        - LEAD II
+        - LEAD III
+        - LEAD rV2
+        - LEAD V1
+        - LEAD V10
+        - LEAD V2
+        - LEAD V3
+        - LEAD V4
+        - LEAD V5
+        - LEAD V6
+        - LEAD VENTRAL
+        - SML
+outcome:
+  message: Value not found in extensible codelist ECG Lead (C90013)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C90013
+  codelist_name: ECG Lead
+  codelist_submission_value: EGLEAD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 26
+

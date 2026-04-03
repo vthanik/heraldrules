@@ -1,0 +1,33 @@
+id: HRL-CT-0884
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PSFATS (Psoriasis Findings About Test Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PSFATS
+      operator: in
+      value:
+        - QOL Impact
+        - Severity/Intensity
+outcome:
+  message: Value not found in extensible codelist Psoriasis Findings About Test Name
+    (C170446)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C170446
+  codelist_name: Psoriasis Findings About Test Name
+  codelist_submission_value: PSFATS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 2
+

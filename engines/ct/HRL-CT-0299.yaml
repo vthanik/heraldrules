@@ -1,0 +1,59 @@
+id: HRL-CT-0299
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DOTEST (Device Properties Test Name) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DOTEST
+      operator: in
+      value:
+        - Composition
+        - Device Output Blinding Status
+        - Digital Sampling Rate
+        - Dinucleotide Marker Names
+        - Electrical Current Sensor Type
+        - FDA Device Classification
+        - Indication for Use
+        - Internal Orifice Area
+        - Luminescence Type
+        - Magnetic Field Strength
+        - Mononucleotide Marker Names
+        - MRI Coil Type
+        - Multiplex Probe Parameter
+        - Number of Bulbs
+        - Pentanucleotide Marker Names
+        - Pore Size
+        - Reagent Lot
+        - Scintillation Crystal Type
+        - Section Thickness
+        - Shelf Life
+        - Size
+        - Software Name
+        - Software Version
+        - Surgical Mesh Open Area
+        - Temperature
+        - Thickness
+        - Threshold Cycle
+        - Treatment Amount
+        - Wavelength
+outcome:
+  message: Value not found in extensible codelist Device Properties Test Name (C111112)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C111112
+  codelist_name: Device Properties Test Name
+  codelist_submission_value: DOTEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 29
+

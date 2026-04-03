@@ -1,0 +1,43 @@
+id: HRL-CT-0253
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CBS01TC (Comfort Behavior Scale Clinical Classification Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CBS01TC
+      operator: in
+      value:
+        - CBS0101
+        - CBS0102
+        - CBS0103
+        - CBS0104
+        - CBS0105
+        - CBS0106
+        - CBS0107
+        - CBS0108
+        - CBS0109
+        - CBS0110
+        - CBS0111
+        - CBS0112
+outcome:
+  message: Value not found in non-extensible codelist Comfort Behavior Scale Clinical
+    Classification Test Code (C199501)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C199501
+  codelist_name: Comfort Behavior Scale Clinical Classification Test Code
+  codelist_submission_value: CBS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 12
+

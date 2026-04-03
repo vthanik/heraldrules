@@ -1,0 +1,53 @@
+id: HRL-CT-0998
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SFMP2TC (Short-Form McGill Pain Questionnaire-2 Questionnaire Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SFMP2TC
+      operator: in
+      value:
+        - SFMP201
+        - SFMP202
+        - SFMP203
+        - SFMP204
+        - SFMP205
+        - SFMP206
+        - SFMP207
+        - SFMP208
+        - SFMP209
+        - SFMP210
+        - SFMP211
+        - SFMP212
+        - SFMP213
+        - SFMP214
+        - SFMP215
+        - SFMP216
+        - SFMP217
+        - SFMP218
+        - SFMP219
+        - SFMP220
+        - SFMP221
+        - SFMP222
+outcome:
+  message: Value not found in non-extensible codelist Short-Form McGill Pain Questionnaire-2
+    Questionnaire Test Code (C100156)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100156
+  codelist_name: Short-Form McGill Pain Questionnaire-2 Questionnaire Test Code
+  codelist_submission_value: SFMP2TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 22
+

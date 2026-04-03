@@ -1,0 +1,37 @@
+id: HRL-CT-0419
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SKINCLAS (Fitzpatrick Skin Classification Response) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SKINCLAS
+      operator: in
+      value:
+        - TYPEI
+        - TYPEII
+        - TYPEIII
+        - TYPEIV
+        - TYPEV
+        - TYPEVI
+outcome:
+  message: Value not found in extensible codelist Fitzpatrick Skin Classification
+    Response (C76351)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C76351
+  codelist_name: Fitzpatrick Skin Classification Response
+  codelist_submission_value: SKINCLAS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 6
+

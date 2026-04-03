@@ -1,0 +1,71 @@
+id: HRL-CT-0222
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSS01TN (Columbia-Suicide Severity Rating Scale Baseline Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSS01TN
+      operator: in
+      value:
+        - CSS01-Aborted Attempt
+        - CSS01-Aborted Attempt, Describe
+        - CSS01-Actual Attempt
+        - CSS01-Actual Attempt, Describe
+        - CSS01-First Attempt Damage
+        - CSS01-First Attempt Date
+        - CSS01-First Attempt Potential
+        - CSS01-Ideation With Intent No Plan Descr
+        - CSS01-Ideation With Intent, No Plan
+        - CSS01-Ideation With Plan/Intent
+        - CSS01-Ideation With Plan/Intent, Descr
+        - CSS01-Interrupted Attempt
+        - CSS01-Interrupted Attempt, Describe
+        - CSS01-Most Lethal Attempt Damage
+        - CSS01-Most Lethal Attempt Date
+        - CSS01-Most Lethal Attempt Potential
+        - CSS01-Most Recent Attempt Damage
+        - CSS01-Most Recent Attempt Date
+        - CSS01-Most Recent Attempt Potential
+        - CSS01-Most Severe Ideation
+        - CSS01-Most Severe Ideation, Control
+        - CSS01-Most Severe Ideation, Description
+        - CSS01-Most Severe Ideation, Deterrents
+        - CSS01-Most Severe Ideation, Duration
+        - CSS01-Most Severe Ideation, Frequency
+        - CSS01-Most Severe Ideation, Reasons
+        - CSS01-Non-Specific Suicid Thought, Descr
+        - CSS01-Non-Specific Suicidal Thought
+        - CSS01-Non-suicidal Self-injurious Behav
+        - CSS01-Number of Aborted Attempts
+        - CSS01-Number of Actual Attempts
+        - CSS01-Number of Interrupted Attempts
+        - CSS01-Preparatory Acts/Behavior
+        - CSS01-Preparatory Acts/Behavior, Descr
+        - CSS01-Suicidal Behavior
+        - CSS01-Suicidal Ideation-No Intent
+        - CSS01-Suicidal Ideation-No Intent, Descr
+        - CSS01-Wish to be Dead
+        - CSS01-Wish to be Dead, Describe
+outcome:
+  message: Value not found in non-extensible codelist Columbia-Suicide Severity Rating
+    Scale Baseline Questionnaire Test Name (C100167)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100167
+  codelist_name: Columbia-Suicide Severity Rating Scale Baseline Questionnaire Test
+    Name
+  codelist_submission_value: CSS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 39
+

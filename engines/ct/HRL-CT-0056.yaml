@@ -1,0 +1,169 @@
+id: HRL-CT-0056
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: AVL01TC (ADNI Auditory Verbal Learning Functional Test Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: AVL01TC
+      operator: in
+      value:
+        - AVL01001
+        - AVL01002
+        - AVL01003
+        - AVL01004
+        - AVL01005
+        - AVL01006
+        - AVL01007
+        - AVL01008
+        - AVL01009
+        - AVL01010
+        - AVL01011
+        - AVL01012
+        - AVL01013
+        - AVL01014
+        - AVL01015
+        - AVL01016
+        - AVL01017
+        - AVL01018
+        - AVL01019
+        - AVL01020
+        - AVL01021
+        - AVL01022
+        - AVL01023
+        - AVL01024
+        - AVL01025
+        - AVL01026
+        - AVL01027
+        - AVL01028
+        - AVL01029
+        - AVL01030
+        - AVL01031
+        - AVL01032
+        - AVL01033
+        - AVL01034
+        - AVL01035
+        - AVL01036
+        - AVL01037
+        - AVL01038
+        - AVL01039
+        - AVL01040
+        - AVL01041
+        - AVL01042
+        - AVL01043
+        - AVL01044
+        - AVL01045
+        - AVL01046
+        - AVL01047
+        - AVL01048
+        - AVL01049
+        - AVL01050
+        - AVL01051
+        - AVL01052
+        - AVL01053
+        - AVL01054
+        - AVL01055
+        - AVL01056
+        - AVL01057
+        - AVL01058
+        - AVL01059
+        - AVL01060
+        - AVL01061
+        - AVL01062
+        - AVL01063
+        - AVL01064
+        - AVL01065
+        - AVL01066
+        - AVL01067
+        - AVL01068
+        - AVL01069
+        - AVL01070
+        - AVL01071
+        - AVL01072
+        - AVL01073
+        - AVL01074
+        - AVL01075
+        - AVL01076
+        - AVL01077
+        - AVL01078
+        - AVL01079
+        - AVL01080
+        - AVL01081
+        - AVL01082
+        - AVL01083
+        - AVL01084
+        - AVL01085
+        - AVL01086
+        - AVL01087
+        - AVL01088
+        - AVL01089
+        - AVL01090
+        - AVL01091
+        - AVL01092
+        - AVL01093
+        - AVL01094
+        - AVL01095
+        - AVL01096
+        - AVL01097
+        - AVL01098
+        - AVL01099
+        - AVL01100
+        - AVL01101
+        - AVL01102
+        - AVL01103
+        - AVL01104
+        - AVL01105
+        - AVL01106
+        - AVL01107
+        - AVL01108
+        - AVL01109
+        - AVL01110
+        - AVL01111
+        - AVL01112
+        - AVL01113
+        - AVL01114
+        - AVL01115
+        - AVL01116
+        - AVL01117
+        - AVL01118
+        - AVL01119
+        - AVL01120
+        - AVL01121
+        - AVL01122
+        - AVL01123
+        - AVL01124
+        - AVL01125
+        - AVL01126
+        - AVL01127
+        - AVL01128
+        - AVL01129
+        - AVL01130
+        - AVL01131
+        - AVL01132
+        - AVL01133
+        - AVL01134
+        - AVL01135
+        - AVL01136
+        - AVL01137
+        - AVL01138
+outcome:
+  message: Value not found in non-extensible codelist ADNI Auditory Verbal Learning
+    Functional Test Test Code (C101807)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101807
+  codelist_name: ADNI Auditory Verbal Learning Functional Test Test Code
+  codelist_submission_value: AVL01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 138
+

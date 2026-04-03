@@ -1,0 +1,34 @@
+id: HRL-CT-0337
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EBFATS (Ebola Virus Findings About Test Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EBFATS
+      operator: in
+      value:
+        - Diameter
+        - Occurrence Indicator
+        - Severity/Intensity
+outcome:
+  message: Value not found in extensible codelist Ebola Virus Findings About Test
+    Name (C132315)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C132315
+  codelist_name: Ebola Virus Findings About Test Name
+  codelist_submission_value: EBFATS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 3
+

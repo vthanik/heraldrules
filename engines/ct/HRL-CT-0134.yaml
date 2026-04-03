@@ -1,0 +1,45 @@
+id: HRL-CT-0134
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BACS1TC (Brief Assessment of Cognition in Schizophrenia Functional Test
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BACS1TC
+      operator: in
+      value:
+        - BACS101
+        - BACS101A
+        - BACS102
+        - BACS103A
+        - BACS103B
+        - BACS103C
+        - BACS103D
+        - BACS104A
+        - BACS104B
+        - BACS104C
+        - BACS104D
+        - BACS105
+        - BACS106
+outcome:
+  message: Value not found in non-extensible codelist Brief Assessment of Cognition
+    in Schizophrenia Functional Test Test Code (C120983)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C120983
+  codelist_name: Brief Assessment of Cognition in Schizophrenia Functional Test Test
+    Code
+  codelist_submission_value: BACS1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 13
+

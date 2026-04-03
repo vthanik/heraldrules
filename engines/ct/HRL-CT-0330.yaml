@@ -1,0 +1,32 @@
+id: HRL-CT-0330
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DMFATSCD (Duchenne Muscular Dystrophy Findings About Test Code) must
+  contain valid extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DMFATSCD
+      operator: in
+      value:
+        - AGEFTUSE
+outcome:
+  message: Value not found in extensible codelist Duchenne Muscular Dystrophy Findings
+    About Test Code (C139018)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C139018
+  codelist_name: Duchenne Muscular Dystrophy Findings About Test Code
+  codelist_submission_value: DMFATSCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 1
+

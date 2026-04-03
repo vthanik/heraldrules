@@ -1,0 +1,56 @@
+id: HRL-CT-0711
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC036TN (National Comprehensive Cancer Network/Functional Assessment
+  of Cancer Therapy-Head & Neck Symptom Index-22 Version 2 Questionnaire Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC036TN
+      operator: in
+      value:
+        - FAC036-Able to Communicate With Others
+        - FAC036-Able to Eat the Foods That I Like
+        - FAC036-Bothered by Treatment Side Effect
+        - FAC036-Can Swallow Naturally and Easily
+        - FAC036-Content With Quality of My Life
+        - FAC036-Had Change in the Way Food Tastes
+        - FAC036-I Am Able to Enjoy Life
+        - FAC036-I Am Able to Work
+        - FAC036-I Am Bothered by Hair Loss
+        - FAC036-I Am Losing Weight
+        - FAC036-I Am Sleeping Well
+        - FAC036-I Can Eat Solid Foods
+        - FAC036-I Feel Ill
+        - FAC036-I Have a Good Appetite
+        - FAC036-I Have a Lack of Energy
+        - FAC036-I Have Mouth Sores
+        - FAC036-I Have Nausea
+        - FAC036-I Have Pain
+        - FAC036-I Have Trouble Breathing
+        - FAC036-Pain in My Mouth, Throat or Neck
+        - FAC036-Trouble Meeting Needs of Family
+        - FAC036-Worry My Condition Will Get Worse
+outcome:
+  message: Value not found in non-extensible codelist National Comprehensive Cancer
+    Network/Functional Assessment of Cancer Therapy-Head & Neck Symptom Index-22 Version
+    2 Questionnaire Test Name (C150787)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150787
+  codelist_name: National Comprehensive Cancer Network/Functional Assessment of Cancer
+    Therapy-Head & Neck Symptom Index-22 Version 2 Questionnaire Test Name
+  codelist_submission_value: FAC036TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 22
+

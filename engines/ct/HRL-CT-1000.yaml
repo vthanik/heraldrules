@@ -1,0 +1,63 @@
+id: HRL-CT-1000
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SES01TC (Simple Endoscopic Score for Crohn's Disease Version 1 Clinical
+  Classification Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SES01TC
+      operator: in
+      value:
+        - SES0101
+        - SES0102
+        - SES0103
+        - SES0104
+        - SES0105
+        - SES0106
+        - SES0107
+        - SES0108
+        - SES0109
+        - SES0110
+        - SES0111
+        - SES0112
+        - SES0113
+        - SES0114
+        - SES0115
+        - SES0116
+        - SES0117
+        - SES0118
+        - SES0119
+        - SES0120
+        - SES0121
+        - SES0122
+        - SES0123
+        - SES0124
+        - SES0125
+        - SES0126
+        - SES0127
+        - SES0128
+        - SES0129
+        - SES0130
+        - SES0131
+outcome:
+  message: Value not found in non-extensible codelist Simple Endoscopic Score for
+    Crohn's Disease Version 1 Clinical Classification Test Code (C176051)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C176051
+  codelist_name: Simple Endoscopic Score for Crohn's Disease Version 1 Clinical Classification
+    Test Code
+  codelist_submission_value: SES01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 31
+

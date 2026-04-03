@@ -1,0 +1,77 @@
+id: HRL-CT-0765
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PTAP1TN (Paced Tapping Functional Test Test Name) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PTAP1TN
+      operator: in
+      value:
+        - PTAP1-Avg Sign Dev Interval Self All
+        - PTAP1-Avg Sign Dev Interval Self Trial
+        - PTAP1-Avg Sign Dev Interval Tone All
+        - PTAP1-Avg Sign Dev Interval Tone Trial
+        - PTAP1-Deviation Interval Self All
+        - PTAP1-Deviation Interval Self Trial
+        - PTAP1-Deviation Interval Tone All
+        - PTAP1-Deviation Interval Tone Trial
+        - PTAP1-Maximum Interval Self All
+        - PTAP1-Maximum Interval Self Trial
+        - PTAP1-Maximum Interval Tone All
+        - PTAP1-Maximum Interval Tone Trial
+        - PTAP1-Mean Interval Self All
+        - PTAP1-Mean Interval Self Trial
+        - PTAP1-Mean Interval Tone All
+        - PTAP1-Mean Interval Tone Trial
+        - PTAP1-Median Interval Self All
+        - PTAP1-Median Interval Self Trial
+        - PTAP1-Median Interval Tone All
+        - PTAP1-Median Interval Tone Trial
+        - PTAP1-Minimum Interval Self All
+        - PTAP1-Minimum Interval Self Trial
+        - PTAP1-Minimum Interval Tone All
+        - PTAP1-Minimum Interval Tone Trial
+        - PTAP1-Num Intervals Expected Self Trial
+        - PTAP1-Num Intervals Expected Tone Trial
+        - PTAP1-Num Intervals Trim Self Trial
+        - PTAP1-Num Intervals Trim Tone Trial
+        - PTAP1-Reciprocal Interval Self All
+        - PTAP1-Reciprocal Interval Self Trial
+        - PTAP1-Reciprocal Interval Tone All
+        - PTAP1-Reciprocal Interval ToneTrial
+        - PTAP1-Total Interval Self Admin All
+        - PTAP1-Total Interval Self Trim All
+        - PTAP1-Total Interval Tone Admin All
+        - PTAP1-Total Interval Tone Trim All
+        - PTAP1-Total Trials Administered
+        - PTAP1-Total Trials Completed
+        - PTAP1-Total Trials Expected
+        - PTAP1-Trials Administered in Trial
+        - PTAP1-Trials Completed in Trial
+        - PTAP1-Trials Expected in Trial
+        - PTAP1-Variance Interval Self All
+        - PTAP1-Variance Interval Self Trial
+        - PTAP1-Variance Interval Tone All
+        - PTAP1-Variance Interval Tone Trial
+outcome:
+  message: Value not found in non-extensible codelist Paced Tapping Functional Test
+    Test Name (C150771)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150771
+  codelist_name: Paced Tapping Functional Test Test Name
+  codelist_submission_value: PTAP1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 46
+

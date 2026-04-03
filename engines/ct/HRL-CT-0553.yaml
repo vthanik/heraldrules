@@ -1,0 +1,130 @@
+id: HRL-CT-0553
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ISTESTCD (Immunogenicity Specimen Assessments Test Code) must contain
+  valid extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ISTESTCD
+      operator: in
+      value:
+        - ABSCCL
+        - ADA_BAB
+        - ADA_NAB
+        - ADA_NX
+        - ADA_X
+        - ADBIGA
+        - ADBIGE
+        - ADBIGG
+        - ADBIGG1
+        - ADBIGG2
+        - ADBIGG3
+        - ADBIGG4
+        - ADBIGGM
+        - ADBIGM
+        - ADBXIGA
+        - ADBXIGE
+        - ADBXIGG
+        - ADBXIGG1
+        - ADBXIGG2
+        - ADBXIGG3
+        - ADBXIGG4
+        - ADBXIGGM
+        - ADBXIGM
+        - ADNIGA
+        - ADNIGE
+        - ADNIGG
+        - ADNIGG1
+        - ADNIGG2
+        - ADNIGG3
+        - ADNIGG4
+        - ADNIGGM
+        - ADNIGM
+        - ADNXIGA
+        - ADNXIGE
+        - ADNXIGG
+        - ADNXIGG1
+        - ADNXIGG2
+        - ADNXIGG3
+        - ADNXIGG4
+        - ADNXIGGM
+        - ADNXIGM
+        - ALAB
+        - ALIGGAB
+        - ANAB
+        - ANCAB
+        - ANCIGAB
+        - ARAB
+        - ARIGAAB
+        - ARIGEAB
+        - ARIGG4AB
+        - ARIGGAB
+        - ARIGMAB
+        - ATAB
+        - ATIGAAB
+        - ATIGG1AB
+        - ATIGG2AB
+        - ATIGG3AB
+        - ATIGGAB
+        - ATIGMAB
+        - CTCMLYS
+        - CYKSCCL
+        - CYKSCTCL
+        - EBVINTP
+        - FCT8INH
+        - FCT9INH
+        - HAHA
+        - HAMAB
+        - HASIGEAB
+        - HASIGGAB
+        - HASIGMAB
+        - HIV1SR
+        - HIV2SR
+        - HLAIIPRA
+        - HLAIPRA
+        - HTPHAB
+        - MABTAB
+        - MBAB
+        - MBFAB
+        - MBIAMAB
+        - MBIG_MAB
+        - MBIGAAB
+        - MBIGEAB
+        - MBIGGAB
+        - MBIGMAB
+        - MBIMAB
+        - MBIMAGAB
+        - MBNAB
+        - NKCMLYS
+        - PRAB
+        - PRABC
+        - REAAB
+        - RFATAB
+        - RFIGAAB
+        - RFIGGAB
+        - RFIGMAB
+        - TBII
+        - TLYMPIDX
+        - TSI
+        - TSIAC
+outcome:
+  message: Value not found in extensible codelist Immunogenicity Specimen Assessments
+    Test Code (C120525)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C120525
+  codelist_name: Immunogenicity Specimen Assessments Test Code
+  codelist_submission_value: ISTESTCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 99
+

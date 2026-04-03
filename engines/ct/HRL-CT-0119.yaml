@@ -1,0 +1,35 @@
+id: HRL-CT-0119
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BARS01TC (Barnes Akathisia Rating Scale Clinical Classification Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BARS01TC
+      operator: in
+      value:
+        - BARS0101
+        - BARS0102
+        - BARS0103
+        - BARS0104
+outcome:
+  message: Value not found in non-extensible codelist Barnes Akathisia Rating Scale
+    Clinical Classification Test Code (C101809)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101809
+  codelist_name: Barnes Akathisia Rating Scale Clinical Classification Test Code
+  codelist_submission_value: BARS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

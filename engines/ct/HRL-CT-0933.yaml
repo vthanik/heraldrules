@@ -1,0 +1,56 @@
+id: HRL-CT-0933
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RDQ01TC (Roland Morris Disability Questionnaire Questionnaire Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RDQ01TC
+      operator: in
+      value:
+        - RDQ0101
+        - RDQ0102
+        - RDQ0103
+        - RDQ0104
+        - RDQ0105
+        - RDQ0106
+        - RDQ0107
+        - RDQ0108
+        - RDQ0109
+        - RDQ0110
+        - RDQ0111
+        - RDQ0112
+        - RDQ0113
+        - RDQ0114
+        - RDQ0115
+        - RDQ0116
+        - RDQ0117
+        - RDQ0118
+        - RDQ0119
+        - RDQ0120
+        - RDQ0121
+        - RDQ0122
+        - RDQ0123
+        - RDQ0124
+        - RDQ0125
+outcome:
+  message: Value not found in non-extensible codelist Roland Morris Disability Questionnaire
+    Questionnaire Test Code (C100166)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100166
+  codelist_name: Roland Morris Disability Questionnaire Questionnaire Test Code
+  codelist_submission_value: RDQ01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

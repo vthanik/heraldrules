@@ -1,0 +1,100 @@
+id: HRL-CT-0658
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MIFTSDTL (Microscopic Findings Test Details) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MIFTSDTL
+      operator: in
+      value:
+        - AJCC TUMOR GRADE
+        - ALLRED PROPORTION POSITIVE SCORE
+        - ALLRED STAINING INTENSITY SCORE
+        - ALLRED TOTAL SCORE INTERPRETATION
+        - ALLRED TOTAL SCORE
+        - AREA
+        - AVERAGE SHORTEST DISTANCES TO IM-WTR BOUNDARY
+        - BANFF QUANTITATIVE CRITERIA SCORE RENAL
+        - BATTS-LUDWIG FIBROSIS SCORE
+        - BAUERMEISTER SCORE
+        - BRESLOW DEPTH
+        - CAP TUMOR REGRESSION GRADE
+        - CELL COUNT
+        - CELL DENSITY
+        - CHALKLEY SCORE
+        - COMBINED POSITIVE SCORE
+        - ENHANCED LIVER FIBROSIS SCORE
+        - EPSTEIN PROSTATE NEC CLASSIFICATION 2014
+        - EUROPEAN CONSENSUS SCORE
+        - EVANS TUMOR REGRESSION GRADE 1992
+        - FAB CLASSIFICATION 1985
+        - FIGO TUMOR GRADE
+        - FUHRMAN NUCLEAR GRADE
+        - GHAS SCORE
+        - GLEASON PRIMARY SCORE
+        - GLEASON SECONDARY SCORE
+        - GLEASON TOTAL SUM
+        - H SCORE STAINING INTENSITY 0
+        - H SCORE STAINING INTENSITY 1+
+        - H SCORE STAINING INTENSITY 2+
+        - H SCORE STAINING INTENSITY 3+
+        - H SCORE TOTAL SCORE
+        - HARTMAN TUMOR REGRESSION GRADE 2012
+        - IARC AND WHO CLASSIFICATION OF NEUROENDOCRINE NEOPLASMS 2018
+        - IDWORAK TUMOR REGRESSION GRADE 1997
+        - ISHAK FIBROSIS SCORE
+        - ISUP GLEASON GRADE GROUP
+        - JASS RECTAL CANCER PROGNOSTIC CLASSIFICATION 1987
+        - KNODELL FIBROSIS SCORE
+        - LAUREN CLASSIFICATION
+        - MD ANDERSON TUMOR REGRESSION GRADE 2012
+        - MEAN STAINING INTENSITY
+        - METAVIR FIBROSIS SCORE
+        - METMAB SCORE
+        - NAFLD ACTIVITY SCORE
+        - NOTTINGHAM HISTOLOGIC GRADE
+        - NUMBER
+        - PERCENT NEGATIVE AREA
+        - PERCENT POSITIVE AREA
+        - PERCENT POSITIVE CELL
+        - POSITIVE CELL COUNT
+        - POSITIVE CELLS AREA
+        - PROLIFERATIVE INDEX
+        - RECEPTOR OVERALL STATUS
+        - RHI SCORE
+        - SCHEUER FIBROSIS SCORE
+        - STAINING INTENSITY 0
+        - STAINING INTENSITY 1+
+        - STAINING INTENSITY 2+
+        - STAINING INTENSITY 3+
+        - STAINING INTENSITY
+        - STAINING PATTERN
+        - TUMOR PROPORTION SCORE
+        - UNSPECIFIED TUMOR GRADE CLASSIFICATION
+        - WHO CLASSIFICATION OF TUMORS OF ENDOCRINE ORGANS 2017
+        - WHO CLASSIFICATION OF TUMORS OF HEMATOPOIETIC AND LYMPHOID TISSUE 2017
+        - WHO CLASSIFICATION OF TUMORS OF THE DIGESTIVE SYSTEM 2010
+        - WHO CLASSIFICATION OF TUMORS OF THE DIGESTIVE SYSTEM 2019
+        - WHO/ISUP NUCLEAR GRADE
+outcome:
+  message: Value not found in extensible codelist Microscopic Findings Test Details
+    (C125922)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C125922
+  codelist_name: Microscopic Findings Test Details
+  codelist_submission_value: MIFTSDTL
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 69
+

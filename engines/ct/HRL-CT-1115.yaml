@@ -1,0 +1,85 @@
+id: HRL-CT-1115
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TSCC01TN (Trauma Symptom Checklist for Children Questionnaire Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TSCC01TN
+      operator: in
+      value:
+        - TSCC01-Afraid Something Bad Might Happen
+        - TSCC01-Arguing Too Much
+        - TSCC01-Bad Dreams or Nightmares
+        - TSCC01-Being Afraid of the Dark
+        - TSCC01-Can't Stop Thinking About Sex
+        - TSCC01-Can't Stop Thinking Something Bad
+        - TSCC01-Crying
+        - TSCC01-Daydreaming
+        - TSCC01-Feeling Afraid Somebody Kill Me
+        - TSCC01-Feeling Afraid
+        - TSCC01-Feeling Dizzy
+        - TSCC01-Feeling Like Did Something Wrong
+        - TSCC01-Feeling Like I Hate People
+        - TSCC01-Feeling Like I'm Not in My Body
+        - TSCC01-Feeling Like Nobody Likes Me
+        - TSCC01-Feeling Like Things Aren't Real
+        - TSCC01-Feeling Lonely
+        - TSCC01-Feeling Mad
+        - TSCC01-Feeling Mean
+        - TSCC01-Feeling Nervous or Jumpy Inside
+        - TSCC01-Feeling Sad or Unhappy
+        - TSCC01-Feeling Scared of Men
+        - TSCC01-Feeling Scared of Women
+        - TSCC01-Feeling Stupid or Bad
+        - TSCC01-Forgetting Things
+        - TSCC01-Getting Into Fights
+        - TSCC01-Getting Mad and Can't Calm Down
+        - TSCC01-Getting Scared All of Sudden
+        - TSCC01-Getting Upset People Talk Sex
+        - TSCC01-Going Away in My Mind
+        - TSCC01-Having Sex Feelings in My Body
+        - TSCC01-My Mind Going Empty or Blank
+        - TSCC01-Not Trusting People Because Sex
+        - TSCC01-Pretending I am Someone Else
+        - TSCC01-Pretending I'm Somewhere Else
+        - TSCC01-Remembering Scary Things
+        - TSCC01-Remembering Things Don't Want To
+        - TSCC01-Remembering Things I Didn't Like
+        - TSCC01-Scared When Think About Sex
+        - TSCC01-Scary Ideas Just Pop Into My Head
+        - TSCC01-Think About Sex When Don't Want
+        - TSCC01-Think Touch People Private Parts
+        - TSCC01-Thinking About Having Sex
+        - TSCC01-Touching Private Parts Too Much
+        - TSCC01-Trying Not to Have Any Feelings
+        - TSCC01-Wanting to Hurt Myself
+        - TSCC01-Wanting to Hurt Other People
+        - TSCC01-Wanting to Kill Myself
+        - TSCC01-Wanting to Say Dirty Words
+        - TSCC01-Wanting to Yell and Break Things
+        - TSCC01-Wanting to Yell at People
+        - TSCC01-Washing Myself Because Feel Dirty
+        - TSCC01-Wishing Bad Things Never Happened
+        - TSCC01-Worrying About Things
+outcome:
+  message: Value not found in non-extensible codelist Trauma Symptom Checklist for
+    Children Questionnaire Test Name (C147547)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C147547
+  codelist_name: Trauma Symptom Checklist for Children Questionnaire Test Name
+  codelist_submission_value: TSCC01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 54
+

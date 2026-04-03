@@ -1,0 +1,35 @@
+id: HRL-CT-0183
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CPS0101OR (Child-Pugh Classification Clinical Classification ORRES for
+  CPS0101 TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CPS0101OR
+      operator: in
+      value:
+        - 1 or 2
+        - 3 or 4
+        - none
+outcome:
+  message: Value not found in non-extensible codelist Child-Pugh Classification Clinical
+    Classification ORRES for CPS0101 TN/TC (C208383)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C208383
+  codelist_name: Child-Pugh Classification Clinical Classification ORRES for CPS0101
+    TN/TC
+  codelist_submission_value: CPS0101OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 3
+

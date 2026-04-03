@@ -1,0 +1,36 @@
+id: HRL-CT-1047
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TANN0201STR (Tanner Scale Boy Clinical Classification STRESC for TANN0201
+  TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TANN0201STR
+      operator: in
+      value:
+        - Stage 1
+        - Stage 2
+        - Stage 3
+        - Stage 4
+        - Stage 5
+outcome:
+  message: Value not found in non-extensible codelist Tanner Scale Boy Clinical Classification
+    STRESC for TANN0201 TN/TC (C193262)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C193262
+  codelist_name: Tanner Scale Boy Clinical Classification STRESC for TANN0201 TN/TC
+  codelist_submission_value: TANN0201STR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

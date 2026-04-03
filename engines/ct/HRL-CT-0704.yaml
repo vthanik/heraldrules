@@ -1,0 +1,100 @@
+id: HRL-CT-0704
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MUSCTSCD (Musculoskeletal System Finding Test Code) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MUSCTSCD
+      operator: in
+      value:
+        - ALPHANGL
+        - AREA
+        - ASMMASS
+        - ATFV
+        - ATV
+        - BETAANGL
+        - BMC
+        - BMD
+        - BMDT
+        - BMDZ
+        - BMMTABDT
+        - BMMTDORS
+        - BMMTEVE
+        - BMMTEXT
+        - BMMTFLX
+        - BMMTINV
+        - BMMTLR
+        - BMMTPF
+        - BODYFATP
+        - EMCLNPV
+        - EMCLNTW
+        - EMCLNTWV
+        - ENDURM
+        - FATMASS
+        - FOCLOIND
+        - GLYGNPV
+        - GLYGNTW
+        - GLYGNTWV
+        - GPBAEST
+        - GRIPSTR
+        - IMCLNPV
+        - IMCLNTW
+        - IMCLNTWV
+        - ISOMSABD
+        - ISOMSADD
+        - ISOMSDOR
+        - ISOMSER
+        - ISOMSEXT
+        - ISOMSFL
+        - ISOMSIR
+        - LEANMASS
+        - MGBDGR
+        - MGBDGT
+        - MGBRGTC
+        - MKEXAM
+        - MMTABDT
+        - MMTDORS
+        - MMTEVE
+        - MMTEXT
+        - MMTFLX
+        - MMTINV
+        - MMTLR
+        - MMTPF
+        - MYOPNPV
+        - MYOPNTW
+        - MYOPNTWV
+        - PINCHSTR
+        - ROMABDT
+        - ROMDORFL
+        - ROMEXT
+        - SATV
+        - SGBESCR
+        - SGJSNSCR
+        - SMMASS
+        - SVBESCR
+        - SVJSNSCR
+        - SWLLIND
+        - TNDRIND
+        - VATV
+outcome:
+  message: Value not found in extensible codelist Musculoskeletal System Finding Test
+    Code (C127269)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C127269
+  codelist_name: Musculoskeletal System Finding Test Code
+  codelist_submission_value: MUSCTSCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 69
+

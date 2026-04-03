@@ -1,0 +1,42 @@
+id: HRL-CT-0977
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SF6D1TN (SF-6Dv2 Health Utility Survey Standard, English Version 2.0
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SF6D1TN
+      operator: in
+      value:
+        - SF6D1-Accomplished Less Due to Problems
+        - SF6D1-Health Limit Physical Activities
+        - SF6D1-How Much Bodily Pain Have You Had
+        - SF6D1-Interfered With Social Activities
+        - SF6D1-Time Felt Depressed/Very Nervous
+        - SF6D1-Time Have You Felt Worn Out
+        - SF6D1-Utility Index Score AU Weights
+        - SF6D1-Utility Index Score CN Weights
+        - SF6D1-Utility Index Score UK Weights
+        - SF6D1-Utility Index Score US Weights
+outcome:
+  message: Value not found in non-extensible codelist SF-6Dv2 Health Utility Survey
+    Standard, English Version 2.0 Questionnaire Test Name (C185741)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C185741
+  codelist_name: SF-6Dv2 Health Utility Survey Standard, English Version 2.0 Questionnaire
+    Test Name
+  codelist_submission_value: SF6D1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 10
+

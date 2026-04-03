@@ -1,0 +1,54 @@
+id: HRL-CT-0405
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GOSE1TN (Extended Glasgow Outcome Scale Questionnaire Test Name) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GOSE1TN
+      operator: in
+      value:
+        - GOSE1-Able to Work to Previous Capacity
+        - GOSE1-Assistance at Home Before Injury
+        - GOSE1-At Risk of Developing Epilepsy
+        - GOSE1-Daily Assistance at Home Essential
+        - GOSE1-Disruptive Psychological Problems
+        - GOSE1-Engage Social/Leisure Before Inj
+        - GOSE1-Extent of Disruption
+        - GOSE1-Extent Social/Leisure Restriction
+        - GOSE1-Family/Friends Probs Before Injury
+        - GOSE1-GOSE Overall Score
+        - GOSE1-How Restricted Are They
+        - GOSE1-Most Important Factor in Outcome
+        - GOSE1-Need Frequent Help at Home
+        - GOSE1-Obey Simple Commands or Say Words
+        - GOSE1-Other Problems Related to Injury
+        - GOSE1-Resume Social/Leisure Outside Home
+        - GOSE1-Shop Without Assist Before Injury
+        - GOSE1-Shop Without Assistance
+        - GOSE1-Similar Problems Before Injury
+        - GOSE1-Since Injury Any Epileptic Fits
+        - GOSE1-Travel Locally Without Assistance
+        - GOSE1-Travel Without Assist Before Inj
+        - GOSE1-Working Before Injury
+outcome:
+  message: Value not found in non-extensible codelist Extended Glasgow Outcome Scale
+    Questionnaire Test Name (C115403)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C115403
+  codelist_name: Extended Glasgow Outcome Scale Questionnaire Test Name
+  codelist_submission_value: GOSE1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 23
+

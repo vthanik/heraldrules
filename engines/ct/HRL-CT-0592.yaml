@@ -1,0 +1,69 @@
+id: HRL-CT-0592
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: KDQ1TC (Kidney Disease and Quality of Life-36 Version 1 Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: KDQ1TC
+      operator: in
+      value:
+        - KDQ101
+        - KDQ102
+        - KDQ103
+        - KDQ104
+        - KDQ105
+        - KDQ106
+        - KDQ107
+        - KDQ108
+        - KDQ109
+        - KDQ110
+        - KDQ111
+        - KDQ112
+        - KDQ113
+        - KDQ114
+        - KDQ115
+        - KDQ116
+        - KDQ117
+        - KDQ118
+        - KDQ119
+        - KDQ120
+        - KDQ121
+        - KDQ122
+        - KDQ123
+        - KDQ124
+        - KDQ125
+        - KDQ126
+        - KDQ127
+        - KDQ128A
+        - KDQ128B
+        - KDQ129
+        - KDQ130
+        - KDQ131
+        - KDQ132
+        - KDQ133
+        - KDQ134
+        - KDQ135
+        - KDQ136
+outcome:
+  message: Value not found in non-extensible codelist Kidney Disease and Quality of
+    Life-36 Version 1 Questionnaire Test Code (C193274)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C193274
+  codelist_name: Kidney Disease and Quality of Life-36 Version 1 Questionnaire Test
+    Code
+  codelist_submission_value: KDQ1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 37
+

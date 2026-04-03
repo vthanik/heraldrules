@@ -1,0 +1,64 @@
+id: HRL-CT-1066
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC001TC (The Functional Assessment of Cancer Therapy-General Version
+  4 Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC001TC
+      operator: in
+      value:
+        - FAC00101
+        - FAC00102
+        - FAC00103
+        - FAC00104
+        - FAC00105
+        - FAC00106
+        - FAC00107
+        - FAC00108
+        - FAC00109
+        - FAC00110
+        - FAC00111
+        - FAC00112
+        - FAC00113
+        - FAC00114
+        - FAC00115
+        - FAC00116
+        - FAC00117
+        - FAC00118
+        - FAC00119
+        - FAC00120
+        - FAC00121
+        - FAC00122
+        - FAC00123
+        - FAC00124
+        - FAC00125
+        - FAC00126
+        - FAC00127
+        - FAC00128
+        - FAC00129
+        - FAC00130
+        - FAC00131
+        - FAC00132
+outcome:
+  message: Value not found in non-extensible codelist The Functional Assessment of
+    Cancer Therapy-General Version 4 Questionnaire Test Code (C127354)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C127354
+  codelist_name: The Functional Assessment of Cancer Therapy-General Version 4 Questionnaire
+    Test Code
+  codelist_submission_value: FAC001TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 32
+

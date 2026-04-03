@@ -1,0 +1,37 @@
+id: HRL-CT-0767
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PI01TN (Pain Intensity Questionnaire Test Name) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PI01TN
+      operator: in
+      value:
+        - PI01-Average Pain Intensity
+        - PI01-Least Pain Intensity
+        - PI01-Maximum Pain Intensity
+        - PI01-Minimum Pain Intensity
+        - PI01-Pain Intensity
+        - PI01-Worst Pain Intensity
+outcome:
+  message: Value not found in non-extensible codelist Pain Intensity Questionnaire
+    Test Name (C105133)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C105133
+  codelist_name: Pain Intensity Questionnaire Test Name
+  codelist_submission_value: PI01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

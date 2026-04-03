@@ -1,0 +1,52 @@
+id: HRL-CT-0706
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC028TC (National Comprehensive Cancer Network/Functional Assessment
+  of Cancer Therapy-Bladder Symptom Index-18 Version 2 Questionnaire Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC028TC
+      operator: in
+      value:
+        - FAC02801
+        - FAC02802
+        - FAC02803
+        - FAC02804
+        - FAC02805
+        - FAC02806
+        - FAC02807
+        - FAC02808
+        - FAC02809
+        - FAC02810
+        - FAC02811
+        - FAC02812
+        - FAC02813
+        - FAC02814
+        - FAC02815
+        - FAC02816
+        - FAC02817
+        - FAC02818
+outcome:
+  message: Value not found in non-extensible codelist National Comprehensive Cancer
+    Network/Functional Assessment of Cancer Therapy-Bladder Symptom Index-18 Version
+    2 Questionnaire Test Code (C129092)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C129092
+  codelist_name: National Comprehensive Cancer Network/Functional Assessment of Cancer
+    Therapy-Bladder Symptom Index-18 Version 2 Questionnaire Test Code
+  codelist_submission_value: FAC028TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 18
+

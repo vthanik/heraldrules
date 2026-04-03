@@ -1,0 +1,36 @@
+id: HRL-CT-0937
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RUTG0101STR (Rutgeerts Score Clinical Classification STRESC for RUTG0101
+  TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RUTG0101STR
+      operator: in
+      value:
+        - i0
+        - i1
+        - i2
+        - i3
+        - i4
+outcome:
+  message: Value not found in non-extensible codelist Rutgeerts Score Clinical Classification
+    STRESC for RUTG0101 TN/TC (C190904)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C190904
+  codelist_name: Rutgeerts Score Clinical Classification STRESC for RUTG0101 TN/TC
+  codelist_submission_value: RUTG0101STR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

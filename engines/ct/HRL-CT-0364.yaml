@@ -1,0 +1,79 @@
+id: HRL-CT-0364
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR01TN (European Organisation for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Core 30 Version 3.0 Questionnaire Test Name) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR01TN
+      operator: in
+      value:
+        - EOR01-Condition Caused Financial Diff
+        - EOR01-Condition Interfered Family Life
+        - EOR01-Condition Interfered Social Activ
+        - EOR01-Did You Feel Depressed
+        - EOR01-Did You Feel Irritable
+        - EOR01-Did You Feel Tense
+        - EOR01-Did You Need to Rest
+        - EOR01-Did You Worry
+        - EOR01-Difficulty Concentrating on Things
+        - EOR01-FS:Cognitive Functioning
+        - EOR01-FS:Emotional Functioning
+        - EOR01-FS:Physical Functioning
+        - EOR01-FS:Role Functioning
+        - EOR01-FS:Social Functioning
+        - EOR01-Global Health Status/QoL
+        - EOR01-Had Difficulty Remembering Things
+        - EOR01-Have You Been Constipated
+        - EOR01-Have You Felt Nauseated
+        - EOR01-Have You Felt Weak
+        - EOR01-Have You Had Diarrhea
+        - EOR01-Have You Had Pain
+        - EOR01-Have You Had Trouble Sleeping
+        - EOR01-Have You Lacked Appetite
+        - EOR01-Have You Vomited
+        - EOR01-Limited Hobbies/Leisure Activities
+        - EOR01-Limited in Work/Daily Activities
+        - EOR01-Need Help Eating/Dressing/Washing
+        - EOR01-Pain Interfere Daily Activities
+        - EOR01-Rate Your Overall Health
+        - EOR01-Rate Your Overall Quality of Life
+        - EOR01-SS:Appetite Loss
+        - EOR01-SS:Constipation
+        - EOR01-SS:Diarrhoea
+        - EOR01-SS:Dyspnoea
+        - EOR01-SS:Fatigue
+        - EOR01-SS:Financial Difficulties
+        - EOR01-SS:Insomnia
+        - EOR01-SS:Nausea and Vomiting
+        - EOR01-SS:Pain
+        - EOR01-Stay in Bed/Chair During the Day
+        - EOR01-Trouble Doing Strenuous Activities
+        - EOR01-Trouble Taking Long Walk
+        - EOR01-Trouble Taking Short Walk Outside
+        - EOR01-Were You Short of Breath
+        - EOR01-Were You Tired
+outcome:
+  message: Value not found in non-extensible codelist European Organisation for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Core 30 Version
+    3.0 Questionnaire Test Name (C161618)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C161618
+  codelist_name: European Organisation for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Core 30 Version 3.0 Questionnaire Test Name
+  codelist_submission_value: EOR01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 45
+

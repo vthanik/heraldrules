@@ -1,0 +1,49 @@
+id: HRL-CT-0652
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MSTESTCD (Microbiology Susceptibility Test Code) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MSTESTCD
+      operator: in
+      value:
+        - DIAZOINH
+        - FLMUTIND
+        - ICNETAS
+        - MEC50FCB
+        - MEC50FCR
+        - MEC50R
+        - MEC50S
+        - MIC
+        - MIC50FCB
+        - MIC50FCR
+        - MIC50R
+        - MIC50S
+        - MIC95FCB
+        - MIC95FCR
+        - MIC95R
+        - MIC95S
+        - MICROSUS
+        - SUSMUIND
+outcome:
+  message: Value not found in extensible codelist Microbiology Susceptibility Test
+    Code (C128688)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C128688
+  codelist_name: Microbiology Susceptibility Test Code
+  codelist_submission_value: MSTESTCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 18
+

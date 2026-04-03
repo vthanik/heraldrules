@@ -1,0 +1,50 @@
+id: HRL-CT-0992
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SF82TC (Short Form 8 Health Survey Acute, US Version 1.0 Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SF82TC
+      operator: in
+      value:
+        - SF8201
+        - SF8202
+        - SF8203
+        - SF8204
+        - SF8205
+        - SF8206
+        - SF8207
+        - SF8208
+        - SF8209
+        - SF8210
+        - SF8211
+        - SF8212
+        - SF8213
+        - SF8214
+        - SF8215
+        - SF8216
+        - SF8217
+        - SF8218
+outcome:
+  message: Value not found in non-extensible codelist Short Form 8 Health Survey Acute,
+    US Version 1.0 Questionnaire Test Code (C177706)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C177706
+  codelist_name: Short Form 8 Health Survey Acute, US Version 1.0 Questionnaire Test
+    Code
+  codelist_submission_value: SF82TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 18
+

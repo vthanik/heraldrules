@@ -1,0 +1,51 @@
+id: HRL-CT-1078
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: OABQ02TC (The Overactive Bladder Questionnaire Short Form Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: OABQ02TC
+      operator: in
+      value:
+        - OABQ0201
+        - OABQ0202
+        - OABQ0203
+        - OABQ0204
+        - OABQ0205
+        - OABQ0206
+        - OABQ0207
+        - OABQ0208
+        - OABQ0209
+        - OABQ0210
+        - OABQ0211
+        - OABQ0212
+        - OABQ0213
+        - OABQ0214
+        - OABQ0215
+        - OABQ0216
+        - OABQ0217
+        - OABQ0218
+        - OABQ0219
+outcome:
+  message: Value not found in non-extensible codelist The Overactive Bladder Questionnaire
+    Short Form Questionnaire Test Code (C103477)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103477
+  codelist_name: The Overactive Bladder Questionnaire Short Form Questionnaire Test
+    Code
+  codelist_submission_value: OABQ02TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 19
+

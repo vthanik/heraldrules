@@ -1,0 +1,41 @@
+id: HRL-CT-1057
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TESTCOND (Test Condition Response) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TESTCOND
+      operator: in
+      value:
+        - 1 DAY COLD INCUBATION
+        - SATURATED CONDITION WITH BINDING AGENT
+        - WITH APTEM REAGENT
+        - WITH EXTEM REAGENT
+        - WITH FIBTEM REAGENT
+        - WITH HEPTEM REAGENT
+        - WITH INDUCING AGENT
+        - WITH INTEM REAGENT
+        - WITH STIMULATING AGENT
+        - WITHOUT BINDING AGENT
+        - WITHOUT STIMULATING AGENT
+outcome:
+  message: Value not found in extensible codelist Test Condition Response (C181175)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C181175
+  codelist_name: Test Condition Response
+  codelist_submission_value: TESTCOND
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 11
+

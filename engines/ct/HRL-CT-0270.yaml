@@ -1,0 +1,37 @@
+id: HRL-CT-0270
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CADGRS (Coronary Artery Dissection NHLBI Grade Responses) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CADGRS
+      operator: in
+      value:
+        - CORONARY DISSECTION NHLBI GRADE A
+        - CORONARY DISSECTION NHLBI GRADE B
+        - CORONARY DISSECTION NHLBI GRADE C
+        - CORONARY DISSECTION NHLBI GRADE D
+        - CORONARY DISSECTION NHLBI GRADE E
+        - CORONARY DISSECTION NHLBI GRADE F
+outcome:
+  message: Value not found in non-extensible codelist Coronary Artery Dissection NHLBI
+    Grade Responses (C119018)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C119018
+  codelist_name: Coronary Artery Dissection NHLBI Grade Responses
+  codelist_submission_value: CADGRS
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

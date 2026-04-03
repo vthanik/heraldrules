@@ -1,0 +1,82 @@
+id: HRL-CT-0431
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC061TC (Functional Assessment of Cancer Therapy-Bone Marrow Transplant
+  Version 4 Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC061TC
+      operator: in
+      value:
+        - FAC06101
+        - FAC06102
+        - FAC06103
+        - FAC06104
+        - FAC06105
+        - FAC06106
+        - FAC06107
+        - FAC06108
+        - FAC06109
+        - FAC06110
+        - FAC06111
+        - FAC06112
+        - FAC06113
+        - FAC06114
+        - FAC06115
+        - FAC06116
+        - FAC06117
+        - FAC06118
+        - FAC06119
+        - FAC06120
+        - FAC06121
+        - FAC06122
+        - FAC06123
+        - FAC06124
+        - FAC06125
+        - FAC06126
+        - FAC06127
+        - FAC06128
+        - FAC06129
+        - FAC06130
+        - FAC06131
+        - FAC06132
+        - FAC06133
+        - FAC06134
+        - FAC06135
+        - FAC06136
+        - FAC06137
+        - FAC06138
+        - FAC06139
+        - FAC06140
+        - FAC06141
+        - FAC06142
+        - FAC06143
+        - FAC06144
+        - FAC06145
+        - FAC06146
+        - FAC06147
+        - FAC06148
+        - FAC06149
+        - FAC06150
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Bone Marrow Transplant Version 4 Questionnaire Test Code (C147540)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C147540
+  codelist_name: Functional Assessment of Cancer Therapy-Bone Marrow Transplant Version
+    4 Questionnaire Test Code
+  codelist_submission_value: FAC061TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 50
+

@@ -1,0 +1,38 @@
+id: HRL-CT-0252
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CES01TN (Combat Exposure Scale Questionnaire Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CES01TN
+      operator: in
+      value:
+        - CES01-Ever Combat Patrols/Dangerous Duty
+        - CES01-Ever Surrounded by the Enemy
+        - CES01-How Often Fire Rounds at Enemy
+        - CES01-In Danger of Being Injured/Killed
+        - CES01-See Someone Hit by Rounds
+        - CES01-Soldiers in Unit KIA, Wounded, MIA
+        - CES01-Were You Ever Under Enemy Fire
+outcome:
+  message: Value not found in non-extensible codelist Combat Exposure Scale Questionnaire
+    Test Name (C132518)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C132518
+  codelist_name: Combat Exposure Scale Questionnaire Test Name
+  codelist_submission_value: CES01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

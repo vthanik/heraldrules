@@ -1,0 +1,39 @@
+id: HRL-CT-0020
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ACN (Action Taken with Study Treatment) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ACN
+      operator: in
+      value:
+        - DOSE INCREASED
+        - DOSE NOT CHANGED
+        - DOSE RATE REDUCED
+        - DOSE REDUCED
+        - DRUG INTERRUPTED
+        - DRUG WITHDRAWN
+        - NOT APPLICABLE
+        - UNKNOWN
+outcome:
+  message: Value not found in non-extensible codelist Action Taken with Study Treatment
+    (C66767)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C66767
+  codelist_name: Action Taken with Study Treatment
+  codelist_submission_value: ACN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 8
+

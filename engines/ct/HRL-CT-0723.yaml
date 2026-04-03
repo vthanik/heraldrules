@@ -1,0 +1,702 @@
+id: HRL-CT-0723
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: NY1TN (National Youth Tobacco Survey 2022 Questionnaire Test Name) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: NY1TN
+      operator: in
+      value:
+        - 'NY1-Ads Against Tobacco: Fresh Empire'
+        - 'NY1-Ads Against Tobacco: Haven''t Seen'
+        - 'NY1-Ads Against Tobacco: Other'
+        - 'NY1-Ads Against Tobacco: Specify'
+        - 'NY1-Ads Against Tobacco: This Free Life'
+        - 'NY1-Ads Against Tobacco: Tips'
+        - 'NY1-Ads Against Tobacco: Truth'
+        - NY1-Agree Statement Tobacco Dangerous
+        - NY1-Any Bidis Flavored
+        - NY1-Any Cigars Flavored
+        - NY1-Any Dip Flavored
+        - NY1-Any Dissolv Tobacco Flavored
+        - NY1-Any E-Cigs Flavored
+        - NY1-Any E-Cigs Used Contain Nic Salt
+        - NY1-Any E-Cigs Used Contain Nicotine
+        - NY1-Any Heated Tobacco Flavored
+        - NY1-Any Hookah Flavored
+        - NY1-Any Pipe Tobacco Flavored
+        - NY1-Any Pouches Flavored
+        - NY1-Any RYO Cigs Flavored
+        - NY1-Any Snus Flavored
+        - 'NY1-Anyone Lives w/You: Bidis'
+        - 'NY1-Anyone Lives w/You: Cigars'
+        - 'NY1-Anyone Lives w/You: Cigs'
+        - 'NY1-Anyone Lives w/You: Dissolv Tobacco'
+        - 'NY1-Anyone Lives w/You: Heated Tobacco'
+        - 'NY1-Anyone Lives w/You: Hookah'
+        - 'NY1-Anyone Lives w/You: No One'
+        - 'NY1-Anyone Lives w/You: Pipe tobacco'
+        - 'NY1-Anyone Lives w/You: Pouches'
+        - 'NY1-Anyone Lives w/You: RYO Cigs'
+        - 'NY1-Anyone Lives w/You: Use Dip'
+        - 'NY1-Anyone Lives w/You: Use E-Cigs'
+        - 'NY1-Anyone Lives w/You: Use Snus'
+        - NY1-Anyone Refuse Sell Tobacco B/c Age
+        - NY1-Are You Transgender
+        - 'NY1-Been Bothered: Feeling Anxious'
+        - 'NY1-Been Bothered: Feeling Depressed'
+        - 'NY1-Been Bothered: Little Interest'
+        - 'NY1-Been Bothered: Not Stop Worrying'
+        - NY1-Breathing Smoke Other People Cigs
+        - NY1-Breathing Vapor Other People E-Cigs
+        - NY1-Cigars Less/Equally/More Addictive
+        - NY1-Curious Using Dip
+        - NY1-Curious Using E-Cig
+        - NY1-Days Used E-Cig Life
+        - NY1-Describe Your Grades in School
+        - NY1-Dip Less/Equally/More Addictive
+        - NY1-Do You Have Difficulty Concentrating
+        - NY1-Do you Have Your Own Bedroom
+        - NY1-Does Your Family Own a Vehicle
+        - NY1-During Visits Advised Not Cigs
+        - NY1-During Visits Advised Not E-Cigs
+        - NY1-During Visits Advised Not Tobacco
+        - NY1-During Visits Asked E-Cigs
+        - NY1-During Visits Asked Other Tobacco
+        - NY1-During Visits Asked Used Cigs
+        - 'NY1-E-Cig Get From Person: A Hit'
+        - 'NY1-E-Cig Get From Person: A Pod'
+        - 'NY1-E-Cig Get From Person: New E-Cig'
+        - 'NY1-E-Cig Get From Person: Something'
+        - 'NY1-E-Cig Get From Person: Specify'
+        - NY1-E-Cigs Less/Equally/More Addictive
+        - NY1-Ever Curious Smoking Cig
+        - NY1-Ever Curious Smoking Cigar
+        - NY1-Ever Curious Smoking Hookah
+        - NY1-Ever Purchased an E-Cig School
+        - NY1-Ever Smoked a Cig
+        - NY1-Ever Smoked a Cigar
+        - NY1-Ever Smoked Cigar With Marijuana
+        - NY1-Ever Smoked Hookah
+        - NY1-Ever Smoked Pipe Tobacco
+        - NY1-Ever Smoked RYO Cigs
+        - NY1-Ever Used a Pouch
+        - NY1-Ever Used an E-Cig
+        - NY1-Ever Used Dip
+        - NY1-Ever Used Heated Tobacco
+        - NY1-Ever Used Snus
+        - 'NY1-Ever Vaped: Another Substance'
+        - 'NY1-Ever Vaped: CBD or CBD Oils'
+        - 'NY1-Ever Vaped: Marijuana'
+        - 'NY1-Ever Vaped: Specify'
+        - 'NY1-Ever Vaped: Synthetic Marijuana'
+        - NY1-Exposed E-Cig Indoor Public Place
+        - NY1-Exposed E-Cig Outdoor Public Place
+        - NY1-Exposed Smoke Indoor Public Place
+        - NY1-Exposed Smoke Outdoor Public Place
+        - 'NY1-Flavors Bidis: Alcoholic'
+        - 'NY1-Flavors Bidis: Candy'
+        - 'NY1-Flavors Bidis: Chocolate'
+        - 'NY1-Flavors Bidis: Clove'
+        - 'NY1-Flavors Bidis: Fruit'
+        - 'NY1-Flavors Bidis: Menthol'
+        - 'NY1-Flavors Bidis: Mint'
+        - 'NY1-Flavors Bidis: Other'
+        - 'NY1-Flavors Bidis: Specify'
+        - 'NY1-Flavors Cigars: Alcoholic'
+        - 'NY1-Flavors Cigars: Candy'
+        - 'NY1-Flavors Cigars: Chocolate'
+        - 'NY1-Flavors Cigars: Clove'
+        - 'NY1-Flavors Cigars: Fruit'
+        - 'NY1-Flavors Cigars: Menthol'
+        - 'NY1-Flavors Cigars: Mint'
+        - 'NY1-Flavors Cigars: Other'
+        - 'NY1-Flavors Cigars: Specify'
+        - 'NY1-Flavors Dip: Alcoholic'
+        - 'NY1-Flavors Dip: Candy'
+        - 'NY1-Flavors Dip: Chocolate'
+        - 'NY1-Flavors Dip: Clove'
+        - 'NY1-Flavors Dip: Fruit'
+        - 'NY1-Flavors Dip: Menthol'
+        - 'NY1-Flavors Dip: Mint'
+        - 'NY1-Flavors Dip: Other'
+        - 'NY1-Flavors Dip: Specify'
+        - 'NY1-Flavors Dissolv: Alcoholic'
+        - 'NY1-Flavors Dissolv: Candy'
+        - 'NY1-Flavors Dissolv: Chocolate'
+        - 'NY1-Flavors Dissolv: Clove'
+        - 'NY1-Flavors Dissolv: Fruit'
+        - 'NY1-Flavors Dissolv: Menthol'
+        - 'NY1-Flavors Dissolv: Mint'
+        - 'NY1-Flavors Dissolv: Other'
+        - 'NY1-Flavors Dissolv: Specify'
+        - 'NY1-Flavors E-Cig: Alcoholic'
+        - 'NY1-Flavors E-Cig: Candy'
+        - 'NY1-Flavors E-Cig: Chocolate'
+        - 'NY1-Flavors E-Cig: Clove'
+        - 'NY1-Flavors E-Cig: Fruit'
+        - 'NY1-Flavors E-Cig: Menthol'
+        - 'NY1-Flavors E-Cig: Mint'
+        - 'NY1-Flavors E-Cig: Other'
+        - 'NY1-Flavors E-Cig: Specify'
+        - 'NY1-Flavors Heated Tobacco: Alcoholic'
+        - 'NY1-Flavors Heated Tobacco: Candy'
+        - 'NY1-Flavors Heated Tobacco: Chocolate'
+        - 'NY1-Flavors Heated Tobacco: Clove'
+        - 'NY1-Flavors Heated Tobacco: Fruit'
+        - 'NY1-Flavors Heated Tobacco: Menthol'
+        - 'NY1-Flavors Heated Tobacco: Mint'
+        - 'NY1-Flavors Heated Tobacco: Other'
+        - 'NY1-Flavors Heated Tobacco: Specify'
+        - 'NY1-Flavors Hookah: Alcoholic'
+        - 'NY1-Flavors Hookah: Candy'
+        - 'NY1-Flavors Hookah: Chocolate'
+        - 'NY1-Flavors Hookah: Clove'
+        - 'NY1-Flavors Hookah: Fruit'
+        - 'NY1-Flavors Hookah: Menthol'
+        - 'NY1-Flavors Hookah: Mint'
+        - 'NY1-Flavors Hookah: Other'
+        - 'NY1-Flavors Hookah: Specify'
+        - 'NY1-Flavors Pipe Tobacco: Alcoholic'
+        - 'NY1-Flavors Pipe Tobacco: Candy'
+        - 'NY1-Flavors Pipe Tobacco: Chocolate'
+        - 'NY1-Flavors Pipe Tobacco: Clove'
+        - 'NY1-Flavors Pipe Tobacco: Fruit'
+        - 'NY1-Flavors Pipe Tobacco: Menthol'
+        - 'NY1-Flavors Pipe Tobacco: Mint'
+        - 'NY1-Flavors Pipe Tobacco: Other'
+        - 'NY1-Flavors Pipe Tobacco: Specify'
+        - 'NY1-Flavors Pouches: Alcoholic'
+        - 'NY1-Flavors Pouches: Candy'
+        - 'NY1-Flavors Pouches: Chocolate'
+        - 'NY1-Flavors Pouches: Clove'
+        - 'NY1-Flavors Pouches: Fruit'
+        - 'NY1-Flavors Pouches: Menthol'
+        - 'NY1-Flavors Pouches: Mint'
+        - 'NY1-Flavors Pouches: Other'
+        - 'NY1-Flavors Pouches: Specify'
+        - 'NY1-Flavors RYO Cigs: Alcoholic'
+        - 'NY1-Flavors RYO Cigs: Candy'
+        - 'NY1-Flavors RYO Cigs: Chocolate'
+        - 'NY1-Flavors RYO Cigs: Clove'
+        - 'NY1-Flavors RYO Cigs: Fruit'
+        - 'NY1-Flavors RYO Cigs: Menthol'
+        - 'NY1-Flavors RYO Cigs: Mint'
+        - 'NY1-Flavors RYO Cigs: Other'
+        - 'NY1-Flavors RYO Cigs: Specify'
+        - 'NY1-Flavors Snus: Alcoholic'
+        - 'NY1-Flavors Snus: Candy'
+        - 'NY1-Flavors Snus: Chocolate'
+        - 'NY1-Flavors Snus: Clove'
+        - 'NY1-Flavors Snus: Fruit'
+        - 'NY1-Flavors Snus: Menthol'
+        - 'NY1-Flavors Snus: Mint'
+        - 'NY1-Flavors Snus: Other'
+        - 'NY1-Flavors Snus: Specify'
+        - NY1-Got Cig How Old Was This Person
+        - NY1-Got Cigar How Old Was This Person
+        - NY1-Got Dip How Old Was This Person
+        - NY1-Got E-Cig How Old Was This Person
+        - NY1-Got Hookah How Old Was This Person
+        - NY1-Had Strong Craving to Use Tobacco
+        - NY1-Have You Heard of Heated Tobacco
+        - NY1-Have You Heard of Pouches
+        - NY1-Have You Seen The Real Cost Ads
+        - 'NY1-Hispanic: No'
+        - 'NY1-Hispanic: Yes Another Hispanic'
+        - 'NY1-Hispanic: Yes Cuban'
+        - 'NY1-Hispanic: Yes Mexican'
+        - 'NY1-Hispanic: Yes Puerto Rican'
+        - NY1-Hookah Less/Equally/More Addictive
+        - NY1-How Easy Buy Tobacco Online B/c Age
+        - NY1-How Easy Buy Tobacco Store B/c Age
+        - 'NY1-How Get Bidis: Asked'
+        - 'NY1-How Get Bidis: From Family'
+        - 'NY1-How Get Bidis: From Friend'
+        - 'NY1-How Get Bidis: Myself'
+        - 'NY1-How Get Bidis: Offered'
+        - 'NY1-How Get Bidis: Other'
+        - 'NY1-How Get Bidis: Someone Buy'
+        - 'NY1-How Get Bidis: Specify'
+        - 'NY1-How Get Bidis: Took Store'
+        - 'NY1-How Get Cig: Asked'
+        - 'NY1-How Get Cig: From Family'
+        - 'NY1-How Get Cig: From Friend'
+        - 'NY1-How Get Cig: Myself'
+        - 'NY1-How Get Cig: Offered'
+        - 'NY1-How Get Cig: Other'
+        - 'NY1-How Get Cig: Someone Buy'
+        - 'NY1-How Get Cig: Specify'
+        - 'NY1-How Get Cig: Took Store'
+        - 'NY1-How Get Cigars: Asked'
+        - 'NY1-How Get Cigars: From Family'
+        - 'NY1-How Get Cigars: From Friend'
+        - 'NY1-How Get Cigars: Myself'
+        - 'NY1-How Get Cigars: Offered'
+        - 'NY1-How Get Cigars: Other'
+        - 'NY1-How Get Cigars: Someone Buy'
+        - 'NY1-How Get Cigars: Specify'
+        - 'NY1-How Get Cigars: Took Store'
+        - 'NY1-How Get Dip: Asked'
+        - 'NY1-How Get Dip: From Family'
+        - 'NY1-How Get Dip: From Friend'
+        - 'NY1-How Get Dip: Myself'
+        - 'NY1-How Get Dip: Offered'
+        - 'NY1-How Get Dip: Other'
+        - 'NY1-How Get Dip: Someone Buy'
+        - 'NY1-How Get Dip: Specify'
+        - 'NY1-How Get Dip: Took Store'
+        - 'NY1-How Get Dissolv: Asked'
+        - 'NY1-How Get Dissolv: From Family'
+        - 'NY1-How Get Dissolv: From Friend'
+        - 'NY1-How Get Dissolv: Myself'
+        - 'NY1-How Get Dissolv: Offered'
+        - 'NY1-How Get Dissolv: Other'
+        - 'NY1-How Get Dissolv: Someone Buy'
+        - 'NY1-How Get Dissolv: Specify'
+        - 'NY1-How Get Dissolv: Took Store'
+        - 'NY1-How Get E-Cig: Asked'
+        - 'NY1-How Get E-Cig: From Family'
+        - 'NY1-How Get E-Cig: From Friend'
+        - 'NY1-How Get E-Cig: Myself'
+        - 'NY1-How Get E-Cig: Offered'
+        - 'NY1-How Get E-Cig: Other'
+        - 'NY1-How Get E-Cig: Someone Buy'
+        - 'NY1-How Get E-Cig: Specify'
+        - 'NY1-How Get E-Cig: Took Store'
+        - 'NY1-How Get Heated Tobacco: Asked'
+        - 'NY1-How Get Heated Tobacco: From Family'
+        - 'NY1-How Get Heated Tobacco: From Friend'
+        - 'NY1-How Get Heated Tobacco: Myself'
+        - 'NY1-How Get Heated Tobacco: Offered'
+        - 'NY1-How Get Heated Tobacco: Other'
+        - 'NY1-How Get Heated Tobacco: Someone Buy'
+        - 'NY1-How Get Heated Tobacco: Specify'
+        - 'NY1-How Get Heated Tobacco: Took Store'
+        - 'NY1-How Get Hookah: Asked'
+        - 'NY1-How Get Hookah: From Family'
+        - 'NY1-How Get Hookah: From Friend'
+        - 'NY1-How Get Hookah: Myself'
+        - 'NY1-How Get Hookah: Offered'
+        - 'NY1-How Get Hookah: Other'
+        - 'NY1-How Get Hookah: Someone Buy'
+        - 'NY1-How Get Hookah: Specify'
+        - 'NY1-How Get Hookah: Took Store'
+        - 'NY1-How Get Pipe Tobacco: Asked'
+        - 'NY1-How Get Pipe Tobacco: From Family'
+        - 'NY1-How Get Pipe Tobacco: From Friend'
+        - 'NY1-How Get Pipe Tobacco: Myself'
+        - 'NY1-How Get Pipe Tobacco: Offered'
+        - 'NY1-How Get Pipe Tobacco: Other'
+        - 'NY1-How Get Pipe Tobacco: Someone Buy'
+        - 'NY1-How Get Pipe Tobacco: Specify'
+        - 'NY1-How Get Pipe Tobacco: Took Store'
+        - 'NY1-How Get Pouches: Asked'
+        - 'NY1-How Get Pouches: From Family'
+        - 'NY1-How Get Pouches: From Friend'
+        - 'NY1-How Get Pouches: Myself'
+        - 'NY1-How Get Pouches: Offered'
+        - 'NY1-How Get Pouches: Other'
+        - 'NY1-How Get Pouches: Someone Buy'
+        - 'NY1-How Get Pouches: Specify'
+        - 'NY1-How Get Pouches: Took Store'
+        - 'NY1-How Get RYO Cigs: Asked'
+        - 'NY1-How Get RYO Cigs: From Family'
+        - 'NY1-How Get RYO Cigs: From Friend'
+        - 'NY1-How Get RYO Cigs: Myself'
+        - 'NY1-How Get RYO Cigs: Offered'
+        - 'NY1-How Get RYO Cigs: Other'
+        - 'NY1-How Get RYO Cigs: Someone Buy'
+        - 'NY1-How Get RYO Cigs: Specify'
+        - 'NY1-How Get RYO Cigs: Took Store'
+        - 'NY1-How Get Snus: Asked'
+        - 'NY1-How Get Snus: From Family'
+        - 'NY1-How Get Snus: From Friend'
+        - 'NY1-How Get Snus: Myself'
+        - 'NY1-How Get Snus: Offered'
+        - 'NY1-How Get Snus: Other'
+        - 'NY1-How Get Snus: Someone Buy'
+        - 'NY1-How Get Snus: Specify'
+        - 'NY1-How Get Snus: Took Store'
+        - NY1-How Many Cigs Entire Life
+        - NY1-How Many Computers Family Own
+        - NY1-How Many Days Smoke Bidis
+        - NY1-How Many Days Smoke Cigars
+        - NY1-How Many Days Smoke Cigs
+        - NY1-How Many Days Smoke Hookah
+        - NY1-How Many Days Smoke Pipe Tobacco
+        - NY1-How Many Days Smoke RYO Cigs
+        - NY1-How Many Days Use Any Tobacco
+        - NY1-How Many Days Use Dip
+        - NY1-How Many Days Use Dissolv Tobacco
+        - NY1-How Many Days Use Heated Tobacco
+        - NY1-How Many Days Use Pouch
+        - NY1-How Many Days Use Snus
+        - NY1-How Many Times Travel With Family
+        - NY1-How Many You Think Smoke Cigs
+        - NY1-How Many You Think Use E-Cigs
+        - NY1-How Often Do You Use Social Media
+        - NY1-How Often Use Someone E-Cig
+        - NY1-How Often Warning Label Cig
+        - NY1-How Often Warning Label Cigar
+        - NY1-How Often Warning Label Dip
+        - NY1-How Often Warning Label E-Cig
+        - NY1-How Often Warning Label Hookah
+        - NY1-How Old Are You
+        - NY1-How Old When First Smoked Cig
+        - NY1-How Old When First Smoked Cigar
+        - NY1-How Old When First Smoked Hookah
+        - NY1-How Old When First Used Dip
+        - NY1-How Old When First Used E-Cig
+        - NY1-How Soon Wake Up Want to Use Tobacco
+        - NY1-If Best Friends Offer Cig Smoke
+        - NY1-If Best Friends Offer Cigar Smoke
+        - NY1-If Best Friends Offer E-Cig Use
+        - NY1-Internet How Often Ads E-Cigs
+        - NY1-Internet How Often See Ads Cigs
+        - NY1-Last Time Smoked Cig
+        - NY1-Last Time Used E-Cig
+        - NY1-Magazines How Often Ads E-Cigs
+        - NY1-Magazines How Often See Ads Cigs
+        - NY1-My Friends Think E-Cig Use Is
+        - NY1-On Days Smoked How Many Cigars
+        - NY1-On Days Smoked How Many Cigs
+        - NY1-Past 30 Days Menthol Cig Use
+        - NY1-Past 30 Days Use E-Cig
+        - NY1-People Harm When Smoke Hookah
+        - NY1-People Harm When Use Dip
+        - NY1-People Harm When Use E-Cigs
+        - NY1-Post Pictures of Using E-Cigs
+        - 'NY1-Race: American Indian/Alaska Native'
+        - 'NY1-Race: Asian'
+        - 'NY1-Race: Black or African American'
+        - 'NY1-Race: Native Hawaiian/Other Pacific'
+        - 'NY1-Race: White'
+        - NY1-Ride in Vehicle Someone Smoking
+        - NY1-Ride in Vehicle Someone Using E-Cig
+        - NY1-Seriously Thinking Quitting Cig
+        - NY1-Seriously Thinking Quitting E-Cig
+        - NY1-Seriously Thinking Quitting Tobacco
+        - 'NY1-Sites Seen Posts E-Cigs: Facebook'
+        - 'NY1-Sites Seen Posts E-Cigs: Instagram'
+        - 'NY1-Sites Seen Posts E-Cigs: Other'
+        - 'NY1-Sites Seen Posts E-Cigs: Reddit'
+        - 'NY1-Sites Seen Posts E-Cigs: Snapchat'
+        - 'NY1-Sites Seen Posts E-Cigs: Specify'
+        - 'NY1-Sites Seen Posts E-Cigs: TikTok'
+        - 'NY1-Sites Seen Posts E-Cigs: Twitter'
+        - 'NY1-Sites Seen Posts E-Cigs: YouTube'
+        - NY1-Smoked Bidis
+        - NY1-Social Media See Posts E-Cigs
+        - NY1-Social Media Shared Posts E-Cigs
+        - NY1-Someone Smoke in Home
+        - NY1-Someone Use E-Cigs in Home
+        - NY1-Speak Language Other Than English
+        - NY1-Store How Often Ads E-Cigs
+        - NY1-Store How Often See Ads Cigs
+        - NY1-Think Cig Advertised as Low Nicotine
+        - NY1-Think People Harm When Smoke Cigar
+        - NY1-Think People Harm When Smoke Cigs
+        - NY1-Think That E-Cigs
+        - NY1-Think Will Smoke Cig in Next Year
+        - NY1-Think Will Smoke Cigar in Next Year
+        - NY1-Think Will Try Cig Soon
+        - NY1-Think Will Try Cigar Soon
+        - NY1-Think Will Try E-Cig Soon
+        - NY1-Think Will Use E-Cig in Next Year
+        - NY1-Times Stopped Cig Trying Quit
+        - NY1-Times Stopped E-Cig Trying Quit
+        - NY1-Times Stopped Tobacco Trying Quit
+        - 'NY1-Tried Quit E-Cig: Help from Doctor'
+        - 'NY1-Tried Quit E-Cig: Help From Friend'
+        - 'NY1-Tried Quit E-Cig: Help From Parent'
+        - 'NY1-Tried Quit E-Cig: Help From Teacher'
+        - 'NY1-Tried Quit E-Cig: Help on Internet'
+        - 'NY1-Tried Quit E-Cig: Helpline'
+        - 'NY1-Tried Quit E-Cig: Mobile App'
+        - 'NY1-Tried Quit E-Cig: Not Use Resources'
+        - 'NY1-Tried Quit E-Cig: Something Else'
+        - 'NY1-Tried Quit E-Cig: Specify'
+        - 'NY1-Tried Quit E-Cig: Treatment Hospital'
+        - 'NY1-Type of Cigar Smoked: Cigarillos'
+        - 'NY1-Type of Cigar Smoked: Don''t Know'
+        - 'NY1-Type of Cigar Smoked: Little Cigars'
+        - 'NY1-Type of Cigar Smoked: Regular Cigars'
+        - NY1-Type of E-Cig Used
+        - NY1-Used Dissolv Tobacco
+        - 'NY1-Using E-Cig at School: Bathroom'
+        - 'NY1-Using E-Cig at School: Classroom'
+        - 'NY1-Using E-Cig at School: Inside Other'
+        - 'NY1-Using E-Cig at School: No'
+        - 'NY1-Using E-Cig at School: Not Listed'
+        - 'NY1-Using E-Cig at School: Outside Other'
+        - 'NY1-Using E-Cig at School: Specify'
+        - 'NY1-Vaped 30 Days: Another Substance'
+        - 'NY1-Vaped 30 Days: CBD or CBD Oils'
+        - 'NY1-Vaped 30 Days: Marijuana'
+        - 'NY1-Vaped 30 Days: Specify'
+        - 'NY1-Vaped 30 Days: Synthetic Marijuana'
+        - NY1-Visited Doctor Past 12 Months
+        - NY1-Watch TV How Often See Ads Cigs
+        - NY1-Watch TV How Often See Ads E-Cigs
+        - NY1-Watch TV See People Using Cigs
+        - NY1-Watch TV See People Using E-Cigs
+        - NY1-What Brand Cig Usually
+        - 'NY1-What Brand Cig Usually: Specify'
+        - NY1-What Brand E-Cig Usually
+        - 'NY1-What Brand E-Cig Usually: Specify'
+        - 'NY1-What Brands Cigs Smoke: American'
+        - 'NY1-What Brands Cigs Smoke: Camel'
+        - 'NY1-What Brands Cigs Smoke: GPC'
+        - 'NY1-What Brands Cigs Smoke: Kool'
+        - 'NY1-What Brands Cigs Smoke: L&M'
+        - 'NY1-What Brands Cigs Smoke: Marlboro'
+        - 'NY1-What Brands Cigs Smoke: Maverick'
+        - 'NY1-What Brands Cigs Smoke: Newport'
+        - 'NY1-What Brands Cigs Smoke: Not Sure'
+        - 'NY1-What Brands Cigs Smoke: Other'
+        - 'NY1-What Brands Cigs Smoke: Pall Mall'
+        - 'NY1-What Brands Cigs Smoke: Parliament'
+        - 'NY1-What Brands Cigs Smoke: Specify'
+        - 'NY1-What Brands Cigs Smoke: Winston'
+        - 'NY1-What E-Cig Brands Use: blu'
+        - 'NY1-What E-Cig Brands Use: Eonsmoke'
+        - 'NY1-What E-Cig Brands Use: JUUL'
+        - 'NY1-What E-Cig Brands Use: Leap'
+        - 'NY1-What E-Cig Brands Use: Logic'
+        - 'NY1-What E-Cig Brands Use: Mojo'
+        - 'NY1-What E-Cig Brands Use: NJOY'
+        - 'NY1-What E-Cig Brands Use: Not Sure'
+        - 'NY1-What E-Cig Brands Use: Other'
+        - 'NY1-What E-Cig Brands Use: Posh'
+        - 'NY1-What E-Cig Brands Use: Puff Bar'
+        - 'NY1-What E-Cig Brands Use: SMOK'
+        - 'NY1-What E-Cig Brands Use: Specify'
+        - 'NY1-What E-Cig Brands Use: STIG'
+        - 'NY1-What E-Cig Brands Use: Suorin'
+        - 'NY1-What E-Cig Brands Use: Vuse'
+        - NY1-What Grade Are You In
+        - NY1-What Is Your Sex
+        - 'NY1-Where Buy Bidis: Delivery'
+        - 'NY1-Where Buy Bidis: Did Not'
+        - 'NY1-Where Buy Bidis: Drugstore'
+        - 'NY1-Where Buy Bidis: Gas'
+        - 'NY1-Where Buy Bidis: Grocery'
+        - 'NY1-Where Buy Bidis: Internet'
+        - 'NY1-Where Buy Bidis: Kiosk'
+        - 'NY1-Where Buy Bidis: Mail'
+        - 'NY1-Where Buy Bidis: Other'
+        - 'NY1-Where Buy Bidis: Person'
+        - 'NY1-Where Buy Bidis: Specify'
+        - 'NY1-Where Buy Bidis: Vape Shop'
+        - 'NY1-Where Buy Bidis: Vending'
+        - 'NY1-Where Buy Cig: Delivery'
+        - 'NY1-Where Buy Cig: Did Not'
+        - 'NY1-Where Buy Cig: Drugstore'
+        - 'NY1-Where Buy Cig: Gas'
+        - 'NY1-Where Buy Cig: Grocery'
+        - 'NY1-Where Buy Cig: Kiosk'
+        - 'NY1-Where Buy Cig: Mail'
+        - 'NY1-Where Buy Cig: Other'
+        - 'NY1-Where Buy Cig: Person'
+        - 'NY1-Where Buy Cig: Specify'
+        - 'NY1-Where Buy Cig: Vape Shop'
+        - 'NY1-Where Buy Cigars: Delivery'
+        - 'NY1-Where Buy Cigars: Did Not'
+        - 'NY1-Where Buy Cigars: Drugstore'
+        - 'NY1-Where Buy Cigars: Gas'
+        - 'NY1-Where Buy Cigars: Grocery'
+        - 'NY1-Where Buy Cigars: Internet'
+        - 'NY1-Where Buy Cigars: Kiosk'
+        - 'NY1-Where Buy Cigars: Mail'
+        - 'NY1-Where Buy Cigars: Other'
+        - 'NY1-Where Buy Cigars: Person'
+        - 'NY1-Where Buy Cigars: Specify'
+        - 'NY1-Where Buy Cigars: Vape Shop'
+        - 'NY1-Where Buy Cigars: Vending'
+        - 'NY1-Where Buy Cigs: Internet'
+        - 'NY1-Where Buy Cigs: Vending'
+        - 'NY1-Where Buy Dip: Delivery'
+        - 'NY1-Where Buy Dip: Did Not'
+        - 'NY1-Where Buy Dip: Drugstore'
+        - 'NY1-Where Buy Dip: Gas'
+        - 'NY1-Where Buy Dip: Grocery'
+        - 'NY1-Where Buy Dip: Internet'
+        - 'NY1-Where Buy Dip: Kiosk'
+        - 'NY1-Where Buy Dip: Mail'
+        - 'NY1-Where Buy Dip: Other'
+        - 'NY1-Where Buy Dip: Person'
+        - 'NY1-Where Buy Dip: Specify'
+        - 'NY1-Where Buy Dip: Vape Shop'
+        - 'NY1-Where Buy Dip: Vending'
+        - 'NY1-Where Buy Dissolv: Delivery'
+        - 'NY1-Where Buy Dissolv: Did Not'
+        - 'NY1-Where Buy Dissolv: Drugstore'
+        - 'NY1-Where Buy Dissolv: Gas'
+        - 'NY1-Where Buy Dissolv: Grocery'
+        - 'NY1-Where Buy Dissolv: Internet'
+        - 'NY1-Where Buy Dissolv: Kiosk'
+        - 'NY1-Where Buy Dissolv: Mail'
+        - 'NY1-Where Buy Dissolv: Other'
+        - 'NY1-Where Buy Dissolv: Person'
+        - 'NY1-Where Buy Dissolv: Specify'
+        - 'NY1-Where Buy Dissolv: Vape Shop'
+        - 'NY1-Where Buy Dissolv: Vending'
+        - 'NY1-Where Buy E-Cig: Delivery'
+        - 'NY1-Where Buy E-Cig: Did Not'
+        - 'NY1-Where Buy E-Cig: Drugstore'
+        - 'NY1-Where Buy E-Cig: Gas'
+        - 'NY1-Where Buy E-Cig: Grocery'
+        - 'NY1-Where Buy E-Cig: Internet'
+        - 'NY1-Where Buy E-Cig: Kiosk'
+        - 'NY1-Where Buy E-Cig: Mail'
+        - 'NY1-Where Buy E-Cig: Other'
+        - 'NY1-Where Buy E-Cig: Person'
+        - 'NY1-Where Buy E-Cig: Specify'
+        - 'NY1-Where Buy E-Cig: Vape Shop'
+        - 'NY1-Where Buy E-Cig: Vending'
+        - 'NY1-Where Buy Heated Tobacco: Delivery'
+        - 'NY1-Where Buy Heated Tobacco: Did Not'
+        - 'NY1-Where Buy Heated Tobacco: Drugstore'
+        - 'NY1-Where Buy Heated Tobacco: Gas'
+        - 'NY1-Where Buy Heated Tobacco: Grocery'
+        - 'NY1-Where Buy Heated Tobacco: Internet'
+        - 'NY1-Where Buy Heated Tobacco: Kiosk'
+        - 'NY1-Where Buy Heated Tobacco: Mail'
+        - 'NY1-Where Buy Heated Tobacco: Other'
+        - 'NY1-Where Buy Heated Tobacco: Person'
+        - 'NY1-Where Buy Heated Tobacco: Specify'
+        - 'NY1-Where Buy Heated Tobacco: Vape Shop'
+        - 'NY1-Where Buy Heated Tobacco: Vending'
+        - 'NY1-Where Buy Hookah: Delivery'
+        - 'NY1-Where Buy Hookah: Did Not'
+        - 'NY1-Where Buy Hookah: Drugstore'
+        - 'NY1-Where Buy Hookah: Gas'
+        - 'NY1-Where Buy Hookah: Grocery'
+        - 'NY1-Where Buy Hookah: Internet'
+        - 'NY1-Where Buy Hookah: Kiosk'
+        - 'NY1-Where Buy Hookah: Mail'
+        - 'NY1-Where Buy Hookah: Other'
+        - 'NY1-Where Buy Hookah: Person'
+        - 'NY1-Where Buy Hookah: Specify'
+        - 'NY1-Where Buy Hookah: Vape Shop'
+        - 'NY1-Where Buy Hookah: Vending'
+        - 'NY1-Where Buy Pipe Tobacco: Delivery'
+        - 'NY1-Where Buy Pipe Tobacco: Did Not'
+        - 'NY1-Where Buy Pipe Tobacco: Drugstore'
+        - 'NY1-Where Buy Pipe Tobacco: Gas'
+        - 'NY1-Where Buy Pipe Tobacco: Grocery'
+        - 'NY1-Where Buy Pipe Tobacco: Internet'
+        - 'NY1-Where Buy Pipe Tobacco: Kiosk'
+        - 'NY1-Where Buy Pipe Tobacco: Mail'
+        - 'NY1-Where Buy Pipe Tobacco: Other'
+        - 'NY1-Where Buy Pipe Tobacco: Person'
+        - 'NY1-Where Buy Pipe Tobacco: Specify'
+        - 'NY1-Where Buy Pipe Tobacco: Vape Shop'
+        - 'NY1-Where Buy Pipe Tobacco: Vending'
+        - 'NY1-Where Buy Pouches: Delivery'
+        - 'NY1-Where Buy Pouches: Did Not'
+        - 'NY1-Where Buy Pouches: Drugstore'
+        - 'NY1-Where Buy Pouches: Gas'
+        - 'NY1-Where Buy Pouches: Grocery'
+        - 'NY1-Where Buy Pouches: Internet'
+        - 'NY1-Where Buy Pouches: Kiosk'
+        - 'NY1-Where Buy Pouches: Mail'
+        - 'NY1-Where Buy Pouches: Other'
+        - 'NY1-Where Buy Pouches: Person'
+        - 'NY1-Where Buy Pouches: Specify'
+        - 'NY1-Where Buy Pouches: Vape Shop'
+        - 'NY1-Where Buy Pouches: Vending'
+        - 'NY1-Where Buy RYO Cigs: Delivery'
+        - 'NY1-Where Buy RYO Cigs: Did Not'
+        - 'NY1-Where Buy RYO Cigs: Drugstore'
+        - 'NY1-Where Buy RYO Cigs: Gas'
+        - 'NY1-Where Buy RYO Cigs: Grocery'
+        - 'NY1-Where Buy RYO Cigs: Internet'
+        - 'NY1-Where Buy RYO Cigs: Kiosk'
+        - 'NY1-Where Buy RYO Cigs: Mail'
+        - 'NY1-Where Buy RYO Cigs: Other'
+        - 'NY1-Where Buy RYO Cigs: Person'
+        - 'NY1-Where Buy RYO Cigs: Specify'
+        - 'NY1-Where Buy RYO Cigs: Vape Shop'
+        - 'NY1-Where Buy RYO Cigs: Vending'
+        - 'NY1-Where Buy Snus: Delivery'
+        - 'NY1-Where Buy Snus: Did Not'
+        - 'NY1-Where Buy Snus: Drugstore'
+        - 'NY1-Where Buy Snus: Gas'
+        - 'NY1-Where Buy Snus: Grocery'
+        - 'NY1-Where Buy Snus: Internet'
+        - 'NY1-Where Buy Snus: Kiosk'
+        - 'NY1-Where Buy Snus: Mail'
+        - 'NY1-Where Buy Snus: Other'
+        - 'NY1-Where Buy Snus: Person'
+        - 'NY1-Where Buy Snus: Specify'
+        - 'NY1-Where Buy Snus: Vape Shop'
+        - 'NY1-Where Buy Snus: Vending'
+        - 'NY1-Where Smoke Hookah: Cafe'
+        - 'NY1-Where Smoke Hookah: Family House'
+        - 'NY1-Where Smoke Hookah: Friend''s House'
+        - 'NY1-Where Smoke Hookah: Hookah Bar'
+        - 'NY1-Where Smoke Hookah: My House'
+        - 'NY1-Where Smoke Hookah: Other'
+        - NY1-Which of the Following Describes You
+        - 'NY1-Who Posted E-Cigs: Celebrities'
+        - 'NY1-Who Posted E-Cigs: E-Cig Brands'
+        - 'NY1-Who Posted E-Cigs: News Articles'
+        - 'NY1-Who Posted E-Cigs: Online Friends'
+        - 'NY1-Who Posted E-Cigs: Other'
+        - 'NY1-Who Posted E-Cigs: People I know'
+        - 'NY1-Who Posted E-Cigs: Public Health'
+        - 'NY1-Who Posted E-Cigs: Specify'
+        - 'NY1-Why Curr E-Cig: Available Flavors'
+        - 'NY1-Why Curr E-Cig: Curious About Them'
+        - 'NY1-Why Curr E-Cig: Easier to Get'
+        - 'NY1-Why Curr E-Cig: Family Member'
+        - 'NY1-Why Curr E-Cig: Feeling Anxious'
+        - 'NY1-Why Curr E-Cig: Friend'
+        - 'NY1-Why Curr E-Cig: Get High or Buzz'
+        - 'NY1-Why Curr E-Cig: Less Harmful Other'
+        - 'NY1-Why Curr E-Cig: Other Reason'
+        - 'NY1-Why Curr E-Cig: Seen People TV'
+        - 'NY1-Why Curr E-Cig: Specify'
+        - 'NY1-Why Curr E-Cig: They Cost Less'
+        - 'NY1-Why Curr E-Cig: Try Quit Other'
+        - 'NY1-Why Curr E-Cig: Unnoticed at Home'
+        - 'NY1-Why Curr E-Cig: Use to Do Tricks'
+        - 'NY1-Why First E-Cig: Available Flavors'
+        - 'NY1-Why First E-Cig: Could Do Tricks'
+        - 'NY1-Why First E-Cig: Curious About'
+        - 'NY1-Why First E-Cig: Easier to Get'
+        - 'NY1-Why First E-Cig: Family Member'
+        - 'NY1-Why First E-Cig: Feeling Anxious'
+        - 'NY1-Why First E-Cig: Friend'
+        - 'NY1-Why First E-Cig: Get High or Buzz'
+        - 'NY1-Why First E-Cig: Less Harmful Other'
+        - 'NY1-Why First E-Cig: Other Reason'
+        - 'NY1-Why First E-Cig: Seen People TV'
+        - 'NY1-Why First E-Cig: Specify'
+        - 'NY1-Why First E-Cig: They Cost Less'
+        - 'NY1-Why First E-Cig: Try Quit Other'
+        - 'NY1-Why First E-Cig: Unnoticed at Home'
+outcome:
+  message: Value not found in non-extensible codelist National Youth Tobacco Survey
+    2022 Questionnaire Test Name (C208379)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C208379
+  codelist_name: National Youth Tobacco Survey 2022 Questionnaire Test Name
+  codelist_submission_value: NY1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 671
+

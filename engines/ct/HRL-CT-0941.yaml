@@ -1,0 +1,36 @@
+id: HRL-CT-0941
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SWLS01TN (Satisfaction With Life Scale Questionnaire Test Name) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SWLS01TN
+      operator: in
+      value:
+        - SWLS01-Have Gotten Important Things
+        - SWLS01-I Am Satisfied with My Life
+        - SWLS01-Live Life Over Change Nothing
+        - SWLS01-My Life Conditions are Excellent
+        - SWLS01-My Life is Close to Ideal
+outcome:
+  message: Value not found in non-extensible codelist Satisfaction With Life Scale
+    Questionnaire Test Name (C115407)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C115407
+  codelist_name: Satisfaction With Life Scale Questionnaire Test Name
+  codelist_submission_value: SWLS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

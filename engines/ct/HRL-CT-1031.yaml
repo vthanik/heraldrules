@@ -1,0 +1,47 @@
+id: HRL-CT-1031
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SOWSA1TC (Subjective Opiate Withdrawal Scale Questionnaire Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SOWSA1TC
+      operator: in
+      value:
+        - SOWSA101
+        - SOWSA102
+        - SOWSA103
+        - SOWSA104
+        - SOWSA105
+        - SOWSA106
+        - SOWSA107
+        - SOWSA108
+        - SOWSA109
+        - SOWSA110
+        - SOWSA111
+        - SOWSA112
+        - SOWSA113
+        - SOWSA114
+        - SOWSA115
+        - SOWSA116
+outcome:
+  message: Value not found in non-extensible codelist Subjective Opiate Withdrawal
+    Scale Questionnaire Test Code (C101828)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101828
+  codelist_name: Subjective Opiate Withdrawal Scale Questionnaire Test Code
+  codelist_submission_value: SOWSA1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 16
+

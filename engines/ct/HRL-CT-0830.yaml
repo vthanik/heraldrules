@@ -1,0 +1,58 @@
+id: HRL-CT-0830
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL02TC (Pediatric Quality of Life Neuromuscular Module Version 3 Young
+  Adult Parent Report Questionnaire Test Code) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL02TC
+      operator: in
+      value:
+        - PQL0201
+        - PQL0202
+        - PQL0203
+        - PQL0204
+        - PQL0205
+        - PQL0206
+        - PQL0207
+        - PQL0208
+        - PQL0209
+        - PQL0210
+        - PQL0211
+        - PQL0212
+        - PQL0213
+        - PQL0214
+        - PQL0215
+        - PQL0216
+        - PQL0217
+        - PQL0218
+        - PQL0219
+        - PQL0220
+        - PQL0221
+        - PQL0222
+        - PQL0223
+        - PQL0224
+        - PQL0225
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Version 3 Young Adult Parent Report Questionnaire Test Code (C138253)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138253
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Version 3 Young Adult
+    Parent Report Questionnaire Test Code
+  codelist_submission_value: PQL02TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

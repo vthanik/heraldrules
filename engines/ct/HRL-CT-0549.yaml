@@ -1,0 +1,39 @@
+id: HRL-CT-0549
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HDCAB1TC (Huntington's Disease Cognitive Assessment Battery Functional
+  Test Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HDCAB1TC
+      operator: in
+      value:
+        - HDCAB101
+        - HDCAB102
+        - HDCAB103
+        - HDCAB104
+        - HDCAB105
+        - HDCAB106
+        - HDCAB107
+outcome:
+  message: Value not found in non-extensible codelist Huntington's Disease Cognitive
+    Assessment Battery Functional Test Test Code (C166188)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C166188
+  codelist_name: Huntington's Disease Cognitive Assessment Battery Functional Test
+    Test Code
+  codelist_submission_value: HDCAB1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

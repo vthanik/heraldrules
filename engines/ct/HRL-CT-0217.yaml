@@ -1,0 +1,137 @@
+id: HRL-CT-0217
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CAP01TN (Clinician-Administered PTSD Scale (Current) DSM-5 With DSM IV
+  Scoring 2016 Version Clinical Classification Test Name) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CAP01TN
+      operator: in
+      value:
+        - CAP01-Avoid Thoughts Associated Freq
+        - CAP01-Avoid Thoughts Associated Intens
+        - CAP01-Avoid Thoughts Associated
+        - CAP01-Criterion A Met
+        - CAP01-Depersonalization
+        - CAP01-Derealization
+        - CAP01-Difficulty Concentrating Freq
+        - CAP01-Difficulty Concentrating Intens
+        - CAP01-Difficulty Falling Asleep Freq
+        - CAP01-Difficulty Falling Asleep Intens
+        - CAP01-Diminished Interest Activ Freq
+        - CAP01-Diminished Interest Activ Intens
+        - CAP01-Diminished Interest Activ
+        - CAP01-DSM IV Criterion B Score
+        - CAP01-DSM IV Criterion C Score
+        - CAP01-DSM IV Criterion D Score
+        - CAP01-DSM IV Criterion E Score
+        - CAP01-DSM IV Criterion G Score
+        - CAP01-DSM IV Dissociation Score
+        - CAP01-DSM IV Other Diagnosis 1
+        - CAP01-DSM IV Other Diagnosis 2
+        - CAP01-DSM IV PTSD Diagnosis
+        - CAP01-DSM IV Total Score
+        - CAP01-DSM-5 Criterion B Score
+        - CAP01-DSM-5 Criterion C Score
+        - CAP01-DSM-5 Criterion D Score
+        - CAP01-DSM-5 Criterion E Score
+        - CAP01-DSM-5 Criterion G Score
+        - CAP01-DSM-5 Dissociation Score
+        - CAP01-DSM-5 Other Diagnosis 1
+        - CAP01-DSM-5 Other Diagnosis 2
+        - CAP01-DSM-5 PTSD Diagnosis
+        - CAP01-DSM-5 Total Score
+        - CAP01-Efforts to Avoid Activities Freq
+        - CAP01-Efforts to Avoid Activities Intens
+        - CAP01-Efforts to Avoid External Reminder
+        - CAP01-Exaggerated Response Freq
+        - CAP01-Exaggerated Response Intens
+        - CAP01-Exaggerated Response
+        - CAP01-Exposure Type
+        - CAP01-Feel as if Event Recurring Freq
+        - CAP01-Feel as if Event Recurring Intens
+        - CAP01-Feel as if Event Recurring
+        - CAP01-Feeling of Detachment Freq
+        - CAP01-Feeling of Detachment Intens
+        - CAP01-Feeling of Detachment
+        - CAP01-Global Improvement
+        - CAP01-Global Severity
+        - CAP01-Global Validity
+        - CAP01-Hypervigilance Freq
+        - CAP01-Hypervigilance Intens
+        - CAP01-Hypervigilance
+        - CAP01-Inability Positive Emotions
+        - CAP01-Inability to Recall Aspect Freq
+        - CAP01-Inability to Recall Aspect Intens
+        - CAP01-Inability to Remember Aspect
+        - CAP01-Irritability/Outbursts Freq
+        - CAP01-Irritability/Outbursts Intens
+        - CAP01-Irritable Behavior Angry Outbursts
+        - CAP01-Life Threat Other
+        - CAP01-Life Threat Self
+        - CAP01-Life Threat
+        - CAP01-Occupation Functioning Lifetime
+        - CAP01-Occupation Functioning Past Month
+        - CAP01-Persistent Blame of Self/Others
+        - CAP01-Persistent Exaggerated Neg Beliefs
+        - CAP01-Persistent Neg Emotional State
+        - CAP01-Physiological React to Cues Freq
+        - CAP01-Physiological React to Cues Intens
+        - CAP01-Physiological React to Cues
+        - CAP01-Problems With Concentration
+        - CAP01-Psych Distress at Exposure Freq
+        - CAP01-Psych Distress at Exposure Intens
+        - CAP01-Psych Distress at Exposure
+        - CAP01-Reckless or Self-destructive
+        - CAP01-Recurrent Distressing Dream Freq
+        - CAP01-Recurrent Distressing Dream Intens
+        - CAP01-Recurrent Distressing Dream
+        - CAP01-Recurrent Distressing Memories
+        - CAP01-Recurrent Distressing Recol Freq
+        - CAP01-Recurrent Distressing Recol Intens
+        - CAP01-Restricted Range of Affect Freq
+        - CAP01-Restricted Range of Affect Intens
+        - CAP01-Sense Foreshortened Future Freq
+        - CAP01-Sense Foreshortened Future Intens
+        - CAP01-Serious Injury Other
+        - CAP01-Serious Injury Self
+        - CAP01-Serious Injury
+        - CAP01-Sexual Violation Other
+        - CAP01-Sexual Violation Self
+        - CAP01-Sexual Violation
+        - CAP01-Sleep Disturbance
+        - CAP01-Social Functioning Lifetime
+        - CAP01-Social Functioning Past Month
+        - CAP01-Subjective Distress Lifetime
+        - CAP01-Subjective Distress Past Month
+        - CAP01-Symptoms Current Months Duration
+        - CAP01-Symptoms Current More Than Month
+        - CAP01-Symptoms Lifetime Months Duration
+        - CAP01-Symptoms Lifetime More Than Month
+        - CAP01-Symptoms Total Months Delay Onset
+        - CAP01-Symptoms With Delayed Onset
+        - CAP01-The Event You Recently Endured
+outcome:
+  message: Value not found in non-extensible codelist Clinician-Administered PTSD
+    Scale (Current) DSM-5 With DSM IV Scoring 2016 Version Clinical Classification
+    Test Name (C187451)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C187451
+  codelist_name: Clinician-Administered PTSD Scale (Current) DSM-5 With DSM IV Scoring
+    2016 Version Clinical Classification Test Name
+  codelist_submission_value: CAP01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 103
+

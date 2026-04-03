@@ -1,0 +1,100 @@
+id: HRL-CT-0705
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MUSCTS (Musculoskeletal System Finding Test Name) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MUSCTS
+      operator: in
+      value:
+        - Adipose Tissue Volume
+        - Alpha Angle
+        - Appendicular Skeletal Muscle Mass
+        - Area
+        - Beta Angle
+        - Body Fat Percentage
+        - Bone Mineral Content
+        - Bone Mineral Density T-Score
+        - Bone Mineral Density Z-Score
+        - Bone Mineral Density
+        - Brooke mMRC MMT Score, Abduction
+        - Brooke mMRC MMT Score, Dorsiflexion
+        - Brooke mMRC MMT Score, Eversion
+        - Brooke mMRC MMT Score, Extension
+        - Brooke mMRC MMT Score, Flexion
+        - Brooke mMRC MMT Score, Inversion
+        - Brooke mMRC MMT Score, Lat. Rotat.
+        - Brooke mMRC MMT Score, Plantar Flex
+        - EMCL Norm for Phantom Volume
+        - EMCL Norm for Tissue Water Volume
+        - EMCL Norm for Tissue Weight
+        - Fat Mass
+        - Fontanelle Closure Indicator
+        - Glycogen Norm for Phantom Volume
+        - Glycogen Norm for Tissue Water Vol
+        - Glycogen Norm for Tissue Weight
+        - Greulich and Pyle Bone Age Estimation
+        - Grip Strength
+        - IMCL Norm for Phantom Volume
+        - IMCL Norm for Tissue Water Volume
+        - IMCL Norm for Tissue Weight
+        - Isometric Muscle Strength, Abduction
+        - Isometric Muscle Strength, Adduction
+        - Isometric Muscle Strength, Dorsiflexion
+        - Isometric Muscle Strength, Extension
+        - Isometric Muscle Strength, Extern Rotat
+        - Isometric Muscle Strength, Flexion
+        - Isometric Muscle Strength, Intern Rotat
+        - Lean Mass
+        - MRC MMT Score, Abduction
+        - MRC MMT Score, Dorsiflexion
+        - MRC MMT Score, Eversion
+        - MRC MMT Score, Extension
+        - MRC MMT Score, Flexion
+        - MRC MMT Score, Inversion
+        - MRC MMT Score, Lat. Rotat.
+        - MRC MMT Score, Plantar Flex
+        - Muscle Endurance
+        - Musculoskeletal System Examination
+        - Myoglobin Deoxygenation Rate
+        - Myoglobin Deoxygenation Time
+        - Myoglobin Peak Norm for Phantom Vol
+        - Myoglobin Peak Norm for Tissue Water Vol
+        - Myoglobin Peak Norm for Tissue Weight
+        - Myoglobin Reoxygenation Time Constant
+        - Non-Adipose Tissue Volume
+        - Pinch Strength
+        - Range of Motion, Abduction
+        - Range of Motion, Dorsiflexion
+        - Range of Motion, Extension
+        - Sharp/Genant Bone Erosion Score
+        - Sharp/Genant JSN Score
+        - Sharp/Van der Heijde Bone Erosion Score
+        - Sharp/Van der Heijde JSN Score
+        - Skeletal Muscle Mass
+        - Subcutaneous Adipose Tissue Volume
+        - Swollen Indicator
+        - Tenderness Indicator
+        - Visceral Adipose Tissue Volume
+outcome:
+  message: Value not found in extensible codelist Musculoskeletal System Finding Test
+    Name (C127270)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C127270
+  codelist_name: Musculoskeletal System Finding Test Name
+  codelist_submission_value: MUSCTS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 69
+

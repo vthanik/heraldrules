@@ -1,0 +1,37 @@
+id: HRL-CT-0088
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ASEX02TC (Arizona Sexual Experiences Scale - Male Questionnaire Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ASEX02TC
+      operator: in
+      value:
+        - ASEX0201
+        - ASEX0202
+        - ASEX0203
+        - ASEX0204
+        - ASEX0205
+        - ASEX0206
+outcome:
+  message: Value not found in non-extensible codelist Arizona Sexual Experiences Scale
+    - Male Questionnaire Test Code (C125743)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C125743
+  codelist_name: Arizona Sexual Experiences Scale - Male Questionnaire Test Code
+  codelist_submission_value: ASEX02TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

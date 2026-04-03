@@ -1,0 +1,58 @@
+id: HRL-CT-0828
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL09TC (Pediatric Quality of Life Neuromuscular Module Version 3 Toddler
+  Parent Report Questionnaire Test Code) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL09TC
+      operator: in
+      value:
+        - PQL0901
+        - PQL0902
+        - PQL0903
+        - PQL0904
+        - PQL0905
+        - PQL0906
+        - PQL0907
+        - PQL0908
+        - PQL0909
+        - PQL0910
+        - PQL0911
+        - PQL0912
+        - PQL0913
+        - PQL0914
+        - PQL0915
+        - PQL0916
+        - PQL0917
+        - PQL0918
+        - PQL0919
+        - PQL0920
+        - PQL0921
+        - PQL0922
+        - PQL0923
+        - PQL0924
+        - PQL0925
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Version 3 Toddler Parent Report Questionnaire Test Code (C138247)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138247
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Version 3 Toddler
+    Parent Report Questionnaire Test Code
+  codelist_submission_value: PQL09TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

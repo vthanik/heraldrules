@@ -1,0 +1,79 @@
+id: HRL-CT-0426
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC065TN (Functional Assessment of Anorexia/Cachexia Treatment Version
+  4 Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC065TN
+      operator: in
+      value:
+        - FAC065-Additional Concern Subscale Score
+        - FAC065-Amount I Eat Is Sufficient
+        - FAC065-Bothered by Treatment Side Effect
+        - FAC065-Content With Quality of My Life
+        - FAC065-Emotional Subscale Score
+        - FAC065-Enjoy Things I Usually Do for Fun
+        - FAC065-FACT-G Total Score
+        - FAC065-Functional Subscale Score
+        - FAC065-Get Emotional Support From Family
+        - FAC065-Have Difficulty Eating Rich Foods
+        - FAC065-I Am Able to Enjoy Life
+        - FAC065-I Am Able to Work
+        - FAC065-I Am Concerned How Thin I Look
+        - FAC065-I Am Forced to Spend Time in Bed
+        - FAC065-I Am Satisfied With My Sex Life
+        - FAC065-I Am Sleeping Well
+        - FAC065-I Am Worried About My Weight
+        - FAC065-I Feel Close to My Friends
+        - FAC065-I Feel Close to My Partner
+        - FAC065-I Feel Ill
+        - FAC065-I Feel Nervous
+        - FAC065-I Feel Sad
+        - FAC065-I Get Support From My Friends
+        - FAC065-I Have a Good Appetite
+        - FAC065-I Have a Lack of Energy
+        - FAC065-I Have Accepted My Illness
+        - FAC065-I Have Been Vomiting
+        - FAC065-I Have Nausea
+        - FAC065-I Have Pain in My Stomach Area
+        - FAC065-I Have Pain
+        - FAC065-I Seem to Get Full Quickly
+        - FAC065-I Worry About Dying
+        - FAC065-Interest in Food Drops Try to Eat
+        - FAC065-Losing Hope Against Illness
+        - FAC065-Most Food Tastes Unpleasant to Me
+        - FAC065-My Family Has Accepted My Illness
+        - FAC065-My Family Pressuring Me to Eat
+        - FAC065-My General Health Is Improving
+        - FAC065-My Work Is Fulfilling
+        - FAC065-Physical Subscale Score
+        - FAC065-Satisfied Communication Illness
+        - FAC065-Satisfied With How I Am Coping
+        - FAC065-Social/Family Subscale Score
+        - FAC065-Total Score
+        - FAC065-Trial Outcome Index Score
+        - FAC065-Trouble Meeting Needs of Family
+        - FAC065-Worry My Condition Will Get Worse
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Anorexia/Cachexia
+    Treatment Version 4 Questionnaire Test Name (C179937)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C179937
+  codelist_name: Functional Assessment of Anorexia/Cachexia Treatment Version 4 Questionnaire
+    Test Name
+  codelist_submission_value: FAC065TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 47
+

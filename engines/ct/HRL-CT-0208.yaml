@@ -1,0 +1,41 @@
+id: HRL-CT-0208
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CCQ01TN (Clinical COPD Questionnaire 24 Hour Version Questionnaire Test
+  Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CCQ01TN
+      operator: in
+      value:
+        - CCQ01-Breathing Limit Daily Activity
+        - CCQ01-Breathing Limit Moderate Activity
+        - CCQ01-Breathing Limit Social Activity
+        - CCQ01-Breathing Limit Strenuous Activity
+        - CCQ01-Concern About Breathing Get Worse
+        - CCQ01-Cough
+        - CCQ01-Depressed for Breathing Problem
+        - CCQ01-Produce Sputum or Phlegm
+        - CCQ01-Short of Breath at Rest
+        - CCQ01-Short of Breath Physical Activity
+outcome:
+  message: Value not found in non-extensible codelist Clinical COPD Questionnaire
+    24 Hour Version Questionnaire Test Name (C119063)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C119063
+  codelist_name: Clinical COPD Questionnaire 24 Hour Version Questionnaire Test Name
+  codelist_submission_value: CCQ01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 10
+

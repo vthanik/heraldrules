@@ -1,0 +1,38 @@
+id: HRL-CT-0954
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SOFA0101OR (Sepsis-related Organ Failure Assessment 27MAR2024 Clinical
+  Classification ORRES for SOFA0101 TN/TC) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SOFA0101OR
+      operator: in
+      value:
+        - < 100 with respiratory support (mechanical ventilation including CPAP)
+        - < 200 with respiratory support (mechanical ventilation including CPAP)
+        - < 300
+        - < 400
+        - '>= 400'
+outcome:
+  message: Value not found in non-extensible codelist Sepsis-related Organ Failure
+    Assessment 27MAR2024 Clinical Classification ORRES for SOFA0101 TN/TC (C204225)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204225
+  codelist_name: Sepsis-related Organ Failure Assessment 27MAR2024 Clinical Classification
+    ORRES for SOFA0101 TN/TC
+  codelist_submission_value: SOFA0101OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

@@ -1,0 +1,34 @@
+id: HRL-CT-0167
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DSCAT (Category of Disposition Event) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DSCAT
+      operator: in
+      value:
+        - DISPOSITION EVENT
+        - OTHER EVENT
+        - PROTOCOL MILESTONE
+outcome:
+  message: Value not found in non-extensible codelist Category of Disposition Event
+    (C74558)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C74558
+  codelist_name: Category of Disposition Event
+  codelist_submission_value: DSCAT
+  extensible: no
+  parent_rule: CT2001
+  term_count: 3
+

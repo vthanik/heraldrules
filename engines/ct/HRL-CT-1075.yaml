@@ -1,0 +1,42 @@
+id: HRL-CT-1075
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ODI01TN (The Oswestry Disability Index Version 2.1a Questionnaire Test
+  Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ODI01TN
+      operator: in
+      value:
+        - ODI01-Lifting
+        - ODI01-Oswestry Disability Index
+        - ODI01-Pain Intensity
+        - ODI01-Personal Care
+        - ODI01-Sex Life
+        - ODI01-Sitting
+        - ODI01-Sleeping
+        - ODI01-Social Life
+        - ODI01-Standing
+        - ODI01-Travelling
+        - ODI01-Walking
+outcome:
+  message: Value not found in non-extensible codelist The Oswestry Disability Index
+    Version 2.1a Questionnaire Test Name (C103478)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103478
+  codelist_name: The Oswestry Disability Index Version 2.1a Questionnaire Test Name
+  codelist_submission_value: ODI01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 11
+

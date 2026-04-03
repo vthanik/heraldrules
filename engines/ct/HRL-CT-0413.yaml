@@ -1,0 +1,42 @@
+id: HRL-CT-0413
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FES01TN (Falls Efficacy Scale Questionnaire Test Name) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FES01TN
+      operator: in
+      value:
+        - FES01-Answer the Door or Telephone
+        - FES01-Get Dressed and Undressed
+        - FES01-Get In and Out of Bed
+        - FES01-Get In and Out of Chair
+        - FES01-Get On and Off of Toilet
+        - FES01-Personal Grooming
+        - FES01-Prepare Meals Not Carrying Objects
+        - FES01-Reach Into Cabinets or Closets
+        - FES01-Take a Bath or Shower
+        - FES01-Total Score
+        - FES01-Walk Around the House
+outcome:
+  message: Value not found in non-extensible codelist Falls Efficacy Scale Questionnaire
+    Test Name (C193275)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C193275
+  codelist_name: Falls Efficacy Scale Questionnaire Test Name
+  codelist_submission_value: FES01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 11
+

@@ -1,0 +1,36 @@
+id: HRL-CT-0338
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EGANMET (ECG Analysis Method) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EGANMET
+      operator: in
+      value:
+        - GLOBAL MEDIAN BEAT METHOD
+        - MEDIAN BEAT SINGLE LEAD METHOD
+        - MEDIAN BEAT SUPERIMPOSED LEADS METHOD
+        - SINGLE BEAT GLOBAL BEAT METHOD
+        - SINGLE BEAT SINGLE LEAD METHOD
+        - SINGLE BEAT SUPERIMPOSED LEADS METHOD
+outcome:
+  message: Value not found in extensible codelist ECG Analysis Method (C219709)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219709
+  codelist_name: ECG Analysis Method
+  codelist_submission_value: EGANMET
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 6
+

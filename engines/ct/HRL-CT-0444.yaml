@@ -1,0 +1,85 @@
+id: HRL-CT-0444
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC015TN (Functional Assessment of Cancer Therapy-Hepatobiliary Version
+  4 Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC015TN
+      operator: in
+      value:
+        - FAC015-Able to Do My Usual Activities
+        - FAC015-Additional Concern Subscale Score
+        - FAC015-Bothered by Jaundice/Yellow Skin
+        - FAC015-Bothered by Treatment Side Effect
+        - FAC015-Content With Quality of My Life
+        - FAC015-Discomfort/Pain in Stomach Area
+        - FAC015-Emotional Subscale Score
+        - FAC015-Enjoy Things I Usually Do for Fun
+        - FAC015-FACT-G Total Score
+        - FAC015-Functional Subscale Score
+        - FAC015-Get Emotional Support From Family
+        - FAC015-Had Change in the Way Food Tastes
+        - FAC015-I Am Able to Enjoy Life
+        - FAC015-I Am Able to Work
+        - FAC015-I Am Bothered by Constipation
+        - FAC015-I Am Forced to Spend Time in Bed
+        - FAC015-I Am Losing Weight
+        - FAC015-I Am Satisfied With My Sex Life
+        - FAC015-I Am Sleeping Well
+        - FAC015-I Can Digest My Food Well
+        - FAC015-I Feel Close to My Friends
+        - FAC015-I Feel Close to My Partner
+        - FAC015-I Feel Fatigued
+        - FAC015-I Feel Ill
+        - FAC015-I Feel Nervous
+        - FAC015-I Feel Sad
+        - FAC015-I Get Support From My Friends
+        - FAC015-I Have a Good Appetite
+        - FAC015-I Have a Lack of Energy
+        - FAC015-I Have Accepted My Illness
+        - FAC015-I Have Control of My Bowels
+        - FAC015-I Have Diarrhea
+        - FAC015-I Have Had Chills
+        - FAC015-I Have Had Fevers
+        - FAC015-I Have Had Itching
+        - FAC015-I Have Nausea
+        - FAC015-I Have Pain in My Back
+        - FAC015-I Have Pain
+        - FAC015-I Worry About Dying
+        - FAC015-Losing Hope Against Illness
+        - FAC015-My Family Has Accepted My Illness
+        - FAC015-My Mouth Is Dry
+        - FAC015-My Work Is Fulfilling
+        - FAC015-Physical Subscale Score
+        - FAC015-Satisfied Communication Illness
+        - FAC015-Satisfied With How I Am Coping
+        - FAC015-Social/Family Subscale Score
+        - FAC015-Swelling/Cramps in Stomach Area
+        - FAC015-Total Score
+        - FAC015-Trial Outcome Index Score
+        - FAC015-Trouble Meeting Needs of Family
+        - FAC015-Unhappy About Change in My Appear
+        - FAC015-Worry My Condition Will Get Worse
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Hepatobiliary Version 4 Questionnaire Test Name (C130254)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130254
+  codelist_name: Functional Assessment of Cancer Therapy-Hepatobiliary Version 4 Questionnaire
+    Test Name
+  codelist_submission_value: FAC015TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 53
+

@@ -1,0 +1,35 @@
+id: HRL-CT-0127
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BLCS01TC (Bladder Control Scale Questionnaire Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BLCS01TC
+      operator: in
+      value:
+        - BLCS0101
+        - BLCS0102
+        - BLCS0103
+        - BLCS0104
+outcome:
+  message: Value not found in non-extensible codelist Bladder Control Scale Questionnaire
+    Test Code (C113852)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C113852
+  codelist_name: Bladder Control Scale Questionnaire Test Code
+  codelist_submission_value: BLCS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

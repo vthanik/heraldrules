@@ -1,0 +1,61 @@
+id: HRL-CT-1109
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TNCOMPLT (Tobacco Study Completion/Reason for Non-Completion) must contain
+  valid extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TNCOMPLT
+      operator: in
+      value:
+        - ADVERSE EXPERIENCE
+        - COMPLETED
+        - DEATH
+        - FAILURE TO MEET CONTINUATION CRITERIA
+        - FAILURE TO MEET RANDOMIZATION CRITERIA
+        - INVESTIGATOR DECISION
+        - LOGISTICAL PROBLEM
+        - LOST TO FOLLOW-UP
+        - NO LONGER BENEFITING
+        - NON-COMPLIANCE WITH NON-STUDY DEVICE
+        - NON-COMPLIANCE WITH STUDY DEVICE
+        - NON-COMPLIANCE WITH STUDY PRODUCT
+        - NON-COMPLIANCE WITH STUDY SCHEDULE
+        - PARTNER PREGNANCY
+        - PREGNANCY
+        - PROTOCOL DEVIATION
+        - PROTOCOL VIOLATION
+        - PROTOCOL-SPECIFIED WITHDRAWAL CRITERION MET
+        - RANDOMIZED BY MISTAKE
+        - RECOVERY
+        - REQUIRES PROHIBITED MEDICATION
+        - SCREEN FAILURE
+        - SCREENING NOT COMPLETED
+        - SITE TERMINATED BY APPLICANT
+        - STUDY TERMINATED BY APPLICANT
+        - TECHNICAL PROBLEMS
+        - WITHDRAWAL BY PARENT/GUARDIAN
+        - WITHDRAWAL BY SUBJECT
+        - WITHDRAWAL OF ASSENT
+        - WITHDRAWAL OF CONSENT
+outcome:
+  message: Value not found in extensible codelist Tobacco Study Completion/Reason
+    for Non-Completion (C204419)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204419
+  codelist_name: Tobacco Study Completion/Reason for Non-Completion
+  codelist_submission_value: TNCOMPLT
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 30
+

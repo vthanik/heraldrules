@@ -1,0 +1,118 @@
+id: HRL-CT-0727
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: NVTEST (Nervous System Findings Test Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: NVTEST
+      operator: in
+      value:
+        - ABR Wave I, Absolute Latency
+        - ABR Wave V, Absolute Latency
+        - ABR Wave V, Amplitude
+        - ABR Wave V, Presence
+        - Asymmetric Tonic Neck Reflex
+        - Blood Flow Rate
+        - Body Movement
+        - Boundary Shift Integral
+        - Bradykinesia
+        - Choline
+        - Choline, Free+GPC+PCh
+        - Choline/Creatine
+        - Crawling Ability
+        - Creatine + Choline
+        - Creatine
+        - Creatine+Phosphocreatine
+        - Dysesthesia
+        - Dystonia
+        - Facial Symmetry
+        - Galant Reflex
+        - Glutamate and Glutamine C3 Enriched
+        - Glutamate and Glutamine C3 Enriched/GLX
+        - Glutamate and Glutamine
+        - Glutamate C4 Enriched
+        - Glutamate C4 Enriched/Glutamate
+        - Glutamate
+        - Glutamate-Glutamine Cycle Rate
+        - Glutamate/Creatine
+        - Glutamine C4 Enriched
+        - Glutamine C4 Enriched/Glutamine
+        - Glutamine
+        - Glutamine/Creatine
+        - GPC+PCh
+        - Graphesthesia
+        - Lactate/Creatine
+        - Moro Reflex
+        - Muscle Strength
+        - Muscle Tone
+        - Muscular Rigidity
+        - Myo-Inositol
+        - Myo-Inositol/Creatine
+        - N-Acetyl Aspartate
+        - N-Acetyl Aspartate/Choline
+        - N-Acetyl Aspartate/Creatine
+        - N-Acetyl Aspartate/Creatine+Choline
+        - N1 Sleep Duration
+        - N1 Sleep/Total Sleep Time
+        - N145 Latency
+        - N2 Sleep Duration
+        - N2 Sleep/Total Sleep Time
+        - N3 Sleep Duration
+        - N3 Sleep/Total Sleep Time
+        - N75 Latency
+        - NAA+NAAG
+        - Nervous System Examination
+        - Nystagmus
+        - Overall Hearing Assessment
+        - P100 Amplitude
+        - P100 Latency
+        - Palmar Grasp Reflex
+        - Peak Response Amplitude Latency
+        - Peak Response Amplitude
+        - Physical Coordination
+        - Plantar Grasp Reflex
+        - Postural Tremor
+        - Reflex
+        - REM Duration
+        - REM Latency
+        - REM/Total Sleep Time
+        - Resting Tremor
+        - Rooting Reflex
+        - Skin Conductance
+        - Sleep Efficiency
+        - Sleep Onset Latency
+        - Spontaneous Body Movement
+        - Standard Uptake Value Ratio
+        - Standard Uptake Value
+        - Standing Ability
+        - Stepping Reflex
+        - Sucking Reflex
+        - Thickness
+        - Total Sleep Time
+        - Tremor
+        - Tricarboxylic Acid Cycle Rate
+        - Volume
+        - Wake After Sleep Onset
+        - Walking Ability
+outcome:
+  message: Value not found in extensible codelist Nervous System Findings Test Name
+    (C116103)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C116103
+  codelist_name: Nervous System Findings Test Name
+  codelist_submission_value: NVTEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 87
+

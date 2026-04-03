@@ -1,0 +1,40 @@
+id: HRL-CT-0320
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DRS01TN (Disability Rating Scale Clinical Classification Test Name) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DRS01TN
+      operator: in
+      value:
+        - DRS01-Communication Ability
+        - DRS01-Employability
+        - DRS01-Eye Opening
+        - DRS01-Feeding
+        - DRS01-Grooming
+        - DRS01-Level of Functioning
+        - DRS01-Motor Response
+        - DRS01-Toileting
+        - DRS01-Total Score
+outcome:
+  message: Value not found in non-extensible codelist Disability Rating Scale Clinical
+    Classification Test Name (C115401)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C115401
+  codelist_name: Disability Rating Scale Clinical Classification Test Name
+  codelist_submission_value: DRS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 9
+

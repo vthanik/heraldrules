@@ -1,0 +1,55 @@
+id: HRL-CT-0379
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR12TC (European Organization for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Colorectal Liver Metastases 21 Items Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR12TC
+      operator: in
+      value:
+        - EOR1231
+        - EOR1232
+        - EOR1233
+        - EOR1234
+        - EOR1235
+        - EOR1236
+        - EOR1237
+        - EOR1238
+        - EOR1239
+        - EOR1240
+        - EOR1241
+        - EOR1242
+        - EOR1243
+        - EOR1244
+        - EOR1245
+        - EOR1246
+        - EOR1247
+        - EOR1248
+        - EOR1249
+        - EOR1250
+        - EOR1251
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Colorectal Liver
+    Metastases 21 Items Test Code (C219727)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219727
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Colorectal Liver Metastases 21 Items Test Code
+  codelist_submission_value: EOR12TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 21
+

@@ -1,0 +1,33 @@
+id: HRL-CT-0359
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ETHNIC (Ethnic Group) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ETHNIC
+      operator: in
+      value:
+        - HISPANIC OR LATINO
+        - NOT HISPANIC OR LATINO
+        - NOT REPORTED
+        - UNKNOWN
+outcome:
+  message: Value not found in non-extensible codelist Ethnic Group (C66790)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C66790
+  codelist_name: Ethnic Group
+  codelist_submission_value: ETHNIC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

@@ -1,0 +1,44 @@
+id: HRL-CT-0946
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DTHDXCD (SDTM Death Diagnosis and Details Test Code) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DTHDXCD
+      operator: in
+      value:
+        - AGEDTH
+        - AUTOPIND
+        - CUSCDIND
+        - DTHCOIND
+        - DTHEXIND
+        - DTHWIND
+        - HMROIND
+        - HSDTHIND
+        - INFOSCOD
+        - LOCDTH
+        - PRCDTH
+        - SDTHIND
+        - SECDTH
+outcome:
+  message: Value not found in extensible codelist SDTM Death Diagnosis and Details
+    Test Code (C116108)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C116108
+  codelist_name: SDTM Death Diagnosis and Details Test Code
+  codelist_submission_value: DTHDXCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 13
+

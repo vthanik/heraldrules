@@ -1,0 +1,130 @@
+id: HRL-CT-0554
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ISTEST (Immunogenicity Specimen Assessments Test Name) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ISTEST
+      operator: in
+      value:
+        - Allergen-induced Antibody
+        - Allergen-induced IgA Antibody
+        - Allergen-induced IgE Antibody
+        - Allergen-induced IgG Antibody
+        - Allergen-induced IgG4 Antibody
+        - Allergen-induced IgM Antibody
+        - Alloantibody
+        - Anti-Neutrophil Antibody
+        - Anti-Neutrophil Cytoplasmic Antibody
+        - Anti-Neutrophil Cytoplasmic IgG Antibody
+        - Antibody-secreting Cells
+        - Autoantibody
+        - Autoantibody, Rheumatoid Factor
+        - Autoantibody, TBII
+        - Autoantibody, TSI
+        - Binding Antidrug Antibody
+        - Binding Antidrug IgA Antibody
+        - Binding Antidrug IgE Antibody
+        - Binding Antidrug IgG Antibody
+        - Binding Antidrug IgG/IgM Antibody
+        - Binding Antidrug IgG1 Antibody
+        - Binding Antidrug IgG2 Antibody
+        - Binding Antidrug IgG3 Antibody
+        - Binding Antidrug IgG4 Antibody
+        - Binding Antidrug IgM Antibody
+        - Calculated Panel Reactive Antibody
+        - Cross-Reactive Binding ADA IgG/IgM
+        - Cross-Reactive Binding Antidrug Antibody
+        - Cross-Reactive Binding Antidrug IgA AB
+        - Cross-Reactive Binding Antidrug IgE AB
+        - Cross-Reactive Binding Antidrug IgG AB
+        - Cross-Reactive Binding Antidrug IgG1 AB
+        - Cross-Reactive Binding Antidrug IgG2 AB
+        - Cross-Reactive Binding Antidrug IgG3 AB
+        - Cross-Reactive Binding Antidrug IgG4 AB
+        - Cross-Reactive Binding Antidrug IgM AB
+        - Cytokine-secreting Cells
+        - Cytokine-Secreting T Cells
+        - Cytotoxic T Cell-Mediated Cytolysis
+        - EBV Profile Interpretation
+        - Factor IX Inhibitor
+        - Factor VIII Inhibitor
+        - Functional Microbial-induced Antibody
+        - Heterophile Antibodies
+        - HIV-1 Seroreactivity
+        - HIV-2 Seroreactivity
+        - HLA Class I Panel Reactive Antibody
+        - HLA Class II Panel Reactive Antibody
+        - Human Anti-Human Antibody
+        - Human Anti-Mouse Antibody
+        - Human Anti-Sheep IgE Antibody
+        - Human Anti-Sheep IgG Antibody
+        - Human Anti-Sheep IgM Antibody
+        - IgA Autoantibody
+        - IgA Autoantibody, Rheumatoid Factor
+        - IgG Alloantibody
+        - IgG Autoantibody
+        - IgG Autoantibody, Rheumatoid Factor
+        - IgG1 Autoantibody
+        - IgG2 Autoantibody
+        - IgG3 Autoantibody
+        - IgM Autoantibody
+        - IgM Autoantibody, Rheumatoid Factor
+        - Microbial-induced Antibody
+        - Microbial-induced IgA Antibody
+        - Microbial-induced IgA/IgM Antibody
+        - Microbial-induced IgE Antibody
+        - Microbial-induced IgG + IgM Antibody
+        - Microbial-induced IgG Antibody
+        - Microbial-induced IgG/IgM Antibody
+        - Microbial-induced IgM Antibody
+        - Microbial-induced IgM/IgA/IgG Antibody
+        - Modulating Autoab/Total Autoab
+        - Natural Killer Cell-Mediated Cytolysis
+        - Neut Cross-Reactive Binding ADA IgA
+        - Neut Cross-Reactive Binding ADA IgE
+        - Neut Cross-Reactive Binding ADA IgG
+        - Neut Cross-Reactive Binding ADA IgG/IgM
+        - Neut Cross-Reactive Binding ADA IgG1
+        - Neut Cross-Reactive Binding ADA IgG2
+        - Neut Cross-Reactive Binding ADA IgG3
+        - Neut Cross-Reactive Binding ADA IgG4
+        - Neut Cross-Reactive Binding ADA IgM
+        - Neutraliz Cross-React Bind Antidrug AB
+        - Neutralizing Binding Antidrug Antibody
+        - Neutralizing Binding Antidrug IgA AB
+        - Neutralizing Binding Antidrug IgE AB
+        - Neutralizing Binding Antidrug IgG AB
+        - Neutralizing Binding Antidrug IgG/IgM AB
+        - Neutralizing Binding Antidrug IgG1 AB
+        - Neutralizing Binding Antidrug IgG2 AB
+        - Neutralizing Binding Antidrug IgG3 AB
+        - Neutralizing Binding Antidrug IgG4 AB
+        - Neutralizing Binding Antidrug IgM AB
+        - Neutralizing Microbial-induced Antibody
+        - Panel Reactive Antibody
+        - Reagin Antibody
+        - T-Lymphocyte Proliferation Index
+        - TSI Actual/Control
+outcome:
+  message: Value not found in extensible codelist Immunogenicity Specimen Assessments
+    Test Name (C120526)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C120526
+  codelist_name: Immunogenicity Specimen Assessments Test Name
+  codelist_submission_value: ISTEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 99
+

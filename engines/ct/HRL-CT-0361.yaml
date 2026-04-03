@@ -1,0 +1,70 @@
+id: HRL-CT-0361
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR06TC (European Organisation for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Colorectal Cancer Version 2.1 29 Items Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR06TC
+      operator: in
+      value:
+        - EOR0631
+        - EOR0632
+        - EOR0633
+        - EOR0634
+        - EOR0635
+        - EOR0636
+        - EOR0637
+        - EOR0638
+        - EOR0639
+        - EOR0640
+        - EOR0641
+        - EOR0642
+        - EOR0643
+        - EOR0644
+        - EOR0645
+        - EOR0646
+        - EOR0647
+        - EOR0648
+        - EOR06491
+        - EOR06492
+        - EOR06501
+        - EOR06502
+        - EOR06511
+        - EOR06512
+        - EOR06521
+        - EOR06522
+        - EOR06531
+        - EOR06532
+        - EOR06541
+        - EOR06542
+        - EOR06551
+        - EOR0656
+        - EOR0657
+        - EOR0658
+        - EOR0659
+outcome:
+  message: Value not found in non-extensible codelist European Organisation for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Colorectal Cancer
+    Version 2.1 29 Items Questionnaire Test Code (C170525)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C170525
+  codelist_name: European Organisation for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Colorectal Cancer Version 2.1 29 Items Questionnaire Test
+    Code
+  codelist_submission_value: EOR06TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 35
+

@@ -1,0 +1,42 @@
+id: HRL-CT-0297
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DIPARMCD (Device Identifier Short Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DIPARMCD
+      operator: in
+      value:
+        - BATCH
+        - CATNUM
+        - DEVTYPE
+        - FDAUDI
+        - LOT
+        - MANUF
+        - MODEL
+        - SECURLD
+        - SERIAL
+        - SFMTYP
+        - SPDEVDSC
+        - TRADENAM
+outcome:
+  message: Value not found in extensible codelist Device Identifier Short Name (C106481)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106481
+  codelist_name: Device Identifier Short Name
+  codelist_submission_value: DIPARMCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 12
+

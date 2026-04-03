@@ -1,0 +1,41 @@
+id: HRL-CT-0551
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HCS01TC (Hypoglycemic Confidence Scale Questionnaire Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HCS01TC
+      operator: in
+      value:
+        - HCS0101
+        - HCS0102
+        - HCS0103
+        - HCS0104
+        - HCS0105
+        - HCS0106
+        - HCS0107
+        - HCS0108
+        - HCS0109
+        - HCS0110
+outcome:
+  message: Value not found in non-extensible codelist Hypoglycemic Confidence Scale
+    Questionnaire Test Code (C163393)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C163393
+  codelist_name: Hypoglycemic Confidence Scale Questionnaire Test Code
+  codelist_submission_value: HCS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 10
+

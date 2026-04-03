@@ -1,0 +1,51 @@
+id: HRL-CT-1083
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PCL01TN (The PTSD Checklist for DSM-5 Questionnaire Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PCL01TN
+      operator: in
+      value:
+        - PCL01-Avoid External Reminders
+        - PCL01-Avoid Memories/Thoughts/Feelings
+        - PCL01-Being Superalert/Watchful/on Guard
+        - PCL01-Blaming Yourself/Someone Else
+        - PCL01-Feel Upset When Reminded
+        - PCL01-Feeling Distant From People
+        - PCL01-Feeling Jumpy or Easily Startled
+        - PCL01-Having Difficulty Concentrating
+        - PCL01-Irritable Behavior/Angry Outbursts
+        - PCL01-Loss of Interest in Activities
+        - PCL01-Repeated Disturbing Dreams
+        - PCL01-Repeated Disturbing Memories
+        - PCL01-Strong Negative Beliefs
+        - PCL01-Strong Negative Feelings
+        - PCL01-Strong Physical Reactions
+        - PCL01-Suddenly Feeling Happening Again
+        - PCL01-Taking Too Many Risks/Cause Harm
+        - PCL01-Trouble Experiencing Pos Feelings
+        - PCL01-Trouble Falling or Staying Asleep
+        - PCL01-Trouble Remembering Important Part
+outcome:
+  message: Value not found in non-extensible codelist The PTSD Checklist for DSM-5
+    Questionnaire Test Name (C135691)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C135691
+  codelist_name: The PTSD Checklist for DSM-5 Questionnaire Test Name
+  codelist_submission_value: PCL01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 20
+

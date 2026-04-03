@@ -1,0 +1,62 @@
+id: HRL-CT-0401
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ED1TN (Expanded Disability Rating Scale - Postacute Interview Caregiver
+  Version Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ED1TN
+      operator: in
+      value:
+        - ED1-Able to Communicate Clearly
+        - ED1-Can Dress/Groom Independently
+        - ED1-Correct Date and Time
+        - ED1-Feed Independently Without Help
+        - ED1-Few Words or Random Answers/Shouting
+        - ED1-Function Completely Independently
+        - ED1-How They Communicate Primarily
+        - ED1-Independent Work/Social Situations
+        - ED1-Keep Track of Time/Schedules
+        - ED1-Know How to Bathe/Wash
+        - ED1-Know Meal Times
+        - ED1-Know When to Use Toilet
+        - ED1-Manage Clothing When Toileting
+        - ED1-Moan/Groan/Sounds Not Understandable
+        - ED1-Need 24-Hour Care
+        - ED1-Need a Helper Always Close By
+        - ED1-Need Help With All Major Activities
+        - ED1-Perform Jobs, Manage Home/School
+        - ED1-Require Assistance Managing Emotions
+        - ED1-Require Assistance Thinking Tasks
+        - ED1-Require Physical Assistance
+        - ED1-Require Specific Aids/Equipment
+        - ED1-Start/Finish Grooming Activities
+        - ED1-Successful With Accommodations
+        - ED1-Successful With Limited Choices
+        - ED1-Understand Feeding Utensils
+        - ED1-Understand How to Get Dressed
+        - ED1-Understand/Follow Directions
+        - ED1-Use Toilet Independently
+        - ED1-Work With Frequent Support
+outcome:
+  message: Value not found in non-extensible codelist Expanded Disability Rating Scale
+    - Postacute Interview Caregiver Version Questionnaire Test Name (C125744)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C125744
+  codelist_name: Expanded Disability Rating Scale - Postacute Interview Caregiver
+    Version Questionnaire Test Name
+  codelist_submission_value: ED1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 30
+

@@ -1,0 +1,52 @@
+id: HRL-CT-0676
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MFIS01TC (Modified Fatigue Impact Scale Questionnaire Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MFIS01TC
+      operator: in
+      value:
+        - MFIS0101
+        - MFIS0102
+        - MFIS0103
+        - MFIS0104
+        - MFIS0105
+        - MFIS0106
+        - MFIS0107
+        - MFIS0108
+        - MFIS0109
+        - MFIS0110
+        - MFIS0111
+        - MFIS0112
+        - MFIS0113
+        - MFIS0114
+        - MFIS0115
+        - MFIS0116
+        - MFIS0117
+        - MFIS0118
+        - MFIS0119
+        - MFIS0120
+        - MFIS0121
+outcome:
+  message: Value not found in non-extensible codelist Modified Fatigue Impact Scale
+    Questionnaire Test Code (C113858)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C113858
+  codelist_name: Modified Fatigue Impact Scale Questionnaire Test Code
+  codelist_submission_value: MFIS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 21
+

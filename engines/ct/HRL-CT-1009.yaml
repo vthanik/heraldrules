@@ -1,0 +1,159 @@
+id: HRL-CT-1009
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SPECTYPE (Specimen Type) must contain valid extensible codelist terms
+  (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SPECTYPE
+      operator: in
+      value:
+        - ABSCESS FLUID
+        - ADIPOSE TISSUE
+        - ALVEOLAR AIR
+        - AMNIOTIC FLUID
+        - AQUEOUS HUMOR
+        - ARTERIAL BLOOD
+        - ARTERIAL CORD BLOOD
+        - ARTERIAL PLASMA
+        - ARTERIALIZED CAPILLARY BLOOD
+        - ATHEROSCLEROTIC PLAQUE
+        - BASAL TEAR
+        - BILE
+        - BLOOD
+        - BONE MARROW MONONUCLEAR CELL
+        - BONE MARROW
+        - BONE MARROW, CORE
+        - BONE MARROW, LIQUID
+        - BONE
+        - BREAST MILK
+        - BUFFY COAT
+        - CALCULUS
+        - CAPILLARY BLOOD
+        - CAPILLARY PLASMA
+        - CARDIAC MUSCLE TISSUE
+        - CELL PELLET
+        - CEREBROSPINAL FLUID
+        - CERUMEN
+        - CERVICOVAGINAL SECRETION
+        - CIRCULATING TUMOR CELL
+        - COLOSTRUM
+        - CORD BLOOD
+        - CORD PLASMA
+        - CORD SERUM
+        - DERMAL TISSUE
+        - DIALYSIS FLUID
+        - DIALYSIS FLUID, PERITONEAL
+        - DISCHARGE
+        - DISTAL RESPIRATORY EXHALED PARTICLES
+        - EMESIS
+        - EMOTIONAL TEAR
+        - ENDOMETRIAL TISSUE
+        - ENDOTRACHEAL FLUID
+        - EPIDERMAL TISSUE
+        - EPITHELIAL CELL
+        - ERYTHROCYTES
+        - EXHALED BREATH CONDENSATE
+        - EXPIRED AIR
+        - EXUDATE
+        - FIBROBLAST
+        - FLUID
+        - GASTRIC CONTENTS
+        - GASTRIC FLUID
+        - GRANULOCYTE
+        - HAIR FOLLICLE
+        - HAIR
+        - INFRANATANT, PLASMA
+        - INFRANATANT, PLEURAL FLUID
+        - INFRANATANT, SERUM
+        - INTERSTITIAL FLUID
+        - ISOLATE
+        - KERATINOCYTE
+        - LAVAGE FLUID
+        - LEUKOCYTE
+        - LOCHIA
+        - LUNG SURFACTANT
+        - LYMPH NODE TISSUE
+        - LYMPH
+        - LYMPHOCYTE
+        - LYSATE
+        - MECONIUM
+        - MENSTRUAL BLOOD
+        - MIXED VENOUS BLOOD
+        - MONOCYTE
+        - MUCUS
+        - MUSCLE TISSUE
+        - NAIL
+        - NATURAL KILLER CELL
+        - PERICARDIAL FLUID
+        - PERIPHERAL BLOOD MONONUCLEAR CELL
+        - PERIPHERAL BLOOD STEM CELL
+        - PERITONEAL FLUID
+        - PERSPIRATION
+        - PLASMA ULTRAFILTRATE
+        - PLASMA
+        - PLATELET POOR PLASMA
+        - PLATELET RICH PLASMA
+        - PLATELET
+        - PLEURAL FLUID
+        - PLEURAL TISSUE
+        - PROSTATIC FLUID
+        - PUS
+        - REFLEX TEAR
+        - RETICULOCYTES
+        - SALIVA
+        - SEBUM
+        - SEMEN
+        - SEMINAL FLUID
+        - SERUM OR PLASMA OR BLOOD
+        - SERUM OR PLASMA
+        - SERUM
+        - SKELETAL MUSCLE TISSUE
+        - SKIN TISSUE
+        - SMEGMA
+        - SMOOTH MUSCLE TISSUE
+        - SOFT TISSUE
+        - SPERMATOZOON
+        - SPUTUM
+        - STOOL
+        - STRIATED MUSCLE TISSUE
+        - SUPERNATANT, CEREBROSPINAL FLUID
+        - SUPERNATANT, LAVAGE FLUID
+        - SUPERNATANT, PERITONEAL FLUID
+        - SUPERNATANT, PLASMA
+        - SUPERNATANT, PLEURAL FLUID
+        - SUPERNATANT, SERUM OR PLASMA
+        - SUPERNATANT, SERUM
+        - SWABBED MATERIAL
+        - SYNOVIAL FLUID
+        - TEAR
+        - TISSUE
+        - TRANSUDATE
+        - TUMOR TISSUE
+        - URINE SEDIMENT
+        - URINE
+        - VENOUS BLOOD
+        - VENOUS CORD BLOOD
+        - VENOUS PLASMA
+        - VITREOUS HUMOR
+        - WHITE MATTER TISSUE
+outcome:
+  message: Value not found in extensible codelist Specimen Type (C78734)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C78734
+  codelist_name: Specimen Type
+  codelist_submission_value: SPECTYPE
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 129
+

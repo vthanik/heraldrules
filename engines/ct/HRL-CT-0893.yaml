@@ -1,0 +1,44 @@
+id: HRL-CT-0893
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: QSUB01TN (Questionnaire on Smoking Urges-Brief Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: QSUB01TN
+      operator: in
+      value:
+        - QSUB01-A Cigarette Would Taste Good Now
+        - QSUB01-All I Want Right Now Is Cigarette
+        - QSUB01-Control Things Better Could Smoke
+        - QSUB01-Desire Cigarette Right Now
+        - QSUB01-Do Anything for a Cigarette Now
+        - QSUB01-Factor 1 Scale
+        - QSUB01-Factor 2 Scale
+        - QSUB01-General Factor Scale
+        - QSUB01-Going Smoke as Soon as Possible
+        - QSUB01-Have an Urge for a Cigarette
+        - QSUB01-Nothing Better Than Cigarette Now
+        - QSUB01-Probably Would Smoke Now
+        - QSUB01-Smoking Make Me Less Depressed
+outcome:
+  message: Value not found in non-extensible codelist Questionnaire on Smoking Urges-Brief
+    Test Name (C199496)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C199496
+  codelist_name: Questionnaire on Smoking Urges-Brief Test Name
+  codelist_submission_value: QSUB01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 13
+

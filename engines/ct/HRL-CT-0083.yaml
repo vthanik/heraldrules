@@ -1,0 +1,40 @@
+id: HRL-CT-0083
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: AVOUTTRT (Anti-Viral Outcome of Treatment) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: AVOUTTRT
+      operator: in
+      value:
+        - RAPID VIROLOGIC RESPONSE
+        - SUSTAINED VIROLOGIC RESPONSE
+        - VIRAL BREAKTHROUGH
+        - VIRAL RELAPSE
+        - VIROLOGIC END OF TREATMENT RESPONSE
+        - VIROLOGIC FAILURE
+        - VIROLOGIC NON-RESPONSE
+        - VIROLOGIC NULL-RESPONSE
+        - VIROLOGIC PARTIAL RESPONSE
+outcome:
+  message: Value not found in extensible codelist Anti-Viral Outcome of Treatment
+    (C120521)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C120521
+  codelist_name: Anti-Viral Outcome of Treatment
+  codelist_submission_value: AVOUTTRT
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 9
+

@@ -1,0 +1,35 @@
+id: HRL-CT-1023
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: STCTIMRS (Stent Thrombosis, Coronary, ARC Timing Responses) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: STCTIMRS
+      operator: in
+      value:
+        - STENT THROMBOSIS ARC ACUTE
+        - STENT THROMBOSIS ARC LATE
+        - STENT THROMBOSIS ARC SUBACUTE
+        - STENT THROMBOSIS ARC VERY LATE
+outcome:
+  message: Value not found in non-extensible codelist Stent Thrombosis, Coronary,
+    ARC Timing Responses (C119019)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C119019
+  codelist_name: Stent Thrombosis, Coronary, ARC Timing Responses
+  codelist_submission_value: STCTIMRS
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

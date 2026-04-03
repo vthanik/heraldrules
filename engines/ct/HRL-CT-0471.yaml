@@ -1,0 +1,47 @@
+id: HRL-CT-0471
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC070TC (Functional Assessment of Chronic Illness Therapy-Fatigue 13-Item
+  Scale Version 4 Questionnaire Test Code) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC070TC
+      operator: in
+      value:
+        - FAC07001
+        - FAC07002
+        - FAC07003
+        - FAC07004
+        - FAC07005
+        - FAC07006
+        - FAC07007
+        - FAC07008
+        - FAC07009
+        - FAC07010
+        - FAC07011
+        - FAC07012
+        - FAC07013
+        - FAC07014
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Chronic
+    Illness Therapy-Fatigue 13-Item Scale Version 4 Questionnaire Test Code (C147544)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C147544
+  codelist_name: Functional Assessment of Chronic Illness Therapy-Fatigue 13-Item
+    Scale Version 4 Questionnaire Test Code
+  codelist_submission_value: FAC070TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 14
+

@@ -1,0 +1,33 @@
+id: HRL-CT-0175
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CDFATSCD (CDAD Findings About Test Code) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CDFATSCD
+      operator: in
+      value:
+        - EPSDNUM
+        - SEV
+        - VOL
+outcome:
+  message: Value not found in extensible codelist CDAD Findings About Test Code (C150812)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150812
+  codelist_name: CDAD Findings About Test Code
+  codelist_submission_value: CDFATSCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 3
+

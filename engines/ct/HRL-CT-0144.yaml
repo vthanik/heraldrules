@@ -1,0 +1,39 @@
+id: HRL-CT-0144
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BPRSA1SET2OR (Brief Psychiatric Rating Scale-Anchored Clinical Classification
+  ORRES the Same as BPRSA103 TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BPRSA1SET2OR
+      operator: in
+      value:
+        - Mild
+        - Moderate
+        - Moderately Severe
+        - Not observed
+        - Severe
+        - Very Mild
+        - Very Severe
+outcome:
+  message: Value not found in non-extensible codelist Brief Psychiatric Rating Scale-Anchored
+    Clinical Classification ORRES the Same as BPRSA103 TN/TC (C189691)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C189691
+  codelist_name: Brief Psychiatric Rating Scale-Anchored Clinical Classification ORRES
+    the Same as BPRSA103 TN/TC
+  codelist_submission_value: BPRSA1SET2OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

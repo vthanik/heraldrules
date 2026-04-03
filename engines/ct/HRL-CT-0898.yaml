@@ -1,0 +1,37 @@
+id: HRL-CT-0898
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RACE (Race) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RACE
+      operator: in
+      value:
+        - AMERICAN INDIAN OR ALASKA NATIVE
+        - ASIAN
+        - BLACK OR AFRICAN AMERICAN
+        - NATIVE HAWAIIAN OR OTHER PACIFIC ISLANDER
+        - NOT REPORTED
+        - OTHER
+        - UNKNOWN
+        - WHITE
+outcome:
+  message: Value not found in non-extensible codelist Race (C74457)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C74457
+  codelist_name: Race
+  codelist_submission_value: RACE
+  extensible: no
+  parent_rule: CT2001
+  term_count: 8
+

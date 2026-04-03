@@ -1,0 +1,62 @@
+id: HRL-CT-0503
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GDS01TC (Geriatric Depression Scale Questionnaire Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GDS01TC
+      operator: in
+      value:
+        - GDS0101
+        - GDS0102
+        - GDS0103
+        - GDS0104
+        - GDS0105
+        - GDS0106
+        - GDS0107
+        - GDS0108
+        - GDS0109
+        - GDS0110
+        - GDS0111
+        - GDS0112
+        - GDS0113
+        - GDS0114
+        - GDS0115
+        - GDS0116
+        - GDS0117
+        - GDS0118
+        - GDS0119
+        - GDS0120
+        - GDS0121
+        - GDS0122
+        - GDS0123
+        - GDS0124
+        - GDS0125
+        - GDS0126
+        - GDS0127
+        - GDS0128
+        - GDS0129
+        - GDS0130
+        - GDS0131
+outcome:
+  message: Value not found in non-extensible codelist Geriatric Depression Scale Questionnaire
+    Test Code (C106663)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106663
+  codelist_name: Geriatric Depression Scale Questionnaire Test Code
+  codelist_submission_value: GDS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 31
+

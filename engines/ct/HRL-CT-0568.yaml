@@ -1,0 +1,75 @@
+id: HRL-CT-0568
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: IPAQ02TN (International Physical Activity Questionnaire (November 2002)
+  Long Last 7 Days Telephone Format Questionnaire Test Name) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: IPAQ02TN
+      operator: in
+      value:
+        - IPA02-Bicycle Hr & Min per Day
+        - IPA02-Bicycling Hr & Min per Week
+        - IPA02-Currently Have Job or Unpaid Work
+        - IPA02-Days Bicycle Place to Place
+        - IPA02-Days Moderate as Part of Work
+        - IPA02-Days Moderate in the Garden/Yard
+        - IPA02-Days Moderate in Your Leisure Time
+        - IPA02-Days Moderate Inside Your Home
+        - IPA02-Days Travel in a Motor Vehicle
+        - IPA02-Days Vigorous as Part of Work
+        - IPA02-Days Vigorous in the Garden/Yard
+        - IPA02-Days Vigorous in Your Leisure Time
+        - IPA02-Days Walk as Part of Your Work
+        - IPA02-Days Walk in Your Leisure Time
+        - IPA02-Days Walk Place to Place
+        - IPA02-Moderate Garden Hr & Min per Day
+        - IPA02-Moderate Garden Hr & Min per Week
+        - IPA02-Moderate Home Hr & Min per Day
+        - IPA02-Moderate Home Hr & Min per Week
+        - IPA02-Moderate Leisure Hr & Min per Day
+        - IPA02-Moderate Leisure Hr & Min per Week
+        - IPA02-Moderate Work Hr & Min per Day
+        - IPA02-Moderate Work Hr & Min per Week
+        - IPA02-Sitting Hr & Min on Saturday
+        - IPA02-Sitting Hr & Min on Wednesday
+        - IPA02-Sitting Weekday Hr & Min per Day
+        - IPA02-Sitting Weekend Hr & Min per Day
+        - IPA02-Traveling Hr & Min per Day
+        - IPA02-Traveling Hr & Min per Week
+        - IPA02-Vigorous Garden Hr & Min per Day
+        - IPA02-Vigorous Garden Hr & Min per Week
+        - IPA02-Vigorous Leisure Hr & Min per Day
+        - IPA02-Vigorous Leisure Hr & Min per Week
+        - IPA02-Vigorous Work Hr & Min per Day
+        - IPA02-Vigorous Work Hr & Min per Week
+        - IPA02-Walking Leisure Hr & Min per Day
+        - IPA02-Walking Leisure Hr & Min per Week
+        - IPA02-Walking Place Hr & Min per Day
+        - IPA02-Walking Place Hr & Min per Week
+        - IPA02-Walking Work Hr & Min per Day
+        - IPA02-Walking Work Hr & Min per Week
+outcome:
+  message: Value not found in non-extensible codelist International Physical Activity
+    Questionnaire (November 2002) Long Last 7 Days Telephone Format Questionnaire
+    Test Name (C141668)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C141668
+  codelist_name: International Physical Activity Questionnaire (November 2002) Long
+    Last 7 Days Telephone Format Questionnaire Test Name
+  codelist_submission_value: IPAQ02TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 41
+

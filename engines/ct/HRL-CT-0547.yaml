@@ -1,0 +1,47 @@
+id: HRL-CT-0547
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HADS01TC (Hospital Anxiety and Depression Scale Questionnaire Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HADS01TC
+      operator: in
+      value:
+        - HADS0101
+        - HADS0102
+        - HADS0103
+        - HADS0104
+        - HADS0105
+        - HADS0106
+        - HADS0107
+        - HADS0108
+        - HADS0109
+        - HADS0110
+        - HADS0111
+        - HADS0112
+        - HADS0113
+        - HADS0114
+        - HADS0115
+        - HADS0116
+outcome:
+  message: Value not found in non-extensible codelist Hospital Anxiety and Depression
+    Scale Questionnaire Test Code (C103469)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103469
+  codelist_name: Hospital Anxiety and Depression Scale Questionnaire Test Code
+  codelist_submission_value: HADS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 16
+

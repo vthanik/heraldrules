@@ -1,0 +1,33 @@
+id: HRL-CT-0271
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CARTDOM (Coronary Artery Dominance) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CARTDOM
+      operator: in
+      value:
+        - CO-DOMINANT
+        - LEFT DOMINANT
+        - RIGHT DOMINANT
+outcome:
+  message: Value not found in non-extensible codelist Coronary Artery Dominance (C101860)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101860
+  codelist_name: Coronary Artery Dominance
+  codelist_submission_value: CARTDOM
+  extensible: no
+  parent_rule: CT2001
+  term_count: 3
+

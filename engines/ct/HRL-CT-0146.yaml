@@ -1,0 +1,40 @@
+id: HRL-CT-0146
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BPRSA1SET1STR (Brief Psychiatric Rating Scale-Anchored Clinical Classification
+  STRESC the Same as BPRSA101 TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BPRSA1SET1STR
+      operator: in
+      value:
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '9'
+outcome:
+  message: Value not found in non-extensible codelist Brief Psychiatric Rating Scale-Anchored
+    Clinical Classification STRESC the Same as BPRSA101 TN/TC (C189690)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C189690
+  codelist_name: Brief Psychiatric Rating Scale-Anchored Clinical Classification STRESC
+    the Same as BPRSA101 TN/TC
+  codelist_submission_value: BPRSA1SET1STR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 8
+

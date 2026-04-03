@@ -1,0 +1,63 @@
+id: HRL-CT-0496
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GENSMP (Genetic Sample Type) must contain valid extensible codelist terms
+  (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GENSMP
+      operator: in
+      value:
+        - 7SK RNA
+        - cDNA
+        - cfDNA
+        - cpDNA
+        - ctDNA
+        - DNA
+        - dsRNA
+        - gDNA
+        - GERMLINE DNA
+        - gRNA
+        - hnRNA
+        - miRNA
+        - mRNA
+        - msDNA
+        - msdRNA
+        - mtDNA
+        - nDNA
+        - pDNA
+        - piRNA
+        - pre-mRNA
+        - pri-miRNA
+        - rDNA
+        - RIBOZYME
+        - RNA
+        - rRNA
+        - siRNA
+        - snoRNA
+        - snRNA
+        - SRP RNA
+        - ssDNA
+        - tmRNA
+        - TRANSPOSON
+        - tRNA
+outcome:
+  message: Value not found in extensible codelist Genetic Sample Type (C111114)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C111114
+  codelist_name: Genetic Sample Type
+  codelist_submission_value: GENSMP
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 33
+

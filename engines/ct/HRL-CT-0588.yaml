@@ -1,0 +1,44 @@
+id: HRL-CT-0588
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: KPSS0101OR (Karnofsky Performance Status Scale Clinical Classification
+  ORRES for KPSS0101 TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: KPSS0101OR
+      operator: in
+      value:
+        - Able to carry on normal activity; minor signs or symptoms of disease.
+        - Cares for self; unable to carry on normal activity or to do active work.
+        - Dead
+        - Disabled; requires special care and assistance.
+        - Moribund; fatal processes progressing rapidly.
+        - Normal activity with effort; some signs or symptoms of disease.
+        - Normal no complaints; no evidence of disease.
+        - Requires considerable assistance and frequent medical care.
+        - Requires occasional assistance, but is able to care for most of his personal
+          needs.
+        - Severely disabled; hospital admission is indicated although death not imminent.
+        - Very sick; hospital admission necessary; active supportive treatment necessary.
+outcome:
+  message: Value not found in non-extensible codelist Karnofsky Performance Status
+    Scale Clinical Classification ORRES for KPSS0101 TN/TC (C182469)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C182469
+  codelist_name: Karnofsky Performance Status Scale Clinical Classification ORRES
+    for KPSS0101 TN/TC
+  codelist_submission_value: KPSS0101OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 11
+

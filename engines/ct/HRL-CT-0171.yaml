@@ -1,0 +1,127 @@
+id: HRL-CT-0171
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ONCRSCAT (Category of Oncology Response Assessment) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ONCRSCAT
+      operator: in
+      value:
+        - ADY NEUROBLASTOMA 1995
+        - AJCC V4
+        - AJCC V5
+        - AJCC V6
+        - AJCC V7
+        - AJCC V8
+        - BLAZER COLORECTAL CANCER 2008
+        - BOONSIRIKAMCHAI COLORECTAL CANCER 2011
+        - BRUGGEMANN MRD 2010
+        - BURCOMBE BREAST CANCER 2005
+        - CHESON CLL 2006
+        - CHESON CLL 2012
+        - CHESON HODGKINS NON-HODGKINS LYMPHOMA 2008
+        - CHESON LYMPHOMA 2008
+        - CHESON MALIGNANT LYMPHOMA 2007
+        - CHESON NON-HODGKINS HODGKINS LYMPHOMA 1993
+        - CHESON NON-HODGKINS LYMPHOMA 1999
+        - CHOI GIST 2008
+        - CHOLLET BREAST CANCER 2002
+        - DIMOPOULOS IWWM-7 CONSENSUS 2014
+        - DIMOPOULOS WALDENSTROMS MACROGLOBULINEMIA 2018
+        - DOHNER AML 2010
+        - DURIE MULTIPLE MYELOMA 2006
+        - EASL BRUIX LIVER CANCER 2001
+        - EBMT BLADE MYELOMA 1998
+        - ELN DOHNER AML 2017
+        - ELN DOHNER AML 2022
+        - EORTC OLSEN MYCOSIS FUNGOIDES AND SEZARY SYNDROME 2011
+        - EUROPEAN LEUKEMIANET BACCARANI CML 2006
+        - FAROOQUI SUPP CLL 2014
+        - GCIG RUSTIN OVARIAN CANCER 2011
+        - GUILHOT CML 2007
+        - GUPPY OVARIAN CANCER 2002
+        - HAMAOKA BREAST CANCER 2010
+        - HARTMAN PANCREATIC CANCER 2012
+        - HARTMANN GERM CELL CANCER 2002
+        - INRC 1993
+        - INRC 2017
+        - INRC 2019
+        - IRANO 2015
+        - iRECIST
+        - ITMIG MRECIST BENVENISTE THYMIC EPITHELIAL TUMORS 2014
+        - itRECIST GOLDMACHER 2020
+        - IWC HALLEK CLL 2008
+        - IWC HALLEK CLL 2018
+        - IWG CHESON AML 2003
+        - IWG CHESON MDS 2000
+        - IWG CHESON MDS 2006
+        - JACINTO CERVICAL CANCER 2007
+        - JAPANESE CLASSIFICATION GASTRIC CANCER 2011
+        - JUWEID NON-HODGKINS LYMPHOMA 2005
+        - KEAM BREAST CANCER 2013
+        - KIMBY WALDENSTROMS MACROGLOBULINEMIA 2006
+        - KUKER LYMPHOMA 2005
+        - KUMAR IMWG 2016
+        - LEE LUNG CANCER 2011
+        - LUGANO CLASSIFICATION
+        - MACDONALD GLIOMA 1990
+        - MASS
+        - MDS/MPN IWC SAVONA MDS MPN 2015
+        - MINKOV LANGERHANS CELL HISTIOCYTOSIS 2009
+        - MONTSERRAT CLL 1989
+        - MRANO VAN DEN BENT GLIOMA 2011
+        - MRECIST ARMATO MESOTHELIOMA 2018
+        - MRECIST BYRNE MESOTHELIOMA 2004
+        - MRECIST LENCIONI LIVER CANCER 2010
+        - MURPHY PROSTATE CANCER 1980
+        - NCCN ALL MRD 2014
+        - NCIWG CHESON CLL 1996
+        - OWEN WALDESTROMS MACROGLOBULINEMIA 2013
+        - PALUMBO MULTIPLE MYELOMA 2009
+        - PCWG BUBLEY PROSTATE CANCER 1999
+        - PCWG SCHER PROSTATE CANCER 2008
+        - PCWG SCHER PROSTATE CANCER 2016
+        - PERCIST
+        - PETIT BREAST CANCER 2001
+        - PONTE-DI-LEGNO CONSORTIUM 2022
+        - PRINCE TCELL LYMPHOMA 2010
+        - PROTOCOL DEFINED RESPONSE CRITERIA
+        - RAJKUMAR MYELOMA 2011
+        - RANO ELLINGSON 2017
+        - RANO
+        - RANO-BM LIN 2015
+        - RECICL
+        - RECIST 1.0
+        - RECIST 1.1
+        - SACT
+        - SANDLUND PEDIATRIC NON-HODGKIN LYMPHOMA 2015
+        - SCHER PROSTATE CANCER 2011
+        - SCHWARZ CERVICAL CANCER 2009
+        - SHINDOH COLORECTAL CANCER 2013
+        - SIOPEN LEWINGTON NEUROBLASTOMA 2017
+        - TSUKASAKI LEUKEMIA LYMPHOMA 2009
+        - UNSPECIFIED
+        - WHO BREAST CANCER 2006
+        - WOLCHOK SOLID TUMORS 2009
+outcome:
+  message: Value not found in extensible codelist Category of Oncology Response Assessment
+    (C124298)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124298
+  codelist_name: Category of Oncology Response Assessment
+  codelist_submission_value: ONCRSCAT
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 96
+

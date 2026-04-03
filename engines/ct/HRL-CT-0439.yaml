@@ -1,0 +1,73 @@
+id: HRL-CT-0439
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC075TC (Functional Assessment of Cancer Therapy-Cognitive Function
+  Version 3 Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC075TC
+      operator: in
+      value:
+        - FAC07501
+        - FAC07502
+        - FAC07503
+        - FAC07504
+        - FAC07505
+        - FAC07506
+        - FAC07507
+        - FAC07508
+        - FAC07509
+        - FAC07510
+        - FAC07511
+        - FAC07512
+        - FAC07513
+        - FAC07514
+        - FAC07515
+        - FAC07516
+        - FAC07517
+        - FAC07518
+        - FAC07519
+        - FAC07520
+        - FAC07521
+        - FAC07522
+        - FAC07523
+        - FAC07524
+        - FAC07525
+        - FAC07526
+        - FAC07527
+        - FAC07528
+        - FAC07529
+        - FAC07530
+        - FAC07531
+        - FAC07532
+        - FAC07533
+        - FAC07534
+        - FAC07535
+        - FAC07536
+        - FAC07537
+        - FAC07538
+        - FAC07539
+        - FAC07540
+        - FAC07541
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Cognitive Function Version 3 Questionnaire Test Code (C166184)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C166184
+  codelist_name: Functional Assessment of Cancer Therapy-Cognitive Function Version
+    3 Questionnaire Test Code
+  codelist_submission_value: FAC075TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 41
+

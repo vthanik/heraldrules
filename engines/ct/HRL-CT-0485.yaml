@@ -1,0 +1,42 @@
+id: HRL-CT-0485
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FASNA1TC (Functional Assessment Scale-NACC UDS Version 3.0 Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FASNA1TC
+      operator: in
+      value:
+        - FASNA101
+        - FASNA102
+        - FASNA103
+        - FASNA104
+        - FASNA105
+        - FASNA106
+        - FASNA107
+        - FASNA108
+        - FASNA109
+        - FASNA110
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment Scale-NACC
+    UDS Version 3.0 Clinical Classification Test Code (C170523)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C170523
+  codelist_name: Functional Assessment Scale-NACC UDS Version 3.0 Clinical Classification
+    Test Code
+  codelist_submission_value: FASNA1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 10
+

@@ -1,0 +1,76 @@
+id: HRL-CT-0256
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: NCOMPLT (Completion/Reason for Non-Completion) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: NCOMPLT
+      operator: in
+      value:
+        - ADVERSE EVENT
+        - APPROVED DRUG AVAILABLE FOR INDICATION
+        - COMPLETED
+        - DEATH
+        - DISEASE RELAPSE
+        - FAILURE TO MEET CONTINUATION CRITERIA
+        - FAILURE TO MEET RANDOMIZATION CRITERIA
+        - INVESTIGATOR DECISION
+        - LACK OF EFFICACY
+        - LOGISTICAL PROBLEM
+        - LOST TO FOLLOW-UP
+        - MET ELIGIBILITY CRITERIA BUT NOT NEEDED
+        - NEVER DOSED
+        - NO LONGER CLINICALLY BENEFITING
+        - NON-COMPLIANCE WITH NON-STUDY DEVICE
+        - NON-COMPLIANCE WITH STUDY DEVICE
+        - NON-COMPLIANCE WITH STUDY DRUG
+        - NON-COMPLIANCE WITH STUDY SCHEDULE
+        - NON-COMPLIANCE
+        - PARTNER PREGNANCY
+        - PHYSICIAN DECISION
+        - PREGNANCY
+        - PROGRESSIVE DISEASE
+        - PROTOCOL DEVIATION
+        - PROTOCOL VIOLATION
+        - PROTOCOL-SPECIFIED WITHDRAWAL CRITERION MET
+        - RANDOMIZED BY MISTAKE WITH STUDY TREATMENT
+        - RANDOMIZED BY MISTAKE WITHOUT STUDY TREATMENT
+        - RANDOMIZED BY MISTAKE
+        - RECOVERY
+        - REQUIRES PROHIBITED MEDICATION
+        - REQUIRES PROHIBITED PROCEDURE
+        - SCREEN FAILURE
+        - SCREENING NOT COMPLETED
+        - SERIOUS ADVERSE EVENT
+        - SITE TERMINATED BY SPONSOR
+        - SPONSOR REQUEST
+        - STUDY TERMINATED BY SPONSOR
+        - TECHNICAL PROBLEMS
+        - UNDERWENT PROHIBITED PROCEDURE
+        - USED PROHIBITED MEDICATION
+        - WITHDRAWAL BY PARENT/GUARDIAN
+        - WITHDRAWAL BY SUBJECT
+        - WITHDRAWAL OF ASSENT
+        - WITHDRAWAL OF CONSENT
+outcome:
+  message: Value not found in extensible codelist Completion/Reason for Non-Completion
+    (C66727)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C66727
+  codelist_name: Completion/Reason for Non-Completion
+  codelist_submission_value: NCOMPLT
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 45
+

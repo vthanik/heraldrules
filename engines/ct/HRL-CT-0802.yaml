@@ -1,0 +1,58 @@
+id: HRL-CT-0802
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL15TC (Pediatric Quality of Life Neuromuscular Module Acute Version
+  3 Child Parent Report Questionnaire Test Code) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL15TC
+      operator: in
+      value:
+        - PQL1501
+        - PQL1502
+        - PQL1503
+        - PQL1504
+        - PQL1505
+        - PQL1506
+        - PQL1507
+        - PQL1508
+        - PQL1509
+        - PQL1510
+        - PQL1511
+        - PQL1512
+        - PQL1513
+        - PQL1514
+        - PQL1515
+        - PQL1516
+        - PQL1517
+        - PQL1518
+        - PQL1519
+        - PQL1520
+        - PQL1521
+        - PQL1522
+        - PQL1523
+        - PQL1524
+        - PQL1525
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Acute Version 3 Child Parent Report Questionnaire Test Code (C138231)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138231
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Acute Version 3 Child
+    Parent Report Questionnaire Test Code
+  codelist_submission_value: PQL15TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

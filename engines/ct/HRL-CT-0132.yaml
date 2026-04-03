@@ -1,0 +1,36 @@
+id: HRL-CT-0132
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BWCS01TN (Bowel Control Scale Questionnaire Test Name) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BWCS01TN
+      operator: in
+      value:
+        - BWCS01-Almost Lost Control of Bowels
+        - BWCS01-Altered Activity Because Bowels
+        - BWCS01-Been Constipated
+        - BWCS01-Bowels Restricted Lifestyle
+        - BWCS01-Lost Control of Bowels
+outcome:
+  message: Value not found in non-extensible codelist Bowel Control Scale Questionnaire
+    Test Name (C113853)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C113853
+  codelist_name: Bowel Control Scale Questionnaire Test Name
+  codelist_submission_value: BWCS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

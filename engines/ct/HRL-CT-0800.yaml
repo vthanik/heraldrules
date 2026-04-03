@@ -1,0 +1,124 @@
+id: HRL-CT-0800
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PODCI1TC (Pediatric Outcomes Data Collection Instrument, Pediatric Parent-Reported
+  Version Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PODCI1TC
+      operator: in
+      value:
+        - PODCI101
+        - PODCI102
+        - PODCI103
+        - PODCI104
+        - PODCI105
+        - PODCI106
+        - PODCI107
+        - PODCI108
+        - PODCI109
+        - PODCI110
+        - PODCI111
+        - PODCI112
+        - PODCI113
+        - PODCI114
+        - PODCI115
+        - PODCI116
+        - PODCI117
+        - PODCI118
+        - PODCI119
+        - PODCI120
+        - PODCI121
+        - PODCI122
+        - PODCI123
+        - PODCI124
+        - PODCI125
+        - PODCI126
+        - PODCI127
+        - PODCI128
+        - PODCI129
+        - PODCI130
+        - PODCI131
+        - PODCI132
+        - PODCI133
+        - PODCI134
+        - PODCI135
+        - PODCI136
+        - PODCI137
+        - PODCI138
+        - PODCI139
+        - PODCI140
+        - PODCI141
+        - PODCI142
+        - PODCI143
+        - PODCI144
+        - PODCI145
+        - PODCI146
+        - PODCI147
+        - PODCI148
+        - PODCI149
+        - PODCI150
+        - PODCI151
+        - PODCI152
+        - PODCI153
+        - PODCI154
+        - PODCI155
+        - PODCI156
+        - PODCI157
+        - PODCI158
+        - PODCI159
+        - PODCI160
+        - PODCI161
+        - PODCI162
+        - PODCI163
+        - PODCI164
+        - PODCI165
+        - PODCI166
+        - PODCI167
+        - PODCI168
+        - PODCI169
+        - PODCI170
+        - PODCI171
+        - PODCI172
+        - PODCI173
+        - PODCI174
+        - PODCI175
+        - PODCI176
+        - PODCI177
+        - PODCI178
+        - PODCI179
+        - PODCI180
+        - PODCI181
+        - PODCI182
+        - PODCI183
+        - PODCI184
+        - PODCI185
+        - PODCI186
+        - PODCI187
+        - PODCI188
+        - PODCI189
+        - PODCI190
+        - PODCI191
+        - PODCI192
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Outcomes Data Collection
+    Instrument, Pediatric Parent-Reported Version Questionnaire Test Code (C135694)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C135694
+  codelist_name: Pediatric Outcomes Data Collection Instrument, Pediatric Parent-Reported
+    Version Questionnaire Test Code
+  codelist_submission_value: PODCI1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 92
+

@@ -1,0 +1,35 @@
+id: HRL-CT-0915
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RSLSCLRS (Result Scale Response) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RSLSCLRS
+      operator: in
+      value:
+        - NARRATIVE
+        - NOMINAL
+        - ORDINAL
+        - QUANTITATIVE
+        - SEMI-QUANTITATIVE
+outcome:
+  message: Value not found in extensible codelist Result Scale Response (C177910)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C177910
+  codelist_name: Result Scale Response
+  codelist_submission_value: RSLSCLRS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 5
+

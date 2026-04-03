@@ -1,0 +1,37 @@
+id: HRL-CT-0856
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PORTOT (Portion/Totality) must contain valid extensible codelist terms
+  (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PORTOT
+      operator: in
+      value:
+        - ALL
+        - ENTIRE
+        - HEMI
+        - MULTIPLE
+        - PARTIAL
+        - SEGMENT
+        - SINGLE
+outcome:
+  message: Value not found in extensible codelist Portion/Totality (C99075)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C99075
+  codelist_name: Portion/Totality
+  codelist_submission_value: PORTOT
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 7
+

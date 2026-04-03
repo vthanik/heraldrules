@@ -1,0 +1,45 @@
+id: HRL-CT-0794
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC099TC (Pediatric Functional Assessment of Chronic Illness Therapy-Fatigue
+  Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC099TC
+      operator: in
+      value:
+        - FAC09901
+        - FAC09902
+        - FAC09903
+        - FAC09904
+        - FAC09905
+        - FAC09906
+        - FAC09907
+        - FAC09908
+        - FAC09909
+        - FAC09910
+        - FAC09911
+        - FAC09912
+        - FAC09913
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Functional Assessment
+    of Chronic Illness Therapy-Fatigue Questionnaire Test Code (C147546)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C147546
+  codelist_name: Pediatric Functional Assessment of Chronic Illness Therapy-Fatigue
+    Questionnaire Test Code
+  codelist_submission_value: FAC099TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 13
+

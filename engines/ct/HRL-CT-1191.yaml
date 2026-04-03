@@ -1,0 +1,32 @@
+id: HRL-CT-1191
+version: 1
+status: Published
+standard: ADaM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GDS02PC (Geriatric Depression Scale Short Form Questionnaire Parameter
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GDS02PC
+      operator: in
+      value:
+        - GDS02TS
+outcome:
+  message: Value not found in non-extensible codelist Geriatric Depression Scale Short
+    Form Questionnaire Parameter Code (C158114)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C158114
+  codelist_name: Geriatric Depression Scale Short Form Questionnaire Parameter Code
+  codelist_submission_value: GDS02PC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

@@ -1,0 +1,40 @@
+id: HRL-CT-0357
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ESS01TC (Epworth Sleepiness Scale Questionnaire Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ESS01TC
+      operator: in
+      value:
+        - ESS0101
+        - ESS0102
+        - ESS0103
+        - ESS0104
+        - ESS0105
+        - ESS0106
+        - ESS0107
+        - ESS0108
+        - ESS0109
+outcome:
+  message: Value not found in non-extensible codelist Epworth Sleepiness Scale Questionnaire
+    Test Code (C103463)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103463
+  codelist_name: Epworth Sleepiness Scale Questionnaire Test Code
+  codelist_submission_value: ESS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 9
+

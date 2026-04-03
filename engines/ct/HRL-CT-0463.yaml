@@ -1,0 +1,45 @@
+id: HRL-CT-0463
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC102TC (Functional Assessment of Cancer Therapy/Gynecologic Oncology
+  Group-Neurotoxicity Subscale Version 4 Questionnaire Test Code) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC102TC
+      operator: in
+      value:
+        - FAC10201
+        - FAC10202
+        - FAC10203
+        - FAC10204
+        - FAC10205
+        - FAC10206
+        - FAC10207
+        - FAC10208
+        - FAC10209
+        - FAC10210
+        - FAC10211
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy/Gynecologic Oncology Group-Neurotoxicity Subscale Version 4 Questionnaire
+    Test Code (C208370)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C208370
+  codelist_name: Functional Assessment of Cancer Therapy/Gynecologic Oncology Group-Neurotoxicity
+    Subscale Version 4 Questionnaire Test Code
+  codelist_submission_value: FAC102TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 11
+

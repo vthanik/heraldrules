@@ -1,0 +1,37 @@
+id: HRL-CT-0215
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CLINSTRS (Clinical Status of Disease Response) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CLINSTRS
+      operator: in
+      value:
+        - ACTIVE
+        - INACTIVE
+        - RECURRENCE
+        - REMISSION
+        - RESOLVED
+        - UNKNOWN
+outcome:
+  message: Value not found in extensible codelist Clinical Status of Disease Response
+    (C213531)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C213531
+  codelist_name: Clinical Status of Disease Response
+  codelist_submission_value: CLINSTRS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 6
+

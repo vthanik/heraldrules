@@ -1,0 +1,707 @@
+id: HRL-CT-0478
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FSILTN (Functional Assessment of Chronic Illness Therapy-Searchable Item
+  Library Adult Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FSILTN
+      operator: in
+      value:
+        - FSIL-Abdominal Cramps Diarrhea
+        - FSIL-Able Remember Things Where Left
+        - FSIL-Able Remember to Do Things
+        - FSIL-Able to Bring to Mind Words
+        - FSIL-Able to Communicate With Others
+        - FSIL-Able to Concentrate
+        - FSIL-Able to Do My Usual Activities
+        - FSIL-Able to Drive a Vehicle
+        - FSIL-Able to Eat as Much Food as I Want
+        - FSIL-Able to Eat the Foods That I Like
+        - FSIL-Able to Enjoy Life
+        - FSIL-Able to Feel Like a Man
+        - FSIL-Able to Feel Like a Woman
+        - FSIL-Able to Find the Right Words
+        - FSIL-Able to Get Around by Myself
+        - FSIL-Able to Have/Maintain Erection
+        - FSIL-Able to Maintain My Balance
+        - FSIL-Able to Make Decisions
+        - FSIL-Able to Meet My Monthly Expenses
+        - FSIL-Able to Pay Attention w/o Effort
+        - FSIL-Able to Put My thoughts Into Action
+        - FSIL-Able to Put My Thoughts Together
+        - FSIL-Able to Read Like I Used to
+        - FSIL-Able to Reconcile With Other People
+        - FSIL-Able to Shift Between Activities
+        - FSIL-Able to Talk to Doctor When Needed
+        - FSIL-Able to Track What I Am Doing
+        - FSIL-Able to Walk
+        - FSIL-Able to Work
+        - FSIL-Able to Write Like I Used to
+        - FSIL-Accepted I Have This Infection
+        - FSIL-Afraid of Having a Seizure
+        - FSIL-Afraid to Be Far From a Toilet
+        - FSIL-Afraid to Have Sex
+        - FSIL-Afraid Treatment May Harm Body
+        - FSIL-Amount I Eat Is Sufficient
+        - FSIL-Appreciation for Beauty of Nature
+        - FSIL-Avoid Going Out to Eat B/c Illness
+        - FSIL-Avoid or Limit Physical Activity
+        - FSIL-Avoid or Limit Social Activity
+        - FSIL-Avoid Public B/c How My Skin Looks
+        - FSIL-Avoid Public Places Fear Infection
+        - FSIL-Because of Sores Eating Difficult
+        - FSIL-Believe Blood Will Be Inconvenient
+        - FSIL-Believe Bothered by Side Effects
+        - FSIL-Believe Chemo Cause Physical Pain
+        - FSIL-Believe Chemo Harmful to Me
+        - FSIL-Believe Chemo Inconvenient
+        - FSIL-Believe Chemo Sched Stress Family
+        - FSIL-Believe Chemo Schedule Stressful Me
+        - FSIL-Believe Chemo Take Up My Time
+        - FSIL-Believe Eating Will Be Inconvenient
+        - FSIL-Believe Infusion Will Cause Pain
+        - FSIL-Believe Schedule Stressful Family
+        - FSIL-Believe Schedule Stressful to Me
+        - FSIL-Believe Treatment Inconvenient
+        - FSIL-Believe Treatment Take Family Time
+        - FSIL-Believe Treatment Will Be Harmful
+        - FSIL-Believe Treatment Will Cause Pain
+        - FSIL-Believe Treatment Will Take Up Time
+        - FSIL-Believe Will Be Bothered by Effects
+        - FSIL-Blame Myself for the Infection
+        - FSIL-Bone Pain Even When I Sit/Lie Still
+        - FSIL-Bone Pain Interferes Care Myself
+        - FSIL-Bone Pain Interferes w/Social
+        - FSIL-Bone Pain Wakes Me Up at Night
+        - FSIL-Bothered by a Skin Rash
+        - FSIL-Bothered by Appearance Skin Breast
+        - FSIL-Bothered by Bleeding in Gums/Mouth
+        - FSIL-Bothered by Blistering of My Skin
+        - FSIL-Bothered by Blood in My Urine/Stool
+        - FSIL-Bothered by Bruising Beneath Skin
+        - FSIL-Bothered by Change in Eating Habits
+        - FSIL-Bothered by Change in Food Tastes
+        - FSIL-Bothered by Change in Personality
+        - FSIL-Bothered by Change in Weight
+        - FSIL-Bothered by Compression Stockings
+        - FSIL-Bothered by Constipation
+        - FSIL-Bothered by Cracking/Peeling Skin
+        - FSIL-Bothered by Discharge From Vulva
+        - FSIL-Bothered by Discomfort Groin/Legs
+        - FSIL-Bothered by Drop in My Contribution
+        - FSIL-Bothered by Dry Mouth
+        - FSIL-Bothered by Dry Skin
+        - FSIL-Bothered by Effects Treatment Bone
+        - FSIL-Bothered by Fevers
+        - FSIL-Bothered by Gas
+        - FSIL-Bothered by Hair Loss
+        - FSIL-Bothered by Having a Blocked Nose
+        - FSIL-Bothered by Headaches
+        - FSIL-Bothered by Hot Flashes
+        - FSIL-Bothered by Increased Facial Hair
+        - FSIL-Bothered by Itching
+        - FSIL-Bothered by Itching/Burning Vulva
+        - FSIL-Bothered by Jaundice/Yellow Skin
+        - FSIL-Bothered by Lumps or Swelling
+        - FSIL-Bothered by Mouth Sores/Tenderness
+        - FSIL-Bothered by Muscle Pains
+        - FSIL-Bothered by Muscle Spasms
+        - FSIL-Bothered by My Hands/Nails Look
+        - FSIL-Bothered by Nosebleeds
+        - FSIL-Bothered by Odor From Vagina
+        - FSIL-Bothered by Odor From Vulva
+        - FSIL-Bothered by Pain/Numbness in Vulva
+        - FSIL-Bothered by Reflux or Heartburn
+        - FSIL-Bothered by Ringing in My Ear
+        - FSIL-Bothered by Sensitivity Fingernails
+        - FSIL-Bothered by Short-term Reactions
+        - FSIL-Bothered by Side Effects Treatment
+        - FSIL-Bothered by Skin Problems Underarm
+        - FSIL-Bothered by Skin Problems
+        - FSIL-Bothered by Skin Sensitivity to Sun
+        - FSIL-Bothered by Sweating
+        - FSIL-Bothered by Swelling Certain Areas
+        - FSIL-Bothered by Swelling in My Breast
+        - FSIL-Bothered by Swelling/Fluid in Legs
+        - FSIL-Bothered by the Amount of Swelling
+        - FSIL-Bothered by the Chills
+        - FSIL-Bothered by Uncertainty Prognosis
+        - FSIL-Bothered by Vitiligo
+        - FSIL-Bothered by Worsening Eyesight
+        - FSIL-Bothered Discharge/Bleeding Vagina
+        - FSIL-Bothered Inconvenience Treat Skin
+        - FSIL-Bothered New Allergy-like Reactions
+        - FSIL-Bothered Red/Pink Appearance Skin
+        - FSIL-Breathing Is Easy for Me
+        - FSIL-Can Manage Things Around Infection
+        - FSIL-Can Swallow Naturally and Easily
+        - FSIL-Careful Who I told About Infection
+        - FSIL-Caring for Ostomy Is Difficult
+        - FSIL-Caring Urinary Condition Difficult
+        - FSIL-Carrying 10-20 Lbs
+        - FSIL-Certain Parts of Body Have Pain
+        - FSIL-Chemo Causes Physical Pain
+        - FSIL-Chemo Schedule Is Stressful Family
+        - FSIL-Chemo Schedule Is Stressful Me
+        - FSIL-Chemo Seems Harmful
+        - FSIL-Chemo Takes Family Time
+        - FSIL-Chemo Treatment Takes Up My Time
+        - FSIL-Choose This Chemo Again
+        - FSIL-Choose This Clinic/Office Again
+        - FSIL-Choose This Treatment Again
+        - FSIL-Choose This Treatment Bone Again
+        - FSIL-Comfort in Faith/Spiritual Beliefs
+        - FSIL-Comfortable Discuss Cond w/Friends
+        - FSIL-Compassion for Others Difficulties
+        - FSIL-Concerned About How Thin I Look
+        - FSIL-Concerned About Keeping My Job
+        - FSIL-Concerned Keeping My Job and Income
+        - FSIL-Concerned What the Future Holds
+        - FSIL-Concerns Ability Become Pregnant
+        - FSIL-Concerns Ability to Have Children
+        - FSIL-Condition Wakes/Keeps Me Up Night
+        - FSIL-Confidence in My Nurse(s)
+        - FSIL-Confident Nutrition Feeding Tube
+        - FSIL-Constipated
+        - FSIL-Constipation Dur/After Tube Feeding
+        - FSIL-Content With Quality of My Life Now
+        - FSIL-Cost of Treatment Is Burden on Me
+        - FSIL-Dependent on Others Feeding Tube
+        - FSIL-Depressed About My Condition
+        - FSIL-Depressed About the Infection
+        - FSIL-Diarrhea Keeps/Wakes Me Up at Night
+        - FSIL-Diff Moving Neck & Shoulders Stiff
+        - FSIL-Difficult Times Strengthened Faith
+        - FSIL-Difficulty Breathing Exposed Cold
+        - FSIL-Difficulty Doing Things B/c of Skin
+        - FSIL-Difficulty Expressing My Thoughts
+        - FSIL-Difficulty Moving My Arm Sideways
+        - FSIL-Difficulty Planning for Future
+        - FSIL-Difficulty Swallowing Liquids
+        - FSIL-Difficulty Swallowing Soft Foods
+        - FSIL-Difficulty Swallowing Solid Foods
+        - FSIL-Difficulty Telling Partner/Spouse
+        - FSIL-Difficulty Walking B/c of Skin
+        - FSIL-Digestive Problems Interfere Activ
+        - FSIL-Discomfort in My Pelvic Area
+        - FSIL-Discomfort or Pain When I Eat
+        - FSIL-Discomfort/Pain in My Pelvic Area
+        - FSIL-Discomfort/Pain in Stomach Area
+        - FSIL-Discuss Concerns w/ People Closest
+        - FSIL-Do You Have an Ostomy Appliance
+        - FSIL-Doctor Available Answer Questions
+        - FSIL-Doctor Evaluate Effects Treatment
+        - FSIL-Doctor Experience Treating Illness
+        - FSIL-Doctor Explain Benefits Treatment
+        - FSIL-Doctor Explain Side Effects/Risks
+        - FSIL-Doctor Explained Possible Benefits
+        - FSIL-Doctor Explanations You Understand
+        - FSIL-Doctor Gave Explanations Understand
+        - FSIL-Doctor Knew Medical Developments
+        - FSIL-Doctor Seem Respect Your Opinions
+        - FSIL-Doctor Seem Understand Your Needs
+        - FSIL-Doctor Show Genuine Concern for You
+        - FSIL-Doctor Understand Important to You
+        - FSIL-Dressing Yourself Without Help
+        - FSIL-Dur Tube Feeding Eat/Drink by Mouth
+        - FSIL-During Difficult Times Things Be OK
+        - FSIL-Effectiveness of Treatment So Far
+        - FSIL-Embarrassed About the Infection
+        - FSIL-Embarrassed by Appearance of Skin
+        - FSIL-Embarrassed by Having Diarrhea
+        - FSIL-Embarrassed by My Condition
+        - FSIL-Embarrassed by My Illness
+        - FSIL-Embarrassed by My Skin Condition
+        - FSIL-Embarrassed by Ostomy Appliance
+        - FSIL-Emotional Support Family Members
+        - FSIL-Emotional Support From My Family
+        - FSIL-Enjoy Meals With Family/Friends
+        - FSIL-Enjoy Things I Usually Do for Fun
+        - FSIL-Enough Money to Cover Treatment
+        - FSIL-Family Bothered by Skin Condition
+        - FSIL-Family Is Well Despite My Illness
+        - FSIL-Family Trouble Understand Bone Pain
+        - FSIL-Family Trouble Understand Worse
+        - FSIL-Family Who Take My Responsibilities
+        - FSIL-Far From Home/Work W/o Fear Soilage
+        - FSIL-Fatigue Keeps Me From Doing Things
+        - FSIL-Feeding Tube Was Right Decision
+        - FSIL-Feel Financially Stressed
+        - FSIL-Feel Forgiven for Harm I Caused
+        - FSIL-Feel Isolated Because of Illness
+        - FSIL-Feel Overwhelmed by My Condition
+        - FSIL-Feel Sense of Harmony Within Myself
+        - FSIL-Feel Sense of Purpose in My Life
+        - FSIL-Feel Sense of Thankfulness for Life
+        - FSIL-Feel That My Family Appreciates Me
+        - FSIL-Forced to Spend Time in Bed
+        - FSIL-Forgive Others for Harm Caused Me
+        - FSIL-Forgotten Names After Introduced
+        - FSIL-Frustrated by Being Too Tired
+        - FSIL-Frustrated by My Bone Pain
+        - FSIL-Frustrated by My Condition
+        - FSIL-Frustrated by My Skin Condition
+        - FSIL-Frustrated by the Infection
+        - FSIL-Frustrated Cannot Work as Usual
+        - FSIL-Frustrated I Cannot Do Things
+        - FSIL-Frustrated Not Do Usual Activities
+        - FSIL-Frustrated Unable Do Things I Want
+        - FSIL-Fullness/Heaviness in Stomach Area
+        - FSIL-Get Emotional Support Partner
+        - FSIL-Get Ringing or Buzzing in My Ears
+        - FSIL-Get to Say Things Important to You
+        - FSIL-Good Range of Movement in Arm/Leg
+        - FSIL-Had Change in the Way Food Tastes
+        - FSIL-Hand Pain Interferes Daily Activ
+        - FSIL-Hard to Tell People About Infection
+        - FSIL-Have Breast Sensitivity/Tenderness
+        - FSIL-Have Confidence in Your Doctor
+        - FSIL-Have Difficulty Eating Rich Foods
+        - FSIL-Have Enough Time to Make Decisions
+        - FSIL-Have Joint Pain or Muscle Cramps
+        - FSIL-Have Opportunity to Ask Questions
+        - FSIL-Have Pain/Discomfort w/Intercourse
+        - FSIL-Have People to Help Me if I Need It
+        - FSIL-Have Stiffness of Arm on This Side
+        - FSIL-Have Swelling in Parts of My Body
+        - FSIL-Have Trouble Controlling My Urine
+        - FSIL-Have Trouble Feeling Peace of Mind
+        - FSIL-Have Trouble Swallowing Food
+        - FSIL-Have Weakness in My Arms or Legs
+        - FSIL-Have You Ever Smoked
+        - FSIL-Having Blood Drawn Is Inconvenient
+        - FSIL-Heat Worsens My Symptoms
+        - FSIL-Helps Arrangements Obtain Medicines
+        - FSIL-Hidden Problem Others Not Notice
+        - FSIL-Hopeful About the Future
+        - FSIL-How Many Places in Body Felt Pain
+        - FSIL-Hurts When Put Weight/Pressure on
+        - FSIL-I Bleed Easily
+        - FSIL-I Bruise Easily
+        - FSIL-I Can Digest My Food Well
+        - FSIL-I Can Eat Solid Foods
+        - FSIL-I Can Enjoy the Taste of Food
+        - FSIL-I Can Remember New Things
+        - FSIL-I Can Remember Things
+        - FSIL-I Choke When I Swallow
+        - FSIL-I Drink Alcohol
+        - FSIL-I Feel Bloated
+        - FSIL-I Feel Close to My Family
+        - FSIL-I Feel Close to My Friends
+        - FSIL-I Feel Close to My Partner
+        - FSIL-I Feel Connected to Higher Power
+        - FSIL-I Feel Connected to Other People
+        - FSIL-I Feel Depressed about Bone Pain
+        - FSIL-I Feel Discomfort in My Feet
+        - FSIL-I Feel Discomfort in My Hands
+        - FSIL-I Feel Discouraged About My Illness
+        - FSIL-I Feel Distant From Other People
+        - FSIL-I Feel Fatigued
+        - FSIL-I Feel Hopeful
+        - FSIL-I Feel Ill
+        - FSIL-I Feel Independent
+        - FSIL-I Feel Left Out of Things
+        - FSIL-I Feel Lightheaded
+        - FSIL-I Feel Like a Burden to My Family
+        - FSIL-I Feel Listless
+        - FSIL-I Feel Love for Others
+        - FSIL-I Feel Loved
+        - FSIL-I Feel Motivated to Do Things
+        - FSIL-I Feel Nervous
+        - FSIL-I Feel Numbness at My Surgical Site
+        - FSIL-I Feel Peaceful
+        - FSIL-I Feel Sad
+        - FSIL-I Feel Sexually Attractive
+        - FSIL-I Feel Tightness in My Chest
+        - FSIL-I Feel Tired
+        - FSIL-I Feel Trapped by My Condition
+        - FSIL-I Feel Useful
+        - FSIL-I Feel Useless
+        - FSIL-I Feel Weak All Over
+        - FSIL-I Get Annoyed Easily
+        - FSIL-I Get Depressed Easily
+        - FSIL-I Get Headaches
+        - FSIL-I Get Support From My Friends
+        - FSIL-I Get Tired Easily
+        - FSIL-I Have a Good Appetite
+        - FSIL-I Have a Lack of Energy
+        - FSIL-I Have a Loss of Appetite
+        - FSIL-I Have a Reason for Living
+        - FSIL-I Have Accepted My Illness
+        - FSIL-I Have Aches and Pains in My Bones
+        - FSIL-I Have Aches/Pains That Bother Me
+        - FSIL-I Have Been Able to Concentrate
+        - FSIL-I Have Been Bothered by Diarrhea
+        - FSIL-I Have Been Coughing
+        - FSIL-I Have Been Emotionally Distressed
+        - FSIL-I Have Been Short of Breath
+        - FSIL-I Have Been Upset About Problems
+        - FSIL-I Have Been Vomiting
+        - FSIL-I Have Been Wheezing
+        - FSIL-I Have Bone Pain
+        - FSIL-I Have Cold Sweats
+        - FSIL-I Have Confidence in My Doctor(s)
+        - FSIL-I Have Confidence in My Pharmacist
+        - FSIL-I Have Control of My Bowels
+        - FSIL-I Have Cramping in My Pelvic Area
+        - FSIL-I Have Cramps in My Stomach Area
+        - FSIL-I Have Diarrhea
+        - FSIL-I Have Difficultly Raising My Arm
+        - FSIL-I Have Difficulty Breathing
+        - FSIL-I Have Difficulty Thinking Clearly
+        - FSIL-I Have Difficulty Urinating
+        - FSIL-I Have Discomfort When I Am Sitting
+        - FSIL-I Have Discomfort When I Urinate
+        - FSIL-I Have Emotional Ups and Downs
+        - FSIL-I Have Energy
+        - FSIL-I Have Episodes of Heart Racing
+        - FSIL-I Have Frequent Colds/Infections
+        - FSIL-I Have Gained Weight
+        - FSIL-I Have Had Blood in My Urine
+        - FSIL-I Have Had Chills
+        - FSIL-I Have Had Fevers
+        - FSIL-I Have Had Itching
+        - FSIL-I Have Had Seizures
+        - FSIL-I Have Had Trouble Concentrating
+        - FSIL-I Have Hot Flashes/Hot Flushes
+        - FSIL-I Have Lost Interest in Sex
+        - FSIL-I Have Mood Swings
+        - FSIL-I Have Mouth Sores
+        - FSIL-I Have Nausea
+        - FSIL-I Have Night Sweats
+        - FSIL-I Have Noticed Blood in My Stool
+        - FSIL-I Have Numbness in My Legs
+        - FSIL-I Have Pain in Arm and/or Shoulder
+        - FSIL-I Have Pain in My Back
+        - FSIL-I Have Pain in My Breast
+        - FSIL-I Have Pain in My Chest
+        - FSIL-I Have Pain in My Fingertips
+        - FSIL-I Have Pain in My Joints
+        - FSIL-I Have Pain in My Pelvic Area
+        - FSIL-I Have Pain in My Sinus Area
+        - FSIL-I Have Pain in My Stomach Area
+        - FSIL-I Have Pain
+        - FSIL-I Have Peace of Mind
+        - FSIL-I Have Strength in My Arm(s)
+        - FSIL-I Have Strength in My Legs
+        - FSIL-I Have Swelling at My Melanoma Site
+        - FSIL-I Have Swelling in Stomach Area
+        - FSIL-I Have the Desire to Eat
+        - FSIL-I Have Tremors
+        - FSIL-I Have Trouble Bending
+        - FSIL-I Have Trouble Breathing
+        - FSIL-I Have Trouble Buttoning Buttons
+        - FSIL-I Have Trouble Concentrating
+        - FSIL-I Have Trouble Forming Thoughts
+        - FSIL-I Have Trouble Hearing
+        - FSIL-I Have Trouble Learning New Tasks
+        - FSIL-I Have Trouble Moving My Bowels
+        - FSIL-I Have Trouble Remembering Things
+        - FSIL-I Have Trouble Sleeping at Night
+        - FSIL-I Have Trouble Smelling
+        - FSIL-I Have Trouble Walking
+        - FSIL-I Have Trouble With Coordination
+        - FSIL-I Have Trouble With My Bowels
+        - FSIL-I Have Trouble With My Eyesight
+        - FSIL-I Have Vaginal Bleeding or Spotting
+        - FSIL-I Have Vaginal Discharge
+        - FSIL-I Have Vaginal Dryness
+        - FSIL-I Have Vaginal Itching/Irritation
+        - FSIL-I Have Weakness in My Legs
+        - FSIL-I Like the Appearance of My Body
+        - FSIL-I Maintain Contact With My Friends
+        - FSIL-I Make Each Day Count
+        - FSIL-I Need Help in Caring for Myself
+        - FSIL-I Need to Rest During the Day
+        - FSIL-I Need to Sleep During the Day
+        - FSIL-I Regret Bone Marrow Transplant
+        - FSIL-I Regret My Smoking
+        - FSIL-I Seem to Get Full Quickly
+        - FSIL-I Urinate More Frequently
+        - FSIL-I Worry About Dying
+        - FSIL-I Worry About Getting Infections
+        - FSIL-I Worry Bone Pain Will Get Worse
+        - FSIL-I Worry Transplant Will Not Work
+        - FSIL-Illness a Financial Hardship
+        - FSIL-Illness Caused Problems w/ Sex Life
+        - FSIL-Illness Is Hardship for My Family
+        - FSIL-Illness Strengthen Faith/Spiritual
+        - FSIL-In control of Financial Situation
+        - FSIL-Inconvenienced Platelet Transfusion
+        - FSIL-Inconvenient to Come for Radiation
+        - FSIL-Infusion Causes Me Physical Pain
+        - FSIL-Interest in Food Drops Try to Eat
+        - FSIL-Interested in Sex
+        - FSIL-Irritable
+        - FSIL-Isolate From Others B/c Condition
+        - FSIL-It Burns When I Urinate
+        - FSIL-Joint Pain Limits My Usual Activ
+        - FSIL-Joint Stiffness/Tight Limits Activ
+        - FSIL-Left Out When Others Are Eating
+        - FSIL-Lifting 10-20 Lbs
+        - FSIL-Limit Activities Because Diarrhea
+        - FSIL-Limit My Sexual Activity Infection
+        - FSIL-Limit My Social Activity
+        - FSIL-Limit Physical Activ B/c Condition
+        - FSIL-Limit Physical Activ B/c Diarrhea
+        - FSIL-Limit Sexual Activ B/c Condition
+        - FSIL-Limit Sexual Activity B/c Diarrhea
+        - FSIL-Limit Social Activity B/c Diarrhea
+        - FSIL-Limit Social Activity B/c Tired
+        - FSIL-Losing Hope Fight Against Illness
+        - FSIL-Losing Weight
+        - FSIL-Lost Food Choices Feeding Tube
+        - FSIL-Low Blood Counts Interfere Relation
+        - FSIL-Make Decisions Take Responsibility
+        - FSIL-Making a Bed
+        - FSIL-Medical Expense More Than I Thought
+        - FSIL-Memory Is as Good as Always Been
+        - FSIL-Mind Is as Sharp as Always Been
+        - FSIL-Miss Food/Drink Mouth Feeding Tube
+        - FSIL-Most Food Tastes Unpleasant to Me
+        - FSIL-Motivated to Do Activities
+        - FSIL-Move Bowels Freq to Avoid Accidents
+        - FSIL-Move My Bowels More Than Usual
+        - FSIL-Movement of Arm This Side Painful
+        - FSIL-Movement of Swollen Area Is Painful
+        - FSIL-My Arm on This Side Feels Numb
+        - FSIL-My Breast Is Sensitive/Tender
+        - FSIL-My Breasts Are Painful
+        - FSIL-My Breasts Are Swollen
+        - FSIL-My Chest Area Is Sore
+        - FSIL-My Condition Wakes Me Up at Night
+        - FSIL-My Eyes Are Dry
+        - FSIL-My Eyes Feel Sandy or Gritty
+        - FSIL-My Eyesight Is Blurry
+        - FSIL-My Family Has Accepted My Illness
+        - FSIL-My Family Pressuring Me to Eat
+        - FSIL-My General Health Is Improving
+        - FSIL-My Hands Are Swollen
+        - FSIL-My Legs or Feet Are Swollen
+        - FSIL-My Life Has Been Productive
+        - FSIL-My Life Lacks Meaning and Purpose
+        - FSIL-My Mouth and Throat Are Dry
+        - FSIL-My Mouth Is Dry
+        - FSIL-My Skin Bleeds Easily
+        - FSIL-My Skin Condition Affects My Mood
+        - FSIL-My Skin Feels Irritated
+        - FSIL-My Skin Itches
+        - FSIL-My Skin or Scalp Feels Irritated
+        - FSIL-My Skin or Scalp Is Dry or Flaky
+        - FSIL-My Skin or Scalp Itches
+        - FSIL-My Thinking Has Been Slow
+        - FSIL-My Thinking Is Clear
+        - FSIL-My Thinking Is Slower Than Before
+        - FSIL-My Thinking Slower Than Usual
+        - FSIL-My Underarm Area Sensitive/Tender
+        - FSIL-My Work Is Fulfilling
+        - FSIL-Need Help Doing Activ B/c Bone Pain
+        - FSIL-Need Help Doing Usual Activities
+        - FSIL-Nervous Making Decisions Treatment
+        - FSIL-No Choice Money Spend on Care
+        - FSIL-Noticed New Changes in My Skin
+        - FSIL-Numbness or Tingling in My Feet
+        - FSIL-Numbness or Tingling in My Hands
+        - FSIL-Numbness/Tingling in Arm/Shoulder
+        - FSIL-Nurse Explanations You Understand
+        - FSIL-Nurse Seem to Understand Your Needs
+        - FSIL-Nurse Show Genuine Concern for You
+        - FSIL-One/Both Arms Are Swollen/Tender
+        - FSIL-Pain at My Melanoma/Surgical Site
+        - FSIL-Pain in Hands/Feet Exposed to Cold
+        - FSIL-Pain in My Chest When I Swallow
+        - FSIL-Pain in My Mouth, Throat or Neck
+        - FSIL-Pain Keeps Me From Doing Things
+        - FSIL-Pain on My Feet Interferes Walking
+        - FSIL-Pain/Soreness/Aches in Some Muscles
+        - FSIL-Painful Cracks Skin on Hands/Feet
+        - FSIL-Painful Lesions/Tumors on My Skin
+        - FSIL-Participate Decisions Health Care
+        - FSIL-Partner Worries My Blood Counts Low
+        - FSIL-People Told Me I Seemed Confused
+        - FSIL-Pharmacist Advises Adverse Effects
+        - FSIL-Pharmacist Advises Use of Medicines
+        - FSIL-Pharmacist Available Questions
+        - FSIL-Pharmacist Aware Treatment Needs
+        - FSIL-Pharmacist Responds Treatment Needs
+        - FSIL-Pleasant Feel Fullness Tube Feeding
+        - FSIL-Poor Range Arm Movements This Side
+        - FSIL-Preparing Meals
+        - FSIL-Problem Urinating Limits Activity
+        - FSIL-Problems Interfered Ability Enjoy
+        - FSIL-Problems Interfered Ability Work
+        - FSIL-Problems Interfered Quality Life
+        - FSIL-Rate the Care You Received
+        - FSIL-Rate This Chemo
+        - FSIL-Rate This Treatment Overall
+        - FSIL-Reach Into Myself for Comfort
+        - FSIL-Reaction Everyday Situations Slow
+        - FSIL-Received Treatment Right for You
+        - FSIL-Received Treatment That Was Right
+        - FSIL-Receiving Chemo Inconvenient
+        - FSIL-Receiving Treatment Is Inconvenient
+        - FSIL-Recommend Chemo to Others
+        - FSIL-Recommend Clinic/Office to Others
+        - FSIL-Recommend This Treatment to Others
+        - FSIL-Reduced Satisfaction Financial
+        - FSIL-Rest During Day B/c of Bone Pain
+        - FSIL-Satisfied Communication Illness
+        - FSIL-Satisfied With Comfort Level
+        - FSIL-Satisfied With Effects of Treatment
+        - FSIL-Satisfied With Financial Situation
+        - FSIL-Satisfied With How I Am Coping
+        - FSIL-Satisfied With My Sex Life
+        - FSIL-Satisfied With Results Chemo
+        - FSIL-Satisfied With Results of Treatment
+        - FSIL-Satisfied With Urinary Condition
+        - FSIL-Self-conscious About Way I Dress
+        - FSIL-Sensitivity Fingernails Diff Tasks
+        - FSIL-Side Effects of Treatment So Far
+        - FSIL-Side Effects of Treatment Worse
+        - FSIL-Skin Cond Interferes w/ Social Life
+        - FSIL-Skin Condition Interferes w/ Sleep
+        - FSIL-Skin Condition Make Life Difficult
+        - FSIL-Skin Feels Sensitive or Raw
+        - FSIL-Skin in Breast Area Itchy/Flaky/Dry
+        - FSIL-Skin Is Dry or Flaky
+        - FSIL-Skin Side Effects Interfered Tasks
+        - FSIL-Sleeping Well
+        - FSIL-Smoke Cigarettes/Other Tobacco
+        - FSIL-Stiffness/Tightness in My Joints
+        - FSIL-Stomach Pain Interferes Functioning
+        - FSIL-Stomach Problems That Worry Me
+        - FSIL-Strength in Faith/Spiritual Beliefs
+        - FSIL-Sweeping/Mopping
+        - FSIL-Swelling as a Result of Surgery
+        - FSIL-Swelling Keeps Me From Doing Things
+        - FSIL-Swelling Keeps Me From Wearing
+        - FSIL-Swelling/Cramps in Stomach Area
+        - FSIL-Take My Condition Into Account
+        - FSIL-Taking Drug Infusion Inconvenient
+        - FSIL-Thankfulness Others Bring to Life
+        - FSIL-The Skin on My Feet Hurts
+        - FSIL-The Skin on My Hands Hurts
+        - FSIL-Tired Dealing With Skin Condition
+        - FSIL-Told Family Members About Infection
+        - FSIL-Told Me Trouble Remembering Info
+        - FSIL-Told Me Trouble Speaking Clearly
+        - FSIL-Told Me Trouble Thinking Clearly
+        - FSIL-Told Partner/Spouse About Infection
+        - FSIL-Too Tired to Eat
+        - FSIL-Treatment Bone Disease Takes Time
+        - FSIL-Treatment Bone Disease to Others
+        - FSIL-Treatment Causes Me Physical Pain
+        - FSIL-Treatment Schedule Stressful Family
+        - FSIL-Treatment Schedule Stressful to Me
+        - FSIL-Treatment Seems Harmful to Me
+        - FSIL-Treatment Staff Answered Honestly
+        - FSIL-Treatment Staff Discuss Activities
+        - FSIL-Treatment Staff Discuss Emotionally
+        - FSIL-Treatment Staff Discuss Relation
+        - FSIL-Treatment Staff Discuss Work
+        - FSIL-Treatment Staff Respect Privacy
+        - FSIL-Treatment Staff Thorough Examining
+        - FSIL-Treatment Takes Up My Family's Time
+        - FSIL-Trouble Digesting Food
+        - FSIL-Trouble Feeling Arm/Hands/Legs
+        - FSIL-Trouble Feeling Shape of Objects
+        - FSIL-Trouble Finding Familiar Place
+        - FSIL-Trouble Finding Right Words
+        - FSIL-Trouble Finishing Things
+        - FSIL-Trouble Getting Around in Public
+        - FSIL-Trouble Keeping Track Interrupted
+        - FSIL-Trouble Meeting Needs of Family
+        - FSIL-Trouble Recalling Name of Object
+        - FSIL-Trouble Remember Where Put Things
+        - FSIL-Trouble Remembering New Info
+        - FSIL-Trouble Saying What I Mean
+        - FSIL-Trouble Shifting Back and Forth
+        - FSIL-Trouble Sleeping B/c Skin Condition
+        - FSIL-Trouble Starting Things
+        - FSIL-Trouble Walking Because Bone Pain
+        - FSIL-Trouble Walking Because of Pain
+        - FSIL-Troubled Not Knowing Side Effects
+        - FSIL-Trust Doctor Suggestions Treatment
+        - FSIL-Tube Feed Limits Do Inside House
+        - FSIL-Tube Feeding Limits Activities
+        - FSIL-Tube Feeding Limits Do Outside
+        - FSIL-Unattractive B/c How My Skin Looks
+        - FSIL-Uncertain About My Future Health
+        - FSIL-Uncomfortably Full Tube Feeding
+        - FSIL-Unhappy About Change in My Appear
+        - FSIL-Unhappy With How Face & Neck Look
+        - FSIL-Unhappy With My Appearance
+        - FSIL-Urinate Frequently to Avoid Leaking
+        - FSIL-Use Written Lists More Often
+        - FSIL-Used Wrong Word When Refer Object
+        - FSIL-Vagina Feels Too Narrow/Short
+        - FSIL-Voice Has Usual Quality & Strength
+        - FSIL-Vomiting Dur/After Tube Feeding
+        - FSIL-Waiting Breakfast Is Inconvenient
+        - FSIL-Wake at Night Because of Coughing
+        - FSIL-Walked Into a Room and Forgotten
+        - FSIL-Walking 50 Steps Flat Normal Speed
+        - FSIL-Walking for 1/2 Mile w/o Stopping
+        - FSIL-Walking Up 20 Stairs w/o Stopping
+        - FSIL-Washing Dishes
+        - FSIL-Wear Pads/Protect Prevent Soiling
+        - FSIL-Wear Protection Leakage of Urine
+        - FSIL-Whatever Happens Illness Will Be OK
+        - FSIL-Which Side Was Breast Operation
+        - 'FSIL-Women: Bothered by Vaginal Bleeding'
+        - FSIL-Work Hard to Pay Attention
+        - FSIL-Work Harder Than Usual to Express
+        - FSIL-Work Harder Than Usual to Track
+        - FSIL-Worried About My Weight
+        - FSIL-Worry About Attitudes Towards Me
+        - FSIL-Worry About Serious Bleeding
+        - FSIL-Worry About Side Effects Treatment
+        - FSIL-Worry About Spreading My Infection
+        - FSIL-Worry About Spreading the Infection
+        - FSIL-Worry About the Effect of Stress
+        - FSIL-Worry Appearance of Surgical Scars
+        - FSIL-Worry Chemo Not Effective
+        - FSIL-Worry Family Will Get Illness
+        - FSIL-Worry Feeding Tube Health Is Worse
+        - FSIL-Worry Financial Problems in Future
+        - FSIL-Worry Getting Sick Low Blood Counts
+        - FSIL-Worry I Might Get New Symptoms
+        - FSIL-Worry Infection From Feeding Tube
+        - FSIL-Worry Infection Will Get Worse
+        - FSIL-Worry Losing Weight Feeding Tube
+        - FSIL-Worry My Condition Will Get Worse
+        - FSIL-Worry Neg Impacts Long-term Health
+        - FSIL-Worry Not improve Treatment Delayed
+        - FSIL-Worry Problems Bruising/Bleeding
+        - FSIL-Worry Side Effects From Chemo
+        - FSIL-Worry Skin condition Get Worse
+        - FSIL-Worry Support Myself/Family Illness
+        - FSIL-Worry Treatment Dose Will Reduced
+        - FSIL-Worry Treatment Not Effective
+        - FSIL-Worry Treatment Will Be Delayed
+        - FSIL-Worry Tube Coming Out by Accident
+        - FSIL-Worry Tube Getting Plugged/Blocked
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Chronic
+    Illness Therapy-Searchable Item Library Adult Questionnaire Test Name (C183550)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C183550
+  codelist_name: Functional Assessment of Chronic Illness Therapy-Searchable Item
+    Library Adult Questionnaire Test Name
+  codelist_submission_value: FSILTN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 674
+

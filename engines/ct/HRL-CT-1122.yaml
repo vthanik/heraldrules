@@ -1,0 +1,35 @@
+id: HRL-CT-1122
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TBLIND (Trial Blinding Schema Response) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TBLIND
+      operator: in
+      value:
+        - DOUBLE BLIND
+        - OBSERVER BLIND
+        - OPEN LABEL TO TREATMENT AND DOUBLE BLIND TO IMP DOSE
+        - OPEN LABEL
+        - SINGLE BLIND
+outcome:
+  message: Value not found in extensible codelist Trial Blinding Schema Response (C66735)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C66735
+  codelist_name: Trial Blinding Schema Response
+  codelist_submission_value: TBLIND
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 5
+

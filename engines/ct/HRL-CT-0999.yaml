@@ -1,0 +1,53 @@
+id: HRL-CT-0999
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SFMP2TN (Short-Form McGill Pain Questionnaire-2 Questionnaire Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SFMP2TN
+      operator: in
+      value:
+        - SFMP2-Aching Pain
+        - SFMP2-Cold-Freezing Pain
+        - SFMP2-Cramping Pain
+        - SFMP2-Electric-Shock Pain
+        - SFMP2-Fearful
+        - SFMP2-Gnawing Pain
+        - SFMP2-Heavy Pain
+        - SFMP2-Hot-burning Pain
+        - SFMP2-Itching
+        - SFMP2-Numbness
+        - SFMP2-Pain Caused by Light Touch
+        - SFMP2-Piercing
+        - SFMP2-Punishing-Cruel
+        - SFMP2-Sharp Pain
+        - SFMP2-Shooting Pain
+        - SFMP2-Sickening
+        - SFMP2-Splitting Pain
+        - SFMP2-Stabbing Pain
+        - SFMP2-Tender
+        - SFMP2-Throbbing Pain
+        - SFMP2-Tingling or 'Pins and Needles'
+        - SFMP2-Tiring-Exhausting
+outcome:
+  message: Value not found in non-extensible codelist Short-Form McGill Pain Questionnaire-2
+    Questionnaire Test Name (C100155)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100155
+  codelist_name: Short-Form McGill Pain Questionnaire-2 Questionnaire Test Name
+  codelist_submission_value: SFMP2TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 22
+

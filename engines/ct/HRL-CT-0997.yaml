@@ -1,0 +1,64 @@
+id: HRL-CT-0997
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SPPB1TN (Short Physical Performance Battery Version 1.2 Functional Test
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SPPB1TN
+      operator: in
+      value:
+        - SPPB1-Aids Used 1st Gait Specify
+        - SPPB1-Aids Used 1st Gait
+        - SPPB1-Aids Used 2nd Gait Specify
+        - SPPB1-Aids Used 2nd Gait
+        - SPPB1-Chair Stand Score Repeated
+        - SPPB1-Did Not Attempt 1st Gait Specify
+        - SPPB1-Did Not Attempt 1st Gait
+        - SPPB1-Did Not Attempt 2nd Gait Specify
+        - SPPB1-Did Not Attempt Balance Specify
+        - SPPB1-Did Not Attempt or Failed 2nd Gait
+        - SPPB1-Did Not Attempt Repeated Chair
+        - SPPB1-Did Not Attempt Single Chair
+        - SPPB1-Did Not Attempt Test Balance
+        - SPPB1-For 3-Meter Walk
+        - SPPB1-For 4-Meter Walk
+        - SPPB1-Length of Walk Test Course
+        - SPPB1-Not Attempt Repeated Chair Specify
+        - SPPB1-Not Attempt Single Chair Specify
+        - SPPB1-Results Single Chair
+        - SPPB1-Safe to Stand Five Times
+        - SPPB1-Safe to Stand Without Help
+        - SPPB1-Semi-Tandem Seconds Held If <10
+        - SPPB1-Semi-Tandem Stand Score
+        - SPPB1-Side-by-Side Score
+        - SPPB1-Side-by-Side Seconds Held If <10
+        - SPPB1-Tandem Seconds If <10
+        - SPPB1-Tandem Stand Score
+        - SPPB1-Time for 3 or 4 Meters - 2nd Gait
+        - SPPB1-Time for 3 or 4 Meters 1st Gait
+        - SPPB1-Time to Complete Five Stands
+        - SPPB1-Total Balance Tests Score
+        - SPPB1-Total Score
+outcome:
+  message: Value not found in non-extensible codelist Short Physical Performance Battery
+    Version 1.2 Functional Test Test Name (C170526)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C170526
+  codelist_name: Short Physical Performance Battery Version 1.2 Functional Test Test
+    Name
+  codelist_submission_value: SPPB1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 32
+

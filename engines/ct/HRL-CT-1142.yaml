@@ -1,0 +1,965 @@
+id: HRL-CT-1142
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: UNIT (Unit) must contain valid extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: UNIT
+      operator: in
+      value:
+        - '% INHIBITION'
+        - '%'
+        - '%(v/v)'
+        - '%(w/v)'
+        - '%(w/w)'
+        - '%*min/h'
+        - '%/min'
+        - '%/s'
+        - (mmHg*min/L)*m2
+        - /10 HPFs
+        - /100 Cells
+        - /100 Enterocytes
+        - /100 HPFs
+        - /100 RBC
+        - /100 WBC
+        - /100x FIELD
+        - /10^3 RBC
+        - /10^3
+        - /10^4
+        - /10^5
+        - /10^6
+        - /2 mm2
+        - /200 HPFs
+        - /2000 RBC
+        - /2500 WBC
+        - /4.0 mL
+        - /40 HPFs
+        - /400 Cells
+        - /50 Cells
+        - /500 WBC
+        - /5x10^4 WBC
+        - /7.5 mL
+        - /animal
+        - /Cell
+        - /cm3
+        - /cmH2O
+        - /day
+        - /EXOME
+        - /g
+        - /h
+        - /HPF
+        - /kg
+        - /LPF
+        - /LSQN
+        - /MBP
+        - /min
+        - /mm
+        - /mm2
+        - /month
+        - /ms
+        - /PLATE
+        - /s
+        - /um2
+        - /VF
+        - /WELL
+        - /wk
+        - 1/(s*kPa)
+        - 10 copies/mL
+        - 10 IU/mL
+        - 100 copies/mL
+        - 100 IU/mL
+        - 10^10 copies/mL
+        - 10^10 IU/mL
+        - 10^10 vp/dose
+        - 10^10 vp/mL
+        - 10^10/L
+        - 10^11/L
+        - 10^12 IU/L
+        - 10^12/L
+        - 10^3 CFU
+        - 10^3 CFU/g
+        - 10^3 CFU/mL
+        - 10^3 copies/mL
+        - 10^3 DNA copies/mL
+        - 10^3 IU/mL
+        - 10^3 organisms
+        - 10^3 organisms/g
+        - 10^3 organisms/mL
+        - 10^3 RNA copies/mL
+        - 10^3 Therapeutic Cells
+        - 10^3/hpf
+        - 10^3/L
+        - 10^4 CFU
+        - 10^4 CFU/mL
+        - 10^4 copies/mL
+        - 10^4 IU/mL
+        - 10^4/hpf
+        - 10^4/L
+        - 10^5 CFU
+        - 10^5 CFU/mL
+        - 10^5 copies/mL
+        - 10^5 IU/mL
+        - 10^5 Therapeutic Cells
+        - 10^5/hpf
+        - 10^5/kg
+        - 10^5/L
+        - 10^6 CFU
+        - 10^6 CFU/g
+        - 10^6 CFU/mL
+        - 10^6 copies/mL
+        - 10^6 DNA copies/mL
+        - 10^6 IU
+        - 10^6 IU/mL
+        - 10^6 organisms
+        - 10^6 organisms/g
+        - 10^6 organisms/mg
+        - 10^6 organisms/mL
+        - 10^6 PFU
+        - 10^6 RNA copies/mL
+        - 10^6 TCID 50/dose
+        - 10^6 Therapeutic Cells
+        - 10^6 U
+        - 10^6/Ejaculate U
+        - 10^6/g
+        - 10^6/hpf
+        - 10^6/kg
+        - 10^6/L
+        - 10^7 CFU
+        - 10^7 CFU/mL
+        - 10^7 copies/mL
+        - 10^7 IU/mL
+        - 10^7 PFU
+        - 10^7 TCID 50/dose
+        - 10^7/kg
+        - 10^7/L
+        - 10^8 CFU
+        - 10^8 copies/mL
+        - 10^8 IU
+        - 10^8 IU/mL
+        - 10^8 PFU
+        - 10^8 TCID 50/dose
+        - 10^8/L
+        - 10^9 CFU
+        - 10^9 CFU/g
+        - 10^9 CFU/mL
+        - 10^9 copies/mL
+        - 10^9 IU/mL
+        - 10^9 organisms
+        - 10^9 organisms/g
+        - 10^9 organisms/mg
+        - 10^9 organisms/mL
+        - 10^9 PFU
+        - 10^9 Therapeutic Cells
+        - 10^9/dose
+        - 10^9/g
+        - 10^9/L
+        - 10^9/uL
+        - ABC
+        - Absorbance U
+        - Absorbance U/min
+        - Absorbance U/mL
+        - ACTUATION
+        - AFU
+        - ag
+        - AGGREGATION UNIT
+        - AgU/mL
+        - aMFI
+        - amol
+        - amp
+        - AMPULE
+        - amu
+        - Anson U
+        - anti-Xa IU
+        - anti-Xa IU/mL
+        - Antibody Unit
+        - APL U
+        - APL U/mL
+        - APPLICATION
+        - APS U
+        - APS U/mL
+        - Arbitrary U
+        - Arbitrary U/mL
+        - ARMOUR UNIT
+        - atm
+        - AU/mL
+        - BAG
+        - BAR
+        - BAU
+        - BAU/mL
+        - BE/mL
+        - BEAM BREAKS
+        - beats/min
+        - bel
+        - Binding Ab Unit
+        - Binding Ab Unit/mL
+        - BISCUIT
+        - BLOCKS
+        - BOLUS
+        - BOTTLE
+        - BOWL
+        - BOX
+        - BP
+        - Bq
+        - Bq/g
+        - Bq/kg
+        - Bq/L
+        - Bq/mg
+        - Bq/mL
+        - Bq/ug
+        - Bq/uL
+        - breaths/30 s
+        - breaths/min
+        - BU
+        - BU/mL
+        - C
+        - CAE Unit
+        - cal
+        - CAN
+        - CAPFUL
+        - CAPLET
+        - CAPSULE
+        - CARTRIDGE
+        - CCID 50/dose
+        - CCID 50/mL
+        - cd
+        - cd*s/m2
+        - cd/m2
+        - CFU/g
+        - CFU/mL
+        - cg
+        - CGE
+        - cGy
+        - Ci
+        - Ci/g
+        - Ci/kg
+        - Ci/L
+        - Ci/mg
+        - Ci/mL
+        - Ci/mmol
+        - Ci/ug
+        - Ci/uL
+        - CIGAR
+        - CIGARETTE
+        - cL
+        - cm H2O
+        - cm
+        - cm/min
+        - cm/s
+        - cm2
+        - cm2/s
+        - cmH2O*s/mL
+        - cmH2O*s2/mL
+        - cmH2O/mL
+        - cmH2O/mL/s
+        - cmHg
+        - cmol
+        - cmol/L
+        - COAT
+        - CONTAINER
+        - copies/cell
+        - copies/mL
+        - copies/ug
+        - copies/uL
+        - Coulomb
+        - cP
+        - cpm
+        - cs
+        - Cu
+        - cup eq
+        - CUP
+        - CUTS/in
+        - cy/cm
+        - cycle/min
+        - CYLINDER
+        - DAgU
+        - DAgU/mL
+        - damol/L
+        - daPa
+        - day*ng/mL/(mg/kg)
+        - DAYS
+        - days/month
+        - days/wk
+        - dB
+        - DDU
+        - deg
+        - deg/mm
+        - deg/s
+        - deg2
+        - DIOPTER
+        - DIP
+        - DISK
+        - dL
+        - dmol
+        - DNA copies/mL
+        - DNA copies/ug
+        - DPM
+        - dpm/0.5 mL
+        - dpm/100 mg
+        - dpm/g
+        - dpm/mg
+        - dpm/mL
+        - dram
+        - DRINK
+        - DROP
+        - DRUM
+        - dyn
+        - dyn*s/cm5
+        - ECL unit
+        - EIA unit
+        - EID 50/dose
+        - EID 50/mL
+        - Ejaculate U
+        - ELISA unit
+        - ELISA unit/dose
+        - ELISA unit/mL
+        - Endotoxin U
+        - Endotoxin U/mL
+        - ENVELOPE
+        - Enzyme U
+        - Enzyme U/g Hb
+        - Enzyme U/L
+        - Enzyme U/m2
+        - EP U
+        - eq
+        - EU
+        - EVENTS
+        - F
+        - Farad
+        - FEU
+        - FFU
+        - FFU/mL
+        - fg
+        - FILM
+        - FINGERTIP LENGTH UNIT
+        - FINGERTIP UNIT
+        - FIU
+        - fL
+        - fmol
+        - fmol/g
+        - fmol/L
+        - fmol/L/s
+        - foz_br
+        - foz_us
+        - fraction of 1
+        - Frames/s
+        - ft
+        - ft2
+        - ft3
+        - g
+        - g/9000m
+        - g/animal
+        - g/animal/day
+        - g/animal/wk
+        - g/cage
+        - g/cage/day
+        - g/cage/wk
+        - g/cm2
+        - g/cm3
+        - g/day
+        - g/dL
+        - g/g
+        - g/g/day
+        - g/kg
+        - g/kg/day
+        - g/L
+        - g/m2
+        - g/m2*h
+        - g/m2/day
+        - g/mol
+        - g/ston_av
+        - g/U
+        - g/wk
+        - Gauss
+        - GBq
+        - GBq/g
+        - GBq/mg
+        - GBq/ug
+        - GBq/umol
+        - genEq
+        - genEq/mL
+        - GLASS
+        - GLOBULE
+        - gMFI
+        - gpELISA unit/mL
+        - GPL U
+        - GPL U/mL
+        - GPS U
+        - GPS U/mL
+        - grain
+        - Gravitational Unit
+        - gtt
+        - GUMMY
+        - Gy
+        - Gy/h
+        - Gy/min
+        - h*%
+        - h*ng/mL
+        - h*nmol/L
+        - h/wk
+        - HAND UNIT
+        - Henry
+        - HEP
+        - HOMEOPATHIC DILUTION
+        - Hounsfield Unit
+        - HOURS
+        - hPa
+        - hr/day
+        - Hz
+        - Hz/s
+        - IMPLANT
+        - in
+        - in2
+        - INHALATION
+        - INJECTION
+        - IU
+        - IU/day
+        - IU/dL
+        - IU/g Hb
+        - IU/g
+        - IU/h
+        - IU/kg
+        - IU/kg/h
+        - IU/L
+        - IU/mg
+        - IU/mL
+        - IU/mmol
+        - J/cm2
+        - JAR
+        - JDF Unit
+        - Joule
+        - K
+        - ka_u/dL
+        - KALLIKREIN INHIBITOR UNIT
+        - kat
+        - kBq
+        - kBq/uL
+        - kcal
+        - kcal/day
+        - kDa
+        - keV
+        - kg
+        - kg/cm
+        - kg/cm2
+        - kg/L
+        - kg/m2
+        - kg/mol
+        - kHz
+        - KIT
+        - kIU
+        - km
+        - km/h
+        - kN/cm2
+        - kPa
+        - kPa/L/s
+        - ks
+        - kUSP
+        - kV
+        - L
+        - L/day
+        - L/h
+        - L/h/m2
+        - L/kg
+        - L/L
+        - L/m2/s
+        - L/min
+        - L/min/m2
+        - L/s
+        - L/s/kPa
+        - LB
+        - LENS
+        - Linear ft*LB
+        - Lipase Units
+        - Lipase Units/kg
+        - lm
+        - log10 CCID 50/dose
+        - log10 CFU/g
+        - log10 CFU/mL
+        - log10 copies
+        - log10 copies/mL
+        - log10 EID 50/dose
+        - Log10 ELISA unit
+        - Log10 ELISA unit/dose
+        - log10 IU/mL
+        - log10 minutes of arc
+        - log10 PFU
+        - log10 PFU/mL
+        - log10 TCID 50
+        - log10 TCID 50/dose
+        - log10 TCID 50/mL
+        - log10 TCID 50/uL
+        - Log10 Titer
+        - log10 U/mL
+        - LOZENGE
+        - lton_av
+        - lx
+        - m
+        - m*%
+        - m/s
+        - m/s2
+        - m2
+        - m2/s
+        - m3
+        - MAC50
+        - mAh
+        - mAmp
+        - mAnson U/mL
+        - MASK
+        - MBP
+        - MBq
+        - MBq/uL
+        - mCi
+        - mCi/kg
+        - mCi/L
+        - MdFI
+        - mEq
+        - mEq/day
+        - mEq/dL
+        - mEq/g
+        - meq/h
+        - mEq/kg
+        - mEq/L
+        - mEq/mL
+        - mEq/mmol
+        - mEq/ug
+        - mEq/uL
+        - MESF
+        - MET
+        - MET*h
+        - MET*min
+        - MeV
+        - mg
+        - mg/animal
+        - mg/breath
+        - mg/CAPSULE
+        - mg/CIGARETTE
+        - mg/cm2
+        - mg/day
+        - mg/dL
+        - mg/dose
+        - mg/g/h
+        - mg/g/min
+        - mg/h
+        - mg/kg
+        - mg/kg/day
+        - mg/kg/dose
+        - mg/kg/h
+        - mg/kg/min
+        - mg/kg/week
+        - mg/L DDU
+        - mg/L FEU
+        - mg/L
+        - mg/m2
+        - mg/m2/day
+        - mg/m2/h
+        - mg/m2/min
+        - mg/m2/wk
+        - mg/min
+        - mg/mL/day
+        - mg/mL/min
+        - mg/mol
+        - mg/PUFF
+        - mg/wk
+        - mg2/dL2
+        - mgEq
+        - MHz
+        - Mile
+        - min
+        - min*mg/mL
+        - min/day
+        - mIU/L
+        - mIU/m2
+        - mJoule/cm2
+        - mkat
+        - mkat/L
+        - mL
+        - mL*cmH2O
+        - mL/(min*100mL)
+        - mL/100g/min
+        - mL/animal
+        - mL/animal/day
+        - mL/animal/wk
+        - mL/beat
+        - mL/breath
+        - mL/cage
+        - mL/cage/day
+        - mL/cage/wk
+        - mL/cm H2O
+        - mL/cm
+        - mL/cm3/min
+        - mL/day
+        - mL/dL
+        - mL/dose
+        - mL/g/day
+        - mL/g/h
+        - mL/g/min
+        - mL/h
+        - mL/kg
+        - mL/kg/day
+        - mL/kg/h
+        - mL/kg/min
+        - mL/m2
+        - mL/m2/day
+        - mL/m2/h
+        - mL/m2/min
+        - mL/min
+        - mL/min/1.73 m2
+        - mL/min/mmHg
+        - mL/mmHg
+        - mL/mmHg/min/L
+        - mL/s
+        - mL/s/1.73 m2
+        - mL/s/kg
+        - mL/s/m2
+        - mm H2O
+        - mm
+        - mm/2h
+        - mm/h
+        - mm/min
+        - mm/s
+        - mm2
+        - mm2/us
+        - mm3/mm2/year
+        - mmAL
+        - mmHg
+        - mmHg*beats/min
+        - mmHg*m2/L/min
+        - mmHg*min/L
+        - mmHg/L/min
+        - mmHg/s
+        - mmol
+        - mmol/day
+        - mmol/g
+        - mmol/h
+        - mmol/kg
+        - mmol/kg/s
+        - mmol/L
+        - mmol/L/day
+        - mmol/L/h
+        - mmol/min/kPa
+        - mmol/min/kPa/L
+        - mmol/mol
+        - mmol/s
+        - mmol2/L2
+        - mMU/mL
+        - mN
+        - MnFI
+        - mol
+        - mol/day
+        - mol/g
+        - mol/L
+        - mol/mg
+        - mol/mL
+        - mol/mol
+        - MONTHS
+        - mOsm
+        - mOsm/kg
+        - mOsm/L
+        - mPa
+        - mPa/s
+        - mph
+        - MPL U
+        - MPL U/mL
+        - MPS U
+        - MPS U/mL
+        - Mrad
+        - ms
+        - ms/mmHg
+        - ms2
+        - mU
+        - mU/g
+        - mU/L
+        - mV
+        - mV*min
+        - mV/s
+        - mV2/Hz
+        - nCi
+        - NEBULE
+        - Newton
+        - NFIU
+        - ng
+        - ng/CIGARETTE
+        - ng/day
+        - ng/dL
+        - ng/kg
+        - ng/L
+        - ng/mol
+        - ng/PUFF
+        - ngEq
+        - ngEq/g
+        - ngEq/L
+        - nkat
+        - nkat/g Hb
+        - nkat/L
+        - nL
+        - nm
+        - nm/min
+        - nmol BCE/L
+        - nmol BCE/mmol
+        - nmol BCE/nmol
+        - nmol
+        - nmol/day
+        - nmol/dL
+        - nmol/g
+        - nmol/kg/day
+        - nmol/L
+        - nmol/L/h
+        - nmol/L/min
+        - nmol/L/s
+        - nmol/mg/h
+        - nmol/mg/min
+        - nmol/mL/min
+        - nmol/mol
+        - nmolEq
+        - ns
+        - nU/cL
+        - OD Unit
+        - ohm
+        - OI50
+        - Organisms
+        - Organisms/g
+        - Organisms/mL
+        - Osm
+        - oz eq
+        - oz
+        - P
+        - Pa
+        - PA
+        - Pack Year
+        - PACK
+        - PACKAGE
+        - PACKET
+        - PATCH
+        - PELLET
+        - PFU
+        - PFU/animal
+        - PFU/dose
+        - PFU/mL
+        - pg
+        - pg/cell
+        - pg/dL
+        - pg/L
+        - PHERESIS UNIT
+        - PILL
+        - PIPE
+        - PIXEL
+        - PIXELS/cm
+        - PIXELS/in
+        - pkat
+        - pkat/L
+        - pL
+        - PLUG
+        - pm
+        - pmol
+        - pmol/10^10 cells
+        - pmol/10^9 cells
+        - pmol/day
+        - pmol/dL
+        - pmol/g
+        - pmol/L
+        - pmol/L/h
+        - pmol/punch/h
+        - PNU/mL
+        - POINT
+        - POUCH
+        - ppb
+        - ppm
+        - ppth
+        - pptr
+        - PRESSOR UNITS
+        - ps
+        - psi
+        - pt_br
+        - pt_us
+        - PUFF
+        - PUFF/min
+        - PUMP
+        - QUANTITY SUFFICIENT
+        - Rad
+        - rad/s
+        - RADIOACTIVE SEED IMPLANT
+        - RAE
+        - RATIO
+        - RELATIVE U
+        - RELATIVE U/mL
+        - RFU
+        - RING
+        - RLU
+        - RNA copies/mL
+        - Roentgen
+        - rpm
+        - s
+        - s*kPa
+        - s/h
+        - s^-1(%O2)^-1
+        - SACHET
+        - SBE/mL
+        - scm
+        - SCOOPFUL
+        - SERVING
+        - SFC/10^5 PBMC
+        - SFC/10^6 PBMC
+        - SFC/2x10^5 PBMC
+        - SFC/WELL
+        - Shock Wave
+        - Siemens
+        - SPRAY
+        - SQU/mL
+        - STEPS
+        - steps/min
+        - ston_av
+        - STRIP
+        - SUPPOSITORY
+        - Sv
+        - SYRINGE
+        - TABLET
+        - TAMPON
+        - Tbsp
+        - TCID 50/dose
+        - Tesla
+        - Therapeutic Cells
+        - Therapeutic Cells/m2
+        - titer
+        - tonne
+        - Torr
+        - TRACE
+        - TRANSDUCING UNIT
+        - TRANSDUCING UNIT/mL
+        - TROCHE
+        - tsp eq
+        - tsp
+        - TUBE
+        - tuberculin unit
+        - tuberculin unit/0.1mL
+        - tuberculin unit/mL
+        - U
+        - U.CARR
+        - U/10^12 RBC
+        - U/animal
+        - U/cL
+        - U/dL
+        - U/g Hb
+        - U/g
+        - U/g/day
+        - U/g/h
+        - U/g/min
+        - U/h
+        - U/kg
+        - U/kg/day
+        - U/kg/h
+        - U/kg/min
+        - U/L
+        - U/m2
+        - U/m2/day
+        - U/m2/h
+        - U/m2/min
+        - U/mg
+        - U/mL
+        - U/mmol
+        - uCi
+        - uCi/kg
+        - uCi/L
+        - uEq
+        - uEq/L
+        - ug
+        - ug/animal
+        - ug/CIGARETTE
+        - ug/cm2
+        - ug/day
+        - ug/dL
+        - ug/dose
+        - ug/g/day
+        - ug/g/h
+        - ug/g/min
+        - ug/h
+        - ug/kg
+        - ug/kg/day
+        - ug/kg/h
+        - ug/kg/min
+        - ug/kg/wk
+        - ug/L DDU
+        - ug/L FEU
+        - ug/L
+        - ug/L/h
+        - ug/m2
+        - ug/m2/day
+        - ug/m2/h
+        - ug/m2/min
+        - ug/min
+        - ug/mL/h
+        - ug/mol
+        - ug/PUFF
+        - ugEq
+        - ugEq/L
+        - ugEq/mL
+        - uIU/dL
+        - uIU/L
+        - ukat
+        - ukat/10^12 RBC
+        - ukat/g Hb
+        - ukat/L
+        - uL
+        - uL/dose
+        - uL/kg/day
+        - uL/L
+        - uL/mL
+        - um
+        - um/day
+        - um/s
+        - um2
+        - umol
+        - umol/day
+        - umol/dL
+        - umol/h/mmol
+        - umol/kg/min
+        - umol/L
+        - umol/L/h
+        - umol/L/min
+        - umol/L/s
+        - umol/mg/min
+        - umol/min
+        - umol/mol
+        - uOsm
+        - us
+        - uSiemens
+        - USP U
+        - uU/dL
+        - uU/L
+        - uV
+        - uV*s
+        - uV2
+        - V
+        - V/s
+        - vg/dose
+        - vg/kg
+        - vg/mL
+        - VIAL
+        - VIRTUAL PIXEL
+        - VOXEL
+        - vp/dose
+        - vp/mL
+        - WAFER
+        - Watt
+        - Weber
+        - WEEKS
+        - yd
+        - YEARS
+outcome:
+  message: Value not found in extensible codelist Unit (C71620)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C71620
+  codelist_name: Unit
+  codelist_submission_value: UNIT
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 936
+

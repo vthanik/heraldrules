@@ -1,0 +1,69 @@
+id: HRL-CT-0593
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: KDQ1TN (Kidney Disease and Quality of Life-36 Version 1 Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: KDQ1TN
+      operator: in
+      value:
+        - KDQ1-Bother Ability to Work Around House
+        - KDQ1-Bother Dependent on Doctors/Staff
+        - KDQ1-Bother Dietary Restriction
+        - KDQ1-Bother Fluid Restriction
+        - KDQ1-Bother Stress Caused by Disease
+        - KDQ1-Bother Your Ability to Travel
+        - KDQ1-Bother Your Personal Appearance
+        - KDQ1-Bother Your Sex Life
+        - KDQ1-Bothered by Chest Pain
+        - KDQ1-Bothered by Cramps
+        - KDQ1-Bothered by Dry Skin
+        - KDQ1-Bothered by Faintness or Dizziness
+        - KDQ1-Bothered by Itchy Skin
+        - KDQ1-Bothered by Lack of Appetite
+        - KDQ1-Bothered by Nausea/Upset Stomach
+        - KDQ1-Bothered by Numbness in Hands/Feet
+        - KDQ1-Bothered by Problems Catheter Site
+        - KDQ1-Bothered by Problems w/ Access Site
+        - KDQ1-Bothered by Shortness of Breath
+        - KDQ1-Bothered by Soreness in Muscles
+        - KDQ1-Bothered by Washed Out or Drained
+        - KDQ1-Did You Have a Lot of Energy
+        - 'KDQ1-Emotional: Accomplished Less'
+        - 'KDQ1-Emotional: Did Work Less Carefully'
+        - KDQ1-Frustrated Deal w/ Kidney Disease
+        - KDQ1-Have You Felt Calm and Peaceful
+        - KDQ1-I Feel Like a Burden on My Family
+        - KDQ1-In General You Say Your Health Is
+        - KDQ1-Kidney Disease Interferes w/ Life
+        - KDQ1-Limit Climbing Several Flights
+        - KDQ1-Limit Moderate Activities
+        - KDQ1-Pain Interfere With Normal Work
+        - 'KDQ1-Physical: Accomplished Less'
+        - 'KDQ1-Physical: Limited Kind of Work'
+        - KDQ1-Time Phys/Emotional Interfered
+        - KDQ1-Time Spent Deal w/ Kidney Disease
+        - KDQ1-You Felt Downhearted and Blue
+outcome:
+  message: Value not found in non-extensible codelist Kidney Disease and Quality of
+    Life-36 Version 1 Questionnaire Test Name (C193273)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C193273
+  codelist_name: Kidney Disease and Quality of Life-36 Version 1 Questionnaire Test
+    Name
+  codelist_submission_value: KDQ1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 37
+

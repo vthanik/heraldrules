@@ -1,0 +1,61 @@
+id: HRL-CT-0280
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CHSF1TC (Craig Handicap Assessment and Reporting Technique - Short Form
+  Interview Version Questionnaire Test Code) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CHSF1TC
+      operator: in
+      value:
+        - CHSF101A
+        - CHSF101B
+        - CHSF102
+        - CHSF103
+        - CHSF104
+        - CHSF105
+        - CHSF106
+        - CHSF107A
+        - CHSF107B
+        - CHSF108
+        - CHSF109
+        - CHSF110
+        - CHSF111
+        - CHSF112
+        - CHSF113
+        - CHSF114
+        - CHSF115
+        - CHSF116
+        - CHSF117
+        - CHSF118
+        - CHSF119
+        - CHSF120
+        - CHSF121
+        - CHSF122
+        - CHSF123
+        - CHSF124
+        - CHSF125
+        - CHSF126
+outcome:
+  message: Value not found in non-extensible codelist Craig Handicap Assessment and
+    Reporting Technique - Short Form Interview Version Questionnaire Test Code (C117987)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C117987
+  codelist_name: Craig Handicap Assessment and Reporting Technique - Short Form Interview
+    Version Questionnaire Test Code
+  codelist_submission_value: CHSF1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 28
+

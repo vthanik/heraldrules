@@ -1,0 +1,58 @@
+id: HRL-CT-0168
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FTCAT (Category of Functional Test) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FTCAT
+      operator: in
+      value:
+        - 10-METER WALK/RUN
+        - 4-STAIR ASCEND
+        - 4-STAIR DESCEND
+        - ADAS-COG 30JUN2015
+        - ADAS-COG
+        - AVLT
+        - AVLT-REY
+        - BACS
+        - COWAT
+        - EMOTION RECOGNITION
+        - HAUSER AMBULATION INDEX
+        - HD-CAB
+        - MMSE
+        - MMSE-2 STANDARD VERSION
+        - MOCA
+        - NHPT
+        - PACED TAPPING
+        - PASAT
+        - PUL V1.2
+        - PUL V2.0
+        - RISING FROM FLOOR
+        - ROCKPORT ONE MILE WALK TEST V1.0
+        - SDMT
+        - SIX MINUTE WALK
+        - SPPB V1.2
+        - T25FW
+        - TMT
+        - TUG
+outcome:
+  message: Value not found in extensible codelist Category of Functional Test (C115304)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C115304
+  codelist_name: Category of Functional Test
+  codelist_submission_value: FTCAT
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 28
+

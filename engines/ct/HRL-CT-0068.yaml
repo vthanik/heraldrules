@@ -1,0 +1,33 @@
+id: HRL-CT-0068
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: AVPU01TC (Alert Verbal Painful Unresponsive Scale Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: AVPU01TC
+      operator: in
+      value:
+        - AVPU0101
+outcome:
+  message: Value not found in non-extensible codelist Alert Verbal Painful Unresponsive
+    Scale Clinical Classification Test Code (C161623)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C161623
+  codelist_name: Alert Verbal Painful Unresponsive Scale Clinical Classification Test
+    Code
+  codelist_submission_value: AVPU01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

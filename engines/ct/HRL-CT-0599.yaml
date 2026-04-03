@@ -1,0 +1,33 @@
+id: HRL-CT-0599
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EDSS01TC (Kurtzke Expanded Disability Status Scale Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EDSS01TC
+      operator: in
+      value:
+        - EDSS0101
+outcome:
+  message: Value not found in non-extensible codelist Kurtzke Expanded Disability
+    Status Scale Clinical Classification Test Code (C112439)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C112439
+  codelist_name: Kurtzke Expanded Disability Status Scale Clinical Classification
+    Test Code
+  codelist_submission_value: EDSS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

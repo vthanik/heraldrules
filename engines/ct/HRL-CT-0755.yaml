@@ -1,0 +1,78 @@
+id: HRL-CT-0755
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ONCRTSCD (Oncology Response Assessment Test Code) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ONCRTSCD
+      operator: in
+      value:
+        - ANATRESP
+        - BESTRESP
+        - BMIVLIND
+        - BMRRESP
+        - BMRSTAT
+        - BONERESP
+        - CLINRESP
+        - CLYMRESP
+        - CNSSTAT
+        - CONSYMPT
+        - CPRFSTAT
+        - CYTORESP
+        - DRCRIND
+        - EMDRESP
+        - HEMAIMP
+        - HEMARESP
+        - HGBRESP
+        - LIVRRESP
+        - METBRESP
+        - METSIND
+        - MJPTHIND
+        - MNPTHIND
+        - MOLRESP
+        - MRDIND
+        - MRDRESP
+        - MRPHRESP
+        - NEURSTAT
+        - NEWLIND
+        - NEWLPROG
+        - NEWLWIND
+        - NTERESP
+        - NTLWIND
+        - NTNERESP
+        - NTRGRESP
+        - OVRLRESP
+        - PATHRESP
+        - PBLTIND
+        - PLATRESP
+        - RDIORESP
+        - SFTSRESP
+        - SPLNRESP
+        - STRUSTAT
+        - SYMPTDTR
+        - TMRESP
+        - TRGNRESP
+        - TRGRESP
+        - TSCDIND
+outcome:
+  message: Value not found in extensible codelist Oncology Response Assessment Test
+    Code (C96782)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C96782
+  codelist_name: Oncology Response Assessment Test Code
+  codelist_submission_value: ONCRTSCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 47
+

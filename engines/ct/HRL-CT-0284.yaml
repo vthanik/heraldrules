@@ -1,0 +1,54 @@
+id: HRL-CT-0284
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CDAI01TC (Crohn's Disease Activity Index Version 1 Questionnaire Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CDAI01TC
+      operator: in
+      value:
+        - CDAI0101
+        - CDAI0102
+        - CDAI0103
+        - CDAI0104
+        - CDAI0105
+        - CDAI0106
+        - CDAI0107
+        - CDAI0108
+        - CDAI0109
+        - CDAI0110
+        - CDAI0111
+        - CDAI0112
+        - CDAI0113
+        - CDAI0114
+        - CDAI0115
+        - CDAI0116
+        - CDAI0117
+        - CDAI0118
+        - CDAI0119
+        - CDAI0120
+        - CDAI0121
+        - CDAI0122
+        - CDAI0123
+outcome:
+  message: Value not found in non-extensible codelist Crohn's Disease Activity Index
+    Version 1 Questionnaire Test Code (C176049)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C176049
+  codelist_name: Crohn's Disease Activity Index Version 1 Questionnaire Test Code
+  codelist_submission_value: CDAI01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 23
+

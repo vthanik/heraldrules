@@ -1,0 +1,179 @@
+id: HRL-CT-0791
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PT01TN (Patient-Reported Outcomes Version of the Common Terminology Criteria
+  for Adverse Events Item Library Version 1.0 Questionnaire Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PT01TN
+      operator: in
+      value:
+        - PT01-Abdominal Pain Frequency
+        - PT01-Abdominal Pain Interference
+        - PT01-Abdominal Pain Severity
+        - PT01-Achieve&Maintain Erection Severity
+        - PT01-Acne Severity
+        - PT01-Anxious Frequency
+        - PT01-Anxious Interference
+        - PT01-Anxious Severity
+        - PT01-Any Other Symptoms Reported
+        - PT01-Bed/Pressure Sores Presence
+        - PT01-Bloating Frequency
+        - PT01-Bloating Severity
+        - PT01-Blurred Vision Interference
+        - PT01-Blurred Vision Severity
+        - PT01-Body Odor Severity
+        - PT01-Breast Swelling&Tenderness Severity
+        - PT01-Bruising Presence
+        - PT01-Chills Frequency
+        - PT01-Chills Severity
+        - PT01-Concentration Problems Interference
+        - PT01-Concentration Problems Severity
+        - PT01-Constipation Severity
+        - PT01-Cough Interference
+        - PT01-Cough Severity
+        - PT01-Cracking Corners of Mouth Severity
+        - PT01-Decreased Appetite Interference
+        - PT01-Decreased Appetite Severity
+        - PT01-Decreased Libido Severity
+        - PT01-Decreased Sweating Presence
+        - PT01-Delayed Orgasm Presence
+        - PT01-Diarrhea Frequency
+        - PT01-Difficulty Swallowing Severity
+        - PT01-Discouraged Frequency
+        - PT01-Discouraged Interference
+        - PT01-Discouraged Severity
+        - PT01-Dizziness Interference
+        - PT01-Dizziness Severity
+        - PT01-Dry Mouth Severity
+        - PT01-Ejaculation Frequency
+        - PT01-Fatigue Interference
+        - PT01-Fatigue Severity
+        - PT01-Fecal Incontinence Frequency
+        - PT01-Fecal Incontinence Interference
+        - PT01-Flashing Lights in Eyes Presence
+        - PT01-Gas Presence
+        - PT01-General Pain Frequency
+        - PT01-General Pain Interference
+        - PT01-General Pain Severity
+        - PT01-Hair Loss Amount
+        - PT01-Hand-Foot Syndrome Severity
+        - PT01-Headache Frequency
+        - PT01-Headache Interference
+        - PT01-Headache Severity
+        - PT01-Heart Palpitations Frequency
+        - PT01-Heart Palpitations Severity
+        - PT01-Heartburn Frequency
+        - PT01-Heartburn Severity
+        - PT01-Hiccups Frequency
+        - PT01-Hiccups Severity
+        - PT01-Hives Presence
+        - PT01-Hoarseness Severity
+        - PT01-Hot Flashes Frequency
+        - PT01-Hot Flashes Severity
+        - PT01-Increased Sweating Frequency
+        - PT01-Increased Sweating Severity
+        - PT01-Insomnia Interference
+        - PT01-Insomnia Severity
+        - PT01-Irregular Menstrual Period Presence
+        - PT01-Itching Severity
+        - PT01-Joint Pain Frequency
+        - PT01-Joint Pain Interference
+        - PT01-Joint Pain Severity
+        - PT01-Memory Problems Interference
+        - PT01-Memory Problems Severity
+        - PT01-Missed Menstrual Period Presence
+        - PT01-Mouth/Throat Sores Interference
+        - PT01-Mouth/Throat Sores Severity
+        - PT01-Muscle Pain Frequency
+        - PT01-Muscle Pain Interference
+        - PT01-Muscle Pain Severity
+        - PT01-Nail Discoloration Presence
+        - PT01-Nail Loss Presence
+        - PT01-Nail Ridging Presence
+        - PT01-Nausea Frequency
+        - PT01-Nausea Severity
+        - PT01-Nosebleed Frequency
+        - PT01-Nosebleed Severity
+        - PT01-Numbness & Tingling Interference
+        - PT01-Numbness & Tingling Severity
+        - PT01-Other Symptom 1 Severity
+        - PT01-Other Symptom 1
+        - PT01-Other Symptom 10 Severity
+        - PT01-Other Symptom 10
+        - PT01-Other Symptom 2 Severity
+        - PT01-Other Symptom 2
+        - PT01-Other Symptom 3 Severity
+        - PT01-Other Symptom 3
+        - PT01-Other Symptom 4 Severity
+        - PT01-Other Symptom 4
+        - PT01-Other Symptom 5 Severity
+        - PT01-Other Symptom 5
+        - PT01-Other Symptom 6 Severity
+        - PT01-Other Symptom 6
+        - PT01-Other Symptom 7 Severity
+        - PT01-Other Symptom 7
+        - PT01-Other Symptom 8 Severity
+        - PT01-Other Symptom 8
+        - PT01-Other Symptom 9 Severity
+        - PT01-Other Symptom 9
+        - PT01-Pain w/Sexual Intercourse Severity
+        - PT01-Pain&Swelling at Inj Site Presence
+        - PT01-Painful Urination Severity
+        - PT01-Radiation Skin Reaction Severity
+        - PT01-Rash Presence
+        - PT01-Ringing in Ears Severity
+        - PT01-Sad Frequency
+        - PT01-Sad Interference
+        - PT01-Sad Severity
+        - PT01-Sensitivity to Sunlight Presence
+        - PT01-Shortness of Breath Interference
+        - PT01-Shortness of Breath Severity
+        - PT01-Skin Darkening Presence
+        - PT01-Skin Dryness Severity
+        - PT01-Stretch Marks Presence
+        - PT01-Swelling Frequency
+        - PT01-Swelling Interference
+        - PT01-Swelling Severity
+        - PT01-Taste Changes Severity
+        - PT01-Unable to Have Orgasm Presence
+        - PT01-Urinary Frequency Frequency
+        - PT01-Urinary Frequency Interference
+        - PT01-Urinary Incontinence Frequency
+        - PT01-Urinary Incontinence Interference
+        - PT01-Urinary Urgency Frequency
+        - PT01-Urinary Urgency Interference
+        - PT01-Urine Color Change Presence
+        - PT01-Vaginal Discharge Amount
+        - PT01-Vaginal Dryness Severity
+        - PT01-Visual Floaters Presence
+        - PT01-Voice Quality Changes Presence
+        - PT01-Vomiting Frequency
+        - PT01-Vomiting Severity
+        - PT01-Watery Eyes Interference
+        - PT01-Watery Eyes Severity
+        - PT01-Wheezing Severity
+outcome:
+  message: Value not found in non-extensible codelist Patient-Reported Outcomes Version
+    of the Common Terminology Criteria for Adverse Events Item Library Version 1.0
+    Questionnaire Test Name (C179941)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C179941
+  codelist_name: Patient-Reported Outcomes Version of the Common Terminology Criteria
+    for Adverse Events Item Library Version 1.0 Questionnaire Test Name
+  codelist_submission_value: PT01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 145
+

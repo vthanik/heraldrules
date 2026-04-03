@@ -1,0 +1,34 @@
+id: HRL-CT-1098
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TIMIFLRS (TIMI Flow Responses) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TIMIFLRS
+      operator: in
+      value:
+        - TIMI GRADE 0
+        - TIMI GRADE 1
+        - TIMI GRADE 2
+        - TIMI GRADE 3
+outcome:
+  message: Value not found in non-extensible codelist TIMI Flow Responses (C101841)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101841
+  codelist_name: TIMI Flow Responses
+  codelist_submission_value: TIMIFLRS
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

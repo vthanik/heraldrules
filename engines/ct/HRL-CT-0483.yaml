@@ -1,0 +1,42 @@
+id: HRL-CT-0483
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAQNA1TC (Functional Assessment Questionnaire-NACC UDS V2.0 Clinical
+  Classification Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAQNA1TC
+      operator: in
+      value:
+        - FAQNA101
+        - FAQNA102
+        - FAQNA103
+        - FAQNA104
+        - FAQNA105
+        - FAQNA106
+        - FAQNA107
+        - FAQNA108
+        - FAQNA109
+        - FAQNA110
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment Questionnaire-NACC
+    UDS V2.0 Clinical Classification Test Code (C111346)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C111346
+  codelist_name: Functional Assessment Questionnaire-NACC UDS V2.0 Clinical Classification
+    Test Code
+  codelist_submission_value: FAQNA1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 10
+

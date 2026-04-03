@@ -1,0 +1,35 @@
+id: HRL-CT-1195
+version: 1
+status: Published
+standard: ADaM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: INPRM (Input Parameter) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: INPRM
+      operator: in
+      value:
+        - BIRTH RATE
+        - MORTALITY PROBABILITY
+        - NET MIGRATION RATE
+        - POPULATION COUNT
+        - PREVALENCE
+        - TRANSITION PROBABILITY
+outcome:
+  message: Value not found in non-extensible codelist Input Parameter (C204410)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204410
+  codelist_name: Input Parameter
+  codelist_submission_value: INPRM
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

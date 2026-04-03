@@ -1,0 +1,60 @@
+id: HRL-CT-1186
+version: 1
+status: Published
+standard: ADaM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CHSFPN (Craig Handicap Assessment and Reporting Technique-Short Form
+  Questionnaires Parameter Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CHSFPN
+      operator: in
+      value:
+        - CHSF-Associates Contacted per Month
+        - CHSF-Away Cognitive Assistance per Day
+        - CHSF-Cognitive Independence Subscore-Analysis
+        - CHSF-Combined Household Income Last Yr
+        - CHSF-Days Out of the House per Week
+        - CHSF-Economic Self-Sufficiency Subscore-Analysis
+        - CHSF-Friends Contacted per Month
+        - CHSF-Home Cognitive Assistance per Day
+        - CHSF-Hours of Home Maintenance per Week
+        - CHSF-Hours of Homemaking per Week
+        - CHSF-Hours of Paid Work per Week
+        - CHSF-Hours of Recreation per Week
+        - CHSF-Hours of Schoolwork per Week
+        - CHSF-Hours Out of Bed per Day
+        - CHSF-Live With Spouse or Signif Other
+        - CHSF-Medical Care Expenses Last Year
+        - CHSF-Mobility Subscore-Analysis
+        - CHSF-Nights Away From Home Last Year
+        - CHSF-Number of People You Live With
+        - CHSF-Number of Relatives You Live With
+        - CHSF-Occupation of Paid Work
+        - CHSF-Occupation Subscore-Analysis
+        - CHSF-Paid Personal Care per Day
+        - CHSF-Physical Independence Subscore-Analysis
+        - CHSF-Social Integration Subscore-Analysis
+        - CHSF-Strangers Spoke with Last Month
+        - CHSF-Total Score-Analysis
+        - CHSF-Unpaid Personal Care per Day
+outcome:
+  message: Value not found in non-extensible codelist Craig Handicap Assessment and
+    Reporting Technique-Short Form Questionnaires Parameter Name (C187457)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C187457
+  codelist_name: Craig Handicap Assessment and Reporting Technique-Short Form Questionnaires
+    Parameter Name
+  codelist_submission_value: CHSFPN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 28
+

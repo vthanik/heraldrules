@@ -1,0 +1,62 @@
+id: HRL-CT-0859
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PANSS1TN (Positive and Negative Syndrome Scale Clinical Classification
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PANSS1TN
+      operator: in
+      value:
+        - PANSS1-Active Social Avoidance
+        - PANSS1-Anxiety
+        - PANSS1-Blunted Affect
+        - PANSS1-Conceptual Disorganization
+        - PANSS1-Delusions
+        - PANSS1-Depression
+        - PANSS1-Difficulty in Abstract Thinking
+        - PANSS1-Disorientation
+        - PANSS1-Disturbance of Volition
+        - PANSS1-Emotional Withdrawal
+        - PANSS1-Excitement
+        - PANSS1-Grandiosity
+        - PANSS1-Guilt Feelings
+        - PANSS1-Hallucinatory Behavior
+        - PANSS1-Hostility
+        - PANSS1-Lack of Judgment and Insight
+        - PANSS1-Lack of Spontaneity
+        - PANSS1-Mannerisms and Posturing
+        - PANSS1-Motor Retardation
+        - PANSS1-Passive/Apathetic Social Withdraw
+        - PANSS1-Poor Attention
+        - PANSS1-Poor Impulse Control
+        - PANSS1-Poor Rapport
+        - PANSS1-Preoccupation
+        - PANSS1-Somatic Concern
+        - PANSS1-Stereotyped Thinking
+        - PANSS1-Suspiciousness/Persecution
+        - PANSS1-Tension
+        - PANSS1-Uncooperativeness
+        - PANSS1-Unusual Thought Content
+outcome:
+  message: Value not found in non-extensible codelist Positive and Negative Syndrome
+    Scale Clinical Classification Test Name (C124685)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124685
+  codelist_name: Positive and Negative Syndrome Scale Clinical Classification Test
+    Name
+  codelist_submission_value: PANSS1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 30
+

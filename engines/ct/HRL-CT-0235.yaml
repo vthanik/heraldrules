@@ -1,0 +1,88 @@
+id: HRL-CT-0235
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSS10TC (Columbia-Suicide Severity Rating Scale Pediatric/Cognitively
+  Impaired Lifetime/Recent Questionnaire Test Code) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSS10TC
+      operator: in
+      value:
+        - CSS1001A
+        - CSS1001B
+        - CSS1001C
+        - CSS1002A
+        - CSS1002B
+        - CSS1002C
+        - CSS1003A
+        - CSS1003B
+        - CSS1003C
+        - CSS1004A
+        - CSS1004B
+        - CSS1004C
+        - CSS1005A
+        - CSS1005B
+        - CSS1005C
+        - CSS1006A
+        - CSS1006B
+        - CSS1006C
+        - CSS1006D
+        - CSS1007A
+        - CSS1007B
+        - CSS1007C
+        - CSS1008A
+        - CSS1008B
+        - CSS1009A
+        - CSS1009B
+        - CSS1009C
+        - CSS1010A
+        - CSS1010B
+        - CSS1011A
+        - CSS1011B
+        - CSS1012A
+        - CSS1012B
+        - CSS1013A
+        - CSS1013B
+        - CSS1013C
+        - CSS1014A
+        - CSS1014B
+        - CSS1015A
+        - CSS1015B
+        - CSS1015C
+        - CSS1016A
+        - CSS1016B
+        - CSS1016C
+        - CSS1017A
+        - CSS1017B
+        - CSS1018A
+        - CSS1018B
+        - CSS1018C
+        - CSS1019A
+        - CSS1019B
+        - CSS1019C
+        - CSS1020A
+        - CSS1020B
+        - CSS1020C
+outcome:
+  message: Value not found in non-extensible codelist Columbia-Suicide Severity Rating
+    Scale Pediatric/Cognitively Impaired Lifetime/Recent Questionnaire Test Code (C113848)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C113848
+  codelist_name: Columbia-Suicide Severity Rating Scale Pediatric/Cognitively Impaired
+    Lifetime/Recent Questionnaire Test Code
+  codelist_submission_value: CSS10TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 55
+

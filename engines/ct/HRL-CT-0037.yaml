@@ -1,0 +1,35 @@
+id: HRL-CT-0037
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: APCH115OR (Acute Physiology and Chronic Health Evaluation II Clinical
+  Classification ORRES for APCH115 TN/TC) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: APCH115OR
+      operator: in
+      value:
+        - for elective postoperative patients
+        - for nonoperative or emergency postoperative patients
+outcome:
+  message: Value not found in non-extensible codelist Acute Physiology and Chronic
+    Health Evaluation II Clinical Classification ORRES for APCH115 TN/TC (C182498)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C182498
+  codelist_name: Acute Physiology and Chronic Health Evaluation II Clinical Classification
+    ORRES for APCH115 TN/TC
+  codelist_submission_value: APCH115OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 2
+

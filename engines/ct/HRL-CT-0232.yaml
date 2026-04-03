@@ -1,0 +1,64 @@
+id: HRL-CT-0232
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSS08TN (Columbia-Suicide Severity Rating Scale Children's Since Last
+  Visit Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSS08TN
+      operator: in
+      value:
+        - CSS08-Aborted Attempt, Describe
+        - CSS08-Aborted/Self-Interrupted Attempt
+        - CSS08-Actual Attempt
+        - CSS08-Actual Attempt, Describe
+        - CSS08-Frequency, Write Response
+        - CSS08-Idea, No Intent, No Plan
+        - CSS08-Idea, No Intent, No Plan, Describe
+        - CSS08-Ideation With Intent No Plan Descr
+        - CSS08-Ideation With Intent, No Plan
+        - CSS08-Ideation With Plan/Intent
+        - CSS08-Ideation With Plan/Intent, Descr
+        - CSS08-Interrupted Attempt
+        - CSS08-Interrupted Attempt, Describe
+        - CSS08-Most Lethal Attempt Damage
+        - CSS08-Most Lethal Attempt Date
+        - CSS08-Most Lethal Attempt Potential
+        - CSS08-Most Severe Ideation
+        - CSS08-Most Severe Ideation, Description
+        - CSS08-Most Severe Ideation, Frequency
+        - CSS08-Non-Specific Suicid Thought, Descr
+        - CSS08-Non-Specific Suicidal Thought
+        - CSS08-Non-suicidal Self-injurious Behav
+        - CSS08-Number of Aborted Attempts
+        - CSS08-Number of Actual Attempts
+        - CSS08-Number of Interrupt Attempts
+        - CSS08-Preparatory Acts/Behavior
+        - CSS08-Preparatory Acts/Behavior, Descr
+        - CSS08-Self-injur Behav, Intent Unknown
+        - CSS08-Suicidal Behavior
+        - CSS08-Suicide
+        - CSS08-Wish to be Dead
+        - CSS08-Wish to be Dead, Describe
+outcome:
+  message: Value not found in non-extensible codelist Columbia-Suicide Severity Rating
+    Scale Children's Since Last Visit Questionnaire Test Name (C111339)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C111339
+  codelist_name: Columbia-Suicide Severity Rating Scale Children's Since Last Visit
+    Questionnaire Test Name
+  codelist_submission_value: CSS08TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 32
+

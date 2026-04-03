@@ -1,0 +1,38 @@
+id: HRL-CT-0093
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ADSD01TC (Asthma Daytime Symptom Diary v1.0 Questionnaire Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ADSD01TC
+      operator: in
+      value:
+        - ADSD0101
+        - ADSD0102
+        - ADSD0103
+        - ADSD0104
+        - ADSD0105
+        - ADSD0106
+        - ADSD0107
+outcome:
+  message: Value not found in non-extensible codelist Asthma Daytime Symptom Diary
+    v1.0 Questionnaire Test Code (C163385)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C163385
+  codelist_name: Asthma Daytime Symptom Diary v1.0 Questionnaire Test Code
+  codelist_submission_value: ADSD01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

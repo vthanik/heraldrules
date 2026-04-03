@@ -1,0 +1,56 @@
+id: HRL-CT-0918
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FIQR01TN (Revised Fibromyalgia Impact Questionnaire Questionnaire Test
+  Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FIQR01TN
+      operator: in
+      value:
+        - FIQR01-Activities Sub-Total
+        - FIQR01-Anxiety
+        - FIQR01-Balance Problems
+        - FIQR01-Brush or Comb Your Hair
+        - FIQR01-Change Bed Sheets
+        - FIQR01-Climb One Flight of Stairs
+        - FIQR01-Depression
+        - FIQR01-Energy
+        - FIQR01-Fibromyalgia Prevented Goals
+        - FIQR01-FIQR Total
+        - FIQR01-Go Shopping for Groceries
+        - FIQR01-Lift/Carry Bag Full of Groceries
+        - FIQR01-Memory Problems
+        - FIQR01-Overall Impact Sub-Total
+        - FIQR01-Overwhelmed by Fibromyalgia
+        - FIQR01-Pain
+        - FIQR01-Prepare a Homemade Meal
+        - FIQR01-Sensitivity Noise/Light/Odor/Cold
+        - FIQR01-Sit in a Chair for 45 Minutes
+        - FIQR01-Stiffness
+        - FIQR01-Symptoms Sub-Total
+        - FIQR01-Tenderness to Touch
+        - FIQR01-Vacuum Scrub or Sweep Floors
+        - FIQR01-Walk Continuously for 20 Minutes
+        - FIQR01-Your Sleep
+outcome:
+  message: Value not found in non-extensible codelist Revised Fibromyalgia Impact
+    Questionnaire Questionnaire Test Name (C103464)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103464
+  codelist_name: Revised Fibromyalgia Impact Questionnaire Questionnaire Test Name
+  codelist_submission_value: FIQR01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

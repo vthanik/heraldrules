@@ -1,0 +1,33 @@
+id: HRL-CT-0100
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ASCVD1TN (Atherosclerotic Cardiovascular Disease 10-Year Risk Estimator
+  Clinical Classification Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ASCVD1TN
+      operator: in
+      value:
+        - ASCVD1-ASCVD 10-Year Risk Score
+outcome:
+  message: Value not found in non-extensible codelist Atherosclerotic Cardiovascular
+    Disease 10-Year Risk Estimator Clinical Classification Test Name (C124665)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124665
+  codelist_name: Atherosclerotic Cardiovascular Disease 10-Year Risk Estimator Clinical
+    Classification Test Name
+  codelist_submission_value: ASCVD1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

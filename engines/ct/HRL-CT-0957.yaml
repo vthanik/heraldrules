@@ -1,0 +1,38 @@
+id: HRL-CT-0957
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SOFA0104OR (Sepsis-related Organ Failure Assessment 27MAR2024 Clinical
+  Classification ORRES for SOFA0104 TN/TC) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SOFA0104OR
+      operator: in
+      value:
+        - Dopamine <= 5; Dobutamine (any dose)
+        - Dopamine > 15; Epinephrine > 0.1; Norepinephrine > 0.1
+        - Dopamine > 5; Epinephrine <= 0.1; Norepinephrine <= 0.1
+        - MAP < 70
+        - MAP >= 70
+outcome:
+  message: Value not found in non-extensible codelist Sepsis-related Organ Failure
+    Assessment 27MAR2024 Clinical Classification ORRES for SOFA0104 TN/TC (C204231)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204231
+  codelist_name: Sepsis-related Organ Failure Assessment 27MAR2024 Clinical Classification
+    ORRES for SOFA0104 TN/TC
+  codelist_submission_value: SOFA0104OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

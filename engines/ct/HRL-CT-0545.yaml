@@ -1,0 +1,46 @@
+id: HRL-CT-0545
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HETESTCD (Holter ECG Test Code) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HETESTCD
+      operator: in
+      value:
+        - AVCOND
+        - AXISVOLT
+        - CHYPTENL
+        - EGCOMP
+        - INTP
+        - IVTIACD
+        - MI
+        - PACEMAKR
+        - RHYNOS
+        - SNRARRY
+        - SPRARRY
+        - SPRTARRY
+        - STSTWUW
+        - TECHQUAL
+        - VTARRY
+        - VTTARRY
+outcome:
+  message: Value not found in extensible codelist Holter ECG Test Code (C120523)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C120523
+  codelist_name: Holter ECG Test Code
+  codelist_submission_value: HETESTCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 16
+

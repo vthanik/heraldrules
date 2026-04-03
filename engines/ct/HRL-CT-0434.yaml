@@ -1,0 +1,53 @@
+id: HRL-CT-0434
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC074TN (Functional Assessment of Cancer Therapy-Bone Pain Version 4
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC074TN
+      operator: in
+      value:
+        - FAC074-Bone Pain Even When I Sit Still
+        - FAC074-Bone Pain Interferes Care Myself
+        - FAC074-Bone Pain Interferes w/My Family
+        - FAC074-Bone Pain Interferes w/My Sleep
+        - FAC074-Bone Pain Interferes w/Social
+        - FAC074-Certain Parts of Body Have Pain
+        - FAC074-Content With Quality of My Life
+        - FAC074-Difficulty Coping w/My Bone Pain
+        - FAC074-Difficulty Working Due to Pain
+        - FAC074-How Many Places in Body Felt Pain
+        - FAC074-Hurts When Put Weight/Pressure on
+        - FAC074-I am Frustrated by My Bone Pain
+        - FAC074-I Feel Depressed about Bone Pain
+        - FAC074-I Have Bone Pain
+        - FAC074-I Worry Bone Pain Will Get Worse
+        - FAC074-Need Help Doing Usual Activities
+        - FAC074-Pain Interferes Vigorous Activity
+        - FAC074-Rest During Day Due to Bone Pain
+        - FAC074-Total Score
+        - FAC074-Trouble Concentrating Due to Pain
+        - FAC074-Trouble Walking Because Bone Pain
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Bone Pain Version 4 Questionnaire Test Name (C179939)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C179939
+  codelist_name: Functional Assessment of Cancer Therapy-Bone Pain Version 4 Questionnaire
+    Test Name
+  codelist_submission_value: FAC074TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 21
+

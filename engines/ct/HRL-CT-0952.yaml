@@ -1,0 +1,33 @@
+id: HRL-CT-0952
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SDTMDVRS (SDTMIG Medical Device Version Response) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SDTMDVRS
+      operator: in
+      value:
+        - '1.0'
+        - '1.1'
+outcome:
+  message: Value not found in extensible codelist SDTMIG Medical Device Version Response
+    (C189266)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C189266
+  codelist_name: SDTMIG Medical Device Version Response
+  codelist_submission_value: SDTMDVRS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 2
+

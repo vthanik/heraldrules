@@ -1,0 +1,35 @@
+id: HRL-CT-0022
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ACSPCAT (Acute Coronary Syndrome Presentation Category) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ACSPCAT
+      operator: in
+      value:
+        - NON-ST ELEVATION MYOCARDIAL INFARCTION
+        - ST ELEVATION MYOCARDIAL INFARCTION
+        - STABLE ANGINA
+        - UNSTABLE ANGINA
+outcome:
+  message: Value not found in non-extensible codelist Acute Coronary Syndrome Presentation
+    Category (C101865)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101865
+  codelist_name: Acute Coronary Syndrome Presentation Category
+  codelist_submission_value: ACSPCAT
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

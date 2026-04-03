@@ -1,0 +1,58 @@
+id: HRL-CT-0390
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR28TN (European Organization for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Non-Muscle-Invasive Bladder Cancer 24 Items Test
+  Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR28TN
+      operator: in
+      value:
+        - EOR28-Bloated Feeling in Abdomen
+        - EOR28-Difficult Sleep Frequently Urinate
+        - EOR28-Difficulty Going Out Need Toilet
+        - EOR28-Extent Interested in Sex
+        - EOR28-Extent Sexually Active
+        - EOR28-Feel Ill/Unwell
+        - EOR28-Fever
+        - EOR28-Flatulence/Gas
+        - EOR28-Had to Urinate Freq During Day
+        - 'EOR28-Men: Diff Gain/Maintain Erection'
+        - 'EOR28-Men: Ejaculation Problems'
+        - EOR28-Pain/Burning When Urinating
+        - EOR28-Pass Urine Hurry to Get to Toilet
+        - EOR28-Sexual Women:Dry Vagina Intercours
+        - 'EOR28-Sexual: Extent Sex Enjoyable'
+        - 'EOR28-Sexual: Uncomfortable Sex Intimate'
+        - EOR28-Sexual:Worried Contaminate Partner
+        - EOR28-Trouble Arranging Life Appointment
+        - EOR28-Unintentional Release of Urine
+        - EOR28-Urinate Frequently at Night
+        - EOR28-Worried About Health in Future
+        - EOR28-Worry About Future Treatments
+        - EOR28-Worry About Repeated Treatments
+        - EOR28-Worry About Results Exam & Tests
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Non-Muscle-Invasive
+    Bladder Cancer 24 Items Test Name (C219730)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219730
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Non-Muscle-Invasive Bladder Cancer 24 Items Test Name
+  codelist_submission_value: EOR28TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 24
+

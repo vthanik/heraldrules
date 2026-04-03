@@ -1,0 +1,58 @@
+id: HRL-CT-0831
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL02TN (Pediatric Quality of Life Neuromuscular Module Version 3 Young
+  Adult Parent Report Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL02TN
+      operator: in
+      value:
+        - PQL02-Back Feels Stiff
+        - PQL02-Do Not Have Equipment Need
+        - PQL02-Family Has Lot of Problems
+        - PQL02-Feel Tired
+        - PQL02-Get Hurt Accidentally
+        - PQL02-Get Sick Easily
+        - PQL02-Get Sores and/or Rashes
+        - PQL02-Hands Are Weak
+        - PQL02-Hard Ask Doctors/Nurses Questions
+        - PQL02-Hard Explain Illness to People
+        - PQL02-Hard for Family to Plan Activities
+        - PQL02-Hard for Family to Rest
+        - PQL02-Hard Tell Doctors/Nurses How Feel
+        - PQL02-Hard to Breathe
+        - PQL02-Hard to Gain/Lose Weight
+        - PQL02-Hard to Go Places With Equipment
+        - PQL02-Hard to Swallow Food
+        - PQL02-Hard to Turn During Night
+        - PQL02-Hard to Use Bathroom
+        - PQL02-Hard to Use Hands
+        - PQL02-Legs Hurt
+        - PQL02-Long Time to Bathe/Shower
+        - PQL02-Money Problem in Our Family
+        - PQL02-Take Long Time to Eat
+        - PQL02-Wake Up Tired
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Version 3 Young Adult Parent Report Questionnaire Test Name (C138252)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138252
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Version 3 Young Adult
+    Parent Report Questionnaire Test Name
+  codelist_submission_value: PQL02TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

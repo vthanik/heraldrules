@@ -1,0 +1,58 @@
+id: HRL-CT-0811
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL18TN (Pediatric Quality of Life Neuromuscular Module Acute Version
+  3 Toddler Parent Report Questionnaire Test Name) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL18TN
+      operator: in
+      value:
+        - PQL18-Back Feels Stiff
+        - PQL18-Do Not Have Equipment Need
+        - PQL18-Family Has Lot of Problems
+        - PQL18-Feel Tired
+        - PQL18-Get Hurt Accidentally
+        - PQL18-Get Sick Easily
+        - PQL18-Get Sores and/or Rashes
+        - PQL18-Hands Are Weak
+        - PQL18-Hard Ask Doctors/Nurses Questions
+        - PQL18-Hard Explain Illness to People
+        - PQL18-Hard for Family to Plan Activities
+        - PQL18-Hard for Family to Rest
+        - PQL18-Hard Tell Doctors/Nurses How Feel
+        - PQL18-Hard to Breathe
+        - PQL18-Hard to Gain/Lose Weight
+        - PQL18-Hard to Go Places With Equipment
+        - PQL18-Hard to Swallow Food
+        - PQL18-Hard to Turn During Night
+        - PQL18-Hard to Use Bathroom
+        - PQL18-Hard to Use Hands
+        - PQL18-Legs Hurt
+        - PQL18-Long Time to Bathe/Shower
+        - PQL18-Money Problem in Our Family
+        - PQL18-Take Long Time to Eat
+        - PQL18-Wake Up Tired
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Acute Version 3 Toddler Parent Report Questionnaire Test Name (C138228)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138228
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Acute Version 3 Toddler
+    Parent Report Questionnaire Test Name
+  codelist_submission_value: PQL18TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

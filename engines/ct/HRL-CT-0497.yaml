@@ -1,0 +1,40 @@
+id: HRL-CT-0497
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GFANMET (Genomic Findings Analytical Method Calculation Formula) must
+  contain valid extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GFANMET
+      operator: in
+      value:
+        - ADME VARIANT PROFILE
+        - COLORADO SCORING METHOD FOR EGFR GENE AMPLIFICATION 2006 ALGORITHM
+        - COLORADO SCORING METHOD FOR EGFR GENE AMPLIFICATION 2009 ALGORITHM
+        - COUNTS PER MILLION FORMULA
+        - DIFFERENCES OF LOG2 INTENSITIES FORMULA
+        - FRAGMENTS PER KILOBASE MILLION FORMULA
+        - IFN-1 GENE SIGNATURE
+        - READS PER KILOBASE MILLION FORMULA
+        - TRANSCRIPTS PER MILLION FORMULA
+outcome:
+  message: Value not found in extensible codelist Genomic Findings Analytical Method
+    Calculation Formula (C181181)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C181181
+  codelist_name: Genomic Findings Analytical Method Calculation Formula
+  codelist_submission_value: GFANMET
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 9
+

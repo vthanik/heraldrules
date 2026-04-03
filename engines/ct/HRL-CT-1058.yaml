@@ -1,0 +1,33 @@
+id: HRL-CT-1058
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TSTMTHSN (Test Method Sensitivity) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TSTMTHSN
+      operator: in
+      value:
+        - HIGH SENSITIVITY
+        - LOW SENSITIVITY
+        - ULTRA-HIGH SENSITIVITY
+outcome:
+  message: Value not found in extensible codelist Test Method Sensitivity (C179589)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C179589
+  codelist_name: Test Method Sensitivity
+  codelist_submission_value: TSTMTHSN
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 3
+

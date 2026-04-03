@@ -1,0 +1,47 @@
+id: HRL-CT-0139
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BPI2TN (Brief Pain Inventory Short Form Questionnaire Test Name) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BPI2TN
+      operator: in
+      value:
+        - BPI2-Area Hurts Most
+        - BPI2-Areas of Pain
+        - BPI2-Pain at its Least in Last 24 Hours
+        - BPI2-Pain at its Worst in Last 24 Hours
+        - BPI2-Pain Interfered Enjoyment of Life
+        - BPI2-Pain Interfered General Activity
+        - BPI2-Pain Interfered Walking Ability
+        - BPI2-Pain Interfered with Mood
+        - BPI2-Pain Interfered with Normal Work
+        - BPI2-Pain Interfered with Relations
+        - BPI2-Pain Interfered with Sleep
+        - BPI2-Pain on the Average
+        - BPI2-Pain Other Than Everyday Kinds
+        - BPI2-Pain Right Now
+        - BPI2-Relief Pain Treatments Provided
+        - BPI2-Treatments Receiving for Pain
+outcome:
+  message: Value not found in non-extensible codelist Brief Pain Inventory Short Form
+    Questionnaire Test Name (C100163)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100163
+  codelist_name: Brief Pain Inventory Short Form Questionnaire Test Name
+  codelist_submission_value: BPI2TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 16
+

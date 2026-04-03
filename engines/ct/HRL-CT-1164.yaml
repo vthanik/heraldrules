@@ -1,0 +1,33 @@
+id: HRL-CT-1164
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: WHIVS2TC (WHO Clinical Staging of HIV/AIDS for Children Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: WHIVS2TC
+      operator: in
+      value:
+        - WHIVS201
+outcome:
+  message: Value not found in non-extensible codelist WHO Clinical Staging of HIV/AIDS
+    for Children Clinical Classification Test Code (C124676)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124676
+  codelist_name: WHO Clinical Staging of HIV/AIDS for Children Clinical Classification
+    Test Code
+  codelist_submission_value: WHIVS2TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

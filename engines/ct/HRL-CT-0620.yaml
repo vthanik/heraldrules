@@ -1,0 +1,42 @@
+id: HRL-CT-0620
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: KFSS1TN (Kurtzke Functional Systems Scores Clinical Classification Test
+  Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: KFSS1TN
+      operator: in
+      value:
+        - KFSS1-Bowel and Bladder Functions
+        - KFSS1-Brain Stem Functions
+        - KFSS1-Cerebellar Functions
+        - KFSS1-Cerebral or Mental Functions
+        - KFSS1-Other Functions Specify
+        - KFSS1-Other Functions
+        - KFSS1-Presence of Temporal Pallor
+        - KFSS1-Pyramidal Functions
+        - KFSS1-Sensory Functions
+        - KFSS1-Visual or Optic Functions
+        - KFSS1-Weakness Interferes With Testing
+outcome:
+  message: Value not found in non-extensible codelist Kurtzke Functional Systems Scores
+    Clinical Classification Test Name (C112442)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C112442
+  codelist_name: Kurtzke Functional Systems Scores Clinical Classification Test Name
+  codelist_submission_value: KFSS1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 11
+

@@ -1,0 +1,87 @@
+id: HRL-CT-0702
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MSQL1TC (Multiple Sclerosis Quality of Life-54 Instrument Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MSQL1TC
+      operator: in
+      value:
+        - MSQL101
+        - MSQL102
+        - MSQL103
+        - MSQL104
+        - MSQL105
+        - MSQL106
+        - MSQL107
+        - MSQL108
+        - MSQL109
+        - MSQL110
+        - MSQL111
+        - MSQL112
+        - MSQL113
+        - MSQL114
+        - MSQL115
+        - MSQL116
+        - MSQL117
+        - MSQL118
+        - MSQL119
+        - MSQL120
+        - MSQL121
+        - MSQL122
+        - MSQL123
+        - MSQL124
+        - MSQL125
+        - MSQL126
+        - MSQL127
+        - MSQL128
+        - MSQL129
+        - MSQL130
+        - MSQL131
+        - MSQL132
+        - MSQL133
+        - MSQL134
+        - MSQL135
+        - MSQL136
+        - MSQL137
+        - MSQL138
+        - MSQL139
+        - MSQL140
+        - MSQL141
+        - MSQL142
+        - MSQL143
+        - MSQL144
+        - MSQL145
+        - MSQL146
+        - MSQL147M
+        - MSQL147W
+        - MSQL148
+        - MSQL149
+        - MSQL150
+        - MSQL151
+        - MSQL152
+        - MSQL153
+        - MSQL154
+outcome:
+  message: Value not found in non-extensible codelist Multiple Sclerosis Quality of
+    Life-54 Instrument Questionnaire Test Code (C113860)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C113860
+  codelist_name: Multiple Sclerosis Quality of Life-54 Instrument Questionnaire Test
+    Code
+  codelist_submission_value: MSQL1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 55
+

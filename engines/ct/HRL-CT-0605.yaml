@@ -1,0 +1,41 @@
+id: HRL-CT-0605
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: KFSS105OR (Kurtzke Functional System Scores Clinical Classification ORRES
+  for KFSS105 TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: KFSS105OR
+      operator: in
+      value:
+        - Frequent urinary incontinence
+        - In need of almost constant catheterization
+        - Loss of bladder function
+        - Loss of bowel and bladder function
+        - Mild urinary hesitancy, urgency, or retention
+        - Moderate hesitancy, urgency, retention of bowel or bladder, or rare urinary
+          incontinence
+        - Normal
+        - Unknown
+outcome:
+  message: Value not found in non-extensible codelist Kurtzke Functional System Scores
+    Clinical Classification ORRES for KFSS105 TN/TC (C182480)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C182480
+  codelist_name: Kurtzke Functional System Scores Clinical Classification ORRES for
+    KFSS105 TN/TC
+  codelist_submission_value: KFSS105OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 8
+

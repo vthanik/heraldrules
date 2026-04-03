@@ -1,0 +1,44 @@
+id: HRL-CT-0947
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DTHDX (SDTM Death Diagnosis and Details Test Name) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DTHDX
+      operator: in
+      value:
+        - Age at Death
+        - Autopsy Indicator
+        - Cond Under Study Contrib to Death Ind
+        - Death Certificate Obtained Indicator
+        - Death Expected Indicator
+        - Death Witnessed Indicator
+        - Hospital Medical Record Obtained Ind
+        - Hospitalized at Time of Death Indicator
+        - Information Source for Cause of Death
+        - Location of Death
+        - Primary Cause of Death
+        - Secondary Cause of Death
+        - Sudden Death Indicator
+outcome:
+  message: Value not found in extensible codelist SDTM Death Diagnosis and Details
+    Test Name (C116107)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C116107
+  codelist_name: SDTM Death Diagnosis and Details Test Name
+  codelist_submission_value: DTHDX
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 13
+

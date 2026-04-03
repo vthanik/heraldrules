@@ -1,0 +1,69 @@
+id: HRL-CT-0227
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSS06TC (Columbia-Suicide Severity Rating Scale Children's Baseline Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSS06TC
+      operator: in
+      value:
+        - CSS0601
+        - CSS0601A
+        - CSS0602
+        - CSS0602A
+        - CSS0603
+        - CSS0603A
+        - CSS0604
+        - CSS0604A
+        - CSS0605
+        - CSS0605A
+        - CSS0606
+        - CSS0606A
+        - CSS0607
+        - CSS0607A
+        - CSS0608
+        - CSS0609
+        - CSS0609A
+        - CSS0610
+        - CSS0611
+        - CSS0612
+        - CSS0613
+        - CSS0613A
+        - CSS0614
+        - CSS0615
+        - CSS0615A
+        - CSS0616
+        - CSS0616A
+        - CSS0617
+        - CSS0618A
+        - CSS0618B
+        - CSS0618C
+        - CSS0619A
+        - CSS0619B
+        - CSS0619C
+        - CSS0620A
+        - CSS0620B
+        - CSS0620C
+outcome:
+  message: Value not found in non-extensible codelist Columbia-Suicide Severity Rating
+    Scale Children's Baseline Questionnaire Test Code (C111336)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C111336
+  codelist_name: Columbia-Suicide Severity Rating Scale Children's Baseline Questionnaire
+    Test Code
+  codelist_submission_value: CSS06TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 37
+

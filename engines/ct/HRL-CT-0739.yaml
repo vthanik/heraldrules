@@ -1,0 +1,45 @@
+id: HRL-CT-0739
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: NSCLC1TC (Non-Small Cell Lung Cancer Symptom Assessment Questionnaire
+  v1.0 Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: NSCLC1TC
+      operator: in
+      value:
+        - NSCLC101
+        - NSCLC102
+        - NSCLC103
+        - NSCLC104
+        - NSCLC105
+        - NSCLC106
+        - NSCLC107
+        - NSCLC108
+        - NSCLC109
+        - NSCLC110
+        - NSCLC111
+        - NSCLC112
+        - NSCLC113
+outcome:
+  message: Value not found in non-extensible codelist Non-Small Cell Lung Cancer Symptom
+    Assessment Questionnaire v1.0 Questionnaire Test Code (C154455)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C154455
+  codelist_name: Non-Small Cell Lung Cancer Symptom Assessment Questionnaire v1.0
+    Questionnaire Test Code
+  codelist_submission_value: NSCLC1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 13
+

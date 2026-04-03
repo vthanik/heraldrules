@@ -1,0 +1,107 @@
+id: HRL-CT-1133
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TRTESTCD (Tumor or Lesion Properties Test Code) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TRTESTCD
+      operator: in
+      value:
+        - ACBSPPD
+        - ACHNAD
+        - ACNDOREN
+        - ACNSD
+        - ACNSPPD
+        - ACPPDNLD
+        - ACPPDNLP
+        - AREA
+        - BMUPTAKE
+        - BNLNUM
+        - CALCFIND
+        - DIAMETER
+        - FDP5PS
+        - LDIAM
+        - LESELESV
+        - LESERYSV
+        - LESFLIND
+        - LESRVIND
+        - LESSCIND
+        - LESSCLSV
+        - LESTHICK
+        - LMBFLIND
+        - LMNDEXAM
+        - LMNDPNUM
+        - LNSTATE
+        - LPERP
+        - LRISCIND
+        - LRVCLIND
+        - MTBIINTP
+        - NBNL2IND
+        - NBNLNUM
+        - NEWCONF
+        - ORENLQN
+        - ORSTATE
+        - ORVERLN
+        - OTRCUPCB
+        - OTRCUPCN
+        - PALPSTAT
+        - PBNL2IND
+        - PCBPPD
+        - PCBSD
+        - PCBSLD
+        - PCBSOREN
+        - PCBSPPD
+        - PCBSV
+        - PCHGBL
+        - PCHGNAD
+        - PCNDOREN
+        - PCNPPD
+        - PCNSD
+        - PCNSLD
+        - PCNSPPD
+        - PCNSV
+        - PPD
+        - RADIODEN
+        - SULMAX
+        - SULMEAN
+        - SULPEAK
+        - SUMDIAM
+        - SUMLDIAM
+        - SUMLPERP
+        - SUMNLNLD
+        - SUMNPLD
+        - SUMPPD
+        - SUMVDIAM
+        - SUMVOL
+        - SUVMAX
+        - SUVMEAN
+        - SUVMIN
+        - SUVPEAK
+        - TUMSTATE
+        - VDIAM
+        - VOLUME
+        - VSLFLIND
+        - VSLPIND
+        - VSLRVIND
+outcome:
+  message: Value not found in extensible codelist Tumor or Lesion Properties Test
+    Code (C96779)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C96779
+  codelist_name: Tumor or Lesion Properties Test Code
+  codelist_submission_value: TRTESTCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 76
+

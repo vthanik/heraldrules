@@ -1,0 +1,72 @@
+id: HRL-CT-0428
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC062TN (Functional Assessment of Cancer Therapy-Biologic Response Modifiers
+  Version 4 Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC062TN
+      operator: in
+      value:
+        - FAC062-Bothered by Treatment Side Effect
+        - FAC062-Content With Quality of My Life
+        - FAC062-Enjoy Things I Usually Do for Fun
+        - FAC062-Get Emotional Support From Family
+        - FAC062-I Am Able to Enjoy Life
+        - FAC062-I Am Able to Work
+        - FAC062-I Am Bothered by Fevers
+        - FAC062-I Am Bothered by Sweating
+        - FAC062-I Am Bothered by the Chills
+        - FAC062-I Am Forced to Spend Time in Bed
+        - FAC062-I Am Satisfied With My Sex Life
+        - FAC062-I Am Sleeping Well
+        - FAC062-I Feel Close to My Friends
+        - FAC062-I Feel Close to My Partner
+        - FAC062-I Feel Ill
+        - FAC062-I Feel Motivated to Do Things
+        - FAC062-I Feel Nervous
+        - FAC062-I Feel Sad
+        - FAC062-I Feel Weak All Over
+        - FAC062-I Get Annoyed Easily
+        - FAC062-I Get Depressed Easily
+        - FAC062-I Get Support From My Friends
+        - FAC062-I Get Tired Easily
+        - FAC062-I Have a Good Appetite
+        - FAC062-I Have a Lack of Energy
+        - FAC062-I Have Accepted My Illness
+        - FAC062-I Have Emotional Ups and Downs
+        - FAC062-I Have Nausea
+        - FAC062-I Have Pain in My Joints
+        - FAC062-I Have Pain
+        - FAC062-I Have Trouble Concentrating
+        - FAC062-I Have Trouble Remembering Things
+        - FAC062-I Worry About Dying
+        - FAC062-Losing Hope Against Illness
+        - FAC062-My Family Has Accepted My Illness
+        - FAC062-My Work Is Fulfilling
+        - FAC062-Satisfied Communication Illness
+        - FAC062-Satisfied With How I Am Coping
+        - FAC062-Trouble Meeting Needs of Family
+        - FAC062-Worry My Condition Will Get Worse
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Biologic Response Modifiers Version 4 Questionnaire Test Name (C150777)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150777
+  codelist_name: Functional Assessment of Cancer Therapy-Biologic Response Modifiers
+    Version 4 Questionnaire Test Name
+  codelist_submission_value: FAC062TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 40
+

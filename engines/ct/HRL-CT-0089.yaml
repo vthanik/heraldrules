@@ -1,0 +1,37 @@
+id: HRL-CT-0089
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ASEX02TN (Arizona Sexual Experiences Scale - Male Questionnaire Test
+  Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ASEX02TN
+      operator: in
+      value:
+        - ASEX02-Comments
+        - ASEX02-Keep Erection
+        - ASEX02-Orgasms Satisfying
+        - ASEX02-Reach Orgasm
+        - ASEX02-Sex Drive
+        - ASEX02-Sexually Aroused
+outcome:
+  message: Value not found in non-extensible codelist Arizona Sexual Experiences Scale
+    - Male Questionnaire Test Name (C125742)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C125742
+  codelist_name: Arizona Sexual Experiences Scale - Male Questionnaire Test Name
+  codelist_submission_value: ASEX02TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

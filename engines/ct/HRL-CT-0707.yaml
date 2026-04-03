@@ -1,0 +1,52 @@
+id: HRL-CT-0707
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC028TN (National Comprehensive Cancer Network/Functional Assessment
+  of Cancer Therapy-Bladder Symptom Index-18 Version 2 Questionnaire Test Name) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC028TN
+      operator: in
+      value:
+        - FAC028-Able to Have/Maintain Erection
+        - FAC028-Bothered by Treatment Side Effect
+        - FAC028-Content With Quality of My Life
+        - FAC028-Have Trouble Controlling My Urine
+        - FAC028-I Am Able to Enjoy Life
+        - FAC028-I Am Losing Weight
+        - FAC028-I Am Sleeping Well
+        - FAC028-I Feel Ill
+        - FAC028-I Feel Light-headed
+        - FAC028-I Feel Sad
+        - FAC028-I Feel Weak All Over
+        - FAC028-I Have a Good Appetite
+        - FAC028-I Have a Lack of Energy
+        - FAC028-I Have Control of My Bowels
+        - FAC028-I Have Nausea
+        - FAC028-I Have Pain
+        - FAC028-Trouble Meeting Needs of Family
+        - FAC028-Worry My Condition Will Get Worse
+outcome:
+  message: Value not found in non-extensible codelist National Comprehensive Cancer
+    Network/Functional Assessment of Cancer Therapy-Bladder Symptom Index-18 Version
+    2 Questionnaire Test Name (C129091)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C129091
+  codelist_name: National Comprehensive Cancer Network/Functional Assessment of Cancer
+    Therapy-Bladder Symptom Index-18 Version 2 Questionnaire Test Name
+  codelist_submission_value: FAC028TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 18
+

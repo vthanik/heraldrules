@@ -1,0 +1,51 @@
+id: HRL-CT-0378
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR29TN (European Organization for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Chronic Lymphocytic Leukaemia 17 Items Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR29TN
+      operator: in
+      value:
+        - EOR29-Aches/Pain in Bones
+        - EOR29-Aches/Pains in Muscles/Joints
+        - EOR29-Dry Mouth
+        - EOR29-Felt Drowsy
+        - EOR29-Felt Ill/Unwell
+        - EOR29-Lack of Energy
+        - EOR29-Muscle Weakness
+        - EOR29-Night Sweats
+        - EOR29-Problems at Work Due to Disease
+        - EOR29-Shortness of Breath on Exertion
+        - EOR29-Sudden Tiredness
+        - EOR29-Worried About Becoming Dependent
+        - EOR29-Worried About Get Another Cancer
+        - EOR29-Worried About Health in Future
+        - EOR29-Worried About Recurrence Disease
+        - EOR29-Worried Not Able Continue Working
+        - EOR29-Worried Treatment Caus Future Prob
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Chronic Lymphocytic
+    Leukaemia 17 Items Test Name (C219720)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219720
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Chronic Lymphocytic Leukaemia 17 Items Test Name
+  codelist_submission_value: EOR29TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 17
+

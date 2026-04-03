@@ -1,0 +1,71 @@
+id: HRL-CT-1069
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC023TN (The Functional Assessment of Cancer Therapy-Prostate Version
+  4 Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC023TN
+      operator: in
+      value:
+        - FAC023-Able to Have/Maintain Erection
+        - FAC023-Bothered by Treatment Side Effect
+        - FAC023-Certain Parts of Body Have Pain
+        - FAC023-Content With Quality of My Life
+        - FAC023-Enjoy Things I Usually Do for Fun
+        - FAC023-Get Emotional Support From Family
+        - FAC023-Have Aches/Pains That Bother Me
+        - FAC023-I Am Able to Enjoy Life
+        - FAC023-I Am Able to Feel Like a Man
+        - FAC023-I Am Able to Work
+        - FAC023-I Am Forced to Spend Time in Bed
+        - FAC023-I Am Losing Weight
+        - FAC023-I Am Satisfied With My Sex Life
+        - FAC023-I Am Sleeping Well
+        - FAC023-I Feel Close to My Friends
+        - FAC023-I Feel Close to My Partner
+        - FAC023-I Feel Ill
+        - FAC023-I Feel Nervous
+        - FAC023-I Feel Sad
+        - FAC023-I Get Support From My Friends
+        - FAC023-I Have a Good Appetite
+        - FAC023-I Have a Lack of Energy
+        - FAC023-I Have Accepted My Illness
+        - FAC023-I Have Difficulty Urinating
+        - FAC023-I Have Nausea
+        - FAC023-I Have Pain
+        - FAC023-I Have Trouble Moving My Bowels
+        - FAC023-I Urinate More Frequently
+        - FAC023-I Worry About Dying
+        - FAC023-Losing Hope Against Illness
+        - FAC023-My Family Has Accepted My Illness
+        - FAC023-My Work Is Fulfilling
+        - FAC023-Pain Keeps Me From Doing Things
+        - FAC023-Problem Urinating Limits Activity
+        - FAC023-Satisfied Communication Illness
+        - FAC023-Satisfied With Comfort Level
+        - FAC023-Satisfied With How I Am Coping
+        - FAC023-Trouble Meeting Needs of Family
+        - FAC023-Worry My Condition Will Get Worse
+outcome:
+  message: Value not found in non-extensible codelist The Functional Assessment of
+    Cancer Therapy-Prostate Version 4 Questionnaire Test Name (C127357)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C127357
+  codelist_name: The Functional Assessment of Cancer Therapy-Prostate Version 4 Questionnaire
+    Test Name
+  codelist_submission_value: FAC023TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 39
+

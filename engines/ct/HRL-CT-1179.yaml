@@ -1,0 +1,73 @@
+id: HRL-CT-1179
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: WD6TN (World Health Organization Disability Assessment Schedule 2.0 -
+  36-Item Proxy Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: WD6TN
+      operator: in
+      value:
+        - WD6-Care of Household Responsibilities
+        - WD6-Concentrating for Ten Minutes
+        - WD6-Days Unable to Carry Out Activities
+        - WD6-Dealing With People Does Not Know
+        - WD6-Doing Important Household Tasks
+        - WD6-Doing Important Work/School Tasks
+        - WD6-Drain on Financial Resources
+        - WD6-Eating
+        - WD6-Emotionally Affected by Health
+        - WD6-Finding Solutions to Problems
+        - WD6-Get Along With People Close to Him
+        - WD6-Getting All Work Done You Need
+        - WD6-Getting Dressed
+        - WD6-Getting Household Work Done Needed
+        - WD6-Getting Household Work Done Quickly
+        - WD6-Getting Out of Their Home
+        - WD6-Getting Work Done Quickly as Needed
+        - WD6-How Many Days Difficulties Present
+        - WD6-How Many Days Reduce Activities
+        - WD6-I Am (Fill in Blank) of This Person
+        - WD6-Learning a New Task
+        - WD6-Maintaining a Friendship
+        - WD6-Making New Friends
+        - WD6-Moving Around Inside Their Home
+        - WD6-Problem Because of Barriers in World
+        - WD6-Problem Did Your Family Have
+        - WD6-Problem Doing Things for Relaxation
+        - WD6-Problem Joining Community Activities
+        - WD6-Problem Living with Dignity
+        - WD6-Remembering to Do Important Things
+        - WD6-Sexual Activities
+        - WD6-Standing for Long Periods
+        - WD6-Standing Up From Sitting Down
+        - WD6-Starting/Maintaining Conversation
+        - WD6-Staying by Him/Herself a Few Days
+        - WD6-Their Day-to-Day Work/School
+        - WD6-Time Spend on Your Health Condition
+        - WD6-Understanding What People Say
+        - WD6-Walking a Long Distance
+        - WD6-Washing His/Her Whole Body
+outcome:
+  message: Value not found in non-extensible codelist World Health Organization Disability
+    Assessment Schedule 2.0 - 36-Item Proxy Questionnaire Test Name (C130270)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130270
+  codelist_name: World Health Organization Disability Assessment Schedule 2.0 - 36-Item
+    Proxy Questionnaire Test Name
+  codelist_submission_value: WD6TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 40
+

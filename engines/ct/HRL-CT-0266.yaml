@@ -1,0 +1,35 @@
+id: HRL-CT-0266
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CADRISK (Coronary Artery Disease Risk) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CADRISK
+      operator: in
+      value:
+        - HIGH CAD RISK
+        - INTERMEDIATE CAD RISK
+        - KNOWN CAD
+        - LOW CAD RISK
+outcome:
+  message: Value not found in non-extensible codelist Coronary Artery Disease Risk
+    (C101849)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101849
+  codelist_name: Coronary Artery Disease Risk
+  codelist_submission_value: CADRISK
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

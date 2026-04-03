@@ -1,0 +1,92 @@
+id: HRL-CT-0226
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSS04TN (Columbia-Suicide Severity Rating Scale Baseline/Screening Version
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSS04TN
+      operator: in
+      value:
+        - CSS04-Aborted Attempt, Describe
+        - CSS04-Aborted Attempt-Life
+        - CSS04-Aborted Attempt-P_Y
+        - CSS04-Actual Attempt, Describe
+        - CSS04-Actual Attempt-Life
+        - CSS04-Actual Attempt-P_Y
+        - CSS04-First Attempt Damage
+        - CSS04-First Attempt Date
+        - CSS04-First Attempt Potential
+        - CSS04-Idea, Intent, No Plan, Describe
+        - CSS04-Idea, Intent, No Plan-Life
+        - CSS04-Idea, Intent, No Plan-P_M
+        - CSS04-Idea, No Intent, No Plan, Describe
+        - CSS04-Idea, No Intent, No Plan-Life
+        - CSS04-Idea, No Intent, No Plan-P_M
+        - CSS04-Idea, Plan, Intent, Describe
+        - CSS04-Idea, Plan, Intent-Life
+        - CSS04-Idea, Plan, Intent-P_M
+        - CSS04-Interrupted Attempt, Describe
+        - CSS04-Interrupted Attempt-Life
+        - CSS04-Interrupted Attempt-P_Y
+        - CSS04-Most Lethal Attempt Damage
+        - CSS04-Most Lethal Attempt Date
+        - CSS04-Most Lethal Attempt Potential
+        - CSS04-Most Recent Attempt Damage
+        - CSS04-Most Recent Attempt Date
+        - CSS04-Most Recent Attempt Potential
+        - CSS04-Most Severe Idea, Control-Life
+        - CSS04-Most Severe Idea, Control-P_M
+        - CSS04-Most Severe Idea, Desc-Life
+        - CSS04-Most Severe Idea, Desc-P_M
+        - CSS04-Most Severe Idea, Deterrents-Life
+        - CSS04-Most Severe Idea, Deterrents-P_M
+        - CSS04-Most Severe Idea, Duration-Life
+        - CSS04-Most Severe Idea, Duration-P_M
+        - CSS04-Most Severe Idea, Frequency-Life
+        - CSS04-Most Severe Idea, Frequency-P_M
+        - CSS04-Most Severe Idea, Reasons-Life
+        - CSS04-Most Severe Idea, Reasons-P_M
+        - CSS04-Most Severe Idea-Life
+        - CSS04-Most Severe Idea-P_M
+        - CSS04-Non-Spec Suicid Thought, Describe
+        - CSS04-Non-Spec Suicid Thought-Life
+        - CSS04-Non-Spec Suicid Thought-P_M
+        - CSS04-Non-suicidal Self-injur Behav-Life
+        - CSS04-Non-suicidal Self-injur Behav-P_Y
+        - CSS04-Number of Aborted Attempts-Life
+        - CSS04-Number of Aborted Attempts-P_Y
+        - CSS04-Number of Actual Attempts-Life
+        - CSS04-Number of Actual Attempts-P_Y
+        - CSS04-Number of Interrupt Attempts-Life
+        - CSS04-Number of Interrupt Attempts-P_Y
+        - CSS04-Preparatory Acts/Behav, Descr
+        - CSS04-Preparatory Acts/Behavior-Life
+        - CSS04-Preparatory Acts/Behavior-P_Y
+        - CSS04-Suicidal Behavior-Life
+        - CSS04-Suicidal Behavior-P_Y
+        - CSS04-Wish to be Dead, Describe
+        - CSS04-Wish to be Dead-Life
+        - CSS04-Wish to be Dead-P_M
+outcome:
+  message: Value not found in non-extensible codelist Columbia-Suicide Severity Rating
+    Scale Baseline/Screening Version Questionnaire Test Name (C106660)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106660
+  codelist_name: Columbia-Suicide Severity Rating Scale Baseline/Screening Version
+    Questionnaire Test Name
+  codelist_submission_value: CSS04TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 60
+

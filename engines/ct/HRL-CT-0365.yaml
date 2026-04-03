@@ -1,0 +1,49 @@
+id: HRL-CT-0365
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR18TC (European Organisation for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Lung Cancer 13 Items Questionnaire Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR18TC
+      operator: in
+      value:
+        - EOR1831
+        - EOR1832
+        - EOR1833
+        - EOR1834
+        - EOR1835
+        - EOR1836
+        - EOR1837
+        - EOR1838
+        - EOR1839
+        - EOR1840
+        - EOR1841
+        - EOR1842
+        - EOR1842A
+        - EOR1843
+        - EOR1843A
+outcome:
+  message: Value not found in non-extensible codelist European Organisation for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Lung Cancer 13
+    Items Questionnaire Test Code (C172400)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C172400
+  codelist_name: European Organisation for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Lung Cancer 13 Items Questionnaire Test Code
+  codelist_submission_value: EOR18TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 15
+

@@ -1,0 +1,36 @@
+id: HRL-CT-0784
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PHQ0101T09OR (Patient Health Questionnaire - 9 Questionnaire ORRES for
+  PHQ0101 Through PHQ0109 TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PHQ0101T09OR
+      operator: in
+      value:
+        - More than half the days
+        - Nearly every day
+        - Not at all
+        - Several days
+outcome:
+  message: Value not found in non-extensible codelist Patient Health Questionnaire
+    - 9 Questionnaire ORRES for PHQ0101 Through PHQ0109 TN/TC (C213939)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C213939
+  codelist_name: Patient Health Questionnaire - 9 Questionnaire ORRES for PHQ0101
+    Through PHQ0109 TN/TC
+  codelist_submission_value: PHQ0101T09OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

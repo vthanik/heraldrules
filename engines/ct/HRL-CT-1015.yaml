@@ -1,0 +1,83 @@
+id: HRL-CT-1015
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SGRQ02TN (St. George's Respiratory Questionnaire Past 4 Weeks Version
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SGRQ02TN
+      operator: in
+      value:
+        - SGRQ02-Afraid When Cannot Catch Breath
+        - SGRQ02-Cannot Go Out for Entertainment
+        - SGRQ02-Cannot Go Out to Do Shopping
+        - SGRQ02-Cough Is Embarrassing in Public
+        - SGRQ02-Coughing Disturbs My Sleep
+        - SGRQ02-Coughing Hurts
+        - SGRQ02-Coughing Makes Me Tired
+        - SGRQ02-Describe Your Current Health
+        - SGRQ02-Describe Your Resp Condition
+        - SGRQ02-Difficult to Carry Heavy Loads
+        - SGRQ02-Difficult to Do Very Heavy Work
+        - SGRQ02-Difficult to Walk Up Hills
+        - SGRQ02-Embarrassed Using Med in Public
+        - SGRQ02-Everything Too Much Effort
+        - SGRQ02-Exercise Is Not Safe for Me
+        - SGRQ02-How Long Worst Resp Attack Last
+        - SGRQ02-How Many Good Days Have You Had
+        - SGRQ02-How Resp Problems Affect You
+        - SGRQ02-I Cannot Do Household Chores
+        - SGRQ02-I Cannot Move Far From My Bed
+        - SGRQ02-I Cannot Play Sports
+        - SGRQ02-I Cannot Take a Bath or Shower
+        - SGRQ02-I Get Exhausted Easily
+        - SGRQ02-I Have Become Frail
+        - SGRQ02-I Have Brought Up Phlegm
+        - SGRQ02-I Have Coughed
+        - SGRQ02-I Have Had Shortness of Breath
+        - SGRQ02-I Have Had Wheezing Attacks
+        - SGRQ02-I Walk Slower Than Other People
+        - SGRQ02-If I Hurry, I Have to Stop
+        - SGRQ02-If You Have Ever Held a Job
+        - SGRQ02-Jobs Take a Long Time
+        - SGRQ02-Not Expect Probs to Get Better
+        - SGRQ02-Not in Control of Resp Problems
+        - SGRQ02-Playing Sports
+        - SGRQ02-Respiratory Problems a Nuisance
+        - SGRQ02-Short of Breath When Bend Over
+        - SGRQ02-Short of Breath When I Talk
+        - SGRQ02-Sitting or Lying Still
+        - SGRQ02-Take a Long Time to Get Washed
+        - SGRQ02-Times Suffered Sev Resp Attacks
+        - SGRQ02-Treatment Does Not Help Me Much
+        - SGRQ02-Treatment Interferes With Life
+        - SGRQ02-Unpleasant Side Effect From Med
+        - SGRQ02-Walk Up Flight of Stairs Slowly
+        - SGRQ02-Walking Around the House
+        - SGRQ02-Walking Outside on Level Ground
+        - SGRQ02-Walking Up a Flight of Stairs
+        - SGRQ02-Walking Up Hills
+        - SGRQ02-Washing or Dressing Yourself
+        - SGRQ02-Wheeze Worse in the Morning
+outcome:
+  message: Value not found in non-extensible codelist St. George's Respiratory Questionnaire
+    Past 4 Weeks Version Questionnaire Test Name (C112450)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C112450
+  codelist_name: St. George's Respiratory Questionnaire Past 4 Weeks Version Questionnaire
+    Test Name
+  codelist_submission_value: SGRQ02TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 51
+

@@ -1,0 +1,51 @@
+id: HRL-CT-0515
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HAMD1TN (Hamilton Depression Rating Scale - 17 Item Clinical Classification
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HAMD1TN
+      operator: in
+      value:
+        - HAMD1-Agitation
+        - HAMD1-Anxiety Psychic
+        - HAMD1-Anxiety Somatic
+        - HAMD1-Depressed Mood
+        - HAMD1-Feelings of Guilt
+        - HAMD1-General Somatic Symptoms
+        - HAMD1-Genital Symptoms
+        - HAMD1-Hypochondriasis
+        - HAMD1-Insight
+        - HAMD1-Insomnia Early - Early Night
+        - HAMD1-Insomnia Early Hours - Morning
+        - HAMD1-Insomnia Middle - Middle Night
+        - HAMD1-Loss of WT According to Patient
+        - HAMD1-Loss of WT According to WK Meas
+        - HAMD1-Retardation
+        - HAMD1-Somatic Symptoms Gastrointestinal
+        - HAMD1-Suicide
+        - HAMD1-Total Score
+        - HAMD1-Work and Activities
+outcome:
+  message: Value not found in non-extensible codelist Hamilton Depression Rating Scale
+    - 17 Item Clinical Classification Test Name (C100137)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100137
+  codelist_name: Hamilton Depression Rating Scale - 17 Item Clinical Classification
+    Test Name
+  codelist_submission_value: HAMD1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 19
+

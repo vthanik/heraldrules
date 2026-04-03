@@ -1,0 +1,84 @@
+id: HRL-CT-0223
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSS03TC (Columbia-Suicide Severity Rating Scale Baseline/Screening Version
+  Phase 1 Study Questionnaire Test Code) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSS03TC
+      operator: in
+      value:
+        - CSS0301A
+        - CSS0301B
+        - CSS0301C
+        - CSS0302A
+        - CSS0302B
+        - CSS0302C
+        - CSS0303A
+        - CSS0303B
+        - CSS0303C
+        - CSS0304A
+        - CSS0304B
+        - CSS0304C
+        - CSS0305A
+        - CSS0305B
+        - CSS0305C
+        - CSS0306A
+        - CSS0306B
+        - CSS0306C
+        - CSS0306D
+        - CSS0307A
+        - CSS0307B
+        - CSS0308A
+        - CSS0308B
+        - CSS0309A
+        - CSS0309B
+        - CSS0310A
+        - CSS0310B
+        - CSS0311A
+        - CSS0311B
+        - CSS0312
+        - CSS0313
+        - CSS0313A
+        - CSS0314
+        - CSS0315
+        - CSS0316
+        - CSS0316A
+        - CSS0317
+        - CSS0318
+        - CSS0318A
+        - CSS0319
+        - CSS0319A
+        - CSS0320
+        - CSS0321A
+        - CSS0321B
+        - CSS0321C
+        - CSS0322A
+        - CSS0322B
+        - CSS0322C
+        - CSS0323A
+        - CSS0323B
+        - CSS0323C
+outcome:
+  message: Value not found in non-extensible codelist Columbia-Suicide Severity Rating
+    Scale Baseline/Screening Version Phase 1 Study Questionnaire Test Code (C105132)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C105132
+  codelist_name: Columbia-Suicide Severity Rating Scale Baseline/Screening Version
+    Phase 1 Study Questionnaire Test Code
+  codelist_submission_value: CSS03TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 51
+

@@ -1,0 +1,49 @@
+id: HRL-CT-0293
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DLQI1TC (Dermatology Life Quality Index Questionnaire Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DLQI1TC
+      operator: in
+      value:
+        - DLQI101
+        - DLQI102
+        - DLQI103
+        - DLQI104
+        - DLQI105
+        - DLQI106
+        - DLQI107
+        - DLQI107A
+        - DLQI108
+        - DLQI109
+        - DLQI110
+        - DLQI111
+        - DLQI112
+        - DLQI113
+        - DLQI114
+        - DLQI115
+        - DLQI116
+        - DLQI117
+outcome:
+  message: Value not found in non-extensible codelist Dermatology Life Quality Index
+    Questionnaire Test Code (C119070)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C119070
+  codelist_name: Dermatology Life Quality Index Questionnaire Test Code
+  codelist_submission_value: DLQI1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 18
+

@@ -1,0 +1,46 @@
+id: HRL-CT-0562
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: IIEF01TN (International Index of Erectile Function Questionnaire Test
+  Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: IIEF01TN
+      operator: in
+      value:
+        - IIEF01-Able to Penetrate Your Partner
+        - IIEF01-Confidence to Get/Keep Erection
+        - IIEF01-Did You Have Feeling of Orgasm
+        - IIEF01-Enjoyed Sexual Intercourse
+        - IIEF01-Erection During Sexual Activity
+        - IIEF01-Erection Hard Enough to Penetrate
+        - IIEF01-Have You Felt Sexual Desire
+        - IIEF01-How Often Did You Ejaculate
+        - IIEF01-How Often was it Satisfactory
+        - IIEF01-Maintain Erection After Penetrate
+        - IIEF01-Maintain Erection to Completion
+        - IIEF01-Rate Your Level of Sexual Desire
+        - IIEF01-Satisfied with Overall Sex Life
+        - IIEF01-Satisfy with Sexual Relationship
+        - IIEF01-Times Attempted Sexual Intercours
+outcome:
+  message: Value not found in non-extensible codelist International Index of Erectile
+    Function Questionnaire Test Name (C103470)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103470
+  codelist_name: International Index of Erectile Function Questionnaire Test Name
+  codelist_submission_value: IIEF01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 15
+

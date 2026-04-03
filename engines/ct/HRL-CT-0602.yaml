@@ -1,0 +1,39 @@
+id: HRL-CT-0602
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: KFSS102OR (Kurtzke Functional System Scores Clinical Classification ORRES
+  for KFSS102 TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: KFSS102OR
+      operator: in
+      value:
+        - Abnormal signs without disability
+        - Mild ataxia
+        - Moderate truncal or limb ataxia
+        - Normal
+        - Severe ataxia, all limbs
+        - Unable to perform coordinated movements due to ataxia
+        - Unknown
+outcome:
+  message: Value not found in non-extensible codelist Kurtzke Functional System Scores
+    Clinical Classification ORRES for KFSS102 TN/TC (C182476)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C182476
+  codelist_name: Kurtzke Functional System Scores Clinical Classification ORRES for
+    KFSS102 TN/TC
+  codelist_submission_value: KFSS102OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

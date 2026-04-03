@@ -1,0 +1,78 @@
+id: HRL-CT-0383
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR36TC (European Organization for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Head and Neck Cancer Phase IV Module Version 43
+  Items Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR36TC
+      operator: in
+      value:
+        - EOR3631
+        - EOR3632
+        - EOR3633
+        - EOR3634
+        - EOR3635
+        - EOR3636
+        - EOR3637
+        - EOR3638
+        - EOR3639
+        - EOR3640
+        - EOR3641
+        - EOR3642
+        - EOR3643
+        - EOR3644
+        - EOR3645
+        - EOR3646
+        - EOR3647
+        - EOR3648
+        - EOR3649
+        - EOR3650
+        - EOR3651
+        - EOR3652
+        - EOR3653
+        - EOR3654
+        - EOR3655
+        - EOR3656
+        - EOR3657
+        - EOR3658
+        - EOR3659
+        - EOR3660
+        - EOR3661
+        - EOR3662
+        - EOR3663
+        - EOR3664
+        - EOR3665
+        - EOR3666
+        - EOR3667
+        - EOR3668
+        - EOR3669
+        - EOR3670
+        - EOR3671
+        - EOR3672
+        - EOR3673
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Head and Neck
+    Cancer Phase IV Module Version 43 Items Test Code (C219723)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219723
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Head and Neck Cancer Phase IV Module Version 43 Items
+    Test Code
+  codelist_submission_value: EOR36TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 43
+

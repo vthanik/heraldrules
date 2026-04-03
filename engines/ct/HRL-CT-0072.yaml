@@ -1,0 +1,144 @@
+id: HRL-CT-0072
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ADC1TC (Alzheimer's Disease Assessment Scale-Cognitive 30JUN2015 Functional
+  Test Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ADC1TC
+      operator: in
+      value:
+        - ADC101
+        - ADC10101
+        - ADC10102
+        - ADC10103
+        - ADC10104
+        - ADC10105
+        - ADC10106
+        - ADC10107
+        - ADC10108
+        - ADC10109
+        - ADC10110
+        - ADC101A
+        - ADC102
+        - ADC102A
+        - ADC102B
+        - ADC102C
+        - ADC102D
+        - ADC102E
+        - ADC102F
+        - ADC103
+        - ADC103A
+        - ADC103B
+        - ADC103C
+        - ADC103D
+        - ADC103E
+        - ADC103F
+        - ADC104
+        - ADC10401
+        - ADC10402
+        - ADC10403
+        - ADC10404
+        - ADC10405
+        - ADC10406
+        - ADC10407
+        - ADC10408
+        - ADC10409
+        - ADC10410
+        - ADC105
+        - ADC105A
+        - ADC105B
+        - ADC105C
+        - ADC105D
+        - ADC105E
+        - ADC105F
+        - ADC105G
+        - ADC105H
+        - ADC105I
+        - ADC105J
+        - ADC105K
+        - ADC105L
+        - ADC105M
+        - ADC105N
+        - ADC105O
+        - ADC105P
+        - ADC105Q
+        - ADC105R
+        - ADC106
+        - ADC106A
+        - ADC106B
+        - ADC106C
+        - ADC106D
+        - ADC106E
+        - ADC106F
+        - ADC107
+        - ADC107A
+        - ADC107B
+        - ADC107C
+        - ADC107D
+        - ADC107E
+        - ADC107F
+        - ADC107G
+        - ADC107H
+        - ADC107I
+        - ADC108
+        - ADC10801
+        - ADC10802
+        - ADC10803
+        - ADC10804
+        - ADC10805
+        - ADC10806
+        - ADC10807
+        - ADC10808
+        - ADC10809
+        - ADC10810
+        - ADC10811
+        - ADC10812
+        - ADC10813
+        - ADC10814
+        - ADC10815
+        - ADC10816
+        - ADC10817
+        - ADC10818
+        - ADC10819
+        - ADC10820
+        - ADC10821
+        - ADC10822
+        - ADC10823
+        - ADC10824
+        - ADC108A
+        - ADC109
+        - ADC110
+        - ADC111
+        - ADC112
+        - ADC113
+        - ADC113A
+        - ADC113B
+        - ADC114
+        - ADC114A
+        - ADC114B
+        - ADC114C
+        - ADC115
+        - ADC116
+outcome:
+  message: Value not found in non-extensible codelist Alzheimer's Disease Assessment
+    Scale-Cognitive 30JUN2015 Functional Test Test Code (C213938)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C213938
+  codelist_name: Alzheimer's Disease Assessment Scale-Cognitive 30JUN2015 Functional
+    Test Test Code
+  codelist_submission_value: ADC1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 112
+

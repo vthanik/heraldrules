@@ -1,0 +1,35 @@
+id: HRL-CT-0157
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CRYDFMAN (Cardiac Rhythm Device Failure Manifestation) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CRYDFMAN
+      operator: in
+      value:
+        - ATRIAL PACING MALFUNCTION
+        - DEFIBRILLATION MALFUNCTION
+        - LEFT VENTRICULAR PACING MALFUNCTION
+        - RIGHT VENTRICULAR PACING MALFUNCTION
+outcome:
+  message: Value not found in extensible codelist Cardiac Rhythm Device Failure Manifestation
+    (C101866)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101866
+  codelist_name: Cardiac Rhythm Device Failure Manifestation
+  codelist_submission_value: CRYDFMAN
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 4
+

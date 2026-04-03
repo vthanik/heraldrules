@@ -1,0 +1,87 @@
+id: HRL-CT-0703
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MSQL1TN (Multiple Sclerosis Quality of Life-54 Instrument Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MSQL1TN
+      operator: in
+      value:
+        - MSQL1-Ability to Satisfy Sexual Partner
+        - MSQL1-Amt Time Interfere Social Activity
+        - MSQL1-Bowel/Bladder Interfered Activity
+        - MSQL1-Describe How Feel About Your Life
+        - MSQL1-Did Pain Interfere With Your Work
+        - MSQL1-Did You Feel Full of Pep
+        - MSQL1-Did You Feel Rested on Waking
+        - MSQL1-Did You Feel Tired
+        - MSQL1-Did You Feel Worn Out
+        - MSQL1-Did You Have a Lot of Energy
+        - MSQL1-Difficult Getting/Keeping Erection
+        - MSQL1-Difficulty Concentrating/Thinking
+        - MSQL1-Difficulty Having Orgasm
+        - MSQL1-Discouraged by Health Problems
+        - 'MSQL1-Emotional Problem: Accomplish Less'
+        - 'MSQL1-Emotional Problem: Cut Work Time'
+        - 'MSQL1-Emotional Problem: Less Careful'
+        - MSQL1-Extent Interfered Social Activity
+        - MSQL1-Get Sick Easier Than Other People
+        - MSQL1-Have Been a Very Nervous Person
+        - MSQL1-Have Felt Downhearted and Blue
+        - MSQL1-Have Felt So Down in the Dumps
+        - MSQL1-Have Had Trouble With Your Memory
+        - MSQL1-Have You Been a Happy Person
+        - MSQL1-Have You Felt Calm and Peaceful
+        - MSQL1-Health Limit Bathing/Dressing Self
+        - MSQL1-Health Limit Bending or Kneeling
+        - MSQL1-Health Limit Carrying Groceries
+        - MSQL1-Health Limit Climb One Flight
+        - MSQL1-Health Limit Climb Several Flights
+        - MSQL1-Health Limit Moderate Activities
+        - MSQL1-Health Limit Vigorous Activities
+        - MSQL1-Health Limit Walk More Than Mile
+        - MSQL1-Health Limit Walk One Block
+        - MSQL1-Health Limit Walk Several Blocks
+        - MSQL1-Health Now Compared to 1 Year Ago
+        - MSQL1-How Much Bodily Pain Have You Had
+        - MSQL1-I Am as Healthy as Anybody I Know
+        - MSQL1-I Expect My Health to Get Worse
+        - MSQL1-Inadequate Lubrication
+        - MSQL1-Lack of Sexual Interest
+        - MSQL1-My Health Is Excellent
+        - MSQL1-Others Notice Your Memory Trouble
+        - MSQL1-Pain Interfere Enjoyment of Life
+        - 'MSQL1-Phys Health: Accomplish Less'
+        - 'MSQL1-Phys Health: Cut Work Time'
+        - 'MSQL1-Phys Health: Difficulty Performing'
+        - 'MSQL1-Phys Health: Limit Kind of Work'
+        - MSQL1-Rate Your Own Quality-of-Life
+        - MSQL1-Satisfied With Sexual Function
+        - MSQL1-Trouble Keep Attention for Long
+        - MSQL1-Was Health a Worry in Your Life
+        - MSQL1-Weighed Down by Health Problems
+        - MSQL1-Were Frustrated About Your Health
+        - MSQL1-Would You Say Your Health Is
+outcome:
+  message: Value not found in non-extensible codelist Multiple Sclerosis Quality of
+    Life-54 Instrument Questionnaire Test Name (C113859)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C113859
+  codelist_name: Multiple Sclerosis Quality of Life-54 Instrument Questionnaire Test
+    Name
+  codelist_submission_value: MSQL1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 55
+

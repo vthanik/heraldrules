@@ -1,0 +1,35 @@
+id: HRL-CT-0090
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ARMNULRS (Arm Null Reason) must contain valid extensible codelist terms
+  (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ARMNULRS
+      operator: in
+      value:
+        - ASSIGNED, NOT TREATED
+        - NOT ASSIGNED
+        - SCREEN FAILURE
+        - SCREENING NOT COMPLETED
+        - UNPLANNED TREATMENT
+outcome:
+  message: Value not found in extensible codelist Arm Null Reason (C142179)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C142179
+  codelist_name: Arm Null Reason
+  codelist_submission_value: ARMNULRS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 5
+

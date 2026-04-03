@@ -1,0 +1,38 @@
+id: HRL-CT-0763
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PASAT1TN (Paced Auditory Serial Addition Test Functional Test Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PASAT1TN
+      operator: in
+      value:
+        - PASAT1-More Than One Attempt
+        - PASAT1-Percent Correct
+        - PASAT1-Total Commission Errors
+        - PASAT1-Total Correct in First Half
+        - PASAT1-Total Correct in Second Half
+        - PASAT1-Total Correct
+        - PASAT1-Total Omission Errors
+outcome:
+  message: Value not found in non-extensible codelist Paced Auditory Serial Addition
+    Test Functional Test Test Name (C115393)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C115393
+  codelist_name: Paced Auditory Serial Addition Test Functional Test Test Name
+  codelist_submission_value: PASAT1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

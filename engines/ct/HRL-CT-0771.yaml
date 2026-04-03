@@ -1,0 +1,32 @@
+id: HRL-CT-0771
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PAFATS (Pancreatic Cancer Findings About Test Name) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PAFATS
+      operator: in
+      value:
+        - Primary Site of Tumor Origin
+outcome:
+  message: Value not found in extensible codelist Pancreatic Cancer Findings About
+    Test Name (C179593)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C179593
+  codelist_name: Pancreatic Cancer Findings About Test Name
+  codelist_submission_value: PAFATS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 1
+

@@ -1,0 +1,143 @@
+id: HRL-CT-0071
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ADCTN (Alzheimer's Disease Assessment Scale - Cognitive CDISC Version
+  Functional Test Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ADCTN
+      operator: in
+      value:
+        - Attempt to Draw
+        - Commands
+        - 'Commands: Ceiling'
+        - 'Commands: Fist'
+        - 'Commands: Pencil'
+        - 'Commands: Shoulder'
+        - 'Commands: Watch'
+        - Comprehension
+        - Concentration/Distractibility
+        - Constructional Praxis
+        - 'Constructional Praxis: 2 Rectangles'
+        - 'Constructional Praxis: Circle'
+        - 'Constructional Praxis: Cube'
+        - 'Constructional Praxis: Diamond'
+        - Delayed Word Recall
+        - 'Delayed Word Recall: Word [10]'
+        - 'Delayed Word Recall: Word [1]'
+        - 'Delayed Word Recall: Word [2]'
+        - 'Delayed Word Recall: Word [3]'
+        - 'Delayed Word Recall: Word [4]'
+        - 'Delayed Word Recall: Word [5]'
+        - 'Delayed Word Recall: Word [6]'
+        - 'Delayed Word Recall: Word [7]'
+        - 'Delayed Word Recall: Word [8]'
+        - 'Delayed Word Recall: Word [9]'
+        - Executive Function Maze
+        - 'Executive Function Maze: Errors'
+        - 'Executive Function Maze: Time'
+        - Ideational Praxis
+        - 'Ideational Praxis: Address'
+        - 'Ideational Praxis: Fold'
+        - 'Ideational Praxis: Insert'
+        - 'Ideational Praxis: Seal'
+        - 'Ideational Praxis: Stamp'
+        - Naming Objects and Fingers
+        - 'Naming Objects and Fingers: 1'
+        - 'Naming Objects and Fingers: 10'
+        - 'Naming Objects and Fingers: 11'
+        - 'Naming Objects and Fingers: 12'
+        - 'Naming Objects and Fingers: 2'
+        - 'Naming Objects and Fingers: 3'
+        - 'Naming Objects and Fingers: 4'
+        - 'Naming Objects and Fingers: 5'
+        - 'Naming Objects and Fingers: 6'
+        - 'Naming Objects and Fingers: 7'
+        - 'Naming Objects and Fingers: 8'
+        - 'Naming Objects and Fingers: 9'
+        - 'Naming Objects and Fingers: Middle'
+        - 'Naming Objects and Fingers: Pinky'
+        - 'Naming Objects and Fingers: Pointer'
+        - 'Naming Objects and Fingers: Ring'
+        - 'Naming Objects and Fingers: Thumb'
+        - Number Cancellation
+        - 'Number Cancellation: Correct'
+        - 'Number Cancellation: Errors'
+        - 'Number Cancellation: Remind'
+        - Orientation
+        - 'Orientation: Date'
+        - 'Orientation: Day of Week'
+        - 'Orientation: Full Name'
+        - 'Orientation: Month'
+        - 'Orientation: Place'
+        - 'Orientation: Season'
+        - 'Orientation: Time'
+        - 'Orientation: Year'
+        - Remembering Test Instructions
+        - Spoken Language Ability
+        - Total Score
+        - Word Finding Difficulty in Spont Speech
+        - Word Recall Trial 1
+        - Word Recall Trial 2
+        - Word Recall Trial 3
+        - Word Recall
+        - 'Word Recall: Word [10]'
+        - 'Word Recall: Word [1]'
+        - 'Word Recall: Word [2]'
+        - 'Word Recall: Word [3]'
+        - 'Word Recall: Word [4]'
+        - 'Word Recall: Word [5]'
+        - 'Word Recall: Word [6]'
+        - 'Word Recall: Word [7]'
+        - 'Word Recall: Word [8]'
+        - 'Word Recall: Word [9]'
+        - Word Recognition Trial 1
+        - Word Recognition Trial 2
+        - Word Recognition Trial 3
+        - Word Recognition
+        - 'Word Recognition: Word [10]'
+        - 'Word Recognition: Word [11]'
+        - 'Word Recognition: Word [12]'
+        - 'Word Recognition: Word [13]'
+        - 'Word Recognition: Word [14]'
+        - 'Word Recognition: Word [15]'
+        - 'Word Recognition: Word [16]'
+        - 'Word Recognition: Word [17]'
+        - 'Word Recognition: Word [18]'
+        - 'Word Recognition: Word [19]'
+        - 'Word Recognition: Word [1]'
+        - 'Word Recognition: Word [20]'
+        - 'Word Recognition: Word [21]'
+        - 'Word Recognition: Word [22]'
+        - 'Word Recognition: Word [23]'
+        - 'Word Recognition: Word [24]'
+        - 'Word Recognition: Word [2]'
+        - 'Word Recognition: Word [3]'
+        - 'Word Recognition: Word [4]'
+        - 'Word Recognition: Word [5]'
+        - 'Word Recognition: Word [6]'
+        - 'Word Recognition: Word [7]'
+        - 'Word Recognition: Word [8]'
+        - 'Word Recognition: Word [9]'
+outcome:
+  message: Value not found in non-extensible codelist Alzheimer's Disease Assessment
+    Scale - Cognitive CDISC Version Functional Test Test Name (C100131)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100131
+  codelist_name: Alzheimer's Disease Assessment Scale - Cognitive CDISC Version Functional
+    Test Test Name
+  codelist_submission_value: ADCTN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 111
+

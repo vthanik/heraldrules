@@ -1,0 +1,89 @@
+id: HRL-CT-1088
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SF361TC (The Short Form 36 Health Survey Standard, US Version 1.0 Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SF361TC
+      operator: in
+      value:
+        - SF36101
+        - SF36102
+        - SF36103A
+        - SF36103B
+        - SF36103C
+        - SF36103D
+        - SF36103E
+        - SF36103F
+        - SF36103G
+        - SF36103H
+        - SF36103I
+        - SF36103J
+        - SF36104A
+        - SF36104B
+        - SF36104C
+        - SF36104D
+        - SF36105A
+        - SF36105B
+        - SF36105C
+        - SF36106
+        - SF36107
+        - SF36108
+        - SF36109A
+        - SF36109B
+        - SF36109C
+        - SF36109D
+        - SF36109E
+        - SF36109F
+        - SF36109G
+        - SF36109H
+        - SF36109I
+        - SF36110
+        - SF36111A
+        - SF36111B
+        - SF36111C
+        - SF36111D
+        - SF36112
+        - SF36113
+        - SF36114
+        - SF36115
+        - SF36116
+        - SF36117
+        - SF36118
+        - SF36119
+        - SF36120
+        - SF36121
+        - SF36122
+        - SF36123
+        - SF36124
+        - SF36125
+        - SF36126
+        - SF36127
+        - SF36128
+        - SF36129
+        - SF36130
+        - SF36131
+        - SF36132
+outcome:
+  message: Value not found in non-extensible codelist The Short Form 36 Health Survey
+    Standard, US Version 1.0 Questionnaire Test Code (C100174)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100174
+  codelist_name: The Short Form 36 Health Survey Standard, US Version 1.0 Questionnaire
+    Test Code
+  codelist_submission_value: SF361TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 57
+

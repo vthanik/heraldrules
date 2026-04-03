@@ -1,0 +1,42 @@
+id: HRL-CT-0487
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GASTROCD (Gastrointestinal Test Code) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GASTROCD
+      operator: in
+      value:
+        - BWOBIND
+        - BWPFIND
+        - DIAMETER
+        - ELASTIC
+        - ESOBIND
+        - GIEXAM
+        - LVINVIND
+        - PAREAULC
+        - PDFF
+        - RTAVDIST
+        - STRCTNUM
+        - THICK
+outcome:
+  message: Value not found in extensible codelist Gastrointestinal Test Code (C128682)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C128682
+  codelist_name: Gastrointestinal Test Code
+  codelist_submission_value: GASTROCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 12
+

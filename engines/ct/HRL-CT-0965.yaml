@@ -1,0 +1,38 @@
+id: HRL-CT-0965
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SOFA0106STR (Sepsis-related Organ Failure Assessment 27MAR2024 Clinical
+  Classification STRESC for SOFA0106 TN/TC) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SOFA0106STR
+      operator: in
+      value:
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+outcome:
+  message: Value not found in non-extensible codelist Sepsis-related Organ Failure
+    Assessment 27MAR2024 Clinical Classification STRESC for SOFA0106 TN/TC (C204236)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204236
+  codelist_name: Sepsis-related Organ Failure Assessment 27MAR2024 Clinical Classification
+    STRESC for SOFA0106 TN/TC
+  codelist_submission_value: SOFA0106STR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

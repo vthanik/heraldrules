@@ -1,0 +1,48 @@
+id: HRL-CT-0666
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MTWSR1TN (Minnesota Tobacco Withdrawal Scale-Revised Clinical Classification
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MTWSR1TN
+      operator: in
+      value:
+        - MTWSR1-Angry, Irritable, Frustrated
+        - MTWSR1-Anxious, Nervous
+        - MTWSR1-Constipation
+        - MTWSR1-Coughing
+        - MTWSR1-Craving to Smoke
+        - MTWSR1-Depressed Mood, Sad
+        - MTWSR1-Difficulty Concentrating
+        - MTWSR1-Dizziness
+        - MTWSR1-Dreaming or Nightmares
+        - MTWSR1-Impatient
+        - MTWSR1-Inc Appetite, Hungry, Weight Gain
+        - MTWSR1-Nausea
+        - MTWSR1-Restless
+        - MTWSR1-Sleep Problems/Awakening at Night
+        - MTWSR1-Sore Throat
+        - MTWSR1-Total Withdrawal Discomfort Score
+outcome:
+  message: Value not found in non-extensible codelist Minnesota Tobacco Withdrawal
+    Scale-Revised Clinical Classification Test Name (C202145)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C202145
+  codelist_name: Minnesota Tobacco Withdrawal Scale-Revised Clinical Classification
+    Test Name
+  codelist_submission_value: MTWSR1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 16
+

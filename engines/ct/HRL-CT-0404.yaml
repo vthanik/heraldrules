@@ -1,0 +1,54 @@
+id: HRL-CT-0404
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GOSE1TC (Extended Glasgow Outcome Scale Questionnaire Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GOSE1TC
+      operator: in
+      value:
+        - GOSE101
+        - GOSE102A
+        - GOSE102B
+        - GOSE102C
+        - GOSE103A
+        - GOSE103B
+        - GOSE104A
+        - GOSE104B
+        - GOSE105A
+        - GOSE105B
+        - GOSE105C
+        - GOSE106A
+        - GOSE106B
+        - GOSE106C
+        - GOSE107A
+        - GOSE107B
+        - GOSE107C
+        - GOSE108A
+        - GOSE108B
+        - GOSE109
+        - GOSE110
+        - GOSE111
+        - GOSE112
+outcome:
+  message: Value not found in non-extensible codelist Extended Glasgow Outcome Scale
+    Questionnaire Test Code (C115404)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C115404
+  codelist_name: Extended Glasgow Outcome Scale Questionnaire Test Code
+  codelist_submission_value: GOSE1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 23
+

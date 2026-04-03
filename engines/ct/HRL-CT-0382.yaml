@@ -1,0 +1,60 @@
+id: HRL-CT-0382
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR21TN (European Organization for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Esophago-Gastric Cancer Phase IV Module Version
+  25 Items Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR21TN
+      operator: in
+      value:
+        - EOR21-Acid Indigestion/Heartburn
+        - EOR21-Acid/Bile Into Mouth Problem
+        - EOR21-Choked When Swallowing
+        - EOR21-Coughed
+        - EOR21-Difficulty Eating
+        - EOR21-Difficulty Swallowing Saliva
+        - EOR21-Difficulty Talking
+        - EOR21-Discomfort in Stomach Area
+        - EOR21-Discomfort When Eating
+        - EOR21-Dry Mouth
+        - EOR21-Felt Full Too Quickly
+        - EOR21-Felt Physically Less Attractive
+        - 'EOR21-Lost Hair: Upset by Loss of Hair'
+        - EOR21-Pain in Stomach Area
+        - EOR21-Pain When Eat
+        - EOR21-Problems Drinking Liquids
+        - EOR21-Problems Eat Liquidised/Soft Foods
+        - EOR21-Problems Eating Solid Foods
+        - EOR21-Problems With Sense of Taste
+        - EOR21-Taken Long Time Complete Meals
+        - EOR21-Thinking About Illness
+        - EOR21-Trouble Eating in Front of People
+        - EOR21-Trouble Enjoying Meals
+        - EOR21-Worried About Health in Future
+        - EOR21-Worried Weight Too Low
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Esophago-Gastric
+    Cancer Phase IV Module Version 25 Items Test Name (C219734)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219734
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Esophago-Gastric Cancer Phase IV Module Version 25 Items
+    Test Name
+  codelist_submission_value: EOR21TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

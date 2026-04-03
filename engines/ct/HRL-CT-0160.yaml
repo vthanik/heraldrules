@@ -1,0 +1,51 @@
+id: HRL-CT-0160
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CVFATS (Cardiovascular Findings About Test Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CVFATS
+      operator: in
+      value:
+        - Acute Myocardial Infarction Type
+        - Coronary Artery Thrombosis Method Ident
+        - Endpoint Event Indicator
+        - Exclusion of Type 1 and Type 2 MI
+        - Healthcare Encounter Type
+        - Heart Failure New/Worsening Lab Findings
+        - Heart Failure New/Worsening PE Findings
+        - Heart Failure Therapy, Intensification
+        - Ischemic Discomfort Indicator
+        - Ischemic Evidence Type
+        - New or Worsening Symptoms
+        - Non-Invasive Imaging Change
+        - PCI Acute Angiographic Complication
+        - Procedure Success Indicator
+        - Procedure Urgency Status Type
+        - Stent Thrombosis, Coronary, ARC Timing
+        - Stroke Type
+        - Symptom Indicator
+        - Symptom Onset Date
+        - Vessel Occlusion After CABG 48 Ind
+outcome:
+  message: Value not found in extensible codelist Cardiovascular Findings About Test
+    Name (C119014)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C119014
+  codelist_name: Cardiovascular Findings About Test Name
+  codelist_submission_value: CVFATS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 20
+

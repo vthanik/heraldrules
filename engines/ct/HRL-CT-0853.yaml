@@ -1,0 +1,164 @@
+id: HRL-CT-0853
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PKUDUG (PK Units of Measure - Dose ug) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PKUDUG
+      operator: in
+      value:
+        - (L/day)/(ug/day)
+        - (L/day)/(ug/kg)
+        - (L/day)/(ug/kg/day)
+        - (L/day)/(ug/m2)
+        - (L/day)/(ug/m2/day)
+        - (L/day)/ug
+        - (L/h)/(ug/day)
+        - (L/h)/(ug/kg)
+        - (L/h)/(ug/kg/day)
+        - (L/h)/(ug/m2)
+        - (L/h)/(ug/m2/day)
+        - (L/h)/ug
+        - (L/min)/(ug/day)
+        - (L/min)/(ug/kg)
+        - (L/min)/(ug/kg/day)
+        - (L/min)/(ug/m2)
+        - (L/min)/(ug/m2/day)
+        - (L/min)/ug
+        - (mL/day)/(ug/day)
+        - (mL/day)/(ug/kg)
+        - (mL/day)/(ug/kg/day)
+        - (mL/day)/(ug/m2)
+        - (mL/day)/(ug/m2/day)
+        - (mL/day)/ug
+        - (mL/h)/(ug/day)
+        - (mL/h)/(ug/kg)
+        - (mL/h)/(ug/kg/day)
+        - (mL/h)/(ug/m2)
+        - (mL/h)/(ug/m2/day)
+        - (mL/h)/ug
+        - (mL/min)/(ug/day)
+        - (mL/min)/(ug/kg)
+        - (mL/min)/(ug/kg/day)
+        - (mL/min)/(ug/m2)
+        - (mL/min)/(ug/m2/day)
+        - (mL/min)/ug
+        - day*ng/mL/(mg/kg)
+        - day*ng/mL/ug
+        - fg/mL/(ug/day)
+        - fg/mL/(ug/kg)
+        - fg/mL/(ug/kg/day)
+        - fg/mL/(ug/m2)
+        - fg/mL/(ug/m2/day)
+        - fg/mL/ug
+        - g/mL/(ug/day)
+        - g/mL/(ug/kg)
+        - g/mL/(ug/kg/day)
+        - g/mL/(ug/m2)
+        - g/mL/(ug/m2/day)
+        - g/mL/ug
+        - h*ng/mL/(ug/kg/day)
+        - h*nmolEq/L/ug
+        - h*pmol/L/ug
+        - h*umol/L/ug
+        - IU/mL/(ug/day)
+        - IU/mL/(ug/kg)
+        - IU/mL/(ug/kg/day)
+        - IU/mL/(ug/m2)
+        - IU/mL/(ug/m2/day)
+        - IU/mL/ug
+        - L/(ug/kg)
+        - L/(ug/kg/day)
+        - L/(ug/m2)
+        - L/(ug/m2/day)
+        - L/ug
+        - mg/mL/(ug/day)
+        - mg/mL/(ug/kg)
+        - mg/mL/(ug/kg/day)
+        - mg/mL/(ug/m2)
+        - mg/mL/(ug/m2/day)
+        - mg/mL/ug
+        - mIU/mL/(ug/day)
+        - mIU/mL/(ug/kg)
+        - mIU/mL/(ug/kg/day)
+        - mIU/mL/(ug/m2)
+        - mIU/mL/(ug/m2/day)
+        - mIU/mL/ug
+        - mL/(ug/kg/day)
+        - mL/(ug/m2/day)
+        - mmol/L/(ug/day)
+        - mmol/L/(ug/kg)
+        - mmol/L/(ug/kg/day)
+        - mmol/L/(ug/m2)
+        - mmol/L/(ug/m2/day)
+        - mmol/L/ug
+        - mol/L/(ug/day)
+        - mol/L/(ug/kg)
+        - mol/L/(ug/kg/day)
+        - mol/L/(ug/m2)
+        - mol/L/(ug/m2/day)
+        - mol/L/ug
+        - ng/mL/(ug/day)
+        - ng/mL/(ug/kg)
+        - ng/mL/(ug/kg/day)
+        - ng/mL/(ug/m2)
+        - ng/mL/(ug/m2/day)
+        - ng/mL/ug
+        - nmol/L/(ug/day)
+        - nmol/L/(ug/kg)
+        - nmol/L/(ug/kg/day)
+        - nmol/L/(ug/m2)
+        - nmol/L/(ug/m2/day)
+        - nmol/L/ug
+        - nmolEq/L/ug
+        - pg/mL/(ug/day)
+        - pg/mL/(ug/kg)
+        - pg/mL/(ug/kg/day)
+        - pg/mL/(ug/m2)
+        - pg/mL/(ug/m2/day)
+        - pg/mL/ug
+        - pmol/L/(ug/day)
+        - pmol/L/(ug/kg)
+        - pmol/L/(ug/kg/day)
+        - pmol/L/(ug/m2)
+        - pmol/L/(ug/m2/day)
+        - pmol/L/ug
+        - ug/mL/(ug/day)
+        - ug/mL/(ug/kg)
+        - ug/mL/(ug/kg/day)
+        - ug/mL/(ug/m2)
+        - ug/mL/(ug/m2/day)
+        - ug/mL/ug
+        - uIU/mL/(ug/day)
+        - uIU/mL/(ug/kg)
+        - uIU/mL/(ug/kg/day)
+        - uIU/mL/(ug/m2)
+        - uIU/mL/(ug/m2/day)
+        - uIU/mL/ug
+        - umol/L/(ug/day)
+        - umol/L/(ug/kg)
+        - umol/L/(ug/kg/day)
+        - umol/L/(ug/m2)
+        - umol/L/(ug/m2/day)
+        - umol/L/ug
+outcome:
+  message: Value not found in extensible codelist PK Units of Measure - Dose ug (C128686)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C128686
+  codelist_name: PK Units of Measure - Dose ug
+  codelist_submission_value: PKUDUG
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 134
+

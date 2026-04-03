@@ -1,0 +1,38 @@
+id: HRL-CT-0870
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PA016TN (PROMIS Item Bank v2.0 - Cognitive Function - Short Form 6a Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PA016TN
+      operator: in
+      value:
+        - PA016-Brain Not Working as Well as Usual
+        - PA016-Had to Work Harder to Keep Track
+        - PA016-Had Trouble Concentrating
+        - PA016-My Thinking Has Been Slow
+        - PA016-Trouble Shift Activities Thinking
+        - PA016-Work Hard Pay Attention or Mistake
+outcome:
+  message: Value not found in non-extensible codelist PROMIS Item Bank v2.0 - Cognitive
+    Function - Short Form 6a Questionnaire Test Name (C202141)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C202141
+  codelist_name: PROMIS Item Bank v2.0 - Cognitive Function - Short Form 6a Questionnaire
+    Test Name
+  codelist_submission_value: PA016TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

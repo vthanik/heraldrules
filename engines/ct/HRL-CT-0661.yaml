@@ -1,0 +1,69 @@
+id: HRL-CT-0661
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MMS1TC (Mini-Mental State Examination Functional Test Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MMS1TC
+      operator: in
+      value:
+        - MMS101A
+        - MMS101B
+        - MMS101C
+        - MMS101D
+        - MMS101E
+        - MMS102A
+        - MMS102B
+        - MMS102C
+        - MMS102D
+        - MMS102E
+        - MMS103A
+        - MMS103B
+        - MMS103C
+        - MMS104
+        - MMS104AA
+        - MMS104AB
+        - MMS104AC
+        - MMS104AD
+        - MMS104AE
+        - MMS104BA
+        - MMS104BB
+        - MMS104BC
+        - MMS104BD
+        - MMS104BE
+        - MMS105A
+        - MMS105B
+        - MMS105C
+        - MMS106A
+        - MMS106B
+        - MMS107
+        - MMS108A
+        - MMS108B
+        - MMS108C
+        - MMS109
+        - MMS110
+        - MMS111
+        - MMS112
+        - MMS113
+outcome:
+  message: Value not found in non-extensible codelist Mini-Mental State Examination
+    Functional Test Test Code (C100142)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100142
+  codelist_name: Mini-Mental State Examination Functional Test Test Code
+  codelist_submission_value: MMS1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 38
+

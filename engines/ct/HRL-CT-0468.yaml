@@ -1,0 +1,63 @@
+id: HRL-CT-0468
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC084TN (Functional Assessment of Chronic Illness Therapy-Dyspnea 10
+  Item Short Form Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC084TN
+      operator: in
+      value:
+        - 'FAC084-Part I: Carry 10-20 Lbs Why Not'
+        - 'FAC084-Part I: Carry 10-20 Lbs'
+        - 'FAC084-Part I: Dressing Why Not'
+        - 'FAC084-Part I: Dressing Without Help'
+        - 'FAC084-Part I: Lifting 10-20 Lbs Why Not'
+        - 'FAC084-Part I: Lifting 10-20 Lbs'
+        - 'FAC084-Part I: Making a Bed Why Not'
+        - 'FAC084-Part I: Making a Bed'
+        - 'FAC084-Part I: Preparing Meals Why Not'
+        - 'FAC084-Part I: Preparing Meals'
+        - 'FAC084-Part I: Sweeping/Mopping Why Not'
+        - 'FAC084-Part I: Sweeping/Mopping'
+        - 'FAC084-Part I: Walk 50 Steps Why Not'
+        - 'FAC084-Part I: Walk 50 Steps'
+        - 'FAC084-Part I: Walk for 1/2 Mile Why Not'
+        - 'FAC084-Part I: Walk for 1/2 Mile'
+        - 'FAC084-Part I: Walk Up 20 Stairs Why Not'
+        - 'FAC084-Part I: Walk Up 20 Stairs'
+        - 'FAC084-Part I: Washing Dishes Why Not'
+        - 'FAC084-Part I: Washing Dishes'
+        - 'FAC084-Part II: Carry 10-20 Lbs'
+        - 'FAC084-Part II: Dressing Without Help'
+        - 'FAC084-Part II: Lifting 10-20 Lbs'
+        - 'FAC084-Part II: Making a Bed'
+        - 'FAC084-Part II: Preparing Meals'
+        - 'FAC084-Part II: Sweeping/Mopping'
+        - 'FAC084-Part II: Walk 50 Steps'
+        - 'FAC084-Part II: Walk for 1/2 Mile'
+        - 'FAC084-Part II: Walk Up 20 Stairs'
+        - 'FAC084-Part II: Washing Dishes'
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Chronic
+    Illness Therapy-Dyspnea 10 Item Short Form Questionnaire Test Name (C147541)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C147541
+  codelist_name: Functional Assessment of Chronic Illness Therapy-Dyspnea 10 Item
+    Short Form Questionnaire Test Name
+  codelist_submission_value: FAC084TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 30
+

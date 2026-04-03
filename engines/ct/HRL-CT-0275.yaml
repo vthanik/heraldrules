@@ -1,0 +1,38 @@
+id: HRL-CT-0275
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CVSLDEXT (Coronary Vessel Disease Extent) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CVSLDEXT
+      operator: in
+      value:
+        - INDETERMINATE
+        - INSIGNIFICANT DISEASE
+        - NO DISEASE
+        - ONE VESSEL DISEASE
+        - THREE VESSEL DISEASE
+        - TWO VESSEL DISEASE
+        - UNKNOWN
+outcome:
+  message: Value not found in non-extensible codelist Coronary Vessel Disease Extent
+    (C101850)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101850
+  codelist_name: Coronary Vessel Disease Extent
+  codelist_submission_value: CVSLDEXT
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

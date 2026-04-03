@@ -1,0 +1,33 @@
+id: HRL-CT-0176
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CDFATS (CDAD Findings About Test Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CDFATS
+      operator: in
+      value:
+        - Number of Episodes
+        - Severity/Intensity
+        - Volume
+outcome:
+  message: Value not found in extensible codelist CDAD Findings About Test Name (C150813)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150813
+  codelist_name: CDAD Findings About Test Name
+  codelist_submission_value: CDFATS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 3
+

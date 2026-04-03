@@ -1,0 +1,63 @@
+id: HRL-CT-1001
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SES01TN (Simple Endoscopic Score for Crohn's Disease Version 1 Clinical
+  Classification Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SES01TN
+      operator: in
+      value:
+        - SES01-Ileum Subscore
+        - 'SES01-Ileum: Affected Surface'
+        - 'SES01-Ileum: Explored'
+        - 'SES01-Ileum: Presence of Narrowing'
+        - 'SES01-Ileum: Size of Ulcers'
+        - 'SES01-Ileum: Ulcerated Surface'
+        - SES01-Left Colon Subscore
+        - 'SES01-Left Colon: Affected Surface'
+        - 'SES01-Left Colon: Explored'
+        - 'SES01-Left Colon: Presence of Narrowing'
+        - 'SES01-Left Colon: Size of Ulcers'
+        - 'SES01-Left Colon: Ulcerated Surface'
+        - SES01-Rectum Subscore
+        - 'SES01-Rectum: Affected Surface'
+        - 'SES01-Rectum: Explored'
+        - 'SES01-Rectum: Presence of Narrowing'
+        - 'SES01-Rectum: Size of Ulcers'
+        - 'SES01-Rectum: Ulcerated Surface'
+        - SES01-Right Colon Subscore
+        - 'SES01-Right Colon: Affected Surface'
+        - 'SES01-Right Colon: Explored'
+        - 'SES01-Right Colon: Presence of Narrowing'
+        - 'SES01-Right Colon: Size of Ulcers'
+        - 'SES01-Right Colon: Ulcerated Surface'
+        - SES01-Total Score
+        - SES01-Trans Colon Subscore
+        - 'SES01-Trans Colon: Affected Surface'
+        - 'SES01-Trans Colon: Explored'
+        - 'SES01-Trans Colon: Presence of Narrowing'
+        - 'SES01-Trans Colon: Size of Ulcers'
+        - 'SES01-Trans Colon: Ulcerated Surface'
+outcome:
+  message: Value not found in non-extensible codelist Simple Endoscopic Score for
+    Crohn's Disease Version 1 Clinical Classification Test Name (C176050)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C176050
+  codelist_name: Simple Endoscopic Score for Crohn's Disease Version 1 Clinical Classification
+    Test Name
+  codelist_submission_value: SES01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 31
+

@@ -1,0 +1,49 @@
+id: HRL-CT-0290
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: COMM1TN (Current Opioid Misuse Measure Questionnaire Test Name) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: COMM1TN
+      operator: in
+      value:
+        - COMM1-Been in an Argument
+        - COMM1-Borrowed Meds From Others
+        - COMM1-Complaints Not Completing Tasks
+        - COMM1-Emergency Phone Call/Clinic Visit
+        - COMM1-Gotten Angry With People
+        - COMM1-Other Sources For Pain Medication
+        - COMM1-Others Worry About Your Meds
+        - COMM1-Score
+        - COMM1-Seriously Thought of Hurting Self
+        - COMM1-Take Meds Belonging to Others
+        - COMM1-Take More Meds Than Prescribed
+        - COMM1-Taken Meds Other Than Prescribed
+        - COMM1-Time Spent Thinking About Opioids
+        - COMM1-Trouble Controlling Anger
+        - COMM1-Trouble Thinking Clearly/Memory
+        - COMM1-Used Pain Meds For Other Symptoms
+        - COMM1-Visit Emergency Room
+        - COMM1-Worry About Handling Meds
+outcome:
+  message: Value not found in non-extensible codelist Current Opioid Misuse Measure
+    Questionnaire Test Name (C100157)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100157
+  codelist_name: Current Opioid Misuse Measure Questionnaire Test Name
+  codelist_submission_value: COMM1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 18
+

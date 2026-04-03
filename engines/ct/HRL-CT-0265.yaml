@@ -1,0 +1,36 @@
+id: HRL-CT-0265
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CADPRSN (Coronary Artery Disease Presentation) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CADPRSN
+      operator: in
+      value:
+        - NON-ST ELEVATION MYOCARDIAL INFARCTION
+        - ST ELEVATION MYOCARDIAL INFARCTION
+        - STABLE ANGINA
+        - UNSTABLE ANGINA
+        - VARIANT ANGINA
+outcome:
+  message: Value not found in non-extensible codelist Coronary Artery Disease Presentation
+    (C101843)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101843
+  codelist_name: Coronary Artery Disease Presentation
+  codelist_submission_value: CADPRSN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

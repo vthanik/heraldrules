@@ -1,0 +1,45 @@
+id: HRL-CT-0356
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EPOCH (Epoch) must contain valid extensible codelist terms (new terms
+  allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EPOCH
+      operator: in
+      value:
+        - BASELINE
+        - BLINDED TREATMENT
+        - CONTINUATION TREATMENT
+        - FOLLOW-UP
+        - INDUCTION TREATMENT
+        - INTERVENTION
+        - LONG-TERM FOLLOW-UP
+        - OBSERVATION
+        - OPEN LABEL TREATMENT
+        - PRE-SCREENING
+        - PRODUCT EXPOSURE
+        - RUN-IN
+        - SCREENING
+        - TREATMENT
+        - WASHOUT
+outcome:
+  message: Value not found in extensible codelist Epoch (C99079)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C99079
+  codelist_name: Epoch
+  codelist_submission_value: EPOCH
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 15
+

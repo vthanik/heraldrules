@@ -1,0 +1,65 @@
+id: HRL-CT-0583
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: IDSC1TN (Inventory of Depressive Symptomatology Clinician-Rated Version
+  Clinical Classification Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: IDSC1TN
+      operator: in
+      value:
+        - IDSC1-Appetite (Decreased)
+        - IDSC1-Appetite (Increased)
+        - IDSC1-Concentration/Decision Making
+        - IDSC1-Early Morning Insomnia
+        - IDSC1-Energy/Fatiguability
+        - IDSC1-Gastrointestinal
+        - IDSC1-Hypersomnia
+        - IDSC1-Interpersonal Sensitivity
+        - IDSC1-Involvement
+        - IDSC1-Leaden Paralysis/Physical Energy
+        - IDSC1-Mid-Nocturnal Insomnia
+        - IDSC1-Mood (Anxious)
+        - IDSC1-Mood (Irritable)
+        - IDSC1-Mood (Sad)
+        - IDSC1-Mood Attributed to Environment
+        - IDSC1-Mood Variation
+        - IDSC1-Mood Worse Morn/Afternoon/Night
+        - IDSC1-Outlook (Future)
+        - IDSC1-Outlook (Self)
+        - IDSC1-Panic/Phobic Symptoms
+        - IDSC1-Pleasure/Enjoyment (Exclude Sex)
+        - IDSC1-Psychomotor Agitation
+        - IDSC1-Psychomotor Slowing
+        - IDSC1-Quality of Mood
+        - IDSC1-Reactivity of Mood
+        - IDSC1-Score
+        - IDSC1-Sexual Interest
+        - IDSC1-Sleep Onset Insomnia
+        - IDSC1-Somatic Complaints
+        - IDSC1-Suicidal Ideation
+        - IDSC1-Sympathetic Arousal
+        - IDSC1-Weight (Decrease)
+        - IDSC1-Weight (Increase)
+outcome:
+  message: Value not found in non-extensible codelist Inventory of Depressive Symptomatology
+    Clinician-Rated Version Clinical Classification Test Name (C130246)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130246
+  codelist_name: Inventory of Depressive Symptomatology Clinician-Rated Version Clinical
+    Classification Test Name
+  codelist_submission_value: IDSC1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 33
+

@@ -1,0 +1,47 @@
+id: HRL-CT-0506
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GDS02TN (Geriatric Depression Scale Short Form Questionnaire Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GDS02TN
+      operator: in
+      value:
+        - GDS02-Afraid of Something Bad Happening
+        - GDS02-Bored Often
+        - GDS02-Dropped Activities and Interests
+        - GDS02-Feel Full of Energy
+        - GDS02-Feel Happy Most of Time
+        - GDS02-Feel Hopeless
+        - GDS02-Feel Worthless
+        - GDS02-Good Spirits Most of Time
+        - GDS02-Life Is Empty
+        - GDS02-Memory Problems
+        - GDS02-Most People Better Off Than You
+        - GDS02-Often Feel Helpless
+        - GDS02-Prefer to Stay Home
+        - GDS02-Satisfied With Life
+        - GDS02-Total Score
+        - GDS02-Wonderful to Be Alive
+outcome:
+  message: Value not found in non-extensible codelist Geriatric Depression Scale Short
+    Form Questionnaire Test Name (C106664)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106664
+  codelist_name: Geriatric Depression Scale Short Form Questionnaire Test Name
+  codelist_submission_value: GDS02TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 16
+

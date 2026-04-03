@@ -1,0 +1,58 @@
+id: HRL-CT-0708
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC030TC (National Comprehensive Cancer Network/Functional Assessment
+  of Cancer Therapy-Brain Symptom Index-24 Version 2 Questionnaire Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC030TC
+      operator: in
+      value:
+        - FAC03001
+        - FAC03002
+        - FAC03003
+        - FAC03004
+        - FAC03005
+        - FAC03006
+        - FAC03007
+        - FAC03008
+        - FAC03009
+        - FAC03010
+        - FAC03011
+        - FAC03012
+        - FAC03013
+        - FAC03014
+        - FAC03015
+        - FAC03016
+        - FAC03017
+        - FAC03018
+        - FAC03019
+        - FAC03020
+        - FAC03021
+        - FAC03022
+        - FAC03023
+        - FAC03024
+outcome:
+  message: Value not found in non-extensible codelist National Comprehensive Cancer
+    Network/Functional Assessment of Cancer Therapy-Brain Symptom Index-24 Version
+    2 Questionnaire Test Code (C150786)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150786
+  codelist_name: National Comprehensive Cancer Network/Functional Assessment of Cancer
+    Therapy-Brain Symptom Index-24 Version 2 Questionnaire Test Code
+  codelist_submission_value: FAC030TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 24
+

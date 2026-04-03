@@ -1,0 +1,47 @@
+id: HRL-CT-0985
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SF122TN (Short Form 12 Health Survey Acute, US Version 1.0 Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SF122TN
+      operator: in
+      value:
+        - SF122-Did You Have a Lot of Energy
+        - 'SF122-Emotional: Accomplished Less'
+        - 'SF122-Emotional: Did Work Less Carefully'
+        - SF122-Have You Felt Calm and Peaceful
+        - SF122-In General You Say Your Health Is
+        - SF122-Limit Climbing Several Flights
+        - SF122-Limit Moderate Activities
+        - SF122-Mental Component Score
+        - SF122-Pain Interfere With Normal Work
+        - SF122-Physical Component Score
+        - 'SF122-Physical: Accomplished Less'
+        - 'SF122-Physical: Limited Kind of Work'
+        - SF122-SF-6D_R2 (Util Index Rel 2) Score
+        - SF122-Time Phys/Emotional Interfered
+        - SF122-You Felt Downhearted and Blue
+outcome:
+  message: Value not found in non-extensible codelist Short Form 12 Health Survey
+    Acute, US Version 1.0 Questionnaire Test Name (C177713)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C177713
+  codelist_name: Short Form 12 Health Survey Acute, US Version 1.0 Questionnaire Test
+    Name
+  codelist_submission_value: SF122TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 15
+

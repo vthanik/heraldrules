@@ -1,0 +1,40 @@
+id: HRL-CT-0577
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: IPS01TC (International Prostate Symptom Score Questionnaire Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: IPS01TC
+      operator: in
+      value:
+        - IPS0101
+        - IPS0102
+        - IPS0103
+        - IPS0104
+        - IPS0105
+        - IPS0106
+        - IPS0107
+        - IPS0108
+        - IPS0109
+outcome:
+  message: Value not found in non-extensible codelist International Prostate Symptom
+    Score Questionnaire Test Code (C183547)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C183547
+  codelist_name: International Prostate Symptom Score Questionnaire Test Code
+  codelist_submission_value: IPS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 9
+

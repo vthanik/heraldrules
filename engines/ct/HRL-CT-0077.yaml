@@ -1,0 +1,111 @@
+id: HRL-CT-0077
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ADL01TN (Alzheimer's Disease Cooperative Study-Activities of Daily Living
+  Inventory Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ADL01TN
+      operator: in
+      value:
+        - 'ADL01-Appliance: Dishwasher'
+        - 'ADL01-Appliance: Dryer'
+        - 'ADL01-Appliance: Food Processor'
+        - 'ADL01-Appliance: Microwave'
+        - 'ADL01-Appliance: Other Specify'
+        - 'ADL01-Appliance: Other'
+        - 'ADL01-Appliance: Range'
+        - 'ADL01-Appliance: Toaster Oven'
+        - 'ADL01-Appliance: Toaster'
+        - 'ADL01-Appliance: Vacuum'
+        - 'ADL01-Appliance: Washer'
+        - ADL01-Aware of Appointment Ahead of Time
+        - ADL01-Clear Dishes Usual Performance
+        - ADL01-Clear Dishes
+        - ADL01-Dispose Garbage Usual Performance
+        - ADL01-Dispose of Garbage
+        - ADL01-Find Belongings Usual Performance
+        - ADL01-Find Belongings
+        - ADL01-Get Around Optimal Performance
+        - ADL01-Get Around Outside Home
+        - ADL01-Go Shopping
+        - ADL01-Highest Level of Food Preparation
+        - ADL01-Highest Telephone Use Performance
+        - ADL01-Hobbies Only at Day Care
+        - ADL01-How Usually Selects Items
+        - ADL01-Keep Appointments
+        - ADL01-Left at Home for 1 Hour or Longer
+        - ADL01-Left at Home for Less Than 1 Hour
+        - ADL01-Left Away From Home
+        - ADL01-Left On His/Her Own
+        - ADL01-Make a Meal
+        - ADL01-Most Complicated Writings
+        - ADL01-Number Don't Know Responses
+        - ADL01-Obtain Beverage Highest Perform
+        - ADL01-Obtain Beverage
+        - ADL01-Optimal Grooming Performance
+        - ADL01-Optimal Walking Performance
+        - 'ADL01-Pastime: Art'
+        - 'ADL01-Pastime: Bingo'
+        - 'ADL01-Pastime: Card or Board Games'
+        - 'ADL01-Pastime: Crosswords'
+        - 'ADL01-Pastime: Fishing'
+        - 'ADL01-Pastime: Gardening'
+        - 'ADL01-Pastime: Golf'
+        - 'ADL01-Pastime: Knitting'
+        - 'ADL01-Pastime: Musical Instrument'
+        - 'ADL01-Pastime: Other Specify'
+        - 'ADL01-Pastime: Other'
+        - 'ADL01-Pastime: Reading'
+        - 'ADL01-Pastime: Sewing'
+        - 'ADL01-Pastime: Tennis'
+        - 'ADL01-Pastime: Workshop'
+        - ADL01-Pay Attention to Conversation
+        - ADL01-Pay Without Supervision
+        - ADL01-Perform Pastime
+        - ADL01-Read More Than 5 Minutes
+        - ADL01-Select First Clothes for the Day
+        - ADL01-Select Television Program
+        - ADL01-Talk 1 Hour or More After Reading
+        - ADL01-Talk About at Home Events
+        - ADL01-Talk About Current Events
+        - ADL01-Talk About Events Heard/Read About
+        - ADL01-Talk About Outside Events
+        - ADL01-Talk About TV Content While Watch
+        - ADL01-Talk About TV Content Within a Day
+        - ADL01-Talk Within 1 Hour After Reading
+        - ADL01-Total ADCS-ADL Score
+        - ADL01-Use a Telephone
+        - ADL01-Use Common Used Appliances
+        - ADL01-Use Household Appliance
+        - ADL01-Usual Bathing Performance
+        - ADL01-Usual Bowel/Bladder Function
+        - ADL01-Usual Common Pastimes Performance
+        - ADL01-Usual Conversation Participation
+        - ADL01-Usual Dressing Performance
+        - ADL01-Usual Eating Performance
+        - ADL01-Usual Physically Dressing Perform
+        - ADL01-Watch Television
+        - ADL01-Write Things Down
+outcome:
+  message: Value not found in non-extensible codelist Alzheimer's Disease Cooperative
+    Study-Activities of Daily Living Inventory Questionnaire Test Name (C105139)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C105139
+  codelist_name: Alzheimer's Disease Cooperative Study-Activities of Daily Living
+    Inventory Questionnaire Test Name
+  codelist_submission_value: ADL01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 79
+

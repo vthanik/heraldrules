@@ -1,0 +1,42 @@
+id: HRL-CT-0768
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PR01TC (Pain Relief Questionnaire Test Code) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PR01TC
+      operator: in
+      value:
+        - PR0101
+        - PR0102
+        - PR0103
+        - PR0104
+        - PR0105
+        - PR0106
+        - PR0107
+        - PR0108
+        - PR0109
+        - PR0110
+        - PR0111
+outcome:
+  message: Value not found in non-extensible codelist Pain Relief Questionnaire Test
+    Code (C105136)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C105136
+  codelist_name: Pain Relief Questionnaire Test Code
+  codelist_submission_value: PR01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 11
+

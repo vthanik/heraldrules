@@ -1,0 +1,56 @@
+id: HRL-CT-0372
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR03TN (European Organization for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Bone Metastases 22 Items Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR03TN
+      operator: in
+      value:
+        - EOR03-Constant Pain
+        - EOR03-Felt Positive About Health
+        - EOR03-Hopeful Pain Will Get Better
+        - EOR03-Intermittent Pain
+        - EOR03-Isolated From Those Close to You
+        - EOR03-Modify Daily Activities
+        - EOR03-Pain in Arm/Shoulder
+        - EOR03-Pain in Back
+        - EOR03-Pain in Buttock
+        - EOR03-Pain in Chest/Rib
+        - EOR03-Pain in Leg/Hip
+        - EOR03-Pain Interfered Sleeping at Night
+        - EOR03-Pain Not Relieved by Medications
+        - EOR03-Pain When Trying to Stand Up
+        - EOR03-Pain While Lying Down
+        - EOR03-Pain While Sitting
+        - EOR03-Pain While Walking
+        - EOR03-Pain With Activities
+        - EOR03-Pain With Strenuous Activity
+        - EOR03-Worried About Health in Future
+        - EOR03-Worried About Loss of Mobility
+        - EOR03-Worried Becoming Dependent Illness
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Bone Metastases
+    22 Items Test Name (C219716)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219716
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Bone Metastases 22 Items Test Name
+  codelist_submission_value: EOR03TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 22
+

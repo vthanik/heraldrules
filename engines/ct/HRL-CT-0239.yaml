@@ -1,0 +1,66 @@
+id: HRL-CT-0239
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSS02TC (Columbia-Suicide Severity Rating Scale Since Last Visit Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSS02TC
+      operator: in
+      value:
+        - CSS0201
+        - CSS0201A
+        - CSS0202
+        - CSS0202A
+        - CSS0203
+        - CSS0203A
+        - CSS0204
+        - CSS0204A
+        - CSS0205
+        - CSS0205A
+        - CSS0206
+        - CSS0206A
+        - CSS0207
+        - CSS0208
+        - CSS0209
+        - CSS0210
+        - CSS0211
+        - CSS0212
+        - CSS0213
+        - CSS0213A
+        - CSS0214
+        - CSS0215
+        - CSS0216
+        - CSS0216A
+        - CSS0217
+        - CSS0218
+        - CSS0218A
+        - CSS0219
+        - CSS0219A
+        - CSS0220
+        - CSS0221
+        - CSS0222A
+        - CSS0222B
+        - CSS0222C
+outcome:
+  message: Value not found in non-extensible codelist Columbia-Suicide Severity Rating
+    Scale Since Last Visit Questionnaire Test Code (C103461)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103461
+  codelist_name: Columbia-Suicide Severity Rating Scale Since Last Visit Questionnaire
+    Test Code
+  codelist_submission_value: CSS02TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 34
+

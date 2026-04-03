@@ -1,0 +1,61 @@
+id: HRL-CT-0875
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PASI05TC (Psoriasis Area and Severity Index Version Bozek Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PASI05TC
+      operator: in
+      value:
+        - PASI0501
+        - PASI0502
+        - PASI0503
+        - PASI0504
+        - PASI0505
+        - PASI0506
+        - PASI0507
+        - PASI0508
+        - PASI0509
+        - PASI0510
+        - PASI0511
+        - PASI0512
+        - PASI0513
+        - PASI0514
+        - PASI0515
+        - PASI0516
+        - PASI0517
+        - PASI0518
+        - PASI0519
+        - PASI0520
+        - PASI0521
+        - PASI0522
+        - PASI0523
+        - PASI0524
+        - PASI0525
+        - PASI0526
+        - PASI0527
+        - PASI0528
+        - PASI0529
+outcome:
+  message: Value not found in non-extensible codelist Psoriasis Area and Severity
+    Index Version Bozek Clinical Classification Test Code (C190938)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C190938
+  codelist_name: Psoriasis Area and Severity Index Version Bozek Clinical Classification
+    Test Code
+  codelist_submission_value: PASI05TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 29
+

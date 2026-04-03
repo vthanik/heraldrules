@@ -1,0 +1,74 @@
+id: HRL-CT-0455
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC018TC (Functional Assessment of Cancer Therapy-Lymphoma Version 4
+  Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC018TC
+      operator: in
+      value:
+        - FAC01801
+        - FAC01802
+        - FAC01803
+        - FAC01804
+        - FAC01805
+        - FAC01806
+        - FAC01807
+        - FAC01808
+        - FAC01809
+        - FAC01810
+        - FAC01811
+        - FAC01812
+        - FAC01813
+        - FAC01814
+        - FAC01815
+        - FAC01816
+        - FAC01817
+        - FAC01818
+        - FAC01819
+        - FAC01820
+        - FAC01821
+        - FAC01822
+        - FAC01823
+        - FAC01824
+        - FAC01825
+        - FAC01826
+        - FAC01827
+        - FAC01828
+        - FAC01829
+        - FAC01830
+        - FAC01831
+        - FAC01832
+        - FAC01833
+        - FAC01834
+        - FAC01835
+        - FAC01836
+        - FAC01837
+        - FAC01838
+        - FAC01839
+        - FAC01840
+        - FAC01841
+        - FAC01842
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Lymphoma Version 4 Questionnaire Test Code (C130257)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130257
+  codelist_name: Functional Assessment of Cancer Therapy-Lymphoma Version 4 Questionnaire
+    Test Code
+  codelist_submission_value: FAC018TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 42
+

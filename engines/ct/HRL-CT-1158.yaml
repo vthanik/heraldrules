@@ -1,0 +1,65 @@
+id: HRL-CT-1158
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: VHI01TN (Voice Handicap Index Questionnaire Test Name) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: VHI01TN
+      operator: in
+      value:
+        - VHI01-Avoid People Because of My Voice
+        - VHI01-Change Voice to Sound Different
+        - VHI01-Clarity of Voice is Unpredictable
+        - VHI01-Embarrassed People Ask Me Repeat
+        - VHI01-Family Has Difficulty Hearing Me
+        - VHI01-Feel Annoyed People Ask Me Repeat
+        - VHI01-Have to Strain to Produce Voice
+        - VHI01-I Am Ashamed of My Voice Problem
+        - VHI01-I Run Out of Air When I Talk
+        - VHI01-Left Out of Conversation B/c Voice
+        - VHI01-Less Outgoing B/c of Voice Problem
+        - VHI01-My Voice is Worse in the Evening
+        - VHI01-My Voice Problem Upsets Me
+        - VHI01-My Voice Sounds Creaky and Dry
+        - VHI01-Part I-F Subtotal
+        - VHI01-Part II-P Subtotal
+        - VHI01-Part III-E Subtotal
+        - VHI01-People Ask What's Wrong w/ Voice
+        - VHI01-People Difficulty Understanding Me
+        - VHI01-People Don't Understand Voice Prob
+        - VHI01-People Seem Irritated w/ My Voice
+        - VHI01-Repeat Myself Speak Face-to-Face
+        - VHI01-Sound Voice Varies Throughout Day
+        - VHI01-Speak Friends Less Often B/c Voice
+        - VHI01-Tense Talking to Others B/c Voice
+        - VHI01-Total Score
+        - VHI01-Use Great Deal of Effort to Speak
+        - VHI01-Use Phone Less Often
+        - VHI01-Voice Difficulties Restrict Life
+        - VHI01-Voice Gives Out on Me Speaking
+        - VHI01-Voice Makes Difficult to Hear Me
+        - VHI01-Voice Makes Me Feel Handicapped
+        - VHI01-Voice Makes Me Feel Incompetent
+        - VHI01-Voice Problem Causes Lose Income
+outcome:
+  message: Value not found in non-extensible codelist Voice Handicap Index Questionnaire
+    Test Name (C190941)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C190941
+  codelist_name: Voice Handicap Index Questionnaire Test Name
+  codelist_submission_value: VHI01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 34
+

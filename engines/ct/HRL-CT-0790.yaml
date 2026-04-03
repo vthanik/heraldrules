@@ -1,0 +1,179 @@
+id: HRL-CT-0790
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PT01TC (Patient-Reported Outcomes Version of the Common Terminology Criteria
+  for Adverse Events Item Library Version 1.0 Questionnaire Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PT01TC
+      operator: in
+      value:
+        - PT01001A
+        - PT01002A
+        - PT01003A
+        - PT01003B
+        - PT01004A
+        - PT01005A
+        - PT01006A
+        - PT01007A
+        - PT01008A
+        - PT01008B
+        - PT01009A
+        - PT01009B
+        - PT01010A
+        - PT01010B
+        - PT01011A
+        - PT01011B
+        - PT01012A
+        - PT01013A
+        - PT01013B
+        - PT01014A
+        - PT01014B
+        - PT01015A
+        - PT01016A
+        - PT01017A
+        - PT01017B
+        - PT01017C
+        - PT01018A
+        - PT01018B
+        - PT01019A
+        - PT01019B
+        - PT01020A
+        - PT01020B
+        - PT01021A
+        - PT01022A
+        - PT01022B
+        - PT01022C
+        - PT01023A
+        - PT01023B
+        - PT01024A
+        - PT01025A
+        - PT01026A
+        - PT01027A
+        - PT01028A
+        - PT01029A
+        - PT01030A
+        - PT01031A
+        - PT01032A
+        - PT01033A
+        - PT01034A
+        - PT01035A
+        - PT01036A
+        - PT01037A
+        - PT01038A
+        - PT01039A
+        - PT01039B
+        - PT01040A
+        - PT01040B
+        - PT01041A
+        - PT01041B
+        - PT01042A
+        - PT01043A
+        - PT01044A
+        - PT01044B
+        - PT01045A
+        - PT01046A
+        - PT01046B
+        - PT01047A
+        - PT01047B
+        - PT01048A
+        - PT01048B
+        - PT01048C
+        - PT01049A
+        - PT01049B
+        - PT01049C
+        - PT01050A
+        - PT01050B
+        - PT01050C
+        - PT01051A
+        - PT01051B
+        - PT01051C
+        - PT01052A
+        - PT01052B
+        - PT01053A
+        - PT01053B
+        - PT01054A
+        - PT01054B
+        - PT01054C
+        - PT01055A
+        - PT01055B
+        - PT01055C
+        - PT01056A
+        - PT01056B
+        - PT01056C
+        - PT01057A
+        - PT01058A
+        - PT01059A
+        - PT01060A
+        - PT01061A
+        - PT01062A
+        - PT01062B
+        - PT01063A
+        - PT01063B
+        - PT01064A
+        - PT01065A
+        - PT01065B
+        - PT01066A
+        - PT01067A
+        - PT01068A
+        - PT01069A
+        - PT01070A
+        - PT01071A
+        - PT01072A
+        - PT01073A
+        - PT01074A
+        - PT01074B
+        - PT01075A
+        - PT01075B
+        - PT01076A
+        - PT01077A
+        - PT01077B
+        - PT01078A
+        - PT01078B
+        - PT01079A
+        - PT01080A
+        - PT01081
+        - PT01082A
+        - PT01082B
+        - PT01083A
+        - PT01083B
+        - PT01084A
+        - PT01084B
+        - PT01085A
+        - PT01085B
+        - PT01086A
+        - PT01086B
+        - PT01087A
+        - PT01087B
+        - PT01088A
+        - PT01088B
+        - PT01089A
+        - PT01089B
+        - PT01090A
+        - PT01090B
+        - PT01091A
+        - PT01091B
+outcome:
+  message: Value not found in non-extensible codelist Patient-Reported Outcomes Version
+    of the Common Terminology Criteria for Adverse Events Item Library Version 1.0
+    Questionnaire Test Code (C179942)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C179942
+  codelist_name: Patient-Reported Outcomes Version of the Common Terminology Criteria
+    for Adverse Events Item Library Version 1.0 Questionnaire Test Code
+  codelist_submission_value: PT01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 145
+

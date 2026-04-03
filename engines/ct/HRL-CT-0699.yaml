@@ -1,0 +1,104 @@
+id: HRL-CT-0699
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: UPD2TN (Movement Disorder Society Unified Parkinson's Disease Rating
+  Scale Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: UPD2TN
+      operator: in
+      value:
+        - UPD2-Anxious Mood
+        - UPD2-Apathy
+        - UPD2-Arising from Chair
+        - UPD2-Body Bradykinesia
+        - UPD2-Chewing and Swallowing
+        - UPD2-Clinical State on Meds
+        - UPD2-Cognitive Impairment
+        - UPD2-Complexity Motor Fluctuations
+        - UPD2-Consistency of Rest Tremor
+        - UPD2-Constipation Problems
+        - UPD2-Daytime Sleepiness
+        - UPD2-Depressed Mood
+        - UPD2-Doing Hobbies/Other Activities
+        - UPD2-Dressing
+        - UPD2-Dyskinesias During Exam
+        - UPD2-Eating Tasks
+        - UPD2-Facial Expression
+        - UPD2-Fatigue
+        - UPD2-Freezing of Gait
+        - UPD2-Freezing
+        - UPD2-Ftrs Dopa Dysregulation Synd
+        - UPD2-Functional Impact Dyskinesias
+        - UPD2-Functional Impact Fluctuations
+        - UPD2-Gait
+        - UPD2-Get Out of Bed/Car/Deep Chair
+        - UPD2-Hallucinations and Psychosis
+        - UPD2-Handwriting
+        - UPD2-Hoehn and Yahr Stage
+        - UPD2-Hygiene
+        - UPD2-Kinetic Tremor of Left Hand
+        - UPD2-Kinetic Tremor of Right Hand
+        - UPD2-Left Finger Tapping
+        - UPD2-Left Hand Movements
+        - UPD2-Left Leg Agility
+        - UPD2-Left Toe Tapping
+        - UPD2-Lightheadedness on Standing
+        - UPD2-Medication for PD
+        - UPD2-Minutes Since Levodopa Dose
+        - UPD2-Movements Interfere Ratings
+        - UPD2-Pain and other Sensations
+        - UPD2-Painful Off-state Dystonia
+        - UPD2-Postural Stability
+        - UPD2-Postural Tremor of Left Hand
+        - UPD2-Postural Tremor of Right Hand
+        - UPD2-Posture
+        - UPD2-Pron/Sup Movement of Left Hand
+        - UPD2-Pron/Sup Movement of RT Hand
+        - UPD2-Rest Tremor Amplitude Lip/Jaw
+        - UPD2-Rest Tremor Amplitude LLE
+        - UPD2-Rest Tremor Amplitude LUE
+        - UPD2-Rest Tremor Amplitude RLE
+        - UPD2-Rest Tremor Amplitude RUE
+        - UPD2-Right Finger Tapping
+        - UPD2-Right Hand Movements
+        - UPD2-Right Leg Agility
+        - UPD2-Right Toe Tapping
+        - UPD2-Rigidity Left Lower Extremity
+        - UPD2-Rigidity Left Upper Extremity
+        - UPD2-Rigidity Neck
+        - UPD2-Rigidity RT Lower Extremity
+        - UPD2-Rigidity RT Upper Extremity
+        - UPD2-Saliva and Drooling
+        - UPD2-Sleep Problems
+        - UPD2-Speech Problems
+        - UPD2-Speech
+        - UPD2-Taking Levodopa
+        - UPD2-Time Spent in the Off State
+        - UPD2-Time Spent with Dyskinesias
+        - UPD2-Tremor
+        - UPD2-Turning in Bed
+        - UPD2-Urinary Problems
+        - UPD2-Walking and Balance
+outcome:
+  message: Value not found in non-extensible codelist Movement Disorder Society Unified
+    Parkinson's Disease Rating Scale Questionnaire Test Name (C100139)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100139
+  codelist_name: Movement Disorder Society Unified Parkinson's Disease Rating Scale
+    Questionnaire Test Name
+  codelist_submission_value: UPD2TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 72
+

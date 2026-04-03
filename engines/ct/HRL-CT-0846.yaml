@@ -1,0 +1,40 @@
+id: HRL-CT-0846
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PHSPRPCD (Physical Properties Test Code) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PHSPRPCD
+      operator: in
+      value:
+        - COLOR
+        - CONSIST
+        - DEPTH
+        - DESCR
+        - DIAMETER
+        - HAIRCOV
+        - LENGTH
+        - SHAPE
+        - ULCER
+        - WIDTH
+outcome:
+  message: Value not found in extensible codelist Physical Properties Test Code (C95121)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C95121
+  codelist_name: Physical Properties Test Code
+  codelist_submission_value: PHSPRPCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 10
+

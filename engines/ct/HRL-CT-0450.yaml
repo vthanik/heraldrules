@@ -1,0 +1,76 @@
+id: HRL-CT-0450
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC017TN (Functional Assessment of Cancer Therapy-Leukemia Version 4
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC017TN
+      operator: in
+      value:
+        - FAC017-Able to Do My Usual Activities
+        - FAC017-Bothered by Lumps or Swelling
+        - FAC017-Bothered by Treatment Side Effect
+        - FAC017-Certain Parts of Body Have Pain
+        - FAC017-Content With Quality of My Life
+        - FAC017-Enjoy Things I Usually Do for Fun
+        - FAC017-Feel Isolated Because of Illness
+        - FAC017-Get Emotional Support From Family
+        - FAC017-I Am Able to Enjoy Life
+        - FAC017-I Am Able to Work
+        - FAC017-I Am Bothered by Fevers
+        - FAC017-I Am Bothered by the Chills
+        - FAC017-I Am Forced to Spend Time in Bed
+        - FAC017-I Am Losing Weight
+        - FAC017-I Am Satisfied With My Sex Life
+        - FAC017-I Am Sleeping Well
+        - FAC017-I Bleed Easily
+        - FAC017-I Bruise Easily
+        - FAC017-I Feel Close to My Friends
+        - FAC017-I Feel Close to My Partner
+        - FAC017-I Feel Ill
+        - FAC017-I Feel Nervous
+        - FAC017-I Feel Sad
+        - FAC017-I Feel Weak All Over
+        - FAC017-I Get Support From My Friends
+        - FAC017-I Get Tired Easily
+        - FAC017-I Have a Good Appetite
+        - FAC017-I Have a Lack of Energy
+        - FAC017-I Have Accepted My Illness
+        - FAC017-I Have Emotional Ups and Downs
+        - FAC017-I Have Nausea
+        - FAC017-I Have Night Sweats
+        - FAC017-I Have Pain
+        - FAC017-I Worry About Dying
+        - FAC017-I Worry About Getting Infections
+        - FAC017-Losing Hope Against Illness
+        - FAC017-My Family Has Accepted My Illness
+        - FAC017-My Work Is Fulfilling
+        - FAC017-Satisfied Communication Illness
+        - FAC017-Satisfied With How I Am Coping
+        - FAC017-Trouble Meeting Needs of Family
+        - FAC017-Uncertain About My Future Health
+        - FAC017-Worry I Might Get New Symptoms
+        - FAC017-Worry My Condition Will Get Worse
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Leukemia Version 4 Questionnaire Test Name (C130252)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130252
+  codelist_name: Functional Assessment of Cancer Therapy-Leukemia Version 4 Questionnaire
+    Test Name
+  codelist_submission_value: FAC017TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 44
+

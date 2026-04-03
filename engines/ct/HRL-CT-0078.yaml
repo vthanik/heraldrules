@@ -1,0 +1,72 @@
+id: HRL-CT-0078
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ADL02TC (Alzheimer's Disease Cooperative Study-Activities of Daily Living
+  Inventory Severe Dementia Version Questionnaire Test Code) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ADL02TC
+      operator: in
+      value:
+        - ADL0201
+        - ADL0202
+        - ADL0203
+        - ADL0204
+        - ADL0205
+        - ADL0206
+        - ADL0207
+        - ADL0207A
+        - ADL0208
+        - ADL0208A
+        - ADL0208B
+        - ADL0208C
+        - ADL0209
+        - ADL0209A
+        - ADL0210
+        - ADL0210A
+        - ADL0211
+        - ADL0211A
+        - ADL0212
+        - ADL0212A
+        - ADL0213
+        - ADL0213A
+        - ADL0214
+        - ADL0214A
+        - ADL0215
+        - ADL0215A
+        - ADL0215B
+        - ADL0215C
+        - ADL0216
+        - ADL0217
+        - ADL0218
+        - ADL0219
+        - ADL0220
+        - ADL0221
+        - ADL0222
+        - ADL0223
+        - ADL0224
+        - ADL0225
+outcome:
+  message: Value not found in non-extensible codelist Alzheimer's Disease Cooperative
+    Study-Activities of Daily Living Inventory Severe Dementia Version Questionnaire
+    Test Code (C106653)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106653
+  codelist_name: Alzheimer's Disease Cooperative Study-Activities of Daily Living
+    Inventory Severe Dementia Version Questionnaire Test Code
+  codelist_submission_value: ADL02TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 38
+

@@ -1,0 +1,71 @@
+id: HRL-CT-0237
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSS09TC (Columbia-Suicide Severity Rating Scale Screening Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSS09TC
+      operator: in
+      value:
+        - CSS0901
+        - CSS0901A
+        - CSS0902
+        - CSS0902A
+        - CSS0903
+        - CSS0903A
+        - CSS0904
+        - CSS0904A
+        - CSS0905
+        - CSS0905A
+        - CSS0906
+        - CSS0906A
+        - CSS0907
+        - CSS0908
+        - CSS0909
+        - CSS0910
+        - CSS0911
+        - CSS0912
+        - CSS0913
+        - CSS0913A
+        - CSS0914
+        - CSS0915
+        - CSS0916
+        - CSS0916A
+        - CSS0917
+        - CSS0918
+        - CSS0918A
+        - CSS0919
+        - CSS0919A
+        - CSS0920
+        - CSS0921A
+        - CSS0921B
+        - CSS0921C
+        - CSS0922A
+        - CSS0922B
+        - CSS0922C
+        - CSS0923A
+        - CSS0923B
+        - CSS0923C
+outcome:
+  message: Value not found in non-extensible codelist Columbia-Suicide Severity Rating
+    Scale Screening Questionnaire Test Code (C111342)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C111342
+  codelist_name: Columbia-Suicide Severity Rating Scale Screening Questionnaire Test
+    Code
+  codelist_submission_value: CSS09TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 39
+

@@ -1,0 +1,35 @@
+id: HRL-CT-0003
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: A4STR1TC (4-Stair Ascend Functional Test Test Code) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: A4STR1TC
+      operator: in
+      value:
+        - A4STR101
+        - A4STR102
+        - A4STR103
+        - A4STR104
+outcome:
+  message: Value not found in non-extensible codelist 4-Stair Ascend Functional Test
+    Test Code (C141663)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C141663
+  codelist_name: 4-Stair Ascend Functional Test Test Code
+  codelist_submission_value: A4STR1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

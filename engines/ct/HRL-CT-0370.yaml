@@ -1,0 +1,61 @@
+id: HRL-CT-0370
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR30TN (European Organization for the Research and Treatment of Cancer
+  Quality of Life - Anal Cancer 27 Items Questionnaire Test Name) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR30TN
+      operator: in
+      value:
+        - EOR30-Bowel Movements Been Painful
+        - EOR30-Clean Yourself More Often
+        - EOR30-Disease/Treatment Affect Sex Life
+        - EOR30-Extent Interested in Sex
+        - EOR30-Frequent Bowel Movements
+        - EOR30-Itchy/Irritated Skin Areas Treated
+        - EOR30-Leakage Stools/Mucus Anal Opening
+        - 'EOR30-Men: Difficulty Getting Erection'
+        - 'EOR30-No Stoma: Move Bowels Hurry Toilet'
+        - 'EOR30-No Stoma: Problems With Gas'
+        - 'EOR30-No Stoma: Unable to Empty Bowels'
+        - EOR30-Pain During Intercourse
+        - EOR30-Pain While Sitting
+        - EOR30-Pain/Discomfort Anal Opening
+        - EOR30-Problems Going Out Need Toilet
+        - EOR30-Problems Planning Activities
+        - EOR30-Sexually Active
+        - EOR30-Soreness in Areas Treated
+        - 'EOR30-Stoma: Leakage of Stools Stoma Bag'
+        - 'EOR30-Stoma: Sore Skin Around Stoma'
+        - 'EOR30-Stoma: Unintentional Gas Stoma Bag'
+        - EOR30-Swelling in Legs/Ankles
+        - EOR30-Uncomfortable in Certain Positions
+        - EOR30-Urinate Frequently
+        - 'EOR30-Women: Vagina Been Painful'
+        - 'EOR30-Women: Vagina Felt Dry'
+        - 'EOR30-Women: Vagina Felt Narrow/Tight'
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life - Anal Cancer 27 Items Questionnaire
+    Test Name (C219712)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219712
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life - Anal Cancer 27 Items Questionnaire Test Name
+  codelist_submission_value: EOR30TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 27
+

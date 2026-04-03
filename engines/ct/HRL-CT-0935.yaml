@@ -1,0 +1,174 @@
+id: HRL-CT-0935
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ROUTE (Route of Administration Response) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ROUTE
+      operator: in
+      value:
+        - AURICULAR (OTIC)
+        - BUCCAL
+        - CONJUNCTIVAL
+        - CUTANEOUS
+        - DENTAL
+        - DIETARY
+        - ELECTRO-OSMOSIS
+        - ENDOCERVICAL
+        - ENDOSINUSIAL
+        - ENDOTRACHEAL
+        - ENTERAL
+        - EPIDURAL
+        - EXTRA-AMNIOTIC
+        - EXTRACORPOREAL
+        - GASTROJEJUNAL
+        - HEMODIALYSIS
+        - IMMERSION
+        - INFILTRATION
+        - INTERSTITIAL
+        - INTRA-ABDOMINAL
+        - INTRA-AMNIOTIC
+        - INTRA-ARTERIAL
+        - INTRA-ARTICULAR
+        - INTRABILIARY
+        - INTRABRONCHIAL
+        - INTRABURSAL
+        - INTRACAMERAL
+        - INTRACARDIAC
+        - INTRACARTILAGINOUS
+        - INTRACAUDAL
+        - INTRACAVERNOUS
+        - INTRACAVITARY
+        - INTRACEREBRAL
+        - INTRACISTERNAL
+        - INTRACOCHLEAR
+        - INTRACORNEAL
+        - INTRACORONAL, DENTAL
+        - INTRACORONARY
+        - INTRACORPORUS CAVERNOSUM
+        - INTRADERMAL
+        - INTRADISCAL
+        - INTRADUCTAL
+        - INTRADUODENAL
+        - INTRADURAL
+        - INTRAEPIDERMAL
+        - INTRAESOPHAGEAL
+        - INTRAGASTRIC
+        - INTRAGINGIVAL
+        - INTRAHEPATIC
+        - INTRAILEAL
+        - INTRAJEJUNAL
+        - INTRALESIONAL
+        - INTRALUMINAL
+        - INTRALYMPHATIC
+        - INTRAMAMMARY
+        - INTRAMANDIBULAR
+        - INTRAMEDULLARY
+        - INTRAMENINGEAL
+        - INTRAMUSCULAR
+        - INTRANODAL
+        - INTRAOCULAR
+        - INTRAOSSEOUS
+        - INTRAOVARIAN
+        - INTRAPALATAL
+        - INTRAPARENCHYMAL
+        - INTRAPERICARDIAL
+        - INTRAPERITONEAL
+        - INTRAPLEURAL
+        - INTRAPROSTATIC
+        - INTRAPULMONARY
+        - INTRARUMINAL
+        - INTRASINAL
+        - INTRASPINAL
+        - INTRASTOMAL
+        - INTRASURGICAL SITE
+        - INTRASYNOVIAL
+        - INTRATENDINOUS
+        - INTRATESTICULAR
+        - INTRATHALAMIC
+        - INTRATHECAL
+        - INTRATHORACIC
+        - INTRATUBULAR
+        - INTRATUMOR
+        - INTRATYMPANIC
+        - INTRAUTERINE
+        - INTRAVAGINAL
+        - INTRAVASCULAR
+        - INTRAVENOUS BOLUS
+        - INTRAVENOUS DRIP
+        - INTRAVENOUS
+        - INTRAVENTRICULAR
+        - INTRAVESICAL
+        - INTRAVITREAL
+        - IONTOPHORESIS
+        - IRRIGATION
+        - LARYNGEAL
+        - MICRODIALYSIS
+        - NASAL
+        - NASODUODENAL
+        - NASOGASTRIC
+        - NASOJEJUNAL
+        - NOT APPLICABLE
+        - OCCLUSIVE DRESSING TECHNIQUE
+        - OPHTHALMIC
+        - ORAL GAVAGE
+        - ORAL
+        - OROGASTRIC
+        - OROMUCOSAL
+        - OROPHARYNGEAL
+        - PARENTERAL
+        - PERCUTANEOUS
+        - PERIARTICULAR
+        - PERIDURAL
+        - PERINEURAL
+        - PERIODONTAL
+        - PERIVENOUS
+        - PHARYNGEAL
+        - RECTAL
+        - RESPIRATORY (INHALATION)
+        - RETROBULBAR
+        - SOFT TISSUE
+        - SUBARACHNOID
+        - SUBCONJUNCTIVAL
+        - SUBCUTANEOUS
+        - SUBDURAL
+        - SUBLINGUAL
+        - SUBMUCOSAL
+        - SUBRETINAL
+        - SUBTENON
+        - SUPRACHOROIDAL
+        - TOPICAL
+        - TRANSDERMAL
+        - TRANSFORAMINAL
+        - TRANSMAMMARY
+        - TRANSMUCOSAL
+        - TRANSPLACENTAL
+        - TRANSTRACHEAL
+        - TRANSTYMPANIC
+        - UNASSIGNED
+        - UNKNOWN
+        - URETERAL
+        - URETHRAL
+        - VAGINAL
+outcome:
+  message: Value not found in extensible codelist Route of Administration Response
+    (C66729)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C66729
+  codelist_name: Route of Administration Response
+  codelist_submission_value: ROUTE
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 143
+

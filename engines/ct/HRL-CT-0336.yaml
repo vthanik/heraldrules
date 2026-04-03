@@ -1,0 +1,34 @@
+id: HRL-CT-0336
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EBFATSCD (Ebola Virus Findings About Test Code) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EBFATSCD
+      operator: in
+      value:
+        - DIAMETER
+        - OCCUR
+        - SEV
+outcome:
+  message: Value not found in extensible codelist Ebola Virus Findings About Test
+    Code (C132316)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C132316
+  codelist_name: Ebola Virus Findings About Test Code
+  codelist_submission_value: EBFATSCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 3
+

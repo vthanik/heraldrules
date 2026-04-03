@@ -1,0 +1,50 @@
+id: HRL-CT-0725
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: NSA01TN (Negative Symptom Assessment-16 Clinical Classification Test
+  Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: NSA01TN
+      operator: in
+      value:
+        - NSA01-Affect Reduce Modulation Intensity
+        - 'NSA01-Affect: Reduced Display on Demand'
+        - 'NSA01-Emotion: Reduced Range'
+        - NSA01-Global Level of Functioning
+        - NSA01-Global Neg Symptom Rating-Severity
+        - NSA01-Global Negative Symptoms Rating
+        - NSA01-Impoverished Speech Content
+        - NSA01-Inarticulate Speech
+        - NSA01-Interest Emotional/Phys Intimacy
+        - NSA01-Poor Grooming and Hygiene
+        - NSA01-Poor Rapport With Interviewer
+        - NSA01-Prolonged Time to Respond
+        - NSA01-Reduced Daily Activity
+        - NSA01-Reduced Expressive Gestures
+        - NSA01-Reduced Interests
+        - NSA01-Reduced Sense of Purpose
+        - NSA01-Reduced Social Drive
+        - NSA01-Restricted Speech Quantity
+        - NSA01-Slowed Movements
+outcome:
+  message: Value not found in non-extensible codelist Negative Symptom Assessment-16
+    Clinical Classification Test Name (C120992)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C120992
+  codelist_name: Negative Symptom Assessment-16 Clinical Classification Test Name
+  codelist_submission_value: NSA01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 19
+

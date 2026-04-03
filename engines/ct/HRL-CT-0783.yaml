@@ -1,0 +1,42 @@
+id: HRL-CT-0783
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PHQ01TN (Patient Health Questionnaire - 9 Item Questionnaire Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PHQ01TN
+      operator: in
+      value:
+        - PHQ01-Difficult to Work/Take Care Things
+        - PHQ01-Feeling Bad About Yourself
+        - PHQ01-Feeling Down Depressed or Hopeless
+        - PHQ01-Feeling Tired or Little Energy
+        - PHQ01-Little Interest/Pleasure in Things
+        - PHQ01-Moving Slowly or Fidgety/Restless
+        - PHQ01-Poor Appetite or Overeating
+        - PHQ01-Thoughts You Be Better Off Dead
+        - PHQ01-Total Score
+        - PHQ01-Trouble Concentrating on Things
+        - PHQ01-Trouble Falling or Staying Asleep
+outcome:
+  message: Value not found in non-extensible codelist Patient Health Questionnaire
+    - 9 Item Questionnaire Test Name (C103480)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103480
+  codelist_name: Patient Health Questionnaire - 9 Item Questionnaire Test Name
+  codelist_submission_value: PHQ01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 11
+

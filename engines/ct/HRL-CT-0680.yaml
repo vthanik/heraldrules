@@ -1,0 +1,33 @@
+id: HRL-CT-0680
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MMRC01TC (Modified Medical Research Council Dyspnea Scale Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MMRC01TC
+      operator: in
+      value:
+        - MMRC0101
+outcome:
+  message: Value not found in non-extensible codelist Modified Medical Research Council
+    Dyspnea Scale Questionnaire Test Code (C106669)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106669
+  codelist_name: Modified Medical Research Council Dyspnea Scale Questionnaire Test
+    Code
+  codelist_submission_value: MMRC01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

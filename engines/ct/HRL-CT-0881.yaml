@@ -1,0 +1,61 @@
+id: HRL-CT-0881
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PASI03TC (Psoriasis Area and Severity Index Version Fredriksson Clinical
+  Classification Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PASI03TC
+      operator: in
+      value:
+        - PASI0301
+        - PASI0302
+        - PASI0303
+        - PASI0304
+        - PASI0305
+        - PASI0306
+        - PASI0307
+        - PASI0308
+        - PASI0309
+        - PASI0310
+        - PASI0311
+        - PASI0312
+        - PASI0313
+        - PASI0314
+        - PASI0315
+        - PASI0316
+        - PASI0317
+        - PASI0318
+        - PASI0319
+        - PASI0320
+        - PASI0321
+        - PASI0322
+        - PASI0323
+        - PASI0324
+        - PASI0325
+        - PASI0326
+        - PASI0327
+        - PASI0328
+        - PASI0329
+outcome:
+  message: Value not found in non-extensible codelist Psoriasis Area and Severity
+    Index Version Fredriksson Clinical Classification Test Code (C190934)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C190934
+  codelist_name: Psoriasis Area and Severity Index Version Fredriksson Clinical Classification
+    Test Code
+  codelist_submission_value: PASI03TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 29
+

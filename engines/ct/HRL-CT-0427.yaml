@@ -1,0 +1,72 @@
+id: HRL-CT-0427
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC062TC (Functional Assessment of Cancer Therapy-Biologic Response Modifiers
+  Version 4 Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC062TC
+      operator: in
+      value:
+        - FAC06201
+        - FAC06202
+        - FAC06203
+        - FAC06204
+        - FAC06205
+        - FAC06206
+        - FAC06207
+        - FAC06208
+        - FAC06209
+        - FAC06210
+        - FAC06211
+        - FAC06212
+        - FAC06213
+        - FAC06214
+        - FAC06215
+        - FAC06216
+        - FAC06217
+        - FAC06218
+        - FAC06219
+        - FAC06220
+        - FAC06221
+        - FAC06222
+        - FAC06223
+        - FAC06224
+        - FAC06225
+        - FAC06226
+        - FAC06227
+        - FAC06228
+        - FAC06229
+        - FAC06230
+        - FAC06231
+        - FAC06232
+        - FAC06233
+        - FAC06234
+        - FAC06235
+        - FAC06236
+        - FAC06237
+        - FAC06238
+        - FAC06239
+        - FAC06240
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Biologic Response Modifiers Version 4 Questionnaire Test Code (C150778)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150778
+  codelist_name: Functional Assessment of Cancer Therapy-Biologic Response Modifiers
+    Version 4 Questionnaire Test Code
+  codelist_submission_value: FAC062TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 40
+

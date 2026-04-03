@@ -1,0 +1,35 @@
+id: HRL-CT-0691
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MVAI103STR (Modified Van Assche Index Clinical Classification STRESC
+  for MVAI103 TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MVAI103STR
+      operator: in
+      value:
+        - '0'
+        - '1'
+        - '2'
+outcome:
+  message: Value not found in non-extensible codelist Modified Van Assche Index Clinical
+    Classification STRESC for MVAI103 TN/TC (C190898)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C190898
+  codelist_name: Modified Van Assche Index Clinical Classification STRESC for MVAI103
+    TN/TC
+  codelist_submission_value: MVAI103STR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 3
+

@@ -1,0 +1,49 @@
+id: HRL-CT-0368
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR02TN (European Organisation for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Palliative Care Version 1.0 Questionnaire Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR02TN
+      operator: in
+      value:
+        - EOR02-Did You Feel Depressed
+        - EOR02-Did You Feel Tense
+        - EOR02-Have You Been Constipated
+        - EOR02-Have You Felt Nauseated
+        - EOR02-Have You Felt Weak
+        - EOR02-Have You Had Pain
+        - EOR02-Have You Had Trouble Sleeping
+        - EOR02-Have You Lacked Appetite
+        - EOR02-Need Help Eating/Dressing/Washing
+        - EOR02-Pain Interfere Daily Activities
+        - EOR02-Rate Your Overall Quality of Life
+        - EOR02-Stay in Bed/Chair During the Day
+        - EOR02-Trouble Taking Short Walk Outside
+        - EOR02-Were You Short of Breath
+        - EOR02-Were You Tired
+outcome:
+  message: Value not found in non-extensible codelist European Organisation for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Palliative Care
+    Version 1.0 Questionnaire Test Name (C161616)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C161616
+  codelist_name: European Organisation for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Palliative Care Version 1.0 Questionnaire Test Name
+  codelist_submission_value: EOR02TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 15
+

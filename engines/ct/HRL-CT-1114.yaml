@@ -1,0 +1,85 @@
+id: HRL-CT-1114
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TSCC01TC (Trauma Symptom Checklist for Children Questionnaire Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TSCC01TC
+      operator: in
+      value:
+        - TSCC0101
+        - TSCC0102
+        - TSCC0103
+        - TSCC0104
+        - TSCC0105
+        - TSCC0106
+        - TSCC0107
+        - TSCC0108
+        - TSCC0109
+        - TSCC0110
+        - TSCC0111
+        - TSCC0112
+        - TSCC0113
+        - TSCC0114
+        - TSCC0115
+        - TSCC0116
+        - TSCC0117
+        - TSCC0118
+        - TSCC0119
+        - TSCC0120
+        - TSCC0121
+        - TSCC0122
+        - TSCC0123
+        - TSCC0124
+        - TSCC0125
+        - TSCC0126
+        - TSCC0127
+        - TSCC0128
+        - TSCC0129
+        - TSCC0130
+        - TSCC0131
+        - TSCC0132
+        - TSCC0133
+        - TSCC0134
+        - TSCC0135
+        - TSCC0136
+        - TSCC0137
+        - TSCC0138
+        - TSCC0139
+        - TSCC0140
+        - TSCC0141
+        - TSCC0142
+        - TSCC0143
+        - TSCC0144
+        - TSCC0145
+        - TSCC0146
+        - TSCC0147
+        - TSCC0148
+        - TSCC0149
+        - TSCC0150
+        - TSCC0151
+        - TSCC0152
+        - TSCC0153
+        - TSCC0154
+outcome:
+  message: Value not found in non-extensible codelist Trauma Symptom Checklist for
+    Children Questionnaire Test Code (C147548)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C147548
+  codelist_name: Trauma Symptom Checklist for Children Questionnaire Test Code
+  codelist_submission_value: TSCC01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 54
+

@@ -1,0 +1,72 @@
+id: HRL-CT-0466
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC057TN (Functional Assessment of Cancer Therapy/Gynecologic Oncology
+  Group-Neurotoxicity Version 4 Questionnaire Test Name) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC057TN
+      operator: in
+      value:
+        - FAC057-Bothered by Treatment Side Effect
+        - FAC057-Content With Quality of My Life
+        - FAC057-Enjoy Things I Usually Do for Fun
+        - FAC057-Get Emotional Support From Family
+        - FAC057-Get Ringing or Buzzing in My Ears
+        - FAC057-Have Joint Pain or Muscle Cramps
+        - FAC057-I Am Able to Enjoy Life
+        - FAC057-I Am Able to Work
+        - FAC057-I Am Forced to Spend Time in Bed
+        - FAC057-I Am Satisfied With My Sex Life
+        - FAC057-I Am Sleeping Well
+        - FAC057-I Feel Close to My Friends
+        - FAC057-I Feel Close to My Partner
+        - FAC057-I Feel Discomfort in My Feet
+        - FAC057-I Feel Discomfort in My Hands
+        - FAC057-I Feel Ill
+        - FAC057-I Feel Nervous
+        - FAC057-I Feel Sad
+        - FAC057-I Feel Weak All Over
+        - FAC057-I Get Support From My Friends
+        - FAC057-I Have a Lack of Energy
+        - FAC057-I Have Accepted My Illness
+        - FAC057-I Have Nausea
+        - FAC057-I Have Pain
+        - FAC057-I Have Trouble Buttoning Buttons
+        - FAC057-I Have Trouble Hearing
+        - FAC057-I Have Trouble Walking
+        - FAC057-I Worry About Dying
+        - FAC057-Losing Hope Against Illness
+        - FAC057-My Family Has Accepted My Illness
+        - FAC057-My Work Is Fulfilling
+        - FAC057-Numbness or Tingling in My Feet
+        - FAC057-Numbness or Tingling in My Hands
+        - FAC057-Satisfied Communication Illness
+        - FAC057-Satisfied With How I Am Coping
+        - FAC057-Trouble Feeling Shape of Objects
+        - FAC057-Trouble Meeting Needs of Family
+        - FAC057-Worry My Condition Will Get Worse
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy/Gynecologic Oncology Group-Neurotoxicity Version 4 Questionnaire Test
+    Name (C150779)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150779
+  codelist_name: Functional Assessment of Cancer Therapy/Gynecologic Oncology Group-Neurotoxicity
+    Version 4 Questionnaire Test Name
+  codelist_submission_value: FAC057TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 38
+

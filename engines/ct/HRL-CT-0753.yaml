@@ -1,0 +1,35 @@
+id: HRL-CT-0753
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: OGI01TN (Observer Global Impression Generic Modification Version Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: OGI01TN
+      operator: in
+      value:
+        - OGI01-Change
+        - OGI01-Improvement
+        - OGI01-Severity
+outcome:
+  message: Value not found in non-extensible codelist Observer Global Impression Generic
+    Modification Version Questionnaire Test Name (C199494)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C199494
+  codelist_name: Observer Global Impression Generic Modification Version Questionnaire
+    Test Name
+  codelist_submission_value: OGI01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 3
+

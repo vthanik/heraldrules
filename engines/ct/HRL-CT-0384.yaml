@@ -1,0 +1,78 @@
+id: HRL-CT-0384
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR36TN (European Organization for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Head and Neck Cancer Phase IV Module Version 43
+  Items Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR36TN
+      operator: in
+      value:
+        - EOR36-Choked When Swallowing
+        - EOR36-Dissatisfied With Body
+        - EOR36-Dry Mouth
+        - EOR36-Felt Less Physically Attractive
+        - EOR36-Less Interest in Sex
+        - EOR36-Less Sexual Enjoyment
+        - EOR36-Pain in Jaw
+        - EOR36-Pain in Mouth
+        - EOR36-Pain in Shoulder
+        - EOR36-Pain in Throat
+        - EOR36-Prob Raising Arm/Moving Sideways
+        - EOR36-Problems Because Losing Teeth
+        - EOR36-Problems Chewing
+        - EOR36-Problems Eating in Front of Family
+        - EOR36-Problems Eating in Front of People
+        - EOR36-Problems Eating
+        - EOR36-Problems Enjoying Meals
+        - EOR36-Problems Going Out in Public
+        - EOR36-Problems Opening Mouth Wide
+        - EOR36-Problems Speaking Clearly
+        - EOR36-Problems Swallowing Liquids
+        - EOR36-Problems Swallowing Pureed Food
+        - EOR36-Problems Swallowing Solid Food
+        - EOR36-Problems Talking Noisy Environment
+        - EOR36-Problems Talking on Telephone
+        - EOR36-Problems Talking to Other People
+        - EOR36-Problems With Appearance
+        - EOR36-Problems With Coughing
+        - EOR36-Problems With Hoarseness
+        - EOR36-Problems With Sense of Smell
+        - EOR36-Problems With Sense of Taste
+        - EOR36-Problems With Teeth
+        - EOR36-Problems With Wounds Healing
+        - EOR36-Rash
+        - EOR36-Skin Changed Colour
+        - EOR36-Skin Problems
+        - EOR36-Soreness in Mouth
+        - EOR36-Sticky Saliva
+        - EOR36-Swelling in Neck
+        - EOR36-Tingling/Numbness in Hands/Feet
+        - EOR36-Worried About Health in Future
+        - EOR36-Worried About Results Exam & Tests
+        - EOR36-Worried Weight Too Low
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Head and Neck
+    Cancer Phase IV Module Version 43 Items Test Name (C219722)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219722
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Head and Neck Cancer Phase IV Module Version 43 Items
+    Test Name
+  codelist_submission_value: EOR36TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 43
+

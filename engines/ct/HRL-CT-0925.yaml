@@ -1,0 +1,32 @@
+id: HRL-CT-0925
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SAS01TC (Riker Sedation-Agitation Scale Clinical Classification Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SAS01TC
+      operator: in
+      value:
+        - SAS0101
+outcome:
+  message: Value not found in non-extensible codelist Riker Sedation-Agitation Scale
+    Clinical Classification Test Code (C171413)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C171413
+  codelist_name: Riker Sedation-Agitation Scale Clinical Classification Test Code
+  codelist_submission_value: SAS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

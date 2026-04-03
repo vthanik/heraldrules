@@ -1,0 +1,32 @@
+id: HRL-CT-1145
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: UPS01TN (Urgency Perception Scale Questionnaire Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: UPS01TN
+      operator: in
+      value:
+        - UPS01-Describe Your Desire to Urinate
+outcome:
+  message: Value not found in non-extensible codelist Urgency Perception Scale Questionnaire
+    Test Name (C103488)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103488
+  codelist_name: Urgency Perception Scale Questionnaire Test Name
+  codelist_submission_value: UPS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

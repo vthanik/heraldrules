@@ -1,0 +1,60 @@
+id: HRL-CT-0407
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ESRSA1TN (Extrapyramidal Symptom Rating Scale-Abbreviated Clinical Classification
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ESRSA1TN
+      operator: in
+      value:
+        - 'ESRSA1-Akathisia: Objective'
+        - 'ESRSA1-Akathisia: Subjective'
+        - ESRSA1-Bradykinesia/Hypokinesia
+        - ESRSA1-CGI-S Akathisia
+        - ESRSA1-CGI-S Dyskinesia
+        - ESRSA1-CGI-S Dystonia
+        - ESRSA1-CGI-S Parkinsonism
+        - 'ESRSA1-Dyskinesia: Eyes/Up Face/Low Face'
+        - 'ESRSA1-Dyskinesia: Hips/Lower Limbs/Feet'
+        - 'ESRSA1-Dyskinesia: Jaw'
+        - 'ESRSA1-Dyskinesia: Shoulder/Up Limb/Hand'
+        - 'ESRSA1-Dyskinesia: Tongue'
+        - 'ESRSA1-Dyskinesia: Trunk/Neck'
+        - 'ESRSA1-Dystonia: Eyes/Face/Larynx'
+        - 'ESRSA1-Dystonia: Hips/Lower Limbs/Feet'
+        - 'ESRSA1-Dystonia: Jaw'
+        - 'ESRSA1-Dystonia: Shoulder/Up Limb/Hand'
+        - 'ESRSA1-Dystonia: Tongue'
+        - 'ESRSA1-Dystonia: Trunk/Neck'
+        - ESRSA1-Impaired Gait/Posture
+        - ESRSA1-Postural Instability
+        - ESRSA1-Reduced Facial Expression/Speech
+        - 'ESRSA1-Rigidity: Lower Limbs'
+        - 'ESRSA1-Rigidity: Neck'
+        - 'ESRSA1-Rigidity: Upper Limbs'
+        - 'ESRSA1-Tremor: Face/Jaw/Chin/Lips/Head'
+        - 'ESRSA1-Tremor: Lower Limbs/Feet'
+        - 'ESRSA1-Tremor: Upper Limbs/Hands'
+outcome:
+  message: Value not found in non-extensible codelist Extrapyramidal Symptom Rating
+    Scale-Abbreviated Clinical Classification Test Name (C117990)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C117990
+  codelist_name: Extrapyramidal Symptom Rating Scale-Abbreviated Clinical Classification
+    Test Name
+  codelist_submission_value: ESRSA1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 28
+

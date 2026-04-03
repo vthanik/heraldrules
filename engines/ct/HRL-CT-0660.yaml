@@ -1,0 +1,65 @@
+id: HRL-CT-0660
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MMS2TN (Mini-Mental State Examination 2 Standard Version Functional Test
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MMS2TN
+      operator: in
+      value:
+        - MMS2-BV Total Raw Score
+        - MMS2-Copy This Design
+        - MMS2-Do What This Says to Do
+        - MMS2-Keep Subtracting 7 Step 2
+        - MMS2-Keep Subtracting 7 Step 3
+        - MMS2-Keep Subtracting 7 Step 4
+        - MMS2-Keep Subtracting 7 Step 5
+        - MMS2-Level of Consciousness
+        - MMS2-Naming Object 1
+        - MMS2-Naming Object 2
+        - MMS2-Point to the Circle
+        - MMS2-Point to the Square
+        - MMS2-Point to the Triangle
+        - MMS2-Recall Word 1
+        - MMS2-Recall Word 2
+        - MMS2-Recall Word 3
+        - MMS2-Repeat What I Say
+        - MMS2-Repeat Word 1
+        - MMS2-Repeat Word 2
+        - MMS2-Repeat Word 3
+        - MMS2-SV Total Raw Score
+        - MMS2-What is 100 Take Away 7
+        - MMS2-What Is the Building
+        - MMS2-What Is the City/Town
+        - MMS2-What Is the County
+        - MMS2-What Is the Date
+        - MMS2-What Is the Day of Week
+        - MMS2-What Is the Floor
+        - MMS2-What Is the Month of Year
+        - MMS2-What Is the Season
+        - MMS2-What Is the State
+        - MMS2-What Is the Year
+        - MMS2-Write a Sentence
+outcome:
+  message: Value not found in non-extensible codelist Mini-Mental State Examination
+    2 Standard Version Functional Test Test Name (C150769)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150769
+  codelist_name: Mini-Mental State Examination 2 Standard Version Functional Test
+    Test Name
+  codelist_submission_value: MMS2TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 33
+

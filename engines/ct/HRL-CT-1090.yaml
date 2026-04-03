@@ -1,0 +1,94 @@
+id: HRL-CT-1090
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SF363TC (The Short Form 36 Health Survey Standard, US Version 2.0 Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SF363TC
+      operator: in
+      value:
+        - SF36301
+        - SF36302
+        - SF36303A
+        - SF36303B
+        - SF36303C
+        - SF36303D
+        - SF36303E
+        - SF36303F
+        - SF36303G
+        - SF36303H
+        - SF36303I
+        - SF36303J
+        - SF36304A
+        - SF36304B
+        - SF36304C
+        - SF36304D
+        - SF36305A
+        - SF36305B
+        - SF36305C
+        - SF36306
+        - SF36307
+        - SF36308
+        - SF36309A
+        - SF36309B
+        - SF36309C
+        - SF36309D
+        - SF36309E
+        - SF36309F
+        - SF36309G
+        - SF36309H
+        - SF36309I
+        - SF36310
+        - SF36311A
+        - SF36311B
+        - SF36311C
+        - SF36311D
+        - SF36312
+        - SF36313
+        - SF36314
+        - SF36315
+        - SF36316
+        - SF36317
+        - SF36318
+        - SF36319
+        - SF36320
+        - SF36321
+        - SF36322
+        - SF36323
+        - SF36324
+        - SF36325
+        - SF36326
+        - SF36327
+        - SF36328
+        - SF36329
+        - SF36330
+        - SF36331
+        - SF36332
+        - SF36333
+        - SF36334
+        - SF36335
+        - SF36336
+        - SF36337
+outcome:
+  message: Value not found in non-extensible codelist The Short Form 36 Health Survey
+    Standard, US Version 2.0 Questionnaire Test Code (C101826)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101826
+  codelist_name: The Short Form 36 Health Survey Standard, US Version 2.0 Questionnaire
+    Test Code
+  codelist_submission_value: SF363TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 62
+

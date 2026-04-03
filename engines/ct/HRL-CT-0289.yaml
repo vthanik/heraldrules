@@ -1,0 +1,49 @@
+id: HRL-CT-0289
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: COMM1TC (Current Opioid Misuse Measure Questionnaire Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: COMM1TC
+      operator: in
+      value:
+        - COMM101
+        - COMM102
+        - COMM103
+        - COMM104
+        - COMM105
+        - COMM106
+        - COMM107
+        - COMM108
+        - COMM109
+        - COMM110
+        - COMM111
+        - COMM112
+        - COMM113
+        - COMM114
+        - COMM115
+        - COMM116
+        - COMM117
+        - COMM118
+outcome:
+  message: Value not found in non-extensible codelist Current Opioid Misuse Measure
+    Questionnaire Test Code (C100158)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100158
+  codelist_name: Current Opioid Misuse Measure Questionnaire Test Code
+  codelist_submission_value: COMM1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 18
+

@@ -1,0 +1,49 @@
+id: HRL-CT-0366
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR18TN (European Organisation for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Lung Cancer 13 Items Questionnaire Test Name) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR18TN
+      operator: in
+      value:
+        - EOR18-Did You Cough Up Blood
+        - EOR18-Did You Take Any Medicine for Pain
+        - EOR18-Had a Sore Mouth or Tongue
+        - EOR18-Had Pain in Other Parts of Body
+        - EOR18-Had Pain in Your Arm or Shoulder
+        - EOR18-Had Tingling Hands or Feet
+        - EOR18-Have You Had Hair Loss
+        - EOR18-Have You Had Pain in Your Chest
+        - EOR18-Have You Had Trouble Swallowing
+        - EOR18-How Much Did You Cough
+        - EOR18-If Yes, How Much Did It Help
+        - EOR18-If Yes, Where
+        - EOR18-Short of Breath Climbed Stairs
+        - EOR18-Short of Breath When Rested
+        - EOR18-Short of Breath When Walked
+outcome:
+  message: Value not found in non-extensible codelist European Organisation for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Lung Cancer 13
+    Items Questionnaire Test Name (C172399)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C172399
+  codelist_name: European Organisation for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Lung Cancer 13 Items Questionnaire Test Name
+  codelist_submission_value: EOR18TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 15
+

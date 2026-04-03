@@ -1,0 +1,47 @@
+id: HRL-CT-1032
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SOWSA1TN (Subjective Opiate Withdrawal Scale Questionnaire Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SOWSA1TN
+      operator: in
+      value:
+        - SOWSA1-I Am Shaking
+        - SOWSA1-I Feel Anxious
+        - SOWSA1-I Feel Like Shooting Up Now
+        - SOWSA1-I Feel Like Vomiting
+        - SOWSA1-I Feel Like Yawning
+        - SOWSA1-I Feel Nauseous
+        - SOWSA1-I Feel Restless
+        - SOWSA1-I Have Cold Flashes
+        - SOWSA1-I Have Cramps in My Stomach
+        - SOWSA1-I Have Goose Flesh
+        - SOWSA1-I Have Hot Flashes
+        - SOWSA1-I'm Perspiring
+        - SOWSA1-My Bones and Muscles Ache
+        - SOWSA1-My Eyes Are Tearing
+        - SOWSA1-My Muscles Twitch
+        - SOWSA1-My Nose is Running
+outcome:
+  message: Value not found in non-extensible codelist Subjective Opiate Withdrawal
+    Scale Questionnaire Test Name (C101829)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101829
+  codelist_name: Subjective Opiate Withdrawal Scale Questionnaire Test Name
+  codelist_submission_value: SOWSA1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 16
+

@@ -1,0 +1,35 @@
+id: HRL-CT-1129
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TBFATS (Tuberculosis Findings About Test Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TBFATS
+      operator: in
+      value:
+        - Drug Resistance Status
+        - Longest Diameter
+        - Occurrence Indicator
+        - Total Number
+outcome:
+  message: Value not found in extensible codelist Tuberculosis Findings About Test
+    Name (C127267)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C127267
+  codelist_name: Tuberculosis Findings About Test Name
+  codelist_submission_value: TBFATS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 4
+

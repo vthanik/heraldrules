@@ -1,0 +1,35 @@
+id: HRL-CT-1204
+version: 1
+status: Published
+standard: ADaM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TBUTRS (Tobacco Use Transition Response) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TBUTRS
+      operator: in
+      value:
+        - CESSATION
+        - INITIATION
+        - RELAPSE
+        - SWITCHING
+outcome:
+  message: Value not found in non-extensible codelist Tobacco Use Transition Response
+    (C204412)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204412
+  codelist_name: Tobacco Use Transition Response
+  codelist_submission_value: TBUTRS
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

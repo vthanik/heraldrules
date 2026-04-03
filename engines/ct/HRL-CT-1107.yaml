@@ -1,0 +1,57 @@
+id: HRL-CT-1107
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TOPARMCD (Tobacco Products Parameter Code) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TOPARMCD
+      operator: in
+      value:
+        - BATCAPC
+        - CHARFLAV
+        - CIRCUMF
+        - DIAMETER
+        - DSCRTIND
+        - ELQDVOL
+        - FDASTN
+        - LENGTH
+        - NICTNCNC
+        - PACKTYP
+        - PRDQUAN
+        - PRPYLGLY
+        - PRTCOUNT
+        - PRTLENG
+        - PRTMASS
+        - PRTTHICK
+        - PRTWDTH
+        - TBPCATO
+        - TBPRDCAT
+        - TBPRMANF
+        - TBPRSCAT
+        - TBPSCATO
+        - TRADENAM
+        - VEGGLY
+        - VENTLTOT
+        - WATT
+outcome:
+  message: Value not found in extensible codelist Tobacco Products Parameter Code
+    (C204432)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204432
+  codelist_name: Tobacco Products Parameter Code
+  codelist_submission_value: TOPARMCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 26
+

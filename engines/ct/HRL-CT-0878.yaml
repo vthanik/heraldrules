@@ -1,0 +1,61 @@
+id: HRL-CT-0878
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PASI04TN (Psoriasis Area and Severity Index Version EMA Clinical Classification
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PASI04TN
+      operator: in
+      value:
+        - 'PASI04-Head: Area Score'
+        - 'PASI04-Head: Desquamation/Scaling'
+        - 'PASI04-Head: Erythema/Redness'
+        - 'PASI04-Head: Sum of Symptom Scores'
+        - 'PASI04-Head: Sum X Area X 0.1'
+        - 'PASI04-Head: Sum X Area'
+        - 'PASI04-Head: Thickness/Induration'
+        - 'PASI04-Low Extrem: Area Score'
+        - 'PASI04-Low Extrem: Desquamation/Scaling'
+        - 'PASI04-Low Extrem: Erythema/Redness'
+        - 'PASI04-Low Extrem: Sum of Symptom Scores'
+        - 'PASI04-Low Extrem: Sum X Area X 0.4'
+        - 'PASI04-Low Extrem: Sum X Area'
+        - 'PASI04-Low Extrem: Thickness/Induration'
+        - PASI04-Total Sum
+        - 'PASI04-Trunk: Area Score'
+        - 'PASI04-Trunk: Desquamation/Scaling'
+        - 'PASI04-Trunk: Erythema/Redness'
+        - 'PASI04-Trunk: Sum of Symptom Scores'
+        - 'PASI04-Trunk: Sum X Area X 0.3'
+        - 'PASI04-Trunk: Sum X Area'
+        - 'PASI04-Trunk: Thickness/Induration'
+        - 'PASI04-Up Extrem: Area Score'
+        - 'PASI04-Up Extrem: Desquamation/Scaling'
+        - 'PASI04-Up Extrem: Erythema/Redness'
+        - 'PASI04-Up Extrem: Sum of Symptom Scores'
+        - 'PASI04-Up Extrem: Sum X Area X 0.2'
+        - 'PASI04-Up Extrem: Sum X Area'
+        - 'PASI04-Up Extrem: Thickness/Induration'
+outcome:
+  message: Value not found in non-extensible codelist Psoriasis Area and Severity
+    Index Version EMA Clinical Classification Test Name (C190935)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C190935
+  codelist_name: Psoriasis Area and Severity Index Version EMA Clinical Classification
+    Test Name
+  codelist_submission_value: PASI04TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 29
+

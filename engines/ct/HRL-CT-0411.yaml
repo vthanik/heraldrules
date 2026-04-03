@@ -1,0 +1,39 @@
+id: HRL-CT-0411
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FTCD01TN (Fagerstrom Test for Cigarette Dependence Questionnaire Test
+  Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FTCD01TN
+      operator: in
+      value:
+        - FTCD01-Difficult to Refrain in Places
+        - FTCD01-Do You Currently Smoke Cigarettes
+        - FTCD01-How Many Cigarettes Per Day Smoke
+        - FTCD01-How Soon After Wake Smoke
+        - FTCD01-Score
+        - FTCD01-Smoke More After Waking
+        - FTCD01-Smoke When Ill in Bed Most Day
+        - FTCD01-Which Cigarette Hate to Give Up
+outcome:
+  message: Value not found in non-extensible codelist Fagerstrom Test for Cigarette
+    Dependence Questionnaire Test Name (C208371)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C208371
+  codelist_name: Fagerstrom Test for Cigarette Dependence Questionnaire Test Name
+  codelist_submission_value: FTCD01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 8
+

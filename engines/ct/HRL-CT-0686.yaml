@@ -1,0 +1,35 @@
+id: HRL-CT-0686
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MVAI103OR (Modified Van Assche Index Clinical Classification ORRES for
+  MVAI103 TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MVAI103OR
+      operator: in
+      value:
+        - Increased signal intensity
+        - Normal
+        - Thickened
+outcome:
+  message: Value not found in non-extensible codelist Modified Van Assche Index Clinical
+    Classification ORRES for MVAI103 TN/TC (C190897)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C190897
+  codelist_name: Modified Van Assche Index Clinical Classification ORRES for MVAI103
+    TN/TC
+  codelist_submission_value: MVAI103OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 3
+

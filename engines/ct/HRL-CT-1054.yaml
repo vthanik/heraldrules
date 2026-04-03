@@ -1,0 +1,36 @@
+id: HRL-CT-1054
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TANN0102STR (Tanner Scale Girl Clinical Classification STRESC for TANN0102
+  TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TANN0102STR
+      operator: in
+      value:
+        - Stage 1
+        - Stage 2
+        - Stage 3
+        - Stage 4
+        - Stage 5
+outcome:
+  message: Value not found in non-extensible codelist Tanner Scale Girl Clinical Classification
+    STRESC for TANN0102 TN/TC (C193260)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C193260
+  codelist_name: Tanner Scale Girl Clinical Classification STRESC for TANN0102 TN/TC
+  codelist_submission_value: TANN0102STR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

@@ -1,0 +1,40 @@
+id: HRL-CT-0847
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PHSPRP (Physical Properties Test Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PHSPRP
+      operator: in
+      value:
+        - Color
+        - Consistency
+        - Depth
+        - Description
+        - Diameter
+        - Hair Cover
+        - Length
+        - Shape
+        - Ulceration
+        - Width
+outcome:
+  message: Value not found in extensible codelist Physical Properties Test Name (C95120)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C95120
+  codelist_name: Physical Properties Test Name
+  codelist_submission_value: PHSPRP
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 10
+

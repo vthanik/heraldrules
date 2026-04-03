@@ -1,0 +1,38 @@
+id: HRL-CT-0394
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EQ5D02TN (European Quality of Life Five Dimension Five Level Scale Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EQ5D02TN
+      operator: in
+      value:
+        - EQ5D02-Anxiety/Depression
+        - EQ5D02-EQ VAS Score
+        - EQ5D02-Mobility
+        - EQ5D02-Pain/Discomfort
+        - EQ5D02-Self-Care
+        - EQ5D02-Usual Activities
+outcome:
+  message: Value not found in non-extensible codelist European Quality of Life Five
+    Dimension Five Level Scale Questionnaire Test Name (C101818)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101818
+  codelist_name: European Quality of Life Five Dimension Five Level Scale Questionnaire
+    Test Name
+  codelist_submission_value: EQ5D02TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

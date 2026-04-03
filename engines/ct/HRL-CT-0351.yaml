@@ -1,0 +1,99 @@
+id: HRL-CT-0351
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EMO1TN (Emotion Recognition Functional Test Test Name) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EMO1TN
+      operator: in
+      value:
+        - EMO1-Anger Responded as Anger
+        - EMO1-Anger Responded as Disgust
+        - EMO1-Anger Responded as Fear
+        - EMO1-Anger Responded as Happiness
+        - EMO1-Anger Responded as Neutral
+        - EMO1-Anger Responded as Sadness
+        - EMO1-Anger Responded as Surprise
+        - EMO1-Disgust Responded as Anger
+        - EMO1-Disgust Responded as Disgust
+        - EMO1-Disgust Responded as Fear
+        - EMO1-Disgust Responded as Happiness
+        - EMO1-Disgust Responded as Neutral
+        - EMO1-Disgust Responded as Sadness
+        - EMO1-Disgust Responded as Surprise
+        - EMO1-Fear Responded as Anger
+        - EMO1-Fear Responded as Disgust
+        - EMO1-Fear Responded as Fear
+        - EMO1-Fear Responded as Happiness
+        - EMO1-Fear Responded as Neutral
+        - EMO1-Fear Responded as Sadness
+        - EMO1-Fear Responded as Surprise
+        - EMO1-Happiness Responded as Anger
+        - EMO1-Happiness Responded as Disgust
+        - EMO1-Happiness Responded as Fear
+        - EMO1-Happiness Responded as Happiness
+        - EMO1-Happiness Responded as Neutral
+        - EMO1-Happiness Responded as Sadness
+        - EMO1-Happiness Responded as Surprise
+        - EMO1-Neutral Responded as Anger
+        - EMO1-Neutral Responded as Disgust
+        - EMO1-Neutral Responded as Fear
+        - EMO1-Neutral Responded as Happiness
+        - EMO1-Neutral Responded as Neutral
+        - EMO1-Neutral Responded as Sadness
+        - EMO1-Neutral Responded as Surprise
+        - EMO1-Number Stimuli Portraying Anger
+        - EMO1-Number Stimuli Portraying Disgust
+        - EMO1-Number Stimuli Portraying Fear
+        - EMO1-Number Stimuli Portraying Happiness
+        - EMO1-Number Stimuli Portraying Neutral
+        - EMO1-Number Stimuli Portraying Sadness
+        - EMO1-Number Stimuli Portraying Surprise
+        - EMO1-Sadness Responded as Anger
+        - EMO1-Sadness Responded as Disgust
+        - EMO1-Sadness Responded as Fear
+        - EMO1-Sadness Responded as Happiness
+        - EMO1-Sadness Responded as Neutral
+        - EMO1-Sadness Responded as Sadness
+        - EMO1-Sadness Responded as Surprise
+        - EMO1-Surprise Responded as Anger
+        - EMO1-Surprise Responded as Disgust
+        - EMO1-Surprise Responded as Fear
+        - EMO1-Surprise Responded as Happiness
+        - EMO1-Surprise Responded as Neutral
+        - EMO1-Surprise Responded as Sadness
+        - EMO1-Surprise Responded as Surprise
+        - EMO1-Total Negative Stimuli Administered
+        - EMO1-Total Negative Stimuli Completed
+        - EMO1-Total Negative Stimuli Correct
+        - EMO1-Total Negative Stimuli Expected
+        - EMO1-Total Negative Stimuli Incorrect
+        - EMO1-Total Negative Stimuli Not Respond
+        - EMO1-Total Stimuli Administered
+        - EMO1-Total Stimuli Completed
+        - EMO1-Total Stimuli Expected
+        - EMO1-Total Stimuli Not Responded
+        - EMO1-Total Stimuli Response Correct
+        - EMO1-Total Stimuli Response Incorrect
+outcome:
+  message: Value not found in non-extensible codelist Emotion Recognition Functional
+    Test Test Name (C150767)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150767
+  codelist_name: Emotion Recognition Functional Test Test Name
+  codelist_submission_value: EMO1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 68
+

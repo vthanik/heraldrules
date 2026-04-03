@@ -1,0 +1,49 @@
+id: HRL-CT-0294
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DLQI1TN (Dermatology Life Quality Index Questionnaire Test Name) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DLQI1TN
+      operator: in
+      value:
+        - DLQI1-Affected Social, Leisure Activity
+        - DLQI1-Caused Any Sexual Difficulties
+        - DLQI1-Daily Activities Subscore
+        - DLQI1-How Embarrassed, Self Conscious
+        - DLQI1-How Itchy, Sore, Painful, Stinging
+        - DLQI1-How Much a Problem is Treatment
+        - DLQI1-Influenced Clothes You Wear
+        - DLQI1-Interfered Shopping, Home, Yard
+        - DLQI1-Leisure Subscore
+        - DLQI1-Made It Difficult to Do Any Sports
+        - DLQI1-Personal Relationships Subscore
+        - DLQI1-Prevented Working or Studying
+        - DLQI1-Problem at Work or Studying
+        - DLQI1-Problem Partner, Friends, Relative
+        - DLQI1-Score
+        - DLQI1-Symptoms and Feelings Subscore
+        - DLQI1-Treatment Subscore
+        - DLQI1-Work and School Subscore
+outcome:
+  message: Value not found in non-extensible codelist Dermatology Life Quality Index
+    Questionnaire Test Name (C119069)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C119069
+  codelist_name: Dermatology Life Quality Index Questionnaire Test Name
+  codelist_submission_value: DLQI1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 18
+

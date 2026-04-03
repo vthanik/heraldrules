@@ -1,0 +1,43 @@
+id: HRL-CT-1093
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: WPAI02TN (The Work Productivity and Activity Impairment - General Health
+  Version 2.0 Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: WPAI02TN
+      operator: in
+      value:
+        - WPAI02-Absenteeism Score
+        - WPAI02-Activity Impairment Score
+        - WPAI02-Currently Employed
+        - WPAI02-Hours Actually Work
+        - WPAI02-Hours Miss Work Health Problems
+        - WPAI02-Hours Miss Work Other Reason
+        - WPAI02-Presenteeism Score
+        - WPAI02-Problems Affect Daily Activities
+        - WPAI02-Problems Affect Productivity
+        - WPAI02-Work Productivity Loss Score
+outcome:
+  message: Value not found in non-extensible codelist The Work Productivity and Activity
+    Impairment - General Health Version 2.0 Questionnaire Test Name (C166185)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C166185
+  codelist_name: The Work Productivity and Activity Impairment - General Health Version
+    2.0 Questionnaire Test Name
+  codelist_submission_value: WPAI02TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 10
+

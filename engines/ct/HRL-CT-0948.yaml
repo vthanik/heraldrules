@@ -1,0 +1,113 @@
+id: HRL-CT-0948
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DOMAIN (SDTM Domain Abbreviation) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DOMAIN
+      operator: in
+      value:
+        - AE
+        - AG
+        - APRELSUB
+        - BE
+        - BS
+        - CE
+        - CM
+        - CO
+        - CP
+        - CV
+        - DA
+        - DD
+        - DE
+        - DI
+        - DM
+        - DO
+        - DR
+        - DS
+        - DT
+        - DU
+        - DV
+        - DX
+        - EC
+        - ED
+        - EG
+        - ES
+        - EX
+        - FA
+        - FT
+        - GF
+        - GI
+        - HM
+        - HO
+        - IE
+        - IG
+        - IN
+        - IQ
+        - IS
+        - IT
+        - LB
+        - MB
+        - MH
+        - MI
+        - MK
+        - ML
+        - MS
+        - NV
+        - OE
+        - OI
+        - PC
+        - PD
+        - PE
+        - POOLDEF
+        - PP
+        - PR
+        - PT
+        - QS
+        - RE
+        - RELREC
+        - RELSPEC
+        - RELSUB
+        - RP
+        - RS
+        - SA
+        - SC
+        - SE
+        - SM
+        - SR
+        - SS
+        - SU
+        - SV
+        - TA
+        - TD
+        - TE
+        - TI
+        - TM
+        - TO
+        - TR
+        - TS
+        - TU
+        - TV
+        - UR
+        - VS
+outcome:
+  message: Value not found in extensible codelist SDTM Domain Abbreviation (C66734)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C66734
+  codelist_name: SDTM Domain Abbreviation
+  codelist_submission_value: DOMAIN
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 83
+

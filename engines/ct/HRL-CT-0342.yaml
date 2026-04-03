@@ -1,0 +1,33 @@
+id: HRL-CT-0342
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TWOFFMTH (ECG T Wave Offset Method Response) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TWOFFMTH
+      operator: in
+      value:
+        - TANGENT METHOD
+        - THRESHOLD METHOD
+outcome:
+  message: Value not found in extensible codelist ECG T Wave Offset Method Response
+    (C184331)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C184331
+  codelist_name: ECG T Wave Offset Method Response
+  codelist_submission_value: TWOFFMTH
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 2
+

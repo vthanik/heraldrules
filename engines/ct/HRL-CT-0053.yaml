@@ -1,0 +1,50 @@
+id: HRL-CT-0053
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: APCH1TC (Acute Physiology and Chronic Health Evaluation II Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: APCH1TC
+      operator: in
+      value:
+        - APCH101
+        - APCH102
+        - APCH103
+        - APCH104
+        - APCH105A
+        - APCH105B
+        - APCH106A
+        - APCH106B
+        - APCH107
+        - APCH108
+        - APCH109
+        - APCH110
+        - APCH111
+        - APCH112
+        - APCH113
+        - APCH114
+        - APCH115
+        - APCH116
+outcome:
+  message: Value not found in non-extensible codelist Acute Physiology and Chronic
+    Health Evaluation II Clinical Classification Test Code (C120985)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C120985
+  codelist_name: Acute Physiology and Chronic Health Evaluation II Clinical Classification
+    Test Code
+  codelist_submission_value: APCH1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 18
+

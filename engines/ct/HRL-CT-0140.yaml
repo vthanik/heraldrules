@@ -1,0 +1,51 @@
+id: HRL-CT-0140
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BPRS01TC (Brief Psychiatric Rating Scale 1988 Version Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BPRS01TC
+      operator: in
+      value:
+        - BPRS0101
+        - BPRS0102
+        - BPRS0103
+        - BPRS0104
+        - BPRS0105
+        - BPRS0106
+        - BPRS0107
+        - BPRS0108
+        - BPRS0109
+        - BPRS0110
+        - BPRS0111
+        - BPRS0112
+        - BPRS0113
+        - BPRS0114
+        - BPRS0115
+        - BPRS0116
+        - BPRS0117
+        - BPRS0118
+        - BPRS0119
+outcome:
+  message: Value not found in non-extensible codelist Brief Psychiatric Rating Scale
+    1988 Version Clinical Classification Test Code (C161625)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C161625
+  codelist_name: Brief Psychiatric Rating Scale 1988 Version Clinical Classification
+    Test Code
+  codelist_submission_value: BPRS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 19
+

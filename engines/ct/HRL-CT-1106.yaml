@@ -1,0 +1,239 @@
+id: HRL-CT-1106
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PTTEST (Tobacco Product Testing Test Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PTTEST
+      operator: in
+      value:
+        - 1,3-Butadiene
+        - 1-Aminonaphthalene
+        - 1-Hydroxynaphthalene
+        - 1-Hydroxyphenanthrene
+        - 1-Hydroxypyrene
+        - 2,6-Dimethylaniline
+        - 2-Amino-3-Methyl-9H-Pyrido[2,3-b]indole
+        - 2-Amino-3-Methylimidazo[4,5-f]quinoline
+        - 2-Amino-9H-pyrido[2,3-b]indole
+        - 2-Aminonaphthalene
+        - 2-Carbamoylethylmercapturic Acid
+        - 2-Hydroxyfluorene
+        - 2-Hydroxynaphthalene
+        - 2-Hydroxyphenanthrene
+        - 2-Nitropropane
+        - 3-Hydroxybenzo[a]pyrene
+        - 3-Hydroxyfluorene
+        - 3-Hydroxyphenanthrene
+        - 4-Aminobiphenyl
+        - 5-Methylchrysene
+        - Acetaldehyde
+        - Acetamide
+        - Acetate
+        - Acetoin
+        - Acetone
+        - Acetyl Propionyl
+        - Acrolein
+        - Acrylamide
+        - Acrylonitrile
+        - Aerobic Colony Count
+        - Aflatoxin B1
+        - Airflow Rate
+        - Ammonia
+        - Anabasine
+        - Anatabine
+        - Arsenic
+        - Battery C-Rate
+        - Battery Capacity
+        - Battery Charging Temperature Limits
+        - Battery Current Operating Range
+        - Battery Discharge Temperature Limits
+        - Battery End of Discharge Voltage
+        - Battery Maximum Charging Current
+        - Battery Maximum Discharging Current
+        - Battery Nominal Voltage
+        - Battery Upper Limit Charging Voltage
+        - Battery Voltage Operating Range
+        - Benzene
+        - Benzo[a]anthracene
+        - Benzo[a]pyrene
+        - Benzo[b]fluoranthene
+        - Benzo[b]furan
+        - Benzo[c]phenanthrene
+        - Benzo[j]aceanthrylene
+        - Benzo[k]fluoranthene
+        - Benzoic Acid
+        - Benzyl Acetate
+        - Beryllium
+        - Butyraldehyde
+        - Cadmium
+        - Caffeate
+        - Carbon Monoxide
+        - Cartridge Volume
+        - Catechol
+        - Chlorinated Dioxins and/or Furans
+        - Chromium
+        - Chrysene
+        - Cigarette Base Paper Permeability
+        - Cigarette Base Paper Porosity
+        - Cigarette Paper Band Diffusivity
+        - Cigarette Paper Band Permeability
+        - Cigarette Paper Band Porosity
+        - Cigarette Paper Band Space
+        - Cigarette Paper Band Width
+        - Cigarette Paper Length
+        - Circumference
+        - Cobalt
+        - Cotinine Glucuronide
+        - Cotinine-N-Oxide
+        - Coumarin
+        - Count Median Diameter
+        - Cresols
+        - Crotonaldehyde
+        - Cyclopenta[c,d]pyrene
+        - Denier Per Filament
+        - Diacetyl
+        - Dibenzo[a,e]pyrene
+        - Dibenzo[a,h]anthracene
+        - Dibenzo[a,h]pyrene
+        - Dibenzo[a,i]pyrene
+        - Dibenzo[a,l]pyrene
+        - Diethylene Glycol
+        - Draw Resistance
+        - E-Liquid Viscosity
+        - E-Liquid Volume
+        - Ethyl Acetate
+        - Ethyl Acetoacetate
+        - Ethyl Carbamate
+        - Ethylbenzene
+        - Ethylene Glycol
+        - Ethylene Oxide
+        - Filter Density
+        - Filter Efficiency
+        - Filter Length
+        - Filter Pressure Drop
+        - Filter Ventilation
+        - Formaldehyde
+        - Furan
+        - Furfural
+        - Glu-P-1
+        - Glu-P-2
+        - Glycerol
+        - Glycidol
+        - Heating Element Configuration
+        - Heating Element Diameter
+        - Heating Element Length
+        - Heating Element Range
+        - Heating Element Resistance
+        - Hydrazine
+        - Hydrogen Cyanide
+        - Indeno[1,2,3-cd]pyrene
+        - Inhaled Aerosol Temperature
+        - Isoamyl Acetate
+        - Isobutyl Acetate
+        - Isoprene
+        - Lead
+        - Length
+        - Mercury
+        - Methyl Acetate
+        - Methyl Ethyl Ketone
+        - Moisture Content
+        - Monohydroxybutyl Mercapturic Acid
+        - n-Butanol
+        - N-Nitrosoanabasine
+        - N-Nitrosoanatabine
+        - N-Nitrosodiethanolamine
+        - N-Nitrosodiethylamine
+        - N-Nitrosodimethylamine
+        - N-Nitrosomethylethylamine
+        - N-Nitrosomorpholine
+        - N-Nitrosonornicotine
+        - N-Nitrosopiperidine
+        - N-Nitrosopyrrolidine
+        - N-Nitrososarcosine
+        - Naphthalene
+        - Nickel
+        - Nicotine 1-N-Oxide
+        - Nicotine Dissolution Rate
+        - Nicotine Glucuronide
+        - Nicotine
+        - Nicotine-Derived Nitrosamine Ketone
+        - Nitrobenzene
+        - Nitromethane
+        - NNAL
+        - NNAL, Free
+        - NNAL-N-Gluc
+        - NNAL-O-Gluc
+        - NNN-Glucuronide
+        - Nornicotine
+        - Number of Heating Elements
+        - o-Anisidine
+        - o-Toluidine
+        - Particle Number Concentration
+        - Particulate Matter 2.5
+        - PDU Current Cut-off
+        - PDU Current Operating Range
+        - PDU Temperature Cut-off
+        - PDU Voltage Operating Range
+        - PDU Wattage Operating Range
+        - pH
+        - Phenol
+        - Phenylmercapturic Acid
+        - PhIP
+        - Polonium-210
+        - Portion Length
+        - Portion Mass
+        - Portion Material Thickness
+        - Portion Width
+        - Pouch Material Basis Weight
+        - Pouch Material Porosity
+        - Propionaldehyde
+        - Propionate
+        - Propylene Glycol
+        - Propylene Oxide
+        - Puff Count
+        - Quinoline
+        - S-Phenylmercapturic Acid
+        - Selenium
+        - Styrene
+        - Tipping Paper Length
+        - Tobacco Cut Size
+        - Tobacco Filler Mass
+        - Tobacco Particle Size
+        - Tobacco Rod Density
+        - Tobacco-Specific Nitrosamines
+        - Toluene
+        - Total Denier
+        - Total Ventilation
+        - Trans-3-Hydroxycotinine Glucuronide
+        - Trans-3-Hydroxycotinine
+        - Trp-P-1
+        - Trp-P-2
+        - Uranium-235
+        - Uranium-238
+        - Vinyl Acetate
+        - Vinyl Chloride
+        - Water Activity
+        - Yeast and/or Mold Colony Count
+outcome:
+  message: Value not found in extensible codelist Tobacco Product Testing Test Name
+    (C204428)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204428
+  codelist_name: Tobacco Product Testing Test Name
+  codelist_submission_value: PTTEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 208
+

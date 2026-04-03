@@ -1,0 +1,41 @@
+id: HRL-CT-0207
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CCQ01TC (Clinical COPD Questionnaire 24 Hour Version Questionnaire Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CCQ01TC
+      operator: in
+      value:
+        - CCQ0101
+        - CCQ0102
+        - CCQ0103
+        - CCQ0104
+        - CCQ0105
+        - CCQ0106
+        - CCQ0107
+        - CCQ0108
+        - CCQ0109
+        - CCQ0110
+outcome:
+  message: Value not found in non-extensible codelist Clinical COPD Questionnaire
+    24 Hour Version Questionnaire Test Code (C119064)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C119064
+  codelist_name: Clinical COPD Questionnaire 24 Hour Version Questionnaire Test Code
+  codelist_submission_value: CCQ01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 10
+

@@ -1,0 +1,132 @@
+id: HRL-CT-0889
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: QLES1TN (Quality Of Life Enjoyment And Satisfaction Questionnaire Test
+  Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: QLES1TN
+      operator: in
+      value:
+        - QLES1-Ability to Function in Daily Life
+        - QLES1-Ability to Get Around Physically
+        - QLES1-Able to Communicate With Others
+        - QLES1-Able to Deal With Life's Problems
+        - QLES1-Able to Take Care of Yourself
+        - QLES1-Able to Travel About When Needed
+        - QLES1-Accomplish Household Activities
+        - QLES1-Accomplished What You Wanted to Do
+        - QLES1-At Least Very Good Physical Health
+        - QLES1-Be as Physically Active as Needed
+        - QLES1-Been Interested in Your Work
+        - QLES1-Communicated With Ease at Course
+        - QLES1-Communicated/Interacted With Ease
+        - QLES1-Concentrate on Leisure Activities
+        - QLES1-Concentrated on Course Work
+        - QLES1-Concentrated on Work
+        - QLES1-Course/Class Work Without Stress
+        - QLES1-Decisive About Course Work
+        - QLES1-Decisive About Work/Made Decisions
+        - QLES1-Decisive Household Activities
+        - QLES1-Do Volunteer Work
+        - QLES1-Economic Status
+        - QLES1-Enjoy the Leisure Activities
+        - QLES1-Enjoyed Being With Friends
+        - QLES1-Enjoyed Course/Class Work
+        - QLES1-Enjoyed Talking With Co-workers
+        - QLES1-Enjoyed Your Work
+        - QLES1-Family Relationships
+        - QLES1-Felt Able to Make Decisions
+        - QLES1-Felt Affection Toward People
+        - QLES1-Felt Clearheaded
+        - QLES1-Felt Content
+        - QLES1-Felt Energetic
+        - QLES1-Felt Full of Pep and Vitality
+        - QLES1-Felt Good About Your Appearance
+        - QLES1-Felt Good About Your Life
+        - QLES1-Felt Good Doing Course Work
+        - QLES1-Felt Good Physically
+        - QLES1-Felt Happy or Cheerful
+        - QLES1-Felt in Excellent Physical Health
+        - QLES1-Felt Independent
+        - QLES1-Felt Memory Was Functioning Well
+        - QLES1-Felt Relaxed
+        - QLES1-Felt Rested
+        - QLES1-Felt Satisfied With Your Life
+        - QLES1-Felt Well Coordinated
+        - QLES1-Felt You Got Enough Sleep
+        - QLES1-Free of Aches, Pains, Discomfort
+        - QLES1-Free of Visual Problems
+        - QLES1-Free of Worry of Physical Health
+        - QLES1-Getting Together With Friends
+        - QLES1-Gotten Along Well With People
+        - QLES1-Have a Job
+        - QLES1-Household Activities
+        - QLES1-Interested in Problems of People
+        - QLES1-Interested in Your Course Work
+        - QLES1-Joked or Laughed With Other People
+        - QLES1-Kept Room Clean to Satisfaction
+        - QLES1-Kept Up With Expected Work
+        - QLES1-Leisure Activity Sustain Interest
+        - QLES1-Leisure Time Activities
+        - QLES1-Living/Housing Situation
+        - QLES1-Look Forward to Leisure Activities
+        - QLES1-Looked Forward to Course Work
+        - QLES1-Made Repairs Household Maintenance
+        - QLES1-Made Social Plans With Friends
+        - QLES1-Medication
+        - QLES1-Met Needs of Friends or Relatives
+        - QLES1-Mood
+        - QLES1-Overall Sense of Well Being
+        - QLES1-Paid Bills, Done Banking
+        - QLES1-Patient With Others
+        - QLES1-Physical Health
+        - QLES1-Pleased With Course Accomplishment
+        - QLES1-Pleased With Work Accomplishments
+        - QLES1-Prepared Food or Obtained Food
+        - QLES1-Rate Overall Life Satisfaction
+        - QLES1-Reason for No Courses
+        - QLES1-Reason for No Household Activities
+        - QLES1-Reason for Not Working
+        - QLES1-Relationships Without Problems
+        - QLES1-Responsible for Household
+        - QLES1-Sex Drive, Interest, Performance
+        - QLES1-Shopped for Food/Household Items
+        - QLES1-Social Relationships
+        - QLES1-Solve or Deal Without Undue Stress
+        - QLES1-Solved House Problems w/o Stress
+        - QLES1-Solved Work Problem Without Stress
+        - QLES1-Taken Care of Laundry/Cleaning
+        - QLES1-Taken Care of Work by Yourself
+        - QLES1-Taken Courses/Going to Class
+        - QLES1-Taking Care of Your Appearance
+        - QLES1-Thought Clearly About Course Work
+        - QLES1-Thought Clearly About Work
+        - QLES1-Thought Clearly Household Activ
+        - QLES1-Use Time for a Leisure Activity
+        - QLES1-Vision Ability to Do Work/Hobbies
+        - QLES1-Work for Yourself
+        - QLES1-Work
+        - QLES1-Worked Carefully
+        - QLES1-Worked Well
+outcome:
+  message: Value not found in non-extensible codelist Quality Of Life Enjoyment And
+    Satisfaction Questionnaire Test Name (C130264)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130264
+  codelist_name: Quality Of Life Enjoyment And Satisfaction Questionnaire Test Name
+  codelist_submission_value: QLES1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 101
+

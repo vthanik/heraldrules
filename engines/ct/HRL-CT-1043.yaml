@@ -1,0 +1,58 @@
+id: HRL-CT-1043
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SMDDS1TC (Symptoms of Major Depressive Disorder Scale v1.0 Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SMDDS1TC
+      operator: in
+      value:
+        - SMDDS101
+        - SMDDS102
+        - SMDDS103
+        - SMDDS104
+        - SMDDS105
+        - SMDDS106
+        - SMDDS107
+        - SMDDS108
+        - SMDDS109
+        - SMDDS110
+        - SMDDS111
+        - SMDDS112
+        - SMDDS113
+        - SMDDS114
+        - SMDDS115
+        - SMDDS116
+        - SMDDS117
+        - SMDDS118
+        - SMDDS119
+        - SMDDS120
+        - SMDDS121
+        - SMDDS122
+        - SMDDS123
+        - SMDDS124
+        - SMDDS125
+        - SMDDS126
+outcome:
+  message: Value not found in non-extensible codelist Symptoms of Major Depressive
+    Disorder Scale v1.0 Questionnaire Test Code (C154457)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C154457
+  codelist_name: Symptoms of Major Depressive Disorder Scale v1.0 Questionnaire Test
+    Code
+  codelist_submission_value: SMDDS1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 26
+

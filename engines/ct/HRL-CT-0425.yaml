@@ -1,0 +1,79 @@
+id: HRL-CT-0425
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC065TC (Functional Assessment of Anorexia/Cachexia Treatment Version
+  4 Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC065TC
+      operator: in
+      value:
+        - FAC06501
+        - FAC06502
+        - FAC06503
+        - FAC06504
+        - FAC06505
+        - FAC06506
+        - FAC06507
+        - FAC06508
+        - FAC06509
+        - FAC06510
+        - FAC06511
+        - FAC06512
+        - FAC06513
+        - FAC06514
+        - FAC06515
+        - FAC06516
+        - FAC06517
+        - FAC06518
+        - FAC06519
+        - FAC06520
+        - FAC06521
+        - FAC06522
+        - FAC06523
+        - FAC06524
+        - FAC06525
+        - FAC06526
+        - FAC06527
+        - FAC06528
+        - FAC06529
+        - FAC06530
+        - FAC06531
+        - FAC06532
+        - FAC06533
+        - FAC06534
+        - FAC06535
+        - FAC06536
+        - FAC06537
+        - FAC06538
+        - FAC06539
+        - FAC06540
+        - FAC06541
+        - FAC06542
+        - FAC06543
+        - FAC06544
+        - FAC06545
+        - FAC06546
+        - FAC06547
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Anorexia/Cachexia
+    Treatment Version 4 Questionnaire Test Code (C179938)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C179938
+  codelist_name: Functional Assessment of Anorexia/Cachexia Treatment Version 4 Questionnaire
+    Test Code
+  codelist_submission_value: FAC065TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 47
+

@@ -1,0 +1,45 @@
+id: HRL-CT-0606
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: KFSS106OR (Kurtzke Functional System Scores Clinical Classification ORRES
+  for KFSS106 TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: KFSS106OR
+      operator: in
+      value:
+        - Grade 5 plus maximal visual acuity of better eye of 20/60 or less
+        - Normal
+        - Scotoma with visual acuity (corrected) better than 20/30
+        - Unknown
+        - Worse eye with large scotoma, or moderate decrease in fields, but with maximal
+          visual acuity (corrected) of 20/60 to 20/99
+        - Worse eye with marked decrease of fields and maximal visual acuity (corrected)
+          of 20/100 to 20/200; grade 3 plus maximal acuity of better eye of 20/60
+          or less
+        - Worse eye with maximal visual acuity (corrected) less than 20/200; grade
+          4 plus maximal acuity of better eye of 20/60 or less
+        - Worse eye with scotoma with maximal visual acuity (corrected) of 20/30 to
+          20/59
+outcome:
+  message: Value not found in non-extensible codelist Kurtzke Functional System Scores
+    Clinical Classification ORRES for KFSS106 TN/TC (C182481)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C182481
+  codelist_name: Kurtzke Functional System Scores Clinical Classification ORRES for
+    KFSS106 TN/TC
+  codelist_submission_value: KFSS106OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 8
+

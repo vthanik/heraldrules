@@ -1,0 +1,56 @@
+id: HRL-CT-0522
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HAMD2TC (Hamilton Depression Rating Scale 21-Item Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HAMD2TC
+      operator: in
+      value:
+        - HAMD201
+        - HAMD202
+        - HAMD203
+        - HAMD204
+        - HAMD205
+        - HAMD206
+        - HAMD207
+        - HAMD208
+        - HAMD209
+        - HAMD210
+        - HAMD211
+        - HAMD212
+        - HAMD213
+        - HAMD214
+        - HAMD215
+        - HAMD216A
+        - HAMD216B
+        - HAMD217
+        - HAMD218A
+        - HAMD218B
+        - HAMD219
+        - HAMD220
+        - HAMD221
+        - HAMD222
+outcome:
+  message: Value not found in non-extensible codelist Hamilton Depression Rating Scale
+    21-Item Clinical Classification Test Code (C101821)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101821
+  codelist_name: Hamilton Depression Rating Scale 21-Item Clinical Classification
+    Test Code
+  codelist_submission_value: HAMD2TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 24
+

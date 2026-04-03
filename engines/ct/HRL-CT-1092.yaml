@@ -1,0 +1,43 @@
+id: HRL-CT-1092
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: WPAI02TC (The Work Productivity and Activity Impairment - General Health
+  Version 2.0 Questionnaire Test Code) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: WPAI02TC
+      operator: in
+      value:
+        - WPAI0201
+        - WPAI0202
+        - WPAI0203
+        - WPAI0204
+        - WPAI0205
+        - WPAI0206
+        - WPAI0207
+        - WPAI0208
+        - WPAI0209
+        - WPAI0210
+outcome:
+  message: Value not found in non-extensible codelist The Work Productivity and Activity
+    Impairment - General Health Version 2.0 Questionnaire Test Code (C166186)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C166186
+  codelist_name: The Work Productivity and Activity Impairment - General Health Version
+    2.0 Questionnaire Test Code
+  codelist_submission_value: WPAI02TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 10
+

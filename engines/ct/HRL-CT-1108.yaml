@@ -1,0 +1,57 @@
+id: HRL-CT-1108
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TOPARM (Tobacco Products Parameter Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TOPARM
+      operator: in
+      value:
+        - Battery Capacity
+        - Characterizing Flavor
+        - Circumference
+        - Diameter
+        - Disposable Cartridge Indicator
+        - E-Liquid Volume
+        - FDA Submission Tracking Number
+        - Length
+        - Nicotine Concentration
+        - Package Type
+        - Portion Count
+        - Portion Length
+        - Portion Mass
+        - Portion Material Thickness
+        - Portion Width
+        - Product Quantity
+        - Propylene Glycol
+        - Tobacco Product Category
+        - Tobacco Product Category, Other
+        - Tobacco Product Manufacturer
+        - Tobacco Product Subcategory
+        - Tobacco Product Subcategory, Other
+        - Total Ventilation
+        - Trade Name
+        - Vegetable Glycerin
+        - Wattage
+outcome:
+  message: Value not found in extensible codelist Tobacco Products Parameter Name
+    (C204433)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204433
+  codelist_name: Tobacco Products Parameter Name
+  codelist_submission_value: TOPARM
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 26
+

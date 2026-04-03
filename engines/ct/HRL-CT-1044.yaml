@@ -1,0 +1,58 @@
+id: HRL-CT-1044
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SMDDS1TN (Symptoms of Major Depressive Disorder Scale v1.0 Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SMDDS1TN
+      operator: in
+      value:
+        - SMDDDS1-Low Energy Subscore
+        - SMDDS1-Anxiety Subscore
+        - SMDDS1-Cognition Subscore
+        - SMDDS1-Eating Behavior Subscore
+        - SMDDS1-How Difficult Stop Think Problems
+        - SMDDS1-How Difficult to Concentrate
+        - SMDDS1-How Difficult to Enjoy Daily Life
+        - SMDDS1-How Hopeless Have You Felt
+        - SMDDS1-How Irritable Have You Felt
+        - SMDDS1-How Much Blame Yourself Bad Thing
+        - SMDDS1-How Much Feel Like Doing Nothing
+        - SMDDS1-How Much Feel Not Worth Living
+        - SMDDS1-How Much Push Yourself Do Things
+        - SMDDS1-How Often Did You Over Eat
+        - SMDDS1-How Often Have Poor Appetite
+        - SMDDS1-How Often Problem With Sleep
+        - SMDDS1-How Overwhelmed Have You Felt
+        - SMDDS1-How Sad Have You Felt
+        - SMDDS1-How Tired Have You Felt
+        - SMDDS1-How Worried Have You Felt
+        - SMDDS1-Low Motivation Subscore
+        - SMDDS1-Negative Emotions/Mood Subscore
+        - SMDDS1-Self-Harm/Suicide Subscore
+        - SMDDS1-Sense of Self Subscore
+        - SMDDS1-Sleep Disturbances Subscore
+        - SMDDS1-Total Score
+outcome:
+  message: Value not found in non-extensible codelist Symptoms of Major Depressive
+    Disorder Scale v1.0 Questionnaire Test Name (C154456)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C154456
+  codelist_name: Symptoms of Major Depressive Disorder Scale v1.0 Questionnaire Test
+    Name
+  codelist_submission_value: SMDDS1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 26
+

@@ -1,0 +1,62 @@
+id: HRL-CT-0858
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PANSS1TC (Positive and Negative Syndrome Scale Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PANSS1TC
+      operator: in
+      value:
+        - PANSS101
+        - PANSS102
+        - PANSS103
+        - PANSS104
+        - PANSS105
+        - PANSS106
+        - PANSS107
+        - PANSS108
+        - PANSS109
+        - PANSS110
+        - PANSS111
+        - PANSS112
+        - PANSS113
+        - PANSS114
+        - PANSS115
+        - PANSS116
+        - PANSS117
+        - PANSS118
+        - PANSS119
+        - PANSS120
+        - PANSS121
+        - PANSS122
+        - PANSS123
+        - PANSS124
+        - PANSS125
+        - PANSS126
+        - PANSS127
+        - PANSS128
+        - PANSS129
+        - PANSS130
+outcome:
+  message: Value not found in non-extensible codelist Positive and Negative Syndrome
+    Scale Clinical Classification Test Code (C124686)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124686
+  codelist_name: Positive and Negative Syndrome Scale Clinical Classification Test
+    Code
+  codelist_submission_value: PANSS1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 30
+

@@ -1,0 +1,46 @@
+id: HRL-CT-0546
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HETEST (Holter ECG Test Name) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HETEST
+      operator: in
+      value:
+        - Atrioventricular Conduction
+        - Axis and Voltage
+        - Chamber Hypertrophy or Enlargement
+        - Comparison to a Prior ECG
+        - Interpretation
+        - Intraventricular-Intraatrial Conduction
+        - Myocardial Infarction
+        - Pacemaker
+        - Rhythm Not Otherwise Specified
+        - Sinus Node Rhythms and Arrhythmias
+        - ST Segment, T wave, and U wave
+        - Supraventricular Arrhythmias
+        - Supraventricular Tachyarrhythmias
+        - Technical Quality
+        - Ventricular Arrhythmias
+        - Ventricular Tachyarrhythmias
+outcome:
+  message: Value not found in extensible codelist Holter ECG Test Name (C120524)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C120524
+  codelist_name: Holter ECG Test Name
+  codelist_submission_value: HETEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 16
+

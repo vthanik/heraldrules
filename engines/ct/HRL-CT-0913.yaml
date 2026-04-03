@@ -1,0 +1,166 @@
+id: HRL-CT-0913
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RETESTCD (Respiratory Test Code) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RETESTCD
+      operator: in
+      value:
+        - ADDRELF
+        - AIRTRAP
+        - ALVVOL
+        - AWVOL
+        - AWVOLPP
+        - AWWVOL
+        - BLDFLRT
+        - DLCO
+        - DLCOHC
+        - DLCOHCPP
+        - DLCOHCVA
+        - DLCOHVAP
+        - DLCOM
+        - DLCOPP
+        - DLCOVA
+        - DLCOVAPP
+        - DOMLGPT
+        - DOMLGPTD
+        - EFFIND
+        - EFFVOL
+        - ELSTNCE
+        - ERV
+        - ERVPP
+        - EV_05FVC
+        - EV_1FVC
+        - EV_2FVC
+        - EVC
+        - EVCPP
+        - EXPRELTM
+        - FEF2575
+        - FEF2575P
+        - FEF50
+        - FEF_05
+        - FEF_1
+        - FEF_2
+        - FET
+        - FEV1
+        - FEV1FVC
+        - FEV1FVC6
+        - FEV1FVCP
+        - FEV1PP
+        - FEV1REV
+        - FEV1SVC
+        - FEV3
+        - FEV3FVC
+        - FEV3PP
+        - FEV6
+        - FEV6PP
+        - FEV_05
+        - FEV_1
+        - FEV_2
+        - FEV_5
+        - FEV_75
+        - FEV_PEF
+        - FIF25
+        - FIF50
+        - FIF75
+        - FIFMAX
+        - FIFMAXPP
+        - FIO2
+        - FIV1
+        - FIV1PP
+        - FIVC
+        - FRC
+        - FRCPP
+        - FVC
+        - FVC6
+        - FVCPP
+        - GAW
+        - IC
+        - ICPP
+        - ICREV
+        - INERTANC
+        - INFLTIND
+        - INTP
+        - IRV
+        - IRVPP
+        - IVC
+        - IVCPP
+        - LCI
+        - LCI2_5
+        - LCI5
+        - LOBVOL
+        - LOBVOLPP
+        - MALEVDES
+        - MALIND
+        - MEP
+        - MEPPP
+        - MIP
+        - MIPPP
+        - MV
+        - OI
+        - OXYPULSE
+        - OXYSAT
+        - PCF
+        - PEF
+        - PEFPP
+        - PEFREV
+        - PEFTIME
+        - PIF
+        - PLMXRS
+        - PNEUMIND
+        - PNIF
+        - PO2FIO2
+        - QUASCOMP
+        - RAW
+        - RAWPP
+        - REEXAM
+        - RELSZCHG
+        - RER
+        - RRS
+        - RV
+        - RVPP
+        - SALKA
+        - SALKB
+        - SALKK
+        - SAO2FIO2
+        - SAWVOL
+        - SAWVOLPP
+        - SGAW
+        - SRAW
+        - SRAWPP
+        - SVC
+        - SVCPP
+        - TGV
+        - TLC
+        - TLCPP
+        - TSUELAS
+        - TSUHYS
+        - TV
+        - TVPP
+        - VO2
+        - VO2MAX
+        - VO2MAXE
+        - VT1
+        - VT2
+outcome:
+  message: Value not found in extensible codelist Respiratory Test Code (C111106)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C111106
+  codelist_name: Respiratory Test Code
+  codelist_submission_value: RETESTCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 136
+

@@ -1,0 +1,37 @@
+id: HRL-CT-0166
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DECAT (Category of Device Events) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DECAT
+      operator: in
+      value:
+        - CALIBRATION FAILURE
+        - COMPUTER SOFTWARE ISSUE
+        - DATA STORAGE FAILURE
+        - DEVICE OPERATIONAL ISSUE
+        - NON-STUDY EQUIPMENT ISSUE
+        - SCHEDULED MAINTENANCE
+        - SOFTWARE UPDATE
+outcome:
+  message: Value not found in extensible codelist Category of Device Events (C111109)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C111109
+  codelist_name: Category of Device Events
+  codelist_submission_value: DECAT
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 7
+

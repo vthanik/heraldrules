@@ -1,0 +1,35 @@
+id: HRL-CT-0580
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: INTMODEL (Intervention Model Response) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: INTMODEL
+      operator: in
+      value:
+        - CROSS-OVER
+        - FACTORIAL
+        - PARALLEL
+        - SEQUENTIAL
+        - SINGLE GROUP
+outcome:
+  message: Value not found in extensible codelist Intervention Model Response (C99076)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C99076
+  codelist_name: Intervention Model Response
+  codelist_submission_value: INTMODEL
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 5
+

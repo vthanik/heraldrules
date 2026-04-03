@@ -1,0 +1,39 @@
+id: HRL-CT-0301
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DURS (Device-In-Use Response) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DURS
+      operator: in
+      value:
+        - 2-DIMENSIONAL BIPLANE MODE
+        - 2-DIMENSIONAL SINGLE PLANE MODE
+        - 3-DIMENSIONAL MODE
+        - COLOR TISSUE DOPPLER MODE
+        - CONTINUOUS-WAVE DOPPLER MODE
+        - M-MODE
+        - PULSED-WAVE DOPPLER MODE
+        - PULSED-WAVE TISSUE DOPPLER MODE
+        - TISSUE DOPPLER MODE
+outcome:
+  message: Value not found in extensible codelist Device-In-Use Response (C129938)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C129938
+  codelist_name: Device-In-Use Response
+  codelist_submission_value: DURS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 9
+

@@ -1,0 +1,64 @@
+id: HRL-CT-0843
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PUL02TN (Performance of the Upper Limb Module for DMD Version 2.0 Functional
+  Test Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PUL02TN
+      operator: in
+      value:
+        - PUL02-Distal Wrist/Hand Dimension
+        - PUL02-Entry Item
+        - PUL02-Flexion Above Shoulder Height 1kg
+        - PUL02-Flexion Above Shoulder Height 500g
+        - PUL02-Flexion Shoulder Height No Weights
+        - PUL02-Flexion to Shoulder Height 500g
+        - PUL02-Hand(s) to Mouth
+        - PUL02-Hands to Table From Lap
+        - PUL02-High Level Shoulder Dimension
+        - PUL02-Left Available Supination ROM
+        - PUL02-Left Elbow Extension ROM
+        - PUL02-Lift Heavy Can Diagonally
+        - PUL02-Mid Level Elbow Dimension
+        - PUL02-Move Weight on Table 100g
+        - PUL02-Move Weight on Table 1kg
+        - PUL02-Move Weight on Table 500g
+        - PUL02-Pick Up 10g Weight Finger Pinch
+        - PUL02-Picking Up Coins
+        - PUL02-Placing Finger on Number Diagram
+        - PUL02-Preferred Arm
+        - PUL02-Push on Light
+        - PUL02-Raise Both Arms to Shoulder Height
+        - PUL02-Remove Lid From Container
+        - PUL02-Right Available Supination ROM
+        - PUL02-Right Elbow Extension ROM
+        - PUL02-Shoulder Abduction Arms Above Head
+        - PUL02-Stack of Five Cans
+        - PUL02-Stack of Three Cans
+        - PUL02-Supination
+        - PUL02-Tearing Paper
+        - PUL02-Total Score
+        - PUL02-Tracing Path
+outcome:
+  message: Value not found in non-extensible codelist Performance of the Upper Limb
+    Module for DMD Version 2.0 Functional Test Test Name (C138218)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138218
+  codelist_name: Performance of the Upper Limb Module for DMD Version 2.0 Functional
+    Test Test Name
+  codelist_submission_value: PUL02TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 32
+

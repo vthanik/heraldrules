@@ -1,0 +1,51 @@
+id: HRL-CT-0060
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: AQ01TN (Airway Questionnaire 20 Questionnaire Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: AQ01TN
+      operator: in
+      value:
+        - AQ01-Breathless Carry out Work Activity
+        - AQ01-Breathless Walking Upstairs
+        - AQ01-Breathless When Trying to Sleep
+        - AQ01-Breathlessness When Laugh
+        - AQ01-Chest Prob Smell/Fume/Smoke/Perfume
+        - AQ01-Chest Upset at Friend House
+        - AQ01-Cough Often During Day
+        - AQ01-Difficulty Getting Around the House
+        - AQ01-Drained After a Cold
+        - AQ01-Emotional Upset Worse Chest Trouble
+        - AQ01-Feel Restless Due to Chest Trouble
+        - AQ01-Feeling of Chest Heaviness
+        - AQ01-Full Life Limited by Chest Trouble
+        - AQ01-Gardening Make You Breathless
+        - AQ01-Get Breathless Doing Housework
+        - AQ01-Go Home Sooner Than Others
+        - AQ01-Impatient Due to Chest Trouble
+        - AQ01-Long Term Effects of Drugs
+        - AQ01-Partner Upset by Your Chest Trouble
+        - AQ01-Worry About Chest Trouble
+outcome:
+  message: Value not found in non-extensible codelist Airway Questionnaire 20 Questionnaire
+    Test Name (C112434)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C112434
+  codelist_name: Airway Questionnaire 20 Questionnaire Test Name
+  codelist_submission_value: AQ01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 20
+

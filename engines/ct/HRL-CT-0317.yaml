@@ -1,0 +1,80 @@
+id: HRL-CT-0317
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DAD01TC (Disability Assessment for Dementia Questionnaire Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DAD01TC
+      operator: in
+      value:
+        - DAD0101
+        - DAD0102
+        - DAD0103
+        - DAD0104
+        - DAD0105
+        - DAD0106
+        - DAD0107
+        - DAD0108
+        - DAD0109
+        - DAD0110
+        - DAD0111
+        - DAD0112
+        - DAD0113
+        - DAD0114
+        - DAD0115
+        - DAD0116
+        - DAD0117
+        - DAD0118
+        - DAD0119
+        - DAD0120
+        - DAD0121
+        - DAD0122
+        - DAD0123
+        - DAD0124
+        - DAD0125
+        - DAD0126
+        - DAD0127
+        - DAD0128
+        - DAD0129
+        - DAD0130
+        - DAD0131
+        - DAD0132
+        - DAD0133
+        - DAD0134
+        - DAD0135
+        - DAD0136
+        - DAD0137
+        - DAD0138
+        - DAD0139
+        - DAD0140
+        - DAD0141
+        - DAD0142
+        - DAD0143
+        - DAD0144
+        - DAD0145
+        - DAD0146
+        - DAD0147
+        - DAD0148
+        - DAD0149
+outcome:
+  message: Value not found in non-extensible codelist Disability Assessment for Dementia
+    Questionnaire Test Code (C105130)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C105130
+  codelist_name: Disability Assessment for Dementia Questionnaire Test Code
+  codelist_submission_value: DAD01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 49
+

@@ -1,0 +1,33 @@
+id: HRL-CT-0779
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PHQ04TN (Patient Health Questionnaire - 2 Item Questionnaire Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PHQ04TN
+      operator: in
+      value:
+        - PHQ04-Feeling Down Depressed or Hopeless
+        - PHQ04-Little Interest/Pleasure in Things
+outcome:
+  message: Value not found in non-extensible codelist Patient Health Questionnaire
+    - 2 Item Questionnaire Test Name (C157726)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C157726
+  codelist_name: Patient Health Questionnaire - 2 Item Questionnaire Test Name
+  codelist_submission_value: PHQ04TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 2
+

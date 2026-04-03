@@ -1,0 +1,68 @@
+id: HRL-CT-0304
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DDS01TC (Diabetes Distress Scale for Adults with Type 1 Diabetes Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DDS01TC
+      operator: in
+      value:
+        - DDS0101
+        - DDS0102
+        - DDS0103
+        - DDS0104
+        - DDS0105
+        - DDS0106
+        - DDS0107
+        - DDS0108
+        - DDS0109
+        - DDS0110
+        - DDS0111
+        - DDS0112
+        - DDS0113
+        - DDS0114
+        - DDS0115
+        - DDS0116
+        - DDS0117
+        - DDS0118
+        - DDS0119
+        - DDS0120
+        - DDS0121
+        - DDS0122
+        - DDS0123
+        - DDS0124
+        - DDS0125
+        - DDS0126
+        - DDS0127
+        - DDS0128
+        - DDS0129
+        - DDS0130
+        - DDS0131
+        - DDS0132
+        - DDS0133
+        - DDS0134
+        - DDS0135
+        - DDS0136
+outcome:
+  message: Value not found in non-extensible codelist Diabetes Distress Scale for
+    Adults with Type 1 Diabetes Questionnaire Test Code (C161621)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C161621
+  codelist_name: Diabetes Distress Scale for Adults with Type 1 Diabetes Questionnaire
+    Test Code
+  codelist_submission_value: DDS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 36
+

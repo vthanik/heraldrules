@@ -1,0 +1,132 @@
+id: HRL-CT-0888
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: QLES1TC (Quality Of Life Enjoyment And Satisfaction Questionnaire Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: QLES1TC
+      operator: in
+      value:
+        - QLES101
+        - QLES102
+        - QLES103
+        - QLES104
+        - QLES105
+        - QLES106
+        - QLES107
+        - QLES108
+        - QLES109
+        - QLES110
+        - QLES111
+        - QLES112
+        - QLES113
+        - QLES114
+        - QLES115
+        - QLES116
+        - QLES117
+        - QLES118
+        - QLES119
+        - QLES120
+        - QLES121
+        - QLES122
+        - QLES123
+        - QLES124
+        - QLES125
+        - QLES126
+        - QLES127
+        - QLES128A
+        - QLES128B
+        - QLES128C
+        - QLES128D
+        - QLES129
+        - QLES130
+        - QLES131
+        - QLES132
+        - QLES133
+        - QLES134
+        - QLES135
+        - QLES136
+        - QLES137
+        - QLES138
+        - QLES139
+        - QLES140
+        - QLES141
+        - QLES142
+        - QLES142A
+        - QLES143
+        - QLES144
+        - QLES145
+        - QLES146
+        - QLES147
+        - QLES148
+        - QLES149
+        - QLES150
+        - QLES151
+        - QLES152
+        - QLES153
+        - QLES153A
+        - QLES154
+        - QLES155
+        - QLES156
+        - QLES157
+        - QLES158
+        - QLES159
+        - QLES160
+        - QLES161
+        - QLES162
+        - QLES163
+        - QLES164
+        - QLES165
+        - QLES166
+        - QLES167
+        - QLES168
+        - QLES169
+        - QLES170
+        - QLES171
+        - QLES172
+        - QLES173
+        - QLES174
+        - QLES175
+        - QLES176
+        - QLES177
+        - QLES178
+        - QLES179
+        - QLES180
+        - QLES181
+        - QLES182
+        - QLES183
+        - QLES184
+        - QLES185
+        - QLES186
+        - QLES187
+        - QLES188
+        - QLES189
+        - QLES190
+        - QLES191
+        - QLES192
+        - QLES193
+        - QLES194
+        - QLES195
+        - QLES196
+outcome:
+  message: Value not found in non-extensible codelist Quality Of Life Enjoyment And
+    Satisfaction Questionnaire Test Code (C130265)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130265
+  codelist_name: Quality Of Life Enjoyment And Satisfaction Questionnaire Test Code
+  codelist_submission_value: QLES1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 101
+

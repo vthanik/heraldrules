@@ -1,0 +1,40 @@
+id: HRL-CT-0489
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GENIDENT (Gender Identity Response) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GENIDENT
+      operator: in
+      value:
+        - AGENDER
+        - CISGENDER MAN/BOY
+        - CISGENDER WOMAN/GIRL
+        - GENDER FLUID
+        - GENDER QUEER
+        - NON-BINARY
+        - NOT REPORTED
+        - TRANSGENDER MAN/BOY
+        - TRANSGENDER WOMAN/GIRL
+        - UNKNOWN
+outcome:
+  message: Value not found in extensible codelist Gender Identity Response (C209289)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C209289
+  codelist_name: Gender Identity Response
+  codelist_submission_value: GENIDENT
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 10
+

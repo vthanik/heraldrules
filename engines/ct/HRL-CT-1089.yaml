@@ -1,0 +1,89 @@
+id: HRL-CT-1089
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SF361TN (The Short Form 36 Health Survey Standard, US Version 1.0 Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SF361TN
+      operator: in
+      value:
+        - SF361-Bodily Pain 0-100 Score
+        - SF361-Bodily Pain Norm-Based Score
+        - SF361-Comp Year Ago Rate Gen Health Now
+        - SF361-Did You Feel Full of Pep
+        - SF361-Did You Feel Tired
+        - SF361-Did You Feel Worn Out
+        - SF361-Did You Have a Lot of Energy
+        - 'SF361-Emotional: Accomplished Less'
+        - 'SF361-Emotional: Cut Down Time on Work'
+        - 'SF361-Emotional: Did Work Less Carefully'
+        - SF361-Extent Phys/Emotional Interfered
+        - SF361-Felt Down Nothing Cheer You Up
+        - SF361-General Health 0-100 Score
+        - SF361-General Health Norm-Based Score
+        - SF361-Get Sick Little Easier Than Other
+        - SF361-Have You Been Happy Person
+        - SF361-Have You Been Very Nervous Person
+        - SF361-Have You Felt Calm and Peaceful
+        - SF361-How Much Bodily Pain Have You Had
+        - SF361-I Am as Healthy as Anybody I Know
+        - SF361-I Expect My Health to Get Worse
+        - SF361-In General You Say Your Health Is
+        - SF361-Limit Bathing or Dressing Yourself
+        - SF361-Limit Bending/Kneeling/Stooping
+        - SF361-Limit Climbing One Flight Stairs
+        - SF361-Limit Climbing Several Flights
+        - SF361-Limit Lifting or Carrying
+        - SF361-Limit Moderate Activities
+        - SF361-Limit Vigorous Activities
+        - SF361-Limit Walking More Than a Mile
+        - SF361-Limit Walking One Block
+        - SF361-Limit Walking Several Blocks
+        - SF361-Mental Component Score
+        - SF361-Mental Health 0-100 Score
+        - SF361-Mental Health Norm-Based Score
+        - SF361-My Health is Excellent
+        - SF361-Pain Interfere With Normal Work
+        - SF361-Phys Functioning Norm-Based Score
+        - SF361-Physical Component Score
+        - SF361-Physical Functioning 0-100 Score
+        - 'SF361-Physical: Accomplished Less'
+        - 'SF361-Physical: Cut Down Time on Work'
+        - 'SF361-Physical: Difficulty Perform Work'
+        - 'SF361-Physical: Limited Kind of Work'
+        - SF361-Response Consistency Score
+        - SF361-Role Emotional 0-100 Score
+        - SF361-Role Emotional Norm-Based Score
+        - SF361-Role Physical 0-100 Score
+        - SF361-Role Physical Norm-Based Score
+        - SF361-SF-6D (Utility Index) Score
+        - SF361-SF-6D_R2 (Util Index Rel 2) Score
+        - SF361-Social Function Norm-Based Score
+        - SF361-Social Functioning 0-100 Score
+        - SF361-Time Phys/Emotional Interfered
+        - SF361-Vitality 0-100 Score
+        - SF361-Vitality Norm-Based Score
+        - SF361-You Felt Downhearted and Blue
+outcome:
+  message: Value not found in non-extensible codelist The Short Form 36 Health Survey
+    Standard, US Version 1.0 Questionnaire Test Name (C100173)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100173
+  codelist_name: The Short Form 36 Health Survey Standard, US Version 1.0 Questionnaire
+    Test Name
+  codelist_submission_value: SF361TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 57
+

@@ -1,0 +1,35 @@
+id: HRL-CT-0348
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ETRP01TC (Emory Treatment Resistance Interview for PTSD Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ETRP01TC
+      operator: in
+      value:
+        - ETRP0101
+        - ETRP0102
+        - ETRP0103
+outcome:
+  message: Value not found in non-extensible codelist Emory Treatment Resistance Interview
+    for PTSD Clinical Classification Test Code (C161627)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C161627
+  codelist_name: Emory Treatment Resistance Interview for PTSD Clinical Classification
+    Test Code
+  codelist_submission_value: ETRP01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 3
+

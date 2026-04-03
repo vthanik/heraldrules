@@ -1,0 +1,42 @@
+id: HRL-CT-0586
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CRSR01TC (JFK Coma Recovery Scale-Revised Clinical Classification Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CRSR01TC
+      operator: in
+      value:
+        - CRSR0101
+        - CRSR0102
+        - CRSR0103
+        - CRSR0104
+        - CRSR0105
+        - CRSR0106
+        - CRSR0107
+        - CRSR0108
+        - CRSR0109
+        - CRSR0110
+        - CRSR0111
+outcome:
+  message: Value not found in non-extensible codelist JFK Coma Recovery Scale-Revised
+    Clinical Classification Test Code (C124684)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124684
+  codelist_name: JFK Coma Recovery Scale-Revised Clinical Classification Test Code
+  codelist_submission_value: CRSR01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 11
+

@@ -1,0 +1,47 @@
+id: HRL-CT-1124
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TPHASE (Trial Phase Response) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TPHASE
+      operator: in
+      value:
+        - EARLY PHASE I
+        - NOT APPLICABLE
+        - PHASE I TRIAL
+        - PHASE I/II TRIAL
+        - PHASE I/II/III TRIAL
+        - PHASE I/III TRIAL
+        - PHASE IA TRIAL
+        - PHASE IB TRIAL
+        - PHASE II TRIAL
+        - PHASE II/III TRIAL
+        - PHASE IIA TRIAL
+        - PHASE IIB TRIAL
+        - PHASE III TRIAL
+        - PHASE IIIA TRIAL
+        - PHASE IIIB TRIAL
+        - PHASE IV TRIAL
+        - PHASE V TRIAL
+outcome:
+  message: Value not found in extensible codelist Trial Phase Response (C66737)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C66737
+  codelist_name: Trial Phase Response
+  codelist_submission_value: TPHASE
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 17
+

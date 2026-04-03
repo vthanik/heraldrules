@@ -1,0 +1,69 @@
+id: HRL-CT-0542
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HODECOD (Health Care Encounters Dictionary Derived Term) must contain
+  valid extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HODECOD
+      operator: in
+      value:
+        - ADULT DAYCARE FACILITY VISIT
+        - CARDIAC CATHETERIZATION LABORATORY VISIT
+        - CARDIAC INTENSIVE CARE UNIT STAY
+        - CARDIOLOGY UNIT VISIT
+        - DAY HOSPITAL VISIT
+        - DIETARY SPECIALIST VISIT
+        - EMERGENCY ROOM VISIT
+        - GENERAL WARD STAY
+        - HEALTHCARE PROFESSIONAL VISIT
+        - HOME HEALTHCARE VISIT
+        - HOME HOSPICE VISIT
+        - HOSPICE FACILITY STAY
+        - HOSPITAL STAY
+        - IMAGING CENTER VISIT
+        - INFUSION CENTER VISIT
+        - INTENSIVE CARE UNIT STAY
+        - LABORATORY VISIT
+        - LONG TERM ACUTE CARE STAY
+        - LONG TERM SUBACUTE CARE STAY
+        - MENTAL HEALTH SPECIALIST VISIT
+        - NEURO INTENSIVE CARE UNIT STAY
+        - NURSING HOME STAY
+        - OPERATING ROOM VISIT
+        - OUTPATIENT CLINIC VISIT
+        - PALLIATIVE CARE UNIT STAY
+        - PHYSICAL THERAPY FACILITY VISIT
+        - POST-ANESTHESIA CARE UNIT VISIT
+        - PRIMARY CARE PHYSICIAN'S OFFICE VISIT
+        - PSYCHIATRIC WARD STAY
+        - REHABILITATION FACILITY STAY
+        - SHORT TERM ACUTE CARE STAY
+        - SKILLED NURSING FACILITY STAY
+        - SPECIALTY CARE PHYSICIAN'S OFFICE VISIT
+        - SURGICAL INTENSIVE CARE UNIT STAY
+        - SURGICAL UNIT VISIT
+        - URGENT CARE CENTER VISIT
+        - VIRTUAL VISIT
+        - VIRTUAL VISIT, TELEPHONE
+outcome:
+  message: Value not found in extensible codelist Health Care Encounters Dictionary
+    Derived Term (C171444)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C171444
+  codelist_name: Health Care Encounters Dictionary Derived Term
+  codelist_submission_value: HODECOD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 38
+

@@ -1,0 +1,40 @@
+id: HRL-CT-0601
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: KFSS101OR (Kurtzke Functional System Scores Clinical Classification ORRES
+  for KFSS101 TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: KFSS101OR
+      operator: in
+      value:
+        - Abnormal signs without disability
+        - Marked paraparesis or hemiparesis; moderate quadriparesis; or monoplegia
+        - Mild or moderate paraparesis or hemiparesis; severe monoparesis
+        - Minimal disability
+        - Normal
+        - Paraplegia, hemiplegia, or marked quadriparesis
+        - Quadriplegia
+        - Unknown
+outcome:
+  message: Value not found in non-extensible codelist Kurtzke Functional System Scores
+    Clinical Classification ORRES for KFSS101 TN/TC (C182475)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C182475
+  codelist_name: Kurtzke Functional System Scores Clinical Classification ORRES for
+    KFSS101 TN/TC
+  codelist_submission_value: KFSS101OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 8
+

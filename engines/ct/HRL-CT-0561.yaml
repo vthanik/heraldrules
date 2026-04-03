@@ -1,0 +1,46 @@
+id: HRL-CT-0561
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: IIEF01TC (International Index of Erectile Function Questionnaire Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: IIEF01TC
+      operator: in
+      value:
+        - IIEF0101
+        - IIEF0102
+        - IIEF0103
+        - IIEF0104
+        - IIEF0105
+        - IIEF0106
+        - IIEF0107
+        - IIEF0108
+        - IIEF0109
+        - IIEF0110
+        - IIEF0111
+        - IIEF0112
+        - IIEF0113
+        - IIEF0114
+        - IIEF0115
+outcome:
+  message: Value not found in non-extensible codelist International Index of Erectile
+    Function Questionnaire Test Code (C103471)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103471
+  codelist_name: International Index of Erectile Function Questionnaire Test Code
+  codelist_submission_value: IIEF01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 15
+

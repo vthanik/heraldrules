@@ -1,0 +1,69 @@
+id: HRL-CT-0228
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSS06TN (Columbia-Suicide Severity Rating Scale Children's Baseline Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSS06TN
+      operator: in
+      value:
+        - CSS06-Aborted Attempt
+        - CSS06-Aborted Attempt, Describe
+        - CSS06-Actual Attempt
+        - CSS06-Actual Attempt, Describe
+        - CSS06-First Attempt Damage
+        - CSS06-First Attempt Date
+        - CSS06-First Attempt Potential
+        - CSS06-Frequency, Write Response
+        - CSS06-Idea, No Intent, No Plan
+        - CSS06-Idea, No Intent, No Plan, Describe
+        - CSS06-Ideation With Intent No Plan Descr
+        - CSS06-Ideation With Intent, No Plan
+        - CSS06-Ideation With Plan/Intent
+        - CSS06-Ideation With Plan/Intent, Descr
+        - CSS06-Interrupted Attempt
+        - CSS06-Interrupted Attempt, Describe
+        - CSS06-Most Lethal Attempt Damage
+        - CSS06-Most Lethal Attempt Date
+        - CSS06-Most Lethal Attempt Potential
+        - CSS06-Most Recent Attempt Damage
+        - CSS06-Most Recent Attempt Date
+        - CSS06-Most Recent Attempt Potential
+        - CSS06-Most Severe Ideation
+        - CSS06-Most Severe Ideation, Description
+        - CSS06-Most Severe Ideation, Frequency
+        - CSS06-Non-Specific Suicid Thought, Descr
+        - CSS06-Non-Specific Suicidal Thought
+        - CSS06-Non-suicidal Self-injurious Behav
+        - CSS06-Number of Aborted Attempts
+        - CSS06-Number of Actual Attempts
+        - CSS06-Number of Interrupt Attempts
+        - CSS06-Preparatory Acts/Behavior
+        - CSS06-Preparatory Acts/Behavior, Descr
+        - CSS06-Self-injur Behav, Intent Unknown
+        - CSS06-Suicidal Behavior
+        - CSS06-Wish to be Dead
+        - CSS06-Wish to be Dead, Describe
+outcome:
+  message: Value not found in non-extensible codelist Columbia-Suicide Severity Rating
+    Scale Children's Baseline Questionnaire Test Name (C111335)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C111335
+  codelist_name: Columbia-Suicide Severity Rating Scale Children's Baseline Questionnaire
+    Test Name
+  codelist_submission_value: CSS06TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 37
+

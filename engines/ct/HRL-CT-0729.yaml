@@ -1,0 +1,46 @@
+id: HRL-CT-0729
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: NPS01TN (Neuropathic Pain Scale Questionnaire Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: NPS01TN
+      operator: in
+      value:
+        - NPS01-Describe Single Type Pain All Time
+        - NPS01-Describe the Background Pain
+        - NPS01-Describe the Flare-up Pain
+        - NPS01-Describe the Occasional Pain
+        - NPS01-Describe Time Quality Of Your Pain
+        - NPS01-How Intense is Your Deep Pain
+        - NPS01-How Intense is Your Surface Pain
+        - NPS01-Sensitiv Skin to Light Touch/Cloth
+        - NPS01-Tell How Unpleasant Your Pain Feel
+        - NPS01-Tell Us How Cold Your Pain Feels
+        - NPS01-Tell Us How Dull Your Pain Feels
+        - NPS01-Tell Us How Hot Your Pain Feels
+        - NPS01-Tell Us How Intense Your Pain Is
+        - NPS01-Tell Us How Itchy Your Pain Feels
+        - NPS01-Tell Us How Sharp Your Pain Feels
+outcome:
+  message: Value not found in non-extensible codelist Neuropathic Pain Scale Questionnaire
+    Test Name (C103472)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103472
+  codelist_name: Neuropathic Pain Scale Questionnaire Test Name
+  codelist_submission_value: NPS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 15
+

@@ -1,0 +1,34 @@
+id: HRL-CT-0594
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: KDIGO1TC (Kidney Disease Improving Global Outcomes Staging For Acute
+  Kidney Injury Clinical Classification Test Code) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: KDIGO1TC
+      operator: in
+      value:
+        - KDIGO101
+outcome:
+  message: Value not found in non-extensible codelist Kidney Disease Improving Global
+    Outcomes Staging For Acute Kidney Injury Clinical Classification Test Code (C170529)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C170529
+  codelist_name: Kidney Disease Improving Global Outcomes Staging For Acute Kidney
+    Injury Clinical Classification Test Code
+  codelist_submission_value: KDIGO1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

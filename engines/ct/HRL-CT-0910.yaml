@@ -1,0 +1,32 @@
+id: HRL-CT-0910
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RELTYPE (Relationship Type) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RELTYPE
+      operator: in
+      value:
+        - MANY
+        - ONE
+outcome:
+  message: Value not found in non-extensible codelist Relationship Type (C78737)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C78737
+  codelist_name: Relationship Type
+  codelist_submission_value: RELTYPE
+  extensible: no
+  parent_rule: CT2001
+  term_count: 2
+

@@ -1,0 +1,53 @@
+id: HRL-CT-0433
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC074TC (Functional Assessment of Cancer Therapy-Bone Pain Version 4
+  Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC074TC
+      operator: in
+      value:
+        - FAC07401
+        - FAC07402
+        - FAC07403
+        - FAC07404
+        - FAC07405
+        - FAC07406
+        - FAC07407
+        - FAC07408
+        - FAC07409
+        - FAC07410
+        - FAC07411
+        - FAC07412
+        - FAC07413
+        - FAC07414
+        - FAC07415
+        - FAC07416
+        - FAC07417
+        - FAC07418
+        - FAC07419
+        - FAC07420
+        - FAC07421
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Bone Pain Version 4 Questionnaire Test Code (C179940)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C179940
+  codelist_name: Functional Assessment of Cancer Therapy-Bone Pain Version 4 Questionnaire
+    Test Code
+  codelist_submission_value: FAC074TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 21
+

@@ -1,0 +1,44 @@
+id: HRL-CT-0214
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: COWS1TN (Clinical Opiate Withdrawal Scale Questionnaire Test Name) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: COWS1TN
+      operator: in
+      value:
+        - COWS1-Anxiety or Irritability
+        - COWS1-Bone or Joint Aches
+        - COWS1-GI Upset
+        - COWS1-Gooseflesh Skin
+        - COWS1-Pupil Size
+        - COWS1-Resting Pulse Rate Beats/Minute
+        - COWS1-Resting Pulse Rate
+        - COWS1-Restlessness
+        - COWS1-Runny Nose or Tearing
+        - COWS1-Sweating
+        - COWS1-Total Score
+        - COWS1-Tremor
+        - COWS1-Yawning
+outcome:
+  message: Value not found in non-extensible codelist Clinical Opiate Withdrawal Scale
+    Questionnaire Test Name (C101814)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101814
+  codelist_name: Clinical Opiate Withdrawal Scale Questionnaire Test Name
+  codelist_submission_value: COWS1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 13
+

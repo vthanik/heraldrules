@@ -1,0 +1,110 @@
+id: HRL-CT-1027
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SCTEST (Subject Characteristic Test Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SCTEST
+      operator: in
+      value:
+        - Age Started Smoking
+        - Appropriate Developmental Age Indicator
+        - Birth Country Code
+        - Birth Country
+        - Birth Plurality
+        - Breast Fed Indicator
+        - CDC HIV High Risk Donor Indicator
+        - Contact Investigation Indicator
+        - Country of Permanent Address
+        - Country of Potential Disease Exposure
+        - County of Permanent Address
+        - Daycare Indicator
+        - Deceased Donor Donation Type
+        - District of Permanent Address
+        - District of Potential Disease Exposure
+        - Dominant Hand
+        - Donor Status at Time of Organ Donation
+        - Dwelling Type
+        - Employee Job
+        - Employee Salary Type
+        - Employer Based Health Insurance Ind
+        - Employment Status
+        - Entry Date from Ptntl Cntry Disease Exp
+        - Estimated Date of Delivery
+        - Estimated Gestational Age
+        - Fertility Status
+        - Full-Time Student Indicator
+        - Gender Identity
+        - Gestational Age at Birth
+        - GPS Coord of Potential Disease Exposure
+        - Health Insurance Indicator
+        - Income Level
+        - Indian Health Service Insurance Ind
+        - Infant Less Than One Year Indicator
+        - Intersex Diagnosis Indicator
+        - Level of Education Attained
+        - Living with Subject Indicator
+        - Longest Duration of Abstinence
+        - Marital Status
+        - Medicaid Indicator
+        - Medicare Indicator
+        - Member of High Risk Population
+        - Military Health Insurance Indicator
+        - Military Status
+        - National Origin
+        - Num 1st Degree Relatives, Biological
+        - Number of Brothers, Biological
+        - Number of Children in Household
+        - Number of People in Household
+        - Number of Sisters, Biological
+        - Number of Work Days Per Week
+        - Number of Years of Education
+        - Occupational Industry
+        - Physical Activity Lifestyle
+        - Premature Birth Indicator
+        - Primary Language Spoken
+        - Priority of Disease Contact
+        - Private Health Insurance Indicator
+        - Second Hand Smoke Exposure Status
+        - Secondary Language Spoken
+        - Setting of Contact
+        - Sex Assigned at Birth
+        - Sex for Clinical Use
+        - Sexual Orientation
+        - Skin Classification
+        - Small for Gestational Age Indicator
+        - Social Risk Factor
+        - Socioeconomic Classification
+        - State-Specific Health Ins Program Name
+        - State-Specific Medicaid Program Name
+        - State-Specific Medicare Program Name
+        - Student Indicator
+        - Symptom
+        - Tobacco Cessation Counseling Indicator
+        - Tribal Affiliation
+        - Twin Type
+        - Type of Contact
+        - Unhoused Indicator
+        - Village of Permanent Address
+outcome:
+  message: Value not found in extensible codelist Subject Characteristic Test Name
+    (C103330)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103330
+  codelist_name: Subject Characteristic Test Name
+  codelist_submission_value: SCTEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 79
+

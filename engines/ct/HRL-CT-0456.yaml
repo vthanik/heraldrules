@@ -1,0 +1,74 @@
+id: HRL-CT-0456
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC018TN (Functional Assessment of Cancer Therapy-Lymphoma Version 4
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC018TN
+      operator: in
+      value:
+        - FAC018-Bothered by Lumps or Swelling
+        - FAC018-Bothered by Treatment Side Effect
+        - FAC018-Certain Parts of Body Have Pain
+        - FAC018-Content With Quality of My Life
+        - FAC018-Difficulty Planning for Future
+        - FAC018-Enjoy Things I Usually Do for Fun
+        - FAC018-Feel Isolated Because of Illness
+        - FAC018-Get Emotional Support From Family
+        - FAC018-I Am Able to Enjoy Life
+        - FAC018-I Am Able to Work
+        - FAC018-I Am Bothered by Fevers
+        - FAC018-I Am Bothered by Itching
+        - FAC018-I Am Forced to Spend Time in Bed
+        - FAC018-I Am Losing Weight
+        - FAC018-I Am Satisfied With My Sex Life
+        - FAC018-I Am Sleeping Well
+        - FAC018-I Feel Close to My Friends
+        - FAC018-I Feel Close to My Partner
+        - FAC018-I Feel Ill
+        - FAC018-I Feel Nervous
+        - FAC018-I Feel Sad
+        - FAC018-I Get Support From My Friends
+        - FAC018-I Get Tired Easily
+        - FAC018-I Have a Lack of Energy
+        - FAC018-I Have a Loss of Appetite
+        - FAC018-I Have Accepted My Illness
+        - FAC018-I Have Emotional Ups and Downs
+        - FAC018-I Have Nausea
+        - FAC018-I Have Night Sweats
+        - FAC018-I Have Pain
+        - FAC018-I Have Trouble Concentrating
+        - FAC018-I Have Trouble Sleeping at Night
+        - FAC018-I Worry About Dying
+        - FAC018-I Worry About Getting Infections
+        - FAC018-Losing Hope Against Illness
+        - FAC018-My Family Has Accepted My Illness
+        - FAC018-My Work Is Fulfilling
+        - FAC018-Satisfied Communication Illness
+        - FAC018-Satisfied With How I Am Coping
+        - FAC018-Trouble Meeting Needs of Family
+        - FAC018-Worry I Might Get New Symptoms
+        - FAC018-Worry My Condition Will Get Worse
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Lymphoma Version 4 Questionnaire Test Name (C130256)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130256
+  codelist_name: Functional Assessment of Cancer Therapy-Lymphoma Version 4 Questionnaire
+    Test Name
+  codelist_submission_value: FAC018TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 42
+

@@ -1,0 +1,86 @@
+id: HRL-CT-0316
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DIR (Directionality) must contain valid extensible codelist terms (new
+  terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DIR
+      operator: in
+      value:
+        - ACRAL
+        - ANTERIOR
+        - ANTEROLATERAL
+        - ANTEROMEDIAL
+        - ANTEROPOSTERIOR
+        - ANTEROTEMPORAL
+        - APICAL
+        - BASAL
+        - CAUDAL
+        - CENTRAL
+        - CRANIAL
+        - CRANIOCAUDAL
+        - DEEP
+        - DISTAL VOLAR
+        - DISTAL
+        - DORSAL
+        - DORSOLATERAL
+        - FACIAL
+        - FORE
+        - FRONTAL
+        - HIND
+        - INFERIOR
+        - INNER
+        - INTERMEDIATE
+        - LATERAL
+        - LOWER EXTENSOR SURFACE
+        - LOWER FLEXOR SURFACE
+        - LOWER MEDIAL
+        - LOWER
+        - MEDIAL
+        - MIDLINE
+        - NASAL
+        - OCCIPITAL
+        - OUTER
+        - PALMAR
+        - PARIETO-OCCIPITAL
+        - PERIPHERAL
+        - PERIVENTRICULAR
+        - POSTERIOR
+        - POSTEROMEDIAL
+        - PROXIMAL VOLAR
+        - PROXIMAL
+        - ROSTRAL
+        - SEPTAL
+        - SUBCORTICAL
+        - SUPERFICIAL
+        - SUPERIOR
+        - SURFACE
+        - TEMPORAL
+        - TIP
+        - UPPER EXTENSOR SURFACE
+        - UPPER FLEXOR SURFACE
+        - UPPER
+        - VENTRAL
+        - VENTROLATERAL
+        - VOLAR
+outcome:
+  message: Value not found in extensible codelist Directionality (C99074)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C99074
+  codelist_name: Directionality
+  codelist_submission_value: DIR
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 56
+

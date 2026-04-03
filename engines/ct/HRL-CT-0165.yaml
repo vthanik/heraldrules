@@ -1,0 +1,123 @@
+id: HRL-CT-0165
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CCCAT (Category of Clinical Classification) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CCCAT
+      operator: in
+      value:
+        - AIMS
+        - AJCC V4
+        - AJCC V5
+        - AJCC V6
+        - AJCC V7
+        - AJCC V8
+        - APACHE II
+        - APGAR SCORE V1
+        - ARC STC GRADE
+        - ASCVD 10-YEAR RISK
+        - ASSIGN CVD 10-YEAR RISK
+        - ATLAS
+        - AVPU
+        - BARS
+        - BDI
+        - BODE INDEX
+        - BPRS 1988 VERSION
+        - BPRS-A
+        - BUERS
+        - CANADIAN CV SOCIETY GRADING ANGINA
+        - CAPS DSM-5 WITH DSM IV SCORING 2016 VERSION
+        - CDC HIV CLASSIFICATION FOR ADULTS AND ADOLESCENTS
+        - CDR
+        - CDRS-R
+        - CHILD-PUGH CLASSIFICATION
+        - CIRS-G
+        - COMFORT-B SCALE
+        - COVI
+        - CRS-R
+        - DISEASE STEPS
+        - DRS
+        - E-TRIP
+        - ECOG
+        - EDSS
+        - ESRSA
+        - FAQ
+        - FAQ-NACC UDS V2.0
+        - FAS-NACC UDS V3.0
+        - FHS CVD 10-YEAR RISK
+        - GCS NINDS V1.0
+        - GDRS
+        - HAM-A
+        - HAMD 17
+        - HAMD 21
+        - HAMD 24
+        - HAMD 6 CLINICIAN VERSION
+        - HAS-BLED
+        - HBI
+        - IDS-C
+        - KDIGO AKI
+        - KDPI
+        - KFSS
+        - KPS SCALE
+        - LPPS SCALE
+        - MADRS
+        - MELD
+        - MELDNA 2008
+        - MONTREAL CLASSIFICATION CROHN'S
+        - MRS
+        - MTWS-R
+        - MVAI
+        - NEWS2
+        - NHLBI CAD GRADE
+        - NSA-16
+        - NSAA 2017
+        - NSAA
+        - PANSS
+        - PASI BOZEK
+        - PASI EMA
+        - PASI FELDMAN
+        - PASI FREDRIKSSON
+        - QIDS-C
+        - RASS
+        - REYNOLDS CVD 10-YEAR RISK
+        - RSSS
+        - RUTGEERTS SCORE
+        - SAS
+        - SES-CD V1
+        - SOFA 27MAR2024
+        - TANNER SCALE BOY
+        - TANNER SCALE GIRL
+        - TDI
+        - TIMI THROMBUS GRADE
+        - UHDRS 1999
+        - UPDRS
+        - VALG
+        - VLERS
+        - WEST HAVEN HEPATIC ENCEPHALOPATHY GRADE
+        - WHO HIV STAGING FOR ADULTS AND ADOLESCENTS
+        - WHO HIV STAGING FOR CHILDREN
+        - YMRS STRUCTURED INTERVIEW VERSION
+        - YMRS
+outcome:
+  message: Value not found in extensible codelist Category of Clinical Classification
+    (C118971)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C118971
+  codelist_name: Category of Clinical Classification
+  codelist_submission_value: CCCAT
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 92
+

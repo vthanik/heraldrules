@@ -1,0 +1,58 @@
+id: HRL-CT-1064
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EPIC1TC (The Expanded Prostate Cancer Index Composite Short Form Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EPIC1TC
+      operator: in
+      value:
+        - EPIC101
+        - EPIC102
+        - EPIC103
+        - EPIC104A
+        - EPIC104B
+        - EPIC104C
+        - EPIC104D
+        - EPIC104E
+        - EPIC105
+        - EPIC106A
+        - EPIC106B
+        - EPIC106C
+        - EPIC106D
+        - EPIC106E
+        - EPIC107
+        - EPIC108A
+        - EPIC108B
+        - EPIC109
+        - EPIC110
+        - EPIC111
+        - EPIC112
+        - EPIC113A
+        - EPIC113B
+        - EPIC113C
+        - EPIC113D
+        - EPIC113E
+outcome:
+  message: Value not found in non-extensible codelist The Expanded Prostate Cancer
+    Index Composite Short Form Questionnaire Test Code (C127350)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C127350
+  codelist_name: The Expanded Prostate Cancer Index Composite Short Form Questionnaire
+    Test Code
+  codelist_submission_value: EPIC1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 26
+

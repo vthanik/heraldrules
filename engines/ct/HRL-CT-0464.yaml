@@ -1,0 +1,45 @@
+id: HRL-CT-0464
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC102TN (Functional Assessment of Cancer Therapy/Gynecologic Oncology
+  Group-Neurotoxicity Subscale Version 4 Questionnaire Test Name) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC102TN
+      operator: in
+      value:
+        - FAC102-Get Ringing or Buzzing in My Ears
+        - FAC102-Have Joint Pain or Muscle Cramps
+        - FAC102-I Feel Discomfort in My Feet
+        - FAC102-I Feel Discomfort in My Hands
+        - FAC102-I Feel Weak All Over
+        - FAC102-I Have Trouble Buttoning Buttons
+        - FAC102-I Have Trouble Hearing
+        - FAC102-I Have Trouble Walking
+        - FAC102-Numbness or Tingling in My Feet
+        - FAC102-Numbness or Tingling in My Hands
+        - FAC102-Trouble Feeling Shape of Objects
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy/Gynecologic Oncology Group-Neurotoxicity Subscale Version 4 Questionnaire
+    Test Name (C208369)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C208369
+  codelist_name: Functional Assessment of Cancer Therapy/Gynecologic Oncology Group-Neurotoxicity
+    Subscale Version 4 Questionnaire Test Name
+  codelist_submission_value: FAC102TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 11
+

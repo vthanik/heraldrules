@@ -1,0 +1,33 @@
+id: HRL-CT-0670
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MELD02TC (Model for End Stage Liver Disease - Serum Na 2008 Clinical
+  Classification Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MELD02TC
+      operator: in
+      value:
+        - MELD0201
+outcome:
+  message: Value not found in non-extensible codelist Model for End Stage Liver Disease
+    - Serum Na 2008 Clinical Classification Test Code (C213936)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C213936
+  codelist_name: Model for End Stage Liver Disease - Serum Na 2008 Clinical Classification
+    Test Code
+  codelist_submission_value: MELD02TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

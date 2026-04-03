@@ -1,0 +1,39 @@
+id: HRL-CT-0669
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CNTMODE (Mode of Subject Contact) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CNTMODE
+      operator: in
+      value:
+        - E-MAIL
+        - IN PERSON
+        - IVRS
+        - LETTER
+        - REMOTE AUDIO VIDEO
+        - REMOTE AUDIO
+        - SHIPMENT CONFIRMED BY SIGNATURE
+        - TELEPHONE CALL
+        - TEXT MESSAGE
+outcome:
+  message: Value not found in extensible codelist Mode of Subject Contact (C171445)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C171445
+  codelist_name: Mode of Subject Contact
+  codelist_submission_value: CNTMODE
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 9
+

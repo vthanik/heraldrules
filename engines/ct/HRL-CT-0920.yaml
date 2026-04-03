@@ -1,0 +1,67 @@
+id: HRL-CT-0920
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: AVL02TN (Rey Auditory Verbal Learning Test Functional Test Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: AVL02TN
+      operator: in
+      value:
+        - AVL02- List B Total
+        - AVL02-List A Intrusions
+        - AVL02-List A Total
+        - AVL02-List A Word 1
+        - AVL02-List A Word 10
+        - AVL02-List A Word 11
+        - AVL02-List A Word 12
+        - AVL02-List A Word 13
+        - AVL02-List A Word 14
+        - AVL02-List A Word 15
+        - AVL02-List A Word 2
+        - AVL02-List A Word 3
+        - AVL02-List A Word 4
+        - AVL02-List A Word 5
+        - AVL02-List A Word 6
+        - AVL02-List A Word 7
+        - AVL02-List A Word 8
+        - AVL02-List A Word 9
+        - AVL02-List B Intrusions
+        - AVL02-List B Word 1
+        - AVL02-List B Word 10
+        - AVL02-List B Word 11
+        - AVL02-List B Word 12
+        - AVL02-List B Word 13
+        - AVL02-List B Word 14
+        - AVL02-List B Word 15
+        - AVL02-List B Word 2
+        - AVL02-List B Word 3
+        - AVL02-List B Word 4
+        - AVL02-List B Word 5
+        - AVL02-List B Word 6
+        - AVL02-List B Word 7
+        - AVL02-List B Word 8
+        - AVL02-List B Word 9
+        - AVL02-Recognition Intrusions
+        - AVL02-Recognition Total
+outcome:
+  message: Value not found in non-extensible codelist Rey Auditory Verbal Learning
+    Test Functional Test Test Name (C123654)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C123654
+  codelist_name: Rey Auditory Verbal Learning Test Functional Test Test Name
+  codelist_submission_value: AVL02TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 36
+

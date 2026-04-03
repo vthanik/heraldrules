@@ -1,0 +1,57 @@
+id: HRL-CT-0517
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HAMD3TN (Hamilton Depression Rating Scale - 24 Item Clinical Classification
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HAMD3TN
+      operator: in
+      value:
+        - HAMD3-Anxiety - Psychic
+        - HAMD3-Anxiety - Somatic
+        - HAMD3-Depersonalization/Derealization
+        - HAMD3-Depressed Mood
+        - HAMD3-Diurnal Variation
+        - HAMD3-GI Symptoms (Appetite)
+        - HAMD3-Helplessness
+        - HAMD3-Hopelessness
+        - HAMD3-Hypochondriasis (Somatisation)
+        - HAMD3-Insight
+        - HAMD3-Insomnia - Initial
+        - HAMD3-Insomnia - Late
+        - HAMD3-Insomnia - Middle
+        - HAMD3-Low Self-Esteem, Guilt
+        - HAMD3-Observational/Compulsive Symptoms
+        - HAMD3-Paranoid Symptoms
+        - HAMD3-Psychomotor Agitation
+        - HAMD3-Psychomotor Retardation
+        - HAMD3-Sexual Disturbances
+        - HAMD3-Somatic Symptoms - General
+        - HAMD3-Suicidal Thoughts
+        - HAMD3-Total Score
+        - HAMD3-Weight Loss
+        - HAMD3-Work and Interests
+        - HAMD3-Worthlessness
+outcome:
+  message: Value not found in non-extensible codelist Hamilton Depression Rating Scale
+    - 24 Item Clinical Classification Test Name (C130244)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130244
+  codelist_name: Hamilton Depression Rating Scale - 24 Item Clinical Classification
+    Test Name
+  codelist_submission_value: HAMD3TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

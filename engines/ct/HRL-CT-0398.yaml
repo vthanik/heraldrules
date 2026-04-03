@@ -1,0 +1,54 @@
+id: HRL-CT-0398
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EXACT1TC (Exacerbations of Chronic Pulmonary Disease Tool Patient-Reported
+  Outcome Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EXACT1TC
+      operator: in
+      value:
+        - EXACT101
+        - EXACT102
+        - EXACT103
+        - EXACT104
+        - EXACT105
+        - EXACT106
+        - EXACT107
+        - EXACT108
+        - EXACT109
+        - EXACT110
+        - EXACT111
+        - EXACT112
+        - EXACT113
+        - EXACT114
+        - EXACT115
+        - EXACT116
+        - EXACT117
+        - EXACT118
+        - EXACT119
+        - EXACT120
+        - EXACT121
+        - EXACT122
+outcome:
+  message: Value not found in non-extensible codelist Exacerbations of Chronic Pulmonary
+    Disease Tool Patient-Reported Outcome Questionnaire Test Code (C123653)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C123653
+  codelist_name: Exacerbations of Chronic Pulmonary Disease Tool Patient-Reported
+    Outcome Questionnaire Test Code
+  codelist_submission_value: EXACT1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 22
+

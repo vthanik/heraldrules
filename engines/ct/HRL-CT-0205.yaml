@@ -1,0 +1,41 @@
+id: HRL-CT-0205
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CCQ02TC (Clinical COPD Questionnaire 1 Week Version Questionnaire Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CCQ02TC
+      operator: in
+      value:
+        - CCQ0201
+        - CCQ0202
+        - CCQ0203
+        - CCQ0204
+        - CCQ0205
+        - CCQ0206
+        - CCQ0207
+        - CCQ0208
+        - CCQ0209
+        - CCQ0210
+outcome:
+  message: Value not found in non-extensible codelist Clinical COPD Questionnaire
+    1 Week Version Questionnaire Test Code (C119066)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C119066
+  codelist_name: Clinical COPD Questionnaire 1 Week Version Questionnaire Test Code
+  codelist_submission_value: CCQ02TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 10
+

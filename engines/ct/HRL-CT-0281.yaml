@@ -1,0 +1,61 @@
+id: HRL-CT-0281
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CHSF1TN (Craig Handicap Assessment and Reporting Technique - Short Form
+  Interview Version Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CHSF1TN
+      operator: in
+      value:
+        - CHSF1-Associates Contacted per Month
+        - CHSF1-Away Cognitive Assistance per Day
+        - CHSF1-Cognitive Independence Subscore
+        - CHSF1-Combined Household Income Last Yr
+        - CHSF1-Days Out of the House per Week
+        - CHSF1-Economic Self-Sufficiency Subscore
+        - CHSF1-Friends Contacted per Month
+        - CHSF1-Home Cognitive Assistance per Day
+        - CHSF1-Hours of Home Maintenance per Week
+        - CHSF1-Hours of Homemaking per Week
+        - CHSF1-Hours of Paid Work per Week
+        - CHSF1-Hours of Recreation per Week
+        - CHSF1-Hours of Schoolwork per Week
+        - CHSF1-Hours Out of Bed per Day
+        - CHSF1-Live With Spouse or Signif Other
+        - CHSF1-Medical Care Expenses Last Year
+        - CHSF1-Mobility Subscore
+        - CHSF1-Nights Away From Home Last Year
+        - CHSF1-Number of People You Live With
+        - CHSF1-Number of Relatives You Live With
+        - CHSF1-Occupation of Paid Work
+        - CHSF1-Occupation Subscore
+        - CHSF1-Paid Personal Care per Day
+        - CHSF1-Physical Independence Subscore
+        - CHSF1-Social Integration Subscore
+        - CHSF1-Strangers Spoke with Last Month
+        - CHSF1-Total Score
+        - CHSF1-Unpaid Personal Care per Day
+outcome:
+  message: Value not found in non-extensible codelist Craig Handicap Assessment and
+    Reporting Technique - Short Form Interview Version Questionnaire Test Name (C117986)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C117986
+  codelist_name: Craig Handicap Assessment and Reporting Technique - Short Form Interview
+    Version Questionnaire Test Name
+  codelist_submission_value: CHSF1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 28
+

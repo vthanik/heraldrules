@@ -1,0 +1,37 @@
+id: HRL-CT-0978
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SDS01TC (Sheehan Disability Scale Questionnaire Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SDS01TC
+      operator: in
+      value:
+        - SDS0101
+        - SDS0101A
+        - SDS0102
+        - SDS0103
+        - SDS0104
+        - SDS0105
+outcome:
+  message: Value not found in non-extensible codelist Sheehan Disability Scale Questionnaire
+    Test Code (C111350)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C111350
+  codelist_name: Sheehan Disability Scale Questionnaire Test Code
+  codelist_submission_value: SDS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

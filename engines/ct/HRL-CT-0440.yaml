@@ -1,0 +1,73 @@
+id: HRL-CT-0440
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC075TN (Functional Assessment of Cancer Therapy-Cognitive Function
+  Version 3 Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC075TN
+      operator: in
+      value:
+        - FAC075-Able Remember Things Where Left
+        - FAC075-Able Remember to Do Things
+        - FAC075-Able to Bring to Mind Words
+        - FAC075-Able to Pay Attention w/o Effort
+        - FAC075-Able to Shift Between Activities
+        - FAC075-Able to Track What I Am Doing
+        - FAC075-Been Upset about These Problems
+        - FAC075-Cognitive Abilities Score
+        - FAC075-Cognitive Impairments Score
+        - FAC075-Comments From Others Score
+        - FAC075-Forgotten Names After Introduced
+        - FAC075-I Have Been Able to Concentrate
+        - FAC075-I Have Had Trouble Concentrating
+        - FAC075-I Have Trouble Forming Thoughts
+        - FAC075-Impact on Quality of Life Score
+        - FAC075-Memory Is as Good as Always Been
+        - FAC075-Mind Is as Sharp as Always Been
+        - FAC075-My Thinking Has Been Slow
+        - FAC075-My Thinking Slower Than Usual
+        - FAC075-People Told Me I Seemed Confused
+        - FAC075-Problems Interfered Ability Enjoy
+        - FAC075-Problems Interfered Ability Work
+        - FAC075-Problems Interfered Quality Life
+        - FAC075-Reaction Everyday Situations Slow
+        - FAC075-Told Me Trouble Remembering Info
+        - FAC075-Told Me Trouble Speaking Clearly
+        - FAC075-Told Me Trouble Thinking Clearly
+        - FAC075-Trouble Finding Familiar Place
+        - FAC075-Trouble Finding Right Words
+        - FAC075-Trouble Keeping Track Interrupted
+        - FAC075-Trouble Recalling Name of Object
+        - FAC075-Trouble Remember Where Put Things
+        - FAC075-Trouble Remembering New Info
+        - FAC075-Trouble Saying What I Mean
+        - FAC075-Trouble Shifting Back and Forth
+        - FAC075-Use Written Lists More Often
+        - FAC075-Used Wrong Word When Refer Object
+        - FAC075-Walked Into a Room and Forgotten
+        - FAC075-Work Hard to Pay Attention
+        - FAC075-Work Harder Than Usual to Express
+        - FAC075-Work Harder Than Usual to Track
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Cognitive Function Version 3 Questionnaire Test Name (C166183)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C166183
+  codelist_name: Functional Assessment of Cancer Therapy-Cognitive Function Version
+    3 Questionnaire Test Name
+  codelist_submission_value: FAC075TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 41
+

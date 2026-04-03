@@ -1,0 +1,33 @@
+id: HRL-CT-1002
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SIZE (Size Response) must contain valid extensible codelist terms (new
+  terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SIZE
+      operator: in
+      value:
+        - LARGE
+        - MEDIUM
+        - SMALL
+outcome:
+  message: Value not found in extensible codelist Size Response (C66733)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C66733
+  codelist_name: Size Response
+  codelist_submission_value: SIZE
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 3
+

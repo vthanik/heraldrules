@@ -1,0 +1,40 @@
+id: HRL-CT-0319
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DRS01TC (Disability Rating Scale Clinical Classification Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DRS01TC
+      operator: in
+      value:
+        - DRS0101
+        - DRS0102
+        - DRS0103
+        - DRS0104
+        - DRS0105
+        - DRS0106
+        - DRS0107
+        - DRS0108
+        - DRS0109
+outcome:
+  message: Value not found in non-extensible codelist Disability Rating Scale Clinical
+    Classification Test Code (C115402)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C115402
+  codelist_name: Disability Rating Scale Clinical Classification Test Code
+  codelist_submission_value: DRS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 9
+

@@ -1,0 +1,36 @@
+id: HRL-CT-0741
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: NSYSPCID (Non-system Reason for PCI Delay) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: NSYSPCID
+      operator: in
+      value:
+        - CARDIAC ARREST BEFORE PCI
+        - DIFFICULT VASCULAR ACCESS
+        - DIFFICULTY CROSSING THE CULPRIT LESION DURING THE PCI PROCEDURE
+        - ENDOTRACHEAL INTUBATION BEFORE PCI
+        - SUBJECT DELAY IN PROVIDING CONSENT
+outcome:
+  message: Value not found in non-extensible codelist Non-system Reason for PCI Delay
+    (C101855)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101855
+  codelist_name: Non-system Reason for PCI Delay
+  codelist_submission_value: NSYSPCID
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

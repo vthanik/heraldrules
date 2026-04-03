@@ -1,0 +1,41 @@
+id: HRL-CT-0347
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EPDS01TN (Edinburgh Postnatal Depression Scale Questionnaire Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EPDS01TN
+      operator: in
+      value:
+        - EPDS01-Able to Laugh and See Funny Side
+        - EPDS01-Anxious/Worried No Good Reason
+        - EPDS01-Blamed Myself Unnecessarily
+        - EPDS01-I Have Felt Sad or Miserable
+        - EPDS01-Looked Forward With Enjoyment
+        - EPDS01-Scared/Panicky for No Good Reason
+        - EPDS01-So Unhappy I Have Been Crying
+        - EPDS01-Things Getting on Top of Me
+        - EPDS01-Thought of Harming Myself
+        - EPDS01-Unhappy Had Difficulty Sleeping
+outcome:
+  message: Value not found in non-extensible codelist Edinburgh Postnatal Depression
+    Scale Questionnaire Test Name (C132520)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C132520
+  codelist_name: Edinburgh Postnatal Depression Scale Questionnaire Test Name
+  codelist_submission_value: EPDS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 10
+

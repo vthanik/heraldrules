@@ -1,0 +1,54 @@
+id: HRL-CT-0387
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR19TC (European Organization for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Multiple Myeloma 20 Items Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR19TC
+      operator: in
+      value:
+        - EOR1931
+        - EOR1932
+        - EOR1933
+        - EOR1934
+        - EOR1935
+        - EOR1936
+        - EOR1937
+        - EOR1938
+        - EOR1939
+        - EOR1940
+        - EOR1941
+        - EOR1942
+        - EOR1943
+        - EOR1944
+        - EOR1945
+        - EOR1946
+        - EOR1947
+        - EOR1948
+        - EOR1949
+        - EOR1950
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Multiple Myeloma
+    20 Items Test Code (C219729)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219729
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Multiple Myeloma 20 Items Test Code
+  codelist_submission_value: EOR19TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 20
+

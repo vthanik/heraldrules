@@ -1,0 +1,51 @@
+id: HRL-CT-0416
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FDATSRS (FDA Technical Specification Response) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FDATSRS
+      operator: in
+      value:
+        - Clinical Endpoint BE Studies v1.0
+        - HIV Technical Specifications Guidance v1.0
+        - Study Data Technical Conformance Guide v4.2.1
+        - Study Data Technical Conformance Guide v4.3
+        - Study Data Technical Conformance Guide v4.4
+        - Study Data Technical Conformance Guide v4.5
+        - Study Data Technical Conformance Guide v4.5.1
+        - Study Data Technical Conformance Guide v4.6
+        - Study Data Technical Conformance Guide v4.7
+        - Study Data Technical Conformance Guide v4.8
+        - Study Data Technical Conformance Guide v4.9
+        - Study Data Technical Conformance Guide v5.0
+        - Study Data Technical Conformance Guide v5.1
+        - Study Data Technical Conformance Guide v5.2
+        - Study Data Technical Conformance Guide v5.3
+        - Study Data Technical Conformance Guide v5.4
+        - Study Data Technical Conformance Guide v5.5
+        - Study Data Technical Conformance Guide v5.6
+        - Study Data Technical Conformance Guide v5.7
+        - Vaccines Technical Specification Guidance v1.0
+outcome:
+  message: Value not found in extensible codelist FDA Technical Specification Response
+    (C160926)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C160926
+  codelist_name: FDA Technical Specification Response
+  codelist_submission_value: FDATSRS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 20
+

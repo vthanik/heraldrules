@@ -1,0 +1,39 @@
+id: HRL-CT-0612
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: KFSS103STR (Kurtzke Functional System Scores Clinical Classification
+  STRESC for KFSS103 TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: KFSS103STR
+      operator: in
+      value:
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - Unknown
+outcome:
+  message: Value not found in non-extensible codelist Kurtzke Functional System Scores
+    Clinical Classification STRESC for KFSS103 TN/TC (C182516)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C182516
+  codelist_name: Kurtzke Functional System Scores Clinical Classification STRESC for
+    KFSS103 TN/TC
+  codelist_submission_value: KFSS103STR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

@@ -1,0 +1,33 @@
+id: HRL-CT-1111
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TMT01TN (Trail Making Test Functional Test Test Name) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TMT01TN
+      operator: in
+      value:
+        - TMT01-Time to Complete Trails A
+        - TMT01-Time to Complete Trails B
+outcome:
+  message: Value not found in non-extensible codelist Trail Making Test Functional
+    Test Test Name (C124687)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124687
+  codelist_name: Trail Making Test Functional Test Test Name
+  codelist_submission_value: TMT01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 2
+

@@ -1,0 +1,43 @@
+id: HRL-CT-0628
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: LEADABN (Lead Abnormality) must contain valid extensible codelist terms
+  (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: LEADABN
+      operator: in
+      value:
+        - CONDUCTOR FAILURE
+        - DEFIBRILLATION ISSUES
+        - EXTRACARDIAC STIMULATION
+        - FAILED TO SHOCK WITH INADEQUATE DFT SAFETY MARGIN
+        - FAILURE TO CAPTURE WITH ACCEPTABLE SAFETY MARGIN
+        - FAILURE TO PACE
+        - INSULATION FAILURE
+        - LEAD DISLODGEMENT REQUIRING REPOSITION/REOPERATION
+        - OVERSENSING WITH SHOCK OR ATP
+        - OVERSENSING WITHOUT SHOCK OR ATP
+        - OVERSENSING
+        - SET SCREW PROBLEM
+        - UNDERSENSING
+outcome:
+  message: Value not found in extensible codelist Lead Abnormality (C101862)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101862
+  codelist_name: Lead Abnormality
+  codelist_submission_value: LEADABN
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 13
+

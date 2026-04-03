@@ -1,0 +1,33 @@
+id: HRL-CT-0735
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: NHPT01TN (Nine-Hole Peg Test Functional Test Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: NHPT01TN
+      operator: in
+      value:
+        - NHPT01-More Than Two Attempts
+        - NHPT01-Time to Complete 9-Hole Peg Test
+outcome:
+  message: Value not found in non-extensible codelist Nine-Hole Peg Test Functional
+    Test Test Name (C115391)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C115391
+  codelist_name: Nine-Hole Peg Test Functional Test Test Name
+  codelist_submission_value: NHPT01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 2
+

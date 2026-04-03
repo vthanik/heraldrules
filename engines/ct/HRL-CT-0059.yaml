@@ -1,0 +1,51 @@
+id: HRL-CT-0059
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: AQ01TC (Airway Questionnaire 20 Questionnaire Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: AQ01TC
+      operator: in
+      value:
+        - AQ0101
+        - AQ0102
+        - AQ0103
+        - AQ0104
+        - AQ0105
+        - AQ0106
+        - AQ0107
+        - AQ0108
+        - AQ0109
+        - AQ0110
+        - AQ0111
+        - AQ0112
+        - AQ0113
+        - AQ0114
+        - AQ0115
+        - AQ0116
+        - AQ0117
+        - AQ0118
+        - AQ0119
+        - AQ0120
+outcome:
+  message: Value not found in non-extensible codelist Airway Questionnaire 20 Questionnaire
+    Test Code (C112435)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C112435
+  codelist_name: Airway Questionnaire 20 Questionnaire Test Code
+  codelist_submission_value: AQ01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 20
+

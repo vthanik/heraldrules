@@ -1,0 +1,100 @@
+id: HRL-CT-1141
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: UPD1TN (Unified Parkinson's Disease Rating Scale Clinical Classification
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: UPD1TN
+      operator: in
+      value:
+        - 'UPD1--Motor:Action Tremor:Hand: Left'
+        - 'UPD1--Motor:Action Tremor:Hand: Right'
+        - UPD1-Activities Daily Living Sub-Total
+        - UPD1-Activities:Cut Food/Handle Utensil
+        - UPD1-Activities:Dressing
+        - UPD1-Activities:Falling
+        - UPD1-Activities:Freezing When Walking
+        - UPD1-Activities:Handwriting
+        - UPD1-Activities:Hygiene
+        - UPD1-Activities:Salivation
+        - UPD1-Activities:Sensory Complaints
+        - UPD1-Activities:Speech
+        - UPD1-Activities:Swallowing
+        - UPD1-Activities:Tremor
+        - UPD1-Activities:Turn Bed/Adj Clothes
+        - UPD1-Activities:Walking
+        - 'UPD1-Blood Pressure: Seated'
+        - 'UPD1-Blood Pressure: Standing'
+        - 'UPD1-Blood Pressure: Supine'
+        - UPD1-Complications:Anorex Nausea Vomit
+        - UPD1-Complications:Dyskinesias Disable
+        - UPD1-Complications:Dyskinesias Duration
+        - UPD1-Complications:Dyskinesias Dystonia
+        - UPD1-Complications:Dyskinesias Painful
+        - UPD1-Complications:Fluct Average
+        - UPD1-Complications:Fluct Predictable
+        - UPD1-Complications:Fluct Suddenly
+        - UPD1-Complications:Fluct Unpredictable
+        - UPD1-Complications:Insomnia Hypersomnol
+        - UPD1-Complications:Symptom Orthostasis
+        - UPD1-Mentation, Behavior, Mood Sub-Total
+        - UPD1-Mentation:Depression
+        - UPD1-Mentation:Intellectual Impairment
+        - UPD1-Mentation:Motivation/Initiative
+        - UPD1-Mentation:Thought Disorder
+        - UPD1-Modified Hoehn and Yahr Staging
+        - UPD1-Motor Examination Sub-Total
+        - UPD1-Motor:Arising from Chair
+        - UPD1-Motor:Bradykinesia and Hypokinesia
+        - UPD1-Motor:Facial Expression
+        - 'UPD1-Motor:Finger Taps: Left'
+        - 'UPD1-Motor:Finger Taps: Right'
+        - UPD1-Motor:Gait
+        - 'UPD1-Motor:Hand Grips: Left'
+        - 'UPD1-Motor:Hand Grips: Right'
+        - 'UPD1-Motor:Hand Pronate/Supinate: Left'
+        - 'UPD1-Motor:Hand Pronate/Supinate: Right'
+        - 'UPD1-Motor:Leg Agility: Left'
+        - 'UPD1-Motor:Leg Agility: Right'
+        - UPD1-Motor:Postural Stability
+        - UPD1-Motor:Posture
+        - 'UPD1-Motor:Rigidity Lower Extrem: Left'
+        - 'UPD1-Motor:Rigidity Lower Extrem: Right'
+        - UPD1-Motor:Rigidity Neck
+        - 'UPD1-Motor:Rigidity Upper Extrem: Left'
+        - 'UPD1-Motor:Rigidity Upper Extrem: Right'
+        - UPD1-Motor:Speech
+        - UPD1-Motor:Tremor at Rest:Face Lips Chin
+        - 'UPD1-Motor:Tremor at Rest:Feet: Left'
+        - 'UPD1-Motor:Tremor at Rest:Feet: Right'
+        - 'UPD1-Motor:Tremor at Rest:Hands: Left'
+        - 'UPD1-Motor:Tremor at Rest:Hands: Right'
+        - 'UPD1-Pulse: Seated'
+        - 'UPD1-Pulse: Standing'
+        - UPD1-Schwab/England % ADL (Dyskinesia)
+        - UPD1-Schwab/England % ADL Score (PD)
+        - UPD1-UPDRS Total
+        - UPD1-Weight
+outcome:
+  message: Value not found in non-extensible codelist Unified Parkinson's Disease
+    Rating Scale Clinical Classification Test Name (C100147)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100147
+  codelist_name: Unified Parkinson's Disease Rating Scale Clinical Classification
+    Test Name
+  codelist_submission_value: UPD1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 68
+

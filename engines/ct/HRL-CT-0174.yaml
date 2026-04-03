@@ -1,0 +1,34 @@
+id: HRL-CT-0174
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TOCAT (Category of Tobacco Products) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TOCAT
+      operator: in
+      value:
+        - COMPARISON PRODUCT
+        - NEW PRODUCT
+        - ORIGINAL PRODUCT
+        - PREDICATE PRODUCT
+outcome:
+  message: Value not found in extensible codelist Category of Tobacco Products (C204434)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204434
+  codelist_name: Category of Tobacco Products
+  codelist_submission_value: TOCAT
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 4
+

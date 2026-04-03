@@ -1,0 +1,45 @@
+id: HRL-CT-0566
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: IPAQ01TN (International Physical Activity Questionnaire (August 2002)
+  Short Last 7 Days Telephone Format Questionnaire Test Name) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: IPAQ01TN
+      operator: in
+      value:
+        - IPA01-Days Moderate Physical Activities
+        - IPA01-Days Vigorous Physical Activities
+        - IPA01-Days Walk at Least 10 Minutes
+        - IPA01-Moderate Physical Hr & Min per Day
+        - IPA01-Sitting Hr & Min per Weekday
+        - IPA01-Total Moderate Hr & Min per Week
+        - IPA01-Total Sitting Hr & Min Wednesday
+        - IPA01-Total Vigorous Hr & Min per Week
+        - IPA01-Total Walking Hr & Min per Week
+        - IPA01-Vigorous Physical Hr & Min per Day
+        - IPA01-Walking Hr & Min per Day
+outcome:
+  message: Value not found in non-extensible codelist International Physical Activity
+    Questionnaire (August 2002) Short Last 7 Days Telephone Format Questionnaire Test
+    Name (C141670)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C141670
+  codelist_name: International Physical Activity Questionnaire (August 2002) Short
+    Last 7 Days Telephone Format Questionnaire Test Name
+  codelist_submission_value: IPAQ01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 11
+

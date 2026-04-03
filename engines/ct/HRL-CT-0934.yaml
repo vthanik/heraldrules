@@ -1,0 +1,56 @@
+id: HRL-CT-0934
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RDQ01TN (Roland Morris Disability Questionnaire Questionnaire Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RDQ01TN
+      operator: in
+      value:
+        - RDQ01-Appetite is Not Very Good
+        - RDQ01-Avoid Heavy Jobs
+        - RDQ01-Change Position Frequently
+        - RDQ01-Difficult to Get Out of a Chair
+        - RDQ01-Difficult to Turn Over in Bed
+        - RDQ01-Get Dressed More Slowly
+        - RDQ01-Get Dressed With Help
+        - RDQ01-Get Other People to Do Things
+        - RDQ01-Go Upstairs More Slowly
+        - RDQ01-Hold on to Get Out of a Chair
+        - RDQ01-Lie Down to Rest More Often
+        - RDQ01-More Irritable With People
+        - RDQ01-Not Do Any Usual Jobs
+        - RDQ01-Only Stand for Short Periods
+        - RDQ01-Only Walk Short Distances
+        - RDQ01-Painful Almost All the Time
+        - RDQ01-RDQ Total Score
+        - RDQ01-Sit Down Most of the Day
+        - RDQ01-Sleep Less Well
+        - RDQ01-Stay at Home
+        - RDQ01-Stay in Bed
+        - RDQ01-Trouble Putting on Socks/Stockings
+        - RDQ01-Try Not to Bend or Kneel
+        - RDQ01-Use Handrail to Get Upstairs
+        - RDQ01-Walk More Slowly
+outcome:
+  message: Value not found in non-extensible codelist Roland Morris Disability Questionnaire
+    Questionnaire Test Name (C100165)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100165
+  codelist_name: Roland Morris Disability Questionnaire Questionnaire Test Name
+  codelist_submission_value: RDQ01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

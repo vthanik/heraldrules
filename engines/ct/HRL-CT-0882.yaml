@@ -1,0 +1,61 @@
+id: HRL-CT-0882
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PASI03TN (Psoriasis Area and Severity Index Version Fredriksson Clinical
+  Classification Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PASI03TN
+      operator: in
+      value:
+        - 'PASI03-Head: Area Score'
+        - 'PASI03-Head: Desquamation/Scaling'
+        - 'PASI03-Head: Erythema/Redness'
+        - 'PASI03-Head: Sum of Symptom Scores'
+        - 'PASI03-Head: Sum X Area X 0.1'
+        - 'PASI03-Head: Sum X Area'
+        - 'PASI03-Head: Thickness/Induration'
+        - 'PASI03-Low Extrem: Area Score'
+        - 'PASI03-Low Extrem: Desquamation/Scaling'
+        - 'PASI03-Low Extrem: Erythema/Redness'
+        - 'PASI03-Low Extrem: Sum of Symptom Scores'
+        - 'PASI03-Low Extrem: Sum X Area X 0.4'
+        - 'PASI03-Low Extrem: Sum X Area'
+        - 'PASI03-Low Extrem: Thickness/Induration'
+        - PASI03-Total Sum
+        - 'PASI03-Trunk: Area Score'
+        - 'PASI03-Trunk: Desquamation/Scaling'
+        - 'PASI03-Trunk: Erythema/Redness'
+        - 'PASI03-Trunk: Sum of Symptom Scores'
+        - 'PASI03-Trunk: Sum X Area X 0.3'
+        - 'PASI03-Trunk: Sum X Area'
+        - 'PASI03-Trunk: Thickness/Induration'
+        - 'PASI03-Up Extrem: Area Score'
+        - 'PASI03-Up Extrem: Desquamation/Scaling'
+        - 'PASI03-Up Extrem: Erythema/Redness'
+        - 'PASI03-Up Extrem: Sum of Symptom Scores'
+        - 'PASI03-Up Extrem: Sum X Area X 0.2'
+        - 'PASI03-Up Extrem: Sum X Area'
+        - 'PASI03-Up Extrem: Thickness/Induration'
+outcome:
+  message: Value not found in non-extensible codelist Psoriasis Area and Severity
+    Index Version Fredriksson Clinical Classification Test Name (C190933)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C190933
+  codelist_name: Psoriasis Area and Severity Index Version Fredriksson Clinical Classification
+    Test Name
+  codelist_submission_value: PASI03TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 29
+

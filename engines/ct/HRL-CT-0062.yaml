@@ -1,0 +1,37 @@
+id: HRL-CT-0062
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: AJCC1TN (AJCC TNM Staging System 7th Edition Clinical Classification
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: AJCC1TN
+      operator: in
+      value:
+        - AJCC1-Anatomic Stage
+        - AJCC1-Distant Metastasis (M)
+        - AJCC1-Primary Tumor (T)
+        - AJCC1-Regional Lymph Nodes (N)
+        - AJCC1-Residual Tumor (R)
+outcome:
+  message: Value not found in non-extensible codelist AJCC TNM Staging System 7th
+    Edition Clinical Classification Test Name (C141654)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C141654
+  codelist_name: AJCC TNM Staging System 7th Edition Clinical Classification Test
+    Name
+  codelist_submission_value: AJCC1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

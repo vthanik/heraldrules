@@ -1,0 +1,164 @@
+id: HRL-CT-0480
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FSLPTN (Functional Assessment of Chronic Illness Therapy-Searchable Item
+  Library Pediatric Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FSLPTN
+      operator: in
+      value:
+        - 'FSLP-C: Am Bothered Shorter Than People'
+        - 'FSLP-C: Am Bothered Unable to Hear Well'
+        - 'FSLP-C: Being Tired Made Me Mad'
+        - 'FSLP-C: Being Tired Made Me Sad'
+        - 'FSLP-C: Children Avoid Play With Me'
+        - 'FSLP-C: Could Do My Usual Things at Home'
+        - 'FSLP-C: Do by Myself Than w/Other People'
+        - 'FSLP-C: Family/Friends Get Me Eat More'
+        - 'FSLP-C: Feel Other Child Better Than Me'
+        - 'FSLP-C: Feel Other People Better Than Me'
+        - 'FSLP-C: Hard for Me Concentrate School'
+        - 'FSLP-C: Hard for Me to Find Right Words'
+        - 'FSLP-C: Hard for Me to Play With Friends'
+        - 'FSLP-C: Have Fewer Friends Than Children'
+        - 'FSLP-C: Have Trouble Get Myself Dressed'
+        - 'FSLP-C: I Afraid to Eat It Make Me Sick'
+        - 'FSLP-C: I Am Bothered by Headaches'
+        - 'FSLP-C: I Am Bothered Unable to See Well'
+        - 'FSLP-C: I Am Worried About How Thin I Am'
+        - 'FSLP-C: I Am Worried About My Weight'
+        - 'FSLP-C: I Believe I Will Do Well'
+        - 'FSLP-C: I Eat as Much as I Want'
+        - 'FSLP-C: I Eat Enough to Do Need to Do'
+        - 'FSLP-C: I Feel Happy'
+        - 'FSLP-C: I Feel Like I Am Getting Better'
+        - 'FSLP-C: I Feel Lonely'
+        - 'FSLP-C: I Feel Tired'
+        - 'FSLP-C: I Feel Weak'
+        - 'FSLP-C: I Forget Things Easily'
+        - 'FSLP-C: I Get Ill Easily'
+        - 'FSLP-C: I Get Nervous/Frightened Easily'
+        - 'FSLP-C: I Get Tired Easily'
+        - 'FSLP-C: I Have Been Throwing Up'
+        - 'FSLP-C: I Have Energy'
+        - 'FSLP-C: I Have Fewer Friends Than Others'
+        - 'FSLP-C: I Have Pain in My Stomach'
+        - 'FSLP-C: I Have Pain'
+        - 'FSLP-C: I Have Trouble Writing w/ a Pen'
+        - 'FSLP-C: I Lose Balance/Fall Down Easily'
+        - 'FSLP-C: I Needed to Sleep During the Day'
+        - 'FSLP-C: I Read Things Several Times'
+        - 'FSLP-C: I Seem to Get Full Quickly'
+        - 'FSLP-C: I Switch From Good to Bad Moods'
+        - 'FSLP-C: I Trouble Run Like Other People'
+        - 'FSLP-C: I Was Too Tired to Eat'
+        - 'FSLP-C: I Worry Able to Date'
+        - 'FSLP-C: I Worry Able to Go to College'
+        - 'FSLP-C: I Worry Able to Have Girlfriend'
+        - 'FSLP-C: I Worry About Getting a Job'
+        - 'FSLP-C: I Worry Getting Another Tumor'
+        - 'FSLP-C: I Worry When I Go to Hospital'
+        - 'FSLP-C: Most Food Tastes Bad to Me'
+        - 'FSLP-C: My Arms or Legs Feel Weak'
+        - 'FSLP-C: My Grades Worse Than Before'
+        - 'FSLP-C: My Parents Spoil Me'
+        - 'FSLP-C: Needed Help Doing Usual Things'
+        - 'FSLP-C: Other Children Pick on Me'
+        - 'FSLP-C: Other People Pick on Me'
+        - 'FSLP-C: Parents Worry Too Much About Me'
+        - 'FSLP-C: People Avoid Hang Out With Me'
+        - 'FSLP-C: Play Alone Than w/Other Children'
+        - 'FSLP-C: React More Slowly People My Age'
+        - 'FSLP-C: Speak People Trouble Understand'
+        - 'FSLP-C: Start Eating Feel Like Stopping'
+        - 'FSLP-C: Trouble Finishing Things'
+        - 'FSLP-C: Trouble Run Like Other Children'
+        - 'FSLP-C: Trouble Starting Things'
+        - 'FSLP-C: Tumor Makes Me Stronger Person'
+        - 'FSLP-C: Tumor Taught Me Appreciate Life'
+        - 'FSLP-C: Upset by Being Too Tired'
+        - 'FSLP-C: Work Harder Other People School'
+        - 'FSLP-C: Worry About Good Life in Future'
+        - 'FSLP-C: Worry Getting Job Support Myself'
+        - 'FSLP-P: Child Afraid to Eat It Make Sick'
+        - 'FSLP-P: Child Arms or Legs Seem Weak'
+        - 'FSLP-P: Child Believes S/He Will Do Well'
+        - 'FSLP-P: Child Bothered by Poor Hearing'
+        - 'FSLP-P: Child Bothered Shorter Than Peer'
+        - 'FSLP-P: Child Difficult Using Right Word'
+        - 'FSLP-P: Child Eats as Much as S/He Wants'
+        - 'FSLP-P: Child Eats Enough to Do Needs Do'
+        - 'FSLP-P: Child Feel Inferior Other People'
+        - 'FSLP-P: Child Feel Like Getting Better'
+        - 'FSLP-P: Child Feels Inferior Children'
+        - 'FSLP-P: Child Fewer Friend Than Children'
+        - 'FSLP-P: Child Fewer Friends Than Others'
+        - 'FSLP-P: Child Get Nervous Easily'
+        - 'FSLP-P: Child Gets Ill Easily'
+        - 'FSLP-P: Child Gets Tired Easily'
+        - 'FSLP-P: Child Has Been Throwing Up'
+        - 'FSLP-P: Child Has Pain His/Her Stomach'
+        - 'FSLP-P: Child Has Trouble Writing w/Pen'
+        - 'FSLP-P: Child Is Bothered by Poor Vision'
+        - 'FSLP-P: Child Is Moody or Irritable'
+        - 'FSLP-P: Child Loses Balance/Falls Easily'
+        - 'FSLP-P: Child Performance Worse'
+        - 'FSLP-P: Child Prefers Do Something Alone'
+        - 'FSLP-P: Child Reacts More Slowly Peers'
+        - 'FSLP-P: Child Read Things Several Times'
+        - 'FSLP-P: Child Seems Happy'
+        - 'FSLP-P: Child Seems to Get Full Quickly'
+        - 'FSLP-P: Child Speech Hard to Understand'
+        - 'FSLP-P: Child Starts Eating Feels Stop'
+        - 'FSLP-P: Child Thinks Worry About Him/Her'
+        - 'FSLP-P: Child Trouble Get Dressed Own'
+        - 'FSLP-P: Child Trouble Run Like Children'
+        - 'FSLP-P: Child Trouble Run Like People'
+        - 'FSLP-P: Child Work Harder Than Peers'
+        - 'FSLP-P: Child Worried About How Thin'
+        - 'FSLP-P: Child Worried About Weight'
+        - 'FSLP-P: Child Worries About Getting Job'
+        - 'FSLP-P: Child Worries Get Another Tumor'
+        - 'FSLP-P: Child Worries Good Life Future'
+        - 'FSLP-P: Child Worries Have Girlfriend'
+        - 'FSLP-P: Child Worries to Go to College'
+        - 'FSLP-P: Child Worries When Go Hospital'
+        - 'FSLP-P: Children Avoid Play w/My Child'
+        - 'FSLP-P: Family/Friends Child Eat More'
+        - 'FSLP-P: Hard Child Concentrate School'
+        - 'FSLP-P: Most Food Tastes Bad to My Child'
+        - 'FSLP-P: My Child Bothered by Headaches'
+        - 'FSLP-P: My Child Forgets Things Easily'
+        - 'FSLP-P: My Child Has Pain'
+        - 'FSLP-P: My Child Prefers to Play Alone'
+        - 'FSLP-P: My Child Seems Lonely'
+        - 'FSLP-P: My Child Thinks I Spoil Him/Her'
+        - 'FSLP-P: Other Children Pick on My Child'
+        - 'FSLP-P: Other People Pick on My Child'
+        - 'FSLP-P: People Avoid Hang Out w/My Child'
+        - 'FSLP-P: Tumor Make Child Stronger Person'
+        - 'FSLP-P: Tumor Taught Child Appreciate'
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Chronic
+    Illness Therapy-Searchable Item Library Pediatric Questionnaire Test Name (C200914)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C200914
+  codelist_name: Functional Assessment of Chronic Illness Therapy-Searchable Item
+    Library Pediatric Questionnaire Test Name
+  codelist_submission_value: FSLPTN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 131
+

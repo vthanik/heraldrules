@@ -1,0 +1,94 @@
+id: HRL-CT-0219
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSS05TC (Columbia-Suicide Severity Rating Scale Already Enrolled Subjects
+  Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSS05TC
+      operator: in
+      value:
+        - CSS0501A
+        - CSS0501B
+        - CSS0501C
+        - CSS0502A
+        - CSS0502B
+        - CSS0502C
+        - CSS0503A
+        - CSS0503B
+        - CSS0503C
+        - CSS0504A
+        - CSS0504B
+        - CSS0504C
+        - CSS0505A
+        - CSS0505B
+        - CSS0505C
+        - CSS0506A
+        - CSS0506B
+        - CSS0506C
+        - CSS0506D
+        - CSS0507A
+        - CSS0507B
+        - CSS0508A
+        - CSS0508B
+        - CSS0509A
+        - CSS0509B
+        - CSS0510A
+        - CSS0510B
+        - CSS0511A
+        - CSS0511B
+        - CSS0512A
+        - CSS0512B
+        - CSS0513A
+        - CSS0513B
+        - CSS0513C
+        - CSS0514A
+        - CSS0514B
+        - CSS0515A
+        - CSS0515B
+        - CSS0516A
+        - CSS0516B
+        - CSS0516C
+        - CSS0517A
+        - CSS0517B
+        - CSS0518A
+        - CSS0518B
+        - CSS0518C
+        - CSS0519A
+        - CSS0519B
+        - CSS0519C
+        - CSS0520A
+        - CSS0520B
+        - CSS0521A
+        - CSS0521B
+        - CSS0522A
+        - CSS0522B
+        - CSS0522C
+        - CSS0523A
+        - CSS0523B
+        - CSS0523C
+        - CSS0524A
+        - CSS0524B
+        - CSS0524C
+outcome:
+  message: Value not found in non-extensible codelist Columbia-Suicide Severity Rating
+    Scale Already Enrolled Subjects Questionnaire Test Code (C106659)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106659
+  codelist_name: Columbia-Suicide Severity Rating Scale Already Enrolled Subjects
+    Questionnaire Test Code
+  codelist_submission_value: CSS05TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 62
+

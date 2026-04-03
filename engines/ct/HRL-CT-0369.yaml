@@ -1,0 +1,61 @@
+id: HRL-CT-0369
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR30TC (European Organization for the Research and Treatment of Cancer
+  Quality of Life - Anal Cancer 27 Items Questionnaire Test Code) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR30TC
+      operator: in
+      value:
+        - EOR3031
+        - EOR3032
+        - EOR3033
+        - EOR3034
+        - EOR3035
+        - EOR3036
+        - EOR3037
+        - EOR3038
+        - EOR3039
+        - EOR3040
+        - EOR3041
+        - EOR3042
+        - EOR3043
+        - EOR3044
+        - EOR3045
+        - EOR3046
+        - EOR3047
+        - EOR3048
+        - EOR3049
+        - EOR3050
+        - EOR3051
+        - EOR3052
+        - EOR3053
+        - EOR3054
+        - EOR3055
+        - EOR3056
+        - EOR3057
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life - Anal Cancer 27 Items Questionnaire
+    Test Code (C219713)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219713
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life - Anal Cancer 27 Items Questionnaire Test Code
+  codelist_submission_value: EOR30TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 27
+

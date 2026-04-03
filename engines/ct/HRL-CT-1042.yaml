@@ -1,0 +1,52 @@
+id: HRL-CT-1042
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SIQR01TN (Symptom Impact Questionnaire Questionnaire Test Name) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SIQR01TN
+      operator: in
+      value:
+        - SIQR01-Anxiety
+        - SIQR01-Balance Problems
+        - SIQR01-Brush or Comb Your Hair
+        - SIQR01-Change Bed Sheets
+        - SIQR01-Climb One Flight of Stairs
+        - SIQR01-Depression
+        - SIQR01-Energy
+        - SIQR01-Go Shopping for Groceries
+        - SIQR01-Lift/Carry Bag Full of Groceries
+        - SIQR01-Memory Problems
+        - SIQR01-Overwhelmed by Medical Problems
+        - SIQR01-Pain
+        - SIQR01-Prepare a Homemade Meal
+        - SIQR01-Prevent from Accomplishing Goals
+        - SIQR01-Sensitivity Noise/Light/Odor/Cold
+        - SIQR01-Sit in a Chair for 45 Minutes
+        - SIQR01-Stiffness
+        - SIQR01-Tenderness to Touch
+        - SIQR01-Vacuum Scrub or Sweep Floors
+        - SIQR01-Walk Continuously for 20 Minutes
+        - SIQR01-Your Sleep
+outcome:
+  message: Value not found in non-extensible codelist Symptom Impact Questionnaire
+    Questionnaire Test Name (C103484)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103484
+  codelist_name: Symptom Impact Questionnaire Questionnaire Test Name
+  codelist_submission_value: SIQR01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 21
+

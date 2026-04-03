@@ -1,0 +1,47 @@
+id: HRL-CT-0776
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PHQ02TC (Patient Health Questionnaire - 15 Item Questionnaire Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PHQ02TC
+      operator: in
+      value:
+        - PHQ0201
+        - PHQ0202
+        - PHQ0203
+        - PHQ0204
+        - PHQ0205
+        - PHQ0206
+        - PHQ0207
+        - PHQ0208
+        - PHQ0209
+        - PHQ0210
+        - PHQ0211
+        - PHQ0212
+        - PHQ0213
+        - PHQ0214
+        - PHQ0215
+        - PHQ0216
+outcome:
+  message: Value not found in non-extensible codelist Patient Health Questionnaire
+    - 15 Item Questionnaire Test Code (C103483)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103483
+  codelist_name: Patient Health Questionnaire - 15 Item Questionnaire Test Code
+  codelist_submission_value: PHQ02TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 16
+

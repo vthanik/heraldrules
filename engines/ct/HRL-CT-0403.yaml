@@ -1,0 +1,58 @@
+id: HRL-CT-0403
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ED2TN (Expanded Disability Rating Scale - Postacute Interview Survivor
+  Version Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ED2TN
+      operator: in
+      value:
+        - ED2-Can Dress/Groom Independently
+        - ED2-Correct Date and Time
+        - ED2-Feed Independently Without Help
+        - ED2-Function Completely Independently
+        - ED2-Independent Work/Social Situations
+        - ED2-Keep Track of Time/Schedules
+        - ED2-Know How to Bathe/Wash
+        - ED2-Know Meal Times
+        - ED2-Know When to Use Toilet
+        - ED2-Manage Clothing When Toileting
+        - ED2-Need 24-Hour Care
+        - ED2-Need a Helper Always Close By
+        - ED2-Need Help With All Major Activities
+        - ED2-Perform Jobs, Manage Home/School
+        - ED2-Require Assistance Managing Emotions
+        - ED2-Require Assistance Thinking Tasks
+        - ED2-Require Physical Assistance
+        - ED2-Require Specific Aids/Equipment
+        - ED2-Start/Finish Grooming Activities
+        - ED2-Successful With Accommodations
+        - ED2-Successful With Limited Choices
+        - ED2-Understand Feeding Utensils
+        - ED2-Understand How to Get Dressed
+        - ED2-Understand/Follow Directions
+        - ED2-Use Toilet Independently
+        - ED2-Work With Frequent Support
+outcome:
+  message: Value not found in non-extensible codelist Expanded Disability Rating Scale
+    - Postacute Interview Survivor Version Questionnaire Test Name (C125746)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C125746
+  codelist_name: Expanded Disability Rating Scale - Postacute Interview Survivor Version
+    Questionnaire Test Name
+  codelist_submission_value: ED2TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 26
+

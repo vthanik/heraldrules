@@ -1,0 +1,54 @@
+id: HRL-CT-1171
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: WD1TN (World Health Organization Disability Assessment Schedule 2.0 -
+  12-Item Interviewer Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: WD1TN
+      operator: in
+      value:
+        - WD1-Care of Household Responsibilities
+        - WD1-Concentrating for Ten Minutes
+        - WD1-Current Marital Status
+        - WD1-Days Unable to Carry Out Activities
+        - WD1-Dealing With People You Do Not Know
+        - WD1-Describes Main Work Status Best
+        - WD1-Emotionally Affected by Health
+        - WD1-Getting Dressed
+        - WD1-How Many Days Difficulties Present
+        - WD1-How Many Days Reduce Activities
+        - WD1-How Old Are You Now
+        - WD1-Learning a New Task
+        - WD1-Living Situation at Interview
+        - WD1-Maintaining a Friendship
+        - WD1-Problem Joining Community Activities
+        - WD1-Sex as Observed
+        - WD1-Standing for Long Periods
+        - WD1-Walking a Long Distance
+        - WD1-Washing Your Whole Body
+        - WD1-Years Studying in School/College
+        - WD1-Your Day-to-Day Work/School
+outcome:
+  message: Value not found in non-extensible codelist World Health Organization Disability
+    Assessment Schedule 2.0 - 12-Item Interviewer Questionnaire Test Name (C130274)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130274
+  codelist_name: World Health Organization Disability Assessment Schedule 2.0 - 12-Item
+    Interviewer Questionnaire Test Name
+  codelist_submission_value: WD1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 21
+

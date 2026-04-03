@@ -1,0 +1,121 @@
+id: HRL-CT-1117
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TSCYC1TN (Trauma Symptom Checklist for Young Children Questionnaire Test
+  Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TSCYC1TN
+      operator: in
+      value:
+        - TSCYC1-Acting as If Didn't Have Feelings
+        - TSCYC1-Acting Frightened Reminded Past
+        - TSCYC1-Acting Jumpy
+        - TSCYC1-Acting Like He/She Was in Trance
+        - TSCYC1-Acting Sad or Depressed
+        - TSCYC1-Arguing
+        - TSCYC1-Avoiding Bad Happened in Past
+        - TSCYC1-Bad Dreams or Nightmares
+        - TSCYC1-Being Absent-minded
+        - TSCYC1-Being Afraid to Be Alone
+        - TSCYC1-Being Bothered by Memories
+        - TSCYC1-Being Disobedient
+        - TSCYC1-Being Easily Scared
+        - TSCYC1-Being Easily Startled
+        - TSCYC1-Being Frightened by Things
+        - TSCYC1-Being Frightened of Men
+        - TSCYC1-Being Tense
+        - TSCYC1-Being Too Aggressive
+        - TSCYC1-Blaming for Things Weren't Fault
+        - TSCYC1-Breaking Things on Purpose
+        - TSCYC1-Calling Himself or Herself Bad
+        - TSCYC1-Changing Subject About Bad Thing
+        - TSCYC1-Crying at Night Frightened
+        - TSCYC1-Crying for No Obvious Reason
+        - TSCYC1-Crying When Reminded From Past
+        - TSCYC1-Drawing Pictures About Sex Things
+        - TSCYC1-Drawing Pictures Upsetting Thing
+        - TSCYC1-Fear He or She Killed by Someone
+        - TSCYC1-Fear of the Dark
+        - TSCYC1-Flinching When Someone Moved
+        - TSCYC1-Forgetting His or Her Own Name
+        - TSCYC1-Frightened Something Sexual Seen
+        - TSCYC1-Getting Into Physical Fights
+        - TSCYC1-Getting Upset About the Past
+        - TSCYC1-Getting Upset Something Sexual
+        - TSCYC1-Hallucinating
+        - TSCYC1-Having a Nervous Breakdown
+        - TSCYC1-Having Trouble Concentrating
+        - TSCYC1-Having Trouble Sitting Still
+        - TSCYC1-Hearing Voices to Hurt Someone
+        - TSCYC1-Hitting Adults
+        - TSCYC1-Intentionally Hurt Other Children
+        - TSCYC1-Living in a Fantasy World
+        - TSCYC1-Looking Sad
+        - TSCYC1-Making a Mess
+        - TSCYC1-Making Mistakes
+        - TSCYC1-No Longer Doing Things Enjoy
+        - TSCYC1-Not Being Able to Pay Attention
+        - TSCYC1-Not Do Something Supposed to Do
+        - TSCYC1-Not Going to Bed First Time Asked
+        - TSCYC1-Not Happy Like Other Children
+        - TSCYC1-Not Noticing What He or She Doing
+        - TSCYC1-Not Paying Attention in Own World
+        - TSCYC1-Not Playing Because Depressed
+        - TSCYC1-Not Sleeping for Two or More Days
+        - TSCYC1-Not Sleeping Well
+        - TSCYC1-Not Wanting to Be Around Someone
+        - TSCYC1-Not Wanting to Eat Certain Foods
+        - TSCYC1-Not Wanting to Go Somewhere
+        - TSCYC1-Not Wanting to Talk
+        - TSCYC1-Playing Games Something Bad Past
+        - TSCYC1-Pretending to Have Sex
+        - TSCYC1-Pulling His or Her Hair Out
+        - TSCYC1-Saying Bad Didn't Happen
+        - TSCYC1-Saying He or She Wanted to Die
+        - TSCYC1-Saying Nobody Liked Him or Her
+        - TSCYC1-Seeing Bad Happened in the Past
+        - TSCYC1-Seeming to Be in a Daze
+        - TSCYC1-Seeming to Be Million Miles Away
+        - TSCYC1-Seeming to Know More About Sex
+        - TSCYC1-Spacing Out
+        - TSCYC1-Staring Off Into Space
+        - TSCYC1-Talking About Sexual Things
+        - TSCYC1-Telling a Lie
+        - TSCYC1-Temper Tantrums
+        - TSCYC1-Temporary Blindness or Paralysis
+        - TSCYC1-Throwing Things at Friends/Family
+        - TSCYC1-Touching Other Private Parts
+        - TSCYC1-Trouble Remember Upsetting Thing
+        - TSCYC1-Upset When Reminded Bad Happened
+        - TSCYC1-Using Drugs
+        - TSCYC1-Very Angry Over a Little Thing
+        - TSCYC1-Watching Out for Possible Danger
+        - TSCYC1-Whining
+        - TSCYC1-Worrying About People's Safety
+        - TSCYC1-Worrying About Sexual Things
+        - TSCYC1-Worrying Bad Things in Future
+        - TSCYC1-Worrying Food Was Poisoned
+        - TSCYC1-Worrying Someone Might Be Sexual
+        - TSCYC1-Yelling at Family/Friend/Teachers
+outcome:
+  message: Value not found in non-extensible codelist Trauma Symptom Checklist for
+    Young Children Questionnaire Test Name (C147549)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C147549
+  codelist_name: Trauma Symptom Checklist for Young Children Questionnaire Test Name
+  codelist_submission_value: TSCYC1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 90
+

@@ -1,0 +1,65 @@
+id: HRL-CT-0582
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: IDSC1TC (Inventory of Depressive Symptomatology Clinician-Rated Version
+  Clinical Classification Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: IDSC1TC
+      operator: in
+      value:
+        - IDSC101
+        - IDSC102
+        - IDSC103
+        - IDSC104
+        - IDSC105
+        - IDSC106
+        - IDSC107
+        - IDSC108
+        - IDSC109
+        - IDSC109A
+        - IDSC109B
+        - IDSC110
+        - IDSC111
+        - IDSC112
+        - IDSC113
+        - IDSC114
+        - IDSC115
+        - IDSC116
+        - IDSC117
+        - IDSC118
+        - IDSC119
+        - IDSC120
+        - IDSC121
+        - IDSC122
+        - IDSC123
+        - IDSC124
+        - IDSC125
+        - IDSC126
+        - IDSC127
+        - IDSC128
+        - IDSC129
+        - IDSC130
+        - IDSC131
+outcome:
+  message: Value not found in non-extensible codelist Inventory of Depressive Symptomatology
+    Clinician-Rated Version Clinical Classification Test Code (C130247)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130247
+  codelist_name: Inventory of Depressive Symptomatology Clinician-Rated Version Clinical
+    Classification Test Code
+  codelist_submission_value: IDSC1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 33
+

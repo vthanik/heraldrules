@@ -1,0 +1,44 @@
+id: HRL-CT-1006
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RISKSOC (Social Risk Factor) must contain valid extensible codelist terms
+  (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RISKSOC
+      operator: in
+      value:
+        - CONTACT WITH DISEASE SOURCE
+        - CURRENT OR RECENT EMPLOYEE OR VOLUNTEER IN HOMELESS SHELTER
+        - CURRENT OR RECENT EMPLOYEE OR VOLUNTEER IN JAIL OR PRISON
+        - CURRENT OR RECENT EMPLOYEE OR VOLUNTEER IN NURSING HOME
+        - CURRENTLY OR PREVIOUSLY TATTOOED
+        - HOMELESS DURING PAST YEAR
+        - IMMIGRANT FROM HIGH BURDEN AREA
+        - INCARCERATION
+        - LIVED IN REFUGEE CAMP
+        - LONG-TERM FACILITY RESIDENT
+        - MIGRATORY WORKER
+        - REFUGEE FROM HIGH BURDEN AREA
+        - TRAVEL TO HIGH BURDEN AREA
+        - UNEMPLOYMENT
+outcome:
+  message: Value not found in extensible codelist Social Risk Factor (C102587)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C102587
+  codelist_name: Social Risk Factor
+  codelist_submission_value: RISKSOC
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 14
+

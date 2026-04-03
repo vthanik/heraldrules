@@ -1,0 +1,166 @@
+id: HRL-CT-0914
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RETEST (Respiratory Test Name) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RETEST
+      operator: in
+      value:
+        - Additional Disease-Related Findings
+        - Air Trapping
+        - Airway Conductance
+        - Airway Resistance
+        - Airway Volume
+        - Airway Wall Volume
+        - Alveolar Volume
+        - Blood Flow Rate
+        - Diffusion Capacity of Lung for CO
+        - DLCO/VA
+        - Dominant Lung Pattern Distribution
+        - Dominant Lung Pattern
+        - Effusion Indicator
+        - Effusion Volume
+        - Elastance
+        - Expiration Relaxation Time
+        - Expiratory Reserve Volume
+        - Expiratory Vital Capacity
+        - FEV at PEF
+        - FEV1 Reversibility
+        - FEV1/FVC
+        - FEV1/FVC6
+        - FEV1/SVC
+        - FEV3/FVC
+        - Forced Expiratory Flow 25-75%
+        - Forced Expiratory Flow 50%
+        - Forced Expiratory Flow in 0.05 Second
+        - Forced Expiratory Flow in 0.1 Second
+        - Forced Expiratory Flow in 0.2 Second
+        - Forced Expiratory Time
+        - Forced Expiratory Volume in 0.05 S/FVC
+        - Forced Expiratory Volume in 0.05 Second
+        - Forced Expiratory Volume in 0.1 S/FVC
+        - Forced Expiratory Volume in 0.1 Second
+        - Forced Expiratory Volume in 0.2 S/FVC
+        - Forced Expiratory Volume in 0.2 Second
+        - Forced Expiratory Volume in 0.5 Second
+        - Forced Expiratory Volume in 0.75 Second
+        - Forced Expiratory Volume in 1 Second
+        - Forced Expiratory Volume in 3 Seconds
+        - Forced Expiratory Volume in 6 Seconds
+        - Forced Inspiratory Flow at 25%
+        - Forced Inspiratory Flow at 50%
+        - Forced Inspiratory Flow at 75%
+        - Forced Inspiratory Vital Capacity
+        - Forced Inspiratory Volume in 1 Second
+        - Forced Vital Capacity in 6 Seconds
+        - Forced Vital Capacity
+        - Fraction of Inspired Oxygen
+        - Functional Residual Capacity
+        - HGB Corrected DLCO
+        - HGB Corrected DLCO/VA
+        - IC Reversibility
+        - Inertance
+        - Infiltrates Indicator
+        - Inspiratory Capacity
+        - Inspiratory Reserve Volume
+        - Inspiratory Vital Capacity
+        - Interpretation
+        - LCI to 2.5% Initial Concentration
+        - LCI to 5% Initial Concentration
+        - Lobar Volume
+        - Lung Clearance Index
+        - Malignancy Evidence Description
+        - Malignancy Indicator
+        - Maximal Expiratory Pressure
+        - Maximal Inspiratory Pressure
+        - Maximal Oxygen Consumption
+        - Maximal Oxygen Consumption, Estimated
+        - Maximum Forced Inspiratory Flow
+        - Mean Diffusion Capacity of Lung for CO
+        - Minute Volume
+        - Oxygen Consumption
+        - Oxygen Pulse
+        - Oxygen Saturation
+        - Oxygen Saturation/Fraction Inspired O2
+        - Oxygenation Index
+        - Peak Cough Flow
+        - Peak Expiratory Flow Time
+        - Peak Expiratory Flow
+        - Peak Inspiratory Flow
+        - Peak Nasal Inspiratory Flow
+        - PEF Reversibility
+        - Percent Predicted Airway Resistance
+        - Percent Predicted Airway Volume
+        - Percent Predicted DLCO
+        - Percent Predicted DLCO/VA
+        - Percent Predicted ERV
+        - Percent Predicted EVC
+        - Percent Predicted FEF25-75
+        - Percent Predicted FEV1
+        - Percent Predicted FEV1/FVC
+        - Percent Predicted FEV3
+        - Percent Predicted FEV6
+        - Percent Predicted FIFmax
+        - Percent Predicted FIV1
+        - Percent Predicted Forced Vital Capacity
+        - Percent Predicted FRC
+        - Percent Predicted HGB Corrected DLCO
+        - Percent Predicted HGB Corrected DLCO/VA
+        - Percent Predicted Inspiratory Capacity
+        - Percent Predicted IRV
+        - Percent Predicted IVC
+        - Percent Predicted Lobar Volume
+        - Percent Predicted MEP
+        - Percent Predicted MIP
+        - Percent Predicted Peak Expiratory Flow
+        - Percent Predicted Residual Volume
+        - Percent Predicted Slow Vital Capacity
+        - Percent Predicted Sp Airway Resistance
+        - Percent Predicted Specific Airway Volume
+        - Percent Predicted Tidal Volume
+        - Percent Predicted Total Lung Capacity
+        - Pneumonia Indicator
+        - PP Arterial O2/Fraction Inspired O2
+        - Pulmonary Reactance
+        - Quasi-Static Compliance
+        - Relative Size Change
+        - Residual Volume
+        - Respiratory Exchange Ratio
+        - Respiratory System Examination
+        - Salazar-Knowles Equation Parameter A
+        - Salazar-Knowles Equation Parameter B
+        - Salazar-Knowles Equation, K
+        - Slow Vital Capacity
+        - Specific Airway Conductance
+        - Specific Airway Resistance
+        - Specific Airway Volume
+        - Thoracic Gas Volume
+        - Tidal Volume
+        - Tissue Elastance
+        - Tissue Hysteresivity
+        - Total Lung Capacity
+        - Total Respiratory System Resistance
+        - Ventilatory Threshold 1
+        - Ventilatory Threshold 2
+outcome:
+  message: Value not found in extensible codelist Respiratory Test Name (C111107)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C111107
+  codelist_name: Respiratory Test Name
+  codelist_submission_value: RETEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 136
+

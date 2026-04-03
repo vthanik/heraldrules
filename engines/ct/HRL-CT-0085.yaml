@@ -1,0 +1,37 @@
+id: HRL-CT-0085
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: APGR01TN (Apgar Score V1 Clinical Classification Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: APGR01TN
+      operator: in
+      value:
+        - APGR01-Activity/Muscle Tone
+        - APGR01-Appearance/Color
+        - APGR01-Grimace/Reflex Irritability
+        - APGR01-Pulse/Heart Rate
+        - APGR01-Respiration/Respiratory Effort
+        - APGR01-Total Apgar Score
+outcome:
+  message: Value not found in non-extensible codelist Apgar Score V1 Clinical Classification
+    Test Name (C176046)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C176046
+  codelist_name: Apgar Score V1 Clinical Classification Test Name
+  codelist_submission_value: APGR01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

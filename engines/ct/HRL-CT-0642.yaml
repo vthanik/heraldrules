@@ -1,0 +1,75 @@
+id: HRL-CT-0642
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MPAI1TN (Mayo-Portland Adaptability Inventory-4 Questionnaire Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MPAI1TN
+      operator: in
+      value:
+        - MPAI1-Alcohol Use-Post-Injury
+        - MPAI1-Alcohol Use-Pre-Injury
+        - MPAI1-Anxiety
+        - MPAI1-Attention/Concentration
+        - MPAI1-Audition
+        - MPAI1-Depression
+        - MPAI1-Dizziness
+        - MPAI1-Drug Use-Post-Injury
+        - MPAI1-Drug Use-Pre-Injury
+        - MPAI1-Family/Significant Relationships
+        - MPAI1-Fatigue
+        - MPAI1-Fund of Information
+        - MPAI1-Impaired Self-Awareness
+        - MPAI1-Inappropriate Social Interaction
+        - MPAI1-Initiation
+        - MPAI1-Irritablity, Anger, Aggression
+        - MPAI1-Law Violations-Post-Injury
+        - MPAI1-Law Violations-Pre-Injury
+        - MPAI1-Leisure and Recreation Activities
+        - MPAI1-Managing Money and Finances
+        - MPAI1-Memory
+        - MPAI1-Mobility
+        - MPAI1-Motor Speech
+        - MPAI1-Nonverbal Communication
+        - MPAI1-Novel Problem-Solving
+        - MPAI1-Other Cognitive Cond-Post-Injury
+        - MPAI1-Other Cognitive Cond-Pre-Injury
+        - MPAI1-Other Employment
+        - MPAI1-Other Employment-Social Role
+        - MPAI1-Other Physical Cond-Post-Injury
+        - MPAI1-Other Physical Cond-Pre-Injury
+        - MPAI1-Paid Employment
+        - MPAI1-Pain and Headache
+        - MPAI1-Psychotic Symptoms-Post-Injury
+        - MPAI1-Psychotic Symptoms-Pre-Injury
+        - MPAI1-Residence
+        - MPAI1-Self-Care
+        - MPAI1-Sensitivity to Mild Symptoms
+        - MPAI1-Social Contact-Friends/Coworkers
+        - MPAI1-Transportation
+        - MPAI1-Use of Hands
+        - MPAI1-Verbal Communication
+        - MPAI1-Vision
+        - MPAI1-Visuospatial Abilities
+outcome:
+  message: Value not found in non-extensible codelist Mayo-Portland Adaptability Inventory-4
+    Questionnaire Test Name (C115405)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C115405
+  codelist_name: Mayo-Portland Adaptability Inventory-4 Questionnaire Test Name
+  codelist_submission_value: MPAI1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 44
+

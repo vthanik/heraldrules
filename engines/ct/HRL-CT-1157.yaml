@@ -1,0 +1,65 @@
+id: HRL-CT-1157
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: VHI01TC (Voice Handicap Index Questionnaire Test Code) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: VHI01TC
+      operator: in
+      value:
+        - VHI0101
+        - VHI0102
+        - VHI0103
+        - VHI0104
+        - VHI0105
+        - VHI0106
+        - VHI0107
+        - VHI0108
+        - VHI0109
+        - VHI0110
+        - VHI0111
+        - VHI0112
+        - VHI0113
+        - VHI0114
+        - VHI0115
+        - VHI0116
+        - VHI0117
+        - VHI0118
+        - VHI0119
+        - VHI0120
+        - VHI0121
+        - VHI0122
+        - VHI0123
+        - VHI0124
+        - VHI0125
+        - VHI0126
+        - VHI0127
+        - VHI0128
+        - VHI0129
+        - VHI0130
+        - VHI0131
+        - VHI0132
+        - VHI0133
+        - VHI0134
+outcome:
+  message: Value not found in non-extensible codelist Voice Handicap Index Questionnaire
+    Test Code (C190942)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C190942
+  codelist_name: Voice Handicap Index Questionnaire Test Code
+  codelist_submission_value: VHI01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 34
+

@@ -1,0 +1,37 @@
+id: HRL-CT-0086
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ASEX01TC (Arizona Sexual Experiences Scale - Female Questionnaire Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ASEX01TC
+      operator: in
+      value:
+        - ASEX0101
+        - ASEX0102
+        - ASEX0103
+        - ASEX0104
+        - ASEX0105
+        - ASEX0106
+outcome:
+  message: Value not found in non-extensible codelist Arizona Sexual Experiences Scale
+    - Female Questionnaire Test Code (C125741)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C125741
+  codelist_name: Arizona Sexual Experiences Scale - Female Questionnaire Test Code
+  codelist_submission_value: ASEX01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

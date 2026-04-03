@@ -1,0 +1,47 @@
+id: HRL-CT-0548
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HADS01TN (Hospital Anxiety and Depression Scale Questionnaire Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HADS01TN
+      operator: in
+      value:
+        - HADS01-Butterflies in the Stomach
+        - HADS01-Enjoy Good Book/Radio/Television
+        - HADS01-Enjoy the Things I Used to Enjoy
+        - HADS01-Feel Restless be on the Move
+        - HADS01-I Can Laugh and See Funny Side
+        - HADS01-I Feel as if I am Slowed Down
+        - HADS01-I Feel Cheerful
+        - HADS01-I Feel Tense or Wound Up
+        - HADS01-I Get Sudden Feelings of Panic
+        - HADS01-Look Forward with Enjoyment
+        - HADS01-Lost Interest in My Appearance
+        - HADS01-Sit at Ease and Feel Relaxed
+        - HADS01-Something Awful About to Happen
+        - HADS01-Total Score Anxiety
+        - HADS01-Total Score Depression
+        - HADS01-Worrying Thoughts Go Through Mind
+outcome:
+  message: Value not found in non-extensible codelist Hospital Anxiety and Depression
+    Scale Questionnaire Test Name (C103468)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103468
+  codelist_name: Hospital Anxiety and Depression Scale Questionnaire Test Name
+  codelist_submission_value: HADS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 16
+

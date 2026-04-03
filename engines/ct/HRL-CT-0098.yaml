@@ -1,0 +1,38 @@
+id: HRL-CT-0098
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ANSD01TN (Asthma Nighttime Symptom Diary v1.0 Questionnaire Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ANSD01TN
+      operator: in
+      value:
+        - ANSD01-Rate Breathing at Its Worst
+        - ANSD01-Rate Chest Pain at Its Worst
+        - ANSD01-Rate Chest Tightness at Its Worst
+        - ANSD01-Rate Cough at Its Worst
+        - ANSD01-Rate Shortness of Breath at Worst
+        - ANSD01-Rate Wheezing at Its Worst
+        - ANSD01-Total Score
+outcome:
+  message: Value not found in non-extensible codelist Asthma Nighttime Symptom Diary
+    v1.0 Questionnaire Test Name (C163386)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C163386
+  codelist_name: Asthma Nighttime Symptom Diary v1.0 Questionnaire Test Name
+  codelist_submission_value: ANSD01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

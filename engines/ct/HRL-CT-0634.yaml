@@ -1,0 +1,34 @@
+id: HRL-CT-0634
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GRSTNLOC (Location of Most Severe Stenosis Within a Graft) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GRSTNLOC
+      operator: in
+      value:
+        - AORTIC ANASTOMOSIS OF THE GRAFT
+        - BODY OF THE GRAFT
+        - CORONARY ANASTOMOSIS OF THE GRAFT
+outcome:
+  message: Value not found in non-extensible codelist Location of Most Severe Stenosis
+    Within a Graft (C101851)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101851
+  codelist_name: Location of Most Severe Stenosis Within a Graft
+  codelist_submission_value: GRSTNLOC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 3
+

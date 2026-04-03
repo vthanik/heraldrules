@@ -1,0 +1,57 @@
+id: HRL-CT-0826
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL03TC (Pediatric Quality of Life Neuromuscular Module Version 3 Teen
+  Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL03TC
+      operator: in
+      value:
+        - PQL0301
+        - PQL0302
+        - PQL0303
+        - PQL0304
+        - PQL0305
+        - PQL0306
+        - PQL0307
+        - PQL0308
+        - PQL0309
+        - PQL0310
+        - PQL0311
+        - PQL0312
+        - PQL0313
+        - PQL0314
+        - PQL0315
+        - PQL0316
+        - PQL0317
+        - PQL0318
+        - PQL0319
+        - PQL0320
+        - PQL0321
+        - PQL0322
+        - PQL0323
+        - PQL0324
+        - PQL0325
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Version 3 Teen Questionnaire Test Code (C138257)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138257
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Version 3 Teen Questionnaire
+    Test Code
+  codelist_submission_value: PQL03TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

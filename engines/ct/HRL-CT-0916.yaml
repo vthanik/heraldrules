@@ -1,0 +1,93 @@
+id: HRL-CT-0916
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RESTYPRS (Result Type Response) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RESTYPRS
+      operator: in
+      value:
+        - APPEARANCE
+        - ARBITRARY CONCENTRATION
+        - AREA
+        - AREIC VOLUME RATE
+        - CATALYTIC CONCENTRATION
+        - CATALYTIC CONTENT
+        - CATALYTIC DECIMAL FRACTION
+        - CATALYTIC FRACTION
+        - CATALYTIC SUBSTANCE
+        - ENTITIC MASS
+        - ENTITIC SUBSTANCE
+        - ENTITIC VOLUME
+        - FLUORESCENCE INTENSITY
+        - IMPRESSION
+        - INDEX
+        - LOG ARBITRARY CONCENTRATION
+        - LOG NUMBER CONCENTRATION
+        - LOG SUBSTANCE CONCENTRATION
+        - MASS CONCENTRATION
+        - MASS CONTENT
+        - MASS DECIMAL FRACTION
+        - MASS FRACTION
+        - MASS RATE
+        - MASS RATIO
+        - MASS
+        - MORPHOLOGY
+        - MULTIPLE OF THE MEDIAN
+        - NUMBER AREIC
+        - NUMBER CONCENTRATION
+        - NUMBER FRACTION
+        - NUMBER
+        - ODDS RATIO
+        - OSMOLARITY
+        - PARTIAL PRESSURE
+        - PERCENT DIFFERENCE
+        - PERCENTILE
+        - PRESENCE OR IDENTITY
+        - PRESENCE OR THRESHOLD
+        - QUINTILE
+        - RATIO
+        - RELATIVE ARBITRARY CONCENTRATION
+        - RELATIVE CATALYTIC CONCENTRATION
+        - RELATIVE DENSITY
+        - RELATIVE MASS CONCENTRATION
+        - RELATIVE TIME
+        - SATURATION FRACTION
+        - SCORE
+        - SUBSTANCE CONCENTRATION
+        - SUBSTANCE FRACTION
+        - SUBSTANCE RATE
+        - SUBSTANCE RATIO
+        - THRESHOLD NUMBER
+        - TIME RATIO
+        - TIME
+        - TITER
+        - TYPE
+        - VELOCITY
+        - VISCOSITY
+        - VOLUME DECIMAL FRACTION
+        - VOLUME FRACTION
+        - VOLUME RATE
+        - VOLUME
+        - Z SCORE
+outcome:
+  message: Value not found in extensible codelist Result Type Response (C179588)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C179588
+  codelist_name: Result Type Response
+  codelist_submission_value: RESTYPRS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 63
+

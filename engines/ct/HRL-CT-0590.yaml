@@ -1,0 +1,32 @@
+id: HRL-CT-0590
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: KPSS01TC (Karnofsky Performance Status Scale Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: KPSS01TC
+      operator: in
+      value:
+        - KPSS0101
+outcome:
+  message: Value not found in non-extensible codelist Karnofsky Performance Status
+    Scale Clinical Classification Test Code (C100170)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100170
+  codelist_name: Karnofsky Performance Status Scale Clinical Classification Test Code
+  codelist_submission_value: KPSS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

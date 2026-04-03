@@ -1,0 +1,37 @@
+id: HRL-CT-0844
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PDAI01TC (Perianal Crohn's Disease Activity Index Questionnaire Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PDAI01TC
+      operator: in
+      value:
+        - PDAI0101
+        - PDAI0102
+        - PDAI0103
+        - PDAI0104
+        - PDAI0105
+        - PDAI0106
+outcome:
+  message: Value not found in non-extensible codelist Perianal Crohn's Disease Activity
+    Index Questionnaire Test Code (C204220)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204220
+  codelist_name: Perianal Crohn's Disease Activity Index Questionnaire Test Code
+  codelist_submission_value: PDAI01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

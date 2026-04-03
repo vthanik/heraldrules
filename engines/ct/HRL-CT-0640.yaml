@@ -1,0 +1,40 @@
+id: HRL-CT-0640
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MARISTAT (Marital Status Response) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MARISTAT
+      operator: in
+      value:
+        - ANNULLED
+        - DIVORCED
+        - DOMESTIC PARTNER
+        - INTERLOCUTORY
+        - LEGALLY SEPARATED
+        - MARRIED
+        - NEVER MARRIED
+        - POLYGAMOUS
+        - SEPARATED
+        - WIDOWED
+outcome:
+  message: Value not found in extensible codelist Marital Status Response (C76348)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C76348
+  codelist_name: Marital Status Response
+  codelist_submission_value: MARISTAT
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 10
+

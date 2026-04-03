@@ -1,0 +1,91 @@
+id: HRL-CT-0788
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PHQ03TC (Patient Health Questionnaire Screener Version Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PHQ03TC
+      operator: in
+      value:
+        - PHQ0301A
+        - PHQ0301B
+        - PHQ0301C
+        - PHQ0301D
+        - PHQ0301E
+        - PHQ0301F
+        - PHQ0301G
+        - PHQ0301H
+        - PHQ0301I
+        - PHQ0301J
+        - PHQ0301K
+        - PHQ0301L
+        - PHQ0301M
+        - PHQ0302A
+        - PHQ0302B
+        - PHQ0302C
+        - PHQ0302D
+        - PHQ0302E
+        - PHQ0302F
+        - PHQ0302G
+        - PHQ0302H
+        - PHQ0302I
+        - PHQ0303A
+        - PHQ0303B
+        - PHQ0303C
+        - PHQ0303D
+        - PHQ0304A
+        - PHQ0304B
+        - PHQ0304C
+        - PHQ0304D
+        - PHQ0304E
+        - PHQ0304F
+        - PHQ0304G
+        - PHQ0304H
+        - PHQ0304I
+        - PHQ0304J
+        - PHQ0304K
+        - PHQ0305A
+        - PHQ0305B
+        - PHQ0305C
+        - PHQ0305D
+        - PHQ0305E
+        - PHQ0305F
+        - PHQ0305G
+        - PHQ0306A
+        - PHQ0306B
+        - PHQ0306C
+        - PHQ0307A
+        - PHQ0307B
+        - PHQ0307C
+        - PHQ0307D
+        - PHQ0308
+        - PHQ0309
+        - PHQ0310A
+        - PHQ0310B
+        - PHQ0310C
+        - PHQ0310D
+        - PHQ0310E
+        - PHQ0311
+outcome:
+  message: Value not found in non-extensible codelist Patient Health Questionnaire
+    Screener Version Questionnaire Test Code (C125749)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C125749
+  codelist_name: Patient Health Questionnaire Screener Version Questionnaire Test
+    Code
+  codelist_submission_value: PHQ03TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 59
+

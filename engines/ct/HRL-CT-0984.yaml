@@ -1,0 +1,47 @@
+id: HRL-CT-0984
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SF122TC (Short Form 12 Health Survey Acute, US Version 1.0 Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SF122TC
+      operator: in
+      value:
+        - SF12201
+        - SF12202A
+        - SF12202B
+        - SF12203A
+        - SF12203B
+        - SF12204A
+        - SF12204B
+        - SF12205
+        - SF12206A
+        - SF12206B
+        - SF12206C
+        - SF12207
+        - SF12208
+        - SF12209
+        - SF12210
+outcome:
+  message: Value not found in non-extensible codelist Short Form 12 Health Survey
+    Acute, US Version 1.0 Questionnaire Test Code (C177714)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C177714
+  codelist_name: Short Form 12 Health Survey Acute, US Version 1.0 Questionnaire Test
+    Code
+  codelist_submission_value: SF122TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 15
+

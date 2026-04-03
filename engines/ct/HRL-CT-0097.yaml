@@ -1,0 +1,38 @@
+id: HRL-CT-0097
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ANSD01TC (Asthma Nighttime Symptom Diary v1.0 Questionnaire Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ANSD01TC
+      operator: in
+      value:
+        - ANSD0101
+        - ANSD0102
+        - ANSD0103
+        - ANSD0104
+        - ANSD0105
+        - ANSD0106
+        - ANSD0107
+outcome:
+  message: Value not found in non-extensible codelist Asthma Nighttime Symptom Diary
+    v1.0 Questionnaire Test Code (C163387)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C163387
+  codelist_name: Asthma Nighttime Symptom Diary v1.0 Questionnaire Test Code
+  codelist_submission_value: ANSD01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

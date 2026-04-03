@@ -1,0 +1,94 @@
+id: HRL-CT-1103
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PDPARM (Tobacco Product Design Parameters Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PDPARM
+      operator: in
+      value:
+        - Airflow Rate
+        - Battery C-Rate
+        - Battery Capacity
+        - Battery Charging Temperature Limits
+        - Battery Current Operating Range
+        - Battery Discharge Temperature Limits
+        - Battery End of Discharge Voltage
+        - Battery Maximum Charging Current
+        - Battery Maximum Discharging Current
+        - Battery Nominal Voltage
+        - Battery Upper Limit Charging Voltage
+        - Battery Voltage Operating Range
+        - Cartridge Volume
+        - Cigarette Base Paper Permeability
+        - Cigarette Base Paper Porosity
+        - Cigarette Paper Band Diffusivity
+        - Cigarette Paper Band Permeability
+        - Cigarette Paper Band Porosity
+        - Cigarette Paper Band Space
+        - Cigarette Paper Band Width
+        - Cigarette Paper Length
+        - Circumference
+        - Count Median Diameter
+        - Denier Per Filament
+        - Draw Resistance
+        - E-Liquid Viscosity
+        - E-Liquid Volume
+        - Filter Density
+        - Filter Efficiency
+        - Filter Length
+        - Filter Pressure Drop
+        - Filter Ventilation
+        - Heating Element Configuration
+        - Heating Element Diameter
+        - Heating Element Length
+        - Heating Element Range
+        - Heating Element Resistance
+        - Inhaled Aerosol Temperature
+        - Length
+        - Moisture Content
+        - Nicotine Dissolution Rate
+        - Number of Heating Elements
+        - Particle Number Concentration
+        - Particulate Matter 2.5
+        - PDU Current Cut-off
+        - PDU Current Operating Range
+        - PDU Temperature Cut-off
+        - PDU Voltage Operating Range
+        - PDU Wattage Operating Range
+        - Portion Length
+        - Portion Mass
+        - Portion Material Thickness
+        - Portion Width
+        - Pouch Material Basis Weight
+        - Pouch Material Porosity
+        - Puff Count
+        - Tipping Paper Length
+        - Tobacco Cut Size
+        - Tobacco Filler Mass
+        - Tobacco Particle Size
+        - Tobacco Rod Density
+        - Total Denier
+        - Total Ventilation
+outcome:
+  message: Value not found in extensible codelist Tobacco Product Design Parameters
+    Name (C204426)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204426
+  codelist_name: Tobacco Product Design Parameters Name
+  codelist_submission_value: PDPARM
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 63
+

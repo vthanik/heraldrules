@@ -1,0 +1,49 @@
+id: HRL-CT-1172
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: WD2TC (World Health Organization Disability Assessment Schedule 2.0 -
+  12-Item Proxy Questionnaire Test Code) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: WD2TC
+      operator: in
+      value:
+        - WD2H1
+        - WD2H2
+        - WD2H3
+        - WD2H4
+        - WD2S1
+        - WD2S10
+        - WD2S11
+        - WD2S12
+        - WD2S2
+        - WD2S3
+        - WD2S4
+        - WD2S5
+        - WD2S6
+        - WD2S7
+        - WD2S8
+        - WD2S9
+outcome:
+  message: Value not found in non-extensible codelist World Health Organization Disability
+    Assessment Schedule 2.0 - 12-Item Proxy Questionnaire Test Code (C130277)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130277
+  codelist_name: World Health Organization Disability Assessment Schedule 2.0 - 12-Item
+    Proxy Questionnaire Test Code
+  codelist_submission_value: WD2TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 16
+

@@ -1,0 +1,137 @@
+id: HRL-CT-0216
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CAP01TC (Clinician-Administered PTSD Scale (Current) DSM-5 With DSM IV
+  Scoring 2016 Version Clinical Classification Test Code) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CAP01TC
+      operator: in
+      value:
+        - CAP0101A
+        - CAP0101B
+        - CAP0101C
+        - CAP0102A
+        - CAP0102B
+        - CAP0102C
+        - CAP0103A
+        - CAP0103B
+        - CAP0103C
+        - CAP0104A
+        - CAP0104B
+        - CAP0104C
+        - CAP0105A
+        - CAP0105B
+        - CAP0105C
+        - CAP0106A
+        - CAP0106B
+        - CAP0106C
+        - CAP0107A
+        - CAP0107B
+        - CAP0107C
+        - CAP0108A
+        - CAP0108B
+        - CAP0108C
+        - CAP0109
+        - CAP0110
+        - CAP0111
+        - CAP0112A
+        - CAP0112B
+        - CAP0112C
+        - CAP0113A
+        - CAP0113B
+        - CAP0113C
+        - CAP0114A
+        - CAP0114B
+        - CAP0114C
+        - CAP0114D
+        - CAP0114E
+        - CAP0115A
+        - CAP0115B
+        - CAP0115C
+        - CAP0116
+        - CAP0117A
+        - CAP0117B
+        - CAP0117C
+        - CAP0118A
+        - CAP0118B
+        - CAP0118C
+        - CAP0119A
+        - CAP0119B
+        - CAP0119C
+        - CAP0120A
+        - CAP0120B
+        - CAP0120C
+        - CAP0121A
+        - CAP0121B
+        - CAP0122A
+        - CAP0122B
+        - CAP0122C
+        - CAP0122D
+        - CAP0123A
+        - CAP0123B
+        - CAP0124A
+        - CAP0124B
+        - CAP0125A
+        - CAP0125B
+        - CAP0126
+        - CAP0127
+        - CAP0128
+        - CAP0129
+        - CAP0130
+        - CAP0131
+        - CAP0132
+        - CAP0133
+        - CAP0134
+        - CAP0135
+        - CAP0136
+        - CAP0137
+        - CAP0138
+        - CAP0139
+        - CAP0140
+        - CAP0141
+        - CAP0142
+        - CAP0143
+        - CAP0144
+        - CAP0145
+        - CAP0146
+        - CAP0147
+        - CAP0148
+        - CAP0149
+        - CAP0150
+        - CAP01A1
+        - CAP01A2
+        - CAP01A3
+        - CAP01A3A
+        - CAP01A3B
+        - CAP01A4
+        - CAP01A4A
+        - CAP01A4B
+        - CAP01A5
+        - CAP01A5A
+        - CAP01A5B
+        - CAP01A6
+outcome:
+  message: Value not found in non-extensible codelist Clinician-Administered PTSD
+    Scale (Current) DSM-5 With DSM IV Scoring 2016 Version Clinical Classification
+    Test Code (C187452)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C187452
+  codelist_name: Clinician-Administered PTSD Scale (Current) DSM-5 With DSM IV Scoring
+    2016 Version Clinical Classification Test Code
+  codelist_submission_value: CAP01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 103
+

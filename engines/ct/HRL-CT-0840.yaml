@@ -1,0 +1,64 @@
+id: HRL-CT-0840
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PUL01TC (Performance of the Upper Limb Module for DMD Version 1.2 Functional
+  Test Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PUL01TC
+      operator: in
+      value:
+        - PUL0101
+        - PUL0102
+        - PUL0103
+        - PUL0104
+        - PUL0105
+        - PUL0106
+        - PUL01A
+        - PUL01B
+        - PUL01C
+        - PUL01D
+        - PUL01E
+        - PUL01F
+        - PUL01G
+        - PUL01H
+        - PUL01I
+        - PUL01I1
+        - PUL01J
+        - PUL01J1
+        - PUL01K
+        - PUL01K1
+        - PUL01L
+        - PUL01L1
+        - PUL01M
+        - PUL01N
+        - PUL01O
+        - PUL01P
+        - PUL01Q
+        - PUL01R
+        - PUL01S
+        - PUL01T
+        - PUL01U
+        - PUL01V
+outcome:
+  message: Value not found in non-extensible codelist Performance of the Upper Limb
+    Module for DMD Version 1.2 Functional Test Test Code (C138217)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138217
+  codelist_name: Performance of the Upper Limb Module for DMD Version 1.2 Functional
+    Test Test Code
+  codelist_submission_value: PUL01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 32
+

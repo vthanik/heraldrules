@@ -1,0 +1,64 @@
+id: HRL-CT-0841
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PUL01TN (Performance of the Upper Limb Module for DMD Version 1.2 Functional
+  Test Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PUL01TN
+      operator: in
+      value:
+        - PUL01-3 Point Grip
+        - PUL01-Distal Wrist/Hand Dimension
+        - PUL01-Elbow Contractures
+        - PUL01-Entry Item
+        - PUL01-Finger Pinch Grip
+        - PUL01-Hand(s) to Mouth
+        - PUL01-Hand(s) to Table From Lap
+        - PUL01-High Level Shoulder Dimension
+        - PUL01-Lifting Heavy Cans Time
+        - PUL01-Lifting Heavy Cans
+        - PUL01-Lifting Light Cans Time
+        - PUL01-Lifting Light Cans
+        - PUL01-Mid Level Elbow Dimension
+        - PUL01-Move Weight on Table
+        - PUL01-Picking Up Coins
+        - PUL01-Placing Finger on Number Diagram
+        - PUL01-Preferred Arm
+        - PUL01-Push on The Light
+        - PUL01-Remove Lid From Container
+        - PUL01-Shoulder Abduction Above Shldr Hgt
+        - PUL01-Shoulder Abduction to Shldr Hgt
+        - PUL01-Shoulder Flexion Above Shldr Hgt
+        - PUL01-Shoulder Flexion to Shldr Height
+        - PUL01-Stacking Heavy Cans Time
+        - PUL01-Stacking Heavy Cans
+        - PUL01-Stacking Light Cans Time
+        - PUL01-Stacking Light Cans
+        - PUL01-Supination
+        - PUL01-Tearing Paper
+        - PUL01-Thumb (Key) Grip
+        - PUL01-Total Score
+        - PUL01-Tracing Path
+outcome:
+  message: Value not found in non-extensible codelist Performance of the Upper Limb
+    Module for DMD Version 1.2 Functional Test Test Name (C138216)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138216
+  codelist_name: Performance of the Upper Limb Module for DMD Version 1.2 Functional
+    Test Test Name
+  codelist_submission_value: PUL01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 32
+

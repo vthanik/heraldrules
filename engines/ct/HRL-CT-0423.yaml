@@ -1,0 +1,43 @@
+id: HRL-CT-0423
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAQ01TC (Functional Activities Questionnaire Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAQ01TC
+      operator: in
+      value:
+        - FAQ0101
+        - FAQ0102
+        - FAQ0103
+        - FAQ0104
+        - FAQ0105
+        - FAQ0106
+        - FAQ0107
+        - FAQ0108
+        - FAQ0109
+        - FAQ0110
+        - FAQ0111
+outcome:
+  message: Value not found in non-extensible codelist Functional Activities Questionnaire
+    Clinical Classification Test Code (C111344)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C111344
+  codelist_name: Functional Activities Questionnaire Clinical Classification Test
+    Code
+  codelist_submission_value: FAQ01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 11
+

@@ -1,0 +1,34 @@
+id: HRL-CT-0907
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: NRIND (Reference Range Indicator) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: NRIND
+      operator: in
+      value:
+        - ABNORMAL
+        - HIGH
+        - LOW
+        - NORMAL
+outcome:
+  message: Value not found in extensible codelist Reference Range Indicator (C78736)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C78736
+  codelist_name: Reference Range Indicator
+  codelist_submission_value: NRIND
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 4
+

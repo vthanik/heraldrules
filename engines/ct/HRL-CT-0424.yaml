@@ -1,0 +1,43 @@
+id: HRL-CT-0424
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAQ01TN (Functional Activities Questionnaire Clinical Classification
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAQ01TN
+      operator: in
+      value:
+        - FAQ01-Assembling
+        - FAQ01-Heat Water/Make Coffee/Stove Off
+        - FAQ01-Keeping Track of Current Events
+        - FAQ01-Paying Attention
+        - FAQ01-Playing a Game of Skill
+        - FAQ01-Preparing a Balanced Meal
+        - FAQ01-Remembering
+        - FAQ01-Shopping Alone
+        - FAQ01-Total Score
+        - FAQ01-Traveling
+        - FAQ01-Write Checks/Pay Bills/Checkbook
+outcome:
+  message: Value not found in non-extensible codelist Functional Activities Questionnaire
+    Clinical Classification Test Name (C111343)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C111343
+  codelist_name: Functional Activities Questionnaire Clinical Classification Test
+    Name
+  codelist_submission_value: FAQ01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 11
+

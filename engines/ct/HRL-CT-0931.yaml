@@ -1,0 +1,32 @@
+id: HRL-CT-0931
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ROCK01TC (Rockport One Mile Walk Test Version 1.0 Functional Test Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ROCK01TC
+      operator: in
+      value:
+        - ROCK0101
+outcome:
+  message: Value not found in non-extensible codelist Rockport One Mile Walk Test
+    Version 1.0 Functional Test Test Code (C166190)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C166190
+  codelist_name: Rockport One Mile Walk Test Version 1.0 Functional Test Test Code
+  codelist_submission_value: ROCK01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

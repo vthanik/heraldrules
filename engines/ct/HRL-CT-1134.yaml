@@ -1,0 +1,107 @@
+id: HRL-CT-1134
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TRTEST (Tumor or Lesion Properties Test Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TRTEST
+      operator: in
+      value:
+        - Absolute Change Baseline in Sum of PPD
+        - Absolute Change From Nadir
+        - Absolute Change From PPD Nadir in LDIAM
+        - Absolute Change From PPD Nadir in LPERP
+        - Absolute Change Nadir in Organ Enlarge
+        - Absolute Change Nadir in Sum of Diam
+        - Absolute Change Nadir in Sum of PPD
+        - Area
+        - Bone Marrow Tracer Uptake
+        - Calcification Indicator
+        - Diameter
+        - FDG PET 5PS Score
+        - Lesion Elevation Severity/Intensity
+        - Lesion Erythema Severity/Intensity
+        - Lesion Failure Indicator
+        - Lesion Revas Clinical Indicator
+        - Lesion Revas Ischemia Indicator
+        - Lesion Revascularization Indicator
+        - Lesion Scaling Severity/Intensity
+        - Lesion Success Indicator
+        - Lesion Thickness
+        - Limb Failure Indicator
+        - Longest Diameter
+        - Longest Perpendicular
+        - Lymph Node State
+        - Metabolic Imaging Interpretation
+        - New Tumor Confirmed
+        - Number of Bone Lesions
+        - Number of Lymph Nodes Examined
+        - Number of Lymph Nodes Positive
+        - Number of New Bone Lesions
+        - Organ Enlargement, Quantitative
+        - Organ State
+        - Organ Vertical Length
+        - Overall Tracer Uptake Compared to BL
+        - Overall Tracer Uptake Compared to Nadir
+        - Palpable State
+        - Percent Change Baseline in Organ Enlarge
+        - Percent Change Baseline in PPD
+        - Percent Change Baseline in Sum of Diam
+        - Percent Change Baseline in Sum of PPD
+        - Percent Change Baseline in Sum of Volume
+        - Percent Change Baseline Sum Longest Diam
+        - Percent Change From Baseline
+        - Percent Change From Nadir
+        - Percent Change Nadir in Organ Enlarge
+        - Percent Change Nadir in PPD
+        - Percent Change Nadir in Sum Longest Diam
+        - Percent Change Nadir in Sum of Diam
+        - Percent Change Nadir in Sum of PPD
+        - Percent Change Nadir in Sum of Volume
+        - Product of Perpendicular Diameters
+        - Radiodensity
+        - Standardized Uptake Value Maximum
+        - Standardized Uptake Value Mean
+        - Standardized Uptake Value Minimum
+        - Standardized Uptake Value Peak
+        - Sum Diameters of Non Lymph Node Tumors
+        - Sum Diameters of Non-Pleural Lesions
+        - Sum of Diameter
+        - Sum of Longest Diameter
+        - Sum of Longest Perpendicular
+        - Sum of Products of Perpendicular Diam
+        - Sum of Viable Diameter
+        - Sum of Volume
+        - SUV Maximum Corrected for Lean Body Mass
+        - SUV Mean Corrected for Lean Body Mass
+        - SUV Peak Corrected for Lean Body Mass
+        - Tumor State
+        - Two or More New Bone Lesions Indicator
+        - Two or More Persist New Bone Lesions Ind
+        - Vessel Failure Indicator
+        - Vessel Patency Indicator
+        - Vessel Revascularization Indicator
+        - Viable Diameter
+        - Volume
+outcome:
+  message: Value not found in extensible codelist Tumor or Lesion Properties Test
+    Name (C96778)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C96778
+  codelist_name: Tumor or Lesion Properties Test Name
+  codelist_submission_value: TRTEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 76
+

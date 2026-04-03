@@ -1,0 +1,77 @@
+id: HRL-CT-0764
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PTAP1TC (Paced Tapping Functional Test Test Code) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PTAP1TC
+      operator: in
+      value:
+        - PTAP101
+        - PTAP102
+        - PTAP103
+        - PTAP104
+        - PTAP105
+        - PTAP105A
+        - PTAP105B
+        - PTAP105C
+        - PTAP105D
+        - PTAP105E
+        - PTAP105F
+        - PTAP105G
+        - PTAP105H
+        - PTAP106
+        - PTAP107
+        - PTAP107A
+        - PTAP107B
+        - PTAP107C
+        - PTAP107D
+        - PTAP107E
+        - PTAP107F
+        - PTAP107G
+        - PTAP107H
+        - PTAP108
+        - PTAP109
+        - PTAP110
+        - PTAP111
+        - PTAP112
+        - PTAP112A
+        - PTAP112B
+        - PTAP112C
+        - PTAP112D
+        - PTAP112E
+        - PTAP112F
+        - PTAP112G
+        - PTAP112H
+        - PTAP113
+        - PTAP114
+        - PTAP114A
+        - PTAP114B
+        - PTAP114C
+        - PTAP114D
+        - PTAP114E
+        - PTAP114F
+        - PTAP114G
+        - PTAP114H
+outcome:
+  message: Value not found in non-extensible codelist Paced Tapping Functional Test
+    Test Code (C150772)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150772
+  codelist_name: Paced Tapping Functional Test Test Code
+  codelist_submission_value: PTAP1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 46
+

@@ -1,0 +1,58 @@
+id: HRL-CT-0709
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC030TN (National Comprehensive Cancer Network/Functional Assessment
+  of Cancer Therapy-Brain Symptom Index-24 Version 2 Questionnaire Test Name) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC030TN
+      operator: in
+      value:
+        - FAC030-Able to Find the Right Words
+        - FAC030-Bothered by Change in Personality
+        - FAC030-Bothered by Treatment Side Effect
+        - FAC030-Content With Quality of My Life
+        - FAC030-Difficulty Expressing My Thoughts
+        - FAC030-Frustrated I Cannot Do Things
+        - FAC030-Have Weakness in My Arms or Legs
+        - FAC030-I Am Able to Concentrate
+        - FAC030-I Am Able to Enjoy Life
+        - FAC030-I Am Afraid of Having a Seizure
+        - FAC030-I Am Losing Weight
+        - FAC030-I Am Sleeping Well
+        - FAC030-I Can Remember New Things
+        - FAC030-I Feel Fatigued
+        - FAC030-I Get Headaches
+        - FAC030-I Have a Good Appetite
+        - FAC030-I Have a Lack of Energy
+        - FAC030-I Have Had Seizures
+        - FAC030-I Have Nausea
+        - FAC030-I Have Trouble With Coordination
+        - FAC030-I Need Help in Caring for Myself
+        - FAC030-Losing Hope Against Illness
+        - FAC030-Trouble Meeting Needs of Family
+        - FAC030-Worry My Condition Will Get Worse
+outcome:
+  message: Value not found in non-extensible codelist National Comprehensive Cancer
+    Network/Functional Assessment of Cancer Therapy-Brain Symptom Index-24 Version
+    2 Questionnaire Test Name (C150785)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150785
+  codelist_name: National Comprehensive Cancer Network/Functional Assessment of Cancer
+    Therapy-Brain Symptom Index-24 Version 2 Questionnaire Test Name
+  codelist_submission_value: FAC030TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 24
+

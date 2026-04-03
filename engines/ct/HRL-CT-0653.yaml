@@ -1,0 +1,49 @@
+id: HRL-CT-0653
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MSTEST (Microbiology Susceptibility Test Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MSTEST
+      operator: in
+      value:
+        - Diameter of the Zone of Inhibition
+        - Flagged Mutations Present Indicator
+        - Inhibitory Concentration Net Assessment
+        - Microbial EC50 Fold Change from Baseline
+        - Microbial EC50 Fold Change from Ref
+        - Microbial EC50 Reference Control Result
+        - Microbial EC50 Subject Result
+        - Microbial IC50 Fold Change from Baseline
+        - Microbial IC50 Fold Change from Ref
+        - Microbial IC50 Reference Control Result
+        - Microbial IC50 Subject Result
+        - Microbial IC95 Fold Change from Baseline
+        - Microbial IC95 Fold Change from Ref
+        - Microbial IC95 Reference Control Result
+        - Microbial IC95 Subject Result
+        - Microbial Susceptibility
+        - Minimum Inhibitory Concentration
+        - Susceptibility Score Mutations Indicator
+outcome:
+  message: Value not found in extensible codelist Microbiology Susceptibility Test
+    Name (C128687)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C128687
+  codelist_name: Microbiology Susceptibility Test Name
+  codelist_submission_value: MSTEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 18
+

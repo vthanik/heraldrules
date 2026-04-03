@@ -1,0 +1,36 @@
+id: HRL-CT-0749
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: OBSSMO (Observational Study Model) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: OBSSMO
+      operator: in
+      value:
+        - CASE CONTROL
+        - CASE CROSSOVER
+        - CASE ONLY
+        - COHORT
+        - ECOLOGIC OR COMMUNITY
+        - FAMILY BASED
+outcome:
+  message: Value not found in extensible codelist Observational Study Model (C127259)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C127259
+  codelist_name: Observational Study Model
+  codelist_submission_value: OBSSMO
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 6
+

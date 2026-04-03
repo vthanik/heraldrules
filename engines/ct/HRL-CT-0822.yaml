@@ -1,0 +1,57 @@
+id: HRL-CT-0822
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL05TC (Pediatric Quality of Life Neuromuscular Module Version 3 Child
+  Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL05TC
+      operator: in
+      value:
+        - PQL0501
+        - PQL0502
+        - PQL0503
+        - PQL0504
+        - PQL0505
+        - PQL0506
+        - PQL0507
+        - PQL0508
+        - PQL0509
+        - PQL0510
+        - PQL0511
+        - PQL0512
+        - PQL0513
+        - PQL0514
+        - PQL0515
+        - PQL0516
+        - PQL0517
+        - PQL0518
+        - PQL0519
+        - PQL0520
+        - PQL0521
+        - PQL0522
+        - PQL0523
+        - PQL0524
+        - PQL0525
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Version 3 Child Questionnaire Test Code (C138245)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138245
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Version 3 Child Questionnaire
+    Test Code
+  codelist_submission_value: PQL05TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

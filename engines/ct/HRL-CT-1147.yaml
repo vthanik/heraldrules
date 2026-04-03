@@ -1,0 +1,43 @@
+id: HRL-CT-1147
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: URNSTS (Urinary System Test Name) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: URNSTS
+      operator: in
+      value:
+        - Blood Flow Rate
+        - Color
+        - Graft Status
+        - Hematoma Indicator
+        - Length
+        - Number of Renal Arteries
+        - Number of Renal Veins
+        - Proton Density Fat Fraction
+        - Surgical Damage Indicator
+        - Urinary System Examination
+        - Urine Flow Rate
+        - Urine Flow Time
+        - Voided Volume
+outcome:
+  message: Value not found in extensible codelist Urinary System Test Name (C129941)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C129941
+  codelist_name: Urinary System Test Name
+  codelist_submission_value: URNSTS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 13
+

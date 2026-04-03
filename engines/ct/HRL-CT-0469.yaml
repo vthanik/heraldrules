@@ -1,0 +1,132 @@
+id: HRL-CT-0469
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC100TC (Functional Assessment of Chronic Illness Therapy-Dyspnea Scale
+  33 Item Bank Questionnaire Test Code) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC100TC
+      operator: in
+      value:
+        - FAC10001
+        - FAC10002
+        - FAC10003
+        - FAC10004
+        - FAC10005
+        - FAC10006
+        - FAC10007
+        - FAC10008
+        - FAC10009
+        - FAC10010
+        - FAC10011
+        - FAC10012
+        - FAC10013
+        - FAC10014
+        - FAC10015
+        - FAC10016
+        - FAC10017
+        - FAC10018
+        - FAC10019
+        - FAC10020
+        - FAC10021
+        - FAC10022
+        - FAC10023
+        - FAC10024
+        - FAC10025
+        - FAC10026
+        - FAC10027
+        - FAC10028
+        - FAC10029
+        - FAC10030
+        - FAC10031
+        - FAC10032
+        - FAC10033
+        - FAC10034
+        - FAC10035
+        - FAC10036
+        - FAC10037
+        - FAC10038
+        - FAC10039
+        - FAC10040
+        - FAC10041
+        - FAC10042
+        - FAC10043
+        - FAC10044
+        - FAC10045
+        - FAC10046
+        - FAC10047
+        - FAC10048
+        - FAC10049
+        - FAC10050
+        - FAC10051
+        - FAC10052
+        - FAC10053
+        - FAC10054
+        - FAC10055
+        - FAC10056
+        - FAC10057
+        - FAC10058
+        - FAC10059
+        - FAC10060
+        - FAC10061
+        - FAC10062
+        - FAC10063
+        - FAC10064
+        - FAC10065
+        - FAC10066
+        - FAC10067
+        - FAC10068
+        - FAC10069
+        - FAC10070
+        - FAC10071
+        - FAC10072
+        - FAC10073
+        - FAC10074
+        - FAC10075
+        - FAC10076
+        - FAC10077
+        - FAC10078
+        - FAC10079
+        - FAC10080
+        - FAC10081
+        - FAC10082
+        - FAC10083
+        - FAC10084
+        - FAC10085
+        - FAC10086
+        - FAC10087
+        - FAC10088
+        - FAC10089
+        - FAC10090
+        - FAC10091
+        - FAC10092
+        - FAC10093
+        - FAC10094
+        - FAC10095
+        - FAC10096
+        - FAC10097
+        - FAC10098
+        - FAC10099
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Chronic
+    Illness Therapy-Dyspnea Scale 33 Item Bank Questionnaire Test Code (C154451)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C154451
+  codelist_name: Functional Assessment of Chronic Illness Therapy-Dyspnea Scale 33
+    Item Bank Questionnaire Test Code
+  codelist_submission_value: FAC100TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 99
+

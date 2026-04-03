@@ -1,0 +1,56 @@
+id: HRL-CT-0125
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BSTEST (Biospecimen Characteristics Test Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BSTEST
+      operator: in
+      value:
+        - 28S/18S
+        - A260/A230 Ratio
+        - A260/A280 Ratio
+        - Area
+        - Concentration
+        - Derived Specimen Count
+        - Fixative Name
+        - Fluorescent Label
+        - Length
+        - Leukocytes
+        - Mass
+        - Number of Tissue Samples in Specimen
+        - Quality
+        - RNA Integrity Number
+        - Sample Viability Indicator
+        - Sample Viability Percent
+        - Size
+        - Spatial Dimension
+        - Specimen Weight
+        - Temperature
+        - Thickness
+        - Tumor Cells/Total Cells
+        - Tumor Tissue Origin
+        - Volume
+        - Width
+outcome:
+  message: Value not found in extensible codelist Biospecimen Characteristics Test
+    Name (C124299)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124299
+  codelist_name: Biospecimen Characteristics Test Name
+  codelist_submission_value: BSTEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 25
+

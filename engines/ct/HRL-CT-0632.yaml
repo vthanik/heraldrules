@@ -1,0 +1,134 @@
+id: HRL-CT-0632
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: LEC01TC (Life Events Checklist for DSM-5 Standard Version Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: LEC01TC
+      operator: in
+      value:
+        - LEC0101A
+        - LEC0101B
+        - LEC0101C
+        - LEC0101D
+        - LEC0101E
+        - LEC0101F
+        - LEC0102A
+        - LEC0102B
+        - LEC0102C
+        - LEC0102D
+        - LEC0102E
+        - LEC0102F
+        - LEC0103A
+        - LEC0103B
+        - LEC0103C
+        - LEC0103D
+        - LEC0103E
+        - LEC0103F
+        - LEC0104A
+        - LEC0104B
+        - LEC0104C
+        - LEC0104D
+        - LEC0104E
+        - LEC0104F
+        - LEC0105A
+        - LEC0105B
+        - LEC0105C
+        - LEC0105D
+        - LEC0105E
+        - LEC0105F
+        - LEC0106A
+        - LEC0106B
+        - LEC0106C
+        - LEC0106D
+        - LEC0106E
+        - LEC0106F
+        - LEC0107A
+        - LEC0107B
+        - LEC0107C
+        - LEC0107D
+        - LEC0107E
+        - LEC0107F
+        - LEC0108A
+        - LEC0108B
+        - LEC0108C
+        - LEC0108D
+        - LEC0108E
+        - LEC0108F
+        - LEC0109A
+        - LEC0109B
+        - LEC0109C
+        - LEC0109D
+        - LEC0109E
+        - LEC0109F
+        - LEC0110A
+        - LEC0110B
+        - LEC0110C
+        - LEC0110D
+        - LEC0110E
+        - LEC0110F
+        - LEC0111A
+        - LEC0111B
+        - LEC0111C
+        - LEC0111D
+        - LEC0111E
+        - LEC0111F
+        - LEC0112A
+        - LEC0112B
+        - LEC0112C
+        - LEC0112D
+        - LEC0112E
+        - LEC0112F
+        - LEC0113A
+        - LEC0113B
+        - LEC0113C
+        - LEC0113D
+        - LEC0113E
+        - LEC0113F
+        - LEC0114A
+        - LEC0114B
+        - LEC0114C
+        - LEC0114D
+        - LEC0114E
+        - LEC0114F
+        - LEC0115A
+        - LEC0115B
+        - LEC0115C
+        - LEC0115D
+        - LEC0115E
+        - LEC0115F
+        - LEC0116A
+        - LEC0116B
+        - LEC0116C
+        - LEC0116D
+        - LEC0116E
+        - LEC0116F
+        - LEC0117A
+        - LEC0117B
+        - LEC0117C
+        - LEC0117D
+        - LEC0117E
+        - LEC0117F
+outcome:
+  message: Value not found in non-extensible codelist Life Events Checklist for DSM-5
+    Standard Version Questionnaire Test Code (C135690)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C135690
+  codelist_name: Life Events Checklist for DSM-5 Standard Version Questionnaire Test
+    Code
+  codelist_submission_value: LEC01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 102
+

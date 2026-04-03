@@ -1,0 +1,58 @@
+id: HRL-CT-0945
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SOAPR1TN (Screener and Opioid Assessment for Patients with Pain - Revised
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SOAPR1TN
+      operator: in
+      value:
+        - SOAPR1-Any Additional Information
+        - SOAPR1-Argument Someone Got Hurt
+        - SOAPR1-Attended AA or NA Meeting
+        - SOAPR1-Concerned People Will Judge You
+        - SOAPR1-Expressed Concern Over Med Use
+        - SOAPR1-Felt Consumed to Get Pain Med
+        - SOAPR1-Felt Craving for Medication
+        - SOAPR1-Felt Impatient With Doctors
+        - SOAPR1-Felt That Things Are Overwhelming
+        - SOAPR1-How Often Borrowed Pain Meds
+        - SOAPR1-How Often Counted Pain Pills
+        - SOAPR1-How Often Feel Bored
+        - SOAPR1-How Often Friends Had Problem
+        - SOAPR1-How Often Mood Swings
+        - SOAPR1-How Often Sexually Abused
+        - SOAPR1-How Often Taken More Pain Med
+        - SOAPR1-How Often Tension at Home
+        - SOAPR1-Kept From What You Deserve
+        - SOAPR1-Legal Problems or Arrested
+        - SOAPR1-Need Higher Doses of Medication
+        - SOAPR1-Others Told You Bad Temper
+        - SOAPR1-Run Out of Pain Med Early
+        - SOAPR1-Score
+        - SOAPR1-Suggested Drug or Alcohol Problem
+        - SOAPR1-Treated for Alcohol or Drug Prob
+        - SOAPR1-Worried About Being Left Alone
+outcome:
+  message: Value not found in non-extensible codelist Screener and Opioid Assessment
+    for Patients with Pain - Revised Questionnaire Test Name (C100159)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100159
+  codelist_name: Screener and Opioid Assessment for Patients with Pain - Revised Questionnaire
+    Test Name
+  codelist_submission_value: SOAPR1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 26
+

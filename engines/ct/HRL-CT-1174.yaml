@@ -1,0 +1,48 @@
+id: HRL-CT-1174
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: WD3TC (World Health Organization Disability Assessment Schedule 2.0 -
+  12-Item Self Questionnaire Test Code) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: WD3TC
+      operator: in
+      value:
+        - WD3H1
+        - WD3H2
+        - WD3H3
+        - WD3S1
+        - WD3S10
+        - WD3S11
+        - WD3S12
+        - WD3S2
+        - WD3S3
+        - WD3S4
+        - WD3S5
+        - WD3S6
+        - WD3S7
+        - WD3S8
+        - WD3S9
+outcome:
+  message: Value not found in non-extensible codelist World Health Organization Disability
+    Assessment Schedule 2.0 - 12-Item Self Questionnaire Test Code (C130279)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130279
+  codelist_name: World Health Organization Disability Assessment Schedule 2.0 - 12-Item
+    Self Questionnaire Test Code
+  codelist_submission_value: WD3TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 15
+

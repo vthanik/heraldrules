@@ -1,0 +1,64 @@
+id: HRL-CT-1076
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: OABQ01TC (The Overactive Bladder Questionnaire Questionnaire Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: OABQ01TC
+      operator: in
+      value:
+        - OABQ0101
+        - OABQ0102
+        - OABQ0103
+        - OABQ0104
+        - OABQ0105
+        - OABQ0106
+        - OABQ0107
+        - OABQ0108
+        - OABQ0109
+        - OABQ0110
+        - OABQ0111
+        - OABQ0112
+        - OABQ0113
+        - OABQ0114
+        - OABQ0115
+        - OABQ0116
+        - OABQ0117
+        - OABQ0118
+        - OABQ0119
+        - OABQ0120
+        - OABQ0121
+        - OABQ0122
+        - OABQ0123
+        - OABQ0124
+        - OABQ0125
+        - OABQ0126
+        - OABQ0127
+        - OABQ0128
+        - OABQ0129
+        - OABQ0130
+        - OABQ0131
+        - OABQ0132
+        - OABQ0133
+outcome:
+  message: Value not found in non-extensible codelist The Overactive Bladder Questionnaire
+    Questionnaire Test Code (C103475)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103475
+  codelist_name: The Overactive Bladder Questionnaire Questionnaire Test Code
+  codelist_submission_value: OABQ01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 33
+

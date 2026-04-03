@@ -1,0 +1,50 @@
+id: HRL-CT-0994
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SF81TC (Short Form 8 Health Survey Standard, US Version 1.0 Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SF81TC
+      operator: in
+      value:
+        - SF8101
+        - SF8102
+        - SF8103
+        - SF8104
+        - SF8105
+        - SF8106
+        - SF8107
+        - SF8108
+        - SF8109
+        - SF8110
+        - SF8111
+        - SF8112
+        - SF8113
+        - SF8114
+        - SF8115
+        - SF8116
+        - SF8117
+        - SF8118
+outcome:
+  message: Value not found in non-extensible codelist Short Form 8 Health Survey Standard,
+    US Version 1.0 Questionnaire Test Code (C177708)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C177708
+  codelist_name: Short Form 8 Health Survey Standard, US Version 1.0 Questionnaire
+    Test Code
+  codelist_submission_value: SF81TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 18
+

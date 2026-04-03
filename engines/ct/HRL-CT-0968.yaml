@@ -1,0 +1,37 @@
+id: HRL-CT-0968
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SEVRS (Severity Response) must contain valid extensible codelist terms
+  (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SEVRS
+      operator: in
+      value:
+        - MAJOR
+        - MILD
+        - MINIMAL
+        - MINOR
+        - MODERATE
+        - SEVERE
+        - U
+outcome:
+  message: Value not found in extensible codelist Severity Response (C165643)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C165643
+  codelist_name: Severity Response
+  codelist_submission_value: SEVRS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 7
+

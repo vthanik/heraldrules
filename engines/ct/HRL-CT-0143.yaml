@@ -1,0 +1,41 @@
+id: HRL-CT-0143
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BPRSA1SET1OR (Brief Psychiatric Rating Scale-Anchored Clinical Classification
+  ORRES the Same as BPRSA101 TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BPRSA1SET1OR
+      operator: in
+      value:
+        - Cannot be assessed adequately because of severe formal thought disorder,
+          uncooperativeness, or marked evasiveness/guardedness; or Not assessed
+        - Mild
+        - Moderate
+        - Moderately Severe
+        - Not reported
+        - Severe
+        - Very Mild
+        - Very Severe
+outcome:
+  message: Value not found in non-extensible codelist Brief Psychiatric Rating Scale-Anchored
+    Clinical Classification ORRES the Same as BPRSA101 TN/TC (C189689)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C189689
+  codelist_name: Brief Psychiatric Rating Scale-Anchored Clinical Classification ORRES
+    the Same as BPRSA101 TN/TC
+  codelist_submission_value: BPRSA1SET1OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 8
+

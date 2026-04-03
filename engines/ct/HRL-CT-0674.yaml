@@ -1,0 +1,49 @@
+id: HRL-CT-0674
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MCEQ01TC (Modified Cigarette Evaluation Questionnaire Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MCEQ01TC
+      operator: in
+      value:
+        - MCEQ0101
+        - MCEQ0102
+        - MCEQ0103
+        - MCEQ0104
+        - MCEQ0105
+        - MCEQ0106
+        - MCEQ0107
+        - MCEQ0108
+        - MCEQ0109
+        - MCEQ0110
+        - MCEQ0111
+        - MCEQ0112
+        - MCEQ0113
+        - MCEQ0114
+        - MCEQ0115
+        - MCEQ0116
+        - MCEQ0117
+        - MCEQ0118
+outcome:
+  message: Value not found in non-extensible codelist Modified Cigarette Evaluation
+    Questionnaire Test Code (C213934)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C213934
+  codelist_name: Modified Cigarette Evaluation Questionnaire Test Code
+  codelist_submission_value: MCEQ01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 18
+

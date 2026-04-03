@@ -1,0 +1,58 @@
+id: HRL-CT-0816
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL17TC (Pediatric Quality of Life Neuromuscular Module Acute Version
+  3 Young Child Parent Report Questionnaire Test Code) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL17TC
+      operator: in
+      value:
+        - PQL1701
+        - PQL1702
+        - PQL1703
+        - PQL1704
+        - PQL1705
+        - PQL1706
+        - PQL1707
+        - PQL1708
+        - PQL1709
+        - PQL1710
+        - PQL1711
+        - PQL1712
+        - PQL1713
+        - PQL1714
+        - PQL1715
+        - PQL1716
+        - PQL1717
+        - PQL1718
+        - PQL1719
+        - PQL1720
+        - PQL1721
+        - PQL1722
+        - PQL1723
+        - PQL1724
+        - PQL1725
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Acute Version 3 Young Child Parent Report Questionnaire Test Code (C138237)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138237
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Acute Version 3 Young
+    Child Parent Report Questionnaire Test Code
+  codelist_submission_value: PQL17TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

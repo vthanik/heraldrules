@@ -1,0 +1,75 @@
+id: HRL-CT-0461
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC063TC (Functional Assessment of Cancer Therapy-Taxane Version 4 Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC063TC
+      operator: in
+      value:
+        - FAC06301
+        - FAC06302
+        - FAC06303
+        - FAC06304
+        - FAC06305
+        - FAC06306
+        - FAC06307
+        - FAC06308
+        - FAC06309
+        - FAC06310
+        - FAC06311
+        - FAC06312
+        - FAC06313
+        - FAC06314
+        - FAC06315
+        - FAC06316
+        - FAC06317
+        - FAC06318
+        - FAC06319
+        - FAC06320
+        - FAC06321
+        - FAC06322
+        - FAC06323
+        - FAC06324
+        - FAC06325
+        - FAC06326
+        - FAC06327
+        - FAC06328
+        - FAC06329
+        - FAC06330
+        - FAC06331
+        - FAC06332
+        - FAC06333
+        - FAC06334
+        - FAC06335
+        - FAC06336
+        - FAC06337
+        - FAC06338
+        - FAC06339
+        - FAC06340
+        - FAC06341
+        - FAC06342
+        - FAC06343
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Taxane Version 4 Questionnaire Test Code (C150776)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150776
+  codelist_name: Functional Assessment of Cancer Therapy-Taxane Version 4 Questionnaire
+    Test Code
+  codelist_submission_value: FAC063TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 43
+

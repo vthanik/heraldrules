@@ -1,0 +1,35 @@
+id: HRL-CT-0257
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSTATE (Consciousness State) must contain valid extensible codelist terms
+  (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSTATE
+      operator: in
+      value:
+        - CONSCIOUS
+        - DEPRESSED
+        - SEMI-CONSCIOUS
+        - UNCONSCIOUS
+        - UNSPECIFIED
+outcome:
+  message: Value not found in extensible codelist Consciousness State (C90018)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C90018
+  codelist_name: Consciousness State
+  codelist_submission_value: CSTATE
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 5
+

@@ -1,0 +1,40 @@
+id: HRL-CT-0114
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: AUTEST (Auricular Findings Test Name) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: AUTEST
+      operator: in
+      value:
+        - Air Pressure
+        - Air to Bone Sound Conduction Comparison
+        - Auditory Brainstem Response
+        - Hearing Lateralization
+        - Hearing Loss Type
+        - Otoacoustic Emission
+        - Overall Hearing Assessment
+        - Physiological Compliance
+        - Tympanogram Tracing Type
+        - Volume
+outcome:
+  message: Value not found in extensible codelist Auricular Findings Test Name (C190862)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C190862
+  codelist_name: Auricular Findings Test Name
+  codelist_submission_value: AUTEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 10
+

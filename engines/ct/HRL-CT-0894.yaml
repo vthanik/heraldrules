@@ -1,0 +1,53 @@
+id: HRL-CT-0894
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: QIDSC1TC (Quick Inventory of Depressive Symptomatology Clinician-Rated
+  Version Clinical Classification Test Code) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: QIDSC1TC
+      operator: in
+      value:
+        - QIDSC101
+        - QIDSC102
+        - QIDSC103
+        - QIDSC104
+        - QIDSC105
+        - QIDSC106
+        - QIDSC107
+        - QIDSC108
+        - QIDSC109
+        - QIDSC110
+        - QIDSC111
+        - QIDSC112
+        - QIDSC113
+        - QIDSC114
+        - QIDSC115
+        - QIDSC116
+        - QIDSC117
+        - QIDSC118
+        - QIDSC119
+        - QIDSC120
+outcome:
+  message: Value not found in non-extensible codelist Quick Inventory of Depressive
+    Symptomatology Clinician-Rated Version Clinical Classification Test Code (C130249)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130249
+  codelist_name: Quick Inventory of Depressive Symptomatology Clinician-Rated Version
+    Clinical Classification Test Code
+  codelist_submission_value: QIDSC1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 20
+

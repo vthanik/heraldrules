@@ -1,0 +1,72 @@
+id: HRL-CT-1181
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: WD7TN (World Health Organization Disability Assessment Schedule 2.0 -
+  36-Item Self Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: WD7TN
+      operator: in
+      value:
+        - WD7-Care of Household Responsibilities
+        - WD7-Concentrating for Ten Minutes
+        - WD7-Days Unable to Carry Out Activities
+        - WD7-Dealing With People You Do Not Know
+        - WD7-Doing Important Household Tasks
+        - WD7-Doing Important Work/School Tasks
+        - WD7-Drain on Financial Resources
+        - WD7-Eating
+        - WD7-Emotionally Affected by Health
+        - WD7-Finding Solutions to Problems
+        - WD7-Get Along With People Close to You
+        - WD7-Getting All Work Done You Need
+        - WD7-Getting Dressed
+        - WD7-Getting Household Work Done Needed
+        - WD7-Getting Household Work Done Quickly
+        - WD7-Getting Out of Your Home
+        - WD7-Getting Work Done Quickly as Needed
+        - WD7-How Many Days Difficulties Present
+        - WD7-How Many Days Reduce Activities
+        - WD7-Learning a New Task
+        - WD7-Maintaining a Friendship
+        - WD7-Making New Friends
+        - WD7-Moving Around Inside Your Home
+        - WD7-Problem Because of Barriers in World
+        - WD7-Problem Did Your Family Have
+        - WD7-Problem Doing Things for Relaxation
+        - WD7-Problem Joining Community Activities
+        - WD7-Problem Living with Dignity
+        - WD7-Remembering to Do Important Things
+        - WD7-Sexual Activities
+        - WD7-Standing for Long Periods
+        - WD7-Standing Up From Sitting Down
+        - WD7-Starting/Maintaining Conversation
+        - WD7-Staying by Yourself for a Few Days
+        - WD7-Time Spend on Your Health Condition
+        - WD7-Understanding What People Say
+        - WD7-Walking a Long Distance
+        - WD7-Washing Your Whole Body
+        - WD7-Your Day-to-Day Work/School
+outcome:
+  message: Value not found in non-extensible codelist World Health Organization Disability
+    Assessment Schedule 2.0 - 36-Item Self Questionnaire Test Name (C130272)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130272
+  codelist_name: World Health Organization Disability Assessment Schedule 2.0 - 36-Item
+    Self Questionnaire Test Name
+  codelist_submission_value: WD7TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 39
+

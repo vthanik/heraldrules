@@ -1,0 +1,35 @@
+id: HRL-CT-0733
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: NYHAC (New York Heart Association Classification) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: NYHAC
+      operator: in
+      value:
+        - NYHA CLASS I
+        - NYHA CLASS II
+        - NYHA CLASS III
+        - NYHA CLASS IV
+outcome:
+  message: Value not found in non-extensible codelist New York Heart Association Classification
+    (C101839)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101839
+  codelist_name: New York Heart Association Classification
+  codelist_submission_value: NYHAC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

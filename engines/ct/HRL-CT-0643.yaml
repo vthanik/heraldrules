@@ -1,0 +1,35 @@
+id: HRL-CT-0643
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MCRCSPTM (Mechanical Circulatory Support Placement Timing) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MCRCSPTM
+      operator: in
+      value:
+        - IN PLACE AT START OF PROCEDURE
+        - INSERTED DURING A NON-PERCUTANEOUS CORONARY INTERVENTION PROCEDURE
+        - INSERTED DURING PROCEDURE AND AFTER PERCUTANEOUS CORONARY INTERVENTION STARTED
+        - INSERTED DURING PROCEDURE BUT PRIOR TO PERCUTANEOUS CORONARY INTERVENTION
+outcome:
+  message: Value not found in non-extensible codelist Mechanical Circulatory Support
+    Placement Timing (C101845)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101845
+  codelist_name: Mechanical Circulatory Support Placement Timing
+  codelist_submission_value: MCRCSPTM
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

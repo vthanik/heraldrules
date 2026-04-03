@@ -1,0 +1,32 @@
+id: HRL-CT-0938
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RUTG01TC (Rutgeerts Score Clinical Classification Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RUTG01TC
+      operator: in
+      value:
+        - RUTG0101
+outcome:
+  message: Value not found in non-extensible codelist Rutgeerts Score Clinical Classification
+    Test Code (C190932)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C190932
+  codelist_name: Rutgeerts Score Clinical Classification Test Code
+  codelist_submission_value: RUTG01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

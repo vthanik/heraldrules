@@ -1,0 +1,73 @@
+id: HRL-CT-1011
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SGRQC1TN (St. George's Respiratory Questionnaire for COPD Patients Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SGRQC1TN
+      operator: in
+      value:
+        - SGRQC1-Afraid When Cannot Catch Breath
+        - SGRQC1-Cannot Do Household Chores
+        - SGRQC1-Cannot Go Out for Entertainment
+        - SGRQC1-Cannot Go Out to Do Shopping
+        - SGRQC1-Cannot Move Far From My Bed
+        - SGRQC1-Cannot Play Sports
+        - SGRQC1-Cannot Take a Bath or Shower
+        - SGRQC1-Cough Is Embarrassing in Public
+        - SGRQC1-Coughing Disturbs My Sleep
+        - SGRQC1-Coughing Hurts
+        - SGRQC1-Coughing Makes Me Tired
+        - SGRQC1-Describe Your Current Health
+        - SGRQC1-Describe Your Resp Problems
+        - SGRQC1-Difficult to Carry Heavy Loads
+        - SGRQC1-Difficult to Walk Up Hills
+        - SGRQC1-Everything Too Much Effort
+        - SGRQC1-Exercise Is Not Safe for Me
+        - SGRQC1-Frail Because of Resp Problems
+        - SGRQC1-Get Exhausted Easily
+        - SGRQC1-How Many Respiratory Attacks
+        - SGRQC1-How Often Do You Have Good Days
+        - SGRQC1-How Resp Problems Affect You
+        - SGRQC1-I Bring Up Phlegm
+        - SGRQC1-I Cough
+        - SGRQC1-I Have Attacks of Wheezing
+        - SGRQC1-I Have Shortness of Breath
+        - SGRQC1-If I Hurry, I Have to Stop
+        - SGRQC1-Jobs Take a Long Time
+        - SGRQC1-Not in Control of Resp Problems
+        - SGRQC1-Respiratory Problems a Nuisance
+        - SGRQC1-Short of Breath When Bend Over
+        - SGRQC1-Short of Breath When Talk
+        - SGRQC1-Take a Long Time to Get Washed
+        - SGRQC1-Walk Slow Than Others My Age
+        - SGRQC1-Walk Up Flight of Stairs Slowly
+        - SGRQC1-Walking Around the House
+        - SGRQC1-Walking Outside on Level Ground
+        - SGRQC1-Walking Up a Flight of Stairs
+        - SGRQC1-Walking Up Hills
+        - SGRQC1-Washing or Dressing Yourself
+        - SGRQC1-Wheeze Worse in the Morning
+outcome:
+  message: Value not found in non-extensible codelist St. George's Respiratory Questionnaire
+    for COPD Patients Questionnaire Test Name (C106670)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106670
+  codelist_name: St. George's Respiratory Questionnaire for COPD Patients Questionnaire
+    Test Name
+  codelist_submission_value: SGRQC1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 41
+

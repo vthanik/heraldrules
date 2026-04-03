@@ -1,0 +1,121 @@
+id: HRL-CT-0798
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PODCI3TC (Pediatric Outcomes Data Collection Instrument, Adolescent Self-Reported
+  Version Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PODCI3TC
+      operator: in
+      value:
+        - PODCI301
+        - PODCI302
+        - PODCI303
+        - PODCI304
+        - PODCI305
+        - PODCI306
+        - PODCI307
+        - PODCI308
+        - PODCI309
+        - PODCI310
+        - PODCI311
+        - PODCI312
+        - PODCI313
+        - PODCI314
+        - PODCI315
+        - PODCI316
+        - PODCI317
+        - PODCI318
+        - PODCI319
+        - PODCI320
+        - PODCI321
+        - PODCI322
+        - PODCI323
+        - PODCI324
+        - PODCI325
+        - PODCI326
+        - PODCI327
+        - PODCI328
+        - PODCI329
+        - PODCI330
+        - PODCI331
+        - PODCI332
+        - PODCI333
+        - PODCI334
+        - PODCI335
+        - PODCI336
+        - PODCI337
+        - PODCI338
+        - PODCI339
+        - PODCI340
+        - PODCI341
+        - PODCI342
+        - PODCI343
+        - PODCI344
+        - PODCI345
+        - PODCI346
+        - PODCI347
+        - PODCI348
+        - PODCI349
+        - PODCI350
+        - PODCI351
+        - PODCI352
+        - PODCI353
+        - PODCI354
+        - PODCI355
+        - PODCI356
+        - PODCI357
+        - PODCI358
+        - PODCI359
+        - PODCI360
+        - PODCI361
+        - PODCI362
+        - PODCI363
+        - PODCI364
+        - PODCI365
+        - PODCI366
+        - PODCI367
+        - PODCI368
+        - PODCI369
+        - PODCI370
+        - PODCI371
+        - PODCI372
+        - PODCI373
+        - PODCI374
+        - PODCI375
+        - PODCI376
+        - PODCI377
+        - PODCI378
+        - PODCI379
+        - PODCI380
+        - PODCI381
+        - PODCI382
+        - PODCI383
+        - PODCI384
+        - PODCI385
+        - PODCI386
+        - PODCI387
+        - PODCI388
+        - PODCI389
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Outcomes Data Collection
+    Instrument, Adolescent Self-Reported Version Questionnaire Test Code (C135698)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C135698
+  codelist_name: Pediatric Outcomes Data Collection Instrument, Adolescent Self-Reported
+    Version Questionnaire Test Code
+  codelist_submission_value: PODCI3TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 89
+

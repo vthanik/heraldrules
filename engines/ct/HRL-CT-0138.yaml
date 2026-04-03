@@ -1,0 +1,47 @@
+id: HRL-CT-0138
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BPI2TC (Brief Pain Inventory Short Form Questionnaire Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BPI2TC
+      operator: in
+      value:
+        - BPI201
+        - BPI202A
+        - BPI202B
+        - BPI203
+        - BPI204
+        - BPI205
+        - BPI206
+        - BPI207
+        - BPI208
+        - BPI209A
+        - BPI209B
+        - BPI209C
+        - BPI209D
+        - BPI209E
+        - BPI209F
+        - BPI209G
+outcome:
+  message: Value not found in non-extensible codelist Brief Pain Inventory Short Form
+    Questionnaire Test Code (C100164)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100164
+  codelist_name: Brief Pain Inventory Short Form Questionnaire Test Code
+  codelist_submission_value: BPI2TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 16
+

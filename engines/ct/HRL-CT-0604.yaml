@@ -1,0 +1,48 @@
+id: HRL-CT-0604
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: KFSS104OR (Kurtzke Functional System Scores Clinical Classification ORRES
+  for KFSS104 TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: KFSS104OR
+      operator: in
+      value:
+        - Loss (essentially) of sensation in one or two limbs; or moderate decrease
+          in touch or pain and/or loss of proprioception for most of the body below
+          the head
+        - Marked decrease in touch or pain or loss of proprioception, alone or combined,
+          in one or two limbs; or moderate decrease in touch or pain and/or severe
+          proprioceptive decrease in more than two limbs
+        - Mild decrease in touch or pain or position sense, and/or moderate decrease
+          in vibration in one or two limbs; or vibratory (c/s figure writing) decrease
+          alone in three or four limbs
+        - Moderate decrease in touch or pain or position sense, and/or lost vibration
+          in 1 or 2 limbs; or mild decrease in touch or pain and/or moderate decrease
+          in all proprioceptive tests in 3 or 4 limbs
+        - Normal
+        - Sensation essentially lost below the head
+        - Unknown
+        - Vibration or figure-writing decrease only, in one or two limbs
+outcome:
+  message: Value not found in non-extensible codelist Kurtzke Functional System Scores
+    Clinical Classification ORRES for KFSS104 TN/TC (C182479)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C182479
+  codelist_name: Kurtzke Functional System Scores Clinical Classification ORRES for
+    KFSS104 TN/TC
+  codelist_submission_value: KFSS104OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 8
+

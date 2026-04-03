@@ -1,0 +1,82 @@
+id: HRL-CT-1176
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: WD5TC (World Health Organization Disability Assessment Schedule 2.0 -
+  36-Item Interviewer Questionnaire Test Code) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: WD5TC
+      operator: in
+      value:
+        - WD5A1
+        - WD5A2
+        - WD5A3
+        - WD5A4
+        - WD5A5
+        - WD5D1_1
+        - WD5D1_2
+        - WD5D1_3
+        - WD5D1_4
+        - WD5D1_5
+        - WD5D1_6
+        - WD5D2_1
+        - WD5D2_2
+        - WD5D2_3
+        - WD5D3_1
+        - WD5D3_2
+        - WD5D3_3
+        - WD5D3_4
+        - WD5D4_1
+        - WD5D4_2
+        - WD5D4_3
+        - WD5D4_4
+        - WD5D4_5
+        - WD5D5_01
+        - WD5D5_02
+        - WD5D5_1
+        - WD5D5_10
+        - WD5D5_2
+        - WD5D5_3
+        - WD5D5_4
+        - WD5D5_5
+        - WD5D5_6
+        - WD5D5_7
+        - WD5D5_8
+        - WD5D5_9
+        - WD5D6_1
+        - WD5D6_2
+        - WD5D6_3
+        - WD5D6_4
+        - WD5D6_5
+        - WD5D6_6
+        - WD5D6_7
+        - WD5D6_8
+        - WD5F5
+        - WD5H1
+        - WD5H2
+        - WD5H3
+        - WD5SD2_4
+        - WD5SD2_5
+outcome:
+  message: Value not found in non-extensible codelist World Health Organization Disability
+    Assessment Schedule 2.0 - 36-Item Interviewer Questionnaire Test Code (C130269)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130269
+  codelist_name: World Health Organization Disability Assessment Schedule 2.0 - 36-Item
+    Interviewer Questionnaire Test Code
+  codelist_submission_value: WD5TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 49
+

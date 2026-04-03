@@ -1,0 +1,254 @@
+id: HRL-CT-0418
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FATEST (Findings About Test Name) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FATEST
+      operator: in
+      value:
+        - Action Taken With Device
+        - Action Taken With Subject
+        - Acute Myocardial Infarction Type
+        - AE Improve/Resolve with Dechallenge Ind
+        - AE Reappear/Worsen with Rechallenge Ind
+        - Age At Disease Onset
+        - Age At First Episode
+        - Age At First Hospitalization
+        - Age At First Treatment
+        - Age at Full-Time Use
+        - Age Symptoms Started
+        - Allergen Skin Response Index
+        - Allergen Skin Response Intensity
+        - Anatomical Location of Primary Lesion
+        - Appearance
+        - Biopsy Specimen Taken Indicator
+        - Blistering Indicator
+        - Calories Burned
+        - Clinic Stay Indicator
+        - Clinical Status of Disease
+        - Contrast Enhancement Phase
+        - Coronary Artery Thrombosis Method Ident
+        - Cumulative Exposure
+        - Diagnostic Criteria Met
+        - Diameter
+        - Dietary Added Sugar
+        - Dietary Added Vitamin B12
+        - Dietary Added Vitamin E
+        - Dietary Alcohol
+        - Dietary Alpha Carotene
+        - Dietary Alpha Tocopherol
+        - Dietary Arachidonic Acid
+        - Dietary Beans and Peas
+        - Dietary Beta Carotene
+        - Dietary Beta-Cryptoxanthin
+        - Dietary Butyric Acid
+        - Dietary Caffeine
+        - Dietary Calcium
+        - Dietary Calories
+        - Dietary Capric Acid
+        - Dietary Caproic Acid
+        - Dietary Caprylic Acid
+        - Dietary Cheese
+        - Dietary Cholesterol
+        - Dietary Choline
+        - Dietary Citrus, Melons, and Berries
+        - Dietary Clupanodonic Acid
+        - Dietary Copper
+        - Dietary Docosahexaenoic Acid
+        - Dietary Eggs
+        - Dietary Erucic Acid
+        - Dietary Fat, Monounsaturated
+        - Dietary Fat, Polyunsaturated
+        - Dietary Fat, Saturated
+        - Dietary Fat, Total
+        - Dietary Fiber
+        - Dietary Folate Equivalents
+        - Dietary Folic Acid
+        - Dietary Food Folate
+        - Dietary Fruit Juice
+        - Dietary Fruit
+        - Dietary Gadoleic Acid
+        - Dietary Grain
+        - Dietary Grain, Refined
+        - Dietary Iron
+        - Dietary Lauric Acid
+        - Dietary Linoleic Acid
+        - Dietary Linolenic Acid
+        - Dietary Lutein and Zeaxanthin
+        - Dietary Lycopene
+        - Dietary Magnesium
+        - Dietary Meat
+        - Dietary Meat, Cured
+        - Dietary Meat, Organ
+        - Dietary Meat, Poultry, and Seafood
+        - Dietary Milk
+        - Dietary Moisture
+        - Dietary Myristic Acid
+        - Dietary Niacin
+        - Dietary Nuts and Seeds
+        - Dietary Oils
+        - Dietary Oleic Acid
+        - Dietary Palmitic Acid
+        - Dietary Palmitoleic Acid
+        - Dietary Parinaric Acid
+        - Dietary Phosphorus
+        - Dietary Potassium
+        - Dietary Potatoes
+        - Dietary Poultry
+        - Dietary Protein Foods
+        - Dietary Protein
+        - Dietary Retinol
+        - Dietary Riboflavin
+        - Dietary Seafood High in n-3 Fatty Acids
+        - Dietary Seafood Low in n-3 Fatty Acids
+        - Dietary Selenium
+        - Dietary Sodium
+        - Dietary Solid Fats
+        - Dietary Soy Products
+        - Dietary Stearic Acid
+        - Dietary Theobromine
+        - Dietary Thiamine
+        - Dietary Timnodonic Acid
+        - Dietary Tomatoes
+        - Dietary Total Carbohydrate
+        - Dietary Total Dairy
+        - Dietary Total Folate
+        - Dietary Total Sugars
+        - Dietary Vegetable
+        - Dietary Vegetables, Dark Green
+        - Dietary Vegetables, Red and Orange
+        - Dietary Vegetables, Starchy
+        - Dietary Vitamin A
+        - Dietary Vitamin B12
+        - Dietary Vitamin B6
+        - Dietary Vitamin C
+        - Dietary Vitamin D
+        - Dietary Vitamin K
+        - Dietary Whole Grains
+        - Dietary Yogurt
+        - Dietary Zinc
+        - Disease Stage
+        - Dispensed Amount
+        - Distance
+        - Distribution
+        - Drug Resistance Status
+        - Endpoint Event Indicator
+        - Estimated Weight
+        - Event Frequency
+        - Event Related to Incr Phys Activity Ind
+        - Exclusion of Type 1 and Type 2 MI
+        - Exercise Compliance
+        - Exercise Duration
+        - Exercise Intensity
+        - Expected Efficacious Treatment Reg Ind
+        - Extent of Resection
+        - Final Dose Amount
+        - Fistula Anatomical Type
+        - Flare Longest Diameter
+        - Flare Mean Diameter
+        - Flare Size
+        - Frequency of Final Dose Amount
+        - Frequency of Maximum Dose Amount
+        - Greatest Circ at Point of Interest
+        - Healthcare Encounter Type
+        - Heart Failure New/Worsening Lab Findings
+        - Heart Failure New/Worsening PE Findings
+        - Heart Failure Therapy, Intensification
+        - Ileocecal Junction Removed Indicator
+        - Induration Longest Diameter
+        - Interpretation
+        - Ischemic Discomfort Indicator
+        - Ischemic Evidence Type
+        - Length of Resection
+        - Localization of Onset
+        - Longest Diameter of Primary Lesion
+        - Longest Diameter
+        - Longitudinal Course
+        - Maximum Dose Amount
+        - Most Severe Acute Stressor
+        - Most Severe Chronic Stressor
+        - Nearest Joint
+        - Needle Gauge
+        - New or Worsening Symptoms
+        - Non-Invasive Imaging Change
+        - Number of Abscesses
+        - Number of Alcoholic Drinks
+        - Number of Biopsy Specimens Taken
+        - Number of Devices Inserted
+        - Number of Devices Present
+        - Number of Episodes
+        - Number of Events
+        - Number of Fistulas
+        - Number Of Hospitalizations
+        - Number of Laps Completed
+        - Number of Lesions
+        - Number of Mild Episodes
+        - Number of Moderate Episodes
+        - Number of Objects
+        - Number of Procedures Performed
+        - Number of Severe Episodes
+        - Number of Steps Taken
+        - Number of Strictures
+        - Occurrence Indicator
+        - Onset Unifocal or Multifocal
+        - Origin of Cancer Known Ind
+        - Pathologic Appearance of Biopsy Site
+        - PCI Acute Angiographic Complication
+        - Precipitating Factor
+        - Prepared Amount
+        - Prevents Daily Activities Indicator
+        - Primary Site of Tumor Origin
+        - Procedure Success Indicator
+        - Procedure Urgency Status Type
+        - Pruritus Indicator
+        - QOL Impact
+        - Reaction Grade
+        - Relapse after Discon Dependent Indicator
+        - Relationship to Device
+        - Remaining Amount
+        - Resected Tumor Ind
+        - Returned Amount
+        - Severity/Intensity
+        - Sign/Symptom Leading to Discontinuation
+        - Speed
+        - Stent Thrombosis, Coronary, ARC Timing
+        - Stroke Type
+        - Substance Dependence Indicator
+        - Symptom Indicator
+        - Symptom Onset Date
+        - Total Number
+        - Total Time Paused
+        - Total Time Physically Active
+        - Toxicity Grade
+        - Treatment Setting
+        - Type of Object
+        - Unable to Discon Dependent Indicator
+        - Unable to Taper Dependent Indicator
+        - Vessel Occlusion After CABG 48 Ind
+        - Volume
+        - Wheal Diameter Interpretation
+        - Wheal Longest Diameter
+        - Wheal Mean Diameter
+        - Wheal Size
+outcome:
+  message: Value not found in extensible codelist Findings About Test Name (C101833)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101833
+  codelist_name: Findings About Test Name
+  codelist_submission_value: FATEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 224
+

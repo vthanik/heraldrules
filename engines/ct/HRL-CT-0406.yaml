@@ -1,0 +1,60 @@
+id: HRL-CT-0406
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ESRSA1TC (Extrapyramidal Symptom Rating Scale-Abbreviated Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ESRSA1TC
+      operator: in
+      value:
+        - ESRSA101
+        - ESRSA102
+        - ESRSA103
+        - ESRSA104
+        - ESRSA105
+        - ESRSA106
+        - ESRSA107
+        - ESRSA108
+        - ESRSA109
+        - ESRSA110
+        - ESRSA111
+        - ESRSA112
+        - ESRSA113
+        - ESRSA114
+        - ESRSA115
+        - ESRSA116
+        - ESRSA117
+        - ESRSA118
+        - ESRSA119
+        - ESRSA120
+        - ESRSA121
+        - ESRSA122
+        - ESRSA123
+        - ESRSA124
+        - ESRSA125
+        - ESRSA126
+        - ESRSA127
+        - ESRSA128
+outcome:
+  message: Value not found in non-extensible codelist Extrapyramidal Symptom Rating
+    Scale-Abbreviated Clinical Classification Test Code (C117991)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C117991
+  codelist_name: Extrapyramidal Symptom Rating Scale-Abbreviated Clinical Classification
+    Test Code
+  codelist_submission_value: ESRSA1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 28
+

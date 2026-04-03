@@ -1,0 +1,41 @@
+id: HRL-CT-0679
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MHIS01TN (Modified Hachinski Ischemic Scale-NACC Version Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MHIS01TN
+      operator: in
+      value:
+        - MHIS01- Somatic Complaints
+        - MHIS01-Abrupt Onset
+        - MHIS01-Emotional Incontinence
+        - MHIS01-Focal Neurological Signs
+        - MHIS01-Focal Neurological Symptoms
+        - MHIS01-History of Stroke
+        - MHIS01-History or Presence Hypertension
+        - MHIS01-Stepwise Deterioration
+        - MHIS01-Total Score
+outcome:
+  message: Value not found in non-extensible codelist Modified Hachinski Ischemic
+    Scale-NACC Version Questionnaire Test Name (C112444)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C112444
+  codelist_name: Modified Hachinski Ischemic Scale-NACC Version Questionnaire Test
+    Name
+  codelist_submission_value: MHIS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 9
+

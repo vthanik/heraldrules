@@ -1,0 +1,40 @@
+id: HRL-CT-0415
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FSS01TN (Fatigue Severity Scale Questionnaire Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FSS01TN
+      operator: in
+      value:
+        - FSS01-Among My 3 Most Disabling Symptoms
+        - FSS01-Exercise Brings on My Fatigue
+        - FSS01-Fatigue Causes Frequent Problems
+        - FSS01-Fatigue Interferes With Duties
+        - FSS01-Fatigue Interferes With My Life
+        - FSS01-I Am Easily Fatigued
+        - FSS01-Interferes With Phys Function
+        - FSS01-Motivation Is Lower When Fatigued
+        - FSS01-Prevents Sustained Phys Function
+outcome:
+  message: Value not found in non-extensible codelist Fatigue Severity Scale Questionnaire
+    Test Name (C113849)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C113849
+  codelist_name: Fatigue Severity Scale Questionnaire Test Name
+  codelist_submission_value: FSS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 9
+

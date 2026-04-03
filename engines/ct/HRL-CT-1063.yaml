@@ -1,0 +1,54 @@
+id: HRL-CT-1063
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EPIC2TN (The Expanded Prostate Cancer Index Composite for Clinical Practice
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EPIC2TN
+      operator: in
+      value:
+        - EPIC2-Best Describes Urinary Control
+        - EPIC2-Bowel Symptom Score
+        - EPIC2-Overall Problem Bowel Habits
+        - EPIC2-Overall Problem Sexual Function
+        - EPIC2-Overall Problem Urinary Function
+        - EPIC2-Overall Prostate Cancer QOL Score
+        - EPIC2-Pads or Adult Diapers per Day
+        - EPIC2-Problem Feeling Depressed
+        - EPIC2-Problem Hot Flash/Breast Tender
+        - EPIC2-Problem Increased Freq Bowel Move
+        - EPIC2-Problem Lack of Energy
+        - EPIC2-Problem Need to Urinate Frequently
+        - EPIC2-Problem Pain/Burning w/Urination
+        - EPIC2-Problem Rectal Pain/Urgent Bowel
+        - EPIC2-Problem Urinary Dripping/Leakage
+        - EPIC2-Problem Weak Stream/Incompl Empty
+        - EPIC2-Quality of Your Erections
+        - EPIC2-Rate Ability to Reach Orgasm
+        - EPIC2-Sexual Symptom Score
+        - EPIC2-Urinary Incontinence Symptom Score
+        - EPIC2-Urinary Irrit/Obstr Symptom Score
+        - EPIC2-Vitality/Hormonal Symptom Score
+outcome:
+  message: Value not found in non-extensible codelist The Expanded Prostate Cancer
+    Index Composite for Clinical Practice Questionnaire Test Name (C127351)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C127351
+  codelist_name: The Expanded Prostate Cancer Index Composite for Clinical Practice
+    Questionnaire Test Name
+  codelist_submission_value: EPIC2TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 22
+

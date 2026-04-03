@@ -1,0 +1,72 @@
+id: HRL-CT-0079
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ADL02TN (Alzheimer's Disease Cooperative Study-Activities of Daily Living
+  Inventory Severe Dementia Version Questionnaire Test Name) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ADL02TN
+      operator: in
+      value:
+        - ADL02-Clear Dishes Usual Performance
+        - ADL02-Clear Dishes
+        - ADL02-Dispose Garbage Usual Performance
+        - ADL02-Dispose of Garbage
+        - ADL02-Find Belongings Usual Performance
+        - ADL02-Find Belongings
+        - ADL02-Get Around Optimal Performance
+        - ADL02-Get Around Outside Home
+        - ADL02-Highest Telephone Use Performance
+        - ADL02-Left at Home for 1 Hour or Longer
+        - ADL02-Left at Home for Less Than 1 Hour
+        - ADL02-Left Away From Home
+        - ADL02-Left On His/Her Own
+        - ADL02-Obtain Beverage Highest Perform
+        - ADL02-Obtain Beverage
+        - ADL02-Optimal Grooming Performance
+        - ADL02-Optimal Walking Performance
+        - ADL02-Pay Attention to Conversation
+        - ADL02-Run Water Faucet to Wash
+        - ADL02-Select Television Program
+        - ADL02-Sum 1 to 5
+        - ADL02-Sum 13 to 15
+        - ADL02-Sum 16 to 19
+        - ADL02-Sum 6 to 8
+        - ADL02-Sum 9 to 12
+        - ADL02-Talk About TV Content While Watch
+        - ADL02-Talk About TV Content Within a Day
+        - ADL02-Total ADCS-ADL Score
+        - ADL02-Turn Off Faucet
+        - ADL02-Turn Off Light
+        - ADL02-Turn On Light
+        - ADL02-Use a Telephone
+        - ADL02-Usual Bathing Performance
+        - ADL02-Usual Bowel/Bladder Function
+        - ADL02-Usual Conversation Participation
+        - ADL02-Usual Eating Performance
+        - ADL02-Usual Physically Dressing Perform
+        - ADL02-Watch Television
+outcome:
+  message: Value not found in non-extensible codelist Alzheimer's Disease Cooperative
+    Study-Activities of Daily Living Inventory Severe Dementia Version Questionnaire
+    Test Name (C106652)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106652
+  codelist_name: Alzheimer's Disease Cooperative Study-Activities of Daily Living
+    Inventory Severe Dementia Version Questionnaire Test Name
+  codelist_submission_value: ADL02TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 38
+

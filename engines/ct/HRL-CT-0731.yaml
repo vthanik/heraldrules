@@ -1,0 +1,184 @@
+id: HRL-CT-0731
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: NPI1TN (Neuropsychiatric Inventory Questionnaire Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: NPI1TN
+      operator: in
+      value:
+        - NPI1-Aberrant Motor Behavior Distress
+        - NPI1-Aberrant Motor Behavior Frequency
+        - NPI1-Aberrant Motor Behavior FxS Score
+        - NPI1-Aberrant Motor Behavior Severity
+        - NPI1-Act Impulsively without Care
+        - NPI1-Act Impulsively
+        - NPI1-Agitation/Aggression Distress
+        - NPI1-Agitation/Aggression Frequency
+        - NPI1-Agitation/Aggression FxS Score
+        - NPI1-Agitation/Aggression Severity
+        - NPI1-Anxiety Distress
+        - NPI1-Anxiety Frequency
+        - NPI1-Anxiety FxS Score
+        - NPI1-Anxiety Severity
+        - NPI1-Apathy/Indifference Distress
+        - NPI1-Apathy/Indifference Frequency
+        - NPI1-Apathy/Indifference FxS Score
+        - NPI1-Apathy/Indifference Severity
+        - NPI1-Appetite/Eating Disorder Distress
+        - NPI1-Appetite/Eating Disorder Frequency
+        - NPI1-Appetite/Eating Disorder Severity
+        - NPI1-Appetite/Eating Disorders FxS Score
+        - NPI1-Argumentative
+        - NPI1-Avoid Places or Situations
+        - NPI1-Awaken Caregiver during Night
+        - NPI1-Awaken Too Early in Morning
+        - NPI1-Bad Person
+        - NPI1-Bad Temper
+        - NPI1-Beliefs Untrue
+        - NPI1-Burden to Family
+        - NPI1-Butterflies or Racing Heart
+        - NPI1-Change in Appetite or Weight
+        - NPI1-Change in Eating Behavior
+        - NPI1-Change in Kind of Food
+        - NPI1-Childish Pranks
+        - NPI1-Childish Sense of Humor
+        - NPI1-Contribute Less to Chores
+        - NPI1-Cranky and Irritable
+        - NPI1-Delusions Distress
+        - NPI1-Delusions Frequency
+        - NPI1-Delusions FxS Score
+        - NPI1-Delusions Severity
+        - NPI1-Depression/Dysphoria Distress
+        - NPI1-Depression/Dysphoria Frequency
+        - NPI1-Depression/Dysphoria FxS Score
+        - NPI1-Depression/Dysphoria Severity
+        - NPI1-Develop Eating Behaviors
+        - NPI1-Difficulty Falling Asleep
+        - NPI1-Difficulty Sleeping
+        - NPI1-Discouraged
+        - NPI1-Disinhibition Distress
+        - NPI1-Disinhibition Frequency
+        - NPI1-Disinhibition FxS Score
+        - NPI1-Disinhibition Severity
+        - NPI1-Do Things Repeatedly
+        - NPI1-Elation/Euphoria Distress
+        - NPI1-Elation/Euphoria Frequency
+        - NPI1-Elation/Euphoria FxS Score
+        - NPI1-Elation/Euphoria Severity
+        - NPI1-Excessive Sleep during Day
+        - NPI1-False Visions or Voices
+        - NPI1-Family Plans to Abandon
+        - NPI1-Feel Good or Too Happy
+        - NPI1-Feel Like a Failure
+        - NPI1-Feel Things on Skin
+        - NPI1-Fidget Excessively
+        - NPI1-Get Up during Night
+        - NPI1-Get Upset with Caregiver
+        - NPI1-Hallucinations Distress
+        - NPI1-Hallucinations Frequency
+        - NPI1-Hallucinations FxS Score
+        - NPI1-Hallucinations Severity
+        - NPI1-Hearing Voices
+        - NPI1-House Not Their Home
+        - NPI1-Humor Others Do Not Find Funny
+        - NPI1-Hurt or Hit Others
+        - NPI1-Impatient
+        - NPI1-In Danger
+        - NPI1-Increase in Appetite
+        - NPI1-Irritability/Lability Distress
+        - NPI1-Irritability/Lability Frequency
+        - NPI1-Irritability/Lability FxS Score
+        - NPI1-Irritability/Lability Severity
+        - NPI1-Irritated and Easily Disturbed
+        - NPI1-Jokes Others Do Not Find Funny
+        - NPI1-Less Affectionate
+        - NPI1-Less Enthusiastic
+        - NPI1-Less Interest in Activities
+        - NPI1-Less Likely Initiate Conversation
+        - NPI1-Less Spontaneous or Active
+        - NPI1-Loss of Appetite
+        - NPI1-Lost Interest in Friends
+        - NPI1-Lost Interest in World
+        - NPI1-Make Crude Remarks
+        - NPI1-Nervous or Worried
+        - NPI1-Nervous when Separated
+        - NPI1-NPI Total Distress Score
+        - NPI1-NPI Total Score
+        - NPI1-Other Aggressive Behavior
+        - NPI1-Other Behaviors Hard to Handle
+        - NPI1-Other Changes in Eating
+        - NPI1-Other Nighttime Behaviors
+        - NPI1-Other Repetitive Activities
+        - NPI1-Other Signs of Anxiety
+        - NPI1-Other Signs of Depression
+        - NPI1-Other Signs of Feeling Too Happy
+        - NPI1-Other Signs of Impulses
+        - NPI1-Other Signs of Irritability
+        - NPI1-Other Signs of Not Caring
+        - NPI1-Other Unusual Beliefs
+        - NPI1-Other Unusual Sensory Experience
+        - NPI1-Others Are Stealing
+        - NPI1-Pace
+        - NPI1-People Not Who They Claim
+        - NPI1-Rapidly Change Moods
+        - NPI1-Refuse to Cooperate
+        - NPI1-Repeatedly Change Clothing
+        - NPI1-Repetitive Activities or Habits
+        - NPI1-Repetitive Activities
+        - NPI1-Rummage Around and Unpack
+        - NPI1-Sad or Depressed
+        - NPI1-Say Insensitive Things
+        - NPI1-Say or Act in Low Spirits
+        - NPI1-See Things Not Seen by Others
+        - NPI1-Shaky or Unable to Relax
+        - NPI1-Short of Breath, Gasp, Sigh
+        - NPI1-Shout or Curse Angrily
+        - NPI1-Slam, Kick or Throw Things
+        - NPI1-Sleep/Night Behav Disord FxS Score
+        - NPI1-Sleep/Nighttime Behavior Distress
+        - NPI1-Sleep/Nighttime Behavior Frequency
+        - NPI1-Sleep/Nighttime Behavior Severity
+        - NPI1-Smell Odors Others Do Not Smell
+        - NPI1-Spouse Having Affair
+        - NPI1-Stubborn
+        - NPI1-Sudden Anger
+        - NPI1-Take Liberties or Touch Others
+        - NPI1-Talk Big
+        - NPI1-Talk Openly about Private Matters
+        - NPI1-Talk to People Not There
+        - NPI1-Talk to Strangers
+        - NPI1-Taste without Known Cause
+        - NPI1-Tearfulness or Sobbing
+        - NPI1-Too Cheerful or Happy
+        - NPI1-TV/Magazine Figures Present
+        - NPI1-Uncooperative
+        - NPI1-Unwelcome Guests in House
+        - NPI1-Wake at Night and Think Morning
+        - NPI1-Wander or Pace at Night
+        - NPI1-Weight Gain
+        - NPI1-Weight Loss
+        - NPI1-Wish for Death
+        - NPI1-Worried about Planned Event
+outcome:
+  message: Value not found in non-extensible codelist Neuropsychiatric Inventory Questionnaire
+    Test Name (C100143)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100143
+  codelist_name: Neuropsychiatric Inventory Questionnaire Test Name
+  codelist_submission_value: NPI1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 153
+

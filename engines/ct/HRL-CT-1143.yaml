@@ -1,0 +1,59 @@
+id: HRL-CT-1143
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: VSRESU (Units for Vital Signs Results) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: VSRESU
+      operator: in
+      value:
+        - '%'
+        - beats/min
+        - breaths/min
+        - C
+        - cm
+        - cmHg
+        - dL
+        - F
+        - ft
+        - g
+        - Hz
+        - in
+        - K
+        - kcal/day
+        - kg
+        - kg/m2
+        - L
+        - LB
+        - m
+        - m2
+        - MET
+        - mm
+        - mmHg
+        - ms
+        - oz
+        - Pa
+        - RATIO
+        - s
+        - Watt
+outcome:
+  message: Value not found in extensible codelist Units for Vital Signs Results (C66770)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C66770
+  codelist_name: Units for Vital Signs Results
+  codelist_submission_value: VSRESU
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 29
+

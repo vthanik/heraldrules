@@ -1,0 +1,47 @@
+id: HRL-CT-1007
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CLMETH (Specimen Collection Method) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CLMETH
+      operator: in
+      value:
+        - ASPIRATION
+        - BIOPSY
+        - BIOPSY, CORE
+        - CLEAN CATCH MID-STREAM
+        - COLLECTED BY CATHETER
+        - CURETTAGE
+        - EXPECTORATION
+        - FINE NEEDLE ASPIRATION
+        - FINGERSTICK
+        - GRAVITY DRIP
+        - IMPRESSION CYTOLOGY
+        - INDUCED EXPECTORATION
+        - LAVAGE
+        - LEUKAPHERESIS
+        - SURGICAL RESECTION
+        - SWAB
+        - TAPE ADHESION
+outcome:
+  message: Value not found in extensible codelist Specimen Collection Method (C132314)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C132314
+  codelist_name: Specimen Collection Method
+  codelist_submission_value: CLMETH
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 17
+

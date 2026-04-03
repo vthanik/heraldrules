@@ -1,0 +1,85 @@
+id: HRL-CT-0443
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC015TC (Functional Assessment of Cancer Therapy-Hepatobiliary Version
+  4 Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC015TC
+      operator: in
+      value:
+        - FAC01501
+        - FAC01502
+        - FAC01503
+        - FAC01504
+        - FAC01505
+        - FAC01506
+        - FAC01507
+        - FAC01508
+        - FAC01509
+        - FAC01510
+        - FAC01511
+        - FAC01512
+        - FAC01513
+        - FAC01514
+        - FAC01515
+        - FAC01516
+        - FAC01517
+        - FAC01518
+        - FAC01519
+        - FAC01520
+        - FAC01521
+        - FAC01522
+        - FAC01523
+        - FAC01524
+        - FAC01525
+        - FAC01526
+        - FAC01527
+        - FAC01528
+        - FAC01529
+        - FAC01530
+        - FAC01531
+        - FAC01532
+        - FAC01533
+        - FAC01534
+        - FAC01535
+        - FAC01536
+        - FAC01537
+        - FAC01538
+        - FAC01539
+        - FAC01540
+        - FAC01541
+        - FAC01542
+        - FAC01543
+        - FAC01544
+        - FAC01545
+        - FAC01546
+        - FAC01547
+        - FAC01548
+        - FAC01549
+        - FAC01550
+        - FAC01551
+        - FAC01552
+        - FAC01553
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Hepatobiliary Version 4 Questionnaire Test Code (C130255)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130255
+  codelist_name: Functional Assessment of Cancer Therapy-Hepatobiliary Version 4 Questionnaire
+    Test Code
+  codelist_submission_value: FAC015TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 53
+

@@ -1,0 +1,33 @@
+id: HRL-CT-0475
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC101TC (Functional Assessment of Chronic Illness Therapy-Item GP5 Version
+  4 Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC101TC
+      operator: in
+      value:
+        - FAC10101
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Chronic
+    Illness Therapy-Item GP5 Version 4 Questionnaire Test Code (C199493)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C199493
+  codelist_name: Functional Assessment of Chronic Illness Therapy-Item GP5 Version
+    4 Questionnaire Test Code
+  codelist_submission_value: FAC101TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

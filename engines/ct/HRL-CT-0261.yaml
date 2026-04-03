@@ -1,0 +1,35 @@
+id: HRL-CT-0261
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: COWAT1TC (Controlled Oral Word Association Test Functional Test Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: COWAT1TC
+      operator: in
+      value:
+        - COWAT101
+        - COWAT102
+        - COWAT103
+        - COWAT104
+outcome:
+  message: Value not found in non-extensible codelist Controlled Oral Word Association
+    Test Functional Test Test Code (C150766)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150766
+  codelist_name: Controlled Oral Word Association Test Functional Test Test Code
+  codelist_submission_value: COWAT1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

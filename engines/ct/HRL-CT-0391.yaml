@@ -1,0 +1,52 @@
+id: HRL-CT-0391
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR20TC (European Organization for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Oesophageal Cancer 18 Items Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR20TC
+      operator: in
+      value:
+        - EOR2031
+        - EOR2032
+        - EOR2033
+        - EOR2034
+        - EOR2035
+        - EOR2036
+        - EOR2037
+        - EOR2038
+        - EOR2039
+        - EOR2040
+        - EOR2041
+        - EOR2042
+        - EOR2043
+        - EOR2044
+        - EOR2045
+        - EOR2046
+        - EOR2047
+        - EOR2048
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Oesophageal Cancer
+    18 Items Test Code (C219733)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219733
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Oesophageal Cancer 18 Items Test Code
+  codelist_submission_value: EOR20TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 18
+

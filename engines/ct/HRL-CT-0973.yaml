@@ -1,0 +1,40 @@
+id: HRL-CT-0973
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SEXORIRS (Sexual Orientation Response) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SEXORIRS
+      operator: in
+      value:
+        - AROMANTIC
+        - ASEXUAL
+        - BISEXUAL
+        - GAY
+        - LESBIAN
+        - NOT REPORTED
+        - PANSEXUAL
+        - QUEER
+        - STRAIGHT OR HETEROSEXUAL
+        - UNKNOWN
+outcome:
+  message: Value not found in extensible codelist Sexual Orientation Response (C209290)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C209290
+  codelist_name: Sexual Orientation Response
+  codelist_submission_value: SEXORIRS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 10
+

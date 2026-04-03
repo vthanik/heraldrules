@@ -1,0 +1,47 @@
+id: HRL-CT-0737
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: OIPRM (Non-host Organism Identifier Parameters) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: OIPRM
+      operator: in
+      value:
+        - Clade
+        - Genotype
+        - Geographical Origin
+        - Group
+        - Isolate
+        - Lineage
+        - NCBI GenBank ID
+        - NCBI Taxonomy ID
+        - Pathotype
+        - Pseudotype Viral Backbone
+        - Species
+        - Spoligotype
+        - Strain
+        - Subtype
+        - Type
+        - Year of Collection
+outcome:
+  message: Value not found in extensible codelist Non-host Organism Identifier Parameters
+    (C179590)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C179590
+  codelist_name: Non-host Organism Identifier Parameters
+  codelist_submission_value: OIPRM
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 16
+

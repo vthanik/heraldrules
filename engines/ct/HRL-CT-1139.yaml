@@ -1,0 +1,144 @@
+id: HRL-CT-1139
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: UHDR1TN (Unified Huntington's Disease Rating Scale '99 Clinical Classification
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: UHDR1TN
+      operator: in
+      value:
+        - 'UDHR1-Compulsive Behavior: Severity'
+        - UDHR1-Confusion Altered Performance
+        - 'UDHR1-Delusions: Severity'
+        - UDHR1-Dementia Altered Performance
+        - 'UDHR1-Disruptive Behavior: Severity'
+        - UDHR1-Examiner Believe Signs Depression
+        - UDHR1-Examiner Believe Signs of Dementia
+        - UDHR1-Examiner Believe Subject Confused
+        - 'UDHR1-Hallucinations: Severity'
+        - 'UDHR1-Perseverative Thinking: Severity'
+        - UHDR1-ADL
+        - 'UHDR1-Anxiety: Frequency'
+        - 'UHDR1-Anxiety: Severity'
+        - UHDR1-Any Gainful Employment
+        - 'UHDR1-Apathy: Frequency'
+        - 'UHDR1-Apathy: Severity'
+        - UHDR1-Bathe Himself/Herself Without Help
+        - UHDR1-Behavior Assessment Obtained From
+        - UHDR1-Behavior Subscale Score
+        - UHDR1-Believe Subject Has Manifest HD
+        - 'UHDR1-Bradykinesia: Body'
+        - UHDR1-Care Level
+        - UHDR1-Care Provided at Home
+        - UHDR1-Comb Hair Without Help
+        - 'UHDR1-Compulsive Behavior: Frequency'
+        - UHDR1-Continue to Be Assessed for Study
+        - UHDR1-Current Level Subject Independence
+        - 'UHDR1-Delusions: Frequency'
+        - 'UHDR1-Depressed Mood: Frequency'
+        - 'UHDR1-Depressed Mood: Severity'
+        - UHDR1-Diagnosis Confidence Level
+        - 'UHDR1-Disruptive Behavior: Frequency'
+        - UHDR1-Do Housework Without Help
+        - UHDR1-Do Laundry Without Help
+        - UHDR1-Domestic Chores
+        - UHDR1-Dress Himself/Herself Without Help
+        - UHDR1-Dysarthria
+        - UHDR1-Feed Himself/Herself Without Help
+        - UHDR1-Finances
+        - 'UHDR1-Finger Taps: Left'
+        - 'UHDR1-Finger Taps: Right'
+        - UHDR1-Functional Assess Obtained From
+        - UHDR1-Functional Capacity Obtained From
+        - UHDR1-Functional Checklist Score
+        - UHDR1-Gainful Employment Accustomed Work
+        - UHDR1-Gait
+        - UHDR1-Get in and Out of Bed Without Help
+        - 'UHDR1-Hallucinations: Frequency'
+        - UHDR1-Handle Money as Purchaser
+        - UHDR1-Independence Scale Score
+        - 'UHDR1-Irritable Behavior: Frequency'
+        - 'UHDR1-Irritable Behavior: Severity'
+        - UHDR1-Luria
+        - UHDR1-Manage Finances Without Help
+        - 'UHDR1-Maximal Chorea: BOL'
+        - 'UHDR1-Maximal Chorea: Face'
+        - 'UHDR1-Maximal Chorea: LLE'
+        - 'UHDR1-Maximal Chorea: LUE'
+        - 'UHDR1-Maximal Chorea: RLE'
+        - 'UHDR1-Maximal Chorea: RUE'
+        - 'UHDR1-Maximal Chorea: Trunk'
+        - 'UHDR1-Maximal Dystonia: LLE'
+        - 'UHDR1-Maximal Dystonia: LUE'
+        - 'UHDR1-Maximal Dystonia: RLE'
+        - 'UHDR1-Maximal Dystonia: RUE'
+        - 'UHDR1-Maximal Dystonia: Trunk'
+        - UHDR1-Mood Subscale Score
+        - UHDR1-Obsessive Subscale Score
+        - UHDR1-Occupation
+        - 'UHDR1-Ocular Pursuit: Horizontal'
+        - 'UHDR1-Ocular Pursuit: Vertical'
+        - UHDR1-Operate Automobile Safely
+        - UHDR1-Permanently Institutionalized
+        - 'UHDR1-Perseverative Thinking: Frequency'
+        - UHDR1-Pharmacotherapy of Depression
+        - UHDR1-Pharmacotherapy of Irritability
+        - UHDR1-Prepare Own Meals Without Help
+        - 'UHDR1-Pronate/Supinate: Hands: Left'
+        - 'UHDR1-Pronate/Supinate: Hands: Right'
+        - UHDR1-Psychosis Subscale Score
+        - UHDR1-Public Transportation Without Help
+        - UHDR1-Purpose of This Visit
+        - UHDR1-Retropulsion Pull Test
+        - 'UHDR1-Rigidity: Arms: Left'
+        - 'UHDR1-Rigidity: Arms: Right'
+        - 'UHDR1-Saccade Initiation: Horizontal'
+        - 'UHDR1-Saccade Initiation: Vertical'
+        - 'UHDR1-Saccade Velocity: Horizontal'
+        - 'UHDR1-Saccade Velocity: Vertical'
+        - 'UHDR1-Self-esteem/Guilt: Frequency'
+        - 'UHDR1-Self-esteem/Guilt: Severity'
+        - UHDR1-Shop for Groceries Without Help
+        - UHDR1-Since Last Assessment Feel
+        - UHDR1-Since Last Assessment Opinion
+        - 'UHDR1-Suicidal Thoughts: Frequency'
+        - 'UHDR1-Suicidal Thoughts: Severity'
+        - UHDR1-Supervise Children Without Help
+        - UHDR1-Symbol Digit Modalities Test
+        - UHDR1-Take Medications Without Help
+        - UHDR1-Tandem Walking
+        - UHDR1-Tongue Protrusion
+        - UHDR1-Total Behavior Score
+        - UHDR1-Total Functional Capacity Score
+        - UHDR1-Total Motor Score
+        - UHDR1-Transfer Chair Without Help
+        - UHDR1-Use Telephone Without Help
+        - UHDR1-Use Toilet/Commode Without Help
+        - UHDR1-Verbal Fluency Test
+        - UHDR1-Volunteer or Non Gainful Work
+        - UHDR1-Walk Own Neighborhood Without Help
+        - UHDR1-Walk Without Falling
+        - UHDR1-Walk Without Help
+outcome:
+  message: Value not found in non-extensible codelist Unified Huntington's Disease
+    Rating Scale '99 Clinical Classification Test Name (C154448)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C154448
+  codelist_name: Unified Huntington's Disease Rating Scale '99 Clinical Classification
+    Test Name
+  codelist_submission_value: UHDR1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 112
+

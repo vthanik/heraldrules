@@ -1,0 +1,37 @@
+id: HRL-CT-0906
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: REASTINT (Reason for Treatment Interruption) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: REASTINT
+      operator: in
+      value:
+        - FORGOT TO TAKE MEDICATION DOSE
+        - INTOLERANCE
+        - MEDICATION MISPLACED
+        - SUBJECT NONCOMPLIANCE
+        - TREATMENT FAILURE
+        - VACATION
+outcome:
+  message: Value not found in extensible codelist Reason for Treatment Interruption
+    (C102583)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C102583
+  codelist_name: Reason for Treatment Interruption
+  codelist_submission_value: REASTINT
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 6
+

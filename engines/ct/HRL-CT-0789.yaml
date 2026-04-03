@@ -1,0 +1,91 @@
+id: HRL-CT-0789
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PHQ03TN (Patient Health Questionnaire Screener Version Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PHQ03TN
+      operator: in
+      value:
+        - PHQ03-Alcohol at Work/School
+        - PHQ03-Anxiety Attack Afraid You Dying
+        - PHQ03-Anxiety Attack Chest Pain
+        - PHQ03-Anxiety Attack Choking
+        - PHQ03-Anxiety Attack Dizzy/Faint
+        - PHQ03-Anxiety Attack Happened Before
+        - PHQ03-Anxiety Attack Heart Race/Pound
+        - PHQ03-Anxiety Attack Hot Flash/Chill
+        - PHQ03-Anxiety Attack Nausea/Diarrhea
+        - PHQ03-Anxiety Attack Short of Breath
+        - PHQ03-Anxiety Attack Sweat
+        - PHQ03-Anxiety Attack Tingling/Numbness
+        - PHQ03-Anxiety Attack Tremble/Shake
+        - PHQ03-Anxiety Attack
+        - PHQ03-Anxiety Attacks Bother a Lot
+        - PHQ03-Anxiety Attacks Come Suddenly
+        - PHQ03-Avoid Gaining Weight Twice Week
+        - PHQ03-Back Pain
+        - PHQ03-Becoming Easily Annoyed
+        - PHQ03-Chest Pain
+        - PHQ03-Constipation/Diarrhea
+        - PHQ03-Dizziness
+        - PHQ03-Drank Alcohol With Health Problem
+        - PHQ03-Drink Alcohol
+        - PHQ03-Drove After Several Drinks
+        - PHQ03-Eat 2-Hours Large Amount Food
+        - PHQ03-Eat a Lot Twice Week
+        - PHQ03-Exercised Avoid Gaining Weight
+        - PHQ03-Fainting Spells
+        - PHQ03-Fasted at Least 24 Hours
+        - PHQ03-Feeling Bad About Yourself
+        - PHQ03-Feeling Down/Depressed
+        - PHQ03-Feeling Nervous/Anxious
+        - PHQ03-Feeling Restless
+        - PHQ03-Feeling Tired/Little Energy
+        - PHQ03-Feeling Your Heart Pound/Race
+        - PHQ03-Getting Tired Easily
+        - PHQ03-Headaches
+        - PHQ03-Last 2 Week Trouble Concentrating
+        - PHQ03-Last 2 Week Trouble Falling Asleep
+        - PHQ03-Last 4 Week Trouble Concentrating
+        - PHQ03-Last 4 Week Trouble Falling Asleep
+        - PHQ03-Little Interest in Doing Things
+        - PHQ03-Made Yourself Vomit
+        - PHQ03-Menstrual Cramp/Problem
+        - PHQ03-Missed Work Because of Drinking
+        - PHQ03-Moving Slowly/Fidgety/Restless
+        - PHQ03-Muscle Tension/Aches/Soreness
+        - PHQ03-Nausea/Gas/Indigestion
+        - PHQ03-No Control What/How Much Eat
+        - PHQ03-Pain in Your Arms/Legs/Joints
+        - PHQ03-Pain/Problems During Intercourse
+        - PHQ03-Poor Appetite or Overeating
+        - PHQ03-Problem With People While Drinking
+        - PHQ03-Problems Made It Difficult to Work
+        - PHQ03-Shortness of Breath
+        - PHQ03-Stomach Pain
+        - PHQ03-Thoughts Be Better Off Dead
+        - PHQ03-Took Twice Dose of Laxatives
+outcome:
+  message: Value not found in non-extensible codelist Patient Health Questionnaire
+    Screener Version Questionnaire Test Name (C125748)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C125748
+  codelist_name: Patient Health Questionnaire Screener Version Questionnaire Test
+    Name
+  codelist_submission_value: PHQ03TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 59
+

@@ -1,0 +1,40 @@
+id: HRL-CT-0459
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC049TC (Functional Assessment of Cancer Therapy-Ovarian Symptom Index
+  Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC049TC
+      operator: in
+      value:
+        - FAC04901
+        - FAC04902
+        - FAC04903
+        - FAC04904
+        - FAC04905
+        - FAC04906
+        - FAC04907
+        - FAC04908
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Ovarian Symptom Index Questionnaire Test Code (C129096)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C129096
+  codelist_name: Functional Assessment of Cancer Therapy-Ovarian Symptom Index Questionnaire
+    Test Code
+  codelist_submission_value: FAC049TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 8
+

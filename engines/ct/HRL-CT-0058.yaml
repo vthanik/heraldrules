@@ -1,0 +1,34 @@
+id: HRL-CT-0058
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: AGEU (Age Unit) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: AGEU
+      operator: in
+      value:
+        - DAYS
+        - HOURS
+        - MONTHS
+        - WEEKS
+        - YEARS
+outcome:
+  message: Value not found in non-extensible codelist Age Unit (C66781)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C66781
+  codelist_name: Age Unit
+  codelist_submission_value: AGEU
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

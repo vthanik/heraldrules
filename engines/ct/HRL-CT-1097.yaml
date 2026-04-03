@@ -1,0 +1,32 @@
+id: HRL-CT-1097
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TUG01TN (Timed Up and Go Test Functional Test Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TUG01TN
+      operator: in
+      value:
+        - TUG01-Time to Complete TUG Test
+outcome:
+  message: Value not found in non-extensible codelist Timed Up and Go Test Functional
+    Test Test Name (C115399)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C115399
+  codelist_name: Timed Up and Go Test Functional Test Test Name
+  codelist_submission_value: TUG01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

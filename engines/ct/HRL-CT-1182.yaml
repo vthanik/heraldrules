@@ -1,0 +1,34 @@
+id: HRL-CT-1182
+version: 1
+status: Published
+standard: ADaM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: APCH1PC (Acute Physiology and Chronic Health Evaluation II Clinical Classification
+  Parameter Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: APCH1PC
+      operator: in
+      value:
+        - APCH1TPS
+        - APCH1TS
+outcome:
+  message: Value not found in non-extensible codelist Acute Physiology and Chronic
+    Health Evaluation II Clinical Classification Parameter Code (C208382)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C208382
+  codelist_name: Acute Physiology and Chronic Health Evaluation II Clinical Classification
+    Parameter Code
+  codelist_submission_value: APCH1PC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 2
+

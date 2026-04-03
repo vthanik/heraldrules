@@ -1,0 +1,58 @@
+id: HRL-CT-0810
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL18TC (Pediatric Quality of Life Neuromuscular Module Acute Version
+  3 Toddler Parent Report Questionnaire Test Code) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL18TC
+      operator: in
+      value:
+        - PQL1801
+        - PQL1802
+        - PQL1803
+        - PQL1804
+        - PQL1805
+        - PQL1806
+        - PQL1807
+        - PQL1808
+        - PQL1809
+        - PQL1810
+        - PQL1811
+        - PQL1812
+        - PQL1813
+        - PQL1814
+        - PQL1815
+        - PQL1816
+        - PQL1817
+        - PQL1818
+        - PQL1819
+        - PQL1820
+        - PQL1821
+        - PQL1822
+        - PQL1823
+        - PQL1824
+        - PQL1825
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Acute Version 3 Toddler Parent Report Questionnaire Test Code (C138229)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138229
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Acute Version 3 Toddler
+    Parent Report Questionnaire Test Code
+  codelist_submission_value: PQL18TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

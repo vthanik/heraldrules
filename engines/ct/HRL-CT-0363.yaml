@@ -1,0 +1,79 @@
+id: HRL-CT-0363
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR01TC (European Organisation for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Core 30 Version 3.0 Questionnaire Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR01TC
+      operator: in
+      value:
+        - EOR0101
+        - EOR0102
+        - EOR0103
+        - EOR0104
+        - EOR0105
+        - EOR0106
+        - EOR0107
+        - EOR0108
+        - EOR0109
+        - EOR0110
+        - EOR0111
+        - EOR0112
+        - EOR0113
+        - EOR0114
+        - EOR0115
+        - EOR0116
+        - EOR0117
+        - EOR0118
+        - EOR0119
+        - EOR0120
+        - EOR0121
+        - EOR0122
+        - EOR0123
+        - EOR0124
+        - EOR0125
+        - EOR0126
+        - EOR0127
+        - EOR0128
+        - EOR0129
+        - EOR0130
+        - EOR0131
+        - EOR0132
+        - EOR0133
+        - EOR0134
+        - EOR0135
+        - EOR0136
+        - EOR0137
+        - EOR0138
+        - EOR0139
+        - EOR0140
+        - EOR0141
+        - EOR0142
+        - EOR0143
+        - EOR0144
+        - EOR0145
+outcome:
+  message: Value not found in non-extensible codelist European Organisation for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Core 30 Version
+    3.0 Questionnaire Test Code (C161619)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C161619
+  codelist_name: European Organisation for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Core 30 Version 3.0 Questionnaire Test Code
+  codelist_submission_value: EOR01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 45
+

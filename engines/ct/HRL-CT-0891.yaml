@@ -1,0 +1,64 @@
+id: HRL-CT-0891
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: IBDQ01TN (Quality of Life in Inflammatory Bowel Disease Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: IBDQ01TN
+      operator: in
+      value:
+        - IBDQ01-Accidental Soiling of Underpants
+        - IBDQ01-Avoid Events Where No Washroom
+        - IBDQ01-Bowel Movements Been Loose
+        - IBDQ01-Delay/Cancel Social Engagement
+        - IBDQ01-Difficulty Doing Leisure/Sports
+        - IBDQ01-Fatigue Been a Problem
+        - IBDQ01-Fear of Not Finding a Washroom
+        - IBDQ01-Feel Worried About Surgery
+        - IBDQ01-Felt Angry Bowel Problem
+        - IBDQ01-Felt Depressed or Discouraged
+        - IBDQ01-Felt Embarrassed Bowel Problem
+        - IBDQ01-Felt Frustrated
+        - IBDQ01-Felt Generally Unwell
+        - IBDQ01-Felt Irritable
+        - IBDQ01-Felt Relaxed and Free of Tension
+        - IBDQ01-Felt Tearful or Upset
+        - IBDQ01-Felt Worried or Anxious
+        - IBDQ01-Go to Bathroom Bowels Empty
+        - IBDQ01-How Frequent Bowel Movements
+        - IBDQ01-How Much Energy Have You Had
+        - IBDQ01-Lack of Understanding From Others
+        - IBDQ01-Limited Sexual Activity
+        - IBDQ01-Nausea or Sick to Your Stomach
+        - IBDQ01-Problem Maintaining Weight
+        - IBDQ01-Problem Passing Large Amounts Gas
+        - IBDQ01-Problem With Rectal Bleeding
+        - IBDQ01-Problems Getting Sleep/Waking Up
+        - IBDQ01-Satisfied With Personal Life
+        - IBDQ01-Troubled by Abdominal Bloating
+        - IBDQ01-Troubled by Cramps in Abdomen
+        - IBDQ01-Troubled by Pain in Abdomen
+        - IBDQ01-Unable to Attend School or Work
+outcome:
+  message: Value not found in non-extensible codelist Quality of Life in Inflammatory
+    Bowel Disease Questionnaire Test Name (C174051)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C174051
+  codelist_name: Quality of Life in Inflammatory Bowel Disease Questionnaire Test
+    Name
+  codelist_submission_value: IBDQ01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 32
+

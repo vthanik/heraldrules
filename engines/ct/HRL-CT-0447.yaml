@@ -1,0 +1,43 @@
+id: HRL-CT-0447
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC041TC (Functional Assessment of Cancer Therapy-Kidney Symptom Index-Disease-Related
+  Symptoms Version 4 Questionnaire Test Code) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC041TC
+      operator: in
+      value:
+        - FAC04101
+        - FAC04102
+        - FAC04103
+        - FAC04104
+        - FAC04105
+        - FAC04106
+        - FAC04107
+        - FAC04108
+        - FAC04109
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Kidney Symptom Index-Disease-Related Symptoms Version 4 Questionnaire
+    Test Code (C150784)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150784
+  codelist_name: Functional Assessment of Cancer Therapy-Kidney Symptom Index-Disease-Related
+    Symptoms Version 4 Questionnaire Test Code
+  codelist_submission_value: FAC041TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 9
+

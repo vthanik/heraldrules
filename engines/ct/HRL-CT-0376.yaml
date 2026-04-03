@@ -1,0 +1,56 @@
+id: HRL-CT-0376
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR24TN (European Organization for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Cholangiocarcinoma and Gallbladder Cancer 21 Items
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR24TN
+      operator: in
+      value:
+        - EOR24-Bloated Feeling in Abdomen
+        - EOR24-Difficulties Drainage Tubes/Bags
+        - EOR24-Extent Troubled With Side-effects
+        - EOR24-Felt Full Too Quickly
+        - EOR24-Felt Lacking in Energy
+        - EOR24-Felt Less Able to Enjoy Yourself
+        - EOR24-Felt Slowed Down
+        - EOR24-Felt Stressed
+        - EOR24-Itching
+        - EOR24-Less Active Than You Like
+        - EOR24-Pain During the Night
+        - EOR24-Pain in Back
+        - EOR24-Pain in Stomach Area
+        - EOR24-Problems With Sense of Taste
+        - EOR24-Restricted in Types of Food
+        - EOR24-Skin/Eyes Been Yellow
+        - EOR24-Trouble Eating
+        - EOR24-Worried About Family in Future
+        - EOR24-Worried About Health in Future
+        - EOR24-Worried About Losing Weight
+        - EOR24-Worried About Skin Being Yellow
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Cholangiocarcinoma
+    and Gallbladder Cancer 21 Items Questionnaire Test Name (C219714)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219714
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Cholangiocarcinoma and Gallbladder Cancer 21 Items Questionnaire
+    Test Name
+  codelist_submission_value: EOR24TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 21
+

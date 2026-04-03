@@ -1,0 +1,94 @@
+id: HRL-CT-1091
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SF363TN (The Short Form 36 Health Survey Standard, US Version 2.0 Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SF363TN
+      operator: in
+      value:
+        - SF363-Bodily Pain 0-100 Score
+        - SF363-Bodily Pain Norm-Based Score
+        - SF363-Comp Year Ago Rate Gen Health Now
+        - SF363-Did You Feel Full of Life
+        - SF363-Did You Feel Tired
+        - SF363-Did You Feel Worn Out
+        - SF363-Did You Have a Lot of Energy
+        - 'SF363-Emotional: Accomplished Less'
+        - 'SF363-Emotional: Cut Down Time on Work'
+        - 'SF363-Emotional: Did Work Less Carefully'
+        - SF363-Extent Phys/Emotional Interfered
+        - SF363-Felt Down Nothing Cheer You Up
+        - SF363-General Health 0-100 Score
+        - SF363-General Health Norm-Based Score
+        - SF363-Get Sick Little Easier Than Other
+        - SF363-Have You Been Happy
+        - SF363-Have You Been Very Nervous
+        - SF363-Have You Felt Calm and Peaceful
+        - SF363-How Much Bodily Pain Have You Had
+        - SF363-I Am as Healthy as Anybody I Know
+        - SF363-I Expect My Health to Get Worse
+        - SF363-In General You Say Your Health Is
+        - SF363-Limit Bathing or Dressing Yourself
+        - SF363-Limit Bending/Kneeling/Stooping
+        - SF363-Limit Climbing One Flight Stairs
+        - SF363-Limit Climbing Several Flights
+        - SF363-Limit Lifting or Carrying
+        - SF363-Limit Moderate Activities
+        - SF363-Limit Vigorous Activities
+        - SF363-Limit Walking More Than a Mile
+        - SF363-Limit Walking One Hundred Yards
+        - SF363-Limit Walking Several Hundred Yds
+        - SF363-Mental Component Score
+        - SF363-Mental Health 0-100 Score
+        - SF363-Mental Health Enhanced Score
+        - SF363-Mental Health Norm-Based Score
+        - SF363-My Health is Excellent
+        - SF363-Pain Interfere With Normal Work
+        - SF363-Phys Functioning Norm-Based Score
+        - SF363-Physical Component Score
+        - SF363-Physical Functioning 0-100 Score
+        - 'SF363-Physical: Accomplished Less'
+        - 'SF363-Physical: Cut Down Time on Work'
+        - 'SF363-Physical: Difficulty Perform Work'
+        - 'SF363-Physical: Limited Kind of Work'
+        - SF363-Response Consistency Score
+        - SF363-Role Emotional 0-100 Score
+        - SF363-Role Emotional Norm-Based Score
+        - SF363-Role Physical 0-100 Score
+        - SF363-Role Physical Norm-Based Score
+        - SF363-SF-6D (Utility Index) Score
+        - SF363-SF-6D_R2 (Util Index Rel 2) Score
+        - SF363-Social Function Norm-Based Score
+        - SF363-Social Functioning 0-100 Score
+        - SF363-Time Phys/Emotional Interfered
+        - SF363-Utility Index Score AU Weights
+        - SF363-Utility Index Score CN Weights
+        - SF363-Utility Index Score UK Weights
+        - SF363-Utility Index Score US Weights
+        - SF363-Vitality 0-100 Score
+        - SF363-Vitality Norm-Based Score
+        - SF363-You Felt Downhearted and Depressed
+outcome:
+  message: Value not found in non-extensible codelist The Short Form 36 Health Survey
+    Standard, US Version 2.0 Questionnaire Test Name (C101827)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101827
+  codelist_name: The Short Form 36 Health Survey Standard, US Version 2.0 Questionnaire
+    Test Name
+  codelist_submission_value: SF363TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 62
+

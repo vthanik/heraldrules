@@ -1,0 +1,77 @@
+id: HRL-CT-0442
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC008TN (Functional Assessment of Cancer Therapy-Colorectal Version
+  4 Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC008TN
+      operator: in
+      value:
+        - FAC008-Additional Concern Subscale Score
+        - FAC008-Bothered by Treatment Side Effect
+        - FAC008-Caring for Ostomy Is Difficult
+        - FAC008-Content With Quality of My Life
+        - FAC008-Do You Have an Ostomy Appliance
+        - FAC008-Embarrassed by Ostomy Appliance
+        - FAC008-Emotional Subscale Score
+        - FAC008-Enjoy Things I Usually Do for Fun
+        - FAC008-FACT-G Total Score
+        - FAC008-Functional Subscale Score
+        - FAC008-Get Emotional Support From Family
+        - FAC008-I Am Able to Enjoy Life
+        - FAC008-I Am Able to Work
+        - FAC008-I Am Forced to Spend Time in Bed
+        - FAC008-I Am Losing Weight
+        - FAC008-I Am Satisfied With My Sex Life
+        - FAC008-I Am Sleeping Well
+        - FAC008-I Can Digest My Food Well
+        - FAC008-I Feel Close to My Friends
+        - FAC008-I Feel Close to My Partner
+        - FAC008-I Feel Ill
+        - FAC008-I Feel Nervous
+        - FAC008-I Feel Sad
+        - FAC008-I Get Support From My Friends
+        - FAC008-I Have a Good Appetite
+        - FAC008-I Have a Lack of Energy
+        - FAC008-I Have Accepted My Illness
+        - FAC008-I Have Control of My Bowels
+        - FAC008-I Have Diarrhea
+        - FAC008-I Have Nausea
+        - FAC008-I Have Pain
+        - FAC008-I Like the Appearance of My Body
+        - FAC008-I Worry About Dying
+        - FAC008-Losing Hope Against Illness
+        - FAC008-My Family Has Accepted My Illness
+        - FAC008-My Work Is Fulfilling
+        - FAC008-Physical Subscale Score
+        - FAC008-Satisfied Communication Illness
+        - FAC008-Satisfied With How I Am Coping
+        - FAC008-Social/Family Subscale Score
+        - FAC008-Swelling/Cramps in Stomach Area
+        - FAC008-Total Score
+        - FAC008-Trial Outcome Index Score
+        - FAC008-Trouble Meeting Needs of Family
+        - FAC008-Worry My Condition Will Get Worse
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Colorectal Version 4 Questionnaire Test Name (C150773)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150773
+  codelist_name: Functional Assessment of Cancer Therapy-Colorectal Version 4 Questionnaire
+    Test Name
+  codelist_submission_value: FAC008TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 45
+

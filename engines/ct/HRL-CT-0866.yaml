@@ -1,0 +1,36 @@
+id: HRL-CT-0866
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PA215TN (PROMIS Item Bank v1.0 - Sleep Disturbance - Short Form 4a Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PA215TN
+      operator: in
+      value:
+        - PA215-I Had a Problem With My Sleep
+        - PA215-I Had Difficulty Falling Asleep
+        - PA215-My Sleep Quality Was
+        - PA215-My Sleep Was Refreshing
+outcome:
+  message: Value not found in non-extensible codelist PROMIS Item Bank v1.0 - Sleep
+    Disturbance - Short Form 4a Questionnaire Test Name (C208375)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C208375
+  codelist_name: PROMIS Item Bank v1.0 - Sleep Disturbance - Short Form 4a Questionnaire
+    Test Name
+  codelist_submission_value: PA215TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

@@ -1,0 +1,94 @@
+id: HRL-CT-0220
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSS05TN (Columbia-Suicide Severity Rating Scale Already Enrolled Subjects
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSS05TN
+      operator: in
+      value:
+        - CSS05-Aborted Attempt, Describe
+        - CSS05-Aborted Attempt-Prior
+        - CSS05-Aborted Attempt-Since
+        - CSS05-Actual Attempt, Describe
+        - CSS05-Actual Attempt-Prior
+        - CSS05-Actual Attempt-Since
+        - CSS05-Completed Suicide-Prior
+        - CSS05-Completed Suicide-Since
+        - CSS05-First Attempt Damage
+        - CSS05-First Attempt Date
+        - CSS05-First Attempt Potential
+        - CSS05-Idea, Intent, No Plan, Describe
+        - CSS05-Idea, Intent, No Plan-Prior
+        - CSS05-Idea, Intent, No Plan-Since
+        - CSS05-Idea, No Intent, No Plan, Describe
+        - CSS05-Idea, No Intent, No Plan-Prior
+        - CSS05-Idea, No Intent, No Plan-Since
+        - CSS05-Idea, Plan, Intent, Describe
+        - CSS05-Idea, Plan, Intent-Prior
+        - CSS05-Idea, Plan, Intent-Since
+        - CSS05-Interrupted Attempt, Describe
+        - CSS05-Interrupted Attempt-Prior
+        - CSS05-Interrupted Attempt-Since
+        - CSS05-Most Lethal Attempt Damage
+        - CSS05-Most Lethal Attempt Date
+        - CSS05-Most Lethal Attempt Potential
+        - CSS05-Most Recent Attempt Damage
+        - CSS05-Most Recent Attempt Date
+        - CSS05-Most Recent Attempt Potential
+        - CSS05-Most Severe Idea, Control-Prior
+        - CSS05-Most Severe Idea, Control-Since
+        - CSS05-Most Severe Idea, Desc-Prior
+        - CSS05-Most Severe Idea, Desc-Since
+        - CSS05-Most Severe Idea, Deterrents-Prior
+        - CSS05-Most Severe Idea, Deterrents-Since
+        - CSS05-Most Severe Idea, Duration-Prior
+        - CSS05-Most Severe Idea, Duration-Since
+        - CSS05-Most Severe Idea, Frequency-Prior
+        - CSS05-Most Severe Idea, Frequency-Since
+        - CSS05-Most Severe Idea, Reasons-Prior
+        - CSS05-Most Severe Idea, Reasons-Since
+        - CSS05-Most Severe Idea-Prior
+        - CSS05-Most Severe Idea-Since
+        - CSS05-Non-Spec Suicid Thought, Describe
+        - CSS05-Non-Spec Suicid Thought-Prior
+        - CSS05-Non-Spec Suicid Thought-Since
+        - CSS05-Non-suicid Self-injur Behav-Prior
+        - CSS05-Non-suicid Self-injur Behav-Since
+        - CSS05-Num of Interrupted Attempts-Prior
+        - CSS05-Num of Interrupted Attempts-Since
+        - CSS05-Number of Aborted Attempts-Prior
+        - CSS05-Number of Aborted Attempts-Since
+        - CSS05-Number of Actual Attempts-Prior
+        - CSS05-Number of Actual Attempts-Since
+        - CSS05-Preparatory Acts/Behavior, Descr
+        - CSS05-Preparatory Acts/Behavior-Prior
+        - CSS05-Preparatory Acts/Behavior-Since
+        - CSS05-Suicidal Behavior-Prior
+        - CSS05-Suicidal Behavior-Since
+        - CSS05-Wish to be Dead, Describe
+        - CSS05-Wish to be Dead-Prior
+        - CSS05-Wish to be Dead-Since
+outcome:
+  message: Value not found in non-extensible codelist Columbia-Suicide Severity Rating
+    Scale Already Enrolled Subjects Questionnaire Test Name (C106658)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106658
+  codelist_name: Columbia-Suicide Severity Rating Scale Already Enrolled Subjects
+    Questionnaire Test Name
+  codelist_submission_value: CSS05TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 62
+

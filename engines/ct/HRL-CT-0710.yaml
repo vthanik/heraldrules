@@ -1,0 +1,56 @@
+id: HRL-CT-0710
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC036TC (National Comprehensive Cancer Network/Functional Assessment
+  of Cancer Therapy-Head & Neck Symptom Index-22 Version 2 Questionnaire Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC036TC
+      operator: in
+      value:
+        - FAC03601
+        - FAC03602
+        - FAC03603
+        - FAC03604
+        - FAC03605
+        - FAC03606
+        - FAC03607
+        - FAC03608
+        - FAC03609
+        - FAC03610
+        - FAC03611
+        - FAC03612
+        - FAC03613
+        - FAC03614
+        - FAC03615
+        - FAC03616
+        - FAC03617
+        - FAC03618
+        - FAC03619
+        - FAC03620
+        - FAC03621
+        - FAC03622
+outcome:
+  message: Value not found in non-extensible codelist National Comprehensive Cancer
+    Network/Functional Assessment of Cancer Therapy-Head & Neck Symptom Index-22 Version
+    2 Questionnaire Test Code (C150788)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150788
+  codelist_name: National Comprehensive Cancer Network/Functional Assessment of Cancer
+    Therapy-Head & Neck Symptom Index-22 Version 2 Questionnaire Test Code
+  codelist_submission_value: FAC036TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 22
+

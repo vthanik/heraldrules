@@ -1,0 +1,82 @@
+id: HRL-CT-1177
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: WD5TN (World Health Organization Disability Assessment Schedule 2.0 -
+  36-Item Interviewer Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: WD5TN
+      operator: in
+      value:
+        - WD5-Care of Household Responsibilities
+        - WD5-Concentrating for Ten Minutes
+        - WD5-Current Marital Status
+        - WD5-Days Reduce or Miss Household Work
+        - WD5-Days Unable to Carry Out Activities
+        - WD5-Dealing With People You Do Not Know
+        - WD5-Describes Main Work Status Best
+        - WD5-Doing Important Household Tasks
+        - WD5-Doing Important Work/School Tasks
+        - WD5-Drain on Financial Resources
+        - WD5-Earn Less Money
+        - WD5-Eating
+        - WD5-Emotionally Affected by Health
+        - WD5-Finding Solutions to Problems
+        - WD5-Get Along With People Close to You
+        - WD5-Getting All Work Done You Need
+        - WD5-Getting Dressed
+        - WD5-Getting Household Work Done Needed
+        - WD5-Getting Household Work Done Quickly
+        - WD5-Getting Out of Your Home
+        - WD5-Getting Work Done Quickly as Needed
+        - WD5-Had to Work at a Lower Level
+        - WD5-How Many Days Did You Miss Work
+        - WD5-How Many Days Difficulties Present
+        - WD5-How Many Days Reduce Activities
+        - WD5-How Old Are You Now
+        - WD5-Learning a New Task
+        - WD5-Living Situation at Interview
+        - WD5-Maintaining a Friendship
+        - WD5-Making New Friends
+        - WD5-Moving Around Inside Your Home
+        - WD5-Problem Because of Barriers in World
+        - WD5-Problem Did Your Family Have
+        - WD5-Problem Doing Things for Relaxation
+        - WD5-Problem Joining Community Activities
+        - WD5-Problem Living with Dignity
+        - WD5-Remembering to Do Important Things
+        - WD5-Sex as Observed
+        - WD5-Sexual Activities
+        - WD5-Standing for Long Periods
+        - WD5-Standing Up From Sitting Down
+        - WD5-Starting/Maintaining Conversation
+        - WD5-Staying by Yourself for a Few Days
+        - WD5-Time Spend on Your Health Condition
+        - WD5-Understanding What People Say
+        - WD5-Walking a Long Distance
+        - WD5-Washing Your Whole Body
+        - WD5-Years Studying in School/College
+        - WD5-Your Day-to-Day Work/School
+outcome:
+  message: Value not found in non-extensible codelist World Health Organization Disability
+    Assessment Schedule 2.0 - 36-Item Interviewer Questionnaire Test Name (C130268)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130268
+  codelist_name: World Health Organization Disability Assessment Schedule 2.0 - 36-Item
+    Interviewer Questionnaire Test Name
+  codelist_submission_value: WD5TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 49
+

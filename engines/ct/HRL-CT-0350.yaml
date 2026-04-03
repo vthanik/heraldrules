@@ -1,0 +1,99 @@
+id: HRL-CT-0350
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EMO1TC (Emotion Recognition Functional Test Test Code) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EMO1TC
+      operator: in
+      value:
+        - EMO101
+        - EMO102
+        - EMO103
+        - EMO103A
+        - EMO103B
+        - EMO103C
+        - EMO104
+        - EMO105
+        - EMO106
+        - EMO106A
+        - EMO106B
+        - EMO106C
+        - EMO107
+        - EMO107A
+        - EMO107B
+        - EMO107C
+        - EMO107D
+        - EMO107E
+        - EMO107F
+        - EMO107G
+        - EMO108
+        - EMO108A
+        - EMO108B
+        - EMO108C
+        - EMO108D
+        - EMO108E
+        - EMO108F
+        - EMO108G
+        - EMO109
+        - EMO109A
+        - EMO109B
+        - EMO109C
+        - EMO109D
+        - EMO109E
+        - EMO109F
+        - EMO109G
+        - EMO110
+        - EMO110A
+        - EMO110B
+        - EMO110C
+        - EMO110D
+        - EMO110E
+        - EMO110F
+        - EMO110G
+        - EMO111
+        - EMO111A
+        - EMO111B
+        - EMO111C
+        - EMO111D
+        - EMO111E
+        - EMO111F
+        - EMO111G
+        - EMO112
+        - EMO112A
+        - EMO112B
+        - EMO112C
+        - EMO112D
+        - EMO112E
+        - EMO112F
+        - EMO112G
+        - EMO113
+        - EMO113A
+        - EMO113B
+        - EMO113C
+        - EMO113D
+        - EMO113E
+        - EMO113F
+        - EMO113G
+outcome:
+  message: Value not found in non-extensible codelist Emotion Recognition Functional
+    Test Test Code (C150768)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150768
+  codelist_name: Emotion Recognition Functional Test Test Code
+  codelist_submission_value: EMO1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 68
+

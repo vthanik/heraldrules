@@ -1,0 +1,75 @@
+id: HRL-CT-0641
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MPAI1TC (Mayo-Portland Adaptability Inventory-4 Questionnaire Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MPAI1TC
+      operator: in
+      value:
+        - MPAI101
+        - MPAI102
+        - MPAI103
+        - MPAI104
+        - MPAI105
+        - MPAI106
+        - MPAI107A
+        - MPAI107B
+        - MPAI108
+        - MPAI109
+        - MPAI110
+        - MPAI111
+        - MPAI112
+        - MPAI113
+        - MPAI114
+        - MPAI115
+        - MPAI116
+        - MPAI117
+        - MPAI118
+        - MPAI119
+        - MPAI120
+        - MPAI121
+        - MPAI122
+        - MPAI123
+        - MPAI124
+        - MPAI125
+        - MPAI126
+        - MPAI127
+        - MPAI128A
+        - MPAI128B
+        - MPAI128C
+        - MPAI129
+        - MPAI130A
+        - MPAI130B
+        - MPAI131A
+        - MPAI131B
+        - MPAI132A
+        - MPAI132B
+        - MPAI133A
+        - MPAI133B
+        - MPAI134A
+        - MPAI134B
+        - MPAI135A
+        - MPAI135B
+outcome:
+  message: Value not found in non-extensible codelist Mayo-Portland Adaptability Inventory-4
+    Questionnaire Test Code (C115406)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C115406
+  codelist_name: Mayo-Portland Adaptability Inventory-4 Questionnaire Test Code
+  codelist_submission_value: MPAI1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 44
+

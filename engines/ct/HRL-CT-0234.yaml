@@ -1,0 +1,92 @@
+id: HRL-CT-0234
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSS11TN (Columbia-Suicide Severity Rating Scale Lifetime/Recent Version
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSS11TN
+      operator: in
+      value:
+        - CSS11-Aborted Attempt, Describe
+        - CSS11-Aborted Attempt-Life
+        - CSS11-Aborted Attempt-P3M
+        - CSS11-Actual Attempt, Describe
+        - CSS11-Actual Attempt-Life
+        - CSS11-Actual Attempt-P3M
+        - CSS11-First Attempt Damage
+        - CSS11-First Attempt Date
+        - CSS11-First Attempt Potential
+        - CSS11-Idea, Intent, No Plan, Describe
+        - CSS11-Idea, Intent, No Plan-Life
+        - CSS11-Idea, Intent, No Plan-P1M
+        - CSS11-Idea, No Intent, No Plan, Describe
+        - CSS11-Idea, No Intent, No Plan-Life
+        - CSS11-Idea, No Intent, No Plan-P1M
+        - CSS11-Idea, Plan, Intent, Describe
+        - CSS11-Idea, Plan, Intent-Life
+        - CSS11-Idea, Plan, Intent-P1M
+        - CSS11-Interrupted Attempt, Describe
+        - CSS11-Interrupted Attempt-Life
+        - CSS11-Interrupted Attempt-P3M
+        - CSS11-Most Lethal Attempt Damage
+        - CSS11-Most Lethal Attempt Date
+        - CSS11-Most Lethal Attempt Potential
+        - CSS11-Most Recent Attempt Damage
+        - CSS11-Most Recent Attempt Date
+        - CSS11-Most Recent Attempt Potential
+        - CSS11-Most Severe Idea, Control-Life
+        - CSS11-Most Severe Idea, Control-P1M
+        - CSS11-Most Severe Idea, Desc-Life
+        - CSS11-Most Severe Idea, Desc-Recent-P1M
+        - CSS11-Most Severe Idea, Deterrents-Life
+        - CSS11-Most Severe Idea, Deterrents-P1M
+        - CSS11-Most Severe Idea, Duration-Life
+        - CSS11-Most Severe Idea, Duration-P1M
+        - CSS11-Most Severe Idea, Frequency-Life
+        - CSS11-Most Severe Idea, Frequency-P1M
+        - CSS11-Most Severe Idea, Reasons-Life
+        - CSS11-Most Severe Idea, Reasons-P1M
+        - CSS11-Most Severe Idea-Life
+        - CSS11-Most Severe Idea-Recent-P1M
+        - CSS11-Non-Spec Suicid Thought, Describe
+        - CSS11-Non-Spec Suicid Thought-Life
+        - CSS11-Non-Spec Suicid Thought-P1M
+        - CSS11-Non-suicid Self-injur Behav-Life
+        - CSS11-Non-suicid Self-injur Behav-P3M
+        - CSS11-Num of Interrupted Attempts-Life
+        - CSS11-Num of Interrupted Attempts-P3M
+        - CSS11-Number of Aborted Attempts-Life
+        - CSS11-Number of Aborted Attempts-P3M
+        - CSS11-Number of Actual Attempts-Life
+        - CSS11-Number of Actual Attempts-P3M
+        - CSS11-Preparatory Acts/Behavior, Descr
+        - CSS11-Preparatory Acts/Behavior-Life
+        - CSS11-Preparatory Acts/Behavior-P3M
+        - CSS11-Suicidal Behavior-Life
+        - CSS11-Suicidal Behavior-P3M
+        - CSS11-Wish to be Dead, Describe
+        - CSS11-Wish to be Dead-Life
+        - CSS11-Wish to be Dead-P1M
+outcome:
+  message: Value not found in non-extensible codelist Columbia-Suicide Severity Rating
+    Scale Lifetime/Recent Version Questionnaire Test Name (C117988)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C117988
+  codelist_name: Columbia-Suicide Severity Rating Scale Lifetime/Recent Version Questionnaire
+    Test Name
+  codelist_submission_value: CSS11TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 60
+

@@ -1,0 +1,38 @@
+id: HRL-CT-0451
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC043TC (Functional Assessment of Cancer Therapy-Lung Symptom Index
+  Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC043TC
+      operator: in
+      value:
+        - FAC04301
+        - FAC04302
+        - FAC04303
+        - FAC04304
+        - FAC04305
+        - FAC04306
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Lung Symptom Index Questionnaire Test Code (C138225)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138225
+  codelist_name: Functional Assessment of Cancer Therapy-Lung Symptom Index Questionnaire
+    Test Code
+  codelist_submission_value: FAC043TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

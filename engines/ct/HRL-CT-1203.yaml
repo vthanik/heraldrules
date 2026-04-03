@@ -1,0 +1,34 @@
+id: HRL-CT-1203
+version: 1
+status: Published
+standard: ADaM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TPUSRS (Tobacco Product Use Status Response) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TPUSRS
+      operator: in
+      value:
+        - CURRENT
+        - FORMER
+        - NEVER
+outcome:
+  message: Value not found in non-extensible codelist Tobacco Product Use Status Response
+    (C204413)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204413
+  codelist_name: Tobacco Product Use Status Response
+  codelist_submission_value: TPUSRS
+  extensible: no
+  parent_rule: CT2001
+  term_count: 3
+

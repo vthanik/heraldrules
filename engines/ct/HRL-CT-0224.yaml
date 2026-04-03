@@ -1,0 +1,84 @@
+id: HRL-CT-0224
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSS03TN (Columbia-Suicide Severity Rating Scale Baseline/Screening Version
+  Phase 1 Study Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSS03TN
+      operator: in
+      value:
+        - CSS03-Aborted Attempt
+        - CSS03-Aborted Attempt, Describe
+        - CSS03-Actual Attempt
+        - CSS03-Actual Attempt, Describe
+        - CSS03-First Attempt Damage
+        - CSS03-First Attempt Date
+        - CSS03-First Attempt Potential
+        - CSS03-Idea, Intent, No Plan, Describe
+        - CSS03-Idea, Intent, No Plan-Life
+        - CSS03-Idea, Intent, No Plan-P6M
+        - CSS03-Idea, No Intent, No Plan, Describe
+        - CSS03-Idea, No Intent, No Plan-Life
+        - CSS03-Idea, No Intent, No Plan-P6M
+        - CSS03-Idea, Plan, Intent, Describe
+        - CSS03-Idea, Plan, Intent-Life
+        - CSS03-Idea, Plan, Intent-P6M
+        - CSS03-Interrupted Attempt
+        - CSS03-Interrupted Attempt, Describe
+        - CSS03-Most Lethal Attempt Damage
+        - CSS03-Most Lethal Attempt Date
+        - CSS03-Most Lethal Attempt Potential
+        - CSS03-Most Recent Attempt Damage
+        - CSS03-Most Recent Attempt Date
+        - CSS03-Most Recent Attempt Potential
+        - CSS03-Most Severe Idea, Control-Life
+        - CSS03-Most Severe Idea, Control-P6M
+        - CSS03-Most Severe Idea, Desc-Life
+        - CSS03-Most Severe Idea, Desc-P6M
+        - CSS03-Most Severe Idea, Deterrents-Life
+        - CSS03-Most Severe Idea, Deterrents-P6M
+        - CSS03-Most Severe Idea, Duration-Life
+        - CSS03-Most Severe Idea, Duration-P6M
+        - CSS03-Most Severe Idea, Frequency-Life
+        - CSS03-Most Severe Idea, Frequency-P6M
+        - CSS03-Most Severe Idea, Reasons-Life
+        - CSS03-Most Severe Idea, Reasons-P6M
+        - CSS03-Most Severe Idea-Life
+        - CSS03-Most Severe Idea-P6M
+        - CSS03-Non-Spec Suicid Thought, Describe
+        - CSS03-Non-Spec Suicid Thought-Life
+        - CSS03-Non-Spec Suicid Thought-P6M
+        - CSS03-Non-suicidal Self-injurious Behav
+        - CSS03-Number of Aborted Attempts
+        - CSS03-Number of Actual Attempts
+        - CSS03-Number of Interrupted Attempts
+        - CSS03-Preparatory Acts/Behavior
+        - CSS03-Preparatory Acts/Behavior, Descr
+        - CSS03-Suicidal Behavior
+        - CSS03-Wish to be Dead, Describe
+        - CSS03-Wish to be Dead-Life
+        - CSS03-Wish to be Dead-P6M
+outcome:
+  message: Value not found in non-extensible codelist Columbia-Suicide Severity Rating
+    Scale Baseline/Screening Version Phase 1 Study Questionnaire Test Name (C105131)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C105131
+  codelist_name: Columbia-Suicide Severity Rating Scale Baseline/Screening Version
+    Phase 1 Study Questionnaire Test Name
+  codelist_submission_value: CSS03TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 51
+

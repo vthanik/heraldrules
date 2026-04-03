@@ -1,0 +1,76 @@
+id: HRL-CT-0158
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CVFARS (Cardiovascular Findings About Results) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CVFARS
+      operator: in
+      value:
+        - ANGIOGRAPHY
+        - AUGMENTATION OF ORAL DIURETIC THERAPY
+        - AUTOPSY
+        - CLINICALLY SIGNIFICANT OR RAPID WEIGHT GAIN
+        - CORONARY LESION ON ANGIOGRAPHY
+        - CORONARY REVASCULARIZATION
+        - DECREASED EXERCISE TOLERANCE
+        - DYSPNEA
+        - FATIGUE
+        - HEART FAILURE HOSPITALIZATION
+        - HEMORRHAGIC STROKE
+        - INCREASE IN HEART FAILURE BIOMARKER
+        - INCREASED JUGULAR VENOUS PRESSURE OR HEPATOJUGULAR REFLUX
+        - INCREASING ABDOMINAL DISTENTION OR ASCITES
+        - INDUCIBLE MYOCARDIAL ISCHEMIA
+        - INTRAVENOUS DIURETIC, INOTROPE, OR VASODILATOR THERAPY
+        - INVASIVE DIAGNOSTIC EVIDENCE OF HEART FAILURE
+        - ISCHEMIC STROKE
+        - LOSS OF A SIDE BRANCH
+        - LOSS OF MAJOR CORONARY
+        - MECHANICAL OR SURGICAL INTERVENTION
+        - NEW LOSS OF VIABLE MYOCARDIUM
+        - NEW REGIONAL WALL MOTION ABNORMALITY
+        - NON-INVASIVE DIAGNOSTIC EVIDENCE OF HEART FAILURE
+        - PERIPHERAL EDEMA
+        - PULMONARY RALES/CRACKLES/CREPITATIONS
+        - RADIOLOGICAL EVIDENCE OF PULMONARY CONGESTION
+        - RESTING ECG CHANGES
+        - S3 GALLOP
+        - SLOW-FLOW/NO-FLOW/EMBOLIZATION
+        - STENT THROMBOSIS ARC ACUTE
+        - STENT THROMBOSIS ARC LATE
+        - STENT THROMBOSIS ARC SUBACUTE
+        - STENT THROMBOSIS ARC VERY LATE
+        - TYPE 1 MYOCARDIAL INFARCTION
+        - TYPE 2 MYOCARDIAL INFARCTION
+        - TYPE 3 MYOCARDIAL INFARCTION
+        - TYPE 4A MYOCARDIAL INFARCTION
+        - TYPE 4B MYOCARDIAL INFARCTION
+        - TYPE 4C MYOCARDIAL INFARCTION
+        - TYPE 5 MYOCARDIAL INFARCTION
+        - UNDETERMINED STROKE
+        - URGENT HEART FAILURE VISIT
+        - VOLUME OVERLOAD
+        - WORSENED END-ORGAN PERFUSION
+outcome:
+  message: Value not found in extensible codelist Cardiovascular Findings About Results
+    (C119016)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C119016
+  codelist_name: Cardiovascular Findings About Results
+  codelist_submission_value: CVFARS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 45
+

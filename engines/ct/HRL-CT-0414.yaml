@@ -1,0 +1,40 @@
+id: HRL-CT-0414
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FSS01TC (Fatigue Severity Scale Questionnaire Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FSS01TC
+      operator: in
+      value:
+        - FSS0101
+        - FSS0102
+        - FSS0103
+        - FSS0104
+        - FSS0105
+        - FSS0106
+        - FSS0107
+        - FSS0108
+        - FSS0109
+outcome:
+  message: Value not found in non-extensible codelist Fatigue Severity Scale Questionnaire
+    Test Code (C113850)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C113850
+  codelist_name: Fatigue Severity Scale Questionnaire Test Code
+  codelist_submission_value: FSS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 9
+

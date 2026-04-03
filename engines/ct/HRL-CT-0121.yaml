@@ -1,0 +1,35 @@
+id: HRL-CT-0121
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BDI01TC (Baseline Dyspnea Index Clinical Classification Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BDI01TC
+      operator: in
+      value:
+        - BDI0101
+        - BDI0102
+        - BDI0103
+        - BDI0104
+outcome:
+  message: Value not found in non-extensible codelist Baseline Dyspnea Index Clinical
+    Classification Test Code (C106655)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106655
+  codelist_name: Baseline Dyspnea Index Clinical Classification Test Code
+  codelist_submission_value: BDI01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

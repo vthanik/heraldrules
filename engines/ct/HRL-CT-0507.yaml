@@ -1,0 +1,44 @@
+id: HRL-CT-0507
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GCS01TC (Glasgow Coma Scale NINDS Version 1.0 Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GCS01TC
+      operator: in
+      value:
+        - GCS0101
+        - GCS0102
+        - GCS0103
+        - GCS0104
+        - GCS0105A
+        - GCS0105B
+        - GCS0105C
+        - GCS0105D
+        - GCS0105E
+        - GCS0105F
+        - GCS0105G
+        - GCS0105H
+outcome:
+  message: Value not found in non-extensible codelist Glasgow Coma Scale NINDS Version
+    1.0 Clinical Classification Test Code (C124682)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124682
+  codelist_name: Glasgow Coma Scale NINDS Version 1.0 Clinical Classification Test
+    Code
+  codelist_submission_value: GCS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 12
+

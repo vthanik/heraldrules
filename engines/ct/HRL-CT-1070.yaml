@@ -1,0 +1,53 @@
+id: HRL-CT-1070
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: 'GMSS01TC (The Glucose Monitoring System Satisfaction Survey Version:
+  Type 1 Diabetes Questionnaire Test Code) must contain valid non-extensible codelist
+  terms.'
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GMSS01TC
+      operator: in
+      value:
+        - GMSS0101
+        - GMSS0102
+        - GMSS0103
+        - GMSS0104
+        - GMSS0105
+        - GMSS0106
+        - GMSS0107
+        - GMSS0108
+        - GMSS0109
+        - GMSS0110
+        - GMSS0111
+        - GMSS0112
+        - GMSS0113
+        - GMSS0114
+        - GMSS0115
+        - GMSS0116
+        - GMSS0117
+        - GMSS0118
+        - GMSS0119
+        - GMSS0120
+outcome:
+  message: 'Value not found in non-extensible codelist The Glucose Monitoring System
+    Satisfaction Survey Version: Type 1 Diabetes Questionnaire Test Code (C163391)'
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C163391
+  codelist_name: 'The Glucose Monitoring System Satisfaction Survey Version: Type
+    1 Diabetes Questionnaire Test Code'
+  codelist_submission_value: GMSS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 20
+

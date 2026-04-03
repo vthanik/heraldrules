@@ -1,0 +1,77 @@
+id: HRL-CT-0438
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC005TN (Functional Assessment of Cancer Therapy-Breast Version 4 Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC005TN
+      operator: in
+      value:
+        - FAC005-Additional Concern Subscale Score
+        - FAC005-Bothered by Treatment Side Effect
+        - FAC005-Certain Parts of Body Have Pain
+        - FAC005-Content With Quality of My Life
+        - FAC005-Emotional Subscale Score
+        - FAC005-Enjoy Things I Usually Do for Fun
+        - FAC005-FACT-G Total Score
+        - FAC005-Functional Subscale Score
+        - FAC005-Get Emotional Support From Family
+        - FAC005-I Am Able to Enjoy Life
+        - FAC005-I Am Able to Feel Like a Woman
+        - FAC005-I Am Able to Work
+        - FAC005-I Am Bothered by Change in Weight
+        - FAC005-I Am Bothered by Hair Loss
+        - FAC005-I Am Forced to Spend Time in Bed
+        - FAC005-I Am Satisfied With My Sex Life
+        - FAC005-I Am Sleeping Well
+        - FAC005-I Feel Close to My Friends
+        - FAC005-I Feel Close to My Partner
+        - FAC005-I Feel Ill
+        - FAC005-I Feel Nervous
+        - FAC005-I Feel Sad
+        - FAC005-I Feel Sexually Attractive
+        - FAC005-I Get Support From My Friends
+        - FAC005-I Have a Lack of Energy
+        - FAC005-I Have Accepted My Illness
+        - FAC005-I Have Been Short of Breath
+        - FAC005-I Have Nausea
+        - FAC005-I Have Pain
+        - FAC005-I Worry About Dying
+        - FAC005-Losing Hope Against Illness
+        - FAC005-My Family Has Accepted My Illness
+        - FAC005-My Work Is Fulfilling
+        - FAC005-One/Both Arms Are Swollen/Tender
+        - FAC005-Physical Subscale Score
+        - FAC005-Satisfied Communication Illness
+        - FAC005-Satisfied With How I Am Coping
+        - FAC005-Self-conscious About Way I Dress
+        - FAC005-Social/Family Subscale Score
+        - FAC005-Total Score
+        - FAC005-Trial Outcome Index Score
+        - FAC005-Trouble Meeting Needs of Family
+        - FAC005-Worry About the Effect of Stress
+        - FAC005-Worry Family Will Get Illness
+        - FAC005-Worry My Condition Will Get Worse
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Breast Version 4 Questionnaire Test Name (C129093)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C129093
+  codelist_name: Functional Assessment of Cancer Therapy-Breast Version 4 Questionnaire
+    Test Name
+  codelist_submission_value: FAC005TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 45
+

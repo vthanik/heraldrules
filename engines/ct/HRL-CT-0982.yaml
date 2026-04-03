@@ -1,0 +1,42 @@
+id: HRL-CT-0982
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SF101TC (Short Form 10 Health Survey for Children Standard, US Version
+  1.0 Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SF101TC
+      operator: in
+      value:
+        - SF10101
+        - SF10102A
+        - SF10102B
+        - SF10103
+        - SF10104
+        - SF10105
+        - SF10106
+        - SF10107
+        - SF10108
+        - SF10109
+outcome:
+  message: Value not found in non-extensible codelist Short Form 10 Health Survey
+    for Children Standard, US Version 1.0 Questionnaire Test Code (C177712)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C177712
+  codelist_name: Short Form 10 Health Survey for Children Standard, US Version 1.0
+    Questionnaire Test Code
+  codelist_submission_value: SF101TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 10
+

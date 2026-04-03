@@ -1,0 +1,33 @@
+id: HRL-CT-0080
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ACGC01TC (Alzheimer's Disease Cooperative Study-Clinical Global Impression
+  of Change Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ACGC01TC
+      operator: in
+      value:
+        - ACGC0101
+outcome:
+  message: Value not found in non-extensible codelist Alzheimer's Disease Cooperative
+    Study-Clinical Global Impression of Change Questionnaire Test Code (C103459)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103459
+  codelist_name: Alzheimer's Disease Cooperative Study-Clinical Global Impression
+    of Change Questionnaire Test Code
+  codelist_submission_value: ACGC01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

@@ -1,0 +1,80 @@
+id: HRL-CT-0429
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC006TC (Functional Assessment of Cancer Therapy-Bladder Version 4 Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC006TC
+      operator: in
+      value:
+        - FAC00601
+        - FAC00602
+        - FAC00603
+        - FAC00604
+        - FAC00605
+        - FAC00606
+        - FAC00607
+        - FAC00608
+        - FAC00609
+        - FAC00610
+        - FAC00611
+        - FAC00612
+        - FAC00613
+        - FAC00614
+        - FAC00615
+        - FAC00616
+        - FAC00617
+        - FAC00618
+        - FAC00619
+        - FAC00620
+        - FAC00621
+        - FAC00622
+        - FAC00623
+        - FAC00624
+        - FAC00625
+        - FAC00626
+        - FAC00627
+        - FAC00628
+        - FAC00629
+        - FAC00630
+        - FAC00631
+        - FAC00632
+        - FAC00633
+        - FAC00634
+        - FAC00635
+        - FAC00636
+        - FAC00637
+        - FAC00638
+        - FAC00639
+        - FAC00640
+        - FAC00641
+        - FAC00642
+        - FAC00643
+        - FAC00644
+        - FAC00645
+        - FAC00646
+        - FAC00647
+        - FAC00648
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Bladder Version 4 Questionnaire Test Code (C154453)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C154453
+  codelist_name: Functional Assessment of Cancer Therapy-Bladder Version 4 Questionnaire
+    Test Code
+  codelist_submission_value: FAC006TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 48
+

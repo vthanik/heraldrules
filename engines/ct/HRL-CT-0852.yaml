@@ -1,0 +1,186 @@
+id: HRL-CT-0852
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PKUDMG (PK Units of Measure - Dose mg) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PKUDMG
+      operator: in
+      value:
+        - (L/day)/(mg/day)
+        - (L/day)/(mg/kg)
+        - (L/day)/(mg/kg/day)
+        - (L/day)/(mg/m2)
+        - (L/day)/(mg/m2/day)
+        - (L/day)/mg
+        - (L/h)/(mg/day)
+        - (L/h)/(mg/kg)
+        - (L/h)/(mg/kg/day)
+        - (L/h)/(mg/m2)
+        - (L/h)/(mg/m2/day)
+        - (L/h)/mg
+        - (L/min)/(mg/day)
+        - (L/min)/(mg/kg)
+        - (L/min)/(mg/kg/day)
+        - (L/min)/(mg/m2)
+        - (L/min)/(mg/m2/day)
+        - (L/min)/mg
+        - (mL/day)/(mg/day)
+        - (mL/day)/(mg/kg)
+        - (mL/day)/(mg/kg/day)
+        - (mL/day)/(mg/m2)
+        - (mL/day)/(mg/m2/day)
+        - (mL/day)/mg
+        - (mL/h)/(mg/day)
+        - (mL/h)/(mg/kg)
+        - (mL/h)/(mg/kg/day)
+        - (mL/h)/(mg/m2)
+        - (mL/h)/(mg/m2/day)
+        - (mL/h)/mg
+        - (mL/min)/(mg/day)
+        - (mL/min)/(mg/kg)
+        - (mL/min)/(mg/kg/day)
+        - (mL/min)/(mg/m2)
+        - (mL/min)/(mg/m2/day)
+        - (mL/min)/mg
+        - day*ug/mL/(mg/kg)
+        - day*ug/mL/mg
+        - fg/mL/(mg/day)
+        - fg/mL/(mg/kg)
+        - fg/mL/(mg/kg/day)
+        - fg/mL/(mg/m2)
+        - fg/mL/(mg/m2/day)
+        - fg/mL/mg
+        - g/mL/(mg/day)
+        - g/mL/(mg/kg)
+        - g/mL/(mg/kg/day)
+        - g/mL/(mg/m2)
+        - g/mL/(mg/m2/day)
+        - g/mL/mg
+        - h*g/mL/(mg/kg)
+        - h*g/mL/(mg/kg/day)
+        - h*mg/mL/(mg/kg)
+        - h*mg/mL/(mg/kg/day)
+        - h*mmol/L/mg
+        - h*ng/mL/(mg/cm2/day)
+        - h*ng/mL/(mg/kg)
+        - h*ng/mL/(mg/kg/day)
+        - h*ng/mL/(mg/m2)
+        - h*ng/mL/mg
+        - h*nmol/L/(mg/kg)
+        - h*nmol/L/mg
+        - h*nmolEq/L/mg
+        - h*pg/mL/(mg/kg)
+        - h*pg/mL/(mg/kg/day)
+        - h*pg/mL/mg
+        - h*pmol/L/(mg/kg)
+        - h*ug/mL/(mg/kg)
+        - h*ug/mL/(mg/kg/day)
+        - h*ug/mL/mg
+        - h*umol/L/(mg/kg)
+        - IU/mL/(mg/day)
+        - IU/mL/(mg/kg)
+        - IU/mL/(mg/kg/day)
+        - IU/mL/(mg/m2)
+        - IU/mL/(mg/m2/day)
+        - IU/mL/mg
+        - L/(mg/kg)
+        - L/(mg/kg/day)
+        - L/(mg/m2/day)
+        - L/mg
+        - mg/mL/(mg/day)
+        - mg/mL/(mg/kg)
+        - mg/mL/(mg/kg/day)
+        - mg/mL/(mg/m2)
+        - mg/mL/(mg/m2/day)
+        - mg/mL/mg
+        - mIU/mL/(mg/day)
+        - mIU/mL/(mg/kg)
+        - mIU/mL/(mg/kg/day)
+        - mIU/mL/(mg/m2)
+        - mIU/mL/(mg/m2/day)
+        - mIU/mL/mg
+        - mL/(mg/day)
+        - mL/(mg/kg)
+        - mL/(mg/kg/day)
+        - mL/(mg/m2)
+        - mL/(mg/m2/day)
+        - mmol/L/(mg/day)
+        - mmol/L/(mg/kg)
+        - mmol/L/(mg/kg/day)
+        - mmol/L/(mg/m2)
+        - mmol/L/(mg/m2/day)
+        - mmol/L/mg
+        - mol/L/(mg/day)
+        - mol/L/(mg/kg)
+        - mol/L/(mg/kg/day)
+        - mol/L/(mg/m2)
+        - mol/L/(mg/m2/day)
+        - mol/L/mg
+        - ng/mg
+        - ng/mL/(mg/day)
+        - ng/mL/(mg/kg)
+        - ng/mL/(mg/kg/day)
+        - ng/mL/(mg/m2)
+        - ng/mL/(mg/m2/day)
+        - ng/mL/mg
+        - nmol/L/(mg/day)
+        - nmol/L/(mg/kg)
+        - nmol/L/(mg/kg/day)
+        - nmol/L/(mg/m2)
+        - nmol/L/(mg/m2/day)
+        - nmol/L/mg
+        - nmolEq/L/mg
+        - pg/mg
+        - pg/mL/(mg/day)
+        - pg/mL/(mg/kg)
+        - pg/mL/(mg/kg/day)
+        - pg/mL/(mg/m2)
+        - pg/mL/(mg/m2/day)
+        - pg/mL/mg
+        - pmol/L/(mg/day)
+        - pmol/L/(mg/kg)
+        - pmol/L/(mg/kg/day)
+        - pmol/L/(mg/m2)
+        - pmol/L/(mg/m2/day)
+        - pmol/L/mg
+        - ug/mg
+        - ug/mL/(mg/day)
+        - ug/mL/(mg/kg)
+        - ug/mL/(mg/kg/day)
+        - ug/mL/(mg/m2)
+        - ug/mL/(mg/m2/day)
+        - ug/mL/mg
+        - uIU/mL/(mg/day)
+        - uIU/mL/(mg/kg)
+        - uIU/mL/(mg/kg/day)
+        - uIU/mL/(mg/m2)
+        - uIU/mL/(mg/m2/day)
+        - uIU/mL/mg
+        - umol/L/(mg/day)
+        - umol/L/(mg/kg)
+        - umol/L/(mg/kg/day)
+        - umol/L/(mg/m2)
+        - umol/L/(mg/m2/day)
+        - umol/L/mg
+outcome:
+  message: Value not found in extensible codelist PK Units of Measure - Dose mg (C128685)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C128685
+  codelist_name: PK Units of Measure - Dose mg
+  codelist_submission_value: PKUDMG
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 156
+

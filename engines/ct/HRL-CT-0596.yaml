@@ -1,0 +1,32 @@
+id: HRL-CT-0596
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: KDPI01TC (Kidney Donor Profile Index Clinical Classification Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: KDPI01TC
+      operator: in
+      value:
+        - KDPI0101
+outcome:
+  message: Value not found in non-extensible codelist Kidney Donor Profile Index Clinical
+    Classification Test Code (C130251)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130251
+  codelist_name: Kidney Donor Profile Index Clinical Classification Test Code
+  codelist_submission_value: KDPI01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

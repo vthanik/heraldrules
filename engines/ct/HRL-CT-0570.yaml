@@ -1,0 +1,61 @@
+id: HRL-CT-0570
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: IPAQ03TN (International Physical Activity Questionnaire (October 2002)
+  Long Last 7 Days Self-Administered Format Questionnaire Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: IPAQ03TN
+      operator: in
+      value:
+        - IPA03-Bicycle Hr & Min per Day
+        - IPA03-Currently Have Job or Unpaid Work
+        - IPA03-Days Bicycle Place to Place
+        - IPA03-Days Moderate as Part of Work
+        - IPA03-Days Moderate in Leisure Time
+        - IPA03-Days Moderate in the Garden/Yard
+        - IPA03-Days Moderate Inside Home
+        - IPA03-Days Travel in a Motor Vehicle
+        - IPA03-Days Vigorous as Part of Work
+        - IPA03-Days Vigorous in Leisure Time
+        - IPA03-Days Vigorous in the Garden/Yard
+        - IPA03-Days Walk as Part of Your Work
+        - IPA03-Days Walk in Leisure Time
+        - IPA03-Days Walk Place to Place
+        - IPA03-Moderate Garden Hr & Min per Day
+        - IPA03-Moderate Home Hr & Min per Day
+        - IPA03-Moderate Leisure Hr & Min per Day
+        - IPA03-Moderate Work Hr & Min per Day
+        - IPA03-Sitting Weekday Hr & Min per Day
+        - IPA03-Sitting Weekend Hr & Min per Day
+        - IPA03-Traveling Hr & Min per Day
+        - IPA03-Vigorous Garden Hr & Min per Day
+        - IPA03-Vigorous Leisure Hr & Min per Day
+        - IPA03-Vigorous Work Hr & Min per Day
+        - IPA03-Walking Leisure Hr & Min per Day
+        - IPA03-Walking Place Hr & Min per Day
+        - IPA03-Walking Work Hr & Min per Day
+outcome:
+  message: Value not found in non-extensible codelist International Physical Activity
+    Questionnaire (October 2002) Long Last 7 Days Self-Administered Format Questionnaire
+    Test Name (C141666)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C141666
+  codelist_name: International Physical Activity Questionnaire (October 2002) Long
+    Last 7 Days Self-Administered Format Questionnaire Test Name
+  codelist_submission_value: IPAQ03TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 27
+

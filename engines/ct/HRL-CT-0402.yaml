@@ -1,0 +1,58 @@
+id: HRL-CT-0402
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ED2TC (Expanded Disability Rating Scale - Postacute Interview Survivor
+  Version Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ED2TC
+      operator: in
+      value:
+        - ED202_3
+        - ED204_1
+        - ED204_2
+        - ED204_3
+        - ED205_1
+        - ED205_2
+        - ED205_3
+        - ED206_1
+        - ED206_2
+        - ED206_3
+        - ED206_4
+        - ED207_1
+        - ED207_2
+        - ED207_3
+        - ED207_4
+        - ED207_5
+        - ED207_6A
+        - ED207_6B
+        - ED207_6C
+        - ED208_1
+        - ED208_2
+        - ED208_3
+        - ED208_4
+        - ED208_5
+        - ED208_6
+        - ED208_7
+outcome:
+  message: Value not found in non-extensible codelist Expanded Disability Rating Scale
+    - Postacute Interview Survivor Version Questionnaire Test Code (C125747)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C125747
+  codelist_name: Expanded Disability Rating Scale - Postacute Interview Survivor Version
+    Questionnaire Test Code
+  codelist_submission_value: ED2TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 26
+

@@ -1,0 +1,69 @@
+id: HRL-CT-0453
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC016TC (Functional Assessment of Cancer Therapy-Lung Version 4 Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC016TC
+      operator: in
+      value:
+        - FAC01601
+        - FAC01602
+        - FAC01603
+        - FAC01604
+        - FAC01605
+        - FAC01606
+        - FAC01607
+        - FAC01608
+        - FAC01609
+        - FAC01610
+        - FAC01611
+        - FAC01612
+        - FAC01613
+        - FAC01614
+        - FAC01615
+        - FAC01616
+        - FAC01617
+        - FAC01618
+        - FAC01619
+        - FAC01620
+        - FAC01621
+        - FAC01622
+        - FAC01623
+        - FAC01624
+        - FAC01625
+        - FAC01626
+        - FAC01627
+        - FAC01628
+        - FAC01629
+        - FAC01630
+        - FAC01631
+        - FAC01632
+        - FAC01633
+        - FAC01634
+        - FAC01635
+        - FAC01636
+        - FAC01637
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Lung Version 4 Questionnaire Test Code (C150782)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150782
+  codelist_name: Functional Assessment of Cancer Therapy-Lung Version 4 Questionnaire
+    Test Code
+  codelist_submission_value: FAC016TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 37
+

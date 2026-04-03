@@ -1,0 +1,38 @@
+id: HRL-CT-0936
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RUTG0101OR (Rutgeerts Score Clinical Classification ORRES for RUTG0101
+  TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RUTG0101OR
+      operator: in
+      value:
+        - <5 aphthous lesions
+        - '>5 aphthous lesions with normal mucosa between the lesions, or skip areas
+          of larger lesions or lesions confined to the ileocolonic anastomosis (i.e.,
+          <1 cm in length)'
+        - diffuse aphthous ileitis with diffusely inflamed mucosa
+        - diffuse inflammation with already larger ulcers, nodules, and/or narrowing
+        - no lesions
+outcome:
+  message: Value not found in non-extensible codelist Rutgeerts Score Clinical Classification
+    ORRES for RUTG0101 TN/TC (C190903)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C190903
+  codelist_name: Rutgeerts Score Clinical Classification ORRES for RUTG0101 TN/TC
+  codelist_submission_value: RUTG0101OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

@@ -1,0 +1,36 @@
+id: HRL-CT-0786
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PHQ0101T09STR (Patient Health Questionnaire - 9 Questionnaire STRESC
+  for PHQ0101 Through PHQ0109 TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PHQ0101T09STR
+      operator: in
+      value:
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+outcome:
+  message: Value not found in non-extensible codelist Patient Health Questionnaire
+    - 9 Questionnaire STRESC for PHQ0101 Through PHQ0109 TN/TC (C213941)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C213941
+  codelist_name: Patient Health Questionnaire - 9 Questionnaire STRESC for PHQ0101
+    Through PHQ0109 TN/TC
+  codelist_submission_value: PHQ0101T09STR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

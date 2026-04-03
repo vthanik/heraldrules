@@ -1,0 +1,73 @@
+id: HRL-CT-0199
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CDRS1TC (Children's Depression Rating Scale, Revised Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CDRS1TC
+      operator: in
+      value:
+        - CDRS101
+        - CDRS101A
+        - CDRS102
+        - CDRS102A
+        - CDRS103
+        - CDRS103A
+        - CDRS104
+        - CDRS104A
+        - CDRS105
+        - CDRS105A
+        - CDRS106
+        - CDRS106A
+        - CDRS107
+        - CDRS107A
+        - CDRS108
+        - CDRS108A
+        - CDRS109
+        - CDRS109A
+        - CDRS110
+        - CDRS110A
+        - CDRS111
+        - CDRS111A
+        - CDRS112
+        - CDRS112A
+        - CDRS113
+        - CDRS113A
+        - CDRS114
+        - CDRS114A
+        - CDRS115
+        - CDRS115A
+        - CDRS116
+        - CDRS116A
+        - CDRS117
+        - CDRS117A
+        - CDRS118
+        - CDRS119
+        - CDRS120
+        - CDRS121
+        - CDRS122
+        - CDRS123
+        - CDRS124
+outcome:
+  message: Value not found in non-extensible codelist Children's Depression Rating
+    Scale, Revised Clinical Classification Test Code (C154447)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C154447
+  codelist_name: Children's Depression Rating Scale, Revised Clinical Classification
+    Test Code
+  codelist_submission_value: CDRS1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 41
+

@@ -1,0 +1,39 @@
+id: HRL-CT-0863
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PA136TC (PROMIS Item Bank v1.0 - Fatigue - Short Form 7a Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PA136TC
+      operator: in
+      value:
+        - PA136001
+        - PA136002
+        - PA136003
+        - PA136004
+        - PA136005
+        - PA136006
+        - PA136007
+outcome:
+  message: Value not found in non-extensible codelist PROMIS Item Bank v1.0 - Fatigue
+    - Short Form 7a Questionnaire Test Code (C202144)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C202144
+  codelist_name: PROMIS Item Bank v1.0 - Fatigue - Short Form 7a Questionnaire Test
+    Code
+  codelist_submission_value: PA136TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

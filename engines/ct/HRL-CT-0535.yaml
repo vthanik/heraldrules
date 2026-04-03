@@ -1,0 +1,38 @@
+id: HRL-CT-0535
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HSB01TN (HAS-BLED Bleeding Risk Score Clinical Classification Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HSB01TN
+      operator: in
+      value:
+        - HSB01-Abnormal Renal and Liver Function
+        - HSB01-Bleeding
+        - HSB01-Drugs or Alcohol
+        - HSB01-Elderly
+        - HSB01-Hypertension
+        - HSB01-Labile INRs
+        - HSB01-Stroke
+outcome:
+  message: Value not found in non-extensible codelist HAS-BLED Bleeding Risk Score
+    Clinical Classification Test Name (C138212)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138212
+  codelist_name: HAS-BLED Bleeding Risk Score Clinical Classification Test Name
+  codelist_submission_value: HSB01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

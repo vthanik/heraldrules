@@ -1,0 +1,127 @@
+id: HRL-CT-0754
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ONCRSR (Oncology Response Assessment Result) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ONCRSR
+      operator: in
+      value:
+        - ABSENT MORPHOLOGIC RESPONSE
+        - CA125 50% RESPONSE
+        - CA125 75% RESPONSE
+        - cCR
+        - CHR
+        - CLINICAL RELAPSE
+        - CMR
+        - CNS1
+        - CNS2
+        - CNS3
+        - cPR
+        - CR
+        - CR-CT
+        - CRh
+        - CRi
+        - CYTOGENETIC CR
+        - CYTOGENETIC MINIMAL RESPONSE
+        - CYTOGENETIC MINOR RESPONSE
+        - CYTOGENETIC NO RESPONSE
+        - CYTOGENETIC PR
+        - DECREASED
+        - DISEASE TRANSFORMATION
+        - EQUIVOCAL
+        - FAVORABLE RESPONSE
+        - HI-E
+        - HI-N
+        - HI-P
+        - iCPD
+        - iCR
+        - IMMUNOPHENOTYPIC CR
+        - IMPROVED
+        - INCREASED
+        - INDETERMINATE RESPONSE
+        - INDETERMINATE
+        - iPR
+        - irCR
+        - irPD
+        - irPR
+        - irSD
+        - iSD
+        - iUPD
+        - M1
+        - M2
+        - M3
+        - MAJOR PATHOLOGIC RESPONSE
+        - mCR
+        - MINOR PATHOLOGIC RESPONSE
+        - MOLECULAR CR
+        - MOLECULAR MAJOR RESPONSE
+        - MORPHOLOGIC CR
+        - MORPHOLOGIC CRi
+        - MORPHOLOGIC LEUKEMIA-FREE STATE
+        - MR
+        - MRD RELAPSE
+        - NE
+        - NED
+        - NEGATIVE
+        - NON-CR/NON-PD
+        - NON-iCR/NON-iUPD
+        - NON-PD
+        - NON-QUANTIFIABLE MRD POSITIVITY
+        - NONE BEYOND PHYSIOLOGIC REPLACEMENT DOSE
+        - NOT ALL EVALUATED
+        - nPR
+        - NR
+        - OPTIMAL MORPHOLOGIC RESPONSE
+        - PARTIAL MORPHOLOGIC RESPONSE
+        - pCR
+        - PD FROM PR
+        - PD
+        - PD-CT
+        - PD/RELAPSE AFTER HI
+        - PDu
+        - PMD
+        - PMR
+        - POSITIVE
+        - PR WITH LYMPHOCYTOSIS
+        - PR
+        - PR-CT
+        - PSA PROGRESSION
+        - PSEUDOPROGRESSION
+        - PSEUDORESPONSE
+        - QUANTIFIABLE MRD POSITIVITY
+        - RELAPSED DISEASE FROM CR OR PR
+        - RELAPSED DISEASE FROM CR
+        - RELAPSED DISEASE
+        - sCR
+        - SD
+        - SD-CT
+        - SMD
+        - STABLE
+        - TREATMENT FAILURE
+        - UNEQUIVOCAL
+        - UNFAVORABLE RESPONSE
+        - VGPR
+        - WORSENED
+outcome:
+  message: Value not found in extensible codelist Oncology Response Assessment Result
+    (C96785)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C96785
+  codelist_name: Oncology Response Assessment Result
+  codelist_submission_value: ONCRSR
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 96
+

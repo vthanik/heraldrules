@@ -1,0 +1,68 @@
+id: HRL-CT-0305
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DDS01TN (Diabetes Distress Scale for Adults with Type 1 Diabetes Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DDS01TN
+      operator: in
+      value:
+        - DDS01-Be Perfect w/Diabetes Management
+        - DDS01-Be Safe From Hypoglycemic Event
+        - DDS01-Can't Tell Doctor What on My Mind
+        - DDS01-Discouraged See High Blood Glucose
+        - DDS01-Doctor Doesn't Know Enough
+        - DDS01-Doctor Doesn't Understand
+        - DDS01-Don't Check Glucose as I Should
+        - DDS01-Don't Get Help From Doctor
+        - DDS01-Don't Give Diabetes Attention
+        - DDS01-Don't Notice Signs of Hypoglycemia
+        - DDS01-Eating Is Out of Control
+        - DDS01-Family Act Like Diabetes Police
+        - DDS01-Family Make Bigger Deal Diabetes
+        - DDS01-Family Treat Me More Fragile
+        - DDS01-Family Worry About Hypoglycemia
+        - DDS01-Food and Eating Control My Life
+        - DDS01-Have to Hide My Diabetes
+        - DDS01-Hypoglycemic Event When Asleep
+        - DDS01-Hypoglycemic Event While Driving
+        - DDS01-I Don't Eat Carefully as I Should
+        - DDS01-Less Attractive to Employers
+        - DDS01-Never Be Good Enough
+        - DDS01-Not Skilled at Managing Diabetes
+        - DDS01-Not Taking Insulin as I Should
+        - DDS01-People Think Less of Me
+        - DDS01-People Treat Me Differently
+        - 'DDS01-Subscale 1: Powerlessness'
+        - 'DDS01-Subscale 2: Management Distress'
+        - 'DDS01-Subscale 3: Hypoglycemia Distress'
+        - 'DDS01-Subscale 4: Neg Social Perceptions'
+        - 'DDS01-Subscale 5: Eating Distress'
+        - 'DDS01-Subscale 6: Physician Distress'
+        - 'DDS01-Subscale 7: Friend/Family Distress'
+        - DDS01-Too Much Diabetes Equipment w/Me
+        - DDS01-Total Scale
+        - DDS01-Worried Develop Complications
+outcome:
+  message: Value not found in non-extensible codelist Diabetes Distress Scale for
+    Adults with Type 1 Diabetes Questionnaire Test Name (C161620)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C161620
+  codelist_name: Diabetes Distress Scale for Adults with Type 1 Diabetes Questionnaire
+    Test Name
+  codelist_submission_value: DDS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 36
+

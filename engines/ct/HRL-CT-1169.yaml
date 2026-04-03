@@ -1,0 +1,82 @@
+id: HRL-CT-1169
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: WD4TN (World Health Organization Disability Assessment Schedule 2.0 -
+  12 + 24-Item Interviewer Questionnaire Test Name) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: WD4TN
+      operator: in
+      value:
+        - WD4-Care of Household Responsibilities
+        - WD4-Concentrating for Ten Minutes
+        - WD4-Current Marital Status
+        - WD4-Days Unable to Carry Out Activities
+        - WD4-Dealing With People You Do Not Know
+        - WD4-Describes Main Work Status Best
+        - WD4-Doing Important Household Tasks
+        - WD4-Doing Important Work/School Tasks
+        - WD4-Drain on Financial Resources
+        - WD4-Earn Less Money
+        - WD4-Eating
+        - WD4-Emotionally Affected by Health
+        - WD4-Finding Solutions to Problems
+        - WD4-Get Along with People Close to You
+        - WD4-Getting All Work Done You Need
+        - WD4-Getting Dressed
+        - WD4-Getting Household Work Done Needed
+        - WD4-Getting Household Work Done Quickly
+        - WD4-Getting Out of Your Home
+        - WD4-Getting Work Done Quickly as Needed
+        - WD4-Had to Work at a Lower Level
+        - WD4-How Many Days Difficulties Present
+        - WD4-How Many Days Reduce Activities
+        - WD4-How Old Are You Now
+        - WD4-Learning a New Task
+        - WD4-Living Situation at Interview
+        - WD4-Maintaining a Fiendship
+        - WD4-Making New Friends
+        - WD4-Miss Work Half Day or More
+        - WD4-Moving Around Inside Your Home
+        - WD4-Problem Because of Barriers in World
+        - WD4-Problem Did Your Family Have
+        - WD4-Problem Doing Things for Relaxation
+        - WD4-Problem Joining Community Activities
+        - WD4-Problem Living With Dignity
+        - WD4-Reduce or Miss Household Work
+        - WD4-Remembering to Do Important Things
+        - WD4-Sex as Observed
+        - WD4-Sexual Activities
+        - WD4-Standing for Long Periods
+        - WD4-Standing Up From Sitting Down
+        - WD4-Starting/Maintaining Conversation
+        - WD4-Staying By Yourself for a Few Days
+        - WD4-Time Spend on Your Health Condition
+        - WD4-Understanding What People Say
+        - WD4-Walking a Long Distance
+        - WD4-Washing Your Whole Body
+        - WD4-Years Studying in School/College
+        - WD4-Your Day-to-Day Work
+outcome:
+  message: Value not found in non-extensible codelist World Health Organization Disability
+    Assessment Schedule 2.0 - 12 + 24-Item Interviewer Questionnaire Test Name (C130280)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130280
+  codelist_name: World Health Organization Disability Assessment Schedule 2.0 - 12
+    + 24-Item Interviewer Questionnaire Test Name
+  codelist_submission_value: WD4TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 49
+

@@ -1,0 +1,42 @@
+id: HRL-CT-0974
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SF6D2TC (SF-6Dv2 Health Utility Survey Acute, English Version 2.0 Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SF6D2TC
+      operator: in
+      value:
+        - SF6D201
+        - SF6D202
+        - SF6D203
+        - SF6D204
+        - SF6D205
+        - SF6D206
+        - SF6D207
+        - SF6D208
+        - SF6D209
+        - SF6D210
+outcome:
+  message: Value not found in non-extensible codelist SF-6Dv2 Health Utility Survey
+    Acute, English Version 2.0 Questionnaire Test Code (C185740)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C185740
+  codelist_name: SF-6Dv2 Health Utility Survey Acute, English Version 2.0 Questionnaire
+    Test Code
+  codelist_submission_value: SF6D2TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 10
+

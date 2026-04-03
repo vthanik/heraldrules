@@ -1,0 +1,68 @@
+id: HRL-CT-0648
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MNSI1TC (Michigan Neuropathy Screening Instrument Questionnaire Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MNSI1TC
+      operator: in
+      value:
+        - MNSI101
+        - MNSI102
+        - MNSI103
+        - MNSI104
+        - MNSI105
+        - MNSI106
+        - MNSI107
+        - MNSI108
+        - MNSI109
+        - MNSI110
+        - MNSI111
+        - MNSI112
+        - MNSI113
+        - MNSI114
+        - MNSI115
+        - MNSI116
+        - MNSI117
+        - MNSI118
+        - MNSI119
+        - MNSI120
+        - MNSI121
+        - MNSI122
+        - MNSI123
+        - MNSI124
+        - MNSI125
+        - MNSI126
+        - MNSI127
+        - MNSI128
+        - MNSI129
+        - MNSI130
+        - MNSI131
+        - MNSI132
+        - MNSI133
+        - MNSI134
+        - MNSI135
+        - MNSI136
+        - MNSI137
+outcome:
+  message: Value not found in non-extensible codelist Michigan Neuropathy Screening
+    Instrument Questionnaire Test Code (C100152)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100152
+  codelist_name: Michigan Neuropathy Screening Instrument Questionnaire Test Code
+  codelist_submission_value: MNSI1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 37
+

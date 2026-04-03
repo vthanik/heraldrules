@@ -1,0 +1,110 @@
+id: HRL-CT-1026
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SCTESTCD (Subject Characteristic Test Code) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SCTESTCD
+      operator: in
+      value:
+        - ADEVAIND
+        - AGESTSMK
+        - BIO1DRN
+        - BIOBRON
+        - BIOSISN
+        - BRCTRY
+        - BRCTRYCD
+        - BRFEDIND
+        - BTHPLRTY
+        - CHLDHSHN
+        - CINVIND
+        - CNTYPAD
+        - CTRYDDTC
+        - CTRYDEXP
+        - CTRYPAD
+        - DAYCRIND
+        - DDDTYPE
+        - DISTDEXP
+        - DISTPAD
+        - DSTATTOD
+        - DWELLTYP
+        - EDLVRDTC
+        - EDULEVEL
+        - EDUYRNUM
+        - EGESTAGE
+        - EMPJOB
+        - EMPSTAT
+        - FRTLSTAT
+        - FTSTUIND
+        - GENIDENT
+        - GPSDEXP
+        - GSTABRTH
+        - HANDDOM
+        - HIEMPIND
+        - HIIHSIND
+        - HIIND
+        - HIMILIND
+        - HIPRVIND
+        - HIVHRIND
+        - INCMLVL
+        - INL1YIND
+        - ISXDXIND
+        - LDURABS
+        - LNGSPP
+        - LNGSPS
+        - LVSBJIND
+        - MARISTAT
+        - MDCDIND
+        - MDCRIND
+        - MILTSTAT
+        - NATORIG
+        - OCUPINDS
+        - PHYACLFS
+        - PPLHSHN
+        - PREMBRTH
+        - PRICON
+        - RISKPOP
+        - RISKSOC
+        - SALTYP
+        - SETCON
+        - SEXABRTH
+        - SEXORIE
+        - SHSMEXST
+        - SKINCLAS
+        - SMGAIND
+        - SOCECCLS
+        - SSHIPNAM
+        - SSMCDNAM
+        - SSMCRNAM
+        - STDNTIND
+        - SXCLUSE
+        - SYMPTOM
+        - TCSCOIND
+        - TRIBAFIL
+        - TWINTYP
+        - TYPCON
+        - UHOUSIND
+        - VILLPAD
+        - WRKDYWKN
+outcome:
+  message: Value not found in extensible codelist Subject Characteristic Test Code
+    (C74559)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C74559
+  codelist_name: Subject Characteristic Test Code
+  codelist_submission_value: SCTESTCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 79
+

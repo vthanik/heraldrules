@@ -1,0 +1,44 @@
+id: HRL-CT-0508
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GCS01TN (Glasgow Coma Scale NINDS Version 1.0 Clinical Classification
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GCS01TN
+      operator: in
+      value:
+        - GCS01-Best Eye Response
+        - 'GCS01-Confounder: Alcohol/Drug of Abuse'
+        - 'GCS01-Confounder: C-Spine Injury'
+        - 'GCS01-Confounder: GCS Accurate'
+        - 'GCS01-Confounder: Hypothermia'
+        - 'GCS01-Confounder: Hypoxia/Hypotension'
+        - 'GCS01-Confounder: Paralytic'
+        - 'GCS01-Confounder: Sedation'
+        - 'GCS01-Confounder: Unknown'
+        - GCS01-Motor Response
+        - GCS01-Total Score
+        - GCS01-Verbal Response
+outcome:
+  message: Value not found in non-extensible codelist Glasgow Coma Scale NINDS Version
+    1.0 Clinical Classification Test Name (C124681)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124681
+  codelist_name: Glasgow Coma Scale NINDS Version 1.0 Clinical Classification Test
+    Name
+  codelist_submission_value: GCS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 12
+

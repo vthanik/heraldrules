@@ -1,0 +1,77 @@
+id: HRL-CT-0441
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC008TC (Functional Assessment of Cancer Therapy-Colorectal Version
+  4 Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC008TC
+      operator: in
+      value:
+        - FAC00801
+        - FAC00802
+        - FAC00803
+        - FAC00804
+        - FAC00805
+        - FAC00806
+        - FAC00807
+        - FAC00808
+        - FAC00809
+        - FAC00810
+        - FAC00811
+        - FAC00812
+        - FAC00813
+        - FAC00814
+        - FAC00815
+        - FAC00816
+        - FAC00817
+        - FAC00818
+        - FAC00819
+        - FAC00820
+        - FAC00821
+        - FAC00822
+        - FAC00823
+        - FAC00824
+        - FAC00825
+        - FAC00826
+        - FAC00827
+        - FAC00828
+        - FAC00829
+        - FAC00830
+        - FAC00831
+        - FAC00832
+        - FAC00833
+        - FAC00834
+        - FAC00835
+        - FAC00836
+        - FAC00837
+        - FAC00838
+        - FAC00839
+        - FAC00840
+        - FAC00841
+        - FAC00842
+        - FAC00843
+        - FAC00844
+        - FAC00845
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Colorectal Version 4 Questionnaire Test Code (C150774)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150774
+  codelist_name: Functional Assessment of Cancer Therapy-Colorectal Version 4 Questionnaire
+    Test Code
+  codelist_submission_value: FAC008TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 45
+

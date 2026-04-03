@@ -1,0 +1,106 @@
+id: HRL-CT-0360
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ETHNICC (Ethnicity As Collected) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ETHNICC
+      operator: in
+      value:
+        - ACHANG
+        - AFRO-LATINO
+        - ASHKENAZI JEW
+        - BAI
+        - BLANG
+        - BONAN
+        - BUYEI
+        - CENTRAL AMERICAN
+        - CHOSEN
+        - CUBAN AMERICAN
+        - CUBAN
+        - DAI
+        - DAUR
+        - DEANG
+        - DERUNG
+        - DONG
+        - DONGXIANG
+        - EWENKI
+        - GAOSHAN
+        - GELAO
+        - GIN
+        - HAN
+        - HANI
+        - HEZHEN
+        - HISPANIC OR LATINO
+        - HISPANIC
+        - HUI
+        - JINGPO
+        - JINO
+        - KAZAK
+        - KIRGIZ
+        - KURDISH
+        - LAHU
+        - LATIN AMERICAN
+        - LATINO
+        - LATINO-CARIBBEAN
+        - LHOBA
+        - LI
+        - LISU
+        - MAN
+        - MAONAN
+        - MEXICAN AMERICAN
+        - MEXICAN
+        - MIAO
+        - MONBA
+        - MONGOL
+        - MULAO
+        - NAXI
+        - NOT HISPANIC OR LATINO
+        - NOT REPORTED
+        - NU
+        - OROQEN
+        - PUERTO RICAN
+        - PUMI
+        - QIANG
+        - RUSS
+        - SALAR
+        - SEPHARDIC JEW
+        - SHE
+        - SOUTH AMERICAN
+        - SPANISH
+        - SUI
+        - TAJIK
+        - TATAR
+        - TU
+        - TUJIA
+        - UNKNOWN
+        - UYGUR
+        - UZBEK
+        - VA
+        - XIBE
+        - YAO
+        - YI
+        - YUGUR
+        - ZANG
+        - ZHUANG
+outcome:
+  message: Value not found in extensible codelist Ethnicity As Collected (C128690)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C128690
+  codelist_name: Ethnicity As Collected
+  codelist_submission_value: ETHNICC
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 76
+

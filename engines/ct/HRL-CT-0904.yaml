@@ -1,0 +1,38 @@
+id: HRL-CT-0904
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSLVLNIM (Reason CS/LV Lead Not Implanted) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSLVLNIM
+      operator: in
+      value:
+        - COULD NOT OBTAIN ACCEPTABLE PACING THRESHOLDS
+        - LEAD POSITION RESULTS IN UNDESIRABLE STIMULATION OF THE DIAPHRAGM
+        - PREVIOUSLY IMPLANTED
+        - UNABLE TO OBTAIN SATISFACTORY CORONARY SINUS ACCESS
+        - UNABLE TO OBTAIN SATISFACTORY VASCULAR ACCESS
+        - UNABLE TO POSITION LEAD DUE TO CORONARY SINUS DISSECTION
+        - UNABLE TO POSITION LEAD IN TRIBUTARY VEIN OF CORONARY SINUS
+outcome:
+  message: Value not found in non-extensible codelist Reason CS/LV Lead Not Implanted
+    (C101864)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101864
+  codelist_name: Reason CS/LV Lead Not Implanted
+  codelist_submission_value: CSLVLNIM
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

@@ -1,0 +1,47 @@
+id: HRL-CT-0435
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC029TC (Functional Assessment of Cancer Therapy-Brain Symptom Index
+  Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC029TC
+      operator: in
+      value:
+        - FAC02901
+        - FAC02902
+        - FAC02903
+        - FAC02904
+        - FAC02905
+        - FAC02906
+        - FAC02907
+        - FAC02908
+        - FAC02909
+        - FAC02910
+        - FAC02911
+        - FAC02912
+        - FAC02913
+        - FAC02914
+        - FAC02915
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Brain Symptom Index Questionnaire Test Code (C138221)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138221
+  codelist_name: Functional Assessment of Cancer Therapy-Brain Symptom Index Questionnaire
+    Test Code
+  codelist_submission_value: FAC029TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 15
+

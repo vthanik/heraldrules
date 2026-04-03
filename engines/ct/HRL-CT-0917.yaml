@@ -1,0 +1,56 @@
+id: HRL-CT-0917
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FIQR01TC (Revised Fibromyalgia Impact Questionnaire Questionnaire Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FIQR01TC
+      operator: in
+      value:
+        - FIQR0101
+        - FIQR0102
+        - FIQR0103
+        - FIQR0104
+        - FIQR0105
+        - FIQR0106
+        - FIQR0107
+        - FIQR0108
+        - FIQR0109
+        - FIQR0110
+        - FIQR0111
+        - FIQR0112
+        - FIQR0113
+        - FIQR0114
+        - FIQR0115
+        - FIQR0116
+        - FIQR0117
+        - FIQR0118
+        - FIQR0119
+        - FIQR0120
+        - FIQR0121
+        - FIQR0122
+        - FIQR0123
+        - FIQR0124
+        - FIQR0125
+outcome:
+  message: Value not found in non-extensible codelist Revised Fibromyalgia Impact
+    Questionnaire Questionnaire Test Code (C103465)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103465
+  codelist_name: Revised Fibromyalgia Impact Questionnaire Questionnaire Test Code
+  codelist_submission_value: FIQR01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

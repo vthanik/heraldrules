@@ -1,0 +1,39 @@
+id: HRL-CT-0864
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PA136TN (PROMIS Item Bank v1.0 - Fatigue - Short Form 7a Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PA136TN
+      operator: in
+      value:
+        - PA136-Often Energy Exercise Strenuously
+        - PA136-Often Extreme Exhaustion
+        - PA136-Often Fatigue Limit You at Work
+        - PA136-Often Feel Tired
+        - PA136-Often Run Out of Energy
+        - PA136-Often Too Tired Take Bath/Shower
+        - PA136-Often Too Tired to Think Clearly
+outcome:
+  message: Value not found in non-extensible codelist PROMIS Item Bank v1.0 - Fatigue
+    - Short Form 7a Questionnaire Test Name (C202143)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C202143
+  codelist_name: PROMIS Item Bank v1.0 - Fatigue - Short Form 7a Questionnaire Test
+    Name
+  codelist_submission_value: PA136TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

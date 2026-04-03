@@ -1,0 +1,59 @@
+id: HRL-CT-0287
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CRFATS (Crohn's Disease Findings About Test Name) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CRFATS
+      operator: in
+      value:
+        - Age Symptoms Started
+        - Anatomical Location of Primary Lesion
+        - Biopsy Specimen Taken Indicator
+        - Expected Efficacious Treatment Reg Ind
+        - Extent of Resection
+        - Final Dose Amount
+        - Fistula Anatomical Type
+        - Frequency of Final Dose Amount
+        - Frequency of Maximum Dose Amount
+        - Ileocecal Junction Removed Indicator
+        - Length of Resection
+        - Longest Diameter of Primary Lesion
+        - Maximum Dose Amount
+        - Number of Abscesses
+        - Number of Biopsy Specimens Taken
+        - Number of Devices Inserted
+        - Number of Devices Present
+        - Number of Fistulas
+        - Number of Lesions
+        - Number of Procedures Performed
+        - Number of Strictures
+        - Pathologic Appearance of Biopsy Site
+        - Relapse after Discon Dependent Indicator
+        - Severity/Intensity
+        - Sign/Symptom Leading to Discontinuation
+        - Substance Dependence Indicator
+        - Unable to Discon Dependent Indicator
+        - Unable to Taper Dependent Indicator
+outcome:
+  message: Value not found in extensible codelist Crohn's Disease Findings About Test
+    Name (C174224)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C174224
+  codelist_name: Crohn's Disease Findings About Test Name
+  codelist_submission_value: CRFATS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 28
+

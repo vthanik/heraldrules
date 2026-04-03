@@ -1,0 +1,36 @@
+id: HRL-CT-0556
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: IVIS01TC (Impact of Visual Impairment Scale Questionnaire Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: IVIS01TC
+      operator: in
+      value:
+        - IVIS0101
+        - IVIS0102
+        - IVIS0103
+        - IVIS0104
+        - IVIS0105
+outcome:
+  message: Value not found in non-extensible codelist Impact of Visual Impairment
+    Scale Questionnaire Test Code (C113856)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C113856
+  codelist_name: Impact of Visual Impairment Scale Questionnaire Test Code
+  codelist_submission_value: IVIS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

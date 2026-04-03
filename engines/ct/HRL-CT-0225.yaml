@@ -1,0 +1,92 @@
+id: HRL-CT-0225
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSS04TC (Columbia-Suicide Severity Rating Scale Baseline/Screening Version
+  Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSS04TC
+      operator: in
+      value:
+        - CSS0401A
+        - CSS0401B
+        - CSS0401C
+        - CSS0402A
+        - CSS0402B
+        - CSS0402C
+        - CSS0403A
+        - CSS0403B
+        - CSS0403C
+        - CSS0404A
+        - CSS0404B
+        - CSS0404C
+        - CSS0405A
+        - CSS0405B
+        - CSS0405C
+        - CSS0406A
+        - CSS0406B
+        - CSS0406C
+        - CSS0406D
+        - CSS0407A
+        - CSS0407B
+        - CSS0408A
+        - CSS0408B
+        - CSS0409A
+        - CSS0409B
+        - CSS0410A
+        - CSS0410B
+        - CSS0411A
+        - CSS0411B
+        - CSS0412A
+        - CSS0412B
+        - CSS0413A
+        - CSS0413B
+        - CSS0413C
+        - CSS0414A
+        - CSS0414B
+        - CSS0415A
+        - CSS0415B
+        - CSS0416A
+        - CSS0416B
+        - CSS0416C
+        - CSS0417A
+        - CSS0417B
+        - CSS0418A
+        - CSS0418B
+        - CSS0418C
+        - CSS0419A
+        - CSS0419B
+        - CSS0419C
+        - CSS0420A
+        - CSS0420B
+        - CSS0421A
+        - CSS0421B
+        - CSS0421C
+        - CSS0422A
+        - CSS0422B
+        - CSS0422C
+        - CSS0423A
+        - CSS0423B
+        - CSS0423C
+outcome:
+  message: Value not found in non-extensible codelist Columbia-Suicide Severity Rating
+    Scale Baseline/Screening Version Questionnaire Test Code (C106661)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106661
+  codelist_name: Columbia-Suicide Severity Rating Scale Baseline/Screening Version
+    Questionnaire Test Code
+  codelist_submission_value: CSS04TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 60
+

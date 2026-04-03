@@ -1,0 +1,36 @@
+id: HRL-CT-0940
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SWLS01TC (Satisfaction With Life Scale Questionnaire Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SWLS01TC
+      operator: in
+      value:
+        - SWLS0101
+        - SWLS0102
+        - SWLS0103
+        - SWLS0104
+        - SWLS0105
+outcome:
+  message: Value not found in non-extensible codelist Satisfaction With Life Scale
+    Questionnaire Test Code (C115408)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C115408
+  codelist_name: Satisfaction With Life Scale Questionnaire Test Code
+  codelist_submission_value: SWLS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

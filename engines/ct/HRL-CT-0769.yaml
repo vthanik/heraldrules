@@ -1,0 +1,42 @@
+id: HRL-CT-0769
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PR01TN (Pain Relief Questionnaire Test Name) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PR01TN
+      operator: in
+      value:
+        - PR01-Average Pain Relief
+        - PR01-Least Pain Relief
+        - PR01-Maximum Pain Relief
+        - PR01-Minimum Pain Relief
+        - PR01-Pain Relief
+        - PR01-Starting Pain at Least 1/2 Gone
+        - PR01-Time to Meaningful Pain Relief
+        - PR01-Time to Perceptible Pain Relief
+        - PR01-Was there Meaningful Pain Relief
+        - PR01-Was there Perceptible Pain Relief
+        - PR01-Worst Pain Relief
+outcome:
+  message: Value not found in non-extensible codelist Pain Relief Questionnaire Test
+    Name (C105135)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C105135
+  codelist_name: Pain Relief Questionnaire Test Name
+  codelist_submission_value: PR01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 11
+

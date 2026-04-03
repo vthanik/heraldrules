@@ -1,0 +1,53 @@
+id: HRL-CT-1008
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SPECCOND (Specimen Condition) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SPECCOND
+      operator: in
+      value:
+        - AGGLUTINATED
+        - AUTOLYZED
+        - CALCIFIED
+        - CAUTERIZED
+        - CLOTTED
+        - CONCENTRATED
+        - CONTAMINATED
+        - DRIED
+        - FRESH
+        - FROZEN
+        - GELLED
+        - HEMOLYZED
+        - ICTERIC
+        - LACTESCENT
+        - LIPEMIC
+        - NON-HEMOLYZED
+        - PARAFFIN-EMBEDDED
+        - PRECIPITATED
+        - REFRIGERATED
+        - ROOM TEMPERATURE
+        - SOLIDIFIED
+        - THAWED
+        - UNEXPECTED ODOR
+outcome:
+  message: Value not found in extensible codelist Specimen Condition (C78733)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C78733
+  codelist_name: Specimen Condition
+  codelist_submission_value: SPECCOND
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 23
+

@@ -1,0 +1,36 @@
+id: HRL-CT-0258
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CCINVTYP (Contact Case Investigation Contact Type) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CCINVTYP
+      operator: in
+      value:
+        - CASUAL CONTACT
+        - CONTACT WITH EXPOSURE DURING MEDICAL PROCEDURE
+        - CONTACT WITH EXPOSURE IN CROWD SETTING
+        - CONTACT WITH MEDICAL RISK FACTOR
+        - HOUSEHOLD CONTACT
+outcome:
+  message: Value not found in extensible codelist Contact Case Investigation Contact
+    Type (C102575)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C102575
+  codelist_name: Contact Case Investigation Contact Type
+  codelist_submission_value: CCINVTYP
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 5
+

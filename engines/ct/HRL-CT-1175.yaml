@@ -1,0 +1,48 @@
+id: HRL-CT-1175
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: WD3TN (World Health Organization Disability Assessment Schedule 2.0 -
+  12-Item Self Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: WD3TN
+      operator: in
+      value:
+        - WD3-Care of Household Responsibilities
+        - WD3-Concentrating for Ten Minutes
+        - WD3-Days Unable to Carry Out Activities
+        - WD3-Dealing With People You Do Not Know
+        - WD3-Emotionally Affected by Health
+        - WD3-Getting Dressed
+        - WD3-How Many Days Difficulties Present
+        - WD3-How Many Days Reduce Activities
+        - WD3-Learning a New Task
+        - WD3-Maintaining a Friendship
+        - WD3-Problem Joining Community Activities
+        - WD3-Standing for Long Periods
+        - WD3-Walking a Long Distance
+        - WD3-Washing Your Whole Body
+        - WD3-Your Day-to-Day Work/School
+outcome:
+  message: Value not found in non-extensible codelist World Health Organization Disability
+    Assessment Schedule 2.0 - 12-Item Self Questionnaire Test Name (C130278)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130278
+  codelist_name: World Health Organization Disability Assessment Schedule 2.0 - 12-Item
+    Self Questionnaire Test Name
+  codelist_submission_value: WD3TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 15
+

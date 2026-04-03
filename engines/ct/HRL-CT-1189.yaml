@@ -1,0 +1,33 @@
+id: HRL-CT-1189
+version: 1
+status: Published
+standard: ADaM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GAD02PC (Generalized Anxiety Disorder - 7 Version 2 Questionnaire Parameter
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GAD02PC
+      operator: in
+      value:
+        - GAD02TS
+outcome:
+  message: Value not found in non-extensible codelist Generalized Anxiety Disorder
+    - 7 Version 2 Questionnaire Parameter Code (C172334)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C172334
+  codelist_name: Generalized Anxiety Disorder - 7 Version 2 Questionnaire Parameter
+    Code
+  codelist_submission_value: GAD02PC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

@@ -1,0 +1,41 @@
+id: HRL-CT-0346
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EPDS01TC (Edinburgh Postnatal Depression Scale Questionnaire Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EPDS01TC
+      operator: in
+      value:
+        - EPDS0101
+        - EPDS0102
+        - EPDS0103
+        - EPDS0104
+        - EPDS0105
+        - EPDS0106
+        - EPDS0107
+        - EPDS0108
+        - EPDS0109
+        - EPDS0110
+outcome:
+  message: Value not found in non-extensible codelist Edinburgh Postnatal Depression
+    Scale Questionnaire Test Code (C132521)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C132521
+  codelist_name: Edinburgh Postnatal Depression Scale Questionnaire Test Code
+  codelist_submission_value: EPDS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 10
+

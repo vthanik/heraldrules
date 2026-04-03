@@ -1,0 +1,60 @@
+id: HRL-CT-0381
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR21TC (European Organization for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Esophago-Gastric Cancer Phase IV Module Version
+  25 Items Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR21TC
+      operator: in
+      value:
+        - EOR2101
+        - EOR2102
+        - EOR2103
+        - EOR2104
+        - EOR2105
+        - EOR2106
+        - EOR2107
+        - EOR2108
+        - EOR2109
+        - EOR2110
+        - EOR2111
+        - EOR2112
+        - EOR2113
+        - EOR2114
+        - EOR2115
+        - EOR2116
+        - EOR2117
+        - EOR2118
+        - EOR2119
+        - EOR2120
+        - EOR2121
+        - EOR2122
+        - EOR2123
+        - EOR2124
+        - EOR2125
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Esophago-Gastric
+    Cancer Phase IV Module Version 25 Items Test Code (C219735)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219735
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Esophago-Gastric Cancer Phase IV Module Version 25 Items
+    Test Code
+  codelist_submission_value: EOR21TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

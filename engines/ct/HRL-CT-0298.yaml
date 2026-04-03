@@ -1,0 +1,59 @@
+id: HRL-CT-0298
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DOTESTCD (Device Properties Test Code) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DOTESTCD
+      operator: in
+      value:
+        - BULBNUM
+        - COMPOS
+        - DIGSMPRT
+        - DINTMKNM
+        - DVOPBLST
+        - ECSNRTYP
+        - FDADEVCL
+        - INDC
+        - IORFAREA
+        - LUMNCTYP
+        - MAGFSTR
+        - MONTMKNM
+        - MRICTYPE
+        - MULTPLEX
+        - PENTMKNM
+        - PORESIZE
+        - REAGLOT
+        - SCRYSTYP
+        - SCTTHICK
+        - SFTWRNAM
+        - SFTWRVER
+        - SHLFLIFE
+        - SIZE
+        - SRGMSHOA
+        - TEMP
+        - THICKNSS
+        - THRSHCYC
+        - TRTAMT
+        - WAVLGTH
+outcome:
+  message: Value not found in extensible codelist Device Properties Test Code (C111111)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C111111
+  codelist_name: Device Properties Test Code
+  codelist_submission_value: DOTESTCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 29
+

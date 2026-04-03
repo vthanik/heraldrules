@@ -1,0 +1,33 @@
+id: HRL-CT-1153
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: VLERS1TC (Vignos Lower Extremity Rating Scale Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: VLERS1TC
+      operator: in
+      value:
+        - VLERS101
+outcome:
+  message: Value not found in non-extensible codelist Vignos Lower Extremity Rating
+    Scale Clinical Classification Test Code (C130241)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130241
+  codelist_name: Vignos Lower Extremity Rating Scale Clinical Classification Test
+    Code
+  codelist_submission_value: VLERS1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

@@ -1,0 +1,34 @@
+id: HRL-CT-1022
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: STCARCRS (Stent Thrombosis, Coronary ARC Grade Responses) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: STCARCRS
+      operator: in
+      value:
+        - STENT THROMBOSIS ARC GRADE DEFINITE
+        - STENT THROMBOSIS ARC GRADE POSSIBLE
+        - STENT THROMBOSIS ARC GRADE PROBABLE
+outcome:
+  message: Value not found in non-extensible codelist Stent Thrombosis, Coronary ARC
+    Grade Responses (C119020)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C119020
+  codelist_name: Stent Thrombosis, Coronary ARC Grade Responses
+  codelist_submission_value: STCARCRS
+  extensible: no
+  parent_rule: CT2001
+  term_count: 3
+

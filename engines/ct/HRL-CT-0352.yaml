@@ -1,0 +1,35 @@
+id: HRL-CT-0352
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EMPSTAT (Employment Status) must contain valid extensible codelist terms
+  (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EMPSTAT
+      operator: in
+      value:
+        - EMPLOYED
+        - FULL-TIME
+        - NOT EMPLOYED
+        - PART-TIME
+        - RETIRED
+outcome:
+  message: Value not found in extensible codelist Employment Status (C111108)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C111108
+  codelist_name: Employment Status
+  codelist_submission_value: EMPSTAT
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 5
+

@@ -1,0 +1,62 @@
+id: HRL-CT-0504
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GDS01TN (Geriatric Depression Scale Questionnaire Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GDS01TN
+      operator: in
+      value:
+        - GDS01-Afraid of Something Bad Happening
+        - GDS01-Avoid Social Gatherings
+        - GDS01-Bored Often
+        - GDS01-Bothered by Thoughts
+        - GDS01-Dropped Activities and Interests
+        - GDS01-Easy to Make Decisions
+        - GDS01-Enjoy Getting Up in the Morning
+        - GDS01-Feel Downhearted and Blue
+        - GDS01-Feel Full of Energy
+        - GDS01-Feel Happy Most of Time
+        - GDS01-Feel Hopeless
+        - GDS01-Feel Worthless
+        - GDS01-Find Life Exciting
+        - GDS01-Frequently Feel Like Crying
+        - GDS01-Get Restless and Fidgety
+        - GDS01-Good Spirits Most of Time
+        - GDS01-Hard to Start New Projects
+        - GDS01-Hopeful About Future
+        - GDS01-Life Is Empty
+        - GDS01-Memory Problems
+        - GDS01-Mind as Clear as It Used to Be
+        - GDS01-Most People Better Off Than You
+        - GDS01-Often Feel Helpless
+        - GDS01-Often Upset Over Little Things
+        - GDS01-Prefer to Stay Home
+        - GDS01-Satisfied With Life
+        - GDS01-Total Score
+        - GDS01-Trouble Concentrating
+        - GDS01-Wonderful to Be Alive
+        - GDS01-Worry About Future
+        - GDS01-Worry About the Past
+outcome:
+  message: Value not found in non-extensible codelist Geriatric Depression Scale Questionnaire
+    Test Name (C106662)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106662
+  codelist_name: Geriatric Depression Scale Questionnaire Test Name
+  codelist_submission_value: GDS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 31
+

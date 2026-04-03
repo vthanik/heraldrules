@@ -1,0 +1,50 @@
+id: HRL-CT-0724
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: NSA01TC (Negative Symptom Assessment-16 Clinical Classification Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: NSA01TC
+      operator: in
+      value:
+        - NSA0101
+        - NSA0102
+        - NSA0103
+        - NSA0104
+        - NSA0105
+        - NSA0106
+        - NSA0107
+        - NSA0108
+        - NSA0109
+        - NSA0110
+        - NSA0111
+        - NSA0112
+        - NSA0113
+        - NSA0114
+        - NSA0115
+        - NSA0116
+        - NSA0117
+        - NSA0118
+        - NSA0119
+outcome:
+  message: Value not found in non-extensible codelist Negative Symptom Assessment-16
+    Clinical Classification Test Code (C120993)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C120993
+  codelist_name: Negative Symptom Assessment-16 Clinical Classification Test Code
+  codelist_submission_value: NSA01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 19
+

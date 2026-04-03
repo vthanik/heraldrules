@@ -1,0 +1,62 @@
+id: HRL-CT-0400
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ED1TC (Expanded Disability Rating Scale - Postacute Interview Caregiver
+  Version Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ED1TC
+      operator: in
+      value:
+        - ED102_1
+        - ED102_2
+        - ED102_3
+        - ED102_4
+        - ED102_5
+        - ED104_1
+        - ED104_2
+        - ED104_3
+        - ED105_1
+        - ED105_2
+        - ED105_3
+        - ED106_1
+        - ED106_2
+        - ED106_3
+        - ED106_4
+        - ED107_1
+        - ED107_2
+        - ED107_3
+        - ED107_4
+        - ED107_5
+        - ED107_6A
+        - ED107_6B
+        - ED107_6C
+        - ED108_1
+        - ED108_2
+        - ED108_3
+        - ED108_4
+        - ED108_5
+        - ED108_6
+        - ED108_7
+outcome:
+  message: Value not found in non-extensible codelist Expanded Disability Rating Scale
+    - Postacute Interview Caregiver Version Questionnaire Test Code (C125745)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C125745
+  codelist_name: Expanded Disability Rating Scale - Postacute Interview Caregiver
+    Version Questionnaire Test Code
+  codelist_submission_value: ED1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 30
+

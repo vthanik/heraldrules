@@ -1,0 +1,58 @@
+id: HRL-CT-0815
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL10TN (Pediatric Quality of Life Neuromuscular Module Acute Version
+  3 Young Adult Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL10TN
+      operator: in
+      value:
+        - PQL10-Back Feels Stiff
+        - PQL10-Do Not Have Equipment Need
+        - PQL10-Family Has Lot of Problems
+        - PQL10-Feel Tired
+        - PQL10-Get Hurt Accidentally
+        - PQL10-Get Sick Easily
+        - PQL10-Get Sores and/or Rashes
+        - PQL10-Hands Are Weak
+        - PQL10-Hard Ask Doctors/Nurses Questions
+        - PQL10-Hard Explain Illness to People
+        - PQL10-Hard for Family to Plan Activities
+        - PQL10-Hard for Family to Rest
+        - PQL10-Hard Tell Doctors/Nurses How Feel
+        - PQL10-Hard to Breathe
+        - PQL10-Hard to Gain/Lose Weight
+        - PQL10-Hard to Go Places With Equipment
+        - PQL10-Hard to Swallow Food
+        - PQL10-Hard to Turn During Night
+        - PQL10-Hard to Use Bathroom
+        - PQL10-Hard to Use Hands
+        - PQL10-Legs Hurt
+        - PQL10-Long Time to Bathe/Shower
+        - PQL10-Money Problem in Our Family
+        - PQL10-Take Long Time to Eat
+        - PQL10-Wake Up Tired
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Acute Version 3 Young Adult Questionnaire Test Name (C138240)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138240
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Acute Version 3 Young
+    Adult Questionnaire Test Name
+  codelist_submission_value: PQL10TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

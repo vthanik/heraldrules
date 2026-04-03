@@ -1,0 +1,73 @@
+id: HRL-CT-0200
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CDRS1TN (Children's Depression Rating Scale, Revised Clinical Classification
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CDRS1TN
+      operator: in
+      value:
+        - CDRS1-Appetite Disturbance Comment
+        - CDRS1-Appetite Disturbance
+        - CDRS1-CDRS-R Percentile
+        - CDRS1-CDRS-R Raw Summary Score
+        - CDRS1-CDRS-R T-Score Range
+        - CDRS1-CDRS-R T-Score
+        - CDRS1-Depressed Facial Affect Comment
+        - CDRS1-Depressed Facial Affect
+        - CDRS1-Depressed Feelings Comment
+        - CDRS1-Depressed Feelings
+        - CDRS1-Difficulty Having Fun Comment
+        - CDRS1-Difficulty Having Fun
+        - CDRS1-Excessive Fatigue Comment
+        - CDRS1-Excessive Fatigue
+        - CDRS1-Excessive Guilt Comment
+        - CDRS1-Excessive Guilt
+        - CDRS1-Excessive Weeping Comment
+        - CDRS1-Excessive Weeping
+        - CDRS1-Hypoactivity Comment
+        - CDRS1-Hypoactivity
+        - CDRS1-Impaired Schoolwork Comment
+        - CDRS1-Impaired Schoolwork
+        - CDRS1-Irritability Comment
+        - CDRS1-Irritability
+        - CDRS1-Listless Speech Comment
+        - CDRS1-Listless Speech
+        - CDRS1-Low Self-esteem Comment
+        - CDRS1-Low Self-esteem
+        - CDRS1-Morbid Ideation Comment
+        - CDRS1-Morbid Ideation
+        - CDRS1-Physical Complaints Comment
+        - CDRS1-Physical Complaints
+        - CDRS1-Sleep Disturbance Comment
+        - CDRS1-Sleep Disturbance
+        - CDRS1-Social Withdrawal Comment
+        - CDRS1-Social Withdrawal
+        - CDRS1-Subtotal 1
+        - CDRS1-Subtotal 2
+        - CDRS1-Subtotal 3
+        - CDRS1-Suicidal Ideation Comment
+        - CDRS1-Suicidal Ideation
+outcome:
+  message: Value not found in non-extensible codelist Children's Depression Rating
+    Scale, Revised Clinical Classification Test Name (C154446)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C154446
+  codelist_name: Children's Depression Rating Scale, Revised Clinical Classification
+    Test Name
+  codelist_submission_value: CDRS1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 41
+

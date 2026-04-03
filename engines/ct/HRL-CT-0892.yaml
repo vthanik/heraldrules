@@ -1,0 +1,44 @@
+id: HRL-CT-0892
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: QSUB01TC (Questionnaire on Smoking Urges-Brief Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: QSUB01TC
+      operator: in
+      value:
+        - QSUB0101
+        - QSUB0102
+        - QSUB0103
+        - QSUB0104
+        - QSUB0105
+        - QSUB0106
+        - QSUB0107
+        - QSUB0108
+        - QSUB0109
+        - QSUB0110
+        - QSUB0111
+        - QSUB0112
+        - QSUB0113
+outcome:
+  message: Value not found in non-extensible codelist Questionnaire on Smoking Urges-Brief
+    Test Code (C199497)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C199497
+  codelist_name: Questionnaire on Smoking Urges-Brief Test Code
+  codelist_submission_value: QSUB01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 13
+

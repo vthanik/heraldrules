@@ -1,0 +1,40 @@
+id: HRL-CT-0578
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: IPS01TN (International Prostate Symptom Score Questionnaire Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: IPS01TN
+      operator: in
+      value:
+        - IPS01-Difficult to Postpone Urination
+        - IPS01-Had Weak Urinary Stream
+        - IPS01-Life With Symptoms Feel About It
+        - IPS01-Push or Strain to Begin Urination
+        - IPS01-Sensation of Not Emptying Bladder
+        - IPS01-Stop Start Several Times Urinated
+        - IPS01-Times Get Up to Urinate at Night
+        - IPS01-Total Score
+        - IPS01-Urinate Again Less Than 2 Hours
+outcome:
+  message: Value not found in non-extensible codelist International Prostate Symptom
+    Score Questionnaire Test Name (C183546)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C183546
+  codelist_name: International Prostate Symptom Score Questionnaire Test Name
+  codelist_submission_value: IPS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 9
+

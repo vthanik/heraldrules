@@ -1,0 +1,32 @@
+id: HRL-CT-0672
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MELD01TC (Model for End Stage Liver Disease Clinical Classification Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MELD01TC
+      operator: in
+      value:
+        - MELD0101
+outcome:
+  message: Value not found in non-extensible codelist Model for End Stage Liver Disease
+    Clinical Classification Test Code (C120991)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C120991
+  codelist_name: Model for End Stage Liver Disease Clinical Classification Test Code
+  codelist_submission_value: MELD01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

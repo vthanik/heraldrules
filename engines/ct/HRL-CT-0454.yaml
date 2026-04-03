@@ -1,0 +1,69 @@
+id: HRL-CT-0454
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC016TN (Functional Assessment of Cancer Therapy-Lung Version 4 Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC016TN
+      operator: in
+      value:
+        - FAC016-Bothered by Treatment Side Effect
+        - FAC016-Breathing Is Easy for Me
+        - FAC016-Content With Quality of My Life
+        - FAC016-Enjoy Things I Usually Do for Fun
+        - FAC016-Get Emotional Support From Family
+        - FAC016-Have You Ever Smoked
+        - FAC016-I Am Able to Enjoy Life
+        - FAC016-I Am Able to Work
+        - FAC016-I Am Bothered by Hair Loss
+        - FAC016-I am Forced to Spend Time in Bed
+        - FAC016-I Am Losing Weight
+        - FAC016-I Am Satisfied With My Sex Life
+        - FAC016-I Am Sleeping Well
+        - FAC016-I Feel Close to My Friends
+        - FAC016-I Feel Close to My Partner
+        - FAC016-I Feel Ill
+        - FAC016-I Feel Nervous
+        - FAC016-I Feel Sad
+        - FAC016-I Feel Tightness in My Chest
+        - FAC016-I Get Support From My Friends
+        - FAC016-I Have a Good Appetite
+        - FAC016-I Have a Lack of Energy
+        - FAC016-I Have Accepted My Illness
+        - FAC016-I Have Been Coughing
+        - FAC016-I Have Been Short of Breath
+        - FAC016-I Have Nausea
+        - FAC016-I Have Pain
+        - FAC016-I Regret My Smoking
+        - FAC016-I Worry About Dying
+        - FAC016-Losing Hope Against Illness
+        - FAC016-My Family Has Accepted My Illness
+        - FAC016-My Thinking Is Clear
+        - FAC016-My Work Is Fulfilling
+        - FAC016-Satisfied Communication Illness
+        - FAC016-Satisfied With How I Am Coping
+        - FAC016-Trouble Meeting Needs of Family
+        - FAC016-Worry My Condition Will Get Worse
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Lung Version 4 Questionnaire Test Name (C150781)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150781
+  codelist_name: Functional Assessment of Cancer Therapy-Lung Version 4 Questionnaire
+    Test Name
+  codelist_submission_value: FAC016TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 37
+

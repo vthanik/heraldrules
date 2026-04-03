@@ -1,0 +1,124 @@
+id: HRL-CT-0796
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PODCI2TC (Pediatric Outcomes Data Collection Instrument, Adolescent Parent-Reported
+  Version Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PODCI2TC
+      operator: in
+      value:
+        - PODCI201
+        - PODCI202
+        - PODCI203
+        - PODCI204
+        - PODCI205
+        - PODCI206
+        - PODCI207
+        - PODCI208
+        - PODCI209
+        - PODCI210
+        - PODCI211
+        - PODCI212
+        - PODCI213
+        - PODCI214
+        - PODCI215
+        - PODCI216
+        - PODCI217
+        - PODCI218
+        - PODCI219
+        - PODCI220
+        - PODCI221
+        - PODCI222
+        - PODCI223
+        - PODCI224
+        - PODCI225
+        - PODCI226
+        - PODCI227
+        - PODCI228
+        - PODCI229
+        - PODCI230
+        - PODCI231
+        - PODCI232
+        - PODCI233
+        - PODCI234
+        - PODCI235
+        - PODCI236
+        - PODCI237
+        - PODCI238
+        - PODCI239
+        - PODCI240
+        - PODCI241
+        - PODCI242
+        - PODCI243
+        - PODCI244
+        - PODCI245
+        - PODCI246
+        - PODCI247
+        - PODCI248
+        - PODCI249
+        - PODCI250
+        - PODCI251
+        - PODCI252
+        - PODCI253
+        - PODCI254
+        - PODCI255
+        - PODCI256
+        - PODCI257
+        - PODCI258
+        - PODCI259
+        - PODCI260
+        - PODCI261
+        - PODCI262
+        - PODCI263
+        - PODCI264
+        - PODCI265
+        - PODCI266
+        - PODCI267
+        - PODCI268
+        - PODCI269
+        - PODCI270
+        - PODCI271
+        - PODCI272
+        - PODCI273
+        - PODCI274
+        - PODCI275
+        - PODCI276
+        - PODCI277
+        - PODCI278
+        - PODCI279
+        - PODCI280
+        - PODCI281
+        - PODCI282
+        - PODCI283
+        - PODCI284
+        - PODCI285
+        - PODCI286
+        - PODCI287
+        - PODCI288
+        - PODCI289
+        - PODCI290
+        - PODCI291
+        - PODCI292
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Outcomes Data Collection
+    Instrument, Adolescent Parent-Reported Version Questionnaire Test Code (C135696)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C135696
+  codelist_name: Pediatric Outcomes Data Collection Instrument, Adolescent Parent-Reported
+    Version Questionnaire Test Code
+  codelist_submission_value: PODCI2TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 92
+

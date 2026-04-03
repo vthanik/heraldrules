@@ -1,0 +1,38 @@
+id: HRL-CT-1017
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SSS0101STR (Stanford Sleepiness Scale Questionnaire STRESC for SSS0101
+  TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SSS0101STR
+      operator: in
+      value:
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+outcome:
+  message: Value not found in non-extensible codelist Stanford Sleepiness Scale Questionnaire
+    STRESC for SSS0101 TN/TC (C187463)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C187463
+  codelist_name: Stanford Sleepiness Scale Questionnaire STRESC for SSS0101 TN/TC
+  codelist_submission_value: SSS0101STR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

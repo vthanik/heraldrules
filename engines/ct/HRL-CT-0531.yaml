@@ -1,0 +1,35 @@
+id: HRL-CT-0531
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HBI0105AT05HSTR (Harvey-Bradshaw Index Clinical Classification STRESC
+  for HBI0105A Through HBI0105H TN/TC) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HBI0105AT05HSTR
+      operator: in
+      value:
+        - '0'
+        - '1'
+outcome:
+  message: Value not found in non-extensible codelist Harvey-Bradshaw Index Clinical
+    Classification STRESC for HBI0105A Through HBI0105H TN/TC (C190892)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C190892
+  codelist_name: Harvey-Bradshaw Index Clinical Classification STRESC for HBI0105A
+    Through HBI0105H TN/TC
+  codelist_submission_value: HBI0105AT05HSTR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 2
+

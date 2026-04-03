@@ -1,0 +1,221 @@
+id: HRL-CT-0162
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CVTEST (Cardiovascular Test Name) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CVTEST
+      operator: in
+      value:
+        - Acute Coronary Syndrome Presentation Cat
+        - Aneurysm Indicator
+        - Annular a' Velocity
+        - Annular e' Velocity
+        - Annular Plane Systolic Excursion
+        - Annular S' Velocity
+        - Aortic Augmentation Index at 75bpm
+        - Aortic Augmentation Index
+        - Aortic Augmentation Pressure Peak P1
+        - Aortic Augmentation Pressure Peak P2
+        - Aortic Augmentation Pressure
+        - Aortic Coarctation Indicator
+        - Aortic Coarctation Severity
+        - Aortic Ductal Coarctation Severity
+        - Aortic Postductal Coarctation Severity
+        - Aortic Preductal Coarctation Severity
+        - Aortic Regur Jet Width LVOT Diam Rt
+        - Aortic Valve Regurgitant Fraction
+        - Aortic Valve Regurgitant Jet Width
+        - Aortic Valve Regurgitant Volume
+        - Aortic Valve Vena Contracta Area
+        - Aortic Valve Vena Contracta Width
+        - Area, End Ventricular Diastole
+        - Area, End Ventricular Systole
+        - Blood Flow Rate
+        - Cardiac Index
+        - Cardiac Muscle Hypertrophy Indicator
+        - Cardiac Output
+        - Cardiac Rhythm Device Fail Manifestation
+        - Cardiac Valve Regur Jet Direction
+        - Cardiac Valve Stenosis Likely Etiology
+        - Cardiac Valvular Regur Likely Etiology
+        - Cardiac Valvular Regurgitation Indicator
+        - Cardiac Valvular Regurgitation Severity
+        - Cardiac Valvular Stenosis Indicator
+        - Cardiac Valvular Stenosis Severity
+        - Cardiac Wall Motion Type
+        - Chordae Tendineae Prolapse Indicator
+        - Circumferential Strain
+        - Coronary Artery Disease Presentation
+        - Coronary Artery Disease Risk Category
+        - Coronary Artery Disease Symptoms
+        - Coronary Artery Dominance
+        - Coronary Artery No Reflow Indicator
+        - Coronary Vessel Disease Extent
+        - Cross-sec Diameter, EVD
+        - Cross-sec Diameter, EVS
+        - Cross-sec Diameter, MVS
+        - Cross-sec Thickness, EVD
+        - Cross-sec Thickness, EVS
+        - Cross-sectional Diameter
+        - Cusp Doming Indicator
+        - Cusp Doming Severity
+        - Cusp Flail Indicator
+        - Cusp Flail Severity
+        - Cusp Flail Timing
+        - Cusp Prolapse Indicator
+        - Cusp Prolapse Severity
+        - Cusp Prolapse Timing
+        - Cusp Restricted Motion Indicator
+        - Cusp Restricted Motion Severity
+        - Cusp Tethering Indicator
+        - Cusp Tethering Severity
+        - Cusp Thickening Indicator
+        - Cusp Thickening Severity
+        - DeBakey AoD Classification
+        - Depth
+        - Dimensionless Index
+        - Dissection Indicator
+        - Eccentric Regurgitant Jet Indicator
+        - Effective Orifice Area Index
+        - Effective Orifice Area
+        - Effective Regurgitant Orifice Area
+        - Ejection Wave Amplitude
+        - End Diastolic Volume
+        - End Systolic Volume
+        - Fractional Area Change
+        - Global Circumferential Strain
+        - Global Circumferential Strain, Cal
+        - Global Longitudinal Strain
+        - Global Longitudinal Strain, Cal
+        - Heart Chamber Enlargement Indicator
+        - In-Stent Restenosis Indicator
+        - Indication for Cardiac Procedure
+        - Inferior Vena Cava Collapse Sniff Ind
+        - Interpretation
+        - Ischemic Myocardium Percentage
+        - Largest Cross-sec Diameter, EVD
+        - Largest Cross-sec Thickness
+        - Late Gadolinium Enhancement Percentage
+        - Late Gadolinium Enhancement Segment Ct
+        - Late Gadolinium Enhancement
+        - Late Lumen Loss
+        - Left Ventricular Ejection Fraction Intp
+        - Left Ventricular Ejection Fraction
+        - Left Ventricular Ejection Fraction, Cal
+        - Left Ventricular Ejection Fraction, Est
+        - Left Ventricular Fractional Shortening
+        - Left Ventricular Mass Index
+        - Left Ventricular Mass, Estimated
+        - Length
+        - Lesion Restenosis Indicator
+        - Loc of Most Sev Stenosis Within a Graft
+        - Longitudinal Relaxation Time
+        - Longitudinal Strain
+        - LVOT Peak Velocity
+        - LVOT Velocity Time Integral
+        - Major Axis Cross-sec Diameter, EVD
+        - Major Axis Cross-sec Diameter, EVS
+        - Major Axis Cross-sec. Diameter
+        - Major Axis Cross-sec. Diameter, MVS
+        - Major Axis Internal Diameter, EVD
+        - Major Axis Internal Diameter, EVS
+        - Mass
+        - Maximal Pericardial Effusion Width
+        - Mean Blood Flow Velocity
+        - Mean Blood Pressure, Estimated
+        - Mean Pressure Gradient
+        - Mean Vessel Diameter
+        - Mech Circ Support Placement Timing
+        - Minimum Vessel Lumen Diameter
+        - Minor Axis Cross-sec Diameter, EVD
+        - Minor Axis Cross-sec Diameter, EVS
+        - Minor Axis Cross-sec. Diameter
+        - Minor Axis Cross-sec. Diameter, MVS
+        - Minor Axis Internal Diameter, EVD
+        - Minor Axis Internal Diameter, EVS
+        - Mitral E/A Ratio
+        - Mitral E/e' Ratio
+        - Mitral Regur Jet Area L Atrial Area Rt
+        - Mitral Valve Regurgitant Fraction
+        - Mitral Valve Regurgitant Jet Area
+        - Mitral Valve Regurgitant Volume
+        - Mitral Valve Vena Contracta Area
+        - Mitral Valve Vena Contracta Width
+        - Myocardial Extracellular Volume
+        - Myocardial Performance Index
+        - Native Cardiac Valve Intervention Type
+        - Non-System Reason for PCI Delay
+        - Number of Cusps
+        - Number of Diseased Coronary Vessels
+        - Obs Med Device Type In Intended Loc
+        - Obs Med Device Type Not In Intended Loc
+        - Observed Foreign Body Indicator
+        - Observed Non-Medical Foreign Body Type
+        - Peak A Velocity
+        - Peak Blood Flow Velocity
+        - Peak E Velocity
+        - Peak Pressure Gradient
+        - Peak Pressure Rise Rate
+        - Percent Diameter Stenosis
+        - Pericardial Effusion Indicator
+        - Pericardial Effusion Size
+        - Pressure Half Time
+        - Prosthetic Cardiac Valve Type
+        - Pulmonary Arterial Hypertension Ind
+        - Pulmonary Valve Regurgitant Fraction
+        - Pulmonary Valve Regurgitant Volume
+        - Pulmonary Valve Vena Contracta Area
+        - Pulmonary Valve Vena Contracta Width
+        - Pulmonary Vascular Resistance
+        - Pulmonary Vein Dominance
+        - Pulmonic Regur Jet Width RVOT Diam Rt
+        - Pulmonic Valve Regurgitant Jet Width
+        - Pulse Wave Velocity
+        - Reason CS/LV Lead Not Implanted
+        - Reflection Magnitude
+        - Reflection Wave Amplitude
+        - Right Ventricular Ejection Fraction
+        - Right Ventricular Ejection Fraction, Cal
+        - Right Ventricular Ejection Fraction, Est
+        - Segmental Late Gadolinium Enhancement
+        - Stanford AoD Classification
+        - Stroke Volume
+        - Sudden Death Syndrome Risk Type
+        - Systemic Vascular Resistance
+        - Systolic Anterior Motion Indicator
+        - Systolic Anterior Motion Severity
+        - Systolic Pressure, Estimated
+        - Transverse Relaxation Time
+        - Tricus Regur Jet Area R Atrial Area Rt
+        - Tricuspid Valve Regurgitant Fraction
+        - Tricuspid Valve Regurgitant Jet Area
+        - Tricuspid Valve Regurgitant Volume
+        - Tricuspid Valve Vena Contracta Area
+        - Tricuspid Valve Vena Contracta Width
+        - Valve Area Index
+        - Valve Area
+        - Velocity Time Integral, Blood Flow
+        - Weight
+        - Width
+outcome:
+  message: Value not found in extensible codelist Cardiovascular Test Name (C101846)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101846
+  codelist_name: Cardiovascular Test Name
+  codelist_submission_value: CVTEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 191
+

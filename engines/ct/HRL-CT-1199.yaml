@@ -1,0 +1,31 @@
+id: HRL-CT-1199
+version: 1
+status: Published
+standard: ADaM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: POOLINT (Pool for Integration) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: POOLINT
+      operator: in
+      value:
+        - OVERALL
+outcome:
+  message: Value not found in non-extensible codelist Pool for Integration (C165644)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C165644
+  codelist_name: Pool for Integration
+  codelist_submission_value: POOLINT
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

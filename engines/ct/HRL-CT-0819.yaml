@@ -1,0 +1,50 @@
+id: HRL-CT-0819
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL16TN (Pediatric Quality of Life Neuromuscular Module Acute Version
+  3 Young Child Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL16TN
+      operator: in
+      value:
+        - PQL16-Back Feels Stiff
+        - PQL16-Feel Tired
+        - PQL16-Get Hurt Accidentally
+        - PQL16-Get Sick Easily
+        - PQL16-Get Sores and/or Rashes
+        - PQL16-Hands Are Weak
+        - PQL16-Hard to Breathe
+        - PQL16-Hard to Gain/Lose Weight
+        - PQL16-Hard to Go Places With Equipment
+        - PQL16-Hard to Swallow Food
+        - PQL16-Hard to Turn During Night
+        - PQL16-Hard to Use Bathroom
+        - PQL16-Hard to Use Hands
+        - PQL16-Legs Hurt
+        - PQL16-Long Time to Bathe/Shower
+        - PQL16-Take Long Time to Eat
+        - PQL16-Wake Up Tired
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Acute Version 3 Young Child Questionnaire Test Name (C138242)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138242
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Acute Version 3 Young
+    Child Questionnaire Test Name
+  codelist_submission_value: PQL16TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 17
+

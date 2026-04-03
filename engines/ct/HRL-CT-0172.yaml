@@ -1,0 +1,341 @@
+id: HRL-CT-0172
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: QSCAT (Category of Questionnaire) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: QSCAT
+      operator: in
+      value:
+        - ABC
+        - ACQ
+        - ACT
+        - ADCS-ADL MCI
+        - ADCS-ADL SEVERE DEMENTIA
+        - ADCS-ADL
+        - ADCS-CGIC
+        - ADHD-RS-IV HOME VERSION
+        - ADSD V1.0
+        - ANSD V1.0
+        - AQ20
+        - AQLQ
+        - ASEX-FEMALE
+        - ASEX-MALE
+        - AUDIT-C
+        - AUDIT-SR
+        - BEBQ CONCURRENT
+        - BEBQ RETROSPECTIVE
+        - BECK DEPRESSION INVENTORY-II
+        - BFI
+        - BIS-11
+        - BLCS
+        - BORG CR10
+        - BORG RPE SCALE
+        - BPI SHORT FORM
+        - BPI
+        - BSFS
+        - BSI-18
+        - BWCS
+        - C-SSRS ALREADY ENROLLED SUBJECTS
+        - C-SSRS BASELINE
+        - C-SSRS BASELINE/SCREENING VERSION PHASE 1 STUDY
+        - C-SSRS BASELINE/SCREENING VERSION
+        - C-SSRS CHILDREN'S BASELINE
+        - C-SSRS CHILDREN'S BASELINE/SCREENING
+        - C-SSRS CHILDREN'S SINCE LAST VISIT
+        - C-SSRS LIFETIME/RECENT VERSION
+        - C-SSRS PEDIATRIC/COGNITIVELY IMPAIRED LIFETIME/RECENT
+        - C-SSRS PEDIATRIC/COGNITIVELY IMPAIRED-LIFETIME RECENT-CLINICAL
+        - C-SSRS PEDIATRIC/COGNITIVELY IMPAIRED-SINCE LAST VISIT-CLINICAL
+        - C-SSRS SCREENING
+        - C-SSRS SINCE LAST VISIT
+        - CCQ 1 WEEK VERSION
+        - CCQ 24 HOUR VERSION
+        - CDAI V1
+        - CDLQI
+        - CES
+        - CGI
+        - CHART-SF INTERVIEW VERSION
+        - CHART-SF PAPER VERSION
+        - COMM
+        - COPD ASSESSMENT TEST
+        - COWS
+        - CRQ-SAS FIRST ADMINISTRATION VERSION
+        - CRQ-SAS FOLLOW-UP ADMINISTRATION VERSION
+        - DAD
+        - DIBSS-C V1.0
+        - DLQI
+        - DRRI-2
+        - EORTC QLQ-ANL27
+        - EORTC QLQ-BIL21
+        - EORTC QLQ-BM22
+        - EORTC QLQ-BN20
+        - EORTC QLQ-BR23 V1.0
+        - EORTC QLQ-BR42
+        - EORTC QLQ-BR45 PHASE IV MODULE
+        - EORTC QLQ-BRECON23
+        - EORTC QLQ-C15-PAL V1.0
+        - EORTC QLQ-C30 V3.0
+        - EORTC QLQ-CIPN20
+        - EORTC QLQ-CLL17
+        - EORTC QLQ-CR29 V2.1
+        - EORTC QLQ-CX24
+        - EORTC QLQ-ELD14
+        - EORTC QLQ-EN24
+        - EORTC QLQ-FA12
+        - EORTC QLQ-GINET21 DATE 20TH FEBRUARY 2006
+        - EORTC QLQ-H&N35 V1
+        - EORTC QLQ-H&N43 PHASE IV MODULE
+        - EORTC QLQ-HCC18
+        - EORTC QLQ-INFO25
+        - EORTC QLQ-LC13
+        - EORTC QLQ-LC24
+        - EORTC QLQ-LC29
+        - EORTC QLQ-LMC21
+        - EORTC QLQ-MY20
+        - EORTC QLQ-NMIBC24
+        - EORTC QLQ-OES18
+        - EORTC QLQ-OG25 PHASE IV MODULE
+        - EORTC QLQ-OH15
+        - EORTC QLQ-OV28
+        - EORTC QLQ-PAN26 PHASE III MODULE
+        - EORTC QLQ-PR25
+        - EORTC QLQ-STO22
+        - EPDS
+        - EPIC-26
+        - EPIC-CP
+        - EQ-5D-3L
+        - EQ-5D-5L INTERVIEWER VERSION V1.2
+        - EQ-5D-5L PROXY1 VERSION V2.0
+        - EQ-5D-5L
+        - ESS
+        - EXACT
+        - EXPANDED DRS-PI CAREGIVER VERSION
+        - EXPANDED DRS-PI SURVIVOR VERSION
+        - FAACT V4
+        - FACIT-DYSPNEA 33 ITEM BANK
+        - FACIT-DYSPNEA SF
+        - FACIT-F V4
+        - FACIT-FATIGUE 13-ITEM V4
+        - FACIT-ITEM GP5 V4
+        - FACIT-SEARCHABLE ITEM LIBRARY ADULT
+        - FACIT-SEARCHABLE ITEM LIBRARY PEDIATRIC
+        - FACT-B V4
+        - FACT-BL V4
+        - FACT-BMT V4
+        - FACT-BP V4
+        - FACT-BRM V4
+        - FACT-C V4
+        - FACT-COG V3
+        - FACT-G V4
+        - FACT-HEP V4
+        - FACT-L V4
+        - FACT-LEU V4
+        - FACT-LYM V4
+        - FACT-M NON-SURGERY V4
+        - FACT-M V4
+        - FACT-P V4
+        - FACT-TAXANE V4
+        - FACT/GOG-NTX SUBSCALE V4
+        - FACT/GOG-NTX V4
+        - FAMS
+        - FBRSI
+        - FES
+        - FIQR
+        - FKSI-15
+        - FKSI-DRS V4
+        - FLSI
+        - FLU-IIQ ONCE DAILY
+        - FLU-IIQ TWICE DAILY
+        - FOSI
+        - FPSR
+        - FSS
+        - FTCD
+        - GAD-7 V2
+        - GAD-7
+        - GCGI
+        - GDS SHORT FORM
+        - GDS
+        - GMSS VERSION TYPE 1 DIABETES
+        - GOSE
+        - HADS
+        - HAEM-A-QOL
+        - HAEMO-QOL CHILDREN'S LONG VERSION AGE GROUP I
+        - HAEMO-QOL CHILDREN'S LONG VERSION AGE GROUP II
+        - HAEMO-QOL CHILDREN'S LONG VERSION AGE GROUP III
+        - HAEMO-QOL CHILDREN'S SHORT VERSION AGE GROUP I
+        - HAEMO-QOL CHILDREN'S SHORT VERSION AGE GROUP II/III
+        - HAEMO-QOL PARENT'S LONG VERSION AGE GROUP I
+        - HAEMO-QOL PARENT'S LONG VERSION AGE GROUP II
+        - HAEMO-QOL PARENT'S LONG VERSION AGE GROUP III
+        - HAMD 6 SELF-REPORT VERSION
+        - HAQ-DI WITH VAS
+        - HAQ-DI WITHOUT VAS
+        - HCS
+        - IBDQ
+        - IDS-SR
+        - IIEF
+        - IPAQ-LF PHONE VERSION
+        - IPAQ-LF SELF-ADMINISTERED VERSION
+        - IPAQ-SF PHONE VERSION
+        - IPAQ-SF SELF-ADMINISTERED VERSION
+        - IPSS
+        - IVIS
+        - KDQOL-36 V1
+        - LCSS
+        - LEC-5 STANDARD VERSION
+        - MCEQ
+        - MDADI
+        - MDQ-T
+        - MDS-UPDRS
+        - MFIS
+        - MHIS-NACC
+        - MMRC
+        - MNSI
+        - MPAI-4
+        - MSIS-29 V1
+        - MSIS-29 V2
+        - MSQOL-54
+        - MSWS-12
+        - NCCN-FACT FBLSI-18 V2
+        - NCCN-FACT FBRSI-24 V2
+        - NCCN-FACT FHNSI-22 V2
+        - NCCN-FACT FKSI-19 V2
+        - NCCN-FACT FOSI-18 V2
+        - NCCN-FACT FPSI-17 V2
+        - NPI
+        - NPS
+        - NSCLC-SAQ V1.0
+        - NYTS 2022
+        - OAB-Q SHORT FORM
+        - OAB-Q
+        - OCI
+        - ODI V2.1A
+        - OGI
+        - PARENT-DDS
+        - PARTNER-DDS
+        - PCL-5
+        - PDAI
+        - PDDS
+        - PDQ-39
+        - PDQUALIF
+        - PEDS-FACIT-F
+        - PEDSQL NEUROMUSCULAR MODULE ACUTE V3 CHILD PARENT REPORT
+        - PEDSQL NEUROMUSCULAR MODULE ACUTE V3 CHILD
+        - PEDSQL NEUROMUSCULAR MODULE ACUTE V3 TEEN PARENT REPORT
+        - PEDSQL NEUROMUSCULAR MODULE ACUTE V3 TEEN
+        - PEDSQL NEUROMUSCULAR MODULE ACUTE V3 TODDLER PARENT REPORT
+        - PEDSQL NEUROMUSCULAR MODULE ACUTE V3 YOUNG ADULT PARENT REPORT
+        - PEDSQL NEUROMUSCULAR MODULE ACUTE V3 YOUNG ADULT
+        - PEDSQL NEUROMUSCULAR MODULE ACUTE V3 YOUNG CHILD PARENT REPORT
+        - PEDSQL NEUROMUSCULAR MODULE ACUTE V3 YOUNG CHILD
+        - PEDSQL NEUROMUSCULAR MODULE V3 CHILD PARENT REPORT
+        - PEDSQL NEUROMUSCULAR MODULE V3 CHILD
+        - PEDSQL NEUROMUSCULAR MODULE V3 TEEN PARENT REPORT
+        - PEDSQL NEUROMUSCULAR MODULE V3 TEEN
+        - PEDSQL NEUROMUSCULAR MODULE V3 TODDLER PARENT REPORT
+        - PEDSQL NEUROMUSCULAR MODULE V3 YOUNG ADULT PARENT REPORT
+        - PEDSQL NEUROMUSCULAR MODULE V3 YOUNG ADULT
+        - PEDSQL NEUROMUSCULAR MODULE V3 YOUNG CHILD PARENT REPORT
+        - PEDSQL NEUROMUSCULAR MODULE V3 YOUNG CHILD
+        - PGI
+        - PHQ SCREENER VERSION
+        - PHQ-15
+        - PHQ-2
+        - PHQ-8
+        - PHQ-9
+        - PI
+        - PODCI - ADOLESCENT PARENT REPORTED
+        - PODCI - ADOLESCENT SELF REPORTED
+        - PODCI - PEDIATRIC PARENT REPORTED
+        - PR
+        - PRO-CTCAE V1.0
+        - PROMIS IB V1.0 FATIGUE SF 7A
+        - PROMIS IB V1.0 SLEEP DISTURBANCE SF 4A
+        - PROMIS IB V2.0 COGNITIVE FUNCTION ABILITIES SF 6A
+        - PROMIS IB V2.0 COGNITIVE FUNCTION SF 6A
+        - PROMIS-29 PROFILE V2.1
+        - PROSQOLI
+        - PSECDI
+        - PSQI
+        - Q-LES-Q
+        - Q-LES-Q-SF
+        - QIDS-SR
+        - QSU-BRIEF
+        - RAND SOCIAL SUPPORT SURVEY INSTRUMENT
+        - RAND-36 V1.0
+        - RBDSQ
+        - RDQ
+        - RPQ
+        - SCOPA-AUT
+        - SDS
+        - SF10 V1.0 CHILDREN ACUTE
+        - SF10 V1.0 CHILDREN STANDARD
+        - SF12 V1.0 ACUTE
+        - SF12 V1.0 STANDARD
+        - SF12 V2.0 ACUTE
+        - SF12 V2.0 STANDARD
+        - SF36 V1.0 ACUTE
+        - SF36 V1.0 STANDARD
+        - SF36 V2.0 ACUTE
+        - SF36 V2.0 STANDARD
+        - SF6D V2.0 ACUTE
+        - SF6D V2.0 STANDARD
+        - SF8 V1.0 ACUTE
+        - SF8 V1.0 STANDARD
+        - SGRQ PAST 3 MONTHS VERSION
+        - SGRQ PAST 4 WEEKS VERSION
+        - SGRQ-C
+        - SHORT-FORM MPQ-2
+        - SIQ
+        - SIQ-JR
+        - SIQR
+        - SMDDS V1.0
+        - SOAPP-R
+        - SOBDA
+        - SOWS SHORT
+        - SOWS SUBJECTIVE
+        - SSS
+        - SWLS
+        - T1-DDS
+        - TSCC
+        - TSCYC
+        - TSQM V1.4
+        - UPS
+        - VFQ-25 INTERVIEWER ADMINISTERED
+        - VFQ-25 SELF ADMINISTERED
+        - VHI
+        - WHODAS 2.0 - 12 + 24-ITEM INTERVIEWER
+        - WHODAS 2.0 - 12-ITEM INTERVIEWER
+        - WHODAS 2.0 - 12-ITEM PROXY
+        - WHODAS 2.0 - 12-ITEM SELF
+        - WHODAS 2.0 - 36-ITEM INTERVIEWER
+        - WHODAS 2.0 - 36-ITEM PROXY
+        - WHODAS 2.0 - 36-ITEM SELF
+        - WLQ
+        - WOMAC LK 3.1 INDEX
+        - WOMAC NRS 3.1 INDEX
+        - WOMAC VA 3.1 INDEX
+        - WPAI-GH V2.0
+        - WPAI-SHP V2.0
+outcome:
+  message: Value not found in extensible codelist Category of Questionnaire (C100129)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100129
+  codelist_name: Category of Questionnaire
+  codelist_submission_value: QSCAT
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 311
+

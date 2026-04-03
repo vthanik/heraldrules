@@ -1,0 +1,85 @@
+id: HRL-CT-0855
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PKUWKG (PK Units of Measure - Weight kg) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PKUWKG
+      operator: in
+      value:
+        - (L/day)/kg
+        - (L/h)/kg
+        - (L/min)/kg
+        - (mL/day)/kg
+        - (mL/h)/kg
+        - (mL/min)/kg
+        - day*g/mL/kg
+        - day*mg/mL/kg
+        - day*mmol/L/kg
+        - day*mol/L/kg
+        - day*ng/mL/kg
+        - day*nmol/L/kg
+        - day*pg/mL/kg
+        - day*pmol/L/kg
+        - day*ug/mL/kg
+        - day*umol/L/kg
+        - fg/mL/kg
+        - g/mL/kg
+        - h*g/mL/kg
+        - h*mg/mL/kg
+        - h*mmol/L/kg
+        - h*mol/L/kg
+        - h*ng/mL/kg
+        - h*nmol/L/kg
+        - h*pg/mL/kg
+        - h*pmol/L/kg
+        - h*ug/mL/kg
+        - h*umol/L/kg
+        - IU/mL/kg
+        - L/kg
+        - mg/mL/kg
+        - min*g/mL/kg
+        - min*mg/mL/kg
+        - min*mmol/L/kg
+        - min*mol/L/kg
+        - min*ng/mL/kg
+        - min*nmol/L/kg
+        - min*pg/mL/kg
+        - min*pmol/L/kg
+        - min*ug/mL/kg
+        - min*umol/L/kg
+        - mIU/mL/kg
+        - mL/kg
+        - mmol/L/kg
+        - mol/L/kg
+        - ng/kg/min
+        - ng/mL/kg
+        - nmol/kg
+        - nmol/L/kg
+        - pg/mL/kg
+        - pmol/L/kg
+        - ug/mL/kg
+        - uIU/mL/kg
+        - umol/L/kg
+outcome:
+  message: Value not found in extensible codelist PK Units of Measure - Weight kg
+    (C128683)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C128683
+  codelist_name: PK Units of Measure - Weight kg
+  codelist_submission_value: PKUWKG
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 54
+

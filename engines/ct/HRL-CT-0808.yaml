@@ -1,0 +1,57 @@
+id: HRL-CT-0808
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL12TC (Pediatric Quality of Life Neuromuscular Module Acute Version
+  3 Teen Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL12TC
+      operator: in
+      value:
+        - PQL1201
+        - PQL1202
+        - PQL1203
+        - PQL1204
+        - PQL1205
+        - PQL1206
+        - PQL1207
+        - PQL1208
+        - PQL1209
+        - PQL1210
+        - PQL1211
+        - PQL1212
+        - PQL1213
+        - PQL1214
+        - PQL1215
+        - PQL1216
+        - PQL1217
+        - PQL1218
+        - PQL1219
+        - PQL1220
+        - PQL1221
+        - PQL1222
+        - PQL1223
+        - PQL1224
+        - PQL1225
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Acute Version 3 Teen Questionnaire Test Code (C138239)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138239
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Acute Version 3 Teen
+    Questionnaire Test Code
+  codelist_submission_value: PQL12TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

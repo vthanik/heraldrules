@@ -1,0 +1,41 @@
+id: HRL-CT-0563
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: IPAQ04TC (International Physical Activity Questionnaire (August 2002)
+  Short Last 7 Days Self-Administered Format Questionnaire Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: IPAQ04TC
+      operator: in
+      value:
+        - IPA0401
+        - IPA0402
+        - IPA0403
+        - IPA0404
+        - IPA0405
+        - IPA0406
+        - IPA0407
+outcome:
+  message: Value not found in non-extensible codelist International Physical Activity
+    Questionnaire (August 2002) Short Last 7 Days Self-Administered Format Questionnaire
+    Test Code (C141665)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C141665
+  codelist_name: International Physical Activity Questionnaire (August 2002) Short
+    Last 7 Days Self-Administered Format Questionnaire Test Code
+  codelist_submission_value: IPAQ04TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

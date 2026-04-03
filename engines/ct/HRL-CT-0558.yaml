@@ -1,0 +1,32 @@
+id: HRL-CT-0558
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: IGDCMPLX (Ingredient Complexity Response) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: IGDCMPLX
+      operator: in
+      value:
+        - COMPLEX INGREDIENT
+        - SINGLE INGREDIENT
+outcome:
+  message: Value not found in extensible codelist Ingredient Complexity Response (C204423)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204423
+  codelist_name: Ingredient Complexity Response
+  codelist_submission_value: IGDCMPLX
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 2
+

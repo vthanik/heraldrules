@@ -1,0 +1,50 @@
+id: HRL-CT-0995
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SF81TN (Short Form 8 Health Survey Standard, US Version 1.0 Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SF81TN
+      operator: in
+      value:
+        - SF81-Bodily Pain Norm-Based Score
+        - SF81-Bothered by Emotional Problems
+        - SF81-Difficulty Doing Daily Work
+        - SF81-Emotional Problems Keep From Work
+        - SF81-General Health Norm-Based Score
+        - SF81-How Much Bodily Pain You Have Had
+        - SF81-How Much Energy Did You Have
+        - SF81-How Much Limit Physical Activities
+        - SF81-Mental Component Score
+        - SF81-Mental Health Norm-Based Score
+        - SF81-Overall How You Rate Your Health
+        - SF81-Phys. Functioning Norm-Based Score
+        - SF81-Physical Component Score
+        - SF81-Physical/Emotional Limit Activities
+        - SF81-Role Emotional Norm-Based Score
+        - SF81-Role Physical Norm-Based Score
+        - SF81-Social Functioning Norm-Based Score
+        - SF81-Vitality Norm-Based Score
+outcome:
+  message: Value not found in non-extensible codelist Short Form 8 Health Survey Standard,
+    US Version 1.0 Questionnaire Test Name (C177707)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C177707
+  codelist_name: Short Form 8 Health Survey Standard, US Version 1.0 Questionnaire
+    Test Name
+  codelist_submission_value: SF81TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 18
+

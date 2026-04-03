@@ -1,0 +1,40 @@
+id: HRL-CT-0029
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: APCH106AOR (Acute Physiology and Chronic Health Evaluation II Clinical
+  Classification ORRES for APCH106A TN/TC) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: APCH106AOR
+      operator: in
+      value:
+        - 7.15-7.24
+        - 7.25-7.32
+        - 7.33-7.49
+        - 7.5-7.59
+        - 7.6-7.69
+        - <7.15
+        - '>=7.7'
+outcome:
+  message: Value not found in non-extensible codelist Acute Physiology and Chronic
+    Health Evaluation II Clinical Classification ORRES for APCH106A TN/TC (C182490)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C182490
+  codelist_name: Acute Physiology and Chronic Health Evaluation II Clinical Classification
+    ORRES for APCH106A TN/TC
+  codelist_submission_value: APCH106AOR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

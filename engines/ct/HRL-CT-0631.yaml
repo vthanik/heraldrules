@@ -1,0 +1,33 @@
+id: HRL-CT-0631
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: LSNCMPX (Lesion Complexity) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: LSNCMPX
+      operator: in
+      value:
+        - ACC/AHA LESION COMPLEXITY SCORE A
+        - ACC/AHA LESION COMPLEXITY SCORE B
+        - ACC/AHA LESION COMPLEXITY SCORE C
+outcome:
+  message: Value not found in non-extensible codelist Lesion Complexity (C101861)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101861
+  codelist_name: Lesion Complexity
+  codelist_submission_value: LSNCMPX
+  extensible: no
+  parent_rule: CT2001
+  term_count: 3
+

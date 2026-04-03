@@ -1,0 +1,71 @@
+id: HRL-CT-0221
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSS01TC (Columbia-Suicide Severity Rating Scale Baseline Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSS01TC
+      operator: in
+      value:
+        - CSS0101
+        - CSS0101A
+        - CSS0102
+        - CSS0102A
+        - CSS0103
+        - CSS0103A
+        - CSS0104
+        - CSS0104A
+        - CSS0105
+        - CSS0105A
+        - CSS0106
+        - CSS0106A
+        - CSS0107
+        - CSS0108
+        - CSS0109
+        - CSS0110
+        - CSS0111
+        - CSS0112
+        - CSS0113
+        - CSS0113A
+        - CSS0114
+        - CSS0115
+        - CSS0116
+        - CSS0116A
+        - CSS0117
+        - CSS0118
+        - CSS0118A
+        - CSS0119
+        - CSS0119A
+        - CSS0120
+        - CSS0121A
+        - CSS0121B
+        - CSS0121C
+        - CSS0122A
+        - CSS0122B
+        - CSS0122C
+        - CSS0123A
+        - CSS0123B
+        - CSS0123C
+outcome:
+  message: Value not found in non-extensible codelist Columbia-Suicide Severity Rating
+    Scale Baseline Questionnaire Test Code (C100168)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100168
+  codelist_name: Columbia-Suicide Severity Rating Scale Baseline Questionnaire Test
+    Code
+  codelist_submission_value: CSS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 39
+

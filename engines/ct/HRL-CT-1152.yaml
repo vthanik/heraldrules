@@ -1,0 +1,33 @@
+id: HRL-CT-1152
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: VALG01TN (Veterans Administration Lung Study Group Clinical Classification
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: VALG01TN
+      operator: in
+      value:
+        - VALG01-Cancer Stage
+outcome:
+  message: Value not found in non-extensible codelist Veterans Administration Lung
+    Study Group Clinical Classification Test Name (C141652)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C141652
+  codelist_name: Veterans Administration Lung Study Group Clinical Classification
+    Test Name
+  codelist_submission_value: VALG01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

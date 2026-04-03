@@ -1,0 +1,36 @@
+id: HRL-CT-0630
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: LVEFMRE (Left Ventricular Ejection Fraction Measurement Result) must
+  contain valid extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: LVEFMRE
+      operator: in
+      value:
+        - HYPERDYNAMIC
+        - MILD DYSFUNCTION
+        - MODERATE DYSFUNCTION
+        - NORMAL EJECTION FRACTION
+        - SEVERE DYSFUNCTION
+outcome:
+  message: Value not found in extensible codelist Left Ventricular Ejection Fraction
+    Measurement Result (C101868)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101868
+  codelist_name: Left Ventricular Ejection Fraction Measurement Result
+  codelist_submission_value: LVEFMRE
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 5
+

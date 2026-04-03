@@ -1,0 +1,105 @@
+id: HRL-CT-1156
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: VSTEST (Vital Signs Test Name) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: VSTEST
+      operator: in
+      value:
+        - Abdominal Skinfold Thickness
+        - Ankle-Brachial Index
+        - Arm Span
+        - Basal Metabolic Rate
+        - Birth Weight
+        - BMI-for-Age Percentile
+        - Body Cell Mass
+        - Body Fat Measurement
+        - Body Frame Size
+        - Body Length
+        - Body Length-for-Age Percentile
+        - Body Mass Index
+        - Body Surface Area
+        - Calf Circumference
+        - Capillary Refill Time
+        - Chest Circumference
+        - Core Body Temperature
+        - Crown-to-Heel Length
+        - Diastolic Blood Pressure
+        - Diastolic BP-for-Age Percentile
+        - Diastolic BP-for-Height Percentile
+        - Energy Expenditure
+        - Estimated Weight
+        - Extracellular Water
+        - Extracellular Water/Total Body Water
+        - Fetal Estimated Weight
+        - Fetal Head Circumference
+        - Fetal Heart Rate
+        - Fetal Mandibular Length
+        - Fetal Sagittal Abdominal Diameter
+        - Fetal Size-for-Gestational Age Category
+        - Fetal Weight-for-Gest Age Percentile
+        - Forearm Circumference
+        - Fraction of Inspired Oxygen
+        - Head Circumference
+        - Head Circumference-for-Age Percentile
+        - Heart Rate Variability, SDANN
+        - Heart Rate Variability, SDNN
+        - Heart Rate
+        - Height
+        - Height-for-Age Percentile
+        - Hip Circumference
+        - Ideal Body Weight
+        - Interpretation
+        - Knee to Heel Length
+        - Lean Body Mass to Total Body Mass Ratio
+        - Lean Body Mass
+        - Lean Tissue Mass
+        - Mandibular Length
+        - Maximum Predicted Heart Rate
+        - Mean Arterial Pressure
+        - Mid-Upper Arm Circumference
+        - Neck Circumference
+        - Oxygen Saturation
+        - Oxygen Saturation/Fraction Inspired O2
+        - Peripheral Body Temperature
+        - Pulse Pressure
+        - Pulse Rate
+        - Respiratory Rate
+        - Sagittal Abdominal Diameter
+        - Subscapular Skinfold Thickness
+        - Systolic Blood Pressure
+        - Systolic BP-for-Age Percentile
+        - Systolic BP-for-Height Percentile
+        - Temperature
+        - Tibial Length
+        - Total Body Water
+        - Triceps Skinfold Thickness
+        - Ulnar Length
+        - Waist Circumference
+        - Waist to Heel Length
+        - Waist to Hip Ratio
+        - Weight
+        - Weight-for-Age Percentile
+        - Weight-for-Height Percentile
+outcome:
+  message: Value not found in extensible codelist Vital Signs Test Name (C67153)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C67153
+  codelist_name: Vital Signs Test Name
+  codelist_submission_value: VSTEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 75
+

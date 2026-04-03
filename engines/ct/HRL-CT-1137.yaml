@@ -1,0 +1,149 @@
+id: HRL-CT-1137
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: D1FATS (Type 1 Diabetes Findings About Test Name) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: D1FATS
+      operator: in
+      value:
+        - Action Taken With Device
+        - Action Taken With Subject
+        - Calories Burned
+        - Cumulative Exposure
+        - Dietary Added Sugar
+        - Dietary Added Vitamin B12
+        - Dietary Added Vitamin E
+        - Dietary Alcohol
+        - Dietary Alpha Carotene
+        - Dietary Alpha Tocopherol
+        - Dietary Arachidonic Acid
+        - Dietary Beans and Peas
+        - Dietary Beta Carotene
+        - Dietary Beta-Cryptoxanthin
+        - Dietary Butyric Acid
+        - Dietary Caffeine
+        - Dietary Calcium
+        - Dietary Calories
+        - Dietary Capric Acid
+        - Dietary Caproic Acid
+        - Dietary Caprylic Acid
+        - Dietary Cheese
+        - Dietary Cholesterol
+        - Dietary Choline
+        - Dietary Citrus, Melons, and Berries
+        - Dietary Clupanodonic Acid
+        - Dietary Copper
+        - Dietary Docosahexaenoic Acid
+        - Dietary Eggs
+        - Dietary Erucic Acid
+        - Dietary Fat, Monounsaturated
+        - Dietary Fat, Polyunsaturated
+        - Dietary Fat, Saturated
+        - Dietary Fat, Total
+        - Dietary Fiber
+        - Dietary Folate Equivalents
+        - Dietary Folic Acid
+        - Dietary Food Folate
+        - Dietary Fruit Juice
+        - Dietary Fruit
+        - Dietary Gadoleic Acid
+        - Dietary Grain
+        - Dietary Grain, Refined
+        - Dietary Iron
+        - Dietary Lauric Acid
+        - Dietary Linoleic Acid
+        - Dietary Linolenic Acid
+        - Dietary Lutein and Zeaxanthin
+        - Dietary Lycopene
+        - Dietary Magnesium
+        - Dietary Meat
+        - Dietary Meat, Cured
+        - Dietary Meat, Organ
+        - Dietary Meat, Poultry, and Seafood
+        - Dietary Milk
+        - Dietary Moisture
+        - Dietary Myristic Acid
+        - Dietary Niacin
+        - Dietary Nuts and Seeds
+        - Dietary Oils
+        - Dietary Oleic Acid
+        - Dietary Palmitic Acid
+        - Dietary Palmitoleic Acid
+        - Dietary Parinaric Acid
+        - Dietary Phosphorus
+        - Dietary Potassium
+        - Dietary Potatoes
+        - Dietary Poultry
+        - Dietary Protein Foods
+        - Dietary Protein
+        - Dietary Retinol
+        - Dietary Riboflavin
+        - Dietary Seafood High in n-3 Fatty Acids
+        - Dietary Seafood Low in n-3 Fatty Acids
+        - Dietary Selenium
+        - Dietary Sodium
+        - Dietary Solid Fats
+        - Dietary Soy Products
+        - Dietary Stearic Acid
+        - Dietary Theobromine
+        - Dietary Thiamine
+        - Dietary Timnodonic Acid
+        - Dietary Tomatoes
+        - Dietary Total Carbohydrate
+        - Dietary Total Dairy
+        - Dietary Total Folate
+        - Dietary Total Sugars
+        - Dietary Vegetable
+        - Dietary Vegetables, Dark Green
+        - Dietary Vegetables, Red and Orange
+        - Dietary Vegetables, Starchy
+        - Dietary Vitamin A
+        - Dietary Vitamin B12
+        - Dietary Vitamin B6
+        - Dietary Vitamin C
+        - Dietary Vitamin D
+        - Dietary Vitamin K
+        - Dietary Whole Grains
+        - Dietary Yogurt
+        - Dietary Zinc
+        - Dispensed Amount
+        - Distance
+        - Estimated Weight
+        - Exercise Compliance
+        - Exercise Duration
+        - Exercise Intensity
+        - Number of Alcoholic Drinks
+        - Number of Episodes
+        - Number of Laps Completed
+        - Number of Steps Taken
+        - Precipitating Factor
+        - Prepared Amount
+        - Relationship to Device
+        - Remaining Amount
+        - Returned Amount
+        - Speed
+        - Total Time Paused
+        - Total Time Physically Active
+outcome:
+  message: Value not found in extensible codelist Type 1 Diabetes Findings About Test
+    Name (C163028)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C163028
+  codelist_name: Type 1 Diabetes Findings About Test Name
+  codelist_submission_value: D1FATS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 118
+

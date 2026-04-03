@@ -1,0 +1,47 @@
+id: HRL-CT-0472
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC070TN (Functional Assessment of Chronic Illness Therapy-Fatigue 13-Item
+  Scale Version 4 Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC070TN
+      operator: in
+      value:
+        - FAC070-Able to Do My Usual Activities
+        - FAC070-Frustrated by Being Too Tired
+        - FAC070-I Am Too Tired to Eat
+        - FAC070-I Feel Fatigued
+        - FAC070-I Feel Listless
+        - FAC070-I Feel Tired
+        - FAC070-I Feel Weak All Over
+        - FAC070-I Have Energy
+        - FAC070-I Need to Sleep During the Day
+        - FAC070-Limit Social Activity, I am Tired
+        - FAC070-Need Help Doing Usual Activities
+        - FAC070-Total Score
+        - FAC070-Trouble Finishing Things
+        - FAC070-Trouble Starting Things
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Chronic
+    Illness Therapy-Fatigue 13-Item Scale Version 4 Questionnaire Test Name (C147543)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C147543
+  codelist_name: Functional Assessment of Chronic Illness Therapy-Fatigue 13-Item
+    Scale Version 4 Questionnaire Test Name
+  codelist_submission_value: FAC070TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 14
+

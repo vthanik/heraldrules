@@ -1,0 +1,88 @@
+id: HRL-CT-0236
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSS10TN (Columbia-Suicide Severity Rating Scale Pediatric/Cognitively
+  Impaired Lifetime/Recent Questionnaire Test Name) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSS10TN
+      operator: in
+      value:
+        - CSS10-Aborted Attempt, Describe
+        - CSS10-Aborted Attempt-Life
+        - CSS10-Aborted Attempt-P3M
+        - CSS10-Actual Attempt, Describe
+        - CSS10-Actual Attempt-Life
+        - CSS10-Actual Attempt-P3M
+        - CSS10-First Attempt Damage
+        - CSS10-First Attempt Date
+        - CSS10-First Attempt Potential
+        - CSS10-Frequency, Write Response
+        - CSS10-Idea, Intent, No Plan, Describe
+        - CSS10-Idea, Intent, No Plan-Life
+        - CSS10-Idea, Intent, No Plan-P1M
+        - CSS10-Idea, No Intent, No Plan, Describe
+        - CSS10-Idea, No Intent, No Plan-Life
+        - CSS10-Idea, No Intent, No Plan-P1M
+        - CSS10-Idea, Plan, Intent, Describe
+        - CSS10-Idea, Plan, Intent-Life
+        - CSS10-Idea, Plan, Intent-P1M
+        - CSS10-Interrupted Attempt, Describe
+        - CSS10-Interrupted Attempt-Life
+        - CSS10-Interrupted Attempt-P3M
+        - CSS10-Most Lethal Attempt Damage
+        - CSS10-Most Lethal Attempt Date
+        - CSS10-Most Lethal Attempt Potential
+        - CSS10-Most Recent Attempt Damage
+        - CSS10-Most Recent Attempt Date
+        - CSS10-Most Recent Attempt Potential
+        - CSS10-Most Severe Idea, Desc-Life
+        - CSS10-Most Severe Idea, Desc-P1M
+        - CSS10-Most Severe Idea, Frequency-Life
+        - CSS10-Most Severe Idea, Frequency-P1M
+        - CSS10-Most Severe Idea-Life
+        - CSS10-Most Severe Idea-P1M
+        - CSS10-Non-Spec Suicid Thought, Describe
+        - CSS10-Non-Spec Suicid Thought-Life
+        - CSS10-Non-Spec Suicid Thought-P1M
+        - CSS10-Non-suicidal Self-injur Behav-Life
+        - CSS10-Non-suicidal Self-injur Behav-P3M
+        - CSS10-Number of Aborted Attempts-Life
+        - CSS10-Number of Aborted Attempts-P3M
+        - CSS10-Number of Actual Attempts-Life
+        - CSS10-Number of Actual Attempts-P3M
+        - CSS10-Number of Interrupt Attempts-Life
+        - CSS10-Number of Interrupt Attempts-P3M
+        - CSS10-Preparatory Acts/Behavior, Descr
+        - CSS10-Preparatory Acts/Behavior-Life
+        - CSS10-Preparatory Acts/Behavior-P3M
+        - CSS10-Self-injur Behav, Intent Unk-Life
+        - CSS10-Self-injur Behav, Intent Unk-P3M
+        - CSS10-Suicidal Behavior-Life
+        - CSS10-Suicidal Behavior-P3M
+        - CSS10-Wish to be Dead, Describe
+        - CSS10-Wish to be Dead-Life
+        - CSS10-Wish to be Dead-P1M
+outcome:
+  message: Value not found in non-extensible codelist Columbia-Suicide Severity Rating
+    Scale Pediatric/Cognitively Impaired Lifetime/Recent Questionnaire Test Name (C113847)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C113847
+  codelist_name: Columbia-Suicide Severity Rating Scale Pediatric/Cognitively Impaired
+    Lifetime/Recent Questionnaire Test Name
+  codelist_submission_value: CSS10TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 55
+

@@ -1,0 +1,92 @@
+id: HRL-CT-0233
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSS11TC (Columbia-Suicide Severity Rating Scale Lifetime/Recent Version
+  Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSS11TC
+      operator: in
+      value:
+        - CSS1101A
+        - CSS1101B
+        - CSS1101C
+        - CSS1102A
+        - CSS1102B
+        - CSS1102C
+        - CSS1103A
+        - CSS1103B
+        - CSS1103C
+        - CSS1104A
+        - CSS1104B
+        - CSS1104C
+        - CSS1105A
+        - CSS1105B
+        - CSS1105C
+        - CSS1106A
+        - CSS1106B
+        - CSS1106C
+        - CSS1106D
+        - CSS1107A
+        - CSS1107B
+        - CSS1108A
+        - CSS1108B
+        - CSS1109A
+        - CSS1109B
+        - CSS1110A
+        - CSS1110B
+        - CSS1111A
+        - CSS1111B
+        - CSS1112A
+        - CSS1112B
+        - CSS1113A
+        - CSS1113B
+        - CSS1113C
+        - CSS1114A
+        - CSS1114B
+        - CSS1115A
+        - CSS1115B
+        - CSS1116A
+        - CSS1116B
+        - CSS1116C
+        - CSS1117A
+        - CSS1117B
+        - CSS1118A
+        - CSS1118B
+        - CSS1118C
+        - CSS1119A
+        - CSS1119B
+        - CSS1119C
+        - CSS1120A
+        - CSS1120B
+        - CSS1121A
+        - CSS1121B
+        - CSS1121C
+        - CSS1122A
+        - CSS1122B
+        - CSS1122C
+        - CSS1123A
+        - CSS1123B
+        - CSS1123C
+outcome:
+  message: Value not found in non-extensible codelist Columbia-Suicide Severity Rating
+    Scale Lifetime/Recent Version Questionnaire Test Code (C117989)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C117989
+  codelist_name: Columbia-Suicide Severity Rating Scale Lifetime/Recent Version Questionnaire
+    Test Code
+  codelist_submission_value: CSS11TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 60
+

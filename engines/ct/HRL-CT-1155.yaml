@@ -1,0 +1,105 @@
+id: HRL-CT-1155
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: VSTESTCD (Vital Signs Test Code) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: VSTESTCD
+      operator: in
+      value:
+        - ABI
+        - ABSKNF
+        - ARMSPAN
+        - BCM
+        - BLAPCTL
+        - BMI
+        - BMIAPCTL
+        - BMR
+        - BODLNGTH
+        - BODYFATM
+        - BRTHWT
+        - BSA
+        - CALFCIR
+        - CHESTCIR
+        - CPLRFLT
+        - CRWNHEEL
+        - DBPAPCTL
+        - DBPHPCTL
+        - DIABP
+        - ECW
+        - ECWTBW
+        - ENRGEXP
+        - EWEIGHT
+        - FARMCIR
+        - FIO2
+        - FRMSIZE
+        - FTEWT
+        - FTHDCIRC
+        - FTHR
+        - FTMANDL
+        - FTSAD
+        - FTSZGAC
+        - FTWTGAPL
+        - HCRAPCTL
+        - HDCIRC
+        - HEIGHT
+        - HIPCIR
+        - HR
+        - HRVSDANN
+        - HRVSDNN
+        - HTAPCTL
+        - IDEALWT
+        - INTP
+        - KNEEHEEL
+        - LBM
+        - LBMTBMR
+        - LTM
+        - MANDL
+        - MAP
+        - MAXPREHR
+        - MUARMCIR
+        - NECKCIR
+        - OXYSAT
+        - PULSE
+        - PULSEPR
+        - RESP
+        - SAD
+        - SAO2FIO2
+        - SBPAPCTL
+        - SBPHPCTL
+        - SSSKNF
+        - SYSBP
+        - TBW
+        - TEMP
+        - TEMPCB
+        - TEMPPB
+        - TIBIAL
+        - TRSKNF
+        - ULNARL
+        - WAISTHIP
+        - WASTHEEL
+        - WEIGHT
+        - WSTCIR
+        - WTAPCTL
+        - WTHTPCTL
+outcome:
+  message: Value not found in extensible codelist Vital Signs Test Code (C66741)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C66741
+  codelist_name: Vital Signs Test Code
+  codelist_submission_value: VSTESTCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 75
+

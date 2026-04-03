@@ -1,0 +1,56 @@
+id: HRL-CT-0523
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HAMD2TN (Hamilton Depression Rating Scale 21-Item Clinical Classification
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HAMD2TN
+      operator: in
+      value:
+        - HAMD2-Agitation
+        - HAMD2-Anxiety Psychological
+        - HAMD2-Anxiety Somatic
+        - HAMD2-Depersonalization/Derealization
+        - HAMD2-Depressed Mood
+        - HAMD2-Diurnal Variation Severity
+        - HAMD2-Diurnal Variation
+        - HAMD2-Feelings of Guilt
+        - HAMD2-Genital Symptoms
+        - HAMD2-Hypochondriasis
+        - HAMD2-Insight
+        - HAMD2-Insomnia Early
+        - HAMD2-Insomnia Late
+        - HAMD2-Insomnia Middle
+        - HAMD2-Loss of Weight by History
+        - HAMD2-Loss of Weight Measured
+        - HAMD2-Obsessional/Compulsive Symptoms
+        - HAMD2-Paranoid Symptoms
+        - HAMD2-Retardation
+        - HAMD2-Somatic Symptoms Gastro-intestinal
+        - HAMD2-Somatic Symptoms General
+        - HAMD2-Suicide
+        - HAMD2-Total Score
+        - HAMD2-Work and Activities
+outcome:
+  message: Value not found in non-extensible codelist Hamilton Depression Rating Scale
+    21-Item Clinical Classification Test Name (C101822)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101822
+  codelist_name: Hamilton Depression Rating Scale 21-Item Clinical Classification
+    Test Name
+  codelist_submission_value: HAMD2TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 24
+

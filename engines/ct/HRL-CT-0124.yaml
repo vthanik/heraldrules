@@ -1,0 +1,56 @@
+id: HRL-CT-0124
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BSTESTCD (Biospecimen Characteristics Test Code) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BSTESTCD
+      operator: in
+      value:
+        - A260A230
+        - A260A280
+        - AREA
+        - CONC
+        - DSPCOUNT
+        - FIXNAM
+        - FLUORLBL
+        - I28S18S
+        - LENGTH
+        - MASS
+        - QUALITY
+        - RIN
+        - SIZE
+        - SPDMSION
+        - SPWEIGHT
+        - TEMP
+        - THICK
+        - TISSPNUM
+        - TUMCECE
+        - TUMTORI
+        - VBLSIND
+        - VBLSPCT
+        - VOLUME
+        - WBC
+        - WIDTH
+outcome:
+  message: Value not found in extensible codelist Biospecimen Characteristics Test
+    Code (C124300)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124300
+  codelist_name: Biospecimen Characteristics Test Code
+  codelist_submission_value: BSTESTCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 25
+

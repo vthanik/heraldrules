@@ -1,0 +1,33 @@
+id: HRL-CT-1148
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: VCNEVD (Vaccination Evidence Source) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: VCNEVD
+      operator: in
+      value:
+        - SCAR
+        - SELF-REPORT
+        - WRITTEN DOCUMENTATION
+outcome:
+  message: Value not found in extensible codelist Vaccination Evidence Source (C102590)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C102590
+  codelist_name: Vaccination Evidence Source
+  codelist_submission_value: VCNEVD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 3
+

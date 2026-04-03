@@ -1,0 +1,35 @@
+id: HRL-CT-1128
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TBFATSCD (Tuberculosis Findings About Test Code) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TBFATSCD
+      operator: in
+      value:
+        - DRSTAT
+        - LDIAM
+        - OCCUR
+        - TOTNUM
+outcome:
+  message: Value not found in extensible codelist Tuberculosis Findings About Test
+    Code (C127266)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C127266
+  codelist_name: Tuberculosis Findings About Test Code
+  codelist_submission_value: TBFATSCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 4
+

@@ -1,0 +1,33 @@
+id: HRL-CT-0269
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CADG01TN (Coronary Artery Dissection NHLBI Grade Clinical Classification
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CADG01TN
+      operator: in
+      value:
+        - CADG01-Coronary Dissection NHLBI Grade
+outcome:
+  message: Value not found in non-extensible codelist Coronary Artery Dissection NHLBI
+    Grade Clinical Classification Test Name (C119075)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C119075
+  codelist_name: Coronary Artery Dissection NHLBI Grade Clinical Classification Test
+    Name
+  codelist_submission_value: CADG01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

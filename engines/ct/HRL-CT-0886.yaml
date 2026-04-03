@@ -1,0 +1,48 @@
+id: HRL-CT-0886
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: QLES2TC (Quality Of Life Enjoyment And Satisfaction Questionnaire - Short
+  Form Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: QLES2TC
+      operator: in
+      value:
+        - QLES201
+        - QLES202
+        - QLES203
+        - QLES204
+        - QLES205
+        - QLES206
+        - QLES207
+        - QLES208
+        - QLES209
+        - QLES210
+        - QLES211
+        - QLES212
+        - QLES213
+        - QLES214
+        - QLES215
+        - QLES216
+outcome:
+  message: Value not found in non-extensible codelist Quality Of Life Enjoyment And
+    Satisfaction Questionnaire - Short Form Test Code (C130267)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130267
+  codelist_name: Quality Of Life Enjoyment And Satisfaction Questionnaire - Short
+    Form Test Code
+  codelist_submission_value: QLES2TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 16
+

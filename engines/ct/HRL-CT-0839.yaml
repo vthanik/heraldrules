@@ -1,0 +1,43 @@
+id: HRL-CT-0839
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PSECD1TN (Penn State Electronic Cigarette Dependence Index Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PSECD1TN
+      operator: in
+      value:
+        - PSECD1-First Use E-Cig After Wake Up
+        - PSECD1-Hard Keep From Using E-Cig
+        - PSECD1-Have Strong Cravings to Use E-Cig
+        - PSECD1-How Strong Urges to Use E-Cig
+        - PSECD1-More Irritable Couldn't Use E-Cig
+        - PSECD1-Nervous Couldn't Use E-Cig
+        - PSECD1-Nights per Week Awaken Use E-Cig
+        - PSECD1-Sometimes Awaken Night Use E-Cig
+        - PSECD1-Times per Day You Use Your E-Cig
+        - PSECD1-Total Score
+        - PSECD1-Use an E-Cig B/c Hard to Quit
+outcome:
+  message: Value not found in non-extensible codelist Penn State Electronic Cigarette
+    Dependence Index Questionnaire Test Name (C204221)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204221
+  codelist_name: Penn State Electronic Cigarette Dependence Index Questionnaire Test
+    Name
+  codelist_submission_value: PSECD1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 11
+

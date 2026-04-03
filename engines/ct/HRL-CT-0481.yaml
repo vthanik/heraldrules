@@ -1,0 +1,90 @@
+id: HRL-CT-0481
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAMS01TC (Functional Assessment of Multiple Sclerosis Version 4 Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAMS01TC
+      operator: in
+      value:
+        - FAMS0101
+        - FAMS0102
+        - FAMS0103
+        - FAMS0104
+        - FAMS0105
+        - FAMS0106
+        - FAMS0107
+        - FAMS0108
+        - FAMS0109
+        - FAMS0110
+        - FAMS0111
+        - FAMS0112
+        - FAMS0113
+        - FAMS0114
+        - FAMS0115
+        - FAMS0116
+        - FAMS0117
+        - FAMS0118
+        - FAMS0119
+        - FAMS0120
+        - FAMS0121
+        - FAMS0122
+        - FAMS0123
+        - FAMS0124
+        - FAMS0125
+        - FAMS0126
+        - FAMS0127
+        - FAMS0128
+        - FAMS0129
+        - FAMS0130
+        - FAMS0131
+        - FAMS0132
+        - FAMS0133
+        - FAMS0134
+        - FAMS0135
+        - FAMS0136
+        - FAMS0137
+        - FAMS0138
+        - FAMS0139
+        - FAMS0140
+        - FAMS0141
+        - FAMS0142
+        - FAMS0143
+        - FAMS0144
+        - FAMS0145
+        - FAMS0146
+        - FAMS0147
+        - FAMS0148
+        - FAMS0149
+        - FAMS0150
+        - FAMS0151
+        - FAMS0152
+        - FAMS0153
+        - FAMS0154
+        - FAMS0155
+        - FAMS0156
+        - FAMS0157
+        - FAMS0158
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Multiple
+    Sclerosis Version 4 Questionnaire Test Code (C112441)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C112441
+  codelist_name: Functional Assessment of Multiple Sclerosis Version 4 Questionnaire
+    Test Code
+  codelist_submission_value: FAMS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 58
+

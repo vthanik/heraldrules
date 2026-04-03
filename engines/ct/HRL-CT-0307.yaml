@@ -1,0 +1,67 @@
+id: HRL-CT-0307
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DDS02TN (Diabetes Distress Scale for Parents of Teens with Type 1 Diabetes
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DDS02TN
+      operator: in
+      value:
+        - DDS02-Blame Me If Not Well-controlled
+        - DDS02-Doesn't Do Enough Manage Diabetes
+        - DDS02-Doesn't Get Expert Medical Help
+        - DDS02-Don't Work Well Together
+        - 'DDS02-Healthcare Team Distress: Mean'
+        - 'DDS02-Healthcare Team Distress: Moderate'
+        - 'DDS02-Healthcare Team Distress: Sum'
+        - DDS02-Help Teen Is a Battle
+        - DDS02-Lack Support From Friends/Family
+        - DDS02-Leave Home and Cannot Protect Him
+        - DDS02-Low Blood Sugars Away From Home
+        - DDS02-Low Blood Sugars When Sleeping
+        - DDS02-Motivate Teen Take Care Diabetes
+        - DDS02-My Nagging Hurting Relationship
+        - DDS02-No One Notices Diabetes Hard on Me
+        - DDS02-Only One Takes Responsibility
+        - 'DDS02-Parent/Teen Rel Distress: Mean'
+        - 'DDS02-Parent/Teen Rel Distress: Moderate'
+        - 'DDS02-Parent/Teen Rel Distress: Sum'
+        - 'DDS02-Personal Distress: Mean'
+        - 'DDS02-Personal Distress: Moderate'
+        - 'DDS02-Personal Distress: Sum'
+        - DDS02-Taking Too Much of My Energy
+        - DDS02-Teen Doesn't Have Right Doctor
+        - DDS02-Teen Ignore/Forget Diabetes
+        - DDS02-Teen Ignores My Suggestions
+        - 'DDS02-Teen Management Distress: Mean'
+        - 'DDS02-Teen Management Distress: Moderate'
+        - 'DDS02-Teen Management Distress: Sum'
+        - DDS02-Teen Not Prepared Once Adult
+        - 'DDS02-Total DDS Score: Mean'
+        - 'DDS02-Total DDS Score: Moderate'
+        - 'DDS02-Total DDS Score: Sum'
+        - DDS02-Trust Teen Take Care of Diabetes
+        - DDS02-Unappreciated for Ways I Help
+outcome:
+  message: Value not found in non-extensible codelist Diabetes Distress Scale for
+    Parents of Teens with Type 1 Diabetes Questionnaire Test Name (C163394)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C163394
+  codelist_name: Diabetes Distress Scale for Parents of Teens with Type 1 Diabetes
+    Questionnaire Test Name
+  codelist_submission_value: DDS02TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 35
+

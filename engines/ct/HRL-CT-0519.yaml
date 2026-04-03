@@ -1,0 +1,39 @@
+id: HRL-CT-0519
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HAMD4TN (Hamilton Depression Rating Scale - 6 Clinician Version Clinical
+  Classification Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HAMD4TN
+      operator: in
+      value:
+        - HAMD4-Depressed Mood
+        - HAMD4-Low Self-esteem and Guilt
+        - HAMD4-Psychic Anxiety
+        - HAMD4-Psychomotor Retardation, General
+        - HAMD4-Social Life Activities/Interests
+        - HAMD4-Tiredness and Pains
+        - HAMD4-Total Score
+outcome:
+  message: Value not found in non-extensible codelist Hamilton Depression Rating Scale
+    - 6 Clinician Version Clinical Classification Test Name (C130242)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130242
+  codelist_name: Hamilton Depression Rating Scale - 6 Clinician Version Clinical Classification
+    Test Name
+  codelist_submission_value: HAMD4TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

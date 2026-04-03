@@ -1,0 +1,64 @@
+id: HRL-CT-0996
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SPPB1TC (Short Physical Performance Battery Version 1.2 Functional Test
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SPPB1TC
+      operator: in
+      value:
+        - SPPB101
+        - SPPB101A
+        - SPPB102
+        - SPPB102A
+        - SPPB103
+        - SPPB103A
+        - SPPB104
+        - SPPB104A
+        - SPPB105
+        - SPPB106
+        - SPPB107
+        - SPPB107A
+        - SPPB107B
+        - SPPB107C
+        - SPPB107D
+        - SPPB108
+        - SPPB108A
+        - SPPB108B
+        - SPPB108C
+        - SPPB108D
+        - SPPB109A
+        - SPPB109B
+        - SPPB110
+        - SPPB111
+        - SPPB111A
+        - SPPB111B
+        - SPPB112
+        - SPPB113
+        - SPPB113A
+        - SPPB113B
+        - SPPB113C
+        - SPPB114
+outcome:
+  message: Value not found in non-extensible codelist Short Physical Performance Battery
+    Version 1.2 Functional Test Test Code (C170527)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C170527
+  codelist_name: Short Physical Performance Battery Version 1.2 Functional Test Test
+    Code
+  codelist_submission_value: SPPB1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 32
+

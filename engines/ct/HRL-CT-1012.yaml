@@ -1,0 +1,83 @@
+id: HRL-CT-1012
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SGRQ01TC (St. George's Respiratory Questionnaire Past 3 Months Version
+  Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SGRQ01TC
+      operator: in
+      value:
+        - SGRQ0101
+        - SGRQ0102
+        - SGRQ0103
+        - SGRQ0104
+        - SGRQ0105
+        - SGRQ0106
+        - SGRQ0107
+        - SGRQ0108
+        - SGRQ0109
+        - SGRQ0110
+        - SGRQ0111
+        - SGRQ0112
+        - SGRQ0113
+        - SGRQ0114
+        - SGRQ0115
+        - SGRQ0116
+        - SGRQ0117
+        - SGRQ0118
+        - SGRQ0119
+        - SGRQ0120
+        - SGRQ0121
+        - SGRQ0122
+        - SGRQ0123
+        - SGRQ0124
+        - SGRQ0125
+        - SGRQ0126
+        - SGRQ0127
+        - SGRQ0128
+        - SGRQ0129
+        - SGRQ0130
+        - SGRQ0131
+        - SGRQ0132
+        - SGRQ0133
+        - SGRQ0134
+        - SGRQ0135
+        - SGRQ0136
+        - SGRQ0137
+        - SGRQ0138
+        - SGRQ0139
+        - SGRQ0140
+        - SGRQ0141
+        - SGRQ0142
+        - SGRQ0143
+        - SGRQ0144
+        - SGRQ0145
+        - SGRQ0146
+        - SGRQ0147
+        - SGRQ0148
+        - SGRQ0149
+        - SGRQ0150
+        - SGRQ0151
+outcome:
+  message: Value not found in non-extensible codelist St. George's Respiratory Questionnaire
+    Past 3 Months Version Questionnaire Test Code (C112449)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C112449
+  codelist_name: St. George's Respiratory Questionnaire Past 3 Months Version Questionnaire
+    Test Code
+  codelist_submission_value: SGRQ01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 51
+

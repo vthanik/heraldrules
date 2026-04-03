@@ -1,0 +1,100 @@
+id: HRL-CT-0136
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BPI1TC (Brief Pain Inventory Questionnaire Test Code) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BPI1TC
+      operator: in
+      value:
+        - BPI101
+        - BPI102
+        - BPI102A
+        - BPI103
+        - BPI104
+        - BPI105
+        - BPI106
+        - BPI107
+        - BPI108
+        - BPI109
+        - BPI109A
+        - BPI110
+        - BPI110A
+        - BPI110B
+        - BPI111A
+        - BPI111B
+        - BPI112
+        - BPI113
+        - BPI114
+        - BPI115
+        - BPI116
+        - BPI117
+        - BPI118
+        - BPI119
+        - BPI120
+        - BPI1211
+        - BPI1212
+        - BPI1213
+        - BPI1213A
+        - BPI122A
+        - BPI122B
+        - BPI122C
+        - BPI122D
+        - BPI122E
+        - BPI122F
+        - BPI122G
+        - BPI122H
+        - BPI122I
+        - BPI122J
+        - BPI122K
+        - BPI122L
+        - BPI122M
+        - BPI122N
+        - BPI122O
+        - BPI123A
+        - BPI123B
+        - BPI123C
+        - BPI123D
+        - BPI123E
+        - BPI123F
+        - BPI123G
+        - BPI124
+        - BPI125
+        - BPI126
+        - BPI127
+        - BPI128
+        - BPI128A
+        - BPI129
+        - BPI129A
+        - BPI130
+        - BPI131A
+        - BPI131B
+        - BPI131C
+        - BPI131D
+        - BPI131E
+        - BPI131F
+        - BPI131G
+        - BPI131H
+        - BPI132
+outcome:
+  message: Value not found in non-extensible codelist Brief Pain Inventory Questionnaire
+    Test Code (C100162)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100162
+  codelist_name: Brief Pain Inventory Questionnaire Test Code
+  codelist_submission_value: BPI1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 69
+

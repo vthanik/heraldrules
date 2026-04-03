@@ -1,0 +1,55 @@
+id: HRL-CT-0321
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DISCHDX (Discharge Disposition) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DISCHDX
+      operator: in
+      value:
+        - EXPIRED IN A MEDICAL FACILITY
+        - EXPIRED
+        - FEDERAL HEALTH CARE FACILITY
+        - HOME UNDER CARE OF ORGANIZED HOME HEALTH SERVICE ORGANIZATION IN ANTICIPATION
+          OF COVERED SKILLED CARE
+        - HOME, HOSPICE
+        - HOME, NURSING CARE
+        - HOME, QUARANTINE
+        - HOME, SELF CARE
+        - HOSPICE - MEDICAL FACILITY
+        - HOSPITAL-BASED MEDICARE-APPROVED SWING BED
+        - INPATIENT REHABILITATION FACILITY (IRF) INCLUDING REHABILITATION DISTINCT
+          PART UNITS OF A HOSPITAL
+        - INSTITUTION NOT DEFINED
+        - INTERMEDIATE CARE FACILITY
+        - LEFT AGAINST MEDICAL ADVICE OR DISCONTINUED CARE
+        - LONG TERM CARE HOSPITAL
+        - LONG TERM NURSING CARE FACILITY
+        - MEDICARE-CERTIFIED LONG TERM CARE HOSPITAL (LTCH)
+        - NURSING FACILITY CERTIFIED UNDER MEDICAID BUT NOT CERTIFIED UNDER MEDICARE
+        - PSYCHIATRIC HOSPITAL OR A PSYCHIATRIC-DISTINCT PART UNIT OF A HOSPITAL
+        - REHABILITATION FACILITY
+        - SHORT TERM GENERAL HOSPITAL
+        - SKILLED NURSING FACILITY (SNF) WITH MEDICARE CERTIFICATION IN ANTICIPATION
+          OF COVERED SKILLED CARE
+outcome:
+  message: Value not found in extensible codelist Discharge Disposition (C101863)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101863
+  codelist_name: Discharge Disposition
+  codelist_submission_value: DISCHDX
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 22
+

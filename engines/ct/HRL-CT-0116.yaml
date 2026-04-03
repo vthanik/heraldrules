@@ -1,0 +1,50 @@
+id: HRL-CT-0116
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BEBQ01TN (Baby Eating Behaviour Questionnaire Concurrent Version Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BEBQ01TN
+      operator: in
+      value:
+        - BEBQ01-Baby Becomes Distressed Feeding
+        - BEBQ01-Baby Enjoys Feeding Time
+        - BEBQ01-Baby Feeds Slowly
+        - BEBQ01-Baby Finishes Feeding Quickly
+        - BEBQ01-Baby Frequently Wants More Milk
+        - BEBQ01-Baby Gets Full Up Easily
+        - BEBQ01-Baby Has a Big Appetite
+        - BEBQ01-Baby Is Always Demanding a Feed
+        - BEBQ01-Baby Loves Milk
+        - BEBQ01-Baby Seems Contented Feeding
+        - BEBQ01-Baby Sucks More and More Slowly
+        - BEBQ01-Baby Takes More Than 30 Minutes
+        - BEBQ01-Baby Would Always Be Feeding
+        - BEBQ01-Baby Would Take Too Much Milk
+        - BEBQ01-Difficult Manage Complete Feed
+        - BEBQ01-Gets Full Before Taking All Milk
+        - BEBQ01-Just Eaten Is Happy to Feed Again
+        - BEBQ01-Take a Feed Within 30 Minutes
+outcome:
+  message: Value not found in non-extensible codelist Baby Eating Behaviour Questionnaire
+    Concurrent Version Questionnaire Test Name (C135679)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C135679
+  codelist_name: Baby Eating Behaviour Questionnaire Concurrent Version Questionnaire
+    Test Name
+  codelist_submission_value: BEBQ01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 18
+

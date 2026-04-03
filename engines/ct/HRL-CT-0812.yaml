@@ -1,0 +1,58 @@
+id: HRL-CT-0812
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL11TC (Pediatric Quality of Life Neuromuscular Module Acute Version
+  3 Young Adult Parent Report Questionnaire Test Code) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL11TC
+      operator: in
+      value:
+        - PQL1101
+        - PQL1102
+        - PQL1103
+        - PQL1104
+        - PQL1105
+        - PQL1106
+        - PQL1107
+        - PQL1108
+        - PQL1109
+        - PQL1110
+        - PQL1111
+        - PQL1112
+        - PQL1113
+        - PQL1114
+        - PQL1115
+        - PQL1116
+        - PQL1117
+        - PQL1118
+        - PQL1119
+        - PQL1120
+        - PQL1121
+        - PQL1122
+        - PQL1123
+        - PQL1124
+        - PQL1125
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Acute Version 3 Young Adult Parent Report Questionnaire Test Code (C138235)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138235
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Acute Version 3 Young
+    Adult Parent Report Questionnaire Test Code
+  codelist_submission_value: PQL11TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

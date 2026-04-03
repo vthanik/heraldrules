@@ -1,0 +1,253 @@
+id: HRL-CT-0950
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MITS (SDTM Microscopic Findings Test Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MITS
+      operator: in
+      value:
+        - Abnormal Cells
+        - Acidophil Body
+        - Adequate Surgical Margins Indicator
+        - ALK Protein
+        - Alpha-Methylacyl Coenzyme A Racemase
+        - Androgen Receptor Variant 7
+        - Apoptotic Cells
+        - Apoptotic Cells/Total Cells
+        - Architectural Changes
+        - Area
+        - Arteriolar Hyaline Thickening
+        - Banff Diagnostic Category Renal
+        - Basophils/Total Cells
+        - BCL2
+        - BCL6
+        - Beta-defensin 1
+        - Beta-defensin 2
+        - Blasts/Total Cells
+        - Blood Vessel Density
+        - Bradykinin Receptor B1
+        - Breast Cancer Type 1 Susceptibility Prot
+        - c-Myc
+        - CD3 T-Cell Marker
+        - CD34 Sialomucin
+        - CDX2 Antigen
+        - CEA Cell Adhesion Molecule 5
+        - Cell Distribution
+        - Cells
+        - Cellular Differentiation
+        - Cellularity
+        - Chronic Inflammatory Infiltrate
+        - Clonal Cells/Total Cells
+        - Collagen Fibrosis
+        - Crypt Abscess
+        - Crypt Architectural Damage
+        - Cryptitis
+        - Cyclin D1
+        - Cytogenetic Examination
+        - Cytokeratin 16
+        - DC Plasmacytoid Sub
+        - DC Plasmacytoid
+        - Dendritic Cell-Lysosomal-Assoc Memb Prot
+        - Depth of Tumor Invasion
+        - Depth
+        - Diagnosis
+        - Distance to Extranodal Extension
+        - Dysplasia
+        - Ecto-5'-Nucleotidase
+        - EGFR Variant Protein
+        - Eosinophils/Total Cells
+        - Epi RBM Lngth, Intact/Epi RBM Lngth, Tot
+        - Epidermal Growth Factor Receptor
+        - Epithelial Damage
+        - Epithelial Integrity
+        - Erosion and/or Ulceration
+        - Erythroid Precursor Cells/Total Cells
+        - Erythroid Proliferation
+        - Estrogen Receptor
+        - Extramural Venous Invasion
+        - Fibroblasts
+        - Fibrosis
+        - Folate Hydrolase 1
+        - Forkhead Box Protein 3
+        - General Histopathologic Exam, Qual
+        - Glomerulitis
+        - Glomerulopathy
+        - Goblet Cells
+        - Goblet Cells/Epithelial Cells
+        - Granulocyte Proliferation
+        - Granulocytes Segmented/Total Cells
+        - Granuloma
+        - Granzyme B
+        - Hematopoietic Cells/Adipocytes
+        - Hepatocellular Ballooning
+        - Hepatocyte Growth Factor Receptor
+        - Histologic Type of Cancer
+        - Human Epidermal Growth Factor Receptor 2
+        - Immune Cell Infiltration
+        - Infilt of Mono Cells in Lamina Propria
+        - Infilt of PMN Cells in Lamina Propria
+        - Integrin Subunit Beta 3
+        - Intercellular Adhesion Molecule 1
+        - Interferon Regulatory Factor 4
+        - Interstitial Fibrosis
+        - Intimal Arteritis
+        - Intraepidermal Nerve Fiber Density
+        - Intraepithelial Lymphocytes/Enterocytes
+        - Intraepithelial Neoplasia
+        - Iron
+        - Keratinocytes
+        - Ki-67
+        - Large Lipogranuloma
+        - Length
+        - Leukocytes
+        - Leukoerythroblastosis
+        - Lipocalin-2
+        - Lobular Inflammation
+        - Lymph Node Extracapsular Spread
+        - Lymph Node Involvement Indicator
+        - Lymph Node State
+        - Lymphatic Invasion
+        - Lymphocyte Antigen T1/Leu-1
+        - Lymphocyte Function-Associated Antigen 1
+        - Lymphocytes
+        - Lymphocytes/Total Cells
+        - Lymphoid Aggregates
+        - Lymphoma Cells
+        - Lymphoma Cells/Total Cells
+        - Macrophage, Pigmented
+        - Mallory Body
+        - Mast Cells/Total Cells
+        - Mast/Stem Cell Growth Factor Rec Kit
+        - Mature Plasma Cells/Total Cells
+        - Maturing Erythroid/Total Cells
+        - Max Dimension Largest Metastatic Deposit
+        - Megakaryoblasts/Total Cells
+        - Megakaryocyte Proliferation
+        - Megamitochondria
+        - Melan-A
+        - Membrane Spanning 4-Domains A1
+        - Mesangial Matrix
+        - Metamyelocytes/Total Cells
+        - Microgranuloma
+        - Microscopic Examination
+        - Microvesicular Steatosis
+        - Mismatch Repair Proteins Interpretation
+        - Mitotic Figure
+        - Mitotic Score
+        - MMR Proteins
+        - Monoblasts/Total Cells
+        - Monocytes/Total Cells
+        - Mononuc Cell Interstitial Inflammation
+        - Mononuclear Cells
+        - MutL Homolog 1
+        - MutL Homolog 3
+        - MutS Homolog 2
+        - MutS Homolog 3
+        - MutS Homolog 6
+        - Myeloblasts/Total Cells
+        - Myelocytes/Total Cells
+        - Myelofibrosis
+        - Myeloid Proliferation
+        - Neoplastic Cells
+        - Neoplastic Cells/Total Cells
+        - Neural Cell Adhesion Molecule 1
+        - Neutrophils Band Form/Total Cells
+        - Neutrophils in Epithelium
+        - Neutrophils in Lamina Propria
+        - Neutrophils, Segmented/Total Cells
+        - NK2 Homeobox 1
+        - Normal Cells/Total Cells
+        - Nuclear Pleomorphism
+        - Nuclei, Glycogenated
+        - Number of Abnormal Tissue Samples
+        - Number of Biopsy Specimens Affected
+        - Number of Involved Lymph Node Levels
+        - Number of Lymph Nodes Involved
+        - Number of Malignant Biopsy Cores
+        - Overall Tumor Grade
+        - p16-INK4A
+        - Paneth Cell Metaplasia
+        - PAX3-FKHR Fusion Protein
+        - Percentage of In situ Carcinoma
+        - Perineural Invasion
+        - Peritubular Capillaritis
+        - Phosphatase and Tensin Homolog
+        - Platelet Endo Cell Adhesion Molecule 1
+        - PMS1 Homolog 1
+        - PMS1 Homolog 2
+        - Polymorphonuclear Cells in Epithelium
+        - Polysaccharides and Mucosubstances
+        - Portal Inflammation
+        - Premalignant Cell Morphology
+        - Premalignant Cells
+        - Premelanosome Protein
+        - Progesterone Receptor
+        - Programmed Death Ligand 1
+        - Proliferating Myeloid Cells/Total Cells
+        - Promonocytes/Total Cells
+        - Promyelocytes/Total Cells
+        - Prostatic Acid Phosphatase
+        - Pyknotic Cells
+        - Reticulin Fibrosis
+        - Reticulocytes/Total Cells
+        - ROS1 Protein
+        - S100 Calcium Binding Protein A7
+        - S100 Calcium Binding Proteins
+        - S100 Calcium-Binding Protein B
+        - Scavenger Receptor Class D, Member 1
+        - Squamous Epithelial Cells/Total Cells
+        - SRY-Box Transcription Factor 10
+        - Steatosis Extent
+        - Steatosis Location
+        - Stromal Cells/Total Cells
+        - Surgical Margin Distance
+        - Surgical Margin Involvement Region
+        - Surgical Margins Status
+        - T-Cell Surface Antigen T4/Leu-3
+        - T-Cell Surface Glycoprotein CD8
+        - Tertiary Lymphoid Structures
+        - Thickness
+        - TIGIT
+        - Total Assessed Cells
+        - Total Plasma Cells/Total Cells
+        - Transforming Growth Factor Beta 1
+        - Transitional Cells/Tumor Cells
+        - Tubular Atrophy
+        - Tubule Formation
+        - Tubulitis
+        - Tumor Assoc Calcium Signal Transducer 2
+        - Tumor Border Configuration
+        - Tumor Differentiation
+        - Tumor Infiltration Indicator
+        - Tumor Infiltration Pattern
+        - Tumor Protein p53
+        - Tumor Regression
+        - Tumor-Infiltrating Lymphocytes
+        - Ulceration
+        - Unspecified Cells
+        - Vascular Fibrous Intimal Thickening
+        - Vascular Invasion
+        - Width
+outcome:
+  message: Value not found in extensible codelist SDTM Microscopic Findings Test Name
+    (C132262)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C132262
+  codelist_name: SDTM Microscopic Findings Test Name
+  codelist_submission_value: MITS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 222
+

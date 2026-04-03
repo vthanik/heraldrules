@@ -1,0 +1,126 @@
+id: HRL-CT-0075
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ADL03TN (Alzheimer's Disease Cooperative Study-Activities of Daily Living
+  Inventory MCI Version Questionnaire Test Name) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ADL03TN
+      operator: in
+      value:
+        - 'ADL03-Appliance: Dishwasher'
+        - 'ADL03-Appliance: Dryer'
+        - 'ADL03-Appliance: Food Processor'
+        - 'ADL03-Appliance: Microwave'
+        - 'ADL03-Appliance: Other Specify'
+        - 'ADL03-Appliance: Other'
+        - 'ADL03-Appliance: Power Tools'
+        - 'ADL03-Appliance: Range'
+        - 'ADL03-Appliance: Toaster Oven'
+        - 'ADL03-Appliance: Vacuum'
+        - 'ADL03-Appliance: Washer'
+        - ADL03-Aware of Appointment Ahead of Time
+        - ADL03-Balance Checkbook Performance
+        - ADL03-Balance Checkbook
+        - ADL03-Clean Laundry
+        - ADL03-Clean Room Performance
+        - ADL03-Clean Room
+        - ADL03-Complete Complex Activities
+        - ADL03-Drive Car Optimal Performance
+        - ADL03-Drive Car
+        - ADL03-Explain Circumstance
+        - ADL03-Extent Needed Reminders
+        - ADL03-Extenuating Circumstances
+        - ADL03-Find Belongings Usual Performance
+        - ADL03-Find Personal Belongings
+        - ADL03-Get Around Optimal Performance
+        - ADL03-Get Around Outside Home
+        - ADL03-Go Shopping
+        - ADL03-Highest Level of Food Preparation
+        - ADL03-Highest Telephone Use Performance
+        - ADL03-Hobbies Needed Help (Q18a)
+        - ADL03-Hobbies Unable to Perform (Q18b)
+        - ADL03-Initiate Complex Activities
+        - ADL03-Keep Appointments
+        - ADL03-Laundry Cleaning Performance
+        - ADL03-Left at Home for 1 Hour or Longer
+        - ADL03-Left at Home for Less Than 1 Hour
+        - ADL03-Left Away From Home
+        - ADL03-Left On His/Her Own
+        - ADL03-Make a Meal
+        - ADL03-Most Complicated Writings
+        - 'ADL03-Pastime: Art'
+        - 'ADL03-Pastime: Bingo'
+        - 'ADL03-Pastime: Card or Board Games'
+        - 'ADL03-Pastime: Crosswords'
+        - 'ADL03-Pastime: Fishing'
+        - 'ADL03-Pastime: Gardening'
+        - 'ADL03-Pastime: Golf'
+        - 'ADL03-Pastime: Knitting'
+        - 'ADL03-Pastime: Musical Instrument'
+        - 'ADL03-Pastime: Other Specify'
+        - 'ADL03-Pastime: Other'
+        - 'ADL03-Pastime: Reading'
+        - 'ADL03-Pastime: Sewing'
+        - 'ADL03-Pastime: Tennis'
+        - 'ADL03-Pastime: Workshop'
+        - ADL03-Pay Items On His/Her Own
+        - ADL03-Perform Pastime
+        - ADL03-Read More Than 5 Minutes
+        - ADL03-Regional, National, International
+        - ADL03-Select First Clothes for the Day
+        - ADL03-Select Items Without Help
+        - ADL03-Select Television Program
+        - ADL03-Select/Ask for Something to Read
+        - ADL03-Subscore for Item 17
+        - ADL03-Subscore for Item 18
+        - ADL03-Subscore for Items 1 to 3
+        - ADL03-Subscore for Items 11 to 12d
+        - ADL03-Subscore for Items 13 to 14c
+        - ADL03-Subscore for Items 15 to 16c
+        - ADL03-Subscore for Items 4 to 7
+        - ADL03-Subscore for Items 8 to 10
+        - ADL03-Take Medications Performance
+        - ADL03-Take Medications Regularly
+        - ADL03-Talk About at Home Events
+        - ADL03-Talk About Current Events
+        - ADL03-Talk About Outside Events
+        - ADL03-Talk About TV Content While Watch
+        - ADL03-Talk About TV Content Within a Day
+        - ADL03-Talk Within 1 Day After Reading
+        - ADL03-Talk Within 1 Hour After Reading
+        - ADL03-Talk Without Repeating
+        - ADL03-Time to Complete Complex Tasks
+        - ADL03-Total ADCS-ADL Score
+        - ADL03-Total Points for 'Don't Know'
+        - ADL03-Use a Telephone
+        - ADL03-Use Common Used Appliances (q17a)
+        - ADL03-Use Household Appliance
+        - ADL03-Usual Dressing Performance
+        - ADL03-Usual Physically Dressing Perform
+        - ADL03-Watch Television
+        - ADL03-Write Things Down
+outcome:
+  message: Value not found in non-extensible codelist Alzheimer's Disease Cooperative
+    Study-Activities of Daily Living Inventory MCI Version Questionnaire Test Name
+    (C106650)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106650
+  codelist_name: Alzheimer's Disease Cooperative Study-Activities of Daily Living
+    Inventory MCI Version Questionnaire Test Name
+  codelist_submission_value: ADL03TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 92
+

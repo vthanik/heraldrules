@@ -1,0 +1,32 @@
+id: HRL-CT-1018
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SSS01TC (Stanford Sleepiness Scale Questionnaire Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SSS01TC
+      operator: in
+      value:
+        - SSS0101
+outcome:
+  message: Value not found in non-extensible codelist Stanford Sleepiness Scale Questionnaire
+    Test Code (C187454)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C187454
+  codelist_name: Stanford Sleepiness Scale Questionnaire Test Code
+  codelist_submission_value: SSS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

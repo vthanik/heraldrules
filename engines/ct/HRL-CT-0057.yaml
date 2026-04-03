@@ -1,0 +1,169 @@
+id: HRL-CT-0057
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: AVL01TN (ADNI Auditory Verbal Learning Functional Test Test Name) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: AVL01TN
+      operator: in
+      value:
+        - AVL01-List A 30 Min Delay Intrusions
+        - AVL01-List A 30 Min Delay Recall Total
+        - AVL01-List A 30 Min Delay Recall Word 1
+        - AVL01-List A 30 Min Delay Recall Word 10
+        - AVL01-List A 30 Min Delay Recall Word 11
+        - AVL01-List A 30 Min Delay Recall Word 12
+        - AVL01-List A 30 Min Delay Recall Word 13
+        - AVL01-List A 30 Min Delay Recall Word 14
+        - AVL01-List A 30 Min Delay Recall Word 15
+        - AVL01-List A 30 Min Delay Recall Word 2
+        - AVL01-List A 30 Min Delay Recall Word 3
+        - AVL01-List A 30 Min Delay Recall Word 4
+        - AVL01-List A 30 Min Delay Recall Word 5
+        - AVL01-List A 30 Min Delay Recall Word 6
+        - AVL01-List A 30 Min Delay Recall Word 7
+        - AVL01-List A 30 Min Delay Recall Word 8
+        - AVL01-List A 30 Min Delay Recall Word 9
+        - AVL01-List A Intrusions 1
+        - AVL01-List A Intrusions 2
+        - AVL01-List A Intrusions 3
+        - AVL01-List A Intrusions 4
+        - AVL01-List A Intrusions 5
+        - AVL01-List A Intrusions 6
+        - AVL01-List A Recall 1 Total
+        - AVL01-List A Recall 1 Word 1
+        - AVL01-List A Recall 1 Word 10
+        - AVL01-List A Recall 1 Word 11
+        - AVL01-List A Recall 1 Word 12
+        - AVL01-List A Recall 1 Word 13
+        - AVL01-List A Recall 1 Word 14
+        - AVL01-List A Recall 1 Word 15
+        - AVL01-List A Recall 1 Word 2
+        - AVL01-List A Recall 1 Word 3
+        - AVL01-List A Recall 1 Word 4
+        - AVL01-List A Recall 1 Word 5
+        - AVL01-List A Recall 1 Word 6
+        - AVL01-List A Recall 1 Word 7
+        - AVL01-List A Recall 1 Word 8
+        - AVL01-List A Recall 1 Word 9
+        - AVL01-List A Recall 2 Total
+        - AVL01-List A Recall 2 Word 1
+        - AVL01-List A Recall 2 Word 10
+        - AVL01-List A Recall 2 Word 11
+        - AVL01-List A Recall 2 Word 12
+        - AVL01-List A Recall 2 Word 13
+        - AVL01-List A Recall 2 Word 14
+        - AVL01-List A Recall 2 Word 15
+        - AVL01-List A Recall 2 Word 2
+        - AVL01-List A Recall 2 Word 3
+        - AVL01-List A Recall 2 Word 4
+        - AVL01-List A Recall 2 Word 5
+        - AVL01-List A Recall 2 Word 6
+        - AVL01-List A Recall 2 Word 7
+        - AVL01-List A Recall 2 Word 8
+        - AVL01-List A Recall 2 Word 9
+        - AVL01-List A Recall 3 Total
+        - AVL01-List A Recall 3 Word 1
+        - AVL01-List A Recall 3 Word 10
+        - AVL01-List A Recall 3 Word 11
+        - AVL01-List A Recall 3 Word 12
+        - AVL01-List A Recall 3 Word 13
+        - AVL01-List A Recall 3 Word 14
+        - AVL01-List A Recall 3 Word 15
+        - AVL01-List A Recall 3 Word 2
+        - AVL01-List A Recall 3 Word 3
+        - AVL01-List A Recall 3 Word 4
+        - AVL01-List A Recall 3 Word 5
+        - AVL01-List A Recall 3 Word 6
+        - AVL01-List A Recall 3 Word 7
+        - AVL01-List A Recall 3 Word 8
+        - AVL01-List A Recall 3 Word 9
+        - AVL01-List A Recall 4 Total
+        - AVL01-List A Recall 4 Word 1
+        - AVL01-List A Recall 4 Word 10
+        - AVL01-List A Recall 4 Word 11
+        - AVL01-List A Recall 4 Word 12
+        - AVL01-List A Recall 4 Word 13
+        - AVL01-List A Recall 4 Word 14
+        - AVL01-List A Recall 4 Word 15
+        - AVL01-List A Recall 4 Word 2
+        - AVL01-List A Recall 4 Word 3
+        - AVL01-List A Recall 4 Word 4
+        - AVL01-List A Recall 4 Word 5
+        - AVL01-List A Recall 4 Word 6
+        - AVL01-List A Recall 4 Word 7
+        - AVL01-List A Recall 4 Word 8
+        - AVL01-List A Recall 4 Word 9
+        - AVL01-List A Recall 5 Total
+        - AVL01-List A Recall 5 Word 1
+        - AVL01-List A Recall 5 Word 10
+        - AVL01-List A Recall 5 Word 11
+        - AVL01-List A Recall 5 Word 12
+        - AVL01-List A Recall 5 Word 13
+        - AVL01-List A Recall 5 Word 14
+        - AVL01-List A Recall 5 Word 15
+        - AVL01-List A Recall 5 Word 2
+        - AVL01-List A Recall 5 Word 3
+        - AVL01-List A Recall 5 Word 4
+        - AVL01-List A Recall 5 Word 5
+        - AVL01-List A Recall 5 Word 6
+        - AVL01-List A Recall 5 Word 7
+        - AVL01-List A Recall 5 Word 8
+        - AVL01-List A Recall 5 Word 9
+        - AVL01-List A Recall 6 (After B) Total
+        - AVL01-List A Recall 6 (After B) Word 1
+        - AVL01-List A Recall 6 (After B) Word 10
+        - AVL01-List A Recall 6 (After B) Word 11
+        - AVL01-List A Recall 6 (After B) Word 12
+        - AVL01-List A Recall 6 (After B) Word 13
+        - AVL01-List A Recall 6 (After B) Word 14
+        - AVL01-List A Recall 6 (After B) Word 15
+        - AVL01-List A Recall 6 (After B) Word 2
+        - AVL01-List A Recall 6 (After B) Word 3
+        - AVL01-List A Recall 6 (After B) Word 4
+        - AVL01-List A Recall 6 (After B) Word 5
+        - AVL01-List A Recall 6 (After B) Word 6
+        - AVL01-List A Recall 6 (After B) Word 7
+        - AVL01-List A Recall 6 (After B) Word 8
+        - AVL01-List A Recall 6 (After B) Word 9
+        - AVL01-List A Recognition Intrusions
+        - AVL01-List A Recognition Total
+        - AVL01-List B Intrusions
+        - AVL01-List B Recall Total
+        - AVL01-List B Recall Word 1
+        - AVL01-List B Recall Word 10
+        - AVL01-List B Recall Word 11
+        - AVL01-List B Recall Word 12
+        - AVL01-List B Recall Word 13
+        - AVL01-List B Recall Word 14
+        - AVL01-List B Recall Word 15
+        - AVL01-List B Recall Word 2
+        - AVL01-List B Recall Word 3
+        - AVL01-List B Recall Word 4
+        - AVL01-List B Recall Word 5
+        - AVL01-List B Recall Word 6
+        - AVL01-List B Recall Word 7
+        - AVL01-List B Recall Word 8
+        - AVL01-List B Recall Word 9
+outcome:
+  message: Value not found in non-extensible codelist ADNI Auditory Verbal Learning
+    Functional Test Test Name (C101808)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101808
+  codelist_name: ADNI Auditory Verbal Learning Functional Test Test Name
+  codelist_submission_value: AVL01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 138
+

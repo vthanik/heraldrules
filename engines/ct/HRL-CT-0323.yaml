@@ -1,0 +1,34 @@
+id: HRL-CT-0323
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DSPRTYP (Disease Presentation Type) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DSPRTYP
+      operator: in
+      value:
+        - COMPLEX CYSTIC LESION
+        - EFFUSION
+        - INCREASING ABDOMINAL DISTENTION OR ASCITES
+        - LEPTOMENINGEAL DISEASE
+outcome:
+  message: Value not found in extensible codelist Disease Presentation Type (C127268)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C127268
+  codelist_name: Disease Presentation Type
+  codelist_submission_value: DSPRTYP
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 4
+

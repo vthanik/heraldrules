@@ -1,0 +1,80 @@
+id: HRL-CT-0430
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC006TN (Functional Assessment of Cancer Therapy-Bladder Version 4 Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC006TN
+      operator: in
+      value:
+        - FAC006-Able to Have/Maintain Erection
+        - FAC006-Additional Concern Subscale Score
+        - FAC006-Bothered by Treatment Side Effect
+        - FAC006-Caring for Ostomy Is Difficult
+        - FAC006-Content With Quality of My Life
+        - FAC006-Do You Have an Ostomy Appliance
+        - FAC006-Embarrassed by Ostomy Appliance
+        - FAC006-Emotional Subscale Score
+        - FAC006-Enjoy Things I Usually Do for Fun
+        - FAC006-FACT-G Total Score
+        - FAC006-Functional Subscale Score
+        - FAC006-Get Emotional Support From Family
+        - FAC006-I Am Able to Enjoy Life
+        - FAC006-I Am Able to Work
+        - FAC006-I Am Forced to Spend Time in Bed
+        - FAC006-I Am Interested in Sex
+        - FAC006-I Am Losing Weight
+        - FAC006-I Am Satisfied With My Sex Life
+        - FAC006-I Am Sleeping Well
+        - FAC006-I Feel Close to My Friends
+        - FAC006-I Feel Close to My Partner
+        - FAC006-I Feel Ill
+        - FAC006-I Feel Nervous
+        - FAC006-I Feel Sad
+        - FAC006-I Get Support From My Friends
+        - FAC006-I Have a Good Appetite
+        - FAC006-I Have a Lack of Energy
+        - FAC006-I Have Accepted My Illness
+        - FAC006-I Have Control of My Bowels
+        - FAC006-I Have Diarrhea
+        - FAC006-I Have Nausea
+        - FAC006-I Have Pain
+        - FAC006-I Like the Appearance of My Body
+        - FAC006-I Urinate More Frequently
+        - FAC006-I Worry About Dying
+        - FAC006-It Burns When I Urinate
+        - FAC006-Losing Hope Against Illness
+        - FAC006-My Family Has Accepted My Illness
+        - FAC006-My Work Is Fulfilling
+        - FAC006-Physical Subscale Score
+        - FAC006-Satisfied Communication Illness
+        - FAC006-Satisfied With How I Am Coping
+        - FAC006-Social/Family Subscale Score
+        - FAC006-Total Score
+        - FAC006-Trial Outcome Index Score
+        - FAC006-Trouble Controlling My Urine
+        - FAC006-Trouble Meeting Needs of Family
+        - FAC006-Worry My Condition Will Get Worse
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Bladder Version 4 Questionnaire Test Name (C154452)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C154452
+  codelist_name: Functional Assessment of Cancer Therapy-Bladder Version 4 Questionnaire
+    Test Name
+  codelist_submission_value: FAC006TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 48
+

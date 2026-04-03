@@ -1,0 +1,33 @@
+id: HRL-CT-0329
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DRSTAT (Drug Resistance Status) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DRSTAT
+      operator: in
+      value:
+        - EXTENSIVE DRUG RESISTANCE
+        - MULTIPLE DRUG RESISTANCE
+        - SUSCEPTIBLE
+outcome:
+  message: Value not found in extensible codelist Drug Resistance Status (C102577)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C102577
+  codelist_name: Drug Resistance Status
+  codelist_submission_value: DRSTAT
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 3
+

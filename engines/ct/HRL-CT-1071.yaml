@@ -1,0 +1,53 @@
+id: HRL-CT-1071
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: 'GMSS01TN (The Glucose Monitoring System Satisfaction Survey Version:
+  Type 1 Diabetes Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.'
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GMSS01TN
+      operator: in
+      value:
+        - GMSS01-Be More Spontaneous in My Life
+        - GMSS01-Doesn't Seem as Accurate
+        - GMSS01-Feel Less Restricted by Diabetes
+        - GMSS01-Feel More Down and Depressed
+        - GMSS01-Gives Me Numbers I Don't Trust
+        - GMSS01-Gives Me Results Don't Make Sense
+        - GMSS01-Is Too Much of a Hassle to Use
+        - GMSS01-Is Too Painful to Use
+        - GMSS01-Makes Me Worry a Lot
+        - GMSS01-More Frustrated With My Diabetes
+        - GMSS01-More Open to New Experiences
+        - GMSS01-More Satisfied With My Diabetes
+        - 'GMSS01-Subscale: Behavioral Burden'
+        - 'GMSS01-Subscale: Emotional Burden'
+        - 'GMSS01-Subscale: Openness'
+        - 'GMSS01-Subscale: Trust'
+        - GMSS01-Takes Too Much Time to Use
+        - GMSS01-Think About Diabetes More
+        - GMSS01-Too Many Skin Irritations/Bruises
+        - GMSS01-Total Scale
+outcome:
+  message: 'Value not found in non-extensible codelist The Glucose Monitoring System
+    Satisfaction Survey Version: Type 1 Diabetes Questionnaire Test Name (C163390)'
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C163390
+  codelist_name: 'The Glucose Monitoring System Satisfaction Survey Version: Type
+    1 Diabetes Questionnaire Test Name'
+  codelist_submission_value: GMSS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 20
+

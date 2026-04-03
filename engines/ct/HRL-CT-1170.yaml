@@ -1,0 +1,54 @@
+id: HRL-CT-1170
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: WD1TC (World Health Organization Disability Assessment Schedule 2.0 -
+  12-Item Interviewer Questionnaire Test Code) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: WD1TC
+      operator: in
+      value:
+        - WD1A1
+        - WD1A2
+        - WD1A3
+        - WD1A4
+        - WD1A5
+        - WD1F5
+        - WD1H1
+        - WD1H2
+        - WD1H3
+        - WD1S1
+        - WD1S10
+        - WD1S11
+        - WD1S12
+        - WD1S2
+        - WD1S3
+        - WD1S4
+        - WD1S5
+        - WD1S6
+        - WD1S7
+        - WD1S8
+        - WD1S9
+outcome:
+  message: Value not found in non-extensible codelist World Health Organization Disability
+    Assessment Schedule 2.0 - 12-Item Interviewer Questionnaire Test Code (C130275)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130275
+  codelist_name: World Health Organization Disability Assessment Schedule 2.0 - 12-Item
+    Interviewer Questionnaire Test Code
+  codelist_submission_value: WD1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 21
+

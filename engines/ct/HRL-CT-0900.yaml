@@ -1,0 +1,67 @@
+id: HRL-CT-0900
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: R3601TC (RAND 36-Item Health Survey 1.0 Questionnaire Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: R3601TC
+      operator: in
+      value:
+        - R360101
+        - R360102
+        - R360103
+        - R360104
+        - R360105
+        - R360106
+        - R360107
+        - R360108
+        - R360109
+        - R360110
+        - R360111
+        - R360112
+        - R360113
+        - R360114
+        - R360115
+        - R360116
+        - R360117
+        - R360118
+        - R360119
+        - R360120
+        - R360121
+        - R360122
+        - R360123
+        - R360124
+        - R360125
+        - R360126
+        - R360127
+        - R360128
+        - R360129
+        - R360130
+        - R360131
+        - R360132
+        - R360133
+        - R360134
+        - R360135
+        - R360136
+outcome:
+  message: Value not found in non-extensible codelist RAND 36-Item Health Survey 1.0
+    Questionnaire Test Code (C113862)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C113862
+  codelist_name: RAND 36-Item Health Survey 1.0 Questionnaire Test Code
+  codelist_submission_value: R3601TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 36
+

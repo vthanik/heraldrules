@@ -1,0 +1,42 @@
+id: HRL-CT-0296
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DIPARM (Device Identifier Long Name) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DIPARM
+      operator: in
+      value:
+        - Batch Number
+        - Catalog Number
+        - Device Type
+        - FDA Unique Device Identification
+        - Lot Number
+        - Manufacturer
+        - Model Number
+        - Secure Lead Type
+        - Serial Number
+        - Sponsor Device Description
+        - Stereotactic Surgery Frame Type
+        - Trade Name
+outcome:
+  message: Value not found in extensible codelist Device Identifier Long Name (C106480)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106480
+  codelist_name: Device Identifier Long Name
+  codelist_submission_value: DIPARM
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 12
+

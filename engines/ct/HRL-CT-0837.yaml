@@ -1,0 +1,49 @@
+id: HRL-CT-0837
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL07TN (Pediatric Quality of Life Neuromuscular Module Version 3 Young
+  Child Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL07TN
+      operator: in
+      value:
+        - PQL07-Back Feels Stiff
+        - PQL07-Feel Tired
+        - PQL07-Get Hurt Accidentally
+        - PQL07-Get Sick Easily
+        - PQL07-Get Sores and/or Rashes
+        - PQL07-Hands Are Weak
+        - PQL07-Hard to Breathe
+        - PQL07-Hard to Gain/Lose Weight
+        - PQL07-Hard to Go Places With Equipment
+        - PQL07-Hard to Swallow Food
+        - PQL07-Hard to Turn During Night
+        - PQL07-Hard to Use Bathroom
+        - PQL07-Hard to Use Hands
+        - PQL07-Legs Hurt
+        - PQL07-Long Time to Bathe/Shower
+        - PQL07-Take Long Time to Eat
+        - PQL07-Wake Up Tired
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Version 3 Young Child Questionnaire Test Name (C138260)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138260
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Version 3 Young Child
+    Questionnaire Test Name
+  codelist_submission_value: PQL07TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 17
+

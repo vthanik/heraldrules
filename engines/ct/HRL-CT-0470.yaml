@@ -1,0 +1,132 @@
+id: HRL-CT-0470
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC100TN (Functional Assessment of Chronic Illness Therapy-Dyspnea Scale
+  33 Item Bank Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC100TN
+      operator: in
+      value:
+        - 'FAC100-Limit: Carry 10-20 Lbs'
+        - 'FAC100-Limit: Carrying 5-10 Lbs'
+        - 'FAC100-Limit: Carrying Less Than 5 Lbs'
+        - 'FAC100-Limit: Dining Out'
+        - 'FAC100-Limit: Dressing Without Help'
+        - 'FAC100-Limit: Get In/Out of a Car'
+        - 'FAC100-Limit: Lifting 10-20 Lbs'
+        - 'FAC100-Limit: Lifting 5-10 Lbs'
+        - 'FAC100-Limit: Lifting Less Than 5 Lbs'
+        - 'FAC100-Limit: Lifting More Than 20 Lbs'
+        - 'FAC100-Limit: Low-intensity Activity'
+        - 'FAC100-Limit: Making a Bed'
+        - 'FAC100-Limit: Moderate Activity'
+        - 'FAC100-Limit: Preparing Meals'
+        - 'FAC100-Limit: Putting on Socks'
+        - 'FAC100-Limit: Scrubbing the Floor'
+        - 'FAC100-Limit: Singing or Humming'
+        - 'FAC100-Limit: Standing 5 Minutes'
+        - 'FAC100-Limit: Sweeping/Mopping'
+        - 'FAC100-Limit: Taking a Bath Without Help'
+        - 'FAC100-Limit: Taking a Shower'
+        - 'FAC100-Limit: Talking While Walking'
+        - 'FAC100-Limit: Walk 50 Steps'
+        - 'FAC100-Limit: Walk Fast 50 Steps'
+        - 'FAC100-Limit: Walk for 1/2 Mile'
+        - 'FAC100-Limit: Walk Up 20 Stairs'
+        - 'FAC100-Limit: Walking 1/2 Mile'
+        - 'FAC100-Limit: Walking 10 Steps'
+        - 'FAC100-Limit: Walking Fast 1 Mile'
+        - 'FAC100-Limit: Walking Up 10 Stairs'
+        - 'FAC100-Limit: Walking Up 30 Stairs'
+        - 'FAC100-Limit: Walking Up 5 Stairs'
+        - 'FAC100-Limit: Washing Dishes'
+        - 'FAC100-Sev: Bath Without Help Why Not'
+        - 'FAC100-Sev: Bath Without Help'
+        - 'FAC100-Sev: Carry 10-20 Lbs Why Not'
+        - 'FAC100-Sev: Carry 10-20 Lbs'
+        - 'FAC100-Sev: Carrying 5-10 Lbs Why Not'
+        - 'FAC100-Sev: Carrying 5-10 Lbs'
+        - 'FAC100-Sev: Carrying Less Than 5 Lbs'
+        - 'FAC100-Sev: Carrying Less Than 5 Why Not'
+        - 'FAC100-Sev: Dining Out Why Not'
+        - 'FAC100-Sev: Dining Out'
+        - 'FAC100-Sev: Dressing Why Not'
+        - 'FAC100-Sev: Dressing Without Help'
+        - 'FAC100-Sev: Get In/Out of a Car Why Not'
+        - 'FAC100-Sev: Get In/Out of a Car'
+        - 'FAC100-Sev: Lift Less Than 5 Lbs Why Not'
+        - 'FAC100-Sev: Lift Less Than 5 Lbs'
+        - 'FAC100-Sev: Lift More Than 20 Lb Why Not'
+        - 'FAC100-Sev: Lift More Than 20 Lbs'
+        - 'FAC100-Sev: Lifting 10-20 Lbs Why Not'
+        - 'FAC100-Sev: Lifting 10-20 Lbs'
+        - 'FAC100-Sev: Lifting 5-10 Lbs Why Not'
+        - 'FAC100-Sev: Lifting 5-10 Lbs'
+        - 'FAC100-Sev: Low-intensity Activ Why Not'
+        - 'FAC100-Sev: Low-intensity Activ'
+        - 'FAC100-Sev: Making a Bed Why Not'
+        - 'FAC100-Sev: Making a Bed'
+        - 'FAC100-Sev: Moderate Activity Why Not'
+        - 'FAC100-Sev: Moderate Activity'
+        - 'FAC100-Sev: Preparing Meals Why Not'
+        - 'FAC100-Sev: Preparing Meals'
+        - 'FAC100-Sev: Putting on Socks Why Not'
+        - 'FAC100-Sev: Putting on Socks'
+        - 'FAC100-Sev: Scrubbing the Floor Why Not'
+        - 'FAC100-Sev: Scrubbing the Floor'
+        - 'FAC100-Sev: Singing or Humming Why Not'
+        - 'FAC100-Sev: Singing or Humming'
+        - 'FAC100-Sev: Standing 5 Minutes Why Not'
+        - 'FAC100-Sev: Standing 5 Minutes'
+        - 'FAC100-Sev: Sweeping/Mopping Why Not'
+        - 'FAC100-Sev: Sweeping/Mopping'
+        - 'FAC100-Sev: Taking a Shower Why Not'
+        - 'FAC100-Sev: Taking a Shower'
+        - 'FAC100-Sev: Talking While Walk Why Not'
+        - 'FAC100-Sev: Talking While Walking'
+        - 'FAC100-Sev: Walk 50 Steps Why Not'
+        - 'FAC100-Sev: Walk 50 Steps'
+        - 'FAC100-Sev: Walk Fast 50 Steps Why Not'
+        - 'FAC100-Sev: Walk Fast 50 Steps'
+        - 'FAC100-Sev: Walk for 1/2 Mile Why Not'
+        - 'FAC100-Sev: Walk for 1/2 Mile'
+        - 'FAC100-Sev: Walk Up 20 Stairs Why Not'
+        - 'FAC100-Sev: Walk Up 20 Stairs'
+        - 'FAC100-Sev: Walking 1/2 Mile Why Not'
+        - 'FAC100-Sev: Walking 1/2 Mile'
+        - 'FAC100-Sev: Walking 10 Steps Why Not'
+        - 'FAC100-Sev: Walking 10 Steps'
+        - 'FAC100-Sev: Walking Fast 1 Mile Why Not'
+        - 'FAC100-Sev: Walking Fast 1 Mile'
+        - 'FAC100-Sev: Walking Up 10 Stairs Why Not'
+        - 'FAC100-Sev: Walking Up 10 Stairs'
+        - 'FAC100-Sev: Walking Up 30 Stairs Why Not'
+        - 'FAC100-Sev: Walking Up 30 Stairs'
+        - 'FAC100-Sev: Walking Up 5 Stairs Why Not'
+        - 'FAC100-Sev: Walking Up 5 Stairs'
+        - 'FAC100-Sev: Washing Dishes Why Not'
+        - 'FAC100-Sev: Washing Dishes'
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Chronic
+    Illness Therapy-Dyspnea Scale 33 Item Bank Questionnaire Test Name (C154450)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C154450
+  codelist_name: Functional Assessment of Chronic Illness Therapy-Dyspnea Scale 33
+    Item Bank Questionnaire Test Name
+  codelist_submission_value: FAC100TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 99
+

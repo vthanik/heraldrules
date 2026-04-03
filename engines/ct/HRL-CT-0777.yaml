@@ -1,0 +1,47 @@
+id: HRL-CT-0777
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PHQ02TN (Patient Health Questionnaire - 15 Item Questionnaire Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PHQ02TN
+      operator: in
+      value:
+        - PHQ02-Back Pain
+        - PHQ02-Chest Pain
+        - PHQ02-Constipation/Loose Bowels/Diarrhea
+        - PHQ02-Dizziness
+        - PHQ02-Fainting Spells
+        - PHQ02-Feeling Tired or Having Low Energy
+        - PHQ02-Feeling Your Heart Pound or Race
+        - PHQ02-Headaches
+        - PHQ02-Menstrual Cramp/Problem Periods
+        - PHQ02-Nausea, Gas, or Indigestion
+        - PHQ02-Pain In Your Arms, Legs, or Joints
+        - PHQ02-Pain/Problems During Intercourse
+        - PHQ02-Shortness of Breath
+        - PHQ02-Stomach Pain
+        - PHQ02-Total Score
+        - PHQ02-Trouble Sleeping
+outcome:
+  message: Value not found in non-extensible codelist Patient Health Questionnaire
+    - 15 Item Questionnaire Test Name (C103482)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103482
+  codelist_name: Patient Health Questionnaire - 15 Item Questionnaire Test Name
+  codelist_submission_value: PHQ02TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 16
+

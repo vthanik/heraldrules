@@ -1,0 +1,54 @@
+id: HRL-CT-0399
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EXACT1TN (Exacerbations of Chronic Pulmonary Disease Tool Patient-Reported
+  Outcome Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EXACT1TN
+      operator: in
+      value:
+        - EXACT1-Breathless
+        - EXACT1-Breathlessness Domain Score
+        - EXACT1-Breathlessness Raw Score
+        - EXACT1-Bring Up Mucus When Coughing
+        - EXACT1-Chest Discomfort
+        - EXACT1-Chest Feel Congested
+        - EXACT1-Chest Feel Tight
+        - EXACT1-Chest Symptoms Domain Score
+        - EXACT1-Chest Symptoms Raw Score
+        - EXACT1-Cough & Sputum Domain Score
+        - EXACT1-Cough & Sputum Raw Score
+        - EXACT1-Describe How Breathless
+        - EXACT1-Difficult to Bring Up Mucus
+        - EXACT1-EXACT Total Raw Score
+        - EXACT1-EXACT Total Score
+        - EXACT1-How Often Cough
+        - EXACT1-Night Sleep Disturbed
+        - EXACT1-Short Breath Indoor Activities
+        - EXACT1-Short Breath Outside Activities
+        - EXACT1-Short Breath Personal Care
+        - EXACT1-Tired or Weak
+        - EXACT1-Worried About Lung Problems
+outcome:
+  message: Value not found in non-extensible codelist Exacerbations of Chronic Pulmonary
+    Disease Tool Patient-Reported Outcome Questionnaire Test Name (C123652)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C123652
+  codelist_name: Exacerbations of Chronic Pulmonary Disease Tool Patient-Reported
+    Outcome Questionnaire Test Name
+  codelist_submission_value: EXACT1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 22
+

@@ -1,0 +1,43 @@
+id: HRL-CT-0717
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: NEWS1TN (National Early Warning Score 2 Clinical Classification Test
+  Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: NEWS1TN
+      operator: in
+      value:
+        - NEWS1-Air or Oxygen
+        - 'NEWS1-Air or Oxygen: Device'
+        - NEWS1-Consciousness
+        - NEWS1-Escalation of Care
+        - NEWS1-Monitoring Frequency
+        - NEWS1-NEWS Total
+        - NEWS1-Oxygen Saturation SpO2 Scale 1
+        - NEWS1-Oxygen Saturation SpO2 Scale 2
+        - NEWS1-Pulse
+        - NEWS1-Respirations
+        - NEWS1-Systolic Blood Pressure
+        - NEWS1-Temperature
+outcome:
+  message: Value not found in non-extensible codelist National Early Warning Score
+    2 Clinical Classification Test Name (C171354)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C171354
+  codelist_name: National Early Warning Score 2 Clinical Classification Test Name
+  codelist_submission_value: NEWS1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 12
+

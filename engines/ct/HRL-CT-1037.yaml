@@ -1,0 +1,57 @@
+id: HRL-CT-1037
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SIQ02TN (Suicidal Ideation Questionnaire-JR Questionnaire Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SIQ02TN
+      operator: in
+      value:
+        - SIQ02-Critical Item 1
+        - SIQ02-Critical Item 2
+        - SIQ02-Critical Item 3
+        - SIQ02-Critical Item 4
+        - SIQ02-Critical Item 5
+        - SIQ02-Critical Item 6
+        - SIQ02-How People Feel If I Killed Myself
+        - SIQ02-I Thought About Death
+        - SIQ02-I Thought About Killing Myself
+        - SIQ02-I Thought About People Dying
+        - SIQ02-I Thought About Writing a Will
+        - SIQ02-I Thought How I Would Kill Myself
+        - SIQ02-I Thought When I Would Kill Myself
+        - SIQ02-I Wished I Were Dead
+        - SIQ02-Killing Myself Would Solve Problem
+        - SIQ02-No One Cared If I Lived or Died
+        - SIQ02-Others Be Happier If I Was Dead
+        - 'SIQ02-Specific %: Standard Sample 1'
+        - 'SIQ02-Specific %: Standard Sample 2'
+        - 'SIQ02-Specific %: Standard Sample 3'
+        - SIQ02-Tell People I Plan to Kill Myself
+        - SIQ02-Total %
+        - SIQ02-TS
+        - SIQ02-What to Write in a Suicide Note
+        - SIQ02-Wished I Had Never Been Born
+        - SIQ02-Would Be Better If I Was Not Alive
+outcome:
+  message: Value not found in non-extensible codelist Suicidal Ideation Questionnaire-JR
+    Questionnaire Test Name (C150791)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150791
+  codelist_name: Suicidal Ideation Questionnaire-JR Questionnaire Test Name
+  codelist_submission_value: SIQ02TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 26
+

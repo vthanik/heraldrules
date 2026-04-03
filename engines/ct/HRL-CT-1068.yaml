@@ -1,0 +1,71 @@
+id: HRL-CT-1068
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC023TC (The Functional Assessment of Cancer Therapy-Prostate Version
+  4 Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC023TC
+      operator: in
+      value:
+        - FAC02301
+        - FAC02302
+        - FAC02303
+        - FAC02304
+        - FAC02305
+        - FAC02306
+        - FAC02307
+        - FAC02308
+        - FAC02309
+        - FAC02310
+        - FAC02311
+        - FAC02312
+        - FAC02313
+        - FAC02314
+        - FAC02315
+        - FAC02316
+        - FAC02317
+        - FAC02318
+        - FAC02319
+        - FAC02320
+        - FAC02321
+        - FAC02322
+        - FAC02323
+        - FAC02324
+        - FAC02325
+        - FAC02326
+        - FAC02327
+        - FAC02328
+        - FAC02329
+        - FAC02330
+        - FAC02331
+        - FAC02332
+        - FAC02333
+        - FAC02334
+        - FAC02335
+        - FAC02336
+        - FAC02337
+        - FAC02338
+        - FAC02339
+outcome:
+  message: Value not found in non-extensible codelist The Functional Assessment of
+    Cancer Therapy-Prostate Version 4 Questionnaire Test Code (C127358)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C127358
+  codelist_name: The Functional Assessment of Cancer Therapy-Prostate Version 4 Questionnaire
+    Test Code
+  codelist_submission_value: FAC023TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 39
+

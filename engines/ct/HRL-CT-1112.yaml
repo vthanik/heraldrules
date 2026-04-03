@@ -1,0 +1,35 @@
+id: HRL-CT-1112
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TDI01TC (Transition Dyspnea Index Clinical Classification Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TDI01TC
+      operator: in
+      value:
+        - TDI0101
+        - TDI0102
+        - TDI0103
+        - TDI0104
+outcome:
+  message: Value not found in non-extensible codelist Transition Dyspnea Index Clinical
+    Classification Test Code (C106657)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106657
+  codelist_name: Transition Dyspnea Index Clinical Classification Test Code
+  codelist_submission_value: TDI01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

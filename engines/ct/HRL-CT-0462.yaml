@@ -1,0 +1,75 @@
+id: HRL-CT-0462
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC063TN (Functional Assessment of Cancer Therapy-Taxane Version 4 Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC063TN
+      operator: in
+      value:
+        - FAC063-Bothered by My Hands/Nails Look
+        - FAC063-Bothered by Treatment Side Effect
+        - FAC063-Content With Quality of My Life
+        - FAC063-Enjoy Things I Usually Do for Fun
+        - FAC063-Get Emotional Support From Family
+        - FAC063-Get Ringing or Buzzing in My Ears
+        - FAC063-Have Joint Pain or Muscle Cramps
+        - FAC063-I Am Able to Enjoy Life
+        - FAC063-I Am Able to Work
+        - FAC063-I Am Forced to Spend Time in Bed
+        - FAC063-I Am Satisfied With My Sex Life
+        - FAC063-I Am Sleeping Well
+        - FAC063-I Feel Bloated
+        - FAC063-I Feel Close to My Friends
+        - FAC063-I Feel Close to My Partner
+        - FAC063-I Feel Discomfort in My Feet
+        - FAC063-I Feel Discomfort in My Hands
+        - FAC063-I Feel Ill
+        - FAC063-I Feel Nervous
+        - FAC063-I Feel Sad
+        - FAC063-I Feel Weak All Over
+        - FAC063-I Get Support From My Friends
+        - FAC063-I Have a Lack of Energy
+        - FAC063-I Have Accepted My Illness
+        - FAC063-I Have Nausea
+        - FAC063-I Have Pain in My Fingertips
+        - FAC063-I Have Pain
+        - FAC063-I Have Trouble Buttoning Buttons
+        - FAC063-I Have Trouble Hearing
+        - FAC063-I Have Trouble Walking
+        - FAC063-I Worry About Dying
+        - FAC063-Losing Hope Against Illness
+        - FAC063-My Family Has Accepted My Illness
+        - FAC063-My Hands Are Swollen
+        - FAC063-My Legs or Feet Are Swollen
+        - FAC063-My Work Is Fulfilling
+        - FAC063-Numbness or Tingling in My Feet
+        - FAC063-Numbness or Tingling in My Hands
+        - FAC063-Satisfied Communication Illness
+        - FAC063-Satisfied With How I Am Coping
+        - FAC063-Trouble Feeling Shape of Objects
+        - FAC063-Trouble Meeting Needs of Family
+        - FAC063-Worry My Condition Will Get Worse
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Taxane Version 4 Questionnaire Test Name (C150775)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150775
+  codelist_name: Functional Assessment of Cancer Therapy-Taxane Version 4 Questionnaire
+    Test Name
+  codelist_submission_value: FAC063TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 43
+

@@ -1,0 +1,46 @@
+id: HRL-CT-1119
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TSQM01TC (Treatment Satisfaction Questionnaire for Medication Version
+  1.4 Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TSQM01TC
+      operator: in
+      value:
+        - TSQM0101
+        - TSQM0102
+        - TSQM0103
+        - TSQM0104
+        - TSQM0105
+        - TSQM0106
+        - TSQM0107
+        - TSQM0108
+        - TSQM0109
+        - TSQM0110
+        - TSQM0111
+        - TSQM0112
+        - TSQM0113
+        - TSQM0114
+outcome:
+  message: Value not found in non-extensible codelist Treatment Satisfaction Questionnaire
+    for Medication Version 1.4 Questionnaire Test Code (C132525)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C132525
+  codelist_name: Treatment Satisfaction Questionnaire for Medication Version 1.4 Questionnaire
+    Test Code
+  codelist_submission_value: TSQM01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 14
+

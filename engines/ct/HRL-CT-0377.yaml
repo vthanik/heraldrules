@@ -1,0 +1,51 @@
+id: HRL-CT-0377
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR29TC (European Organization for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Chronic Lymphocytic Leukaemia 17 Items Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR29TC
+      operator: in
+      value:
+        - EOR2931
+        - EOR2932
+        - EOR2933
+        - EOR2934
+        - EOR2935
+        - EOR2936
+        - EOR2937
+        - EOR2938
+        - EOR2939
+        - EOR2940
+        - EOR2941
+        - EOR2942
+        - EOR2943
+        - EOR2944
+        - EOR2945
+        - EOR2946
+        - EOR2947
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Chronic Lymphocytic
+    Leukaemia 17 Items Test Code (C219721)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219721
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Chronic Lymphocytic Leukaemia 17 Items Test Code
+  codelist_submission_value: EOR29TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 17
+

@@ -1,0 +1,69 @@
+id: HRL-CT-0662
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MMS1TN (Mini-Mental State Examination Functional Test Test Name) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MMS1TN
+      operator: in
+      value:
+        - MMS1-Attention and Calculation Subtotal
+        - MMS1-Copy This Design
+        - MMS1-Fold in Half
+        - MMS1-Keep Subtracting 7 Step 2
+        - MMS1-Keep Subtracting 7 Step 3
+        - MMS1-Keep Subtracting 7 Step 4
+        - MMS1-Keep Subtracting 7 Step 5
+        - MMS1-Level of Consciousness
+        - MMS1-Naming Object 1
+        - MMS1-Naming Object 2
+        - MMS1-Put on Floor (or Table)
+        - MMS1-Read This and Do What It Says
+        - MMS1-Recall Word 1
+        - MMS1-Recall Word 2
+        - MMS1-Recall Word 3
+        - MMS1-Repeat What I Say
+        - MMS1-Repeat Word 1
+        - MMS1-Repeat Word 2
+        - MMS1-Repeat Word 3
+        - MMS1-Spell Backward Letter 1
+        - MMS1-Spell Backward Letter 2
+        - MMS1-Spell Backward Letter 3
+        - MMS1-Spell Backward Letter 4
+        - MMS1-Spell Backward Letter 5
+        - MMS1-Take in Right Hand
+        - MMS1-Total Score
+        - MMS1-What is 100 Take Away 7
+        - MMS1-What Is the Building
+        - MMS1-What Is the City/Town
+        - MMS1-What Is the County
+        - MMS1-What Is the Date
+        - MMS1-What Is the Day of Week
+        - MMS1-What Is the Floor
+        - MMS1-What Is the Month of Year
+        - MMS1-What Is the Season
+        - MMS1-What Is the State
+        - MMS1-What Is the Year
+        - MMS1-Write a Sentence
+outcome:
+  message: Value not found in non-extensible codelist Mini-Mental State Examination
+    Functional Test Test Name (C100141)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100141
+  codelist_name: Mini-Mental State Examination Functional Test Test Name
+  codelist_submission_value: MMS1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 38
+

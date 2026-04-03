@@ -1,0 +1,49 @@
+id: HRL-CT-0555
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ISFTSDTL (Immunogenicity Specimen Test Details) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ISFTSDTL
+      operator: in
+      value:
+        - 50% FOCUS REDUCTION NEUTRALIZATION TITER
+        - 50% INHIBITORY CONCENTRATION
+        - 50% NEUTRALIZATION FACTOR
+        - 50% NEUTRALIZATION TITER
+        - 50% PLAQUE REDUCTION NEUTRALIZATION TITER
+        - 80% INHIBITORY CONCENTRATION
+        - 80% NEUTRALIZATION TITER
+        - 90% INHIBITORY CONCENTRATION
+        - 90% NEUTRALIZATION TITER
+        - BAND PATTERN
+        - INTERPRETATION
+        - MAST 5-CLASS
+        - MAST 7-CLASS
+        - OPSONIZATION INDEX
+        - PHAGOCYTIC INDEX
+        - RAST SCORE
+        - SIGNAL/CUTOFF RATIO
+        - STAINING PATTERN
+outcome:
+  message: Value not found in extensible codelist Immunogenicity Specimen Test Details
+    (C189267)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C189267
+  codelist_name: Immunogenicity Specimen Test Details
+  codelist_submission_value: ISFTSDTL
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 18
+

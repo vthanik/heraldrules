@@ -1,0 +1,50 @@
+id: HRL-CT-0148
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BPRSA1TC (Brief Psychiatric Rating Scale-Anchored Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BPRSA1TC
+      operator: in
+      value:
+        - BPRSA101
+        - BPRSA102
+        - BPRSA103
+        - BPRSA104
+        - BPRSA105
+        - BPRSA106
+        - BPRSA107
+        - BPRSA108
+        - BPRSA109
+        - BPRSA110
+        - BPRSA111
+        - BPRSA112
+        - BPRSA113
+        - BPRSA114
+        - BPRSA115
+        - BPRSA116
+        - BPRSA117
+        - BPRSA118
+outcome:
+  message: Value not found in non-extensible codelist Brief Psychiatric Rating Scale-Anchored
+    Clinical Classification Test Code (C100134)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100134
+  codelist_name: Brief Psychiatric Rating Scale-Anchored Clinical Classification Test
+    Code
+  codelist_submission_value: BPRSA1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 18
+

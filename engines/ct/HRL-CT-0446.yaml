@@ -1,0 +1,47 @@
+id: HRL-CT-0446
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC039TN (Functional Assessment of Cancer Therapy-Kidney Symptom Index-15
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC039TN
+      operator: in
+      value:
+        - FAC039-Bothered by Treatment Side Effect
+        - FAC039-I Am Able to Enjoy Life
+        - FAC039-I Am Able to Work
+        - FAC039-I Am Bothered by Fevers
+        - FAC039-I Am Losing Weight
+        - FAC039-I Am Sleeping Well
+        - FAC039-I Feel Fatigued
+        - FAC039-I Have a Good Appetite
+        - FAC039-I Have a Lack of Energy
+        - FAC039-I Have Been Coughing
+        - FAC039-I Have Been Short of Breath
+        - FAC039-I Have Bone Pain
+        - FAC039-I Have Had Blood in My Urine
+        - FAC039-I Have Pain
+        - FAC039-Worry My Condition Will Get Worse
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Kidney Symptom Index-15 Questionnaire Test Name (C138222)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138222
+  codelist_name: Functional Assessment of Cancer Therapy-Kidney Symptom Index-15 Questionnaire
+    Test Name
+  codelist_submission_value: FAC039TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 15
+

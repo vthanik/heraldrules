@@ -1,0 +1,39 @@
+id: HRL-CT-0197
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CPS01TC (Child-Pugh Classification Clinical Classification Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CPS01TC
+      operator: in
+      value:
+        - CPS0101
+        - CPS0102
+        - CPS0103
+        - CPS0104
+        - CPS0105A
+        - CPS0105B
+        - CPS0106
+        - CPS0107
+outcome:
+  message: Value not found in non-extensible codelist Child-Pugh Classification Clinical
+    Classification Test Code (C120989)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C120989
+  codelist_name: Child-Pugh Classification Clinical Classification Test Code
+  codelist_submission_value: CPS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 8
+

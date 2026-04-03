@@ -1,0 +1,33 @@
+id: HRL-CT-0151
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BUERS1TN (Brooke Upper Extremity Rating Scale Clinical Classification
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BUERS1TN
+      operator: in
+      value:
+        - BUERS1-Brooke Upper Extremity Rating
+outcome:
+  message: Value not found in non-extensible codelist Brooke Upper Extremity Rating
+    Scale Clinical Classification Test Name (C130238)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130238
+  codelist_name: Brooke Upper Extremity Rating Scale Clinical Classification Test
+    Name
+  codelist_submission_value: BUERS1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

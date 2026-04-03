@@ -1,0 +1,42 @@
+id: HRL-CT-0942
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SZFATSCD (Schizophrenia Findings About Test Code) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SZFATSCD
+      operator: in
+      value:
+        - ACUTSTRS
+        - AGEEPSD1
+        - AGEHOSP1
+        - AGETRT1
+        - CHRNSTRS
+        - CLININD
+        - EPSDNUM
+        - HOSPNUM
+        - LONGCRSE
+        - OCCUR
+        - TRTSETT
+outcome:
+  message: Value not found in extensible codelist Schizophrenia Findings About Test
+    Code (C124302)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124302
+  codelist_name: Schizophrenia Findings About Test Code
+  codelist_submission_value: SZFATSCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 11
+

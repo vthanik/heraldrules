@@ -1,0 +1,35 @@
+id: HRL-CT-0128
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BLCS01TN (Bladder Control Scale Questionnaire Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BLCS01TN
+      operator: in
+      value:
+        - BLCS01-Almost Lost Control of Bladder
+        - BLCS01-Altered Activity Because Bladder
+        - BLCS01-Bladder Restricted Lifestyle
+        - BLCS01-Lost Control of Bladder
+outcome:
+  message: Value not found in non-extensible codelist Bladder Control Scale Questionnaire
+    Test Name (C113851)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C113851
+  codelist_name: Bladder Control Scale Questionnaire Test Name
+  codelist_submission_value: BLCS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

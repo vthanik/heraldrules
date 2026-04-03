@@ -1,0 +1,30 @@
+id: HRL-CT-0745
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ND (Not Done) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ND
+      operator: in
+      value:
+        - NOT DONE
+outcome:
+  message: Value not found in non-extensible codelist Not Done (C66789)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C66789
+  codelist_name: Not Done
+  codelist_submission_value: ND
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

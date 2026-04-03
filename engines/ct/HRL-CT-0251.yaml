@@ -1,0 +1,38 @@
+id: HRL-CT-0251
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CES01TC (Combat Exposure Scale Questionnaire Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CES01TC
+      operator: in
+      value:
+        - CES0101
+        - CES0102
+        - CES0103
+        - CES0104
+        - CES0105
+        - CES0106
+        - CES0107
+outcome:
+  message: Value not found in non-extensible codelist Combat Exposure Scale Questionnaire
+    Test Code (C132519)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C132519
+  codelist_name: Combat Exposure Scale Questionnaire Test Code
+  codelist_submission_value: CES01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 7
+

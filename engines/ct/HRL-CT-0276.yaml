@@ -1,0 +1,35 @@
+id: HRL-CT-0276
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: COVI01TC (Covi Anxiety Scale Clinical Classification Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: COVI01TC
+      operator: in
+      value:
+        - COVI0101
+        - COVI0102
+        - COVI0103
+        - COVI0104
+outcome:
+  message: Value not found in non-extensible codelist Covi Anxiety Scale Clinical
+    Classification Test Code (C156673)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C156673
+  codelist_name: Covi Anxiety Scale Clinical Classification Test Code
+  codelist_submission_value: COVI01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

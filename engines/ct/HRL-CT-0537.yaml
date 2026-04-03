@@ -1,0 +1,32 @@
+id: HRL-CT-0537
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HAI01TN (Hauser Ambulation Index Functional Test Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HAI01TN
+      operator: in
+      value:
+        - HAI01-Ambulation Index
+outcome:
+  message: Value not found in non-extensible codelist Hauser Ambulation Index Functional
+    Test Test Name (C115389)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C115389
+  codelist_name: Hauser Ambulation Index Functional Test Test Name
+  codelist_submission_value: HAI01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

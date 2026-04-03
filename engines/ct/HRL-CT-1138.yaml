@@ -1,0 +1,144 @@
+id: HRL-CT-1138
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: UHDR1TC (Unified Huntington's Disease Rating Scale '99 Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: UHDR1TC
+      operator: in
+      value:
+        - UHDR101A
+        - UHDR101B
+        - UHDR102A
+        - UHDR102B
+        - UHDR103A
+        - UHDR103B
+        - UHDR104
+        - UHDR105
+        - UHDR106A
+        - UHDR106B
+        - UHDR107A
+        - UHDR107B
+        - UHDR108
+        - UHDR109A
+        - UHDR109B
+        - UHDR110
+        - UHDR111A
+        - UHDR111B
+        - UHDR111C
+        - UHDR111D
+        - UHDR111E
+        - UHDR112A
+        - UHDR112B
+        - UHDR112C
+        - UHDR112D
+        - UHDR112E
+        - UHDR112F
+        - UHDR112G
+        - UHDR113
+        - UHDR114
+        - UHDR115
+        - UHDR117
+        - UHDR119
+        - UHDR120
+        - UHDR125A
+        - UHDR125B
+        - UHDR126A
+        - UHDR126B
+        - UHDR127A
+        - UHDR127B
+        - UHDR128A
+        - UHDR128B
+        - UHDR129A
+        - UHDR129B
+        - UHDR130A
+        - UHDR130B
+        - UHDR131A
+        - UHDR131B
+        - UHDR132A
+        - UHDR132B
+        - UHDR133A
+        - UHDR133B
+        - UHDR134A
+        - UHDR134B
+        - UHDR135A
+        - UHDR135B
+        - UHDR136
+        - UHDR136A
+        - UHDR137
+        - UHDR137A
+        - UHDR138
+        - UHDR139
+        - UHDR140
+        - UHDR141
+        - UHDR143
+        - UHDR144
+        - UHDR145
+        - UHDR146
+        - UHDR147
+        - UHDR148
+        - UHDR149
+        - UHDR150
+        - UHDR151
+        - UHDR152
+        - UHDR153
+        - UHDR154
+        - UHDR155
+        - UHDR156
+        - UHDR157
+        - UHDR158
+        - UHDR159
+        - UHDR160
+        - UHDR161
+        - UHDR162
+        - UHDR163
+        - UHDR164
+        - UHDR165
+        - UHDR166
+        - UHDR167
+        - UHDR168
+        - UHDR169
+        - UHDR170
+        - UHDR171
+        - UHDR172
+        - UHDR173
+        - UHDR174
+        - UHDR175
+        - UHDR177
+        - UHDR178
+        - UHDR179
+        - UHDR180
+        - UHDR183A
+        - UHDR183B
+        - UHDR184
+        - UHDR185
+        - UHDR186
+        - UHDR187
+        - UHDR188
+        - UHDR189
+        - UHDR190
+        - UHDR191
+        - UHDR192
+outcome:
+  message: Value not found in non-extensible codelist Unified Huntington's Disease
+    Rating Scale '99 Clinical Classification Test Code (C154449)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C154449
+  codelist_name: Unified Huntington's Disease Rating Scale '99 Clinical Classification
+    Test Code
+  codelist_submission_value: UHDR1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 112
+

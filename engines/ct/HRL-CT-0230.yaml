@@ -1,0 +1,75 @@
+id: HRL-CT-0230
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSS07TN (Columbia-Suicide Severity Rating Scale Children's Baseline/Screening
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSS07TN
+      operator: in
+      value:
+        - CSS07-Aborted Attempt
+        - CSS07-Aborted Attempt, Describe
+        - CSS07-Actual Attempt
+        - CSS07-Actual Attempt, Describe
+        - CSS07-First Attempt Damage
+        - CSS07-First Attempt Date
+        - CSS07-First Attempt Potential
+        - CSS07-Frequency, Write Response
+        - CSS07-Idea, Intent, No Plan, Describe
+        - CSS07-Idea, Intent, No Plan-Life
+        - CSS07-Idea, Intent, No Plan-P6M
+        - CSS07-Idea, No Intent, No Plan, Describe
+        - CSS07-Idea, No Intent, No Plan-Life
+        - CSS07-Idea, No Intent, No Plan-P6M
+        - CSS07-Idea, Plan, Intent, Describe
+        - CSS07-Idea, Plan, Intent-Life
+        - CSS07-Idea, Plan, Intent-P6M
+        - CSS07-Interrupted Attempt
+        - CSS07-Interrupted Attempt, Describe
+        - CSS07-Most Lethal Attempt Damage
+        - CSS07-Most Lethal Attempt Date
+        - CSS07-Most Lethal Attempt Potential
+        - CSS07-Most Recent Attempt Damage
+        - CSS07-Most Recent Attempt Date
+        - CSS07-Most Recent Attempt Potential
+        - CSS07-Most Severe Idea
+        - CSS07-Most Severe Idea, Desc
+        - CSS07-Most Severe Idea, Frequency-Life
+        - CSS07-Most Severe Idea, Frequency-P6M
+        - CSS07-Non-Spec Suicid Thought, Describe
+        - CSS07-Non-Spec Suicid Thought-Life
+        - CSS07-Non-Spec Suicid Thought-P6M
+        - CSS07-Non-suicidal Self-injur Behav
+        - CSS07-Number of Aborted Attempts
+        - CSS07-Number of Actual Attempts
+        - CSS07-Number of Interrupt Attempts
+        - CSS07-Preparatory Acts/Behavior
+        - CSS07-Preparatory Acts/Behavior, Descr
+        - CSS07-Self-injur Behav, Intent Unknown
+        - CSS07-Suicidal Behavior
+        - CSS07-Wish to be Dead, Describe
+        - CSS07-Wish to be Dead-Life
+        - CSS07-Wish to be Dead-P6M
+outcome:
+  message: Value not found in non-extensible codelist Columbia-Suicide Severity Rating
+    Scale Children's Baseline/Screening Questionnaire Test Name (C111337)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C111337
+  codelist_name: Columbia-Suicide Severity Rating Scale Children's Baseline/Screening
+    Questionnaire Test Name
+  codelist_submission_value: CSS07TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 43
+

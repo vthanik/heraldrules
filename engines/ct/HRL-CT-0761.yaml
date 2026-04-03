@@ -1,0 +1,35 @@
+id: HRL-CT-0761
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: OUT (Outcome of Event) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: OUT
+      operator: in
+      value:
+        - FATAL
+        - NOT RECOVERED/NOT RESOLVED
+        - RECOVERED/RESOLVED WITH SEQUELAE
+        - RECOVERED/RESOLVED
+        - RECOVERING/RESOLVING
+        - UNKNOWN
+outcome:
+  message: Value not found in non-extensible codelist Outcome of Event (C66768)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C66768
+  codelist_name: Outcome of Event
+  codelist_submission_value: OUT
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

@@ -1,0 +1,32 @@
+id: HRL-CT-0312
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DKFATS (Diabetic Kidney Disease Findings About Test Name) must contain
+  valid extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DKFATS
+      operator: in
+      value:
+        - Number of Events
+outcome:
+  message: Value not found in extensible codelist Diabetic Kidney Disease Findings
+    About Test Name (C129939)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C129939
+  codelist_name: Diabetic Kidney Disease Findings About Test Name
+  codelist_submission_value: DKFATS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 1
+

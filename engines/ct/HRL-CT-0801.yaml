@@ -1,0 +1,124 @@
+id: HRL-CT-0801
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PODCI1TN (Pediatric Outcomes Data Collection Instrument, Pediatric Parent-Reported
+  Version Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PODCI1TN
+      operator: in
+      value:
+        - PODCI1-Ability Do Same Things Friends Do
+        - PODCI1-Able to Do Activities at Home
+        - PODCI1-Able to Do More at School
+        - PODCI1-Able to Do More Play
+        - PODCI1-Able to Do More Sports
+        - PODCI1-Bend Over and Pick Up Something
+        - PODCI1-Bicycle or Tricycle
+        - PODCI1-Button Buttons
+        - PODCI1-Climb One Flight of Stairs
+        - PODCI1-Climb Three Flights of Stairs
+        - PODCI1-Comb His/Her Hair
+        - 'PODCI1-Comp Sports Limited by: Dislike'
+        - 'PODCI1-Comp Sports Limited by: Fear'
+        - 'PODCI1-Comp Sports Limited by: Health'
+        - 'PODCI1-Comp Sports Limited by: Instruct'
+        - 'PODCI1-Comp Sports Limited by: Pain'
+        - 'PODCI1-Comp Sports Limited by: Season'
+        - 'PODCI1-Comp Sports Limited by: Too Young'
+        - PODCI1-Easy to Make Friends
+        - PODCI1-Feel Better
+        - PODCI1-Feel Sick and Tired
+        - PODCI1-Free From Pain as Adult
+        - 'PODCI1-Friends Limited by: Fear'
+        - 'PODCI1-Friends Limited by: Health'
+        - 'PODCI1-Friends Limited by: Instructions'
+        - 'PODCI1-Friends Limited by: Not Around'
+        - 'PODCI1-Friends Limited by: Pain'
+        - PODCI1-Full of Pep and Energy
+        - 'PODCI1-Games Limited by: Dislike'
+        - 'PODCI1-Games Limited by: Fear'
+        - 'PODCI1-Games Limited by: Health'
+        - 'PODCI1-Games Limited by: Instructions'
+        - 'PODCI1-Games Limited by: Pain'
+        - 'PODCI1-Games Limited by: Season'
+        - 'PODCI1-Games Limited by: Too Young'
+        - PODCI1-Get In and Out of Bed
+        - PODCI1-Get On and Off a Bus
+        - PODCI1-Get On and Off a Toilet or Chair
+        - PODCI1-Get Together With Friends
+        - PODCI1-Global Functioning Scale
+        - 'PODCI1-Gym Limited by: Dislike'
+        - 'PODCI1-Gym Limited by: Fear'
+        - 'PODCI1-Gym Limited by: Health'
+        - 'PODCI1-Gym Limited by: Instructions'
+        - 'PODCI1-Gym Limited by: Not Attend School'
+        - 'PODCI1-Gym Limited by: Not in Session'
+        - 'PODCI1-Gym Limited by: Pain'
+        - PODCI1-Happiness Scale
+        - PODCI1-Have Pain Relief
+        - PODCI1-His/Her Body
+        - PODCI1-His/Her Health in General
+        - PODCI1-How He/She Looks
+        - PODCI1-Lift Heavy Books
+        - PODCI1-Look Better
+        - PODCI1-Miss School Because of Health
+        - PODCI1-Need Help Sitting and Standing
+        - PODCI1-Need Help Walking and Climbing
+        - PODCI1-Open a Jar Been Opened Before
+        - 'PODCI1-Outdoor Limited by: Dislike'
+        - 'PODCI1-Outdoor Limited by: Fear'
+        - 'PODCI1-Outdoor Limited by: Health'
+        - 'PODCI1-Outdoor Limited by: Instructions'
+        - 'PODCI1-Outdoor Limited by: Pain'
+        - 'PODCI1-Outdoor Limited by: Season'
+        - 'PODCI1-Outdoor Limited by: Too Young'
+        - PODCI1-Pain During the Last Week
+        - PODCI1-Pain Interfere With Activities
+        - PODCI1-Pain/Comfort Scale
+        - PODCI1-Pain/Discom Inter With Activities
+        - PODCI1-Participate in Competitive Sports
+        - PODCI1-Participate in Gym/Recess
+        - PODCI1-Participate in Outdoor Activities
+        - PODCI1-Participate in Pickup Games
+        - PODCI1-Pour a Half Gallon of Milk
+        - PODCI1-Put on His/Her Coat
+        - PODCI1-Run Short Distances
+        - PODCI1-Sit in Chair Without Holding On
+        - PODCI1-Sleep More Comfortably
+        - PODCI1-Spend Rest of Life With Condition
+        - PODCI1-Sports/Phys Function Scale
+        - PODCI1-Stand Washing Hands at a Sink
+        - PODCI1-Transfer/Basic Mobility Scale
+        - PODCI1-Turn Door Knobs
+        - PODCI1-Up Extremity/Phys Function Scale
+        - PODCI1-Use a Fork and Spoon
+        - PODCI1-Use Assistive Devices for Sitting
+        - PODCI1-Use Assistive Devices for Walking
+        - PODCI1-Walk More Than a Mile
+        - PODCI1-Walk One Block
+        - PODCI1-Walk Three Blocks
+        - PODCI1-What Clothes/Shoes He/She Wear
+        - PODCI1-Write With a Pencil
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Outcomes Data Collection
+    Instrument, Pediatric Parent-Reported Version Questionnaire Test Name (C135693)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C135693
+  codelist_name: Pediatric Outcomes Data Collection Instrument, Pediatric Parent-Reported
+    Version Questionnaire Test Name
+  codelist_submission_value: PODCI1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 92
+

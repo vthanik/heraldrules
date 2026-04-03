@@ -1,0 +1,42 @@
+id: HRL-CT-0484
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAQNA1TN (Functional Assessment Questionnaire-NACC UDS V2.0 Clinical
+  Classification Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAQNA1TN
+      operator: in
+      value:
+        - FAQNA1-Assembling
+        - FAQNA1-Heat Water/Make Coffee/Stove Off
+        - FAQNA1-Keeping Track of Current Events
+        - FAQNA1-Paying Attention
+        - FAQNA1-Playing a Game of Skill
+        - FAQNA1-Preparing a Balanced Meal
+        - FAQNA1-Remembering
+        - FAQNA1-Shopping Alone
+        - FAQNA1-Traveling
+        - FAQNA1-Write Checks/Pay Bills/Checkbook
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment Questionnaire-NACC
+    UDS V2.0 Clinical Classification Test Name (C111345)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C111345
+  codelist_name: Functional Assessment Questionnaire-NACC UDS V2.0 Clinical Classification
+    Test Name
+  codelist_submission_value: FAQNA1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 10
+

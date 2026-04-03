@@ -1,0 +1,38 @@
+id: HRL-CT-0521
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HAMDS1TN (Hamilton Depression Rating Scale - 6 Self-Report Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HAMDS1TN
+      operator: in
+      value:
+        - HAMDS1-Depressed Mood
+        - HAMDS1-Low Self-esteem and Guilt
+        - HAMDS1-Psychic Anxiety
+        - HAMDS1-Psychomotor Retardation, General
+        - HAMDS1-Social Life Activities/Interests
+        - HAMDS1-Tiredness and Pains
+outcome:
+  message: Value not found in non-extensible codelist Hamilton Depression Rating Scale
+    - 6 Self-Report Questionnaire Test Name (C130258)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130258
+  codelist_name: Hamilton Depression Rating Scale - 6 Self-Report Questionnaire Test
+    Name
+  codelist_submission_value: HAMDS1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

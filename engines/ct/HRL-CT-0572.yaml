@@ -1,0 +1,38 @@
+id: HRL-CT-0572
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: IPS0107OR (International Prostate Symptom Score Questionnaire ORRES for
+  IPS0107 TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: IPS0107OR
+      operator: in
+      value:
+        - 1 Time
+        - 2 Times
+        - 3 Times
+        - 4 Times
+        - 5 or More Times
+        - None
+outcome:
+  message: Value not found in non-extensible codelist International Prostate Symptom
+    Score Questionnaire ORRES for IPS0107 TN/TC (C182462)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C182462
+  codelist_name: International Prostate Symptom Score Questionnaire ORRES for IPS0107
+    TN/TC
+  codelist_submission_value: IPS0107OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

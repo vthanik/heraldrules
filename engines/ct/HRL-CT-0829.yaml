@@ -1,0 +1,58 @@
+id: HRL-CT-0829
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL09TN (Pediatric Quality of Life Neuromuscular Module Version 3 Toddler
+  Parent Report Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL09TN
+      operator: in
+      value:
+        - PQL09-Back Feels Stiff
+        - PQL09-Do Not Have Equipment Need
+        - PQL09-Family Has Lot of Problems
+        - PQL09-Feel Tired
+        - PQL09-Get Hurt Accidentally
+        - PQL09-Get Sick Easily
+        - PQL09-Get Sores and/or Rashes
+        - PQL09-Hands Are Weak
+        - PQL09-Hard Ask Doctors/Nurses Questions
+        - PQL09-Hard Explain Illness to People
+        - PQL09-Hard for Family to Plan Activities
+        - PQL09-Hard for Family to Rest
+        - PQL09-Hard Tell Doctors/Nurses How Feel
+        - PQL09-Hard to Breathe
+        - PQL09-Hard to Gain/Lose Weight
+        - PQL09-Hard to Go Places With Equipment
+        - PQL09-Hard to Swallow Food
+        - PQL09-Hard to Turn During Night
+        - PQL09-Hard to Use Bathroom
+        - PQL09-Hard to Use Hands
+        - PQL09-Legs Hurt
+        - PQL09-Long Time to Bathe/Shower
+        - PQL09-Money Problem in Our Family
+        - PQL09-Take Long Time to Eat
+        - PQL09-Wake Up Tired
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Version 3 Toddler Parent Report Questionnaire Test Name (C138246)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138246
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Version 3 Toddler
+    Parent Report Questionnaire Test Name
+  codelist_submission_value: PQL09TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

@@ -1,0 +1,50 @@
+id: HRL-CT-0054
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: APCH1TN (Acute Physiology and Chronic Health Evaluation II Clinical Classification
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: APCH1TN
+      operator: in
+      value:
+        - APCH1-15 Minus Glasgow Coma Score
+        - 'APCH1-A: Total Acute Physiology Score'
+        - APCH1-Arterial pH
+        - 'APCH1-B: Age Points'
+        - 'APCH1-C: Chronic Health Points'
+        - APCH1-Heart Rate
+        - APCH1-Hematocrit
+        - APCH1-Mean Arterial Pressure
+        - 'APCH1-Oxygenation: A-aDO2'
+        - 'APCH1-Oxygenation: PaO2'
+        - APCH1-Respiratory Rate
+        - APCH1-Serum Creatinine
+        - APCH1-Serum HCO3
+        - APCH1-Serum Potassium
+        - APCH1-Serum Sodium
+        - APCH1-Temperature - Rectal
+        - APCH1-Total APACHE II Score
+        - APCH1-White Blood Count
+outcome:
+  message: Value not found in non-extensible codelist Acute Physiology and Chronic
+    Health Evaluation II Clinical Classification Test Name (C120984)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C120984
+  codelist_name: Acute Physiology and Chronic Health Evaluation II Clinical Classification
+    Test Name
+  codelist_submission_value: APCH1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 18
+

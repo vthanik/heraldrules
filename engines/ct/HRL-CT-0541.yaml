@@ -1,0 +1,78 @@
+id: HRL-CT-0541
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HAQ02TN (Health Assessment Questionnaire Disability Index Without Pain
+  Visual Analog Scale Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HAQ02TN
+      operator: in
+      value:
+        - HAQ02-Able to Do Chores
+        - 'HAQ02-Aid: Bathtub Bar'
+        - 'HAQ02-Aid: Bathtub Seat'
+        - 'HAQ02-Aid: Built Up or Special Utensils'
+        - 'HAQ02-Aid: Cane'
+        - 'HAQ02-Aid: Crutches'
+        - 'HAQ02-Aid: Devices Used for Dressing'
+        - 'HAQ02-Aid: Jar Opener (Previously Open)'
+        - 'HAQ02-Aid: Long-Handled Appl Bathroom'
+        - 'HAQ02-Aid: Long-Handled Appl Reach'
+        - 'HAQ02-Aid: Raised Toilet Seat'
+        - 'HAQ02-Aid: Special or Built Up Chair'
+        - 'HAQ02-Aid: Walker'
+        - 'HAQ02-Aid: Wheelchair'
+        - HAQ02-Bend Down Pick Up Clothing - Floor
+        - HAQ02-Climb Up Five Steps
+        - HAQ02-Cut Your Meat
+        - HAQ02-Dress Yourself
+        - HAQ02-Get In and Out of a Car
+        - HAQ02-Get In and Out of Bed
+        - HAQ02-Get On and Off The Toilet
+        - 'HAQ02-Help: Arising'
+        - 'HAQ02-Help: Dressing and Grooming'
+        - 'HAQ02-Help: Eating'
+        - 'HAQ02-Help: Errands and Chores'
+        - 'HAQ02-Help: Gripping and Opening Things'
+        - 'HAQ02-Help: Hygiene'
+        - 'HAQ02-Help: Reach'
+        - 'HAQ02-Help: Walking'
+        - HAQ02-Lift a Full Cup or Glass to Mouth
+        - HAQ02-Open a New Milk Carton
+        - HAQ02-Open Car Doors
+        - HAQ02-Open Jars Previously Opened
+        - HAQ02-Othr Aid (Dress/Arising/Eat/Walk)
+        - HAQ02-Othr Aid (Hygiene/Reach/Grip/Act)
+        - HAQ02-Reach-Get Down 5 Lb Obj Above Head
+        - HAQ02-Run Errands and Shop
+        - HAQ02-Shampoo Your Hair
+        - HAQ02-Spec Aid (Dress/Arising/Eat/Walk)
+        - HAQ02-Spec Aid (Hygiene/Reach/Grip/Act)
+        - HAQ02-Stand Up From a Straight Chair
+        - HAQ02-Take a Tub Bath
+        - HAQ02-Turn Faucets On And Off
+        - HAQ02-Walk Outdoors on Flat Ground
+        - HAQ02-Wash and Dry Your Body
+outcome:
+  message: Value not found in non-extensible codelist Health Assessment Questionnaire
+    Disability Index Without Pain Visual Analog Scale Questionnaire Test Name (C132522)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C132522
+  codelist_name: Health Assessment Questionnaire Disability Index Without Pain Visual
+    Analog Scale Questionnaire Test Name
+  codelist_submission_value: HAQ02TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 45
+

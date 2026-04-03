@@ -1,0 +1,33 @@
+id: HRL-CT-0626
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: LPPSS1TN (Lansky Play-Performance Status Scale Clinical Classification
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: LPPSS1TN
+      operator: in
+      value:
+        - LPPSS1-Lansky Play-Performance Status
+outcome:
+  message: Value not found in non-extensible codelist Lansky Play-Performance Status
+    Scale Clinical Classification Test Name (C138214)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138214
+  codelist_name: Lansky Play-Performance Status Scale Clinical Classification Test
+    Name
+  codelist_submission_value: LPPSS1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

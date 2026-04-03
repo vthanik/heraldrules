@@ -1,0 +1,34 @@
+id: HRL-CT-0905
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: REASTRT (Reason For Treatment) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: REASTRT
+      operator: in
+      value:
+        - FAILURE AFTER FIRST TREATMENT
+        - FAILURE AFTER MULTIPLE TREATMENTS
+        - PREVIOUS SUBJECT NONCOMPLIANCE
+        - RECURRENT DISEASE
+outcome:
+  message: Value not found in extensible codelist Reason For Treatment (C102584)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C102584
+  codelist_name: Reason For Treatment
+  codelist_submission_value: REASTRT
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 4
+

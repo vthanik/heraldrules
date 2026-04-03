@@ -1,0 +1,141 @@
+id: HRL-CT-0345
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EGTEST (ECG Test Name) must contain valid extensible codelist terms (new
+  terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EGTEST
+      operator: in
+      value:
+        - Acute Myocardial Ischemia ECG Change
+        - Atrioventricular Conduction
+        - Axis and Voltage
+        - Chamber Hypertrophy or Enlargement
+        - Comparison to a Prior ECG
+        - ECG Maximum Atrial Rate
+        - ECG Maximum Heart Rate
+        - ECG Maximum Ventricular Rate
+        - ECG Mean Atrial Rate
+        - ECG Mean Heart Rate
+        - ECG Mean Ventricular Rate
+        - ECG Median Atrial Rate
+        - ECG Median Heart Rate
+        - ECG Median Ventricular Rate
+        - ECG Minimum Atrial Rate
+        - ECG Minimum Heart Rate
+        - ECG Minimum Ventricular Rate
+        - Interpretation
+        - Intraventricular-Intraatrial Conduction
+        - J-Tpeak Interval, Aggregate
+        - J-Tpeak Interval, Single Beat
+        - JT Interval, Aggregate
+        - JT Interval, Single Beat
+        - JTcB Interval, Aggregate
+        - JTcB Interval, Single Beat
+        - JTcF Interval, Aggregate
+        - JTcF Interval, Single Beat
+        - Myocardial Infarction
+        - New Q Wave
+        - P Wave Amplitude, Aggregate
+        - P Wave Amplitude, Single Beat
+        - P Wave Axis
+        - P Wave Duration, Aggregate
+        - P Wave Duration, Single Beat
+        - Pacemaker
+        - PP Interval, Aggregate
+        - PP Interval, Single Measurement
+        - PR Interval, Aggregate
+        - PR Interval, Single Beat
+        - PR Segment, Aggregate
+        - PR Segment, Single Beat
+        - Q Wave Amplitude, Aggregate
+        - Q Wave Amplitude, Single Beat
+        - QRS Axis
+        - QRS Duration, Aggregate
+        - QRS Duration, Single Beat
+        - QRS Duration, Ventr. Paced, Aggregate
+        - QRS Duration, Ventr. Paced, Single Beat
+        - QT Interval, Aggregate
+        - QT Interval, Single Beat
+        - QTc Corr Method Unspecified, Aggregate
+        - QTc Corr Method Unspecified, Single Beat
+        - QTc Correction Method Unspecified
+        - QTca Interval, Aggregate
+        - QTca Interval, Single Beat
+        - QTcB Interval, Aggregate
+        - QTcB Interval, Single Beat
+        - QTcF Interval, Aggregate
+        - QTcF Interval, Single Beat
+        - QTcL Interval, Aggregate
+        - QTcL Interval, Single Beat
+        - QTcV Interval, Aggregate
+        - QTcV Interval, Single Beat
+        - R Wave Amplitude, Aggregate
+        - R Wave Amplitude, Single Beat
+        - Rhythm Not Otherwise Specified
+        - RR Interval, Aggregate
+        - RR Interval, Single Measurement
+        - RS Wave Amplitude, Aggregate
+        - RS Wave Amplitude, Single Beat
+        - S Wave Amplitude, Aggregate
+        - S Wave Amplitude, Single Beat
+        - Single RR Heart Rate
+        - Sinus Node Rhythms and Arrhythmias
+        - ST Segment Depression, Aggregate
+        - ST Segment Depression, Single Beat
+        - ST Segment Deviation, Aggregate
+        - ST Segment Deviation, Single Beat
+        - ST Segment Duration, Aggregate
+        - ST Segment Duration, Single Beat
+        - ST Segment Elevation, Aggregate
+        - ST Segment Elevation, Single Beat
+        - ST Segment, T wave, and U wave
+        - Summary (Max) JT Interval
+        - Summary (Max) PR Duration
+        - Summary (Max) QT Duration
+        - Summary (Max) RR Duration
+        - Summary (Max) ST Depression
+        - Summary (Max) ST Deviation
+        - Summary (Max) ST Elevation
+        - Summary (Min) JT Interval
+        - Summary (Min) PR Duration
+        - Summary (Min) QT Duration
+        - Summary (Min) RR Duration
+        - Summary (Min) ST Depression
+        - Summary (Min) ST Deviation
+        - Summary (Min) ST Elevation
+        - Supraventricular Arrhythmias
+        - Supraventricular Tachyarrhythmias
+        - T Wave Amplitude, Aggregate
+        - T Wave Amplitude, Single Beat
+        - T Wave Area, Aggregate
+        - T Wave Area, Single Beat
+        - T Wave Axis
+        - T Wave Duration, Aggregate
+        - T Wave Duration, Single Beat
+        - Technical Quality
+        - Tpeak-Tend Interval, Aggregate
+        - Tpeak-Tend Interval, Single Beat
+        - Ventricular Arrhythmias
+        - Ventricular Tachyarrhythmias
+outcome:
+  message: Value not found in extensible codelist ECG Test Name (C71152)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C71152
+  codelist_name: ECG Test Name
+  codelist_submission_value: EGTEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 111
+

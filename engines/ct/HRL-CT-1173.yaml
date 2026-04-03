@@ -1,0 +1,49 @@
+id: HRL-CT-1173
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: WD2TN (World Health Organization Disability Assessment Schedule 2.0 -
+  12-Item Proxy Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: WD2TN
+      operator: in
+      value:
+        - WD2-Care of Household Responsibilities
+        - WD2-Concentrating for Ten Minutes
+        - WD2-Days Unable to Carry Out Activities
+        - WD2-Dealing With People Does Not Know
+        - WD2-Emotionally Affected by Health
+        - WD2-Getting Dressed
+        - WD2-How Many Days Difficulties Present
+        - WD2-How Many Days Reduce Activities
+        - WD2-I Am (Fill in Blank) of This Person
+        - WD2-Learning a New Task
+        - WD2-Maintaining a Friendship
+        - WD2-Problem Joining Community Activities
+        - WD2-Standing for Long Periods
+        - WD2-Walking a Long Distance
+        - WD2-Washing His/Her Whole Body
+        - WD2-Your Day-to-Day Work/School
+outcome:
+  message: Value not found in non-extensible codelist World Health Organization Disability
+    Assessment Schedule 2.0 - 12-Item Proxy Questionnaire Test Name (C130276)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130276
+  codelist_name: World Health Organization Disability Assessment Schedule 2.0 - 12-Item
+    Proxy Questionnaire Test Name
+  codelist_submission_value: WD2TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 16
+

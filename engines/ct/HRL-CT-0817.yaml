@@ -1,0 +1,58 @@
+id: HRL-CT-0817
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL17TN (Pediatric Quality of Life Neuromuscular Module Acute Version
+  3 Young Child Parent Report Questionnaire Test Name) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL17TN
+      operator: in
+      value:
+        - PQL17-Back Feels Stiff
+        - PQL17-Do Not Have Equipment Need
+        - PQL17-Family Has Lot of Problems
+        - PQL17-Feel Tired
+        - PQL17-Get Hurt Accidentally
+        - PQL17-Get Sick Easily
+        - PQL17-Get Sores and/or Rashes
+        - PQL17-Hands Are Weak
+        - PQL17-Hard Ask Doctors/Nurses Questions
+        - PQL17-Hard Explain Illness to People
+        - PQL17-Hard for Family to Plan Activities
+        - PQL17-Hard for Family to Rest
+        - PQL17-Hard Tell Doctors/Nurses How Feel
+        - PQL17-Hard to Breathe
+        - PQL17-Hard to Gain/Lose Weight
+        - PQL17-Hard to Go Places With Equipment
+        - PQL17-Hard to Swallow Food
+        - PQL17-Hard to Turn During Night
+        - PQL17-Hard to Use Bathroom
+        - PQL17-Hard to Use Hands
+        - PQL17-Legs Hurt
+        - PQL17-Long Time to Bathe/Shower
+        - PQL17-Money Problem in Our Family
+        - PQL17-Take Long Time to Eat
+        - PQL17-Wake Up Tired
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Acute Version 3 Young Child Parent Report Questionnaire Test Name (C138236)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138236
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Acute Version 3 Young
+    Child Parent Report Questionnaire Test Name
+  codelist_submission_value: PQL17TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

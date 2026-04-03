@@ -1,0 +1,141 @@
+id: HRL-CT-0343
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EGTESTCD (ECG Test Code) must contain valid extensible codelist terms
+  (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EGTESTCD
+      operator: in
+      value:
+        - AMIEGCHG
+        - AVCOND
+        - AXISVOLT
+        - CHYPTENL
+        - EGARMAX
+        - EGARMED
+        - EGARMIN
+        - EGARMN
+        - EGCOMP
+        - EGHRMAX
+        - EGHRMED
+        - EGHRMIN
+        - EGHRMN
+        - EGHRSI
+        - EGVRMAX
+        - EGVRMED
+        - EGVRMIN
+        - EGVRMN
+        - INTP
+        - IVTIACD
+        - JTAG
+        - JTCBAG
+        - JTCBSB
+        - JTCFAG
+        - JTCFSB
+        - JTMAX
+        - JTMIN
+        - JTPAG
+        - JTPSB
+        - JTSB
+        - MI
+        - NEWQWAVE
+        - P_AXIS
+        - PACEMAKR
+        - PPAG
+        - PPSM
+        - PRAG
+        - PRMAX
+        - PRMIN
+        - PRSB
+        - PRSEGAG
+        - PRSEGSB
+        - PWDURAG
+        - PWDURSB
+        - PWHTAG
+        - PWHTSB
+        - QRS_AXIS
+        - QRSAG
+        - QRSSB
+        - QRVDVPAG
+        - QRVDVPSB
+        - QTAG
+        - QTCAAG
+        - QTCASB
+        - QTCBAG
+        - QTCBSB
+        - QTCFAG
+        - QTCFSB
+        - QTCLAG
+        - QTCLSB
+        - QTCUNS
+        - QTCUNSAG
+        - QTCUNSSB
+        - QTCVAG
+        - QTCVSB
+        - QTMAX
+        - QTMIN
+        - QTSB
+        - QWAAG
+        - QWASB
+        - RHYNOS
+        - RRAG
+        - RRMAX
+        - RRMIN
+        - RRSM
+        - RSAAG
+        - RSASB
+        - RWAAG
+        - RWASB
+        - SNRARRY
+        - SPRARRY
+        - SPRTARRY
+        - STDAG
+        - STDPMAX
+        - STDPMIN
+        - STDSB
+        - STDVAG
+        - STDVMAX
+        - STDVMIN
+        - STDVSB
+        - STEAG
+        - STELMAX
+        - STELMIN
+        - STESB
+        - STSDURAG
+        - STSDURSB
+        - STSTWUW
+        - SWAAG
+        - SWASB
+        - T_AXIS
+        - TECHQUAL
+        - TPTEAG
+        - TPTESB
+        - TWARAG
+        - TWARSB
+        - TWDURAG
+        - TWDURSB
+        - TWHAG
+        - TWHSB
+        - VTARRY
+        - VTTARRY
+outcome:
+  message: Value not found in extensible codelist ECG Test Code (C71153)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C71153
+  codelist_name: ECG Test Code
+  codelist_submission_value: EGTESTCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 111
+

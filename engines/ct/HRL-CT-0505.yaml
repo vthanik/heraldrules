@@ -1,0 +1,47 @@
+id: HRL-CT-0505
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GDS02TC (Geriatric Depression Scale Short Form Questionnaire Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GDS02TC
+      operator: in
+      value:
+        - GDS0201
+        - GDS0202
+        - GDS0203
+        - GDS0204
+        - GDS0205
+        - GDS0206
+        - GDS0207
+        - GDS0208
+        - GDS0209
+        - GDS0210
+        - GDS0211
+        - GDS0212
+        - GDS0213
+        - GDS0214
+        - GDS0215
+        - GDS0216
+outcome:
+  message: Value not found in non-extensible codelist Geriatric Depression Scale Short
+    Form Questionnaire Test Code (C106665)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106665
+  codelist_name: Geriatric Depression Scale Short Form Questionnaire Test Code
+  codelist_submission_value: GDS02TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 16
+

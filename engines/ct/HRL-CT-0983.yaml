@@ -1,0 +1,42 @@
+id: HRL-CT-0983
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SF101TN (Short Form 10 Health Survey for Children Standard, US Version
+  1.0 Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SF101TN
+      operator: in
+      value:
+        - SF101-Acted Bothered or Upset
+        - SF101-Bending/Lifting/Stooping
+        - SF101-Doing Things That Take Some Energy
+        - 'SF101-Emotional: Schoolwork/Activities'
+        - SF101-Felt About His/Her Friendships
+        - SF101-Felt About His/Her Life Overall
+        - SF101-His/Her Behavior Is
+        - SF101-How Much Bodily Pain Child Had
+        - SF101-In General You Say Child Health Is
+        - 'SF101-Physical: Schoolwork/Activities'
+outcome:
+  message: Value not found in non-extensible codelist Short Form 10 Health Survey
+    for Children Standard, US Version 1.0 Questionnaire Test Name (C177711)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C177711
+  codelist_name: Short Form 10 Health Survey for Children Standard, US Version 1.0
+    Questionnaire Test Name
+  codelist_submission_value: SF101TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 10
+

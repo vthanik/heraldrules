@@ -1,0 +1,46 @@
+id: HRL-CT-0513
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HAMA1TN (Hamilton Anxiety Rating Scale Clinical Classification Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HAMA1TN
+      operator: in
+      value:
+        - HAMA1-Anxious Mood
+        - HAMA1-Autonomic Symptoms
+        - HAMA1-Behavior at Interview
+        - HAMA1-Cardiovascular Symptoms
+        - HAMA1-Depressed Mood
+        - HAMA1-Fears
+        - HAMA1-Gastrointestinal Symptoms
+        - HAMA1-Genitourinary Symptoms
+        - HAMA1-Insomnia
+        - HAMA1-Intellectual
+        - HAMA1-Respiratory Symptoms
+        - HAMA1-Somatic (Muscular)
+        - HAMA1-Somatic (Sensory)
+        - HAMA1-Tension
+        - HAMA1-Total Score
+outcome:
+  message: Value not found in non-extensible codelist Hamilton Anxiety Rating Scale
+    Clinical Classification Test Name (C101820)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101820
+  codelist_name: Hamilton Anxiety Rating Scale Clinical Classification Test Name
+  codelist_submission_value: HAMA1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 15
+

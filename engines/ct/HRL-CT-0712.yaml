@@ -1,0 +1,53 @@
+id: HRL-CT-0712
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC042TC (National Comprehensive Cancer Network/Functional Assessment
+  of Cancer Therapy-Kidney Symptom Index-19 Version 2 Questionnaire Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC042TC
+      operator: in
+      value:
+        - FAC04201
+        - FAC04202
+        - FAC04203
+        - FAC04204
+        - FAC04205
+        - FAC04206
+        - FAC04207
+        - FAC04208
+        - FAC04209
+        - FAC04210
+        - FAC04211
+        - FAC04212
+        - FAC04213
+        - FAC04214
+        - FAC04215
+        - FAC04216
+        - FAC04217
+        - FAC04218
+        - FAC04219
+outcome:
+  message: Value not found in non-extensible codelist National Comprehensive Cancer
+    Network/Functional Assessment of Cancer Therapy-Kidney Symptom Index-19 Version
+    2 Questionnaire Test Code (C129090)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C129090
+  codelist_name: National Comprehensive Cancer Network/Functional Assessment of Cancer
+    Therapy-Kidney Symptom Index-19 Version 2 Questionnaire Test Code
+  codelist_submission_value: FAC042TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 19
+

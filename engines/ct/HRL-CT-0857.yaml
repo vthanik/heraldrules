@@ -1,0 +1,47 @@
+id: HRL-CT-0857
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: POSITION (Position) must contain valid extensible codelist terms (new
+  terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: POSITION
+      operator: in
+      value:
+        - DECUBITUS
+        - FOWLERS
+        - LATERAL DECUBITUS
+        - LEFT LATERAL DECUBITUS
+        - PRONE
+        - REVERSE TRENDELENBURG
+        - RIGHT LATERAL DECUBITUS
+        - SEMI-FOWLERS
+        - SEMI-RECUMBENT
+        - SITTING
+        - SITTING, LEGS DEPENDENT
+        - SLING
+        - STANDING
+        - STANDING, BENT FORWARD
+        - SUPINE
+        - TRENDELENBURG
+        - UNCONSTRAINED
+outcome:
+  message: Value not found in extensible codelist Position (C71148)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C71148
+  codelist_name: Position
+  codelist_submission_value: POSITION
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 17
+

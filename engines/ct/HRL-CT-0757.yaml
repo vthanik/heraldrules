@@ -1,0 +1,94 @@
+id: HRL-CT-0757
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: OETESTCD (Ophthalmic Exam Test Code) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: OETESTCD
+      operator: in
+      value:
+        - ASTAXIS
+        - ATROPHY
+        - CELLDENS
+        - CELLDMAX
+        - CELLDMIN
+        - CELLDMN
+        - CELLDSD
+        - CLDISIND
+        - CLDISTYP
+        - CLIND
+        - CNTFDST
+        - CNTFIND
+        - COLOR
+        - CUPDISC
+        - DBMACEGR
+        - DBRETGR
+        - DETACH
+        - DIAMETER
+        - DIAMMIN
+        - DIAMMN
+        - DIAMSD
+        - EDEMA
+        - EYDCOMGR
+        - FLUID
+        - HNDMDST
+        - HNDMIND
+        - HYPERGR
+        - HYPERMIA
+        - INTP
+        - IOP
+        - LDIAM
+        - LENSSTAT
+        - LGHTPIND
+        - LOGSCORE
+        - MLD
+        - MNARS
+        - MNARSLOG
+        - MRD1
+        - MRD2
+        - NEOVASC
+        - NRPNTACC
+        - NUMCHRRD
+        - NUMCHRUR
+        - NUMLCOR
+        - NUMLINRD
+        - NUMLINUR
+        - OEEXAM
+        - OPACITY
+        - REACTIV
+        - RECYLDR
+        - RESPHERE
+        - SCORE
+        - SHAPE
+        - SUBECADT
+        - SUBECPDT
+        - TBUT
+        - TEARSCR
+        - TEARSCRR
+        - THICK
+        - THICKMAX
+        - THICKMIN
+        - THICKMN
+        - THICKSD
+        - VACGRFRQ
+outcome:
+  message: Value not found in extensible codelist Ophthalmic Exam Test Code (C117743)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C117743
+  codelist_name: Ophthalmic Exam Test Code
+  codelist_submission_value: OETESTCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 64
+

@@ -1,0 +1,51 @@
+id: HRL-CT-0743
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: NSAA1TC (North Star Ambulatory Assessment Clinical Classification Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: NSAA1TC
+      operator: in
+      value:
+        - NSAA101
+        - NSAA102
+        - NSAA103
+        - NSAA104
+        - NSAA105
+        - NSAA106
+        - NSAA107
+        - NSAA108
+        - NSAA109
+        - NSAA110
+        - NSAA111
+        - NSAA111A
+        - NSAA112
+        - NSAA113
+        - NSAA114
+        - NSAA115
+        - NSAA116
+        - NSAA117
+        - NSAA117A
+        - NSAA118
+outcome:
+  message: Value not found in non-extensible codelist North Star Ambulatory Assessment
+    Clinical Classification Test Code (C132517)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C132517
+  codelist_name: North Star Ambulatory Assessment Clinical Classification Test Code
+  codelist_submission_value: NSAA1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 20
+

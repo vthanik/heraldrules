@@ -1,0 +1,32 @@
+id: HRL-CT-1039
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SDMT01TC (Symbol Digit Modalities Test Functional Test Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SDMT01TC
+      operator: in
+      value:
+        - SDMT0101
+outcome:
+  message: Value not found in non-extensible codelist Symbol Digit Modalities Test
+    Functional Test Test Code (C115396)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C115396
+  codelist_name: Symbol Digit Modalities Test Functional Test Test Code
+  codelist_submission_value: SDMT01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

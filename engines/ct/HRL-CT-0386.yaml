@@ -1,0 +1,61 @@
+id: HRL-CT-0386
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR17TN (European Organization for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Information 25 Items Test Name) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR17TN
+      operator: in
+      value:
+        - EOR17-Diagnosis of Disease
+        - EOR17-Different Places of Care
+        - EOR17-Effects of Treatment on Symptoms
+        - EOR17-Effects Treatment on Sexual Activ
+        - EOR17-Effects Treatment on Social Life
+        - EOR17-Expected Benefit of Treatment
+        - EOR17-Extent of Disease
+        - EOR17-Help Outside Hospital
+        - EOR17-Less Information Specify Topics
+        - EOR17-Managing Illness at Home
+        - EOR17-Medical Treatment
+        - EOR17-More Information Specify Topics
+        - EOR17-Overall Information Helpful
+        - EOR17-Possible Causes of Disease
+        - EOR17-Possible Side-effects of Treatment
+        - EOR17-Procedures of Medical Tests
+        - EOR17-Professional Psychological Support
+        - EOR17-Purpose of Medical Tests
+        - EOR17-Received Information CD/Tape/Video
+        - EOR17-Received Written Information
+        - EOR17-Rehabilitation Services
+        - EOR17-Results of Medical Tests
+        - EOR17-Satisfied Amount of Information
+        - EOR17-Things to Help Yourself Get Well
+        - EOR17-Whether Disease is Under Control
+        - EOR17-Wish to Receive More Information
+        - EOR17-Wish You Received Less Information
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Information 25
+    Items Test Name (C219724)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219724
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Information 25 Items Test Name
+  codelist_submission_value: EOR17TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 27
+

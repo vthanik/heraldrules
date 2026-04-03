@@ -1,0 +1,33 @@
+id: HRL-CT-0922
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RCVD01TN (Reynolds Cardiovascular Disease 10-Year Risk Score Clinical
+  Classification Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RCVD01TN
+      operator: in
+      value:
+        - RCVD01-Reynolds CVD 10-Year Risk Score
+outcome:
+  message: Value not found in non-extensible codelist Reynolds Cardiovascular Disease
+    10-Year Risk Score Clinical Classification Test Name (C124671)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124671
+  codelist_name: Reynolds Cardiovascular Disease 10-Year Risk Score Clinical Classification
+    Test Name
+  codelist_submission_value: RCVD01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

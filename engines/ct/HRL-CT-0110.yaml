@@ -1,0 +1,34 @@
+id: HRL-CT-0110
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ATLAS105STR (ATLAS Clinical Classification STRESC for ATLAS105 TN/TC)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ATLAS105STR
+      operator: in
+      value:
+        - '0'
+        - '1'
+        - '2'
+outcome:
+  message: Value not found in non-extensible codelist ATLAS Clinical Classification
+    STRESC for ATLAS105 TN/TC (C182512)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C182512
+  codelist_name: ATLAS Clinical Classification STRESC for ATLAS105 TN/TC
+  codelist_submission_value: ATLAS105STR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 3
+

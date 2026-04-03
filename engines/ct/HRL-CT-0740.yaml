@@ -1,0 +1,45 @@
+id: HRL-CT-0740
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: NSCLC1TN (Non-Small Cell Lung Cancer Symptom Assessment Questionnaire
+  v1.0 Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: NSCLC1TN
+      operator: in
+      value:
+        - NSCLC1-Appetite Domain Subscore
+        - NSCLC1-Cough Domain Subscore
+        - NSCLC1-Dyspnea Domain Subscore
+        - NSCLC1-Fatigue Domain Subscore
+        - NSCLC1-How Often Low Energy
+        - NSCLC1-How Often Poor Appetite
+        - NSCLC1-How Often Tire Easily
+        - NSCLC1-Pain Domain Subscore
+        - NSCLC1-Rate Coughing at Worst
+        - NSCLC1-Rate Worst Pain in Chest
+        - NSCLC1-Rate Worst Pain Other Than Chest
+        - NSCLC1-Short of Breath Usual Activities
+        - NSCLC1-Total Score
+outcome:
+  message: Value not found in non-extensible codelist Non-Small Cell Lung Cancer Symptom
+    Assessment Questionnaire v1.0 Questionnaire Test Name (C154454)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C154454
+  codelist_name: Non-Small Cell Lung Cancer Symptom Assessment Questionnaire v1.0
+    Questionnaire Test Name
+  codelist_submission_value: NSCLC1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 13
+

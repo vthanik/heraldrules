@@ -1,0 +1,72 @@
+id: HRL-CT-1180
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: WD7TC (World Health Organization Disability Assessment Schedule 2.0 -
+  36-Item Self Questionnaire Test Code) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: WD7TC
+      operator: in
+      value:
+        - WD7D1_1
+        - WD7D1_2
+        - WD7D1_3
+        - WD7D1_4
+        - WD7D1_5
+        - WD7D1_6
+        - WD7D2_1
+        - WD7D2_2
+        - WD7D2_3
+        - WD7D2_4
+        - WD7D2_5
+        - WD7D3_1
+        - WD7D3_2
+        - WD7D3_3
+        - WD7D3_4
+        - WD7D4_1
+        - WD7D4_2
+        - WD7D4_3
+        - WD7D4_4
+        - WD7D4_5
+        - WD7D5_1
+        - WD7D5_2
+        - WD7D5_3
+        - WD7D5_4
+        - WD7D5_5
+        - WD7D5_6
+        - WD7D5_7
+        - WD7D5_8
+        - WD7D6_1
+        - WD7D6_2
+        - WD7D6_3
+        - WD7D6_4
+        - WD7D6_5
+        - WD7D6_6
+        - WD7D6_7
+        - WD7D6_8
+        - WD7H1
+        - WD7H2
+        - WD7H3
+outcome:
+  message: Value not found in non-extensible codelist World Health Organization Disability
+    Assessment Schedule 2.0 - 36-Item Self Questionnaire Test Code (C130273)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130273
+  codelist_name: World Health Organization Disability Assessment Schedule 2.0 - 36-Item
+    Self Questionnaire Test Code
+  codelist_submission_value: WD7TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 39
+

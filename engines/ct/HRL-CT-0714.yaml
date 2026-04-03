@@ -1,0 +1,52 @@
+id: HRL-CT-0714
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC050TC (National Comprehensive Cancer Network/Functional Assessment
+  of Cancer Therapy-Ovarian Symptom Index-18 Version 2 Questionnaire Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC050TC
+      operator: in
+      value:
+        - FAC05001
+        - FAC05002
+        - FAC05003
+        - FAC05004
+        - FAC05005
+        - FAC05006
+        - FAC05007
+        - FAC05008
+        - FAC05009
+        - FAC05010
+        - FAC05011
+        - FAC05012
+        - FAC05013
+        - FAC05014
+        - FAC05015
+        - FAC05016
+        - FAC05017
+        - FAC05018
+outcome:
+  message: Value not found in non-extensible codelist National Comprehensive Cancer
+    Network/Functional Assessment of Cancer Therapy-Ovarian Symptom Index-18 Version
+    2 Questionnaire Test Code (C129098)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C129098
+  codelist_name: National Comprehensive Cancer Network/Functional Assessment of Cancer
+    Therapy-Ovarian Symptom Index-18 Version 2 Questionnaire Test Code
+  codelist_submission_value: FAC050TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 18
+

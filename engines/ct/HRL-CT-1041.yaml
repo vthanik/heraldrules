@@ -1,0 +1,52 @@
+id: HRL-CT-1041
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SIQR01TC (Symptom Impact Questionnaire Questionnaire Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SIQR01TC
+      operator: in
+      value:
+        - SIQR0101
+        - SIQR0102
+        - SIQR0103
+        - SIQR0104
+        - SIQR0105
+        - SIQR0106
+        - SIQR0107
+        - SIQR0108
+        - SIQR0109
+        - SIQR0110
+        - SIQR0111
+        - SIQR0112
+        - SIQR0113
+        - SIQR0114
+        - SIQR0115
+        - SIQR0116
+        - SIQR0117
+        - SIQR0118
+        - SIQR0119
+        - SIQR0120
+        - SIQR0121
+outcome:
+  message: Value not found in non-extensible codelist Symptom Impact Questionnaire
+    Questionnaire Test Code (C103485)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103485
+  codelist_name: Symptom Impact Questionnaire Questionnaire Test Code
+  codelist_submission_value: SIQR01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 21
+

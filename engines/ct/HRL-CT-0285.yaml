@@ -1,0 +1,54 @@
+id: HRL-CT-0285
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CDAI01TN (Crohn's Disease Activity Index Version 1 Questionnaire Test
+  Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CDAI01TN
+      operator: in
+      value:
+        - CDAI01-Abdominal Mass Subscore
+        - CDAI01-Abdominal Mass
+        - CDAI01-Abdominal Pain Subscore
+        - CDAI01-Anal Fissure/Fistula/Abscess
+        - CDAI01-Anti-diarrhea/Opiate Use Subscore
+        - CDAI01-Anti-diarrhea/Opiate Use
+        - CDAI01-Arthritis/Arthralgia
+        - CDAI01-CDAI Total Score
+        - CDAI01-Daily Average Abdominal Pain
+        - CDAI01-Daily Average General Well-being
+        - CDAI01-Daily Number of Stools
+        - CDAI01-Erythema Nodosum
+        - CDAI01-Fever
+        - CDAI01-General Well-being Subscore
+        - CDAI01-Hematocrit Subscore
+        - CDAI01-Hematocrit
+        - CDAI01-Iritis/Uveitis
+        - CDAI01-Other Fistula
+        - CDAI01-Standard Body Weight
+        - CDAI01-Symptoms Manifested Subscore
+        - CDAI01-Total Number Stools Subscore
+        - CDAI01-Weight Subscore
+        - CDAI01-Weight
+outcome:
+  message: Value not found in non-extensible codelist Crohn's Disease Activity Index
+    Version 1 Questionnaire Test Name (C176048)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C176048
+  codelist_name: Crohn's Disease Activity Index Version 1 Questionnaire Test Name
+  codelist_submission_value: CDAI01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 23
+

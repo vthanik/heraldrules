@@ -1,0 +1,57 @@
+id: HRL-CT-0804
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL14TC (Pediatric Quality of Life Neuromuscular Module Acute Version
+  3 Child Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL14TC
+      operator: in
+      value:
+        - PQL1401
+        - PQL1402
+        - PQL1403
+        - PQL1404
+        - PQL1405
+        - PQL1406
+        - PQL1407
+        - PQL1408
+        - PQL1409
+        - PQL1410
+        - PQL1411
+        - PQL1412
+        - PQL1413
+        - PQL1414
+        - PQL1415
+        - PQL1416
+        - PQL1417
+        - PQL1418
+        - PQL1419
+        - PQL1420
+        - PQL1421
+        - PQL1422
+        - PQL1423
+        - PQL1424
+        - PQL1425
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Acute Version 3 Child Questionnaire Test Code (C138227)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138227
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Acute Version 3 Child
+    Questionnaire Test Code
+  codelist_submission_value: PQL14TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

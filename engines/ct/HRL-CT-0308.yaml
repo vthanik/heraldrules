@@ -1,0 +1,68 @@
+id: HRL-CT-0308
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DDS03TC (Diabetes Distress Scale for Partners of Adults with Type 1 Diabetes
+  Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DDS03TC
+      operator: in
+      value:
+        - DDS0301
+        - DDS0302
+        - DDS0303
+        - DDS0304
+        - DDS0305
+        - DDS0306
+        - DDS0307
+        - DDS0308
+        - DDS0309
+        - DDS0310
+        - DDS0311
+        - DDS0312
+        - DDS0313
+        - DDS0314
+        - DDS0315
+        - DDS0316
+        - DDS0317
+        - DDS0318
+        - DDS0319
+        - DDS0320
+        - DDS0321
+        - DDS0322
+        - DDS0323
+        - DDS0324
+        - DDS0325
+        - DDS0326
+        - DDS0327
+        - DDS0328
+        - DDS0329
+        - DDS0330
+        - DDS0331
+        - DDS0332
+        - DDS0333
+        - DDS0334
+        - DDS0335
+        - DDS0336
+outcome:
+  message: Value not found in non-extensible codelist Diabetes Distress Scale for
+    Partners of Adults with Type 1 Diabetes Questionnaire Test Code (C163397)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C163397
+  codelist_name: Diabetes Distress Scale for Partners of Adults with Type 1 Diabetes
+    Questionnaire Test Code
+  codelist_submission_value: DDS03TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 36
+

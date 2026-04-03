@@ -1,0 +1,60 @@
+id: HRL-CT-1132
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TUIDRS (Tumor or Lesion Identification Test Results) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TUIDRS
+      operator: in
+      value:
+        - BENIGN
+        - BONE LESION
+        - DISEASE SITE
+        - DISTANT
+        - EXTRAMEDULLARY LESION
+        - LOCAL
+        - LOCATION OF INTEREST
+        - LOCOREGIONAL
+        - MEASURED
+        - NEW BONE LESION
+        - NEW EXTRA NODAL
+        - NEW NODAL
+        - NEW NON-TARGET
+        - NEW TARGET
+        - NEW
+        - NON-MEASURABLE
+        - NON-TARGET ENHANCING
+        - NON-TARGET EXTRA NODAL
+        - NON-TARGET NODAL
+        - NON-TARGET NON-ENHANCING
+        - NON-TARGET
+        - NOT MEASURED
+        - PRIMARY
+        - REGIONAL
+        - TARGET EXTRA NODAL
+        - TARGET NODAL
+        - TARGET NODULE
+        - TARGET
+        - UNKNOWN
+outcome:
+  message: Value not found in extensible codelist Tumor or Lesion Identification Test
+    Results (C123650)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C123650
+  codelist_name: Tumor or Lesion Identification Test Results
+  codelist_submission_value: TUIDRS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 29
+

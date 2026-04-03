@@ -1,0 +1,44 @@
+id: HRL-CT-1004
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SRTEST (Skin Response Test Name) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SRTEST
+      operator: in
+      value:
+        - Allergen Skin Response Index
+        - Allergen Skin Response Intensity
+        - Blistering Indicator
+        - Diameter
+        - Flare Longest Diameter
+        - Flare Mean Diameter
+        - Flare Size
+        - Induration Longest Diameter
+        - Interpretation
+        - Reaction Grade
+        - Wheal Diameter Interpretation
+        - Wheal Longest Diameter
+        - Wheal Mean Diameter
+        - Wheal Size
+outcome:
+  message: Value not found in extensible codelist Skin Response Test Name (C112023)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C112023
+  codelist_name: Skin Response Test Name
+  codelist_submission_value: SRTEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 14
+

@@ -1,0 +1,54 @@
+id: HRL-CT-1062
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EPIC2TC (The Expanded Prostate Cancer Index Composite for Clinical Practice
+  Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EPIC2TC
+      operator: in
+      value:
+        - EPIC201
+        - EPIC202
+        - EPIC203
+        - EPIC204
+        - EPIC205A
+        - EPIC205B
+        - EPIC205C
+        - EPIC206A
+        - EPIC206B
+        - EPIC206C
+        - EPIC207
+        - EPIC208
+        - EPIC209
+        - EPIC210A
+        - EPIC210B
+        - EPIC210C
+        - EPIC211
+        - EPIC212
+        - EPIC213
+        - EPIC214
+        - EPIC215
+        - EPIC216
+outcome:
+  message: Value not found in non-extensible codelist The Expanded Prostate Cancer
+    Index Composite for Clinical Practice Questionnaire Test Code (C127352)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C127352
+  codelist_name: The Expanded Prostate Cancer Index Composite for Clinical Practice
+    Questionnaire Test Code
+  codelist_submission_value: EPIC2TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 22
+

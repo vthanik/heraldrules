@@ -1,0 +1,47 @@
+id: HRL-CT-0738
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: OIPRMCD (Non-host Organism Identifier Parameters Code) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: OIPRMCD
+      operator: in
+      value:
+        - CLADE
+        - GENOTYPE
+        - GEOORIG
+        - GROUP
+        - ISOLATE
+        - LINEAGE
+        - NCBIGBID
+        - NCBITXID
+        - PATHOTYP
+        - PSDOBACK
+        - SPECIES
+        - SPOLIGO
+        - STRAIN
+        - SUBTYPE
+        - TYPE
+        - YEARCOLL
+outcome:
+  message: Value not found in extensible codelist Non-host Organism Identifier Parameters
+    Code (C179591)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C179591
+  codelist_name: Non-host Organism Identifier Parameters Code
+  codelist_submission_value: OIPRMCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 16
+

@@ -1,0 +1,59 @@
+id: HRL-CT-0126
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BEDECOD (Biospecimen Events Dictionary Derived Term) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BEDECOD
+      operator: in
+      value:
+        - ALIQUOTING
+        - ARCHIVE RETRIEVING
+        - CENTRIFUGING
+        - COLLECTING
+        - CONCENTRATING
+        - CONSUMING
+        - CULTURING
+        - DECONTAMINATING
+        - DESTROYING
+        - DILUTING
+        - EMBEDDING
+        - EXTRACTING
+        - FIXING
+        - FLASH FREEZING
+        - FREEZING
+        - INCUBATING
+        - ISOLATING
+        - MOUNTING
+        - PARTIAL CONSUMING
+        - POOLING
+        - RECEIVING
+        - REFRIGERATING
+        - RETRIEVING
+        - SECTIONING
+        - SHIPPING
+        - STAINING
+        - STORING
+        - THAWING
+outcome:
+  message: Value not found in extensible codelist Biospecimen Events Dictionary Derived
+    Term (C124297)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124297
+  codelist_name: Biospecimen Events Dictionary Derived Term
+  codelist_submission_value: BEDECOD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 28
+

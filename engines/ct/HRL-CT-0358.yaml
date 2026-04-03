@@ -1,0 +1,40 @@
+id: HRL-CT-0358
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ESS01TN (Epworth Sleepiness Scale Questionnaire Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ESS01TN
+      operator: in
+      value:
+        - ESS01-In Car Stopped Few Minutes Traffic
+        - ESS01-Lying Down to Rest In Afternoon
+        - ESS01-Passenger for Hour Without Break
+        - ESS01-Sitting and Reading
+        - ESS01-Sitting and Talking to Someone
+        - ESS01-Sitting Inactive in a Public Place
+        - ESS01-Sitting Quietly After Lunch
+        - ESS01-Total Score
+        - ESS01-Watching TV
+outcome:
+  message: Value not found in non-extensible codelist Epworth Sleepiness Scale Questionnaire
+    Test Name (C103462)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103462
+  codelist_name: Epworth Sleepiness Scale Questionnaire Test Name
+  codelist_submission_value: ESS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 9
+

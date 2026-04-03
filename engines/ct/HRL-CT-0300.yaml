@@ -1,0 +1,39 @@
+id: HRL-CT-0300
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DTDECOD (Device Tracking and Disposition Event Dictionary Derived Term)
+  must contain valid extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DTDECOD
+      operator: in
+      value:
+        - DEPLOYED
+        - DESTROYED
+        - EXPLANTED
+        - IMPLANTED
+        - INTENDED BUT NOT USED
+        - LOST
+        - RECEIVED
+        - SHIPPED
+outcome:
+  message: Value not found in extensible codelist Device Tracking and Disposition
+    Event Dictionary Derived Term (C112037)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C112037
+  codelist_name: Device Tracking and Disposition Event Dictionary Derived Term
+  codelist_submission_value: DTDECOD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 8
+

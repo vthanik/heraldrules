@@ -1,0 +1,57 @@
+id: HRL-CT-0827
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PQL03TN (Pediatric Quality of Life Neuromuscular Module Version 3 Teen
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PQL03TN
+      operator: in
+      value:
+        - PQL03-Back Feels Stiff
+        - PQL03-Do Not Have Equipment Need
+        - PQL03-Family Has Lot of Problems
+        - PQL03-Feel Tired
+        - PQL03-Get Hurt Accidentally
+        - PQL03-Get Sick Easily
+        - PQL03-Get Sores and/or Rashes
+        - PQL03-Hands Are Weak
+        - PQL03-Hard Ask Doctors/Nurses Questions
+        - PQL03-Hard Explain Illness to People
+        - PQL03-Hard for Family to Plan Activities
+        - PQL03-Hard for Family to Rest
+        - PQL03-Hard Tell Doctors/Nurses How Feel
+        - PQL03-Hard to Breathe
+        - PQL03-Hard to Gain/Lose Weight
+        - PQL03-Hard to Go Places With Equipment
+        - PQL03-Hard to Swallow Food
+        - PQL03-Hard to Turn During Night
+        - PQL03-Hard to Use Bathroom
+        - PQL03-Hard to Use Hands
+        - PQL03-Legs Hurt
+        - PQL03-Long Time to Bathe/Shower
+        - PQL03-Money Problem in Our Family
+        - PQL03-Take Long Time to Eat
+        - PQL03-Wake Up Tired
+outcome:
+  message: Value not found in non-extensible codelist Pediatric Quality of Life Neuromuscular
+    Module Version 3 Teen Questionnaire Test Name (C138256)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138256
+  codelist_name: Pediatric Quality of Life Neuromuscular Module Version 3 Teen Questionnaire
+    Test Name
+  codelist_submission_value: PQL03TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

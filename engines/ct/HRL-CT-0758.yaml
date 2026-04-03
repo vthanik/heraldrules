@@ -1,0 +1,94 @@
+id: HRL-CT-0758
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: OETEST (Ophthalmic Exam Test Name) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: OETEST
+      operator: in
+      value:
+        - Astigmatism Axis
+        - Atrophy
+        - Cell Density
+        - Cell Density, Maximum
+        - Cell Density, Mean
+        - Cell Density, Minimum
+        - Cell Density, Standard Deviation
+        - Color
+        - Corrective Lens for Distance Indicator
+        - Corrective Lens Indicator
+        - Corrective Lens Type for Distance
+        - Counting Fingers Distance
+        - Counting Fingers Indicator
+        - Cup to Disc Ratio
+        - Cylindrical Refraction Error
+        - Detachment
+        - Diabetic Macular Edema Grade
+        - Diabetic Retinopathy Grade
+        - Diameter
+        - Diameter, Mean
+        - Diameter, Minimum
+        - Diameter, Standard Deviation
+        - Edema
+        - Eye Drop Comfort Grade
+        - Fluid
+        - Hand Motions Distance
+        - Hand Motions Indicator
+        - Hyperemia Grade
+        - Hyperemia
+        - Interpretation
+        - Intraocular Pressure
+        - Lens Status
+        - Light Perception Indicator
+        - Log Score
+        - Longest Diameter
+        - Margin Limbal Distance
+        - Margin Reflex Distance 1
+        - Margin Reflex Distance 2
+        - Minimum Angle of Resolution
+        - Minimum Angle of Resolution, Log10
+        - Near-Point Accommodation
+        - Neovascularization
+        - Number of Characters Read
+        - Number of Characters Unread
+        - Number of Letters Correct
+        - Number of Lines Read
+        - Number of Lines Unread
+        - Opacity
+        - Ophthalmic Examination
+        - Reactivity
+        - Score
+        - Shape
+        - Spherical Refractive Error
+        - Subject to Eye Chart Actual Distance
+        - Subject to Eye Chart Planned Distance
+        - Tear Breakup Time
+        - Tear Secretion Rate
+        - Tear Secretion
+        - Thickness
+        - Thickness, Maximum
+        - Thickness, Mean
+        - Thickness, Minimum
+        - Thickness, Standard Deviation
+        - Visual Acuity Card Grating Frequency
+outcome:
+  message: Value not found in extensible codelist Ophthalmic Exam Test Name (C117742)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C117742
+  codelist_name: Ophthalmic Exam Test Name
+  codelist_submission_value: OETEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 64
+

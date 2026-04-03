@@ -1,0 +1,46 @@
+id: HRL-CT-0728
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: NPS01TC (Neuropathic Pain Scale Questionnaire Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: NPS01TC
+      operator: in
+      value:
+        - NPS0101
+        - NPS0102
+        - NPS0103
+        - NPS0104
+        - NPS0105
+        - NPS0106
+        - NPS0107
+        - NPS0108
+        - NPS0108A
+        - NPS0108B
+        - NPS0108C
+        - NPS0108D
+        - NPS0109
+        - NPS0110A
+        - NPS0110B
+outcome:
+  message: Value not found in non-extensible codelist Neuropathic Pain Scale Questionnaire
+    Test Code (C103473)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103473
+  codelist_name: Neuropathic Pain Scale Questionnaire Test Code
+  codelist_submission_value: NPS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 15
+

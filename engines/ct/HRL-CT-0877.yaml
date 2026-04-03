@@ -1,0 +1,61 @@
+id: HRL-CT-0877
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PASI04TC (Psoriasis Area and Severity Index Version EMA Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PASI04TC
+      operator: in
+      value:
+        - PASI0401
+        - PASI0402
+        - PASI0403
+        - PASI0404
+        - PASI0405
+        - PASI0406
+        - PASI0407
+        - PASI0408
+        - PASI0409
+        - PASI0410
+        - PASI0411
+        - PASI0412
+        - PASI0413
+        - PASI0414
+        - PASI0415
+        - PASI0416
+        - PASI0417
+        - PASI0418
+        - PASI0419
+        - PASI0420
+        - PASI0421
+        - PASI0422
+        - PASI0423
+        - PASI0424
+        - PASI0425
+        - PASI0426
+        - PASI0427
+        - PASI0428
+        - PASI0429
+outcome:
+  message: Value not found in non-extensible codelist Psoriasis Area and Severity
+    Index Version EMA Clinical Classification Test Code (C190936)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C190936
+  codelist_name: Psoriasis Area and Severity Index Version EMA Clinical Classification
+    Test Code
+  codelist_submission_value: PASI04TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 29
+

@@ -1,0 +1,57 @@
+id: HRL-CT-1036
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SIQ02TC (Suicidal Ideation Questionnaire-JR Questionnaire Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SIQ02TC
+      operator: in
+      value:
+        - SIQ0201
+        - SIQ0202
+        - SIQ0203
+        - SIQ0204
+        - SIQ0205
+        - SIQ0206
+        - SIQ0207
+        - SIQ0208
+        - SIQ0209
+        - SIQ0210
+        - SIQ0211
+        - SIQ0212
+        - SIQ0213
+        - SIQ0214
+        - SIQ0215
+        - SIQ0216
+        - SIQ0217
+        - SIQ0218
+        - SIQ0219
+        - SIQ0220
+        - SIQ0221
+        - SIQ0222
+        - SIQ0223
+        - SIQ0224
+        - SIQ0225
+        - SIQ0226
+outcome:
+  message: Value not found in non-extensible codelist Suicidal Ideation Questionnaire-JR
+    Questionnaire Test Code (C150792)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150792
+  codelist_name: Suicidal Ideation Questionnaire-JR Questionnaire Test Code
+  codelist_submission_value: SIQ02TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 26
+

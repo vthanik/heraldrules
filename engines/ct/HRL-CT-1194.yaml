@@ -1,0 +1,33 @@
+id: HRL-CT-1194
+version: 1
+status: Published
+standard: ADaM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HAMD1PN (Hamilton Depression Rating Scale - 17 Item Clinical Classification
+  Parameter Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HAMD1PN
+      operator: in
+      value:
+        - HAMD1-Total Score - Analysis
+outcome:
+  message: Value not found in non-extensible codelist Hamilton Depression Rating Scale
+    - 17 Item Clinical Classification Parameter Name (C187455)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C187455
+  codelist_name: Hamilton Depression Rating Scale - 17 Item Clinical Classification
+    Parameter Name
+  codelist_submission_value: HAMD1PN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

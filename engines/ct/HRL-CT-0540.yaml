@@ -1,0 +1,78 @@
+id: HRL-CT-0540
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HAQ02TC (Health Assessment Questionnaire Disability Index Without Pain
+  Visual Analog Scale Questionnaire Test Code) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HAQ02TC
+      operator: in
+      value:
+        - HAQ0201
+        - HAQ0202
+        - HAQ0203
+        - HAQ0204
+        - HAQ0205
+        - HAQ0206
+        - HAQ0207
+        - HAQ0208
+        - HAQ0209
+        - HAQ0210
+        - HAQ0211
+        - HAQ0212
+        - HAQ0213
+        - HAQ0214
+        - HAQ0215
+        - HAQ0216
+        - HAQ0217
+        - HAQ0218
+        - HAQ0219
+        - HAQ0220
+        - HAQ0221
+        - HAQ0222
+        - HAQ0223
+        - HAQ0224
+        - HAQ0225
+        - HAQ0226
+        - HAQ0227
+        - HAQ0228
+        - HAQ0229
+        - HAQ0230
+        - HAQ0231
+        - HAQ0232
+        - HAQ0233
+        - HAQ0234
+        - HAQ0235
+        - HAQ0236
+        - HAQ0237
+        - HAQ0238
+        - HAQ0239
+        - HAQ0240
+        - HAQ0241
+        - HAQ0242
+        - HAQ0243
+        - HAQ0244
+        - HAQ0245
+outcome:
+  message: Value not found in non-extensible codelist Health Assessment Questionnaire
+    Disability Index Without Pain Visual Analog Scale Questionnaire Test Code (C132523)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C132523
+  codelist_name: Health Assessment Questionnaire Disability Index Without Pain Visual
+    Analog Scale Questionnaire Test Code
+  codelist_submission_value: HAQ02TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 45
+

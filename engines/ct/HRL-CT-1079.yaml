@@ -1,0 +1,51 @@
+id: HRL-CT-1079
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: OABQ02TN (The Overactive Bladder Questionnaire Short Form Questionnaire
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: OABQ02TN
+      operator: in
+      value:
+        - OABQ02-Accidental Loss of Urine
+        - OABQ02-Affected Relationships
+        - OABQ02-Avoid Activ Away From Restroom
+        - OABQ02-Awakened You During Sleep
+        - OABQ02-Caused Problems Partner/Spouse
+        - OABQ02-Caused You Embarrassment
+        - OABQ02-Decrease Physical Activities
+        - OABQ02-Feel Something is Wrong with You
+        - OABQ02-Frustrated about Time in Restroom
+        - OABQ02-Interfered with Getting Sleep
+        - OABQ02-Interfered with Good Night's Rest
+        - OABQ02-Locate Closest Restroom
+        - OABQ02-Nighttime Urination
+        - OABQ02-Plan 'Escape Routes' to Restrooms
+        - OABQ02-Sudden Urge to Urinate No Warning
+        - OABQ02-Uncomfortable Travel with Others
+        - OABQ02-Uncomfortable Urge to Urinate
+        - OABQ02-Urine Loss Strong Desire Urinate
+        - OABQ02-Waking Up at Night had to Urinate
+outcome:
+  message: Value not found in non-extensible codelist The Overactive Bladder Questionnaire
+    Short Form Questionnaire Test Name (C103476)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C103476
+  codelist_name: The Overactive Bladder Questionnaire Short Form Questionnaire Test
+    Name
+  codelist_submission_value: OABQ02TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 19
+

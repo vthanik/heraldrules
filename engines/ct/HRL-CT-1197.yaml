@@ -1,0 +1,34 @@
+id: HRL-CT-1197
+version: 1
+status: Published
+standard: ADaM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: NEWS1PN (National Early Warning Score 2 Clinical Classification Parameter
+  Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: NEWS1PN
+      operator: in
+      value:
+        - NEWS1-Total Score - Analysis
+        - NEWS1-Trigger - Analysis
+outcome:
+  message: Value not found in non-extensible codelist National Early Warning Score
+    2 Clinical Classification Parameter Name (C193277)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C193277
+  codelist_name: National Early Warning Score 2 Clinical Classification Parameter
+    Name
+  codelist_submission_value: NEWS1PN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 2
+

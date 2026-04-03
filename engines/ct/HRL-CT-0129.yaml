@@ -1,0 +1,32 @@
+id: HRL-CT-0129
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BCR101TC (Borg CR10 Scale Questionnaire Test Code) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BCR101TC
+      operator: in
+      value:
+        - BCR10101
+outcome:
+  message: Value not found in non-extensible codelist Borg CR10 Scale Questionnaire
+    Test Code (C113846)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C113846
+  codelist_name: Borg CR10 Scale Questionnaire Test Code
+  codelist_submission_value: BCR101TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

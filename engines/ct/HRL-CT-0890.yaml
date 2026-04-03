@@ -1,0 +1,64 @@
+id: HRL-CT-0890
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: IBDQ01TC (Quality of Life in Inflammatory Bowel Disease Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: IBDQ01TC
+      operator: in
+      value:
+        - IBDQ0101
+        - IBDQ0102
+        - IBDQ0103
+        - IBDQ0104
+        - IBDQ0105
+        - IBDQ0106
+        - IBDQ0107
+        - IBDQ0108
+        - IBDQ0109
+        - IBDQ0110
+        - IBDQ0111
+        - IBDQ0112
+        - IBDQ0113
+        - IBDQ0114
+        - IBDQ0115
+        - IBDQ0116
+        - IBDQ0117
+        - IBDQ0118
+        - IBDQ0119
+        - IBDQ0120
+        - IBDQ0121
+        - IBDQ0122
+        - IBDQ0123
+        - IBDQ0124
+        - IBDQ0125
+        - IBDQ0126
+        - IBDQ0127
+        - IBDQ0128
+        - IBDQ0129
+        - IBDQ0130
+        - IBDQ0131
+        - IBDQ0132
+outcome:
+  message: Value not found in non-extensible codelist Quality of Life in Inflammatory
+    Bowel Disease Questionnaire Test Code (C174052)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C174052
+  codelist_name: Quality of Life in Inflammatory Bowel Disease Questionnaire Test
+    Code
+  codelist_submission_value: IBDQ01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 32
+

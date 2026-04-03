@@ -1,0 +1,43 @@
+id: HRL-CT-0448
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC041TN (Functional Assessment of Cancer Therapy-Kidney Symptom Index-Disease-Related
+  Symptoms Version 4 Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC041TN
+      operator: in
+      value:
+        - FAC041-I Am Bothered by Fevers
+        - FAC041-I Am Losing Weight
+        - FAC041-I Feel Fatigued
+        - FAC041-I Have a Lack of Energy
+        - FAC041-I Have Been Coughing
+        - FAC041-I Have Been Short of Breath
+        - FAC041-I Have Bone Pain
+        - FAC041-I Have Had Blood in My Urine
+        - FAC041-I Have Pain
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Kidney Symptom Index-Disease-Related Symptoms Version 4 Questionnaire
+    Test Name (C150783)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150783
+  codelist_name: Functional Assessment of Cancer Therapy-Kidney Symptom Index-Disease-Related
+    Symptoms Version 4 Questionnaire Test Name
+  codelist_submission_value: FAC041TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 9
+

@@ -1,0 +1,136 @@
+id: HRL-CT-0912
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RPTEST (Reproductive System Findings Test Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RPTEST
+      operator: in
+      value:
+        - Abnormal Bleeding Indicator
+        - Actively Menstruating Indicator
+        - Actual Date of Delivery
+        - Adrenarche Age
+        - Age at First Oral Sex
+        - Age at First Sexual Intercourse
+        - Average Menstrual Cycle Duration
+        - Bartholin's Gland Abnormality Indicator
+        - Birth Control Method
+        - Bleed/Spot Between Menstrual Periods Ind
+        - Blistering Indicator
+        - Breastfeeding End Date
+        - Breastfeeding Start Date
+        - Childbearing Potential
+        - Condom Use Frequency Desc
+        - Condom Use Most Recent Sex Interc Ind
+        - Congenital Abnormality Indicator
+        - Current Number of Fetuses
+        - Date of Most Recent Sexual Intercourse
+        - Date Pregnancy Ended
+        - Discharge Indicator
+        - Duration of Sexual Abstinence
+        - Ecchymosis Indicator
+        - Ectopic Pregnancy Indicator
+        - Edema Indicator
+        - Elapsed Time Since LMP
+        - Erythema Indicator
+        - Est Next Menstrual Period Start Date
+        - Estimated Date of Conception
+        - Estimated Date of Delivery
+        - Estimated Gestational Age
+        - First Menstrual Period Start Date
+        - Fundal Height
+        - Gravida Indicator
+        - Has Menstrual Periods Indicator
+        - Hosp Due to Pregnancy Complication Ind
+        - Induced Abortion Indicator
+        - Infertility Indicator
+        - Interpretation
+        - Irregular Menstrual Periods Indicator
+        - Last Menstrual Period Start Date
+        - Live Birth Indicator
+        - Mass Indicator
+        - Menarche Age
+        - Menarche Indicator
+        - Menopause Age
+        - Menopause Status
+        - Menses Flow Duration
+        - Menses Flow Rate Description
+        - Menstrual Cycle Duration
+        - Menstrual Cycle Regularity
+        - Miscarriage Indicator
+        - Mode of Delivery
+        - Molar Pregnancy Indicator
+        - Motion Tenderness Indicator
+        - Multiple Birth Indicator
+        - Number Full Term Live Births
+        - Number of Abortions
+        - Number of Births
+        - Number of Cesarean Sections
+        - Number of Continuous Days of Bleed/Spot
+        - Number of Early Term Births
+        - Number of Ectopic Pregnancies
+        - Number of Female Sexual Partners
+        - Number of Full Term Births
+        - Number of Induced Abortions
+        - Number of Late Fetal Deaths
+        - Number of Live Births
+        - Number of Male Sexual Partners
+        - Number of New Female Sexual Partners
+        - Number of New Male Sexual Partners
+        - Number of New Oral Sexual Partners
+        - Number of Oral Sexual Partners
+        - Number of Pregnancies
+        - Number of Premature Births
+        - Number of Premature Live Births
+        - Number of Previous Pregnancies
+        - Number of Spontaneous Abortions
+        - Number of Stillbirths
+        - Number of Vaginal Deliveries
+        - Parity
+        - Peeling Indicator
+        - Post-Partum Indicator
+        - Pregnancy Confirmed Indicator
+        - Pregnancy Outcome
+        - Pregnancy Suspected Indicator
+        - Pregnant During the Study
+        - Pregnant Indicator
+        - Products of Conception Examined Ind
+        - Puberty Age
+        - Puberty Indicator
+        - Pustule Indicator
+        - Rash Indicator
+        - Reproductive System Examination
+        - Skene's Gland Abnormality Indicator
+        - Stillbirth Indicator
+        - Subj Currently Breastfeeding a Child Ind
+        - Surgically Sterile Indicator
+        - Tenderness Indicator
+        - Term Pregnancy Category
+        - Thelarche Age
+        - Thickness
+        - Total Number of Sexual Partners
+        - Ulcer Indicator
+        - Vaginal Bleeding/Spotting Freq Desc
+outcome:
+  message: Value not found in extensible codelist Reproductive System Findings Test
+    Name (C106478)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106478
+  codelist_name: Reproductive System Findings Test Name
+  codelist_submission_value: RPTEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 105
+

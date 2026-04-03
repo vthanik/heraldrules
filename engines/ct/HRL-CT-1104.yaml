@@ -1,0 +1,36 @@
+id: HRL-CT-1104
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SPECPT (Tobacco Product Testing Specimen Type) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SPECPT
+      operator: in
+      value:
+        - AEROSOL
+        - E-LIQUID
+        - SMOKE
+        - TOBACCO FILLER
+        - TOBACCO
+outcome:
+  message: Value not found in extensible codelist Tobacco Product Testing Specimen
+    Type (C204418)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204418
+  codelist_name: Tobacco Product Testing Specimen Type
+  codelist_submission_value: SPECPT
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 5
+

@@ -1,0 +1,38 @@
+id: HRL-CT-0869
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PA016TC (PROMIS Item Bank v2.0 - Cognitive Function - Short Form 6a Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PA016TC
+      operator: in
+      value:
+        - PA016001
+        - PA016002
+        - PA016003
+        - PA016004
+        - PA016005
+        - PA016006
+outcome:
+  message: Value not found in non-extensible codelist PROMIS Item Bank v2.0 - Cognitive
+    Function - Short Form 6a Questionnaire Test Code (C202142)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C202142
+  codelist_name: PROMIS Item Bank v2.0 - Cognitive Function - Short Form 6a Questionnaire
+    Test Code
+  codelist_submission_value: PA016TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

@@ -1,0 +1,35 @@
+id: HRL-CT-0774
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PGI01TC (Patient Global Impression Generic Modification Version Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PGI01TC
+      operator: in
+      value:
+        - PGI0101
+        - PGI0102
+        - PGI0103
+outcome:
+  message: Value not found in non-extensible codelist Patient Global Impression Generic
+    Modification Version Questionnaire Test Code (C135688)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C135688
+  codelist_name: Patient Global Impression Generic Modification Version Questionnaire
+    Test Code
+  codelist_submission_value: PGI01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 3
+

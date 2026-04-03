@@ -1,0 +1,51 @@
+id: HRL-CT-0159
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CVFATSCD (Cardiovascular Findings About Test Code) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CVFATSCD
+      operator: in
+      value:
+        - ACMITYPE
+        - CATMTHID
+        - ENDPTIND
+        - HETYPE
+        - HFLBFNW
+        - HFPEFNW
+        - HFTHERIN
+        - ISCDIND
+        - ISCETYP
+        - MI12EXC
+        - NINVIMGC
+        - NWSYMP
+        - PCIAAC
+        - PRSUCIND
+        - PRUSTAT
+        - STCTIMNG
+        - STROKTYP
+        - SYMPINDC
+        - SYMSTDTC
+        - VOC48IND
+outcome:
+  message: Value not found in extensible codelist Cardiovascular Findings About Test
+    Code (C119015)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C119015
+  codelist_name: Cardiovascular Findings About Test Code
+  codelist_submission_value: CVFATSCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 20
+

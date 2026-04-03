@@ -1,0 +1,44 @@
+id: HRL-CT-0332
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ECOG101OR (Eastern Cooperative Oncology Group Performance Status Clinical
+  Classification ORRES for ECOG101 TN/TC) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ECOG101OR
+      operator: in
+      value:
+        - Ambulatory and capable of all selfcare but unable to carry out any work
+          activities. Up and about more than 50% of waking hours
+        - Capable of only limited selfcare, confined to bed or chair more than 50%
+          of waking hours
+        - Completely disabled. Cannot carry on any selfcare. Totally confined to bed
+          or chair
+        - Dead
+        - Fully active, able to carry on all pre-disease performance without restriction
+        - Restricted in physically strenuous activity but ambulatory and able to carry
+          out work of a light or sedentary nature, e.g., light house work, office
+          work
+outcome:
+  message: Value not found in non-extensible codelist Eastern Cooperative Oncology
+    Group Performance Status Clinical Classification ORRES for ECOG101 TN/TC (C179943)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C179943
+  codelist_name: Eastern Cooperative Oncology Group Performance Status Clinical Classification
+    ORRES for ECOG101 TN/TC
+  codelist_submission_value: ECOG101OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

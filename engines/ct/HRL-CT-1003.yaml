@@ -1,0 +1,44 @@
+id: HRL-CT-1003
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SRTESTCD (Skin Response Test Code) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SRTESTCD
+      operator: in
+      value:
+        - ASRINDEX
+        - ASRINT
+        - BLISTIND
+        - DIAMETER
+        - FLARESZ
+        - FLRLDIAM
+        - FLRMDIAM
+        - IDRLDIAM
+        - INTP
+        - REACTGR
+        - WHEALSZ
+        - WHLINT
+        - WHLLDIAM
+        - WHLMDIAM
+outcome:
+  message: Value not found in extensible codelist Skin Response Test Code (C112024)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C112024
+  codelist_name: Skin Response Test Code
+  codelist_submission_value: SRTESTCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 14
+

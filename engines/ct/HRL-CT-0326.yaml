@@ -1,0 +1,226 @@
+id: HRL-CT-0326
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FRM (Dosage Form) must contain valid extensible codelist terms (new terms
+  allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FRM
+      operator: in
+      value:
+        - AEROSOL
+        - AEROSOL, FOAM
+        - AEROSOL, METERED
+        - AEROSOL, POWDER
+        - AEROSOL, SPRAY
+        - BAR, CHEWABLE
+        - BEAD
+        - BEAD, IMPLANT, EXTENDED RELEASE
+        - BLOCK
+        - CAPLET
+        - CAPSULE
+        - CAPSULE, COATED PELLETS
+        - CAPSULE, COATED
+        - CAPSULE, COATED, EXTENDED RELEASE
+        - CAPSULE, DELAYED RELEASE PELLETS
+        - CAPSULE, DELAYED RELEASE
+        - CAPSULE, EXTENDED RELEASE
+        - CAPSULE, FILM COATED, EXTENDED RELEASE
+        - CAPSULE, GELATIN COATED
+        - CAPSULE, HARD, EXTENDED RELEASE
+        - CAPSULE, IMMEDIATE RELEASE
+        - CAPSULE, LIQUID FILLED
+        - CAPSULE, SOFTGEL
+        - CAPSULE, SOFTGEL, EXTENDED RELEASE
+        - CEMENT
+        - CIGARETTE
+        - CLOTH
+        - CONCENTRATE
+        - CONE
+        - CORE, EXTENDED RELEASE
+        - CREAM
+        - CREAM, AUGMENTED
+        - CRYSTAL
+        - CULTURE
+        - DEPOT
+        - DIAPHRAGM
+        - DISC
+        - DOUCHE
+        - DRESSING
+        - DRUG DELIVERY SYSTEM
+        - ELIXIR
+        - EMULSION
+        - ENEMA
+        - EXTRACT
+        - FIBER, EXTENDED RELEASE
+        - FILM
+        - FILM, EXTENDED RELEASE
+        - FILM, SOLUBLE
+        - FOR SOLUTION
+        - FOR SUSPENSION
+        - FOR SUSPENSION, EXTENDED RELEASE
+        - GAS
+        - GEL
+        - GEL, CHEWABLE
+        - GEL, DENTIFRICE
+        - GEL, METERED
+        - GENERATOR
+        - GLOBULE
+        - GRAFT
+        - GRANULE
+        - GRANULE, COATED
+        - GRANULE, DELAYED RELEASE
+        - GRANULE, EFFERVESCENT
+        - GRANULE, FOR SOLUTION
+        - GRANULE, FOR SUSPENSION
+        - GRANULE, FOR SUSPENSION, EXTENDED RELEASE
+        - GUM
+        - GUM, CHEWING
+        - GUM, RESIN
+        - IMPLANT
+        - INHALANT
+        - INHALATION VAPOR, CAPSULE
+        - INJECTABLE, LIPOSOMAL
+        - INJECTION
+        - INJECTION, EMULSION
+        - INJECTION, LIPID COMPLEX
+        - INJECTION, POWDER, FOR SOLUTION
+        - INJECTION, POWDER, FOR SUSPENSION
+        - INJECTION, POWDER, FOR SUSPENSION, EXTENDED RELEASE
+        - INJECTION, POWDER, LYOPHILIZED, FOR LIPOSOMAL SUSPENSION
+        - INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION
+        - INJECTION, POWDER, LYOPHILIZED, FOR SUSPENSION
+        - INJECTION, POWDER, LYOPHILIZED, FOR SUSPENSION, EXTENDED RELEASE
+        - INJECTION, SOLUTION
+        - INJECTION, SOLUTION, CONCENTRATE
+        - INJECTION, SUSPENSION
+        - INJECTION, SUSPENSION, EXTENDED RELEASE
+        - INJECTION, SUSPENSION, LIPOSOMAL
+        - INJECTION, SUSPENSION, SONICATED
+        - INSERT
+        - INSERT, EXTENDED RELEASE
+        - INTRAUTERINE DEVICE
+        - IRRIGANT
+        - JELLY
+        - KIT
+        - LINER, DENTAL
+        - LINIMENT
+        - LIPSTICK
+        - LIQUID
+        - LIQUID, EXTENDED RELEASE
+        - LOTION
+        - LOTION, AUGMENTED
+        - LOTION/SHAMPOO
+        - LOZENGE
+        - MOUTHWASH
+        - NANOSUSPENSION
+        - NOT APPLICABLE
+        - OIL
+        - OINTMENT
+        - OINTMENT, AUGMENTED
+        - PACKING
+        - PASTE
+        - PASTE, DENTIFRICE
+        - PASTILLE
+        - PATCH
+        - PATCH, EXTENDED RELEASE
+        - PATCH, EXTENDED RELEASE, ELECTRICALLY CONTROLLED
+        - PELLET
+        - PELLET, IMPLANTABLE
+        - PELLETS, COATED, EXTENDED RELEASE
+        - PILL
+        - PLASTER
+        - POULTICE
+        - POWDER
+        - POWDER, DENTIFRICE
+        - POWDER, FOR SOLUTION
+        - POWDER, FOR SUSPENSION
+        - POWDER, LYOPHILIZED
+        - POWDER, METERED
+        - RING
+        - RINSE
+        - SALVE
+        - SHAMPOO
+        - SHAMPOO, SUSPENSION
+        - SOAP
+        - SOLID
+        - SOLUTION
+        - SOLUTION, CONCENTRATE
+        - SOLUTION, FOR SLUSH
+        - SOLUTION, GEL FORMING / DROPS
+        - SOLUTION, GEL FORMING, EXTENDED RELEASE
+        - SOLUTION/ DROPS
+        - SPONGE
+        - SPRAY
+        - SPRAY, METERED
+        - SPRAY, SUSPENSION
+        - STICK
+        - STRIP
+        - SUPPOSITORY
+        - SUPPOSITORY, EXTENDED RELEASE
+        - SUSPENSION
+        - SUSPENSION, EXTENDED RELEASE
+        - SUSPENSION/DROPS
+        - SUTURE
+        - SWAB
+        - SYRUP
+        - TABLET
+        - TABLET, CHEWABLE
+        - TABLET, COATED PARTICLES
+        - TABLET, COATED
+        - TABLET, CRUSHED
+        - TABLET, DELAYED RELEASE PARTICLES
+        - TABLET, DELAYED RELEASE
+        - TABLET, EFFERVESCENT
+        - TABLET, EXTENDED RELEASE
+        - TABLET, FILM COATED
+        - TABLET, FILM COATED, EXTENDED RELEASE
+        - TABLET, FILM COATED, IMMEDIATE RELEASE
+        - TABLET, FILM COATED, IMMEDIATE RELEASE, CRUSHED
+        - TABLET, FOR SOLUTION
+        - TABLET, FOR SUSPENSION
+        - TABLET, GASTRORETENTIVE
+        - TABLET, IMMEDIATE RELEASE
+        - TABLET, IMMEDIATE RELEASE, SOLID DISPERSION
+        - TABLET, MODIFIED RELEASE
+        - TABLET, MODIFIED RELEASE, BILAYER (1:1)
+        - TABLET, MODIFIED RELEASE, BILAYER (1:2)
+        - TABLET, MODIFIED RELEASE, BILAYER
+        - TABLET, MODIFIED RELEASE, EXTRUDABLE CORE SYSTEM
+        - TABLET, MODIFIED RELEASE, LONG DURATION
+        - TABLET, MODIFIED RELEASE, MATRIX
+        - TABLET, MODIFIED RELEASE, SHORT DURATION
+        - TABLET, MULTILAYER
+        - TABLET, MULTILAYER, EXTENDED RELEASE
+        - TABLET, ORALLY DISINTEGRATING
+        - TABLET, ORALLY DISINTEGRATING, DELAYED RELEASE
+        - TABLET, SOLUBLE
+        - TABLET, SUGAR COATED
+        - TAMPON
+        - TAPE
+        - TINCTURE
+        - TROCHE
+        - UNASSIGNED
+        - UNKNOWN
+        - VAGINAL RING
+        - WAFER
+outcome:
+  message: Value not found in extensible codelist Dosage Form (C66726)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C66726
+  codelist_name: Dosage Form
+  codelist_submission_value: FRM
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 196
+

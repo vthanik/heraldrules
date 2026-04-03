@@ -1,0 +1,51 @@
+id: HRL-CT-1072
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC052TC (The National Comprehensive Cancer Network/Functional Assessment
+  of Cancer Therapy-Prostate Symptom Index 17 Version 2 Questionnaire Test Code) must
+  contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC052TC
+      operator: in
+      value:
+        - FAC05201
+        - FAC05202
+        - FAC05203
+        - FAC05204
+        - FAC05205
+        - FAC05206
+        - FAC05207
+        - FAC05208
+        - FAC05209
+        - FAC05210
+        - FAC05211
+        - FAC05212
+        - FAC05213
+        - FAC05214
+        - FAC05215
+        - FAC05216
+        - FAC05217
+outcome:
+  message: Value not found in non-extensible codelist The National Comprehensive Cancer
+    Network/Functional Assessment of Cancer Therapy-Prostate Symptom Index 17 Version
+    2 Questionnaire Test Code (C127356)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C127356
+  codelist_name: The National Comprehensive Cancer Network/Functional Assessment of
+    Cancer Therapy-Prostate Symptom Index 17 Version 2 Questionnaire Test Code
+  codelist_submission_value: FAC052TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 17
+

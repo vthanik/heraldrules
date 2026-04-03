@@ -1,0 +1,43 @@
+id: HRL-CT-0873
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PROTMLST (Protocol Milestone) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PROTMLST
+      operator: in
+      value:
+        - DECLINED TO CONTINUE INTO NEXT TRIAL ELEMENT
+        - DECLINED TO CONTINUE INTO SURVIVAL FOLLOW-UP
+        - ELIGIBILITY CRITERIA MET
+        - ELIGIBILITY CRITERIA NOT MET
+        - ENTERED INTO TRIAL
+        - INFORMED ASSENT OBTAINED
+        - INFORMED CONSENT DECLINED FOR PROTOCOL-SPECIFIED ACTIVITY
+        - INFORMED CONSENT OBTAINED FOR PROTOCOL-SPECIFIED ACTIVITY
+        - INFORMED CONSENT OBTAINED
+        - OPTED TO CONTINUE INTO NEXT TRIAL ELEMENT
+        - OPTED TO CONTINUE INTO SURVIVAL FOLLOW-UP
+        - RANDOMIZED
+        - RE-RANDOMIZED
+outcome:
+  message: Value not found in extensible codelist Protocol Milestone (C114118)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C114118
+  codelist_name: Protocol Milestone
+  codelist_submission_value: PROTMLST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 13
+

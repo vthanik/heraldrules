@@ -1,0 +1,74 @@
+id: HRL-CT-1034
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SIQ01TC (Suicidal Ideation Questionnaire Test Code) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SIQ01TC
+      operator: in
+      value:
+        - SIQ0101
+        - SIQ0102
+        - SIQ0103
+        - SIQ0104
+        - SIQ0105
+        - SIQ0106
+        - SIQ0107
+        - SIQ0108
+        - SIQ0109
+        - SIQ0110
+        - SIQ0111
+        - SIQ0112
+        - SIQ0113
+        - SIQ0114
+        - SIQ0115
+        - SIQ0116
+        - SIQ0117
+        - SIQ0118
+        - SIQ0119
+        - SIQ0120
+        - SIQ0121
+        - SIQ0122
+        - SIQ0123
+        - SIQ0124
+        - SIQ0125
+        - SIQ0126
+        - SIQ0127
+        - SIQ0128
+        - SIQ0129
+        - SIQ0130
+        - SIQ0131
+        - SIQ0132
+        - SIQ0133
+        - SIQ0134
+        - SIQ0135
+        - SIQ0136
+        - SIQ0137
+        - SIQ0138
+        - SIQ0139
+        - SIQ0140
+        - SIQ0141
+        - SIQ0142
+        - SIQ0143
+outcome:
+  message: Value not found in non-extensible codelist Suicidal Ideation Questionnaire
+    Test Code (C150790)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C150790
+  codelist_name: Suicidal Ideation Questionnaire Test Code
+  codelist_submission_value: SIQ01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 43
+

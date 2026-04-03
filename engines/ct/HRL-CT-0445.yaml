@@ -1,0 +1,47 @@
+id: HRL-CT-0445
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC039TC (Functional Assessment of Cancer Therapy-Kidney Symptom Index-15
+  Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC039TC
+      operator: in
+      value:
+        - FAC03901
+        - FAC03902
+        - FAC03903
+        - FAC03904
+        - FAC03905
+        - FAC03906
+        - FAC03907
+        - FAC03908
+        - FAC03909
+        - FAC03910
+        - FAC03911
+        - FAC03912
+        - FAC03913
+        - FAC03914
+        - FAC03915
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Cancer
+    Therapy-Kidney Symptom Index-15 Questionnaire Test Code (C138223)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C138223
+  codelist_name: Functional Assessment of Cancer Therapy-Kidney Symptom Index-15 Questionnaire
+    Test Code
+  codelist_submission_value: FAC039TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 15
+

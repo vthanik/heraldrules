@@ -1,0 +1,121 @@
+id: HRL-CT-1116
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TSCYC1TC (Trauma Symptom Checklist for Young Children Questionnaire Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TSCYC1TC
+      operator: in
+      value:
+        - TSCYC101
+        - TSCYC102
+        - TSCYC103
+        - TSCYC104
+        - TSCYC105
+        - TSCYC106
+        - TSCYC107
+        - TSCYC108
+        - TSCYC109
+        - TSCYC110
+        - TSCYC111
+        - TSCYC112
+        - TSCYC113
+        - TSCYC114
+        - TSCYC115
+        - TSCYC116
+        - TSCYC117
+        - TSCYC118
+        - TSCYC119
+        - TSCYC120
+        - TSCYC121
+        - TSCYC122
+        - TSCYC123
+        - TSCYC124
+        - TSCYC125
+        - TSCYC126
+        - TSCYC127
+        - TSCYC128
+        - TSCYC129
+        - TSCYC130
+        - TSCYC131
+        - TSCYC132
+        - TSCYC133
+        - TSCYC134
+        - TSCYC135
+        - TSCYC136
+        - TSCYC137
+        - TSCYC138
+        - TSCYC139
+        - TSCYC140
+        - TSCYC141
+        - TSCYC142
+        - TSCYC143
+        - TSCYC144
+        - TSCYC145
+        - TSCYC146
+        - TSCYC147
+        - TSCYC148
+        - TSCYC149
+        - TSCYC150
+        - TSCYC151
+        - TSCYC152
+        - TSCYC153
+        - TSCYC154
+        - TSCYC155
+        - TSCYC156
+        - TSCYC157
+        - TSCYC158
+        - TSCYC159
+        - TSCYC160
+        - TSCYC161
+        - TSCYC162
+        - TSCYC163
+        - TSCYC164
+        - TSCYC165
+        - TSCYC166
+        - TSCYC167
+        - TSCYC168
+        - TSCYC169
+        - TSCYC170
+        - TSCYC171
+        - TSCYC172
+        - TSCYC173
+        - TSCYC174
+        - TSCYC175
+        - TSCYC176
+        - TSCYC177
+        - TSCYC178
+        - TSCYC179
+        - TSCYC180
+        - TSCYC181
+        - TSCYC182
+        - TSCYC183
+        - TSCYC184
+        - TSCYC185
+        - TSCYC186
+        - TSCYC187
+        - TSCYC188
+        - TSCYC189
+        - TSCYC190
+outcome:
+  message: Value not found in non-extensible codelist Trauma Symptom Checklist for
+    Young Children Questionnaire Test Code (C147550)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C147550
+  codelist_name: Trauma Symptom Checklist for Young Children Questionnaire Test Code
+  codelist_submission_value: TSCYC1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 90
+

@@ -1,0 +1,44 @@
+id: HRL-CT-0017
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: AIMS01TC (Abnormal Involuntary Movement Scale Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: AIMS01TC
+      operator: in
+      value:
+        - AIMS0101
+        - AIMS0102
+        - AIMS0103
+        - AIMS0104
+        - AIMS0105
+        - AIMS0106
+        - AIMS0107
+        - AIMS0108
+        - AIMS0109
+        - AIMS0110
+        - AIMS0111
+        - AIMS0112
+outcome:
+  message: Value not found in non-extensible codelist Abnormal Involuntary Movement
+    Scale Clinical Classification Test Code (C101805)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101805
+  codelist_name: Abnormal Involuntary Movement Scale Clinical Classification Test
+    Code
+  codelist_submission_value: AIMS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 12
+

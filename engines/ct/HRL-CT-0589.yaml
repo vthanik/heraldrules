@@ -1,0 +1,43 @@
+id: HRL-CT-0589
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: KPSS0101STR (Karnofsky Performance Status Scale Clinical Classification
+  STRESC for KPSS0101 TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: KPSS0101STR
+      operator: in
+      value:
+        - '0'
+        - '10'
+        - '100'
+        - '20'
+        - '30'
+        - '40'
+        - '50'
+        - '60'
+        - '70'
+        - '80'
+        - '90'
+outcome:
+  message: Value not found in non-extensible codelist Karnofsky Performance Status
+    Scale Clinical Classification STRESC for KPSS0101 TN/TC (C182507)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C182507
+  codelist_name: Karnofsky Performance Status Scale Clinical Classification STRESC
+    for KPSS0101 TN/TC
+  codelist_submission_value: KPSS0101STR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 11
+

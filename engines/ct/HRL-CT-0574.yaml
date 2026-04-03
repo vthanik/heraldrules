@@ -1,0 +1,38 @@
+id: HRL-CT-0574
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: IPS0101T06STR (International Prostate Symptom Score Questionnaire STRESC
+  for IPS0101 Through IPS0106 TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: IPS0101T06STR
+      operator: in
+      value:
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+outcome:
+  message: Value not found in non-extensible codelist International Prostate Symptom
+    Score Questionnaire STRESC for IPS0101 Through IPS0106 TN/TC (C182499)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C182499
+  codelist_name: International Prostate Symptom Score Questionnaire STRESC for IPS0101
+    Through IPS0106 TN/TC
+  codelist_submission_value: IPS0101T06STR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

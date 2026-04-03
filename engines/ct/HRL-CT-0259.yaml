@@ -1,0 +1,48 @@
+id: HRL-CT-0259
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CONROL (Contact Role for Clinical Study) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CONROL
+      operator: in
+      value:
+        - CA APPLICANT
+        - CENTRAL CONTACT FOR RECRUITMENT BACKUP
+        - CENTRAL CONTACT FOR RECRUITMENT
+        - CLINICAL NETWORK CONTACT
+        - CONTACT FOR PUBLIC QUERIES
+        - CONTACT FOR SCIENTIFIC QUERIES
+        - FACILITY CONTACT BACKUP
+        - FACILITY CONTACT
+        - FURTHER INFORMATION CONTACT
+        - IEC APPLICANT
+        - INVESTIGATOR
+        - LEGAL REPRESENTATIVE FOR THE STUDY
+        - PRIMARY CONTACT
+        - PRINCIPAL INVESTIGATOR
+        - STUDY CHAIR
+        - SUBCONTRACTOR CONTACT
+        - SUBINVESTIGATOR
+outcome:
+  message: Value not found in extensible codelist Contact Role for Clinical Study
+    (C127257)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C127257
+  codelist_name: Contact Role for Clinical Study
+  codelist_submission_value: CONROL
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 17
+

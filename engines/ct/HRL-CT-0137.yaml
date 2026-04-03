@@ -1,0 +1,100 @@
+id: HRL-CT-0137
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BPI1TN (Brief Pain Inventory Questionnaire Test Name) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BPI1TN
+      operator: in
+      value:
+        - BPI1-Aching
+        - BPI1-Area Hurts Most
+        - BPI1-Areas of Pain
+        - BPI1-Biofeedback to Relieve Pain
+        - BPI1-Burning
+        - BPI1-Cold Compresses to Relieve Pain
+        - BPI1-Concerned Use Too Much Pain Med
+        - BPI1-Current Job Status
+        - BPI1-Current Occupation
+        - BPI1-Describe Unrelated Med Condition
+        - BPI1-Distraction to Relieve Pain
+        - BPI1-Education
+        - BPI1-Exhausting
+        - BPI1-Gnawing
+        - BPI1-Hours before Pain Returns
+        - BPI1-How Long Since Diagnosis
+        - BPI1-Hypnosis to Relieve Pain
+        - BPI1-Kind of Surgery in Past Month
+        - BPI1-Marital Status
+        - BPI1-Meds not Prescribed Taken for Pain
+        - BPI1-Miserable
+        - BPI1-Nagging
+        - BPI1-Need Further Info about Pain Med
+        - BPI1-Need more Pain Med than Prescribed
+        - BPI1-Need Stronger Type of Pain Med
+        - BPI1-Numb
+        - BPI1-Other specify to Relieve Pain
+        - BPI1-Other to Relieve Pain
+        - BPI1-Pain at its Least in Last Week
+        - BPI1-Pain at its Worst in Last Week
+        - BPI1-Pain Due to Effects of Treatment
+        - BPI1-Pain Due to Present Disease
+        - BPI1-Pain Due to Primary Disease
+        - BPI1-Pain Due to Unrelated Med Condition
+        - BPI1-Pain Interfered Enjoyment of Life
+        - BPI1-Pain Interfered General Activity
+        - BPI1-Pain Interfered Walking Ability
+        - BPI1-Pain Interfered with Mood
+        - BPI1-Pain Interfered with Normal Work
+        - BPI1-Pain Interfered with Relations
+        - BPI1-Pain Interfered with Sleep
+        - BPI1-Pain Medications in the Last 7 Days
+        - BPI1-Pain on the Average
+        - BPI1-Pain One of Your Symptoms
+        - BPI1-Pain Other than Everyday Kinds
+        - BPI1-Pain Requires Medication Daily
+        - BPI1-Pain Right Now
+        - BPI1-Penetrating
+        - BPI1-Prefer to Take Pain Medicine
+        - BPI1-Problems with Side Effects Pain Med
+        - BPI1-Professional Degree
+        - BPI1-Relaxation Techniques Relieve Pain
+        - BPI1-Relief Pain Treatments Provided
+        - BPI1-Sharp
+        - BPI1-Shooting
+        - BPI1-Spouse's Occupation
+        - BPI1-Stabbing
+        - BPI1-Surgery in Past Month
+        - BPI1-Take my Pain Medicine
+        - BPI1-Tender
+        - BPI1-Things that Make Pain Feel Better
+        - BPI1-Things that Make your Pain Worse
+        - BPI1-Throbbing
+        - BPI1-Tiring
+        - BPI1-Treatments Receiving for Pain
+        - BPI1-Unbearable
+        - BPI1-Warm Compresses to Relieve Pain
+        - BPI1-Which Side Effects from Pain Med
+        - BPI1-Why Concerned Use Too Much Pain Med
+outcome:
+  message: Value not found in non-extensible codelist Brief Pain Inventory Questionnaire
+    Test Name (C100161)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100161
+  codelist_name: Brief Pain Inventory Questionnaire Test Name
+  codelist_submission_value: BPI1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 69
+

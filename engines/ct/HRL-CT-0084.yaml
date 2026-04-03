@@ -1,0 +1,37 @@
+id: HRL-CT-0084
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: APGR01TC (Apgar Score V1 Clinical Classification Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: APGR01TC
+      operator: in
+      value:
+        - APGR0101
+        - APGR0102
+        - APGR0103
+        - APGR0104
+        - APGR0105
+        - APGR0106
+outcome:
+  message: Value not found in non-extensible codelist Apgar Score V1 Clinical Classification
+    Test Code (C176047)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C176047
+  codelist_name: Apgar Score V1 Clinical Classification Test Code
+  codelist_submission_value: APGR01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

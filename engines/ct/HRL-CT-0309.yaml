@@ -1,0 +1,68 @@
+id: HRL-CT-0309
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DDS03TN (Diabetes Distress Scale for Partners of Adults with Type 1 Diabetes
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DDS03TN
+      operator: in
+      value:
+        - DDS03-Can't Get Partner Improve Attitude
+        - 'DDS03-Diabetes and Me: Mean'
+        - 'DDS03-Diabetes and Me: Moderate'
+        - 'DDS03-Diabetes and Me: Sum'
+        - DDS03-Diabetes Often Interrupts Plans
+        - DDS03-Failing to Help Partner Manage
+        - DDS03-Guilty Not Doing Enough to Help
+        - DDS03-Help My Partner Always a Battle
+        - 'DDS03-How Best to Help: Mean'
+        - 'DDS03-How Best to Help: Moderate'
+        - 'DDS03-How Best to Help: Sum'
+        - DDS03-How Involved Managing Diabetes
+        - DDS03-How to Best Help Partner Manage
+        - 'DDS03-Hypoglycemia: Mean'
+        - 'DDS03-Hypoglycemia: Moderate'
+        - 'DDS03-Hypoglycemia: Sum'
+        - DDS03-Leaving Alone Low Blood Sugars
+        - DDS03-Low Blood Sugars When Sleeping
+        - DDS03-More I Try The Worse Things Get
+        - DDS03-Never Get a Break From Worrying
+        - DDS03-No One Notices Diabetes Hard On Me
+        - DDS03-Not Working Well Together
+        - DDS03-Overwhelmed by Constant Demands
+        - 'DDS03-Partner Diabetes Manage: Moderate'
+        - 'DDS03-Partner Diabetes Management: Mean'
+        - 'DDS03-Partner Diabetes Management: Sum'
+        - DDS03-Partner Doesn't Try Hard Enough
+        - DDS03-Partner Driving Low Blood Sugars
+        - DDS03-Partner Ignores My Suggestions
+        - DDS03-Partner Shuts Me Out
+        - DDS03-Silent About My Partner's Diabetes
+        - DDS03-Taking Too Much of My Energy
+        - 'DDS03-Total DDS Score: Mean'
+        - 'DDS03-Total DDS Score: Moderate'
+        - 'DDS03-Total DDS Score: Sum'
+        - DDS03-Worry About Low Blood Sugars
+outcome:
+  message: Value not found in non-extensible codelist Diabetes Distress Scale for
+    Partners of Adults with Type 1 Diabetes Questionnaire Test Name (C163396)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C163396
+  codelist_name: Diabetes Distress Scale for Partners of Adults with Type 1 Diabetes
+    Questionnaire Test Name
+  codelist_submission_value: DDS03TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 36
+

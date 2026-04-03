@@ -1,0 +1,76 @@
+id: HRL-CT-0720
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: VFQ2TC (National Eye Institute Visual Functioning Questionnaire - 25
+  Version 2000 Self-Administered Format Questionnaire Test Code) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: VFQ2TC
+      operator: in
+      value:
+        - VFQ201
+        - VFQ202
+        - VFQ203
+        - VFQ204
+        - VFQ205
+        - VFQ206
+        - VFQ207
+        - VFQ208
+        - VFQ209
+        - VFQ210
+        - VFQ211
+        - VFQ212
+        - VFQ213
+        - VFQ214
+        - VFQ215
+        - VFQ215A
+        - VFQ215B
+        - VFQ215C
+        - VFQ216
+        - VFQ216A
+        - VFQ217
+        - VFQ218
+        - VFQ219
+        - VFQ220
+        - VFQ221
+        - VFQ222
+        - VFQ223
+        - VFQ224
+        - VFQ225
+        - VFQ2A01
+        - VFQ2A02
+        - VFQ2A03
+        - VFQ2A04
+        - VFQ2A05
+        - VFQ2A06
+        - VFQ2A07
+        - VFQ2A08
+        - VFQ2A09
+        - VFQ2A11A
+        - VFQ2A11B
+        - VFQ2A12
+        - VFQ2A13
+outcome:
+  message: Value not found in non-extensible codelist National Eye Institute Visual
+    Functioning Questionnaire - 25 Version 2000 Self-Administered Format Questionnaire
+    Test Code (C112455)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C112455
+  codelist_name: National Eye Institute Visual Functioning Questionnaire - 25 Version
+    2000 Self-Administered Format Questionnaire Test Code
+  codelist_submission_value: VFQ2TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 42
+

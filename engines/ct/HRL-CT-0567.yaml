@@ -1,0 +1,75 @@
+id: HRL-CT-0567
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: IPAQ02TC (International Physical Activity Questionnaire (November 2002)
+  Long Last 7 Days Telephone Format Questionnaire Test Code) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: IPAQ02TC
+      operator: in
+      value:
+        - IPA0201
+        - IPA0202
+        - IPA0203A
+        - IPA0203B
+        - IPA0204
+        - IPA0205A
+        - IPA0205B
+        - IPA0206
+        - IPA0207A
+        - IPA0207B
+        - IPA0208
+        - IPA0209A
+        - IPA0209B
+        - IPA0210
+        - IPA0211A
+        - IPA0211B
+        - IPA0212
+        - IPA0213A
+        - IPA0213B
+        - IPA0214
+        - IPA0215A
+        - IPA0215B
+        - IPA0216
+        - IPA0217A
+        - IPA0217B
+        - IPA0218
+        - IPA0219A
+        - IPA0219B
+        - IPA0220
+        - IPA0221A
+        - IPA0221B
+        - IPA0222
+        - IPA0223A
+        - IPA0223B
+        - IPA0224
+        - IPA0225A
+        - IPA0225B
+        - IPA0226A
+        - IPA0226B
+        - IPA0227A
+        - IPA0227B
+outcome:
+  message: Value not found in non-extensible codelist International Physical Activity
+    Questionnaire (November 2002) Long Last 7 Days Telephone Format Questionnaire
+    Test Code (C141669)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C141669
+  codelist_name: International Physical Activity Questionnaire (November 2002) Long
+    Last 7 Days Telephone Format Questionnaire Test Code
+  codelist_submission_value: IPAQ02TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 41
+

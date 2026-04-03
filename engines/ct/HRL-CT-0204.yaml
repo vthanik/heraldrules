@@ -1,0 +1,54 @@
+id: HRL-CT-0204
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CRQ02TN (Chronic Respiratory Questionnaire Self-Administered Standardized
+  Format Follow-Up Administration Version Questionnaire Test Name) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CRQ02TN
+      operator: in
+      value:
+        - CRQ02-Confident to Deal With Illness
+        - CRQ02-Control of Breathing Problems
+        - CRQ02-Embarrassed by Coughing
+        - CRQ02-Energy
+        - CRQ02-Fatigue
+        - CRQ02-Feel Relaxed and Free of Tension
+        - CRQ02-Feel Upset Diff Getting Breath
+        - CRQ02-Feel Upset, Worried or Depressed
+        - CRQ02-Feeling Emotional
+        - CRQ02-Feeling of Fear or Panic
+        - CRQ02-Felt Discouraged or Down
+        - CRQ02-Felt Frustrated or Impatient
+        - CRQ02-Felt Low in Energy
+        - CRQ02-Felt Restless, Tense or Uptight
+        - CRQ02-Felt Worn Out or Sluggish
+        - CRQ02-Happy, Satisfied or Pleased
+        - CRQ02-Participate in Social Activities
+        - CRQ02-Performing Chores
+        - CRQ02-Take Care of Basic Needs
+        - CRQ02-Walking
+outcome:
+  message: Value not found in non-extensible codelist Chronic Respiratory Questionnaire
+    Self-Administered Standardized Format Follow-Up Administration Version Questionnaire
+    Test Name (C120980)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C120980
+  codelist_name: Chronic Respiratory Questionnaire Self-Administered Standardized
+    Format Follow-Up Administration Version Questionnaire Test Name
+  codelist_submission_value: CRQ02TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 20
+

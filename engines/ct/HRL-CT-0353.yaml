@@ -1,0 +1,48 @@
+id: HRL-CT-0353
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SETTING (Environmental Setting) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SETTING
+      operator: in
+      value:
+        - CHILD CARE CENTER
+        - CLINIC
+        - FARM
+        - FIELD
+        - HEALTH FACILITY
+        - HOME
+        - HOSPITAL
+        - HOUSEHOLD ENVIRONMENT
+        - INSTITUTION
+        - MOTOR VEHICLE
+        - NON-HOUSEHOLD ENVIRONMENT
+        - NOT IN CLINIC
+        - OUTPATIENT CLINIC
+        - PRISON
+        - SCHOOL
+        - SHELTER
+        - SOCIAL SETTING
+        - WORKSITE
+outcome:
+  message: Value not found in extensible codelist Environmental Setting (C127262)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C127262
+  codelist_name: Environmental Setting
+  codelist_submission_value: SETTING
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 18
+

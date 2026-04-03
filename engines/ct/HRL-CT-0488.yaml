@@ -1,0 +1,42 @@
+id: HRL-CT-0488
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GASTRO (Gastrointestinal Test Name) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GASTRO
+      operator: in
+      value:
+        - Bowel Obstruction Indicator
+        - Bowel Perforation Indicator
+        - Diameter
+        - Elasticity
+        - Esophageal Obstruction Indicator
+        - Gastrointestinal System Examination
+        - Lymphovascular Invasion Indicator
+        - Number of Strictures
+        - Percent Area Covered By Ulcers
+        - Proton Density Fat Fraction
+        - Rectal Tumor to Anal Verge Distance
+        - Thickness
+outcome:
+  message: Value not found in extensible codelist Gastrointestinal Test Name (C128681)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C128681
+  codelist_name: Gastrointestinal Test Name
+  codelist_submission_value: GASTRO
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 12
+

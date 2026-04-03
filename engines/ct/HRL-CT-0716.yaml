@@ -1,0 +1,43 @@
+id: HRL-CT-0716
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: NEWS1TC (National Early Warning Score 2 Clinical Classification Test
+  Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: NEWS1TC
+      operator: in
+      value:
+        - NEWS101
+        - NEWS102
+        - NEWS103
+        - NEWS104
+        - NEWS104A
+        - NEWS105
+        - NEWS106
+        - NEWS107
+        - NEWS108
+        - NEWS109
+        - NEWS110
+        - NEWS111
+outcome:
+  message: Value not found in non-extensible codelist National Early Warning Score
+    2 Clinical Classification Test Code (C171355)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C171355
+  codelist_name: National Early Warning Score 2 Clinical Classification Test Code
+  codelist_submission_value: NEWS1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 12
+

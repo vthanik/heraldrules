@@ -1,0 +1,33 @@
+id: HRL-CT-1201
+version: 1
+status: Published
+standard: ADaM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TIMEFL (Time Imputation Flag) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TIMEFL
+      operator: in
+      value:
+        - H
+        - M
+        - S
+outcome:
+  message: Value not found in non-extensible codelist Time Imputation Flag (C81226)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C81226
+  codelist_name: Time Imputation Flag
+  codelist_submission_value: TIMEFL
+  extensible: no
+  parent_rule: CT2001
+  term_count: 3
+

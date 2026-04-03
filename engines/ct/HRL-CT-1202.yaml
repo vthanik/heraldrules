@@ -1,0 +1,39 @@
+id: HRL-CT-1202
+version: 1
+status: Published
+standard: ADaM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TPCATRS (Tobacco Product Category Response) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TPCATRS
+      operator: in
+      value:
+        - CIGARETTES
+        - CIGARS
+        - ELECTRONIC NICOTINE DELIVERY SYSTEMS (ENDS)
+        - HEATED TOBACCO PRODUCTS
+        - PIPE TOBACCO PRODUCTS
+        - ROLL-YOUR-OWN TOBACCO PRODUCTS
+        - SMOKELESS TOBACCO PRODUCTS
+        - WATERPIPE TOBACCO PRODUCTS
+outcome:
+  message: Value not found in extensible codelist Tobacco Product Category Response
+    (C204414)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204414
+  codelist_name: Tobacco Product Category Response
+  codelist_submission_value: TPCATRS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 8
+

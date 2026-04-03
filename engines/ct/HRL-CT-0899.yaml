@@ -1,0 +1,171 @@
+id: HRL-CT-0899
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RACEC (Race As Collected) must contain valid extensible codelist terms
+  (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RACEC
+      operator: in
+      value:
+        - ABORIGINAL AUSTRALIAN
+        - AFGHAN
+        - AFRICAN AMERICAN
+        - AFRICAN CARIBBEAN
+        - AFRICAN
+        - ALASKA NATIVE
+        - AMERICAN INDIAN OR ALASKA NATIVE
+        - AMERICAN INDIAN
+        - ARAB
+        - ARUBAN
+        - ASIAN AMERICAN
+        - ASIAN INDIAN
+        - ASIAN
+        - BAHAMIAN
+        - BANGLADESHI
+        - BARBADIAN
+        - BELIZEAN
+        - BERMUDAN
+        - BHUTANESE
+        - BLACK CENTRAL AMERICAN
+        - BLACK OR AFRICAN AMERICAN
+        - BLACK SOUTH AFRICAN
+        - BLACK SOUTH AMERICAN
+        - BLACK
+        - BOTSWANAN
+        - BRAZILIAN
+        - BURMESE
+        - CABO VERDEAN
+        - CAMBODIAN
+        - CANADIAN INDIAN
+        - CARIBBEAN INDIAN
+        - CARIBBEAN
+        - CAYMAN ISLANDER
+        - CENTRAL AMERICAN INDIAN
+        - CENTRAL ASIAN
+        - CHAMORRO
+        - CHINESE
+        - CHUUKESE
+        - COLOMBIAN
+        - COMORIAN
+        - CONGOLESE
+        - DOMINICA ISLANDER
+        - DOMINICAN
+        - EAST ASIAN
+        - EASTERN EUROPEAN
+        - EGYPTIAN
+        - ENGLISH
+        - ETHIOPIAN
+        - EUROPEAN
+        - FIJIAN
+        - FILIPINO
+        - FRENCH
+        - GERMAN
+        - GHANAIAN
+        - GREENLAND INUIT
+        - GUAMANIAN OR CHAMORRO
+        - GUAMANIAN
+        - GUATEMALAN
+        - GUYANESE
+        - HAITIAN
+        - HMONG
+        - HONDURAN
+        - INDONESIAN
+        - INUPIAT INUIT
+        - IRANIAN
+        - IRAQI
+        - IRISH
+        - ISRAELI
+        - ITALIAN
+        - IWO JIMAN
+        - JAMAICAN
+        - JAPANESE
+        - KHOISAN
+        - KOREAN
+        - LAOTIAN
+        - LATIN AMERICAN INDIAN
+        - LATIN AMERICAN
+        - LEBANESE
+        - LIBERIAN
+        - MALAGASY
+        - MALAYSIAN
+        - MALDIVIAN
+        - MAORI
+        - MARSHALLESE
+        - MAURITANIAN
+        - MEDITERRANEAN
+        - MELANESIAN
+        - MICRONESIAN
+        - MIDDLE EASTERN
+        - MONGOLIAN
+        - MOROCCAN
+        - NAMIBIAN
+        - NATIVE HAWAIIAN OR OTHER PACIFIC ISLANDER
+        - NATIVE HAWAIIAN
+        - NEPALESE
+        - NIGERIAN
+        - NORTH AFRICAN
+        - NORTHERN EUROPEAN
+        - NORWEGIAN
+        - NOT REPORTED
+        - OKINAWAN
+        - OTHER PACIFIC ISLANDER
+        - OTHER
+        - PAKISTANI
+        - PALAUAN
+        - POLISH
+        - POLYNESIAN
+        - RUSSIAN
+        - SALVADORAN
+        - SAMOAN
+        - SCOTTISH
+        - SIBERIAN ESKIMO
+        - SINGAPOREAN
+        - SOMALI
+        - SOUTH AMERICAN INDIAN
+        - SOUTH ASIAN
+        - SOUTHEAST ASIAN
+        - SOUTHERN AFRICAN COLOURED
+        - SRI LANKAN
+        - SUB-SAHARAN AFRICAN
+        - SURINAMESE
+        - SWEDISH
+        - SYRIAN
+        - TAHITIAN
+        - TAIWANESE
+        - THAI
+        - TOBAGOAN
+        - TONGAN
+        - TRINIDADIAN
+        - UNKNOWN
+        - VIETNAMESE
+        - WEST ASIAN
+        - WEST INDIAN
+        - WESTERN EUROPEAN
+        - WHITE CARIBBEAN
+        - WHITE CENTRAL AMERICAN
+        - WHITE SOUTH AMERICAN
+        - WHITE
+        - YEMENI
+        - YUPIK ESKIMO
+        - ZAIREAN
+outcome:
+  message: Value not found in extensible codelist Race As Collected (C128689)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C128689
+  codelist_name: Race As Collected
+  codelist_submission_value: RACEC
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 141
+

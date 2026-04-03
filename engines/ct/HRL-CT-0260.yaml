@@ -1,0 +1,35 @@
+id: HRL-CT-0260
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TCNTRL (Control Type Response) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TCNTRL
+      operator: in
+      value:
+        - ACTIVE
+        - DOSE RESPONSE
+        - NONE
+        - PLACEBO
+        - SHAM
+outcome:
+  message: Value not found in extensible codelist Control Type Response (C66785)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C66785
+  codelist_name: Control Type Response
+  codelist_submission_value: TCNTRL
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 5
+

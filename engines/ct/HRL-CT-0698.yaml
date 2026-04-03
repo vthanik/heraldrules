@@ -1,0 +1,104 @@
+id: HRL-CT-0698
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: UPD2TC (Movement Disorder Society Unified Parkinson's Disease Rating
+  Scale Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: UPD2TC
+      operator: in
+      value:
+        - UPD2101
+        - UPD2102
+        - UPD2103
+        - UPD2104
+        - UPD2105
+        - UPD2106
+        - UPD2107
+        - UPD2108
+        - UPD2109
+        - UPD2110
+        - UPD2111
+        - UPD2112
+        - UPD2113
+        - UPD2201
+        - UPD2202
+        - UPD2203
+        - UPD2204
+        - UPD2205
+        - UPD2206
+        - UPD2207
+        - UPD2208
+        - UPD2209
+        - UPD2210
+        - UPD2211
+        - UPD2212
+        - UPD2213
+        - UPD2301
+        - UPD2302
+        - UPD2303A
+        - UPD2303B
+        - UPD2303C
+        - UPD2303D
+        - UPD2303E
+        - UPD2304A
+        - UPD2304B
+        - UPD2305A
+        - UPD2305B
+        - UPD2306A
+        - UPD2306B
+        - UPD2307A
+        - UPD2307B
+        - UPD2308A
+        - UPD2308B
+        - UPD2309
+        - UPD2310
+        - UPD2311
+        - UPD2312
+        - UPD2313
+        - UPD2314
+        - UPD2315A
+        - UPD2315B
+        - UPD2316A
+        - UPD2316B
+        - UPD2317A
+        - UPD2317B
+        - UPD2317C
+        - UPD2317D
+        - UPD2317E
+        - UPD2318
+        - UPD23A
+        - UPD23B
+        - UPD23C
+        - UPD23C1
+        - UPD2401
+        - UPD2402
+        - UPD2403
+        - UPD2404
+        - UPD2405
+        - UPD2406
+        - UPD2DA
+        - UPD2DB
+        - UPD2HY
+outcome:
+  message: Value not found in non-extensible codelist Movement Disorder Society Unified
+    Parkinson's Disease Rating Scale Questionnaire Test Code (C100140)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100140
+  codelist_name: Movement Disorder Society Unified Parkinson's Disease Rating Scale
+    Questionnaire Test Code
+  codelist_submission_value: UPD2TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 72
+

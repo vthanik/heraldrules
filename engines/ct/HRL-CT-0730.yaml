@@ -1,0 +1,184 @@
+id: HRL-CT-0730
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: NPI1TC (Neuropsychiatric Inventory Questionnaire Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: NPI1TC
+      operator: in
+      value:
+        - NPI1A
+        - NPI1A01
+        - NPI1A02
+        - NPI1A03
+        - NPI1A04
+        - NPI1A05
+        - NPI1A06
+        - NPI1A07
+        - NPI1A08
+        - NPI1A09
+        - NPI1A10
+        - NPI1A11
+        - NPI1A12
+        - NPI1AFS
+        - NPI1B
+        - NPI1B01
+        - NPI1B02
+        - NPI1B03
+        - NPI1B04
+        - NPI1B05
+        - NPI1B06
+        - NPI1B07
+        - NPI1B08
+        - NPI1B09
+        - NPI1B10
+        - NPI1BFS
+        - NPI1C
+        - NPI1C01
+        - NPI1C02
+        - NPI1C03
+        - NPI1C04
+        - NPI1C05
+        - NPI1C06
+        - NPI1C07
+        - NPI1C08
+        - NPI1C09
+        - NPI1C10
+        - NPI1C11
+        - NPI1CFS
+        - NPI1D
+        - NPI1D01
+        - NPI1D02
+        - NPI1D03
+        - NPI1D04
+        - NPI1D05
+        - NPI1D06
+        - NPI1D07
+        - NPI1D08
+        - NPI1D09
+        - NPI1D10
+        - NPI1D11
+        - NPI1DFS
+        - NPI1DIST
+        - NPI1E
+        - NPI1E01
+        - NPI1E02
+        - NPI1E03
+        - NPI1E04
+        - NPI1E05
+        - NPI1E06
+        - NPI1E07
+        - NPI1E08
+        - NPI1E09
+        - NPI1E10
+        - NPI1EFS
+        - NPI1F
+        - NPI1F01
+        - NPI1F02
+        - NPI1F03
+        - NPI1F04
+        - NPI1F05
+        - NPI1F06
+        - NPI1F07
+        - NPI1F08
+        - NPI1F09
+        - NPI1F10
+        - NPI1FFS
+        - NPI1G
+        - NPI1G01
+        - NPI1G02
+        - NPI1G03
+        - NPI1G04
+        - NPI1G05
+        - NPI1G06
+        - NPI1G07
+        - NPI1G08
+        - NPI1G09
+        - NPI1G10
+        - NPI1G11
+        - NPI1GFS
+        - NPI1H
+        - NPI1H01
+        - NPI1H02
+        - NPI1H03
+        - NPI1H04
+        - NPI1H05
+        - NPI1H06
+        - NPI1H07
+        - NPI1H08
+        - NPI1H09
+        - NPI1H10
+        - NPI1HFS
+        - NPI1I
+        - NPI1I01
+        - NPI1I02
+        - NPI1I03
+        - NPI1I04
+        - NPI1I05
+        - NPI1I06
+        - NPI1I07
+        - NPI1I08
+        - NPI1I09
+        - NPI1I10
+        - NPI1IFS
+        - NPI1J
+        - NPI1J01
+        - NPI1J02
+        - NPI1J03
+        - NPI1J04
+        - NPI1J05
+        - NPI1J06
+        - NPI1J07
+        - NPI1J08
+        - NPI1J09
+        - NPI1J10
+        - NPI1JFS
+        - NPI1K
+        - NPI1K01
+        - NPI1K02
+        - NPI1K03
+        - NPI1K04
+        - NPI1K05
+        - NPI1K06
+        - NPI1K07
+        - NPI1K08
+        - NPI1K09
+        - NPI1K10
+        - NPI1K11
+        - NPI1KFS
+        - NPI1L
+        - NPI1L01
+        - NPI1L02
+        - NPI1L03
+        - NPI1L04
+        - NPI1L05
+        - NPI1L06
+        - NPI1L07
+        - NPI1L08
+        - NPI1L09
+        - NPI1L10
+        - NPI1L11
+        - NPI1LFS
+        - NPI1TOT
+outcome:
+  message: Value not found in non-extensible codelist Neuropsychiatric Inventory Questionnaire
+    Test Code (C100144)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100144
+  codelist_name: Neuropsychiatric Inventory Questionnaire Test Code
+  codelist_submission_value: NPI1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 153
+

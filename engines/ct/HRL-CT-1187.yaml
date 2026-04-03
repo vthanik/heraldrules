@@ -1,0 +1,33 @@
+id: HRL-CT-1187
+version: 1
+status: Published
+standard: ADaM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DATEFL (Date Imputation Flag) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DATEFL
+      operator: in
+      value:
+        - D
+        - M
+        - 'Y'
+outcome:
+  message: Value not found in non-extensible codelist Date Imputation Flag (C81223)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C81223
+  codelist_name: Date Imputation Flag
+  codelist_submission_value: DATEFL
+  extensible: no
+  parent_rule: CT2001
+  term_count: 3
+

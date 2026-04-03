@@ -1,0 +1,38 @@
+id: HRL-CT-0019
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ACCPARTY (Accountable Party) must contain valid extensible codelist terms
+  (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ACCPARTY
+      operator: in
+      value:
+        - CLINICAL STUDY SITE
+        - COURIER
+        - INVESTIGATOR SITE
+        - LABORATORY
+        - MANUFACTURER
+        - SPONSOR
+        - STORAGE FACILITY
+        - SUBJECT
+outcome:
+  message: Value not found in extensible codelist Accountable Party (C189265)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C189265
+  codelist_name: Accountable Party
+  codelist_submission_value: ACCPARTY
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 8
+

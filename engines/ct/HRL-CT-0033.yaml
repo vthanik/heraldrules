@@ -1,0 +1,41 @@
+id: HRL-CT-0033
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: APCH109OR (Acute Physiology and Chronic Health Evaluation II Clinical
+  Classification ORRES for APCH109 TN/TC) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: APCH109OR
+      operator: in
+      value:
+        - 0.6-1.4
+        - 1.5-1.9 and acute renal failure
+        - 1.5-1.9
+        - 2-3.4 and acute renal failure
+        - 2-3.4
+        - <0.6
+        - '>=3.5 and acute renal failure'
+        - '>=3.5'
+outcome:
+  message: Value not found in non-extensible codelist Acute Physiology and Chronic
+    Health Evaluation II Clinical Classification ORRES for APCH109 TN/TC (C182494)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C182494
+  codelist_name: Acute Physiology and Chronic Health Evaluation II Clinical Classification
+    ORRES for APCH109 TN/TC
+  codelist_submission_value: APCH109OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 8
+

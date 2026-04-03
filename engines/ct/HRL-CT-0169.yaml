@@ -1,0 +1,33 @@
+id: HRL-CT-0169
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: IECAT (Category of Inclusion/Exclusion) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: IECAT
+      operator: in
+      value:
+        - EXCLUSION
+        - INCLUSION
+outcome:
+  message: Value not found in non-extensible codelist Category of Inclusion/Exclusion
+    (C66797)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C66797
+  codelist_name: Category of Inclusion/Exclusion
+  codelist_submission_value: IECAT
+  extensible: no
+  parent_rule: CT2001
+  term_count: 2
+

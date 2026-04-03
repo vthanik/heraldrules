@@ -1,0 +1,54 @@
+id: HRL-CT-0203
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CRQ02TC (Chronic Respiratory Questionnaire Self-Administered Standardized
+  Format Follow-Up Administration Version Questionnaire Test Code) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CRQ02TC
+      operator: in
+      value:
+        - CRQ0201
+        - CRQ0202
+        - CRQ0203
+        - CRQ0204
+        - CRQ0205
+        - CRQ0206
+        - CRQ0207
+        - CRQ0208
+        - CRQ0209
+        - CRQ0210
+        - CRQ0211
+        - CRQ0212
+        - CRQ0213
+        - CRQ0214
+        - CRQ0215
+        - CRQ0216
+        - CRQ0217
+        - CRQ0218
+        - CRQ0219
+        - CRQ0220
+outcome:
+  message: Value not found in non-extensible codelist Chronic Respiratory Questionnaire
+    Self-Administered Standardized Format Follow-Up Administration Version Questionnaire
+    Test Code (C120981)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C120981
+  codelist_name: Chronic Respiratory Questionnaire Self-Administered Standardized
+    Format Follow-Up Administration Version Questionnaire Test Code
+  codelist_submission_value: CRQ02TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 20
+

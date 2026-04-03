@@ -1,0 +1,33 @@
+id: HRL-CT-0883
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PSFATSCD (Psoriasis Findings About Test Code) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PSFATSCD
+      operator: in
+      value:
+        - QOLIMP
+        - SEV
+outcome:
+  message: Value not found in extensible codelist Psoriasis Findings About Test Code
+    (C170447)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C170447
+  codelist_name: Psoriasis Findings About Test Code
+  codelist_submission_value: PSFATSCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 2
+

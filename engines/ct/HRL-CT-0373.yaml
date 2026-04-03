@@ -1,0 +1,76 @@
+id: HRL-CT-0373
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR35TC (European Organization for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Breast Cancer 42 Items Test Code) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR35TC
+      operator: in
+      value:
+        - EOR3531
+        - EOR3532
+        - EOR3533
+        - EOR3534
+        - EOR3535
+        - EOR3536
+        - EOR3537
+        - EOR3538
+        - EOR3539
+        - EOR3540
+        - EOR3541
+        - EOR3542
+        - EOR3543
+        - EOR3544
+        - EOR3545
+        - EOR3546
+        - EOR3547
+        - EOR3548
+        - EOR3549
+        - EOR3550
+        - EOR3551
+        - EOR3552
+        - EOR3553
+        - EOR3554
+        - EOR3555
+        - EOR3556
+        - EOR3557
+        - EOR3558
+        - EOR3559
+        - EOR3560
+        - EOR3561
+        - EOR3562
+        - EOR3563
+        - EOR3564
+        - EOR3565
+        - EOR3566
+        - EOR3567
+        - EOR3568
+        - EOR3569
+        - EOR3570
+        - EOR3571
+        - EOR3572
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Breast Cancer
+    42 Items Test Code (C219719)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219719
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Breast Cancer 42 Items Test Code
+  codelist_submission_value: EOR35TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 42
+

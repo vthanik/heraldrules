@@ -1,0 +1,37 @@
+id: HRL-CT-0979
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SDS01TN (Sheehan Disability Scale Questionnaire Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SDS01TN
+      operator: in
+      value:
+        - SDS01-Days Lost
+        - SDS01-Days Underproductive
+        - SDS01-Family Life/Home Responsibilities
+        - SDS01-No Work/Study - Unrelated Disorder
+        - SDS01-Social Life
+        - SDS01-Work/School
+outcome:
+  message: Value not found in non-extensible codelist Sheehan Disability Scale Questionnaire
+    Test Name (C111349)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C111349
+  codelist_name: Sheehan Disability Scale Questionnaire Test Name
+  codelist_submission_value: SDS01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

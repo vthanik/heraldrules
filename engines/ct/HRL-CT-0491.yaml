@@ -1,0 +1,36 @@
+id: HRL-CT-0491
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: GCGI01TN (General Clinical Global Impressions Questionnaire Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: GCGI01TN
+      operator: in
+      value:
+        - GCGI01-Global Disease Status of Pain
+        - GCGI01-Global Improvement of Pain
+        - GCGI01-Global Rating of Pain Medication
+        - GCGI01-Global Severity of Pain
+        - GCGI01-Pain Treatment Preference
+outcome:
+  message: Value not found in non-extensible codelist General Clinical Global Impressions
+    Questionnaire Test Name (C105137)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C105137
+  codelist_name: General Clinical Global Impressions Questionnaire Test Name
+  codelist_submission_value: GCGI01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

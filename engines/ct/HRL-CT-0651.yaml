@@ -1,0 +1,39 @@
+id: HRL-CT-0651
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MBFTSDTL (Microbiology Findings Test Details) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MBFTSDTL
+      operator: in
+      value:
+        - CELL COUNT
+        - COLONY COUNT
+        - DETECTION
+        - IDENTIFICATION
+        - INTERPRETATION
+        - QUANTIFICATION CYCLE NUMBER
+        - QUANTIFICATION
+        - VIRAL LOAD
+outcome:
+  message: Value not found in extensible codelist Microbiology Findings Test Details
+    (C174225)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C174225
+  codelist_name: Microbiology Findings Test Details
+  codelist_submission_value: MBFTSDTL
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 8
+

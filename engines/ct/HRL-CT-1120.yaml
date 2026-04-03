@@ -1,0 +1,46 @@
+id: HRL-CT-1120
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TSQM01TN (Treatment Satisfaction Questionnaire for Medication Version
+  1.4 Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TSQM01TN
+      operator: in
+      value:
+        - TSQM01-Certain Good Things Outweigh Bad
+        - TSQM01-Confident Med Is Good for You
+        - TSQM01-Convenient/Inconvenient Take Med
+        - TSQM01-Easy/Difficult to Plan Use of Med
+        - TSQM01-Easy/Difficult Use Medication
+        - TSQM01-Experience Any Side Effect at All
+        - TSQM01-How Bothersome Are Side Effects
+        - TSQM01-Interfere With Mental Function
+        - TSQM01-Interfere With Physical Health
+        - TSQM01-Med to Prevent/Treat Condition
+        - TSQM01-Satisfied/Dissatisfied With Med
+        - TSQM01-Side Effect Affect Overall Satisf
+        - TSQM01-Time Takes Med to Start Working
+        - TSQM01-Way Medication Relieves Symptoms
+outcome:
+  message: Value not found in non-extensible codelist Treatment Satisfaction Questionnaire
+    for Medication Version 1.4 Questionnaire Test Name (C132524)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C132524
+  codelist_name: Treatment Satisfaction Questionnaire for Medication Version 1.4 Questionnaire
+    Test Name
+  codelist_submission_value: TSQM01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 14
+

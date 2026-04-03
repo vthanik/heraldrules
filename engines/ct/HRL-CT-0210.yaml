@@ -1,0 +1,39 @@
+id: HRL-CT-0210
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CDR01TN (Clinical Dementia Rating Clinical Classification Test Name)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CDR01TN
+      operator: in
+      value:
+        - CDR01-Community Affairs
+        - CDR01-Global CDR
+        - CDR01-Home and Hobbies
+        - CDR01-Judgment and Problem Solving
+        - CDR01-Memory
+        - CDR01-Orientation
+        - CDR01-Personal Care
+        - CDR01-Sum of Boxes
+outcome:
+  message: Value not found in non-extensible codelist Clinical Dementia Rating Clinical
+    Classification Test Name (C101812)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C101812
+  codelist_name: Clinical Dementia Rating Clinical Classification Test Name
+  codelist_submission_value: CDR01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 8
+

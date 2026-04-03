@@ -1,0 +1,79 @@
+id: HRL-CT-0538
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HAQ01TC (Health Assessment Questionnaire Disability Index With Pain Visual
+  Analog Scale Questionnaire Test Code) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HAQ01TC
+      operator: in
+      value:
+        - HAQ0101
+        - HAQ0102
+        - HAQ0103
+        - HAQ0104
+        - HAQ0105
+        - HAQ0106
+        - HAQ0107
+        - HAQ0108
+        - HAQ0109
+        - HAQ0110
+        - HAQ0111
+        - HAQ0112
+        - HAQ0113
+        - HAQ0114
+        - HAQ0115
+        - HAQ0116
+        - HAQ0117
+        - HAQ0118
+        - HAQ0119
+        - HAQ0120
+        - HAQ0121
+        - HAQ0122
+        - HAQ0123
+        - HAQ0124
+        - HAQ0125
+        - HAQ0126
+        - HAQ0127
+        - HAQ0128
+        - HAQ0129
+        - HAQ0130
+        - HAQ0131
+        - HAQ0132
+        - HAQ0133
+        - HAQ0134
+        - HAQ0135
+        - HAQ0136
+        - HAQ0137
+        - HAQ0138
+        - HAQ0139
+        - HAQ0140
+        - HAQ0141
+        - HAQ0142
+        - HAQ0143
+        - HAQ0144
+        - HAQ0145
+        - HAQ0146
+outcome:
+  message: Value not found in non-extensible codelist Health Assessment Questionnaire
+    Disability Index With Pain Visual Analog Scale Questionnaire Test Code (C106667)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106667
+  codelist_name: Health Assessment Questionnaire Disability Index With Pain Visual
+    Analog Scale Questionnaire Test Code
+  codelist_submission_value: HAQ01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 46
+

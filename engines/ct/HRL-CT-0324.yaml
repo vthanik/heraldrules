@@ -1,0 +1,32 @@
+id: HRL-CT-0324
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DS01TC (Disease Steps Clinical Classification Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DS01TC
+      operator: in
+      value:
+        - DS0101
+outcome:
+  message: Value not found in non-extensible codelist Disease Steps Clinical Classification
+    Test Code (C112437)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C112437
+  codelist_name: Disease Steps Clinical Classification Test Code
+  codelist_submission_value: DS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

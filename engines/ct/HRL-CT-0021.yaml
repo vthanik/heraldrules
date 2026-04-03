@@ -1,0 +1,38 @@
+id: HRL-CT-0021
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: TPACN (Action Taken with Tobacco Product) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: TPACN
+      operator: in
+      value:
+        - NOT APPLICABLE
+        - PRODUCT INCREASED
+        - PRODUCT INTERRUPTED
+        - PRODUCT NOT CHANGED
+        - PRODUCT REDUCED
+        - PRODUCT STOPPED
+        - UNKNOWN
+outcome:
+  message: Value not found in extensible codelist Action Taken with Tobacco Product
+    (C204420)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204420
+  codelist_name: Action Taken with Tobacco Product
+  codelist_submission_value: TPACN
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 7
+

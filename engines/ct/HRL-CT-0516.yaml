@@ -1,0 +1,57 @@
+id: HRL-CT-0516
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: HAMD3TC (Hamilton Depression Rating Scale - 24 Item Clinical Classification
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: HAMD3TC
+      operator: in
+      value:
+        - HAMD301
+        - HAMD302
+        - HAMD303
+        - HAMD304
+        - HAMD305
+        - HAMD306
+        - HAMD307
+        - HAMD308
+        - HAMD309
+        - HAMD310
+        - HAMD311
+        - HAMD312
+        - HAMD313
+        - HAMD314
+        - HAMD315
+        - HAMD316
+        - HAMD317
+        - HAMD318
+        - HAMD319
+        - HAMD320
+        - HAMD321
+        - HAMD322
+        - HAMD323
+        - HAMD324
+        - HAMD325
+outcome:
+  message: Value not found in non-extensible codelist Hamilton Depression Rating Scale
+    - 24 Item Clinical Classification Test Code (C130245)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130245
+  codelist_name: Hamilton Depression Rating Scale - 24 Item Clinical Classification
+    Test Code
+  codelist_submission_value: HAMD3TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 25
+

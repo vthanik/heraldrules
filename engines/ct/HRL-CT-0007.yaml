@@ -1,0 +1,37 @@
+id: HRL-CT-0007
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SIXMW1TC (6 Minute Walk Functional Test Test Code) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SIXMW1TC
+      operator: in
+      value:
+        - SIXMW101
+        - SIXMW102
+        - SIXMW103
+        - SIXMW104
+        - SIXMW105
+        - SIXMW106
+outcome:
+  message: Value not found in non-extensible codelist 6 Minute Walk Functional Test
+    Test Code (C115388)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C115388
+  codelist_name: 6 Minute Walk Functional Test Test Code
+  codelist_submission_value: SIXMW1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

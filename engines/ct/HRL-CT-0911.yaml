@@ -1,0 +1,136 @@
+id: HRL-CT-0911
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RPTESTCD (Reproductive System Findings Test Code) must contain valid
+  extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RPTESTCD
+      operator: in
+      value:
+        - ABORTN
+        - ADLVRDTC
+        - ADRNRAGE
+        - AMENSIND
+        - BCMETHOD
+        - BLDSPNUM
+        - BLEEDIND
+        - BLISTIND
+        - BRFENDTC
+        - BRFSTDTC
+        - BRTHFTN
+        - BRTHLVN
+        - BRTHN
+        - BRTHPRN
+        - BRTHSTN
+        - BRTLVIND
+        - BRTMLIND
+        - BSBMPIND
+        - BTHGLIND
+        - CABNIND
+        - CHILDPOT
+        - CNDMIND
+        - CNDUFRQD
+        - CSRSCTN
+        - CURFETN
+        - DLVRMODE
+        - DSCHGIND
+        - ECCHYIND
+        - ECTPGIND
+        - ECTPREGN
+        - EDCDTC
+        - EDEMAIND
+        - EDLVRDTC
+        - EGESTAGE
+        - ENMPSDTC
+        - ERLYTRMN
+        - ERYTHIND
+        - FETLDTHN
+        - FMPSTDTC
+        - FSXIAGE
+        - FSXOAGE
+        - FULLTRMN
+        - FUNDHT
+        - GRAVIND
+        - HMPIND
+        - HSPGCIND
+        - INABOIND
+        - INABORTN
+        - INFRTIND
+        - INTP
+        - IRRMPIND
+        - LMPELTM
+        - LMPSTDTC
+        - MASSIND
+        - MENARAGE
+        - MENARIND
+        - MENFDUR
+        - MENFRD
+        - MENOAGE
+        - MENOSTAT
+        - MENREG
+        - MENSDUR
+        - MENSDURA
+        - MLRPGIND
+        - MRSXIDTC
+        - MSCRGIND
+        - MTENDIND
+        - PARITY
+        - PCONFIND
+        - PEELIND
+        - PPRTIND
+        - PRDCEIND
+        - PREGIND
+        - PREGNN
+        - PREGST
+        - PREMBTHN
+        - PRGENDTC
+        - PRGOUT
+        - PRVPREGN
+        - PSUSPIND
+        - PUBAGE
+        - PUBIND
+        - PUSTIND
+        - RASHIND
+        - RPEXAM
+        - SCBFCIND
+        - SEXABDUR
+        - SKGLAIND
+        - SPABORTN
+        - SRGSTIND
+        - STILBIND
+        - SXPRTFN
+        - SXPRTMN
+        - SXPRTNFN
+        - SXPRTNMN
+        - SXPRTNON
+        - SXPRTON
+        - THICK
+        - THLARAGE
+        - TNDRIND
+        - TRMPGCAT
+        - TSXPARTN
+        - ULCERIND
+        - VAGDLVN
+        - VBSFRQD
+outcome:
+  message: Value not found in extensible codelist Reproductive System Findings Test
+    Code (C106479)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106479
+  codelist_name: Reproductive System Findings Test Code
+  codelist_submission_value: RPTESTCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 105
+

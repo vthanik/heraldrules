@@ -1,0 +1,35 @@
+id: HRL-CT-0063
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: AJCCGRD (AJCC Tumor Grade Response) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: AJCCGRD
+      operator: in
+      value:
+        - AJCC GRADE 1
+        - AJCC GRADE 2
+        - AJCC GRADE 3
+        - AJCC GRADE 4
+        - AJCC GRADE X
+outcome:
+  message: Value not found in non-extensible codelist AJCC Tumor Grade Response (C135012)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C135012
+  codelist_name: AJCC Tumor Grade Response
+  codelist_submission_value: AJCCGRD
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

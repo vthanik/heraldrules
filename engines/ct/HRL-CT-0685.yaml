@@ -1,0 +1,35 @@
+id: HRL-CT-0685
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MVAI102OR (Modified Van Assche Index Clinical Classification ORRES for
+  MVAI102 TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MVAI102OR
+      operator: in
+      value:
+        - Absent
+        - Mild
+        - Pronounced
+outcome:
+  message: Value not found in non-extensible codelist Modified Van Assche Index Clinical
+    Classification ORRES for MVAI102 TN/TC (C190895)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C190895
+  codelist_name: Modified Van Assche Index Clinical Classification ORRES for MVAI102
+    TN/TC
+  codelist_submission_value: MVAI102OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 3
+

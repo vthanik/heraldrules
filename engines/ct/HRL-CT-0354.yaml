@@ -1,0 +1,33 @@
+id: HRL-CT-0354
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ESPARMCD (Environmental Storage Conditions Parameter Code) must contain
+  valid extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ESPARMCD
+      operator: in
+      value:
+        - HUMID
+        - TEMP
+outcome:
+  message: Value not found in extensible codelist Environmental Storage Conditions
+    Parameter Code (C204421)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C204421
+  codelist_name: Environmental Storage Conditions Parameter Code
+  codelist_submission_value: ESPARMCD
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 2
+

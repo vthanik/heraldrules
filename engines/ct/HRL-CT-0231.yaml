@@ -1,0 +1,64 @@
+id: HRL-CT-0231
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CSS08TC (Columbia-Suicide Severity Rating Scale Children's Since Last
+  Visit Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CSS08TC
+      operator: in
+      value:
+        - CSS0801
+        - CSS0801A
+        - CSS0802
+        - CSS0802A
+        - CSS0803
+        - CSS0803A
+        - CSS0804
+        - CSS0804A
+        - CSS0805
+        - CSS0805A
+        - CSS0806
+        - CSS0806A
+        - CSS0807
+        - CSS0807A
+        - CSS0808
+        - CSS0809
+        - CSS0809A
+        - CSS0810
+        - CSS0811
+        - CSS0812
+        - CSS0813
+        - CSS0813A
+        - CSS0814
+        - CSS0815
+        - CSS0815A
+        - CSS0816
+        - CSS0816A
+        - CSS0817
+        - CSS0818
+        - CSS0819A
+        - CSS0819B
+        - CSS0819C
+outcome:
+  message: Value not found in non-extensible codelist Columbia-Suicide Severity Rating
+    Scale Children's Since Last Visit Questionnaire Test Code (C111340)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C111340
+  codelist_name: Columbia-Suicide Severity Rating Scale Children's Since Last Visit
+    Questionnaire Test Code
+  codelist_submission_value: CSS08TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 32
+

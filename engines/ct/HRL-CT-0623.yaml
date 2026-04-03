@@ -1,0 +1,2504 @@
+id: HRL-CT-0623
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: LBTEST (Laboratory Test Name) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: LBTEST
+      operator: in
+      value:
+        - 1,25-Dihydroxyvitamin D2
+        - 1,25-Dihydroxyvitamin D3
+        - 1,25-DihydroxyvitD2+1,25-DihydroxyvitD3
+        - 1,3-Beta-D-Glucan
+        - 1,3-Butadiene
+        - 1,5-Anhydroglucitol
+        - 1-Aminonaphthalene
+        - 1-Hydroxymidazolam
+        - 11-Dehydro-Thromboxane B2 Excretion Rate
+        - 11-Dehydro-Thromboxane B2
+        - 11-Deoxycorticosteroids
+        - 11-Deoxycorticosterone
+        - 11-Deoxycortisol
+        - 11-Hydroxyandrostenedione
+        - 11-Hydroxyandrosterone
+        - 11-Hydroxyetiocholanolone
+        - 11-Ketoandrosterone
+        - 11-Ketoetiocholanolone
+        - 11-Ketotestosterone
+        - 11-Nor-Delta9-THC-9-Carboxylic Acid
+        - 17-Hydroxycorticosteroids
+        - 17-Hydroxypregnenolone
+        - 17-Hydroxyprogesterone
+        - 17-Ketogenic steroids
+        - 17-Ketosteroids
+        - 18-Hydroxycorticosterone
+        - 18-Hydroxycortisol
+        - 18-Hydroxydeoxycorticosterone
+        - 2,3-dihydroxypropyl Mercapturic Acid
+        - 2-5-Oligoadenylate Synthase 1
+        - 2-5-Oligoadenylate Synthase 2
+        - 2-5-Oligoadenylate Synthase 3
+        - 2-Aminonaphthalene
+        - 2-Cyanoethyl Mercapturic Acid Cysteine
+        - 2-Cyanoethyl Mercapturic Acid
+        - 2-Hydroxyethyl Mercapturic Acid
+        - 2-Hydroxyglutarate
+        - 2-Methylcitrate
+        - 20(S)-Hydroxycholesterol
+        - 21-Deoxycorticosterone
+        - 21-Deoxycortisol
+        - 22(R)-Hydroxycholesterol
+        - 22(S)-Hydroxycholesterol
+        - 24(R)-Hydroxycholesterol
+        - 24(S),25-Epoxycholesterol
+        - 24(S)-Hydroxycholesterol
+        - 24,25-Dihydroxyvitamin D3
+        - 25-Hydroxycholesterol
+        - 25-Hydroxyvit D2 + 25-Hydroxyvit D3
+        - 25-Hydroxyvitamin D2
+        - 25-Hydroxyvitamin D3
+        - 27-Hydroxycholesterol
+        - 3,4-Dihydroxyphenylacetic Acid
+        - 3,4-Dihydroxyphenylglycol
+        - 3,4-methylenedioxy-N-ethylamphetamine
+        - 3,4-methylenedioxyamphetamine
+        - 3,4-methylenedioxymethamphetamine
+        - 3-Alpha-Androstanediol Glucuronide
+        - 3-Hydroxy-1-Methyl-PropylmercapturicAcid
+        - 3-Hydroxypropyl Mercapturic Acid
+        - 3-Methoxytyramine
+        - 3-Methoxytyramine, Free
+        - 3-Methylfentanyl
+        - 3-Nitrotyrosine
+        - 3beta-Hydroxy-5-Cholestenoic Acid
+        - 4-Aminobiphenyl
+        - 4-Beta-Hydroxycholesterol
+        - 4-Hydroxymidazolam
+        - 4-Hydroxynonenal
+        - 4-Hydroxytestosterone
+        - 5 Prime Nucleotidase
+        - 5-Alpha Tetrahydrocortisol
+        - 5-fluoro PB-22 3-carboxyindole
+        - 5-Hydroxyindoleacetic Acid
+        - 5-Hydroxyindoleacetic Acid/Creatinine
+        - 5-HydroxyindoleaceticAcid Excretion Rate
+        - 6 Beta-Hydroxycortisol
+        - 6-Monoacetylmorphine
+        - 6a OH-tetrahydro-11-DeH-Corticosterone
+        - 6a OH-tetrahydro-11-Deoxycortisol
+        - 7-alpha-Hydroxy-4-cholesten-3-one
+        - 7-Ketocholesterol
+        - 7alpha,25-Dihydroxycholesterol
+        - 7alpha,27-Dihydroxycholesterol
+        - 7alpha-Hydroxycholesterol
+        - 7beta-Hydroxycholesterol
+        - 8-Hydroxy-2'-Deoxyguanosine
+        - 8-Hydroxydeoxyguanosine
+        - 8-Iso-PGF2alpha/Creatinine
+        - 8-Iso-Prostaglandin F2 Alpha
+        - 9-Hydroxyrisperidone
+        - A Fetoprotein L3/A Fetoprotein
+        - A Proliferation-Inducing Ligand
+        - AB-FUBINACA
+        - AB-PINACA
+        - Abnormal Cells
+        - Abnormal Cells/Leukocytes
+        - Abnormal Cells/Total Cells
+        - ABO A1 Subtype
+        - ABO Blood Group
+        - Acanthocytes
+        - Acanthocytes/Erythrocytes
+        - Acetaldehyde
+        - Acetaminophen
+        - Acetaminophen-Cysteine Adduct
+        - Acetaminophen-Glucuronide Adduct
+        - Acetaminophen-Sulfate Adduct
+        - Acetoacetic Acid Excretion Rate
+        - Acetoacetic Acid
+        - Acetone
+        - Acetyl-CoA Carboxylase
+        - Acetylcholine
+        - Acetylcholinesterase
+        - Acetylfentanyl
+        - Acid Alpha-Glucosidase
+        - Acid Labile Subunit
+        - Acid Phosphatase
+        - Acid Sphingomyelinase
+        - Acrolein
+        - Acrylonitrile
+        - Activated Coagulation Time
+        - Activated Partial Thromboplastin Time
+        - Activated Protein C Resistance
+        - Activated PTT/Standard
+        - Active Ghrelin
+        - Activin A
+        - Activin AB
+        - Activin B
+        - Acute Kidney Injury Risk Score
+        - Acyl Coenzyme A Oxidase
+        - Acylcarnitine
+        - Acylcarnitine/Carnitine, Free
+        - Acylglycine
+        - ADAM Metallopeptidase Domain 8
+        - ADAMTS13 Activity
+        - ADAMTS13
+        - ADB-PINACA
+        - Adenosine Diphosphate
+        - Adenosine Triphosphate
+        - Adiponectin
+        - Adiponectin, High Molecular Weight
+        - Adrenocorticotropic Hormone
+        - Adrenomedullin
+        - Aggrecan Ala-Arg-Gly-Ser Neoepitope
+        - Aggrecan Chondroitin Sulfate Epitope 846
+        - Agranular Neutrophils
+        - Alanine Aminopeptidase
+        - Alanine Aminotransferase
+        - Alanine
+        - Albumin Clearance
+        - Albumin Excretion Rate
+        - Albumin Index
+        - Albumin
+        - Albumin/Creatinine
+        - Albumin/Globulin
+        - Albumin/Total Protein
+        - Aldolase
+        - Aldosterone Excretion Rate
+        - Aldosterone
+        - Aldosterone/Renin Activity
+        - Aldrin Epoxidase
+        - Alfentanil
+        - Alk Phos, Biliary/Total Alk Phos
+        - Alk Phos, Bone/Total Alk Phos
+        - Alk Phos, Intestinal/Total Alk Phos
+        - Alk Phos, Liver + Bone/Total Alk Phos
+        - Alk Phos, Liver/Total Alk Phos
+        - Alk Phos, Macro/Total Alk Phos
+        - Alk Phos, Placental/Total Alk Phos
+        - Alkaline Phosphatase Excretion Rate
+        - Alkaline Phosphatase Isoenzyme
+        - Alkaline Phosphatase
+        - Alkaline Phosphatase/Creatinine
+        - Alloisoleucine
+        - Alpha Cortol
+        - Alpha Cortolone
+        - Alpha Fetoprotein Adj for Body Weight
+        - Alpha Fetoprotein L1
+        - Alpha Fetoprotein L2
+        - Alpha Fetoprotein L3
+        - Alpha Fetoprotein
+        - Alpha Globulin
+        - Alpha Glutathione-S-Transferase
+        - Alpha Hydroxybutyrate Dehydrogenase
+        - Alpha Melanocyte Stimulating Hormone
+        - Alpha Synuclein Protein
+        - Alpha Tocopherol
+        - Alpha Tocopherol/Vitamin E
+        - Alpha-1 Acid Glycoprotein
+        - Alpha-1 Antitrypsin Z-Polymer
+        - Alpha-1 Antitrypsin
+        - Alpha-1 Antitrypsin, Functional
+        - Alpha-1 Globulin
+        - Alpha-1 Globulin/Total Protein
+        - Alpha-1 Microglobulin Excretion Rate
+        - Alpha-1 Microglobulin
+        - Alpha-1 Microglobulin/Creatinine
+        - Alpha-2 Antiplasmin Activity
+        - Alpha-2 Antiplasmin
+        - Alpha-2 Globulin
+        - Alpha-2 Globulin/Total Protein
+        - Alpha-2 Macroglobulin
+        - Alpha-Aminoadipic Acid
+        - Alpha-Aminobutyric Acid
+        - Alpha-GST Excretion Rate
+        - Alpha-Hydroxyalprazolam
+        - Alpha-Hydroxytriazolam
+        - Alpha-Methylacyl Coenzyme A Racemase
+        - Alpha-Methylfentanyl
+        - Alpha-Methylphenethylamine
+        - Alpha-N-acetylglucosaminidase
+        - Alpha-Smooth Muscle Actin
+        - Alphaprodine
+        - Alprazolam
+        - ALT/AST
+        - Aluminum
+        - AM-2201
+        - AM694 N-5-hydroxypentyl
+        - AMACR mRNA
+        - Amino Acids
+        - Amitriptyline
+        - Ammonia
+        - Ammonium Biurate Crystals
+        - Ammonium Oxalate Crystals
+        - Ammonium
+        - Ammonium/Creatinine
+        - Amobarbital
+        - Amorphous Crystals
+        - Amorphous Phosphate Crystals
+        - Amorphous Sediment
+        - Amorphous Urate Crystals
+        - Amphetamine
+        - Amphiregulin
+        - Amylase
+        - Amylase, Pancreatic
+        - Amylase, Salivary
+        - Amyloid A
+        - Amyloid Alpha Precursor Protein
+        - Amyloid Beta 1-38
+        - Amyloid Beta 1-40
+        - Amyloid Beta 1-41
+        - Amyloid Beta 1-42
+        - Amyloid Beta 1-42/Amyloid Beta 1-40
+        - Amyloid Beta Precursor Protein
+        - Amyloid P
+        - Amyloid Probability Score
+        - Amyloid, Beta
+        - Anabasine
+        - Androstenediol
+        - Androstenedione
+        - Androsterone
+        - Angiopoietin 1
+        - Angiopoietin 2
+        - Angiopoietin-Related Protein 4
+        - Angiotensin Converting Enzyme
+        - Angiotensin I
+        - Angiotensin II
+        - Angiotensinogen
+        - Anileridine
+        - Anion Gap 3
+        - Anion Gap 4
+        - Anion Gap
+        - Anisochromia
+        - Anisocytes
+        - Anti-Double Stranded DNA IgG
+        - Anti-Factor Xa Activity
+        - Anti-Mullerian Hormone
+        - Anti-Single Stranded DNA IgG
+        - Antidepressants
+        - Antidiuretic Hormone
+        - Antiglobulin Test, Direct
+        - Antiglobulin Test, Indirect
+        - Antileukoproteinase
+        - Antithrombin Activity Actual/Control
+        - Antithrombin Activity
+        - Antithrombin Actual/Control
+        - Antithrombin Antigen
+        - Apolipoprotein A
+        - Apolipoprotein A/Apolipoprotein B
+        - Apolipoprotein A1
+        - Apolipoprotein A1/Apolipoprotein B
+        - Apolipoprotein A4
+        - Apolipoprotein A5
+        - Apolipoprotein AII
+        - Apolipoprotein B
+        - Apolipoprotein B/Apolipoprotein A1
+        - Apolipoprotein B100
+        - Apolipoprotein B48
+        - Apolipoprotein C2
+        - Apolipoprotein CI
+        - Apolipoprotein CIII
+        - Apolipoprotein D
+        - Apolipoprotein E
+        - Apolipoprotein E4
+        - Apolipoprotein H
+        - Apolipoprotein J
+        - Apolipoprotein J/Creatinine
+        - Aprobarbital
+        - APTT-LA Actual/Control
+        - APTT-LA Screen to Confirm Pct Difference
+        - Arachidonate 5-Lipoxygenase
+        - Arachidonic Acid
+        - Arginine
+        - Argininosuccinic Acid
+        - Aripiprazole
+        - Arsenic
+        - Asenapine
+        - Asparagine
+        - Aspartate Aminotransferase Isoenzyme C
+        - Aspartate Aminotransferase Isoenzyme M
+        - Aspartate Aminotransferase
+        - Aspartate Aminotransferase/Creatinine
+        - Aspartic Acid
+        - AST to Platelet Ratio Index
+        - AST/ALT
+        - AST/Creatine Kinase
+        - Asymmetric Dimethylarginine
+        - Atherogenic Index of Plasma
+        - Atrial Natriuretic Peptide
+        - Atypical Lymphocytes/Lymphocytes
+        - Auer Rods
+        - AXL Receptor Tyrosine Kinase
+        - Azurophilic Granules
+        - B-Cell Activating Factor
+        - B-lymphocyte Crossmatch
+        - B-Lymphocytes
+        - B-Lymphocytes/Leukocytes
+        - B-Lymphocytes/Lymphocytes
+        - B-Lymphocytes/Total Cells
+        - Bacteria
+        - Bacterial Casts
+        - Barbital
+        - Barbiturates
+        - Base Deficit
+        - Base Excess
+        - Basophilic Erythroblast
+        - Basophilic Metamyelocytes
+        - Basophilic Myelocytes
+        - Basophilic Myelocytes/Lymphocytes
+        - Basophilic Normoblast
+        - Basophilic Stippling
+        - Basophils Band Form
+        - Basophils Band Form/Leukocytes
+        - Basophils
+        - Basophils, Segmented
+        - Basophils/Leukocytes
+        - Basophils/Total Cells
+        - Bence-Jones Protein
+        - Benzene
+        - Benzo[a]pyrene
+        - Benzodiazepine
+        - Benzoylecgonine
+        - Benzylpiperazine
+        - Beta Alanine
+        - Beta Carotene
+        - Beta Catenin
+        - Beta Globulin
+        - Beta Globulin/Total Protein
+        - Beta+Gamma Tocopherol
+        - Beta-1 Globulin
+        - Beta-1 Globulin/Beta Protein
+        - Beta-1 Globulin/Total Protein
+        - Beta-1B Glycoprotein
+        - Beta-2 Globulin
+        - Beta-2 Globulin/Total Protein
+        - Beta-2 Microglobulin
+        - Beta-2 Microglobulin/Creatinine
+        - Beta-Actin
+        - Beta-Aminobutyric Acid
+        - Beta-cell Function
+        - Beta-defensin 2
+        - Beta-Hydroxybutyrate Excretion Rate
+        - Beta-Hydroxybutyrate
+        - Beta-Hydroxybutyrate/Acetoacetate
+        - Beta-Hydroxythiofentanyl
+        - Betacellulin
+        - Betaines
+        - Bicarbonate
+        - Bile Acid
+        - Bilirubin Crystals
+        - Bilirubin
+        - Bioavailable Testosterone
+        - Bite Cells
+        - Bite Cells/Erythrocytes
+        - Bizarre Platelets
+        - Blasts
+        - Blasts/Leukocytes
+        - Blasts/Total Cells
+        - Bleeding Time
+        - Blister Cell
+        - Bolasterone
+        - Boldenone
+        - Bone Specific Alkaline Phosphatase
+        - Brain Natriuretic Peptide
+        - Brain-Derived Neurotrophic Factor
+        - Brexpiprazole
+        - Brivaracetam
+        - Broad Casts
+        - Bromazepam
+        - Bruton's Tyrosine Kinase
+        - Bruton's Tyrosine Kinase, Free
+        - Bufotenine
+        - Buprenorphine
+        - Bupropion
+        - Burr Cells
+        - Butabarbital
+        - Butalbital
+        - Butorphanol
+        - Butylone
+        - Butyrylcholinesterase
+        - Butyrylfentanyl
+        - C Reactive Protein
+        - C-C Chemokine Receptor Type 5
+        - C-Peptide Excretion Rate
+        - C-peptide
+        - C-peptide/Creatinine
+        - C-Reactive Protein Metabolite
+        - C1M
+        - C2M
+        - C4G
+        - C4M
+        - C4Ma3
+        - C6M
+        - C6Ma3
+        - Cabot Rings
+        - Cadherin 1
+        - Cadmium
+        - Caffeine
+        - Calbindin
+        - Calcitonin
+        - Calcitriol
+        - Calcium - Phosphorus Product
+        - Calcium Carbonate Crystals
+        - Calcium Clearance
+        - Calcium Corrected for Albumin
+        - Calcium Corrected for Total Protein
+        - Calcium Corrected
+        - Calcium Excretion Rate
+        - Calcium Oxalate Crystals
+        - Calcium Oxalate Excretion Rate
+        - Calcium Phosphate Crystals
+        - Calcium Sulfate Crystals
+        - Calcium Sulphate
+        - Calcium
+        - Calcium, Ionized pH Adjusted
+        - Calcium, Ionized
+        - Calcium/Creatinine
+        - Calcium/Phosphorus
+        - Calprotectin
+        - Cancer Antigen 1
+        - Cancer Antigen 125
+        - Cancer Antigen 15-3
+        - Cancer Antigen 19-9
+        - Cancer Antigen 242
+        - Cancer Antigen 27-29
+        - Cancer Antigen 50
+        - Cancer Antigen 72-4
+        - Cannabinoid Metabolites
+        - Cannabinoids
+        - Cannabinoids, Synthetic
+        - Carb-Deficient Transferrin/Transferrin
+        - Carbamazepine
+        - Carbohydrate-Deficient Transferrin
+        - Carbon Dioxide
+        - Carbon Monoxide
+        - Carbonic Anhydrase 9
+        - Carboxyhemoglobin
+        - Carboxyhemoglobin/Total Hemoglobin
+        - Carboxypeptidase B2
+        - Carcinoembryonic Antigen
+        - Cariprazine
+        - Carisoprodol
+        - Carnitine Acetyl Transferase
+        - Carnitine Esters
+        - Carnitine Excretion Rate
+        - Carnitine
+        - Carnitine, Free
+        - Carotene
+        - Cartilage Oligomeric Matrix Protein
+        - Casein
+        - Casts
+        - Catecholamines
+        - Cathepsin D
+        - Cathinone
+        - CEA Cell Adhesion Molecule 1
+        - CEA Cell Adhesion Molecule 5
+        - Cell Morphology
+        - Cells
+        - Cellular Casts
+        - Cellularity
+        - Ceruloplasmin
+        - Charcot-Leyden Crystals
+        - Chemokine (C-C Motif) Ligand 1
+        - Chemokine (C-C Motif) Ligand 12
+        - Chemokine (C-C Motif) Ligand 13
+        - Chemokine (C-C Motif) Ligand 15
+        - Chemokine (C-C Motif) Ligand 16
+        - Chemokine (C-C Motif) Ligand 17
+        - Chemokine (C-C Motif) Ligand 18
+        - Chemokine (C-C Motif) Ligand 19
+        - Chemokine (C-C Motif) Ligand 2 Excr Rate
+        - Chemokine (C-C Motif) Ligand 20
+        - Chemokine (C-C Motif) Ligand 21
+        - Chemokine (C-C Motif) Ligand 23
+        - Chemokine (C-C Motif) Ligand 25
+        - Chemokine (C-C Motif) Ligand 7
+        - Chemokine (C-C Motif) Ligand 8
+        - Chemokine (C-X-C Motif) Ligand 1
+        - Chemokine (C-X-C Motif) Ligand 10
+        - Chemokine (C-X-C Motif) Ligand 11
+        - Chemokine (C-X-C Motif) Ligand 12
+        - Chemokine (C-X-C Motif) Ligand 13
+        - Chemokine (C-X-C Motif) Ligand 2
+        - Chemokine (C-X-C Motif) Ligand 3
+        - Chemokine (C-X-C Motif) Ligand 4
+        - Chemokine (C-X-C Motif) Ligand 6
+        - Chemokine (C-X-C Motif) Ligand 7
+        - Chemokine (C-X-C Motif) Ligand 9
+        - Chemokine (C-X-C Motif) Receptor 3
+        - Chemokine (C-X-C Motif) Receptor 4
+        - Chemokine (C-X3-C Motif) Ligand 1
+        - Chenodeoxycholate Compounds
+        - Chenodeoxycholate
+        - Chitotriosidase
+        - Chloral Hydrate
+        - Chlordiazepoxide
+        - Chloride Clearance
+        - Chloride Excretion Rate
+        - Chloride
+        - Chloride/Creatinine
+        - Chlorphentermine
+        - Chlorpromazine
+        - Cholate Compounds
+        - Cholate
+        - Cholecystokinin
+        - Cholestanol
+        - Cholesterol Crystals
+        - Cholesterol Sulfate
+        - Cholesterol
+        - Cholesterol/HDL-Cholesterol
+        - Cholesteryl Ester Transfer Protein Act
+        - Cholesteryl Ester Transfer Protein
+        - Cholinesterase
+        - Choriogonadotropin Adj for Maternal Wt
+        - Choriogonadotropin Beta
+        - Choriogonadotropin Beta, Free
+        - Choriogonadotropin
+        - Choriogonadotropin, Intact
+        - Chromogranin A
+        - Chylomicron Triglyceride
+        - Chylomicrons
+        - Chymotrypsin
+        - Ciliary Neurotrophic Factor
+        - Circulating Endothelial Cells
+        - Circulating Immune Complexes
+        - Circulating Tumor Cells
+        - Circulating Tumor Cells, Apoptotic
+        - Circulating Tumor Cells, Traditional
+        - Citalopram
+        - Citrate Excretion Rate
+        - Citrate
+        - Citrate/Creatinine
+        - Citrulline
+        - Citrulline/Creatinine
+        - CK, Macromolecular Type 1/Total CK
+        - CK, Macromolecular Type 2/Total CK
+        - Clarity
+        - Clobazam
+        - Clonazepam and/or Metabolites
+        - Clonazepam
+        - Clorazepate
+        - Clostebol
+        - Clot Firmness
+        - Clot Formation Alpha Angle
+        - Clot Formation Time
+        - Clot Initiation Time
+        - Clot Lysis Index
+        - Clot Lysis Time
+        - Clot Retraction Time
+        - Clot Retraction
+        - Clue Cells
+        - Coagulation Index
+        - Cocaethylene
+        - Cocaine Amphetamine-Reg Transcript Prot
+        - Cocaine and/or Metabolites
+        - Cocaine Benzoylecgonine Ecgonine
+        - Cocaine Metabolites
+        - Cocaine
+        - Codeine
+        - Coefficient of Fat Absorption
+        - Coefficient of Nitrogen Absorption
+        - Collagen III Neo-Peptide C3M
+        - Collagen Type IV
+        - Color
+        - Columnar Epi Cells/Non-Squam Epi Cells
+        - Complement Ba
+        - Complement Bb
+        - Complement C1 Esterase Inhibitor
+        - Complement C1q
+        - Complement C2
+        - Complement C2, Free
+        - Complement C2, Free/Complement C2
+        - Complement C3
+        - Complement C3a DesArg
+        - Complement C3a
+        - Complement C3b
+        - Complement C3c
+        - Complement C4
+        - Complement C4a
+        - Complement C4d
+        - Complement C5
+        - Complement C5, Free
+        - Complement C5a
+        - Complement C5b-9
+        - Complement CH100
+        - Complement CH50
+        - Complement Factor H
+        - Complement Factor H-Related Protein 1
+        - Complement Total
+        - Connective Tissue Growth Factor
+        - Consistency
+        - Copeptin
+        - Copper
+        - Corpuscular Hemoglobin Content
+        - Corpuscular HGB Conc Distribution Width
+        - Corpuscular HGB Concentration Mean
+        - Corticosterone
+        - Corticosterone/Creatinine
+        - Corticotropin Releasing Hormone
+        - Cortisol
+        - Cortisol, Free Excretion Rate
+        - Cortisol, Free
+        - Cortisol/Creatinine
+        - Cotinine Glucuronide
+        - Cotinine
+        - Cotinine, Free
+        - CPa9-HNE
+        - Creatine Kinase BB
+        - Creatine Kinase BB/Total Creatine Kinase
+        - Creatine Kinase MB
+        - Creatine Kinase MB/Total Creatine Kinase
+        - Creatine Kinase MM
+        - Creatine Kinase MM/Total Creatine Kinase
+        - Creatine Kinase
+        - Creatinine Clearance Adjusted for BSA
+        - Creatinine Clearance
+        - Creatinine Clearance, Estimated
+        - Creatinine Excretion Rate
+        - Creatinine
+        - Crenated Cells
+        - Crotonaldehyde
+        - Cryofibrinogen
+        - Cryoglobulin Volume/Serum Volume
+        - Cryoglobulin
+        - Crystals
+        - CSF IgG Index
+        - Cyclic Adenosine 3,5-Monophosphate
+        - Cyclic Adenosine Monophosphate/Creat
+        - Cyclic ADP Ribose Hydrolase 1
+        - Cyclic Guanosine Monophosphate
+        - Cylindroid Casts
+        - Cystathionine Beta-Synthase
+        - Cystathionine
+        - Cystatin B
+        - Cystatin C
+        - Cystatin C/Creatinine
+        - Cysteine
+        - Cysteinyl Leukotriene Receptor 1
+        - Cystine Crystals
+        - Cystine
+        - Cytidine-Uridine Monophosphate Kinase 2
+        - Cytochrome P450 2A6
+        - Cytochrome P450 2C9
+        - Cytokeratin 18 Fragment
+        - Cytokeratin 19 Fragment 21-1
+        - Cytomegalovirus-Induced Gene 5 Protein
+        - Cytoplasmic Basophilia Neutrophil
+        - D-Dimer
+        - D-Norpseudoephedrine
+        - Dacryocytes
+        - DEAD Box Protein 58
+        - Decanoylcarnitine
+        - Decorin
+        - Degenerated Leukocytes
+        - Dehydroepiandrosterone Sulfate
+        - Dehydroepiandrosterone
+        - Delta Aminolevulinate
+        - Delta Aminolevulinate/Creatinine
+        - Delta Bilirubin
+        - Density
+        - Deoxycholate
+        - Deoxyhemoglobin
+        - Deoxyhemoglobin/Total Hemoglobin
+        - Deoxypyridinoline
+        - Deoxypyridinoline/Creatinine
+        - Deoxyribonucleic Acid
+        - Desipramine
+        - Desmethylcitalopram
+        - Desmosine
+        - Desomorphine
+        - Desoxymethyltestosterone
+        - Desvenlafaxine
+        - Dextroamphetamine
+        - Di-Desmethylcitalopram
+        - Diazepam
+        - Dicalcium Phosphate Crystals
+        - Dickkopf WNT Signaling Path Inhibitor 1
+        - Diethylpropion
+        - Dihydrocodeine
+        - Dihydrotestosterone
+        - Dilute Russell's Viper Venom Time Ratio
+        - Dilute Russell's Viper Venom Time
+        - Dimethylglycine
+        - Dimorphic Erythrocyte Population
+        - Dipeptidyl Peptidase-4
+        - Diphenoxylate
+        - Dipipanone
+        - Direct Bilirubin
+        - Direct Bilirubin/Bilirubin
+        - DNA Fragmentation Index
+        - Dohle Bodies
+        - Dopamine Excretion Rate
+        - Dopamine
+        - Doxepin and/or Metabolites
+        - Doxepin
+        - Drostanolone
+        - Drug Crystals
+        - Drug Screen
+        - dRVVT Screen to Confirm Pct Difference
+        - DRVVT Screen to Confirm Ratio
+        - DTPA Clearance
+        - DU-PAN-2
+        - Duloxetine
+        - Dysmorphic Erythrocytes
+        - Dysmorphic Erythrocytes/Erythrocytes
+        - Dystrophin Actual/Control
+        - Dystrophin
+        - E-Selectin
+        - E3 Ubiquitin-Protein Ligase TRIM33
+        - Ecarin Clotting Time
+        - Eccentrocytes
+        - EDDP
+        - EDTA Clearance
+        - Elastin
+        - Elliptocytes
+        - Elongator Acetyltransferase Complex Sub3
+        - Endogenous Thrombin Potential
+        - Endostatin
+        - Endothelin-1
+        - Endothelin-3
+        - Eosinophil Cationic Protein
+        - Eosinophil-Derived Neurotoxin
+        - Eosinophilic Metamyelocytes
+        - Eosinophilic Myelocytes
+        - Eosinophilic Myelocytes/Lymphocytes
+        - Eosinophils Band Form
+        - Eosinophils Band Form/Leukocytes
+        - Eosinophils
+        - Eosinophils, Segmented
+        - Eosinophils/Leukocytes
+        - Eosinophils/Non-Squam Epi Cells
+        - Eosinophils/Total Cells
+        - Eotaxin-1
+        - Eotaxin-2
+        - Eotaxin-3
+        - Ephedrine
+        - Epi Cells/Non-Squam Epi Cells
+        - Epidermal Growth Factor Receptor
+        - Epidermal Growth Factor Receptor, Free
+        - Epidermal Growth Factor
+        - Epimerized Ursodeoxycholate
+        - Epinephrine Excretion Rate
+        - Epinephrine
+        - Epiregulin
+        - Epith Neutrophil-Activating Peptide 78
+        - Epithelial Casts
+        - Epithelial Cell Clumps
+        - Epithelial Cells
+        - Epithelial Cells/Total Cells
+        - Epithelial Stromal Interaction Protein 1
+        - Ery. Mean Corpuscular Hemoglobin
+        - Ery. Mean Corpuscular HGB Concentration
+        - Ery. Mean Corpuscular Volume
+        - Erythrocyte Agglutination
+        - Erythrocyte Cell Clumps
+        - Erythrocyte Cell Morphology
+        - Erythrocyte Deformability
+        - Erythrocyte Fragment
+        - Erythrocyte Ghosts
+        - Erythrocyte Inclusion Bodies
+        - Erythrocyte Membrane Rigidity
+        - Erythrocyte Protoporphyrin, Free
+        - Erythrocyte Sedimentation Rate
+        - Erythrocytes Distribution Width
+        - Erythrocytes
+        - Erythroferrone
+        - Erythroid Cells
+        - Erythroid Cells/Nucleated Cells
+        - Erythroid Cells/Total Cells
+        - Erythroid Maturation Index
+        - Erythroid Maturation Pool
+        - Erythroid Precursor Cells
+        - Erythroid Precursor Cells/Total Cells
+        - Erythroid Proliferation Index
+        - Erythroid Proliferation Pool
+        - Erythropoietin
+        - Escitalopram
+        - Estazolam
+        - Estradiol
+        - Estradiol, Free
+        - Estradiol, Free/Estradiol
+        - Estriol
+        - Estriol, Free
+        - Estrogen Receptor
+        - Estrogen
+        - Estrone Sulfate
+        - Estrone
+        - Ethanol
+        - Ethchlorvynol
+        - Ethinamate
+        - Ethyl Glucuronide Ethyl Sulfate
+        - Ethyl Glucuronide
+        - Ethyl Sulfate
+        - Ethylamphetamine
+        - Ethylestrenol
+        - Ethylmorphine
+        - ETP Area Under Curve
+        - ETP Lag Time Relative
+        - ETP Lag Time
+        - ETP Peak Height Relative
+        - ETP Peak Height
+        - ETP Time to Peak Relative
+        - ETP Time to Peak
+        - Extracell Newly Ident RAGE Bind Protein
+        - Ezogabine
+        - F2-Isoprostane
+        - Factor II
+        - Factor III
+        - Factor IX Activity Actual/Control
+        - Factor IX Activity
+        - Factor IX
+        - Factor V Activity Actual/Control
+        - Factor V Activity
+        - Factor V Leiden
+        - Factor V
+        - Factor VII Activity Actual/Control
+        - Factor VII Activity
+        - Factor VII
+        - Factor VIIa Activity
+        - Factor VIII Activity Actual/Control
+        - Factor VIII Activity
+        - Factor VIII
+        - Factor X Activity Actual/Control
+        - Factor X Activity
+        - Factor X Actual/Control
+        - Factor X
+        - Factor XI Activity
+        - Factor XI
+        - Factor XII Activity
+        - Factor XII
+        - Factor XIII Activity
+        - Factor XIII
+        - Factor XIV Activity Actual/Control
+        - Factor XIV Activity
+        - Factor XIV Actual/Control
+        - Factor XIV
+        - Fas Cell Surface Death Receptor
+        - Fas Ligand
+        - Fat Bodies, Oval
+        - Fat Droplet
+        - Fat
+        - Fat/Total Solids
+        - Fatty Acid Binding Protein 1
+        - Fatty Acid Binding Protein 3
+        - Fatty Acid Binding Protein 4
+        - Fatty Acids, Very Long Chain
+        - Fatty Casts
+        - Fatty Liver Index
+        - Fencamfamin
+        - Fenfluramine
+        - Fenproporex
+        - Fentanyl
+        - Ferritin Heavy Chain
+        - Ferritin Light Chain
+        - Ferritin
+        - Fibrin Degradation Products
+        - Fibrin Monomer
+        - Fibrinogen
+        - Fibrinogen, Functional
+        - Fibroblast Growth Factor 19
+        - Fibroblast Growth Factor 21
+        - Fibroblast Growth Factor 23
+        - Fibroblast Growth Factor 23, C-Terminal
+        - Fibroblast Growth Factor 23, Intact
+        - Fibroblast Growth Factor 9
+        - Fibroblast Growth Factor Basic Form
+        - Fibronectin, Cellular
+        - Fibronectin, Fetal
+        - Fibronectin, Maternal + Fetal
+        - Fibronectin, Plasma
+        - Fibrosis-4 Index
+        - FibroTest Score
+        - Ficolin-3
+        - Fluid Output
+        - Fluid Output, Estimated
+        - Flunitrazepam and/or Metabolites
+        - Flunitrazepam
+        - Fluoride
+        - Fluoxetine
+        - Fluoxymesterone
+        - Fluphenazine
+        - Flurazepam and/or Metabolites
+        - Flurazepam
+        - Fluvoxamine
+        - FMS-like Receptor Tyrosine Kinase 3
+        - FMS-like Tyrosine Kinase 3 Ligand
+        - Folate Hydrolase mRNA
+        - Follicle Stimulating Hormone
+        - Formaldehyde
+        - Fraction of Inspired Oxygen
+        - Fractional Calcium Excretion
+        - Fractional Chloride Excretion
+        - Fractional Iron Absorption
+        - Fractional Magnesium Excretion
+        - Fractional Phosphorus Excretion
+        - Fractional Potassium Excretion
+        - Fractional Sodium Excretion
+        - Free Androgen Index
+        - Free Fatty Acid
+        - Free Fatty Acid, Saturated
+        - Free Fatty Acid, Unsaturated
+        - Free Glycerol
+        - Fructosamine Corrected for Total Protein
+        - Fructosamine
+        - Fructose
+        - Fungi
+        - Fungi, Filamentous
+        - Fungi, Yeast-Like
+        - Furanylfentanyl
+        - Furazabol
+        - G6PD-Deficient Erythrocytes
+        - G6PD-Deficient Erythrocytes/Erythrocytes
+        - Galactose Elimination Capacity
+        - Galactose Mutarotase
+        - Galactose
+        - Galactose-1-Phos Uridylyltransferase
+        - Galactose-1-Phosphate
+        - Galactose-Deficient IgA1
+        - Galanin
+        - Galectin-3 Binding Protein
+        - Galectin-3
+        - Gamma Globulin
+        - Gamma Globulin/Total Protein
+        - Gamma Glutamyl Transferase
+        - Gamma Glutamyl Transferase/Creatinine
+        - Gamma Tocopherol
+        - Gamma-Aminobutyric Acid
+        - Gamma-Hydroxybutyrate
+        - GammaGlutamyl Transferase Excretion Rate
+        - Ganglioside GM3
+        - Gastrin
+        - GFR from B-2 Microglobulin Adj for aBSA
+        - GFR from B-2 Microglobulin Adj for BSA
+        - GFR from Beta-Trace Protein Adj for aBSA
+        - GFR from Beta-Trace Protein Adj for BSA
+        - GFR from Creat and UreaN Adj aBSA
+        - GFR from Creat and UreaN Adj BSA
+        - GFR from Creat,UreaN,Alb Adj aBSA
+        - GFR from Creat,UreaN,Alb Adj BSA
+        - GFR from Creatinine Adjusted for aBSA
+        - GFR from Creatinine Adjusted for BSA
+        - GFR from Cystatin C Adjusted for aBSA
+        - GFR from Cystatin C Adjusted for BSA
+        - GFR from Cystatin C and Creat Adj aBSA
+        - GFR from Cystatin C and Creat Adj BSA
+        - GFR, Estimated Indexed
+        - GFR, Estimated Non-Indexed
+        - Ghrelin
+        - Giant Neutrophils
+        - Giant Platelets
+        - Glial Fibrillary Acidic Protein
+        - Glitter Cells
+        - Globotriaosylceramide
+        - Globotriaosylsphingosine
+        - Globulin
+        - Globulin/Creatinine
+        - Glomerular Filtration Rate Adj for BSA
+        - Glomerular Filtration Rate
+        - Glomerular Filtration Rate, Estimated
+        - Glucagon
+        - Glucagon-Like Peptide-1
+        - Glucagon-Like Peptide-1, Active Form
+        - Glucagon-Like Peptide-1, Inactive Form
+        - Glucopsychosine
+        - Glucose Clearance
+        - Glucose Excretion Rate
+        - Glucose Management Indicator
+        - Glucose
+        - Glucose, Estimated Average
+        - Glucose, Radiolabeled/Glucose
+        - Glucose-6-Phosphate Dehydrogenase Act
+        - Glucose-6-Phosphate Dehydrogenase
+        - Glucose-dep Insulinotropic Pep, Intact
+        - Glucose/Creatinine
+        - Glucosylceramidase Beta
+        - Glucosylceramide
+        - Glucuronidase, Alpha
+        - Glucuronidase, Beta
+        - Glucuronidated Bilirubin
+        - Glutamate Dehydrogenase
+        - Glutamate
+        - Glutamic Acid Decarboxylase 1
+        - Glutamic Acid Decarboxylase 2
+        - Glutamine
+        - Glutathione S-Transferase, Alpha/Creat
+        - Glutathione S-Transferase, Pi
+        - Glutathione S-Transferase, Theta
+        - Glutathione S-Transferase, Total
+        - Glutathione S-Transferase, Y1
+        - Glutathione-S-Transferase/Creatinine
+        - Gluten Immunogenic Peptide
+        - Glutethimide
+        - Glycated Albumin
+        - Glycated Albumin/Albumin
+        - Glycated Ferritin
+        - Glycated Ferritin/Ferritin
+        - Glyceraldehyde-3-Phosphate Dehydrogenase
+        - Glycerol
+        - Glycine
+        - Glycine/Creatinine
+        - Glycochenodeoxycholate
+        - Glycocholate
+        - Glycogen Phosphorylase Isoenzyme BB
+        - Glycogen
+        - Glycolithocholate
+        - Glycosylated Ferritin
+        - Glycosylated Ferritin/Ferritin
+        - Glycoursodeoxycholate
+        - Glycylproline Dipeptidyl Aminopeptidase
+        - Gold
+        - Gonadotropin Releasing Hormone
+        - Granular Casts
+        - Granular Coarse Casts
+        - Granular Fine Casts
+        - Granulin
+        - Granulocyte Colony Stimulating Factor
+        - Granulocyte Macrophage Colony Stm Factor
+        - Granulocytes Band Form
+        - Granulocytes Band Form/Total Cells
+        - Granulocytes Segmented
+        - Granulocytes Segmented/Total Cells
+        - Granulocytes
+        - Granulocytes/Leukocytes
+        - Granulocytes/Total Cells
+        - Granzyme B
+        - Growth Differentiation Factor 11
+        - Growth Differentiation Factor 15
+        - Growth Differentiation Factor 2
+        - Growth Differentiation Factor 8
+        - Growth Hormone Binding Protein
+        - Growth Hormone Inhibiting Hormone
+        - Growth Hormone Releasing Hormone
+        - Growth Regulated Oncogene
+        - Guanine Deaminase
+        - Guanylate Binding Protein 1
+        - Guanylate Binding Protein 2
+        - Hairy Cells
+        - Hairy Cells/Leukocytes
+        - Hairy Cells/Lymphocytes
+        - Hairy Cells/Total Cells
+        - Halazepam
+        - Hallucinogen
+        - Haloperidol
+        - Haptoglobin
+        - HCT Corrected Reticulocytes/Erythrocytes
+        - HDL Cholesterol
+        - HDL Cholesterol/LDL Cholesterol
+        - HDL Cholesterol/Total Cholesterol
+        - HDL Particle Size
+        - HDL Phospholipid
+        - HDL+LDL Cholesterol
+        - HDL-Cholesterol Subclass 2
+        - HDL-Cholesterol Subclass 3
+        - Heat Shock Protein 70
+        - Heat Shock Protein 90 Alpha
+        - Hect Domain and RLD 5
+        - Heinz Bodies
+        - Heinz Bodies/Erythrocytes
+        - Helicase MOV-10 Protein
+        - Helmet Cells
+        - Hematocrit Corrected Reticulocytes
+        - Hematocrit
+        - Hemoglobin A
+        - Hemoglobin A/Total Hemoglobin
+        - Hemoglobin A1/Total Hemoglobin
+        - Hemoglobin A1A
+        - Hemoglobin A1B
+        - Hemoglobin A1C
+        - Hemoglobin A1C/Hemoglobin
+        - Hemoglobin A2 Prime/Total Hemoglobin
+        - Hemoglobin A2
+        - Hemoglobin A2/Total Hemoglobin
+        - Hemoglobin B
+        - Hemoglobin Barts/Total Hemoglobin
+        - Hemoglobin C Crystals
+        - Hemoglobin C
+        - Hemoglobin C/Total Hemoglobin
+        - Hemoglobin Casts
+        - Hemoglobin D/Total Hemoglobin
+        - Hemoglobin Distribution Width
+        - Hemoglobin E/Total Hemoglobin
+        - Hemoglobin F
+        - Hemoglobin F/Total Hemoglobin
+        - Hemoglobin Fraction Pattern
+        - Hemoglobin G Coushatta/Total Hemoglobin
+        - Hemoglobin H Inclusion Bodies
+        - Hemoglobin H/Total Hemoglobin
+        - Hemoglobin Lepore/Total Hemoglobin
+        - Hemoglobin O-Arab/Total Hemoglobin
+        - Hemoglobin S
+        - Hemoglobin S/Total Hemoglobin
+        - Hemoglobin Tetramer
+        - Hemoglobin Variants
+        - Hemoglobin
+        - Hemoglobin, Free
+        - Hemolytic Index
+        - Hemosiderin
+        - Heparin Binding EGF Like Growth Factor
+        - Heparin
+        - Heparin-Binding Protein
+        - Hepatocyte Growth Factor Receptor
+        - Hepatocyte Growth Factor Receptor, Free
+        - Hepatocyte Growth Factor
+        - Hepcidin
+        - Hepsin
+        - Heterophils
+        - Heterophils/Leukocytes
+        - Hexadecenoate Cis
+        - Hexokinase
+        - Hexosaminidase A
+        - High Absorption Retic/Reticulocytes
+        - High Absorption Reticulocytes
+        - Hippuric Acid Crystals
+        - Histamine
+        - Histidine
+        - HLA A03 Antigen
+        - HLA A2 Antigen
+        - HLA A24 Antigen
+        - HLA A3 Antigen
+        - HLA Class IA Antigen
+        - HLA Class IB Antigen
+        - HLA Class IC Antigen
+        - HLA Cw Antigen
+        - HLA DP Alpha1 Antigen
+        - HLA DP Beta Antigen
+        - HLA DP Beta1 Antigen
+        - HLA DQ Alpha1 Antigen
+        - HLA DQ Beta1 Antigen
+        - HLA DQ2 Antigen
+        - HLA DQ8 Antigen
+        - HLA DR Alpha Antigen
+        - HLA DR Antigen
+        - HLA DR Beta Antigen
+        - HLA DR Beta1 Antigen
+        - HLA DR Beta2 Antigen
+        - HLA DR Beta3 Antigen
+        - HLA DR Beta4 Antigen
+        - HLA DR Beta5 Antigen
+        - HLA Mismatch Count
+        - HLA-A Antigen Type
+        - HLA-A Mismatch Count
+        - HLA-B Antigen Type
+        - HLA-B Mismatch Count
+        - HLA-B27 Antigen
+        - HLA-DR Antigen Type
+        - HLA-DR Antigen/Leukocytes
+        - HLA-DR Antigen/Total Cells
+        - HLA-DR Mismatch Count
+        - HLA-DR51 Antigen Type
+        - HLA-DR52 Antigen Type
+        - HLA-DR53 Antigen Type
+        - Homocitrulline
+        - Homocysteine
+        - Homovanillic Acid
+        - Howell-Jolly Bodies
+        - Human Epidermal Growth Factor Receptor 2
+        - Human Epididymis Protein 4
+        - Huntingtin Protein
+        - Huntingtin Protein, Mutant
+        - Huntingtin Protein, Wild Type
+        - Hyaline Casts
+        - Hyalogranular Casts
+        - Hyaluronic Acid
+        - Hydrocodone
+        - Hydrogen
+        - Hydrogen+Methane
+        - Hydromorphone
+        - Hydroxyalprazolam
+        - Hydroxybupropion
+        - Hydroxyethylflurazepam
+        - Hydroxylysine
+        - Hydroxyproline
+        - Hyocholate
+        - Hyperchromia
+        - Hyperchromic Erythrocytes/Erythrocytes
+        - Hypersegmented Cells
+        - Hypochromia
+        - Hypochromic Erythrocytes/Erythrocytes
+        - Hypogranular Neutrophils
+        - Hypoxanthine-Guanine PRT
+        - Icteric Index
+        - IDL Apolipoprotein B
+        - IDL Cholesterol
+        - IDL Cholesterol/LDL Cholesterol
+        - IDL Particles
+        - IDL Triglyceride
+        - IDL+VLDL Cholesterol Subtype 3
+        - IgG Clearance
+        - IgG Clearance/Albumin Clearance
+        - IgG IgM IgA Total
+        - IgG Synthesis Rate
+        - Iloperidone
+        - Imipramine
+        - Immature Basophils
+        - Immature Basophils/Leukocytes
+        - Immature Cells
+        - Immature Cells/Total Cells
+        - Immature Eosinophils
+        - Immature Eosinophils/Leukocytes
+        - Immature Granulocytes
+        - Immature Granulocytes/Leukocytes
+        - Immature Leukocytes
+        - Immature Leukocytes/Leukocytes
+        - Immature Lymphocytes
+        - Immature Lymphocytes/Leukocytes
+        - Immature Monocytes
+        - Immature Monocytes/Leukocytes
+        - Immature Neutrophils
+        - Immature Neutrophils/Leukocytes
+        - Immature Plasma Cells
+        - Immature Plasma Cells/Lymphocytes
+        - Immature Plasma Cells/Total Cells
+        - Immature Platelets
+        - Immature Platelets/Total Platelets
+        - Immature Reticulocyte Fraction
+        - Immunoblasts
+        - Immunoblasts/Lymphocytes
+        - Immunoglobulin A
+        - Immunoglobulin A/Complement C3
+        - Immunoglobulin D
+        - Immunoglobulin E
+        - Immunoglobulin E, Free
+        - Immunoglobulin G Subclass 1
+        - Immunoglobulin G Subclass 2
+        - Immunoglobulin G Subclass 3
+        - Immunoglobulin G Subclass 4
+        - Immunoglobulin G
+        - Immunoglobulin G/Albumin
+        - Immunoglobulin G/Creatinine
+        - Immunoglobulin Heavy Constant Gamma 2
+        - Immunoglobulin Heavy Constant Gamma 4
+        - Immunoglobulin Light Chains
+        - Immunoglobulin Light Chains, Free
+        - Immunoglobulin M
+        - Immunoglobulin
+        - Inclusion Bodies
+        - Indican
+        - Indirect Bilirubin
+        - Indocyanine Green Clearance
+        - Indocyanine Green
+        - Inhibin A
+        - Inhibin B
+        - Inorganic Pyrophosphate
+        - Insulin Resistance
+        - Insulin Sensitivity
+        - Insulin
+        - Insulin, Free
+        - Insulin, Intact
+        - Insulin-Like Growth Factor Binding Prot1
+        - Insulin-Like Growth Factor Binding Prot2
+        - Insulin-Like Growth Factor Binding Prot3
+        - Insulin-Like Growth Factor Binding Prot7
+        - Insulin-like Growth Factor-1
+        - Insulin-like Growth Factor-2
+        - Intelectin-1
+        - Intercellular Adhesion Molecule 1
+        - Intercellular Adhesion Molecule 3
+        - Intercellular Adhesion Molecule
+        - Interferon Alpha Type 2
+        - Interferon Alpha
+        - Interferon Alpha-Inducible Protein 27
+        - Interferon Alpha-Inducible Protein 6
+        - Interferon Beta
+        - Interferon Gamma
+        - Interferon-Induced 56 kDa Protein
+        - Interferon-Induced 60 kDa Protein
+        - Interferon-Induced Protein 44
+        - Interferon-Induced Protein 44-Like
+        - Interferon-Induced Protein p78
+        - Interleukin 1 Alpha
+        - Interleukin 1 Beta
+        - Interleukin 1 Excretion Rate
+        - Interleukin 1 Receptor Antagonist
+        - Interleukin 1 Receptor Type 2
+        - Interleukin 1 Receptor-Like 1
+        - Interleukin 1
+        - Interleukin 10
+        - Interleukin 11
+        - Interleukin 12 Beta
+        - Interleukin 12
+        - Interleukin 12+23 p40
+        - Interleukin 13
+        - Interleukin 14
+        - Interleukin 15
+        - Interleukin 16
+        - Interleukin 17
+        - Interleukin 17C
+        - Interleukin 18 Binding Protein
+        - Interleukin 18 Excretion Rate
+        - Interleukin 18
+        - Interleukin 19
+        - Interleukin 2 Receptor Subunit Alpha
+        - Interleukin 2 Receptor Subunit Beta
+        - Interleukin 2 Receptor
+        - Interleukin 2
+        - Interleukin 20
+        - Interleukin 21
+        - Interleukin 22
+        - Interleukin 23
+        - Interleukin 24
+        - Interleukin 25
+        - Interleukin 26
+        - Interleukin 27
+        - Interleukin 28
+        - Interleukin 28B
+        - Interleukin 29
+        - Interleukin 3
+        - Interleukin 30
+        - Interleukin 31
+        - Interleukin 32
+        - Interleukin 33
+        - Interleukin 4
+        - Interleukin 5
+        - Interleukin 6
+        - Interleukin 7
+        - Interleukin 8
+        - Interleukin 9
+        - Intestinal Specific Alkaline Phosphatase
+        - Inulin Clearance
+        - Inulin
+        - Iodine
+        - Iodine, Free
+        - Iohexol Clearance
+        - Iohexol
+        - Iothalamate Clearance Adjusted for BSA
+        - Iothalamate Clearance
+        - Iron Excretion Rate
+        - Iron
+        - Islet Amyloid Polypeptide
+        - Islet Cell 512 Antigen
+        - Isoleucine
+        - Isoprene
+        - JWH-018
+        - JWH-073
+        - JWH-081
+        - JWH-122
+        - JWH-200
+        - JWH-250
+        - JWH-398
+        - Kallikrein-2
+        - Kallikrein-5
+        - Kallikrein-7
+        - Kappa Light Chain
+        - Kappa Light Chain, Free
+        - Kappa Light Chain/Lambda Light Chain
+        - Kappa Lt Chain,Free/Lambda Lt Chain,Free
+        - Keratocyte
+        - Ketamine
+        - Ketobemidone
+        - Ketoisoleucine
+        - Ketoleucine
+        - Ketone Bodies Excretion Rate
+        - Ketone Bodies
+        - Ketones
+        - Ketovaline
+        - Ki-67
+        - Kidney Injury Molecule-1 Excretion Rate
+        - Kidney Injury Molecule-1
+        - Kidney Injury Molecule-1/Creatinine
+        - Klotho
+        - Krebs von den Lungen-6
+        - Kurloff Cells
+        - Kynurenine
+        - Lacosamide
+        - Lactate Dehydrogenase Excretion Rate
+        - Lactate Dehydrogenase
+        - Lactate Dehydrogenase/Creatinine
+        - Lactic Acid
+        - Lactoferrin
+        - Lactose
+        - Lactulose
+        - Lambda Light Chain
+        - Lambda Light Chain, Free
+        - LAMP2/GAPDH
+        - Large Lymphocytes
+        - Large Platelets
+        - Large Platelets/Total Platelets
+        - Large Unstained Cells
+        - Large Unstained Cells/Leukocytes
+        - LDH Isoenzyme 1
+        - LDH Isoenzyme 1/LDH
+        - LDH Isoenzyme 2
+        - LDH Isoenzyme 2/LDH
+        - LDH Isoenzyme 3
+        - LDH Isoenzyme 3/LDH
+        - LDH Isoenzyme 4
+        - LDH Isoenzyme 4/LDH
+        - LDH Isoenzyme 5
+        - LDH Isoenzyme 5/LDH
+        - LDL Apolipoprotein B
+        - LDL Cholesterol
+        - LDL Cholesterol/HDL Cholesterol
+        - LDL Particle Size
+        - LDL Particles
+        - LDL Subtype Pattern
+        - LDL Triglyceride
+        - Lead
+        - Lecithin/Sphingomyelin
+        - Lectin-Like Oxidized LDL Receptor-1
+        - Left Shift Neutrophils
+        - Leptin Receptor
+        - Leptin
+        - Leptocytes
+        - Leucine Aminopeptidase
+        - Leucine Crystals
+        - Leucine Rich Alpha-2-Glycoprotein 1
+        - Leucine
+        - Leukemia Inhibitory Factor
+        - Leukemic Blasts
+        - Leukemic Blasts/Lymphocytes
+        - Leukemic Cells
+        - Leukocyte Cell Clumps
+        - Leukocyte Cell Differential
+        - Leukocyte Cell Morphology
+        - Leukocyte Esterase
+        - Leukocytes
+        - Leukocytes/Total Cells
+        - Leukotriene B4
+        - Leukotriene C4 Synthase
+        - Leukotriene D4
+        - Leukotriene E4
+        - Leuks Corrected for Nucl Erythrocytes
+        - Levetiracetam
+        - Levorphanol
+        - Lipase
+        - Lipase, Gastric
+        - Lipase, Hepatic
+        - Lipase, Lysosomal Acid
+        - Lipase, Pancreatic
+        - Lipemic Index
+        - Lipid
+        - Lipoarabinomannan
+        - Lipocalin-2
+        - Lipocalin-2/Creatinine
+        - Lipoprotein Associated Phospholipase A2
+        - Lipoprotein Lipase
+        - Lipoprotein-a
+        - Liquefaction Time
+        - Lithium
+        - Lithocholate Compounds
+        - Lithocholate
+        - Liver Fibrosis Score
+        - Liver Specific Alkaline Phosphatase
+        - Loprazolam
+        - Lorazepam
+        - Lormetazepam
+        - Low Absorption Retic/Reticulocytes
+        - Low Absorption Reticulocytes
+        - Loxapine
+        - Lupus Anticoagulant Sensitive APTT
+        - Lurasidone
+        - Luteinizing Hormone
+        - Lymphoblasts
+        - Lymphoblasts/Leukocytes
+        - Lymphoblasts/Lymphocytes
+        - Lymphocyte Antigen 6E
+        - Lymphocytes Activated
+        - Lymphocytes Atypical
+        - Lymphocytes Atypical/Leukocytes
+        - Lymphocytes
+        - Lymphocytes, Clefted
+        - Lymphocytes, Clefted/Leukocytes
+        - Lymphocytes/Leukocytes
+        - Lymphocytes/Neutrophils
+        - Lymphocytes/Non-Squam Epi Cells
+        - Lymphocytes/Total Cells
+        - Lymphoid Cells
+        - Lymphoma Cells
+        - Lymphoma Cells/Leukocytes
+        - Lymphoma Cells/Lymphocytes
+        - Lymphoma Cells/Total Cells
+        - Lymphotactin
+        - Lymphotoxin Alpha
+        - Lysergic Acid Diethylamide
+        - Lysine
+        - Lysosomal Associated Membrane Protein 2
+        - Lysozyme
+        - MAB-CHMINACA
+        - Macroamylase
+        - Macrocytes
+        - Macrophage Colony Stimulating Factor
+        - Macrophage Inflammatory Protein 1 Alpha
+        - Macrophage Inflammatory Protein 1 Beta
+        - Macrophage Inflammatory Protein 1 Gamma
+        - Macrophage Inflammatory Protein 1
+        - Macrophage Migration Inhibitory Factor
+        - Macrophage-Derived Chemokine
+        - Macrophages
+        - Macrophages/Leukocytes
+        - Macrophages/Non-Squam Epi Cells
+        - Macrophages/Total Cells
+        - Macroscopic Blood
+        - Magnesium
+        - Magnesium, Ionized
+        - Magnesium/Creatinine
+        - Malignant Cells, NOS
+        - Malignant Cells, NOS/Blood Cells
+        - Malondialdehyde
+        - Mannitol
+        - Mast Cells
+        - Mast Cells/Leukocytes
+        - Mast Cells/Total Cells
+        - Mast/Stem Cell Growth Factor Rec Kit
+        - Matrix Metalloproteinase 1
+        - Matrix Metalloproteinase 10
+        - Matrix Metalloproteinase 12
+        - Matrix Metalloproteinase 13
+        - Matrix Metalloproteinase 2
+        - Matrix Metalloproteinase 3
+        - Matrix Metalloproteinase 7
+        - Matrix Metalloproteinase 8
+        - Matrix Metalloproteinase 9
+        - Mature Plasma Cells
+        - Mature Plasma Cells/Lymphocytes
+        - Mature Plasma Cells/Total Cells
+        - Maturing Erythroid Cells/Total Cells
+        - Maturing Myeloid Cells/Total Cells
+        - Maximum Clot Firmness
+        - Maximum Clot Lysis
+        - May-Hegglin Anomaly
+        - Mazindol
+        - MCV Reticulocytes
+        - Mean Platelet Component
+        - Mean Platelet Dry Mass
+        - Mean Platelet Volume
+        - Meconium
+        - Medazepam
+        - Medium Absorption Retic/Reticulocytes
+        - Medium Absorption Reticulocytes
+        - Mefenorex
+        - Megakaryoblasts
+        - Megakaryoblasts/Leukocytes
+        - Megakaryoblasts/Total Cells
+        - Megakaryocyte and Megakaryoblast Morph
+        - Megakaryocytes
+        - Megakaryocytes/Leukocytes
+        - Megakaryocytes/Total Cells
+        - Melatonin
+        - Meningeal Cells
+        - Meningeal Cells/Total Cells
+        - Meperidine
+        - Mephedrone
+        - Meprobamate
+        - Mercury
+        - Mescaline
+        - Mesoridazine
+        - Mesothelial Cells
+        - Mesothelial Cells/Leukocytes
+        - Mesterolone
+        - Metamyelocytes
+        - Metamyelocytes/Leukocytes
+        - Metamyelocytes/Total Cells
+        - Metanephrine Excretion Rate
+        - Metanephrine
+        - Metanephrine+Normetanephrine Excr Rate
+        - Metanephrine+Normetanephrine
+        - Metanephrine, Free
+        - Metarubricyte
+        - Metarubricyte/Total Cells
+        - Metarubricytes/Leukocytes
+        - Methadone
+        - Methamphetamine
+        - Methane
+        - Methanol
+        - Methaqualone
+        - Methasterone
+        - Methcathinone
+        - Methemoglobin
+        - Methemoglobin/Total Hemoglobin
+        - Methionine
+        - Methohexital
+        - Methylmalonic Acid
+        - Methylphenidate
+        - Methylphenobarbital
+        - Methyltestosterone
+        - Methyltransferase
+        - Methyprylon
+        - MHC Class I Chain Related Protein A
+        - Microcytes
+        - Mid Cell Fraction
+        - Mid-Reg Pro-Atrial Natriuretic Peptide
+        - Midazolam
+        - Milnacipran
+        - Mixed Casts
+        - Mixed Lymphocyte Reaction
+        - Modafinil
+        - Molindone
+        - Monoblasts
+        - Monoblasts/Leukocytes
+        - Monoblasts/Total Cells
+        - Monoclonal Prot Immunoglobulin Isotype
+        - Monoclonal Protein Excretion Rate
+        - Monoclonal Protein Region
+        - Monoclonal Protein
+        - Monoclonal Protein/Total Protein
+        - Monocyte Chemotactic Protein 1
+        - Monocyte Chemotactic Protein1/Creatinine
+        - Monocyte Distribution Width
+        - Monocytes and Macrophages/Leukocytes
+        - Monocytes
+        - Monocytes/Leukocytes
+        - Monocytes/Macrocytes
+        - Monocytes/Non-Squam Epi Cells
+        - Monocytes/Total Cells
+        - Monocytoid Cells
+        - Monocytoid Cells/Leukocytes
+        - Monocytoid Cells/Total Cells
+        - Monohydroxybutenyl Mercapturic Acid
+        - Monomethylarginine
+        - Mononuclear Cells Atypical
+        - Mononuclear Cells Atypical/Leukocytes
+        - Mononuclear Cells
+        - Monosodium Urate Crystals
+        - Morphine
+        - Motile Sperm/Total Sperm
+        - Mu Glutathione-S-Transferase
+        - Mu Glutathione-S-Transferase/Creatinine
+        - Mucous Threads
+        - Murinoglobulin
+        - Myelin Basic Protein
+        - Myeloblasts
+        - Myeloblasts/Leukocytes
+        - Myeloblasts/Total Cells
+        - Myelocytes
+        - Myelocytes/Leukocytes
+        - Myelocytes/Total Cells
+        - Myeloid Maturation Index
+        - Myeloid Maturation Pool
+        - Myeloid Progenitor Cells
+        - Myeloid Progenitor Cells/Total Cells
+        - Myeloid Proliferation Index
+        - Myeloid Proliferation Pool
+        - Myeloid/Erythroid Ratio
+        - Myeloperoxidase Index
+        - Myeloperoxidase
+        - Myoglobin
+        - Myoglobin/Creatinine
+        - Myosin Light Chain 3
+        - N,N-Dimethyltryptamine
+        - N-Acetyl Glucosamide
+        - N-Acetyl Glucosamide/Creatinine
+        - N-acetyl-B-D-glucosaminidase/Creatinine
+        - N-acetyl-beta-D-glucosaminidase
+        - N-Demethylase
+        - N-Desmethylolanzapine
+        - N-Desmethyltramadol
+        - N-methylhistamine
+        - N-Nitrosonornicotine
+        - N-telopeptide
+        - N-telopeptide/Creatinine
+        - N-Terminal ProA-type Natriuretic Peptide
+        - N-Terminal ProB-type Natriuretic Peptide
+        - NAGASE Excretion Rate
+        - Nalorphine
+        - Nandrolone
+        - Naphyrone
+        - Natural Killer Cell Function
+        - Natural Killer Cells
+        - Neoplastic Plasma Cells
+        - Neopterin
+        - Nephrin
+        - Nerve Growth Factor Alpha
+        - Nerve Growth Factor Beta
+        - Nerve Growth Factor Gamma
+        - Nerve Growth Factor
+        - Neurofilament Heavy Polypeptide
+        - Neurofilament Light Chain Protein
+        - Neurokinin A
+        - Neuron Specific Enolase
+        - Neuropeptide Y
+        - Neuropilin-1
+        - Neurotensin
+        - Neutral Fats
+        - Neutrophil Elastase
+        - Neutrophil Elastase, Polymorphonuclear
+        - Neutrophilic Metamyelocytes
+        - Neutrophilic Metamyelocytes/Total Cells
+        - Neutrophilic Myelocytes
+        - Neutrophilic Myelocytes/Lymphocytes
+        - Neutrophilic Toxic Change
+        - Neutrophils Band Form
+        - Neutrophils Band Form/ Neutrophils
+        - Neutrophils Band Form/Leukocytes
+        - Neutrophils Band Form/Total Cells
+        - Neutrophils
+        - Neutrophils, Seg + Band Form + Precursor
+        - Neutrophils, Segmented + Band Form
+        - Neutrophils, Segmented
+        - Neutrophils, Segmented/Leukocytes
+        - Neutrophils, Segmented/Neutrophils
+        - Neutrophils, Segmented/Total Cells
+        - Neutrophils/Leukocytes
+        - Neutrophils/Lymphocytes
+        - Neutrophils/Non-Squam Epi Cells
+        - Neutrophils/Total Cells
+        - Niacin
+        - Nicomorphine
+        - Nicotinamide Phosphoribosyltransferase
+        - Nicotine and/or Metabolites
+        - Nicotine Glucuronide
+        - Nicotine
+        - Nicotine, Free
+        - Nicotine-Derived Nitrosamine Ketone
+        - Nitrate
+        - Nitrazepam and/or Metabolites
+        - Nitrazepam
+        - Nitric Oxide
+        - Nitrite
+        - NK Cells/Lym
+        - NNAL
+        - Nociceptin
+        - Non-HDL Cholesterol
+        - Non-HDL Cholesterol/HDL Cholesterol
+        - Non-HDL Cholesterol/LDL Cholesterol
+        - Non-Phosphorylated Tau Protein
+        - Non-Prostatic Acid Phosphatase
+        - Non-Squamous Epithelial Cells
+        - Nonhematic Cells
+        - Nonhematic Cells/Leukocytes
+        - Norclostebol
+        - Nordazepam
+        - Nordoxepin
+        - Norepinephrine Excretion Rate
+        - Norepinephrine
+        - Norethandrolone
+        - Norfluoxetine
+        - Norhydrocodone
+        - Normal Sperm/Total Sperm
+        - Normalized Protein Catabolism Rate
+        - Normetanephrine Excretion Rate
+        - Normetanephrine
+        - Normetanephrine, Free
+        - Normoblasts
+        - Normoblasts/Total Cells
+        - Normorphine
+        - Nornicotine
+        - Noroxycodone
+        - Norpropoxyphene
+        - Norsertraline
+        - Nortriptyline
+        - Nuclear Matrix Protein 22
+        - Nuclear Swelling
+        - Nucleated Cells
+        - Nucleated Erythrocytes
+        - Nucleated Erythrocytes/Erythrocytes
+        - Nucleated Erythrocytes/Leukocytes
+        - O-Demethylase
+        - O-Desmethyltramadol
+        - o-Toluidine
+        - Occult Blood
+        - Olanzapine
+        - Oligoclonal Bands
+        - Oncostatin M
+        - Opiate
+        - Ornithine
+        - Osmolality
+        - Osmolarity
+        - Osteocalcin
+        - Osteopontin
+        - Osteopontin/Creatinine
+        - Osteoprotegerin
+        - Ovalocytes
+        - Oxalate Excretion Rate
+        - Oxalate
+        - Oxalate/Creatinine
+        - Oxandrolone
+        - Oxazepam
+        - Oxidized LDL Cholesterol
+        - Oxycodone
+        - Oxygen Capacity
+        - Oxygen Content
+        - Oxygen Saturation
+        - Oxygen Saturation/Fraction Inspired O2
+        - Oxyhemoglobin
+        - Oxyhemoglobin/Total Hemoglobin
+        - Oxymesterone
+        - Oxymetholone
+        - Oxymorphone
+        - Oxytocin
+        - P-Selectin
+        - P50 Oxygen
+        - pAcetyl-CoA Carboxylase/ACC
+        - Pancreatic Elastase 1
+        - Pancreatic Elastase 1, Polymorphonuclear
+        - Pancreatic Polypeptide
+        - Pappenheimer Bodies
+        - Para Aminohippurate Clearance
+        - Para Aminohippurate
+        - Para-Aminobenzoate
+        - Para-Fluorofentanyl
+        - Paraldehyde
+        - Paraoxonase 1
+        - Parathyroid Hormone, C-Terminal
+        - Parathyroid Hormone, Fragmented
+        - Parathyroid Hormone, Intact
+        - Parathyroid Hormone, Mid-Molecule
+        - Parathyroid Hormone, N-Terminal
+        - Parathyroid Hormone, Whole
+        - Parathyroid Hormone-related Protein
+        - Paraxanthine
+        - Parkinson Disease Protein 7
+        - Paroxetine
+        - Partial Pressure Carbon Dioxide Adj Temp
+        - Partial Pressure Carbon Dioxide
+        - Partial Pressure Oxygen Adj for Temp
+        - Partial Pressure Oxygen
+        - Partial Thromboplastin Time
+        - Pathologic Casts
+        - PB-22 3-carboxyindole
+        - PCA3 mRNA/PSA mRNA
+        - Pelger Huet Anomaly
+        - Pemoline
+        - Pentazocine
+        - Pentedrone
+        - Pentobarbital
+        - Pentylone
+        - Pepsinogen A
+        - Pepsinogen C
+        - Pepsinogen I
+        - Pepsinogen II
+        - Pepsinogen
+        - Peptide Transporter TAP1
+        - Peptide YY
+        - Peptidylprolyl Isomerase A
+        - Perampanel
+        - Perforin-1
+        - Periostin
+        - Perphenazine
+        - pH Adjusted for Body Temp
+        - pH
+        - Phenazocine
+        - Phencyclidine
+        - Phendimetrazine
+        - Phenmetrazine
+        - Phenobarbital
+        - Phenothiazine
+        - Phentermine
+        - Phenylalanine
+        - Phenylalanine/Tyrosine
+        - Phenylketones
+        - Phenylpropanolamine
+        - Phenylpyruvate
+        - Phenytoin
+        - Phos-S6 Ribosomal Protein
+        - Phosphate Clearance
+        - Phosphate Crystals
+        - Phosphate
+        - Phosphate/Creatinine
+        - Phosphatidylcholine/Albumin
+        - Phosphatidylethanol
+        - Phosphatidylglycerol/Lung Surfactant
+        - Phospholipase A2
+        - Phospholipid Scramblase 1
+        - Phospholipid
+        - Phosphorus Excretion Rate
+        - Phosphorylated Acetyl-CoA Carboxylase
+        - Phosphorylated Neurofilament Heavy Chain
+        - Phosphorylated STAT3
+        - Phosphorylated STAT3/STAT3
+        - Phosphorylated Tau Prot/Amyloid Beta1-42
+        - Phosphorylated Tau Protein 181
+        - Phosphorylated Tau Protein 212
+        - Phosphorylated Tau Protein 217
+        - Phosphorylated Tau Protein 231
+        - Phosphorylated Tau Protein
+        - Pi-GST Excretion Rate
+        - Pigment Casts
+        - Pimozide
+        - Pipradrol
+        - Placental Growth Factor
+        - Placental Specific Alkaline Phosphatase
+        - Plasma Equivalent Glucose Distribution
+        - Plasma Equivalent Glucose
+        - Plasmacytoid Lymphocytes
+        - Plasmacytoid Lymphocytes/Leukocytes
+        - Plasmacytoid Lymphocytes/Lymphocytes
+        - Plasmin Alpha-2 Antiplasmin Complex
+        - Plasminogen Activator Inhibitor-1
+        - Plasminogen Activator Urokinase Receptor
+        - Plasminogen
+        - Platelet Activating Factor
+        - Platelet Aggregation Amplitude
+        - Platelet Aggregation Curve Type
+        - Platelet Aggregation Mean Amplitude
+        - Platelet Aggregation Mean Curve Type
+        - Platelet Aggregation
+        - Platelet Clumps
+        - Platelet Component Distribution Width
+        - Platelet Derived Growth Factor IsoformAA
+        - Platelet Derived Growth Factor IsoformAB
+        - Platelet Derived Growth Factor IsoformBB
+        - Platelet Distribution Width
+        - Platelet Endothelial Adhesion Molecule 1
+        - Platelet Function Closure Time
+        - Platelet Hematocrit
+        - Platelet Mass Distribution Width
+        - Platelet Morphology
+        - Platelet Satellitism
+        - Platelet-Granulocyte Agg
+        - Platelets
+        - Platelets, Agranular
+        - Platelets, Estimated
+        - Poikilocytes
+        - Poikilocytes/Erythrocytes
+        - Polychromasia
+        - Polychromatophilic Erythroblast
+        - Polychromatophilic Normoblast
+        - Polycystin-1
+        - Porphobilinogen
+        - Porphobilinogen/Creatinine
+        - Porphyrin
+        - Potassium Clearance
+        - Potassium Excretion Rate
+        - Potassium
+        - Potassium/Creatinine
+        - PP Arterial O2/Fraction Inspired O2
+        - Prazepam
+        - Prealbumin
+        - Precursor Plasma Cells
+        - Precursor Plasma Cells/Lymphocytes
+        - Pregabalin
+        - Pregnancy-Associated Plasma Protein-A
+        - Pregnanediol
+        - Pregnenolone
+        - Presepsin
+        - Pro-C10
+        - Pro-C16
+        - Pro-C2
+        - Pro-C28
+        - Pro-C3
+        - Pro-C4
+        - Pro-C5
+        - Pro-C6
+        - Pro-gastrin Releasing Peptide
+        - ProB-type Natriuretic Peptide
+        - Procalcitonin
+        - Prochlorperazine
+        - Procollagen 1 N-Terminal Propeptide
+        - Procollagen 3 N-Terminal Propeptide
+        - Procollagen Type I Carboxy Term Peptide
+        - Progesterone Receptor
+        - Progesterone
+        - Progranulin
+        - Proinsulin
+        - Proinsulin/Insulin Ratio
+        - Prolactin
+        - Proliferating Cell Nuclear Antigen
+        - Proliferating Erythroid/Total Cells
+        - Proliferating Myeloid Cells/Total Cells
+        - Proline Aminopeptidase
+        - Proline
+        - Prolymphocytes
+        - Prolymphocytes/Leukocytes
+        - Prolymphocytes/Lymphocytes
+        - Promonocytes
+        - Promonocytes/Leukocytes
+        - Promonocytes/Total Cells
+        - Promyeloblasts
+        - Promyelocytes
+        - Promyelocytes/Leukocytes
+        - Promyelocytes/Total Cells
+        - Propoxyphene
+        - Proprotein Convertase Subtilisin/Kexin 9
+        - Prorubricyte
+        - Prorubricyte/Total Cells
+        - Prostaglandin D2 Receptor 2
+        - Prostaglandin D2 Synthase
+        - Prostaglandin D2
+        - Prostaglandin E Synthase
+        - Prostaglandin E1
+        - Prostaglandin E2
+        - Prostaglandin F1 Alpha
+        - Prostaglandin F2 Alpha
+        - Prostaglandin
+        - Prostanozol
+        - Prostate Cancer Antigen 3 mRNA
+        - Prostate Circulating Tumor Cells
+        - Prostate Specific Antigen mRNA
+        - Prostate Specific Antigen
+        - Prostate Specific Antigen, Free
+        - Prostatic Acid Phosphatase
+        - Protein Excretion Rate
+        - Protein Induced by Vitamin K Absence-II
+        - Protein Pattern
+        - Protein S Activity Actual/Control
+        - Protein S Actual/Control
+        - Protein S Free Activity Actual/Control
+        - Protein S
+        - Protein S, Free Actual/Control
+        - Protein S, Free
+        - Protein
+        - Protein/Creatinine
+        - Protein/Osmolality
+        - Prothrombin Activity
+        - Prothrombin Fragment 1
+        - Prothrombin Fragment 2
+        - Prothrombin Fragments 1 + 2
+        - Prothrombin Intl. Normalized Ratio
+        - Prothrombin Time Actual/Control
+        - Prothrombin Time
+        - Protoporphyrin, Free
+        - Protriptyline
+        - Prprot Cnvrtase Subtilisin-Kexin 9, Free
+        - PSA, Free/PSA
+        - Pseudo Pelger-Huet Neutrophils
+        - Pseudo-Eosinophils
+        - Pseudo-Eosinophils/Leukocytes
+        - Pseudoephedrine
+        - Psilocybin
+        - PTT/Standard
+        - Pus
+        - Pyknotic Cells
+        - Pyocytes
+        - Pyridinoline
+        - Pyridinoline/Creatinine
+        - Pyridoxal Phosphate
+        - Pyrovalerone
+        - Pyruvate Kinase Isozyme M1
+        - Pyruvate Kinase Isozyme M2
+        - Pyruvate Kinase Muscle Isozyme
+        - Pyruvate Kinase
+        - Pyruvate
+        - Quazepam
+        - Quetiapine
+        - RBC Casts
+        - RDW Standard Deviation
+        - Reactive Oxygen Metabolite
+        - Receptor Activator Nuclear KappaB Ligand
+        - Receptor Advanced Glycation Endproducts
+        - Reducing Substances
+        - Reducing Sugars
+        - Reg upon Act Normal T-cell Exprd Secrtd
+        - Remnant Lipoprotein
+        - Renal Epithelial Casts
+        - Renal Epithelial Cells
+        - Renal Papillary Antigen 1
+        - Renal Tubular Epithelial Casts
+        - Renin Activity
+        - Renin
+        - Reptilase Activity Actual/Control
+        - Reptilase Time
+        - Resistin
+        - Ret Corpuscular HGB Conc Distr Width
+        - Ret Hemoglobin Distribution Width
+        - Ret RDW Coefficient of Variation
+        - Ret RDW Standard Deviation
+        - Ret Volume Distribution Width
+        - Ret. Corpuscular Hemoglobin Content
+        - Ret. Corpuscular HGB Concentration Mean
+        - Reticulocytes
+        - Reticulocytes/Erythrocytes
+        - Reticulocytes/Total Cells
+        - Retinoic Acid
+        - Retinol Binding Protein 1
+        - Retinol Binding Protein 2
+        - Retinol Binding Protein 3
+        - Retinol Binding Protein 4
+        - Retinol Binding Protein
+        - Retinol Binding Protein/Creatinine
+        - Retinyl Palmitate
+        - Rh Factor
+        - RhD Factor
+        - Riboflavin
+        - Ribonucleic Acid
+        - Ringed Sideroblasts
+        - Risperidone
+        - Risperidone+9-Hydroxyrisperidone
+        - Ritalinic Acid
+        - RLP Cholesterol
+        - Rouleaux Formation
+        - Round Cells
+        - Round Epithelial Cells
+        - Rubriblast
+        - Rubriblast/Total Cells
+        - Rubricyte
+        - Rubricyte/Total Cells
+        - S-Adenosylhomocysteine
+        - S-Adenosylmethionine
+        - S-Benzyl Mercapturic Acid
+        - S-Pancreas-1 Antigen
+        - S100 Calcium Binding Protein A8
+        - S100 Calcium-Binding Protein B
+        - Salicylates
+        - Sarcosine
+        - Scavenger Rcpt Cys-Rich Type1 Prot M130
+        - Schistocytes
+        - Schistocytes/Erythrocytes
+        - Sclerostin
+        - Secobarbital
+        - Secretin
+        - Sediment Examination
+        - Selenium
+        - Serine Peptidase Inhibitor Kazal Type 1
+        - Serine
+        - Serotonin
+        - Serpin A12
+        - Serpin A6
+        - Serpin Family B Member 5
+        - Serpin Family F Member 1
+        - Sertraline
+        - Serum Amyloid A1
+        - Serum-Ascites Albumin Gradient
+        - Sex Hormone Binding Globulin
+        - Sezary Cells
+        - Sezary Cells/Leukocytes
+        - Sezary Cells/Lymphocytes
+        - SH2 Domain Containing 1A Protein
+        - Sialyl SSEA-1 Antigen
+        - Sibutramine
+        - Sickle Cells
+        - Sickle Cells/Erythrocytes
+        - Sideroblast
+        - Skeletal Troponin I
+        - Smear Examination
+        - Smudge Cells
+        - Smudge Cells/Leukocytes
+        - Sodium Clearance
+        - Sodium Excretion Rate
+        - Sodium
+        - Sodium/Creatinine
+        - Sodium/Potassium
+        - Soluble B Cell Maturation Antigen
+        - Soluble CEA Cell Adhesion Molecule 5
+        - Soluble Complement C5b-9
+        - Soluble E-Selectin
+        - Soluble HER2
+        - Soluble Immunoglobulin
+        - Soluble Intercell Adhesion Molecule 1
+        - Soluble Intercell Adhesion Molecule 4
+        - Soluble Interleukin 2 Receptor
+        - Soluble Interleukin 6 Receptor
+        - Soluble Interleukin-1 Receptor Type I
+        - Soluble Kidney Injury Molecule-1
+        - Soluble L-Selectin
+        - Soluble Lymphocyte Activation Gene-3
+        - Soluble Mesothelin Related Peptides
+        - Soluble P-Selectin
+        - Soluble Programmed Death Ligand 1
+        - Soluble Programmed Death-1
+        - Soluble TNF Receptor 1B
+        - Soluble TNF Receptor Superfamily Mem 5
+        - Soluble TNF Receptor Superfamily Mem 7
+        - Soluble TNF Receptor Superfamily Mem 9
+        - Soluble TNF Receptor Type I
+        - Soluble TNF Superfamily Member 12
+        - Soluble TNF Superfamily Member 5
+        - Soluble Transferrin Receptor
+        - Soluble Tumor Necrosis Factor Receptor
+        - Soluble Vasc Cell Adhesion Molecule 1
+        - Soluble Vasc Endoth Growth Factor Rec1
+        - Soluble Vasc Endoth Growth Factor Rec2
+        - Soluble Vasc Endoth Growth Factor Rec3
+        - Somatostatin Receptor Type 2
+        - Somatotrophin
+        - Sonic Hedgehog
+        - Sorbitol Dehydrogenase
+        - Specific Gravity
+        - Specimen Appearance
+        - Specimen Weight
+        - Sperm Agglutination
+        - Sperm Aggregation
+        - Sperm Motility
+        - Spermatozoa
+        - Spermatozoa, Progressive
+        - Spermatozoa, Progressive/Spermatozoa
+        - Spherocytes
+        - Squamous Cell Carcinoma Antigen
+        - Squamous Epithelial Cells
+        - Squamous Epithelial Cells/Total Cells
+        - Squamous Transitional Epithelial Cells
+        - Standard Base Excess
+        - Stanozolol
+        - Starch Crystals
+        - STAT3
+        - Stem Cell Factor
+        - Stenbolone
+        - Steroid Sulfatase
+        - Stomatocytes
+        - Succinylacetone
+        - Sufentanil
+        - Sulfa Crystals
+        - Sulfate
+        - Sulfur Dioxide
+        - Surfactant Protein D
+        - Symmetric Dimethylarginine
+        - Synoviocytes
+        - Synoviocytes/Leukocytes
+        - T-Kininogen
+        - T-lymphocyte Crossmatch
+        - T-Lymphocytes
+        - T1 Collagen X-link N-Telopeptides/Creat
+        - Tapentadol
+        - Target Cells
+        - Tartrate-Resistant Acid Phosphatase 5b
+        - TATA Box Binding Protein
+        - Tau Protein
+        - Tau Protein, Free
+        - Taurine
+        - Taurine/Creatinine
+        - Taurochenodeoxycholate
+        - Taurocholate
+        - Taurolithocholate
+        - Tauroursodeoxycholate
+        - Temazepam
+        - Tenascin C
+        - Terminal Deoxynucleotidyl Transferase Ag
+        - Testolactone
+        - Testosterone Free+Weakly Bound/Testost
+        - Testosterone
+        - Testosterone, Free
+        - Testosterone, Free/Testosterone
+        - Testosterone, Free/Total Protein
+        - Testosterone, Weakly Bound
+        - Tetrahydrocannabinol
+        - Tetrahydrogestrinone
+        - Tetraspanin-29
+        - Thebaine
+        - Theophylline
+        - Thiamine
+        - Thiamylal
+        - Thiocyanate
+        - Thiopental
+        - Thioridazine
+        - Thiothixene
+        - Threonine
+        - Threonine/Creatinine
+        - Thrombin Activity Actual/Control
+        - Thrombin Antithrombin Complex
+        - Thrombin Time Actual/Control
+        - Thrombin Time
+        - Thrombin/Antithrombin
+        - Thrombocytes
+        - Thrombomodulin
+        - Thrombopoietin
+        - Thrombospondin 1
+        - Thromboxane B2
+        - Thymic Stromal Lymphopoietin
+        - Thymidine Kinase 1
+        - Thymidine Kinase 2
+        - Thymidine Kinase
+        - Thyroglobulin Recovery Rate
+        - Thyroglobulin
+        - Thyroperoxidase
+        - Thyrotropin Releasing Hormone
+        - Thyrotropin
+        - Thyrotropin/Thyroxine, Free
+        - Thyroxine Binding Globulin
+        - Thyroxine
+        - Thyroxine, Free Index
+        - Thyroxine, Free
+        - Thyroxine, Free, Indirect
+        - TIMP1/Creatinine
+        - Tissue Factor Pathway Inhibitor, Free
+        - Tissue Inhibitor of Metalloproteinase 1
+        - Tissue Inhibitor of Metalloproteinase 2
+        - Tissue Inhibitor of Metalloproteinase 3
+        - Tissue Inhibitor of Metalloproteinase
+        - Tissue Plasminogen Activator Antigen
+        - Tissue Polypeptide Antigen
+        - TNF Receptor 1B
+        - TNF Receptor Superfamily Member 10c
+        - TNF Superfamily Member 10
+        - TNF Superfamily Member 12 Excretion Rate
+        - TNF Superfamily Member 12
+        - TNF-a Production Inhibition
+        - Toluene
+        - Tomoregulin-2
+        - Total Amyloid Precursor Protein
+        - Total Antioxidant Capacity
+        - Total Iron Binding Capacity
+        - Total Plasma Cells
+        - Total Plasma Cells/Leukocytes
+        - Total Plasma Cells/Lymphocytes
+        - Total Plasma Cells/Total Cells
+        - Total Radical-Trap Antioxidant Potential
+        - Toxic Granulation
+        - Toxic Vacuolation
+        - TPR-Ankyrin Repeat-Containing Protein 1
+        - Tramadol
+        - Trans-3 Hydroxycotinine
+        - Trans-3'- Hydroxycotinine, Free
+        - Trans-3'- Hydroxycotinineglucuronide
+        - Transferrin Receptor Protein 1
+        - Transferrin Saturation
+        - Transferrin
+        - Transforming Growth Factor Alpha
+        - Transforming Growth Factor Beta 1
+        - Transforming Growth Factor Beta 2
+        - Transforming Growth Factor Beta 3
+        - Transforming Growth Factor Beta
+        - Transitional Epithelial Cells
+        - Translocase Inner Mitochondrial Membr 10
+        - Trazodone
+        - Trefoil Factor 3
+        - Trenbolone
+        - Triazolam
+        - Trichomonas
+        - Tricyclic Antidepressants
+        - Trifluoperazine
+        - Triglycerides
+        - Triglycerides/HDL Cholesterol
+        - Triiodothyronine Uptake
+        - Triiodothyronine
+        - Triiodothyronine, Free
+        - Triiodothyronine, Reverse
+        - Trimeperidine
+        - Tripartite Motif Containing Protein 21
+        - Tripartite Motif Containing Protein 38
+        - Triple Phosphate Crystals
+        - Troponin I Type 1
+        - Troponin I Type 2
+        - Troponin I Type 3
+        - Troponin I
+        - Troponin T
+        - Troponin
+        - Trypsin 1 and Trypsinogen 1
+        - Trypsin and Trypsinogen
+        - Trypsin
+        - Tryptase
+        - Tryptophan
+        - Tryptophan/Creatinine
+        - Tubular Epithelial Cells
+        - Tumor Necrosis Factor Receptor 1
+        - Tumor Necrosis Factor
+        - Tumstatin
+        - Turbidity
+        - Type I Collagen C-Telopeptides Beta
+        - Type I Collagen C-Telopeptides
+        - Type I Collagen C-Telopeptides/Creat
+        - Type I Collagen N-Telopeptides
+        - Type I Myeloblasts
+        - Type II Collagen C-Telopeptides
+        - Type II Collagen C-Telopeptides/Creat
+        - Type II Collagen N-Telopeptides
+        - Type II Myeloblasts
+        - Type II Secretory Phospholipase A2
+        - Type III Collagen C-Telopeptides
+        - Type III Myeloblasts
+        - Tyrosine Crystals
+        - Tyrosine
+        - U-47700
+        - Ubiquinone 10
+        - Ubiquitin C-Terminal Hydrolase L1
+        - Ubiquitin Protein
+        - Ubiquitin-Like Protein ISG15
+        - Unclassified Casts
+        - Unclassified Crystals
+        - Unsaturated Iron Binding Capacity
+        - Unspecified Cells
+        - Unspecified Cells/Leukocytes
+        - Unspecified Cells/Total Cells
+        - UR-144
+        - Urate Excretion Rate
+        - Urate
+        - Urate/Creatinine
+        - Urea Distribution Volume Ratio
+        - Urea Excretion Rate
+        - Urea Nitrogen Excretion Rate
+        - Urea Nitrogen
+        - Urea Nitrogen/Creatinine
+        - Urea Reduction Ratio
+        - Urea
+        - Urea/Creatinine
+        - Uric Acid Crystals
+        - Urinalysis Panel Interpretation
+        - Urine Conductivity
+        - Urobilinogen
+        - Urokinase Plasminogen Activator
+        - Uromodulin
+        - Urothelial Cells
+        - Ursodeoxycholate Compounds
+        - Ursodeoxycholate
+        - Vacuolated Lymphocytes
+        - Vacuolated Lymphocytes/Leukocytes
+        - Vacuolated Neutrophils
+        - Valerylfentanyl
+        - Valine
+        - Valproate
+        - Vanillyl Mandelic Acid Excretion Rate
+        - Vanillyl Mandelic Acid
+        - Vasc Endothelial Growth Factor Rec 2
+        - Vascular Cell Adhesion Molecule 1
+        - Vascular Endothelial Growth Factor A
+        - Vascular Endothelial Growth Factor C
+        - Vascular Endothelial Growth Factor D
+        - Vascular Endothelial Growth Factor
+        - Vasoactive Intestinal Polypeptide
+        - Vegetable Fiber
+        - Venlafaxine
+        - Viable Cells
+        - VICM
+        - Vilazodone
+        - Vinbarbital
+        - Viscosity
+        - Vitamin A
+        - Vitamin B12
+        - Vitamin B17
+        - Vitamin B5
+        - Vitamin B6
+        - Vitamin B7
+        - Vitamin B9
+        - Vitamin C
+        - Vitamin D Binding Protein
+        - Vitamin D2 + Vitamin D3
+        - Vitamin D2 D3 25-OH
+        - Vitamin D2
+        - Vitamin D3
+        - Vitamin E
+        - Vitamin E/Cholesterol
+        - Vitamin K
+        - Vitamin K1
+        - Vitronectin
+        - VLDL Apolipoprotein B
+        - VLDL Cholesterol Subtype 1
+        - VLDL Cholesterol Subtype 2
+        - VLDL Cholesterol Subtype 3
+        - VLDL Cholesterol
+        - VLDL Particle Size
+        - VLDL Trig + Chylomicron Trig
+        - VLDL Triglyceride
+        - Volume
+        - von Will Factor Act Actual/Control
+        - von Will Factor Actual/Control
+        - von Willebrand Factor Activity
+        - von Willebrand Factor Multimers
+        - von Willebrand Factor
+        - Vortioxetine
+        - Waxy Casts
+        - WBC Casts
+        - WD Repeat-Containing Protein 26
+        - Whole Blood Equivalent Glucose
+        - Xanthochromia
+        - Xylose
+        - Xylose/Xylose Dose
+        - Yeast Budding
+        - Yeast Cells
+        - Yeast Hyphae
+        - YKL-40 Protein
+        - Zaleplon
+        - Zinc Protoporphyrin
+        - Zinc
+        - Ziprasidone
+        - Zolpidem
+        - Zopiclone
+outcome:
+  message: Value not found in extensible codelist Laboratory Test Name (C67154)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C67154
+  codelist_name: Laboratory Test Name
+  codelist_submission_value: LBTEST
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 2474
+

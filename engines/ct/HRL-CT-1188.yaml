@@ -1,0 +1,58 @@
+id: HRL-CT-1188
+version: 1
+status: Published
+standard: ADaM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: DTYPE (Derivation Type) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: DTYPE
+      operator: in
+      value:
+        - AVERAGE
+        - BC
+        - BLOCF
+        - BOC
+        - BOCF
+        - COPY
+        - EXTRAP
+        - HALFLLOQ
+        - INTERP
+        - LLOD
+        - LLOQ
+        - LOCF
+        - LOV
+        - LVPD
+        - MAXIMUM
+        - MINIMUM
+        - ML
+        - MOTH
+        - MOV
+        - NOCB
+        - PHANTOM
+        - POCF
+        - SOCF
+        - ULOD
+        - ULOQ
+        - WC
+        - WOC
+        - WOCF
+        - WOV
+outcome:
+  message: Value not found in non-extensible codelist Derivation Type (C81224)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C81224
+  codelist_name: Derivation Type
+  codelist_submission_value: DTYPE
+  extensible: no
+  parent_rule: CT2001
+  term_count: 29
+

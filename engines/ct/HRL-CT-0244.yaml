@@ -1,0 +1,36 @@
+id: HRL-CT-0244
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CES0104OR (Combat Exposure Scale Questionnaire ORRES for CES0104 TN/TC)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CES0104OR
+      operator: in
+      value:
+        - 1-25%
+        - 26-50%
+        - 51-75%
+        - 76% or more
+        - None
+outcome:
+  message: Value not found in non-extensible codelist Combat Exposure Scale Questionnaire
+    ORRES for CES0104 TN/TC (C179948)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C179948
+  codelist_name: Combat Exposure Scale Questionnaire ORRES for CES0104 TN/TC
+  codelist_submission_value: CES0104OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

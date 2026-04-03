@@ -1,0 +1,38 @@
+id: HRL-CT-0154
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CCSGA101OR (Canadian Cardiovascular Society Grading Scale of Angina Pectoris
+  Clinical Classification ORRES for CCSGA101 TN/TC) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CCSGA101OR
+      operator: in
+      value:
+        - Grade I
+        - Grade II
+        - Grade III
+        - Grade IV
+outcome:
+  message: Value not found in non-extensible codelist Canadian Cardiovascular Society
+    Grading Scale of Angina Pectoris Clinical Classification ORRES for CCSGA101 TN/TC
+    (C199510)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C199510
+  codelist_name: Canadian Cardiovascular Society Grading Scale of Angina Pectoris
+    Clinical Classification ORRES for CCSGA101 TN/TC
+  codelist_submission_value: CCSGA101OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

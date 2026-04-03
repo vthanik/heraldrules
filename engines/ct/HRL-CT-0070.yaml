@@ -1,0 +1,143 @@
+id: HRL-CT-0070
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ADCTC (Alzheimer's Disease Assessment Scale - Cognitive CDISC Version
+  Functional Test Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ADCTC
+      operator: in
+      value:
+        - ADCCMD
+        - ADCCMD01
+        - ADCCMD02
+        - ADCCMD03
+        - ADCCMD04
+        - ADCCMD05
+        - ADCCMP
+        - ADCCON
+        - ADCCP
+        - ADCCP01
+        - ADCCP02
+        - ADCCP03
+        - ADCCP04
+        - ADCCPS
+        - ADCDIF
+        - ADCDRL
+        - ADCDRL01
+        - ADCDRL02
+        - ADCDRL03
+        - ADCDRL04
+        - ADCDRL05
+        - ADCDRL06
+        - ADCDRL07
+        - ADCDRL08
+        - ADCDRL09
+        - ADCDRL10
+        - ADCIP
+        - ADCIP01
+        - ADCIP02
+        - ADCIP03
+        - ADCIP04
+        - ADCIP05
+        - ADCMZ
+        - ADCMZ01
+        - ADCMZ02
+        - ADCNC
+        - ADCNC01
+        - ADCNC02
+        - ADCNC03
+        - ADCOF
+        - ADCOFF01
+        - ADCOFF02
+        - ADCOFF03
+        - ADCOFF04
+        - ADCOFF05
+        - ADCOFO01
+        - ADCOFO02
+        - ADCOFO03
+        - ADCOFO04
+        - ADCOFO05
+        - ADCOFO06
+        - ADCOFO07
+        - ADCOFO08
+        - ADCOFO09
+        - ADCOFO10
+        - ADCOFO11
+        - ADCOFO12
+        - ADCOR
+        - ADCOR01
+        - ADCOR02
+        - ADCOR03
+        - ADCOR04
+        - ADCOR05
+        - ADCOR06
+        - ADCOR07
+        - ADCOR08
+        - ADCRG
+        - ADCRGT01
+        - ADCRGT02
+        - ADCRGT03
+        - ADCRGW01
+        - ADCRGW02
+        - ADCRGW03
+        - ADCRGW04
+        - ADCRGW05
+        - ADCRGW06
+        - ADCRGW07
+        - ADCRGW08
+        - ADCRGW09
+        - ADCRGW10
+        - ADCRGW11
+        - ADCRGW12
+        - ADCRGW13
+        - ADCRGW14
+        - ADCRGW15
+        - ADCRGW16
+        - ADCRGW17
+        - ADCRGW18
+        - ADCRGW19
+        - ADCRGW20
+        - ADCRGW21
+        - ADCRGW22
+        - ADCRGW23
+        - ADCRGW24
+        - ADCRI
+        - ADCRL
+        - ADCRLT01
+        - ADCRLT02
+        - ADCRLT03
+        - ADCRLW01
+        - ADCRLW02
+        - ADCRLW03
+        - ADCRLW04
+        - ADCRLW05
+        - ADCRLW06
+        - ADCRLW07
+        - ADCRLW08
+        - ADCRLW09
+        - ADCRLW10
+        - ADCSL
+        - ADCTS
+outcome:
+  message: Value not found in non-extensible codelist Alzheimer's Disease Assessment
+    Scale - Cognitive CDISC Version Functional Test Test Code (C100132)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100132
+  codelist_name: Alzheimer's Disease Assessment Scale - Cognitive CDISC Version Functional
+    Test Test Code
+  codelist_submission_value: ADCTC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 111
+

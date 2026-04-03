@@ -1,0 +1,39 @@
+id: HRL-CT-0024
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: APCH102OR (Acute Physiology and Chronic Health Evaluation II Clinical
+  Classification ORRES for APCH102 TN/TC) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: APCH102OR
+      operator: in
+      value:
+        - 110-129
+        - 130-159
+        - 50-69
+        - 70-109
+        - <=49
+        - '>=160'
+outcome:
+  message: Value not found in non-extensible codelist Acute Physiology and Chronic
+    Health Evaluation II Clinical Classification ORRES for APCH102 TN/TC (C182485)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C182485
+  codelist_name: Acute Physiology and Chronic Health Evaluation II Clinical Classification
+    ORRES for APCH102 TN/TC
+  codelist_submission_value: APCH102OR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

@@ -1,0 +1,52 @@
+id: HRL-CT-0645
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MHEDTTYP (Medical History Event Date Type) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MHEDTTYP
+      operator: in
+      value:
+        - CURRENT DISEASE PRESENTATION
+        - DIAGNOSIS
+        - DISEASE BECAME ADVANCED
+        - DISEASE BECAME LOCALLY ADVANCED
+        - DISEASE BECAME METASTATIC
+        - DISEASE RELAPSE
+        - DISEASE TRANSFORMATION
+        - EPISODE
+        - EXACERBATION
+        - FLARE
+        - INITIAL DIAGNOSIS
+        - INITIAL DISEASE RELAPSE
+        - MOST RECENT DIAGNOSIS
+        - MOST RECENT DISEASE RELAPSE
+        - MOST RECENT EPISODE
+        - MOST RECENT EXACERBATION
+        - PATHOLOGICAL DIAGNOSIS
+        - PROGRESSION
+        - RESTAGING
+        - STAGING
+        - SYMPTOM ONSET
+outcome:
+  message: Value not found in extensible codelist Medical History Event Date Type
+    (C124301)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124301
+  codelist_name: Medical History Event Date Type
+  codelist_submission_value: MHEDTTYP
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 21
+

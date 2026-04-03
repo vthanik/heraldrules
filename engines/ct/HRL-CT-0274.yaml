@@ -1,0 +1,36 @@
+id: HRL-CT-0274
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CTTIMIRS (Coronary Thrombus TIMI Grade Responses) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CTTIMIRS
+      operator: in
+      value:
+        - CORONARY THROMBUS TIMI GRADE 1
+        - CORONARY THROMBUS TIMI GRADE 2
+        - CORONARY THROMBUS TIMI GRADE 3
+        - CORONARY THROMBUS TIMI GRADE 4
+        - CORONARY THROMBUS TIMI GRADE 5
+outcome:
+  message: Value not found in non-extensible codelist Coronary Thrombus TIMI Grade
+    Responses (C119017)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C119017
+  codelist_name: Coronary Thrombus TIMI Grade Responses
+  codelist_submission_value: CTTIMIRS
+  extensible: no
+  parent_rule: CT2001
+  term_count: 5
+

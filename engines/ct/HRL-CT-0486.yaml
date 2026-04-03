@@ -1,0 +1,42 @@
+id: HRL-CT-0486
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FASNA1TN (Functional Assessment Scale-NACC UDS Version 3.0 Clinical Classification
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FASNA1TN
+      operator: in
+      value:
+        - FASNA1-Assembling Tax Records
+        - FASNA1-Heating Water, Making Coffee
+        - FASNA1-Keeping Track of Current Events
+        - FASNA1-Paying Attention/Understanding TV
+        - FASNA1-Playing a Game of Skill
+        - FASNA1-Preparing a Balanced Meal
+        - FASNA1-Remembering Appointments
+        - FASNA1-Shopping Alone for Clothes
+        - FASNA1-Traveling Out of the Neighborhood
+        - FASNA1-Writing Checks, Paying Bills
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment Scale-NACC
+    UDS Version 3.0 Clinical Classification Test Name (C170522)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C170522
+  codelist_name: Functional Assessment Scale-NACC UDS Version 3.0 Clinical Classification
+    Test Name
+  codelist_submission_value: FASNA1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 10
+

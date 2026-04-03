@@ -1,0 +1,53 @@
+id: HRL-CT-0502
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: SYMTYPGF (Genomic Symbol Type Response) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: SYMTYPGF
+      operator: in
+      value:
+        - CIRCULAR RNA
+        - ENDOGENOUS RETROVIRUS
+        - FRAGILE SITE
+        - GENE WITH PROTEIN PRODUCT
+        - LONG NON-CODING RNA
+        - MICRO RNA
+        - NONSENSE MEDIATED DECAY
+        - PIWI-INTERACTING RNA
+        - PROCESSED TRANSCRIPT
+        - PSEUDOGENE
+        - READTHROUGH TRANSCRIPT
+        - RETAINED INTRON
+        - RIBOSOMAL RNA
+        - SMALL CYTOPLASMIC RNA
+        - SMALL INTERFERING RNA
+        - SMALL NON-CODING RNA
+        - SMALL NUCLEAR RNA
+        - SMALL NUCLEOLAR RNA
+        - STOP CODON READTHROUGH TRANSCRIPT
+        - TRANSFER RNA
+        - TRANSPOSABLE ELEMENT
+        - VAULT RNA
+        - VIRUS INTEGRATION SITE
+outcome:
+  message: Value not found in extensible codelist Genomic Symbol Type Response (C181176)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C181176
+  codelist_name: Genomic Symbol Type Response
+  codelist_submission_value: SYMTYPGF
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 23
+

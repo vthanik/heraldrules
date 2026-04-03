@@ -1,0 +1,144 @@
+id: HRL-CT-0073
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ADC1TN (Alzheimer's Disease Assessment Scale-Cognitive 30JUN2015 Functional
+  Test Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ADC1TN
+      operator: in
+      value:
+        - 'ADC1-Commands: Ceiling'
+        - 'ADC1-Commands: Fist'
+        - 'ADC1-Commands: None'
+        - 'ADC1-Commands: Pencil'
+        - 'ADC1-Commands: Score'
+        - 'ADC1-Commands: Shoulder'
+        - 'ADC1-Commands: Watch'
+        - ADC1-Comprehension of Spoken Language
+        - ADC1-Concentration/Distractibility
+        - 'ADC1-Constructional Praxis: 2 Rectangles'
+        - 'ADC1-Constructional Praxis: Circle'
+        - 'ADC1-Constructional Praxis: Cube'
+        - 'ADC1-Constructional Praxis: Drew No Form'
+        - 'ADC1-Constructional Praxis: None'
+        - 'ADC1-Constructional Praxis: Rhombus'
+        - 'ADC1-Constructional Praxis: Score'
+        - 'ADC1-Delayed Word Recall: Score'
+        - 'ADC1-Delayed Word Recall: Word [10]'
+        - 'ADC1-Delayed Word Recall: Word [1]'
+        - 'ADC1-Delayed Word Recall: Word [2]'
+        - 'ADC1-Delayed Word Recall: Word [3]'
+        - 'ADC1-Delayed Word Recall: Word [4]'
+        - 'ADC1-Delayed Word Recall: Word [5]'
+        - 'ADC1-Delayed Word Recall: Word [6]'
+        - 'ADC1-Delayed Word Recall: Word [7]'
+        - 'ADC1-Delayed Word Recall: Word [8]'
+        - 'ADC1-Delayed Word Recall: Word [9]'
+        - 'ADC1-Ideational Praxis: Address Envelope'
+        - 'ADC1-Ideational Praxis: Fold a Letter'
+        - 'ADC1-Ideational Praxis: None'
+        - 'ADC1-Ideational Praxis: Put in Envelope'
+        - 'ADC1-Ideational Praxis: Score'
+        - 'ADC1-Ideational Praxis: Seal Envelope'
+        - 'ADC1-Ideational Praxis: Where Stamp Goes'
+        - 'ADC1-Maze Task/Executive Function: Error'
+        - 'ADC1-Maze Task/Executive Function: Score'
+        - 'ADC1-Maze Task/Executive Function: Time'
+        - 'ADC1-Naming: Bed'
+        - 'ADC1-Naming: Comb'
+        - 'ADC1-Naming: Flower'
+        - 'ADC1-Naming: Harmonica'
+        - 'ADC1-Naming: Index/Forefinger/Pointer'
+        - 'ADC1-Naming: Mask'
+        - 'ADC1-Naming: Middle'
+        - 'ADC1-Naming: None'
+        - 'ADC1-Naming: Pencil'
+        - 'ADC1-Naming: Pinky/Little'
+        - 'ADC1-Naming: Rattle'
+        - 'ADC1-Naming: Ring'
+        - 'ADC1-Naming: Scissors'
+        - 'ADC1-Naming: Score'
+        - 'ADC1-Naming: Stethoscope'
+        - 'ADC1-Naming: Thumb'
+        - 'ADC1-Naming: Tongs'
+        - 'ADC1-Naming: Wallet'
+        - 'ADC1-Naming: Whistle'
+        - 'ADC1-Number Cancellation Task: Errors'
+        - 'ADC1-Number Cancellation Task: Remind'
+        - 'ADC1-Number Cancellation Task: Score'
+        - ADC1-Number Cancellation Task:Target Hit
+        - 'ADC1-Orientation: Date'
+        - 'ADC1-Orientation: Day'
+        - 'ADC1-Orientation: Full Name'
+        - 'ADC1-Orientation: Month'
+        - 'ADC1-Orientation: None'
+        - 'ADC1-Orientation: Place'
+        - 'ADC1-Orientation: Score'
+        - 'ADC1-Orientation: Season'
+        - 'ADC1-Orientation: Time of Day'
+        - 'ADC1-Orientation: Year'
+        - ADC1-Remember Word Recog Test Instruct
+        - ADC1-Spoken Language Ability
+        - ADC1-Total Score
+        - ADC1-Word Finding Difficulty
+        - 'ADC1-Word Recall: Score'
+        - 'ADC1-Word Recall: Trial Score'
+        - 'ADC1-Word Recall: Word [10]'
+        - 'ADC1-Word Recall: Word [1]'
+        - 'ADC1-Word Recall: Word [2]'
+        - 'ADC1-Word Recall: Word [3]'
+        - 'ADC1-Word Recall: Word [4]'
+        - 'ADC1-Word Recall: Word [5]'
+        - 'ADC1-Word Recall: Word [6]'
+        - 'ADC1-Word Recall: Word [7]'
+        - 'ADC1-Word Recall: Word [8]'
+        - 'ADC1-Word Recall: Word [9]'
+        - 'ADC1-Word Recognition: Score'
+        - 'ADC1-Word Recognition: Trial Score'
+        - 'ADC1-Word Recognition: Word [10]'
+        - 'ADC1-Word Recognition: Word [11]'
+        - 'ADC1-Word Recognition: Word [12]'
+        - 'ADC1-Word Recognition: Word [13]'
+        - 'ADC1-Word Recognition: Word [14]'
+        - 'ADC1-Word Recognition: Word [15]'
+        - 'ADC1-Word Recognition: Word [16]'
+        - 'ADC1-Word Recognition: Word [17]'
+        - 'ADC1-Word Recognition: Word [18]'
+        - 'ADC1-Word Recognition: Word [19]'
+        - 'ADC1-Word Recognition: Word [1]'
+        - 'ADC1-Word Recognition: Word [20]'
+        - 'ADC1-Word Recognition: Word [21]'
+        - 'ADC1-Word Recognition: Word [22]'
+        - 'ADC1-Word Recognition: Word [23]'
+        - 'ADC1-Word Recognition: Word [24]'
+        - 'ADC1-Word Recognition: Word [2]'
+        - 'ADC1-Word Recognition: Word [3]'
+        - 'ADC1-Word Recognition: Word [4]'
+        - 'ADC1-Word Recognition: Word [5]'
+        - 'ADC1-Word Recognition: Word [6]'
+        - 'ADC1-Word Recognition: Word [7]'
+        - 'ADC1-Word Recognition: Word [8]'
+        - 'ADC1-Word Recognition: Word [9]'
+outcome:
+  message: Value not found in non-extensible codelist Alzheimer's Disease Assessment
+    Scale-Cognitive 30JUN2015 Functional Test Test Name (C213937)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C213937
+  codelist_name: Alzheimer's Disease Assessment Scale-Cognitive 30JUN2015 Functional
+    Test Test Name
+  codelist_submission_value: ADC1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 112
+

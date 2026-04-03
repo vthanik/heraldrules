@@ -1,0 +1,82 @@
+id: HRL-CT-1168
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: WD4TC (World Health Organization Disability Assessment Schedule 2.0 -
+  12 + 24-Item Interviewer Questionnaire Test Code) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: WD4TC
+      operator: in
+      value:
+        - WD4A1
+        - WD4A2
+        - WD4A3
+        - WD4A4
+        - WD4A5
+        - WD4D1_2
+        - WD4D1_3
+        - WD4D1_5
+        - WD4D1_6
+        - WD4D2_2
+        - WD4D2_3
+        - WD4D2_4
+        - WD4D3_3
+        - WD4D3_4
+        - WD4D4_3
+        - WD4D4_4
+        - WD4D4_5
+        - WD4D5_01
+        - WD4D5_02
+        - WD4D5_10
+        - WD4D5_2
+        - WD4D5_3
+        - WD4D5_4
+        - WD4D5_6
+        - WD4D5_7
+        - WD4D5_8
+        - WD4D5_9
+        - WD4D6_2
+        - WD4D6_3
+        - WD4D6_4
+        - WD4D6_6
+        - WD4D6_7
+        - WD4D6_8
+        - WD4F5
+        - WD4H1
+        - WD4H2
+        - WD4H3
+        - WD4S1
+        - WD4S10
+        - WD4S11
+        - WD4S12
+        - WD4S2
+        - WD4S3
+        - WD4S4
+        - WD4S5
+        - WD4S6
+        - WD4S7
+        - WD4S8
+        - WD4S9
+outcome:
+  message: Value not found in non-extensible codelist World Health Organization Disability
+    Assessment Schedule 2.0 - 12 + 24-Item Interviewer Questionnaire Test Code (C130281)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130281
+  codelist_name: World Health Organization Disability Assessment Schedule 2.0 - 12
+    + 24-Item Interviewer Questionnaire Test Code
+  codelist_submission_value: WD4TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 49
+

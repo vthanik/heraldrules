@@ -1,0 +1,43 @@
+id: HRL-CT-0668
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MODTRN (Mode of Disease Transmission) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MODTRN
+      operator: in
+      value:
+        - BLOOD TRANSFUSION
+        - BREASTFEEDING
+        - HORIZONTAL TRANSMISSION
+        - INJECTION NEEDLE REUSE
+        - INTRAUTERINE EXPOSURE
+        - LABOR AND DELIVERY
+        - OCCUPATIONAL EXPOSURE
+        - OPPOSITE-SEX SEXUAL CONTACT
+        - PERINATAL EXPOSURE
+        - SAME-SEX SEXUAL CONTACT
+        - SEXUAL CONTACT
+        - UNKNOWN
+        - VERTICAL TRANSMISSION
+outcome:
+  message: Value not found in extensible codelist Mode of Disease Transmission (C127265)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C127265
+  codelist_name: Mode of Disease Transmission
+  codelist_submission_value: MODTRN
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 13
+

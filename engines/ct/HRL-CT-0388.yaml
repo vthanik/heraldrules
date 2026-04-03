@@ -1,0 +1,54 @@
+id: HRL-CT-0388
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: EOR19TN (European Organization for the Research and Treatment of Cancer
+  Quality of Life Questionnaire - Multiple Myeloma 20 Items Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: EOR19TN
+      operator: in
+      value:
+        - EOR19-Acid Indigestion/Heartburn
+        - EOR19-Bone Aches/Pain
+        - EOR19-Burning/Sore Eyes
+        - EOR19-Dry Mouth
+        - EOR19-Feel Drowsy
+        - EOR19-Feel Restless/Agitated
+        - EOR19-Feel Thirsty
+        - EOR19-Felt Ill
+        - EOR19-Felt Physically Less Attractive
+        - EOR19-Lost Any Hair
+        - 'EOR19-Lost Hair: Upset by Loss of Hair'
+        - EOR19-Pain in Arm/Shoulder
+        - EOR19-Pain in Back
+        - EOR19-Pain in Chest
+        - EOR19-Pain in Hip
+        - EOR19-Pain Increase With Activity
+        - EOR19-Thinking About Illness
+        - EOR19-Tingling Hands/Feet
+        - EOR19-Worried About Dying
+        - EOR19-Worried About Health in Future
+outcome:
+  message: Value not found in non-extensible codelist European Organization for the
+    Research and Treatment of Cancer Quality of Life Questionnaire - Multiple Myeloma
+    20 Items Test Name (C219728)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C219728
+  codelist_name: European Organization for the Research and Treatment of Cancer Quality
+    of Life Questionnaire - Multiple Myeloma 20 Items Test Name
+  codelist_submission_value: EOR19TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 20
+

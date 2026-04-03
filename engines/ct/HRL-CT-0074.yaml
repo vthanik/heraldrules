@@ -1,0 +1,126 @@
+id: HRL-CT-0074
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ADL03TC (Alzheimer's Disease Cooperative Study-Activities of Daily Living
+  Inventory MCI Version Questionnaire Test Code) must contain valid non-extensible
+  codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ADL03TC
+      operator: in
+      value:
+        - ADL0301
+        - ADL0301A
+        - ADL0302
+        - ADL0302A
+        - ADL0303
+        - ADL0304
+        - ADL0304A
+        - ADL0305
+        - ADL0305A
+        - ADL0306
+        - ADL0306A
+        - ADL0307
+        - ADL0307A
+        - ADL0308
+        - ADL0308A
+        - ADL0309
+        - ADL0309A
+        - ADL0310
+        - ADL0310A
+        - ADL0311
+        - ADL0311A
+        - ADL0312
+        - ADL0312A
+        - ADL0312B
+        - ADL0312C
+        - ADL0312D
+        - ADL0313
+        - ADL0313A
+        - ADL0313B
+        - ADL0313C
+        - ADL0314
+        - ADL0314A
+        - ADL0314B
+        - ADL0314C
+        - ADL0315
+        - ADL0315A
+        - ADL0315B
+        - ADL0316
+        - ADL0316A
+        - ADL0316B
+        - ADL0316C
+        - ADL0317
+        - ADL0317A
+        - ADL0317B
+        - ADL0317C
+        - ADL0317D
+        - ADL0317E
+        - ADL0317F
+        - ADL0317G
+        - ADL0317H
+        - ADL0317I
+        - ADL0317J
+        - ADL0317K
+        - ADL0317L
+        - ADL0318
+        - ADL0318A
+        - ADL0318B
+        - ADL0318C
+        - ADL0318D
+        - ADL0318E
+        - ADL0318F
+        - ADL0318G
+        - ADL0318H
+        - ADL0318I
+        - ADL0318J
+        - ADL0318K
+        - ADL0318L
+        - ADL0318M
+        - ADL0318N
+        - ADL0318O
+        - ADL0318P
+        - ADL0318Q
+        - ADL0319
+        - ADL0319A
+        - ADL0320
+        - ADL0320A
+        - ADL0321
+        - ADL0321A
+        - ADL0322
+        - ADL0323
+        - ADL0324
+        - ADL0324A
+        - ADL0325
+        - ADL0326
+        - ADL0327
+        - ADL0328
+        - ADL0329
+        - ADL0330
+        - ADL0331
+        - ADL0332
+        - ADL0333
+        - ADL0334
+outcome:
+  message: Value not found in non-extensible codelist Alzheimer's Disease Cooperative
+    Study-Activities of Daily Living Inventory MCI Version Questionnaire Test Code
+    (C106651)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C106651
+  codelist_name: Alzheimer's Disease Cooperative Study-Activities of Daily Living
+    Inventory MCI Version Questionnaire Test Code
+  codelist_submission_value: ADL03TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 92
+

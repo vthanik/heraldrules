@@ -1,0 +1,40 @@
+id: HRL-CT-0654
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: MSSTRESC (Microbiology Susceptibility Test Standard Character Result)
+  must contain valid extensible codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: MSSTRESC
+      operator: in
+      value:
+        - INDETERMINATE
+        - INTERMEDIATE
+        - NONSUSCEPTIBLE
+        - NOT APPLICABLE
+        - NOT SUSCEPTIBLE
+        - RESISTANT
+        - SUSCEPTIBLE
+        - SUSCEPTIBLE-DOSE DEPENDENT
+        - UNKNOWN
+outcome:
+  message: Value not found in extensible codelist Microbiology Susceptibility Test
+    Standard Character Result (C213530)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C213530
+  codelist_name: Microbiology Susceptibility Test Standard Character Result
+  codelist_submission_value: MSSTRESC
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 9
+

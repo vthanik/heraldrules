@@ -1,0 +1,50 @@
+id: HRL-CT-0115
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: BEBQ01TC (Baby Eating Behaviour Questionnaire Concurrent Version Questionnaire
+  Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: BEBQ01TC
+      operator: in
+      value:
+        - BEBQ0101
+        - BEBQ0102
+        - BEBQ0103
+        - BEBQ0104
+        - BEBQ0105
+        - BEBQ0106
+        - BEBQ0107
+        - BEBQ0108
+        - BEBQ0109
+        - BEBQ0110
+        - BEBQ0111
+        - BEBQ0112
+        - BEBQ0113
+        - BEBQ0114
+        - BEBQ0115
+        - BEBQ0116
+        - BEBQ0117
+        - BEBQ0118
+outcome:
+  message: Value not found in non-extensible codelist Baby Eating Behaviour Questionnaire
+    Concurrent Version Questionnaire Test Code (C135680)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C135680
+  codelist_name: Baby Eating Behaviour Questionnaire Concurrent Version Questionnaire
+    Test Code
+  codelist_submission_value: BEBQ01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 18
+

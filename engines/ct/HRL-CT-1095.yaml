@@ -1,0 +1,35 @@
+id: HRL-CT-1095
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: T25FW1TN (Timed 25-Foot Walk Test Functional Test Test Name) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: T25FW1TN
+      operator: in
+      value:
+        - T25FW1-Did Patient Wear AFO
+        - T25FW1-More Than Two Attempts
+        - T25FW1-Time to Complete 25-Foot Walk
+        - T25FW1-Was Assistive Device Used
+outcome:
+  message: Value not found in non-extensible codelist Timed 25-Foot Walk Test Functional
+    Test Test Name (C115397)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C115397
+  codelist_name: Timed 25-Foot Walk Test Functional Test Test Name
+  codelist_submission_value: T25FW1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

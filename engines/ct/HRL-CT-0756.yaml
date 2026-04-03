@@ -1,0 +1,78 @@
+id: HRL-CT-0756
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: ONCRTS (Oncology Response Assessment Test Name) must contain valid extensible
+  codelist terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: ONCRTS
+      operator: in
+      value:
+        - Anatomic Response
+        - Best Overall Response
+        - Bone Marrow Involvement Indicator
+        - Bone Marrow Response
+        - Bone Marrow Status
+        - Bone Response
+        - Circulating Lymphocytes Response
+        - Clinical Performance Status
+        - Clinical Response
+        - CNS Status
+        - Constitutional Symptoms
+        - Cytogenetic Response
+        - Disease Recurrence Indicator
+        - Extramedullary Disease Response
+        - Hematologic Improvement
+        - Hematologic Response
+        - Hemoglobin Response
+        - Liver Response
+        - Major Pathological Response Indicator
+        - Metabolic Response
+        - Metastatic Indicator
+        - Minimal Residual Disease Indicator
+        - Minimal Residual Disease Response
+        - Minor Pathological Response Indicator
+        - Molecular Response
+        - Morphologic Response
+        - Neurological Status
+        - New Lesion Indicator
+        - New Lesion Progression
+        - New Lesion Worsening Indicator
+        - Non-Target Enhancing Response
+        - Non-Target Lesion Worsening Indicator
+        - Non-Target Non-Enhancing Response
+        - Non-target Response
+        - Overall Response
+        - Pathologic Response
+        - Peripheral Blasts Indicator
+        - Platelets Response
+        - Radiologic Response
+        - Soft Tissue Response
+        - Spleen Response
+        - Steroid Use Status
+        - Symptomatic Deterioration
+        - Target Nodal Response
+        - Target Response
+        - Testicular Disease Indicator
+        - Tumor Marker Response
+outcome:
+  message: Value not found in extensible codelist Oncology Response Assessment Test
+    Name (C96781)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C96781
+  codelist_name: Oncology Response Assessment Test Name
+  codelist_submission_value: ONCRTS
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 47
+

@@ -1,0 +1,52 @@
+id: HRL-CT-0897
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: QIDSR1TN (Quick Inventory of Depressive Symptomatology Self-Report Version
+  Questionnaire Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: QIDSR1TN
+      operator: in
+      value:
+        - QIDSR1-Concentration/Decision Making
+        - QIDSR1-Decreased Appetite
+        - QIDSR1-Decreased Weight
+        - QIDSR1-Energy Level
+        - QIDSR1-Falling Asleep
+        - QIDSR1-Feeling Restless
+        - QIDSR1-Feeling Sad
+        - QIDSR1-Feeling Slowed Down
+        - QIDSR1-General Interest
+        - QIDSR1-High Score Appetite/Weight Items
+        - QIDSR1-Highest Score Psychomotor Items
+        - QIDSR1-Highest Score Sleep Items
+        - QIDSR1-Increased Appetite
+        - QIDSR1-Increased Weight
+        - QIDSR1-Sleep During the Night
+        - QIDSR1-Sleeping Too Much
+        - QIDSR1-Thoughts of Death or Suicide
+        - QIDSR1-Total Score
+        - QIDSR1-View of Myself
+        - QIDSR1-Waking Up Too Early
+outcome:
+  message: Value not found in non-extensible codelist Quick Inventory of Depressive
+    Symptomatology Self-Report Version Questionnaire Test Name (C130262)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C130262
+  codelist_name: Quick Inventory of Depressive Symptomatology Self-Report Version
+    Questionnaire Test Name
+  codelist_submission_value: QIDSR1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 20
+

@@ -1,0 +1,39 @@
+id: HRL-CT-0868
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: PA020TN (PROMIS Item Bank v2.0 - Cognitive Function - Abilities Subset
+  - Short Form 6a Questionnaire Test Name) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: PA020TN
+      operator: in
+      value:
+        - PA020-I Have Been Able to Concentrate
+        - PA020-Keep Track Even If Interrupted
+        - PA020-Memory Has Been as Good as Usual
+        - PA020-My Mind Has Been as Sharp as Usual
+        - PA020-Think Clearly Without Extra Effort
+        - PA020-Thinking Has Been as Fast as Usual
+outcome:
+  message: Value not found in non-extensible codelist PROMIS Item Bank v2.0 - Cognitive
+    Function - Abilities Subset - Short Form 6a Questionnaire Test Name (C208373)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C208373
+  codelist_name: PROMIS Item Bank v2.0 - Cognitive Function - Abilities Subset - Short
+    Form 6a Questionnaire Test Name
+  codelist_submission_value: PA020TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 6
+

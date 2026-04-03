@@ -1,0 +1,33 @@
+id: HRL-CT-1161
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: WHEG01TN (West Haven Hepatic Encephalopathy Grade Clinical Classification
+  Test Name) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: WHEG01TN
+      operator: in
+      value:
+        - WHEG01-WH Hepatic Encephalopathy Grade
+outcome:
+  message: Value not found in non-extensible codelist West Haven Hepatic Encephalopathy
+    Grade Clinical Classification Test Name (C124679)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C124679
+  codelist_name: West Haven Hepatic Encephalopathy Grade Clinical Classification Test
+    Name
+  codelist_submission_value: WHEG01TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 1
+

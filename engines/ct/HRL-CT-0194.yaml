@@ -1,0 +1,35 @@
+id: HRL-CT-0194
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: CPS0105ASTR (Child-Pugh Classification Clinical Classification STRESC
+  for CPS0105A TN/TC) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: CPS0105ASTR
+      operator: in
+      value:
+        - '1'
+        - '2'
+        - '3'
+outcome:
+  message: Value not found in non-extensible codelist Child-Pugh Classification Clinical
+    Classification STRESC for CPS0105A TN/TC (C208394)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C208394
+  codelist_name: Child-Pugh Classification Clinical Classification STRESC for CPS0105A
+    TN/TC
+  codelist_submission_value: CPS0105ASTR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 3
+

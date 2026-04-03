@@ -1,0 +1,50 @@
+id: HRL-CT-0902
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RSSS01TC (RAND Social Support Survey Instrument Questionnaire Test Code)
+  must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RSSS01TC
+      operator: in
+      value:
+        - RSSS0101
+        - RSSS0102
+        - RSSS0103
+        - RSSS0104
+        - RSSS0105
+        - RSSS0106
+        - RSSS0107
+        - RSSS0108
+        - RSSS0109
+        - RSSS0110
+        - RSSS0111
+        - RSSS0112
+        - RSSS0113
+        - RSSS0114
+        - RSSS0115
+        - RSSS0116
+        - RSSS0117
+        - RSSS0118
+        - RSSS0119
+outcome:
+  message: Value not found in non-extensible codelist RAND Social Support Survey Instrument
+    Questionnaire Test Code (C135700)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C135700
+  codelist_name: RAND Social Support Survey Instrument Questionnaire Test Code
+  codelist_submission_value: RSSS01TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 19
+

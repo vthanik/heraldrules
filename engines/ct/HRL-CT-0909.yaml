@@ -1,0 +1,116 @@
+id: HRL-CT-0909
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RELSUB (Relationship to Subject) must contain valid extensible codelist
+  terms (new terms allowed).
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RELSUB
+      operator: in
+      value:
+        - ACCIDENTAL ASSOCIATE
+        - AUNT, BIOLOGICAL MATERNAL
+        - AUNT, BIOLOGICAL PATERNAL
+        - AUNT, BIOLOGICAL
+        - BIOLOGICALLY RELATED
+        - BIOLOGICALLY UNRELATED
+        - BROTHER, BIOLOGICAL MATERNAL HALF
+        - BROTHER, BIOLOGICAL PATERNAL HALF
+        - BROTHER, BIOLOGICAL
+        - BROTHER, FULL
+        - BROTHER, HALF
+        - CAREGIVER
+        - CHILD
+        - CHILD, BIOLOGICAL
+        - CLINICIAN
+        - COUSIN, BIOLOGICAL MATERNAL
+        - COUSIN, BIOLOGICAL PATERNAL
+        - COUSIN, BIOLOGICAL
+        - DAUGHTER, BIOLOGICAL
+        - DOMESTIC PARTNER
+        - DONOR
+        - DONOR, BLOOD
+        - DONOR, KIDNEY
+        - DONOR, ORGAN
+        - DONOR, TISSUE
+        - EDUCATOR
+        - FAMILY MEMBER
+        - FATHER
+        - FATHER, BIOLOGICAL OF SUBJECT'S CHILD
+        - FATHER, BIOLOGICAL
+        - FATHER, STEP
+        - FRIEND
+        - GRANDCHILD, BIOLOGICAL
+        - GRANDFATHER, BIOLOGICAL MATERNAL
+        - GRANDFATHER, BIOLOGICAL PATERNAL
+        - GRANDFATHER, BIOLOGICAL
+        - GRANDMOTHER, BIOLOGICAL MATERNAL
+        - GRANDMOTHER, BIOLOGICAL PATERNAL
+        - GRANDMOTHER, BIOLOGICAL
+        - GRANDPARENT, BIOLOGICAL MATERNAL
+        - GRANDPARENT, BIOLOGICAL PATERNAL
+        - GRANDPARENT, BIOLOGICAL
+        - GUARDIAN
+        - HOUSEHOLD MEMBER
+        - HUSBAND
+        - LEGALLY AUTHORIZED REPRESENTATIVE
+        - MOTHER
+        - MOTHER, BIOLOGICAL OF SUBJECT'S CHILD
+        - MOTHER, BIOLOGICAL
+        - MOTHER, STEP
+        - NEPHEW, BIOLOGICAL
+        - NURSE
+        - PARENT
+        - PREGNANCY PARTNER
+        - RELATIVE
+        - RELATIVE, BIOLOGICAL PATERNAL
+        - RELATIVE, BIOLOGICAL, FIRST DEGREE
+        - RELATIVE, BIOLOGICAL, SECOND DEGREE
+        - RELATIVE, FIRST DEGREE
+        - RELATIVE, HOUSEHOLD
+        - RELATIVE, NON-HOUSEHOLD
+        - RELATIVE, SECOND DEGREE
+        - RELATIVE, THIRD DEGREE
+        - SCHOOLMATE
+        - SEXUAL PARTNER
+        - SIBLING
+        - SIBLING, BIOLOGICAL
+        - SIBLING, FULL
+        - SIBLING, HALF
+        - SIGNIFICANT OTHER
+        - SISTER, BIOLOGICAL MATERNAL HALF
+        - SISTER, BIOLOGICAL PATERNAL HALF
+        - SISTER, BIOLOGICAL
+        - SISTER, FULL
+        - SISTER, HALF
+        - SON, BIOLOGICAL
+        - SPOUSE
+        - SUSPECTED SOURCE CASE
+        - TECHNICIAN
+        - TWIN
+        - TWIN, DIZYGOTIC
+        - TWIN, MONOZYGOTIC
+        - UNCLE, BIOLOGICAL MATERNAL
+        - UNCLE, BIOLOGICAL PATERNAL
+        - UNCLE, BIOLOGICAL
+        - WIFE
+outcome:
+  message: Value not found in extensible codelist Relationship to Subject (C100130)
+  severity: Warning
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C100130
+  codelist_name: Relationship to Subject
+  codelist_submission_value: RELSUB
+  extensible: yes
+  parent_rule: CT2002
+  term_count: 86
+

@@ -1,0 +1,80 @@
+id: HRL-CT-0473
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: FAC071TC (Functional Assessment of Chronic Illness Therapy-Fatigue Version
+  4 Questionnaire Test Code) must contain valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: FAC071TC
+      operator: in
+      value:
+        - FAC07101
+        - FAC07102
+        - FAC07103
+        - FAC07104
+        - FAC07105
+        - FAC07106
+        - FAC07107
+        - FAC07108
+        - FAC07109
+        - FAC07110
+        - FAC07111
+        - FAC07112
+        - FAC07113
+        - FAC07114
+        - FAC07115
+        - FAC07116
+        - FAC07117
+        - FAC07118
+        - FAC07119
+        - FAC07120
+        - FAC07121
+        - FAC07122
+        - FAC07123
+        - FAC07124
+        - FAC07125
+        - FAC07126
+        - FAC07127
+        - FAC07128
+        - FAC07129
+        - FAC07130
+        - FAC07131
+        - FAC07132
+        - FAC07133
+        - FAC07134
+        - FAC07135
+        - FAC07136
+        - FAC07137
+        - FAC07138
+        - FAC07139
+        - FAC07140
+        - FAC07141
+        - FAC07142
+        - FAC07143
+        - FAC07144
+        - FAC07145
+        - FAC07146
+        - FAC07147
+        - FAC07148
+outcome:
+  message: Value not found in non-extensible codelist Functional Assessment of Chronic
+    Illness Therapy-Fatigue Version 4 Questionnaire Test Code (C129088)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C129088
+  codelist_name: Functional Assessment of Chronic Illness Therapy-Fatigue Version
+    4 Questionnaire Test Code
+  codelist_submission_value: FAC071TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 48
+

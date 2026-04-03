@@ -1,0 +1,37 @@
+id: HRL-CT-0043
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: APCH105BSTR (Acute Physiology and Chronic Health Evaluation II Clinical
+  Classification STRESC for APCH105B TN/TC) must contain valid non-extensible codelist
+  terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: APCH105BSTR
+      operator: in
+      value:
+        - '0'
+        - '1'
+        - '3'
+        - '4'
+outcome:
+  message: Value not found in non-extensible codelist Acute Physiology and Chronic
+    Health Evaluation II Clinical Classification STRESC for APCH105B TN/TC (C182527)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C182527
+  codelist_name: Acute Physiology and Chronic Health Evaluation II Clinical Classification
+    STRESC for APCH105B TN/TC
+  codelist_submission_value: APCH105BSTR
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

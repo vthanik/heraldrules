@@ -1,0 +1,35 @@
+id: HRL-CT-1094
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: T25FW1TC (Timed 25-Foot Walk Test Functional Test Test Code) must contain
+  valid non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: T25FW1TC
+      operator: in
+      value:
+        - T25FW101
+        - T25FW102
+        - T25FW103
+        - T25FW104
+outcome:
+  message: Value not found in non-extensible codelist Timed 25-Foot Walk Test Functional
+    Test Test Code (C115398)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C115398
+  codelist_name: Timed 25-Foot Walk Test Functional Test Test Code
+  codelist_submission_value: T25FW1TC
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

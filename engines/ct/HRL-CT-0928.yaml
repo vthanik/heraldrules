@@ -1,0 +1,35 @@
+id: HRL-CT-0928
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+description: RISEF1TN (Rising From Floor Functional Test Test Name) must contain valid
+  non-extensible codelist terms.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: RISEF1TN
+      operator: in
+      value:
+        - RISEF1-Test Grade
+        - RISEF1-Time to Rise From Floor
+        - RISEF1-Was Rising From Floor Performed
+        - RISEF1-Wear Orthoses
+outcome:
+  message: Value not found in non-extensible codelist Rising From Floor Functional
+    Test Test Name (C141658)
+  severity: Error
+provenance:
+  source_doc: NCI EVS CDISC Controlled Terminology (2025-09-26)
+  authority: CDISC
+  codelist_code: C141658
+  codelist_name: Rising From Floor Functional Test Test Name
+  codelist_submission_value: RISEF1TN
+  extensible: no
+  parent_rule: CT2001
+  term_count: 4
+

@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD1394
+  Status: Reference
+  Version: '1'
+Description: Start Day of Obs Relative to Exposure (--XSTDY) variable value should
+  be populated, when Start Date/Time of Observation (--STDTC) and Date/Time of First
+  Study Treatment (RFXSTDTC) variables values are provided, and both of them include
+  complete date parts.
+Check: []
+Outcome:
+  Message: --XSTDY variable value is not populated
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: INTERVENTIONS, FINDINGS, EVENTS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: ''
+IG Versions:
+  - SENDIG-AR 1.0
+

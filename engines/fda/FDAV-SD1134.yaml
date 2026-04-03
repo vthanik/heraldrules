@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD1134
+  Status: Reference
+  Version: '1'
+Description: A value for Actual Arm Code (ACTARMCD) must have a unique value for Description
+  of Actual Arm (ACTARM) with the domain.
+Check: []
+Outcome:
+  Message: Inconsistent value for ACTARMCD
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: FDAB009
+IG Versions:
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

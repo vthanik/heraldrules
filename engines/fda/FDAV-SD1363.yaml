@@ -1,0 +1,21 @@
+Core:
+  Id: FDAV-SD1363
+  Status: Reference
+  Version: '1'
+Description: Planned Arm Code (ARMCD) and Description of Planned Arm (ARM) must not
+  be null for subjects who are not assigned to treatment. This includes Screen Failure
+  subjects and Not Assigned subjects.
+Check: []
+Outcome:
+  Message: ARMCD/ARM is populated for a subject not assigned to treatment
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: CG0523, CG0570
+IG Versions:
+  - SDTMIG 3.3
+

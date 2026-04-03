@@ -1,0 +1,24 @@
+Core:
+  Id: FDAV-SD2285
+  Status: Reference
+  Version: '1'
+Description: Value for the LOINC Code (--LOINC) variable must be populated using a
+  LOINC coding system version specified in the define.xml.
+Check: []
+Outcome:
+  Message: Value for --LOINC not found in LOINC coding system
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: LB, MB, MS
+Standard: SDTM
+Publisher ID: CG0400
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG-AR 1.0
+

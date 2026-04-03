@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD1383
+  Status: Reference
+  Version: '1'
+Description: 'End Day of Obs Relative to Exposure (--XENDY) variable value should
+  be populated as defined by CDISC standards: --XENDY = (date portion of --ENDTC)
+  - (date portion of RFXSTDTC) +1 if --ENDTC is on or after RFXSTDTC; --XENDY = (date
+  portion of --DTC) - (date portion of RFXSTDTC) if --ENDTC precedes RFXSTDTC.'
+Check: []
+Outcome:
+  Message: Incorrect value for --XENDY variable
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: INTERVENTIONS, FINDINGS, EVENTS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: ''
+IG Versions:
+  - SENDIG-AR 1.0
+

@@ -1,0 +1,21 @@
+Core:
+  Id: FDAV-SD1253
+  Status: Reference
+  Version: '1'
+Description: DTHFL must equal 'Y' when there is a record in the Death Details (DD)
+  domain.
+Check: []
+Outcome:
+  Message: DTHFL does not equal 'Y' when DD record is present
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DD
+Standard: SDTM
+Publisher ID: CG0133
+IG Versions:
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

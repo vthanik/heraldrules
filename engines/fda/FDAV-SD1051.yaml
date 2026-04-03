@@ -1,0 +1,28 @@
+Core:
+  Id: FDAV-SD1051
+  Status: Reference
+  Version: '1'
+Description: Both Identifying Variable (IDVAR) and Identifying Variable Value (IDVARVAL)
+  should not be populated, when relating information to the Demographics (DM) domain.
+Check: []
+Outcome:
+  Message: Unexpected value for IDVAR/IDVARVAL
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: SUPPQUAL
+Standard: SDTM
+Publisher ID: CG0203, CG0204
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

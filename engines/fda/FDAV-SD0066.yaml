@@ -1,0 +1,29 @@
+Core:
+  Id: FDAV-SD0066
+  Status: Reference
+  Version: '1'
+Description: Planned Arm Code (ARMCD) values should match entries in the Trial Arms
+  (TA) dataset, except for subjects who failed screening (ARMCD = 'SCRNFAIL') or were
+  not fully assigned to an Arm (ARMCD = 'NOTASSGN').
+Check: []
+Outcome:
+  Message: Invalid ARMCD
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: CG0126, 223
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD1376
+  Status: Reference
+  Version: '1'
+Description: Subject Reference End Date/Time (RFENDTC) should be populated for all
+  treated subjects, those where Actual Arm Code (ACTARMCD) is not equal to 'SCRNFAIL',
+  'NOTASSGN' or 'NOTTRT' (or null).
+Check: []
+Outcome:
+  Message: RFENDTC is not provided for a treated subject
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: CG0142
+IG Versions:
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+

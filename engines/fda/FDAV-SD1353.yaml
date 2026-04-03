@@ -1,0 +1,30 @@
+Core:
+  Id: FDAV-SD1353
+  Status: Reference
+  Version: '1'
+Description: Standardized Result in Character Format (--STRESC) variable value should
+  be equal to Result or Finding in Original Units (--ORRES) variable value, when variable
+  values are numeric and Standard Units (--STRESU) and Original Units (--ORRESU) are
+  populated with the same units or are null.
+Check: []
+Outcome:
+  Message: --STRESC does not equal --ORRES when --STRESU is equal to --ORRESU
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: FINDINGS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: CG0397, 94
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

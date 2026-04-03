@@ -1,0 +1,28 @@
+Core:
+  Id: FDAV-SD1063
+  Status: Reference
+  Version: '1'
+Description: Datasets included in study data must be described in the data definition
+  document (define.xml).
+Check: []
+Outcome:
+  Message: Dataset is not present in define.xml
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: ''
+Standard: SDTM
+Publisher ID: TCG 4.1.4.5
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

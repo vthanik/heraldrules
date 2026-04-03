@@ -1,0 +1,20 @@
+Core:
+  Id: FDAV-SD1326
+  Status: Reference
+  Version: '1'
+Description: Related Device Identifier (RDEVID) and Related Subject or Pool Identifier
+  (RSUBJID) should not both be populated for the same record.
+Check: []
+Outcome:
+  Message: RDEVID is not null when RSUBJID is populated
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: AP--, APRELSUB
+Standard: SDTM
+Publisher ID: CG0365
+IG Versions:
+  - SDTMIG 3.2
+

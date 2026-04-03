@@ -1,0 +1,30 @@
+Core:
+  Id: FDAV-SD0095
+  Status: Reference
+  Version: '1'
+Description: Supplemental Qualifiers special purpose dataset (SUPP--) can only be
+  used to capture non-standard variables and their association to parent records in
+  general-observation-class datasets (Events, Findings, Interventions) and Demographics.
+  Another exception is Subject Visits domain in SDTM-IG prior v3.4
+Check: []
+Outcome:
+  Message: Invalid usage of SUPPQUAL for non-general-observation-class Domain
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: SUPPQUAL
+Standard: SDTM
+Publisher ID: CG0203, CG0369
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

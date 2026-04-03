@@ -1,0 +1,24 @@
+Core:
+  Id: FDAV-SD1445
+  Status: Reference
+  Version: '1'
+Description: By its definition Last Observation Before Exposure Flag (--LOBXFL) should
+  have only a single record for the same test for subject. Therefore, each subject
+  (USUBJID) should have no more than one record with  Last Observation Before Exposure
+  Flag (--LOBXFL) equals 'Y' for the same assessment which is defined by Test (--TESTCD),
+  Category (--CAT), Subcategory (--SCAT), Position of Subject During Observation (--POS),
+  Method (--METHOD), Specimen (--SPEC), Location (--LOC) and Laterality (--LAT).
+Check: []
+Outcome:
+  Message: Multiple --LOBXFL records for the same test
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: FINDINGS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: FDAB026
+IG Versions:
+  - SDTMIG 3.3
+

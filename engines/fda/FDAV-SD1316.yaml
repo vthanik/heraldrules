@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD1316
+  Status: Reference
+  Version: '1'
+Description: All subjects who have Death records (SSSTRESC = 'DEAD') in Survival Status
+  (SS) domain should also have death records (DSDECOD='DEATH') in Disposition (DS)
+  domain.
+Check: []
+Outcome:
+  Message: Missing 'DEATH' record for subject in DS domain
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: SS
+Standard: SDTM
+Publisher ID: CG0067
+IG Versions:
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

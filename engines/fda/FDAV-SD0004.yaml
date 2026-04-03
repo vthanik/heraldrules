@@ -1,0 +1,28 @@
+Core:
+  Id: FDAV-SD0004
+  Status: Reference
+  Version: '1'
+Description: Domain Abbreviation (DOMAIN) variable should be consistent with the name
+  of the dataset.
+Check: []
+Outcome:
+  Message: Inconsistent value for DOMAIN
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: ''
+Standard: SDTM
+Publisher ID: CG0413, 1
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

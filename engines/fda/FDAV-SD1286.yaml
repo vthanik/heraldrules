@@ -1,0 +1,23 @@
+Core:
+  Id: FDAV-SD1286
+  Status: Reference
+  Version: '1'
+Description: A value of Incl/Excl Criterion Short Name (IETESTCD) must be unique within
+  a version of inclusion/exclusion criteria (TIVERS).
+Check: []
+Outcome:
+  Message: IETESTCD is not unique within TIVERS
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: TI
+Standard: SDTM
+Publisher ID: CG0255
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

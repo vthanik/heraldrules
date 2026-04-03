@@ -1,0 +1,23 @@
+Core:
+  Id: FDAV-SD1213
+  Status: Reference
+  Version: '1'
+Description: Subject Reference Start Date/Time (RFSTDTC) should be populated for all
+  treated subjects, those where Actual Arm Code (ACTARMCD) is not equal to 'SCRNFAIL',
+  'NOTASSGN', 'NOTTRT', or null.
+Check: []
+Outcome:
+  Message: RFSTDTC is not provided for a treated subject
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: FDAB038
+IG Versions:
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

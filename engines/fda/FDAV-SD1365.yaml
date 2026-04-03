@@ -1,0 +1,21 @@
+Core:
+  Id: FDAV-SD1365
+  Status: Reference
+  Version: '1'
+Description: ADSL Population Flags, which had standard Supplemental Qualifiers included
+  in previous versions of the SDTMIG (COMPLT, FASFL/FULLSET, ITT, PPROTFL/PPROT, SAFFL/SAFETY,
+  etc.) should no longer be used in SDTM.
+Check: []
+Outcome:
+  Message: ADSL Population Flags provided in SDTM
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: SUPPQUAL
+Standard: SDTM
+Publisher ID: CG0528
+IG Versions:
+  - SDTMIG 3.3
+

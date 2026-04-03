@@ -1,0 +1,23 @@
+Core:
+  Id: FDAV-SD0041
+  Status: Reference
+  Version: '1'
+Description: Occurrence (--OCCUR) may only be populated, when a given Intervention
+  or Event has been pre-specified (--PRESP = 'Y').
+Check: []
+Outcome:
+  Message: Value for --OCCUR is populated for unsolicited Intervention or Event
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: INTERVENTIONS, EVENTS
+Standard: SDTM
+Publisher ID: CG0086, CG0087, CG0089, CG0654
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

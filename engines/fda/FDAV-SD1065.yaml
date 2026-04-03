@@ -1,0 +1,28 @@
+Core:
+  Id: FDAV-SD1065
+  Status: Reference
+  Version: '1'
+Description: Value of Related Domain Abbreviation (RDOMAIN) variable must be populated,
+  when value of Identifying Variable (IDVAR) variable is populated.
+Check: []
+Outcome:
+  Message: Missing RDOMAIN value, when IDVAR is populated
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: CO
+Standard: SDTM
+Publisher ID: CG0164, CG0166, 116, 121
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

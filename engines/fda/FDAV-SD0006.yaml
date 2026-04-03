@@ -1,0 +1,25 @@
+Core:
+  Id: FDAV-SD0006
+  Status: Reference
+  Version: '1'
+Description: All subjects should have at least one baseline observation (--BLFL =
+  'Y') in EG, LB, MB, MS, PC and VS domains, except for subjects who failed screening
+  (ARMCD = 'SCRNFAIL') or were not fully assigned to an Arm (ARMCD = 'NOTASSGN') or
+  were not treated (ACTARMCD = 'NOTTRT').
+Check: []
+Outcome:
+  Message: No baseline flag record in Domain for subject
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: EG, LB, MB, MS, PC, VS
+Standard: SDTM
+Publisher ID: TCG 4.1.4.1
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

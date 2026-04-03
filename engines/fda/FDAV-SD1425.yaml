@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD1425
+  Status: Reference
+  Version: '1'
+Description: '''Chemical Agent Name'' (CHAGNAM) record is expected in the Challenge
+  Agent Characterization (AC) domain when the Parameter Value (ACVAL) for the ''Challenge
+  Agent Category'' (CAGTCAT) parameter is ''CHEMICAL''.'
+Check: []
+Outcome:
+  Message: Missing CHAGNAM Challenge Agent Parameter when ACPARMCD = 'CAGTCAT' and
+    ACVAL = 'CHEMICAL'
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: AC
+Standard: SDTM
+Publisher ID: ''
+IG Versions:
+  - SENDIG-AR 1.0
+

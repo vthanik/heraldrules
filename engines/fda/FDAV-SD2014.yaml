@@ -1,0 +1,24 @@
+Core:
+  Id: FDAV-SD2014
+  Status: Reference
+  Version: '1'
+Description: Value for Body System or Organ Class Code (--BDSYCD) variable should
+  be populated using a System Organ Class Code of the MedDRA dictionary of a version
+  specified in the define.xml.
+Check: []
+Outcome:
+  Message: Value for --BDSYCD not found in MedDRA dictionary
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: AE, CE, MH
+Standard: SDTM
+Publisher ID: FDAB003
+IG Versions:
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG-AR 1.0
+

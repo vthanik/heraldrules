@@ -1,0 +1,21 @@
+Core:
+  Id: FDAV-SD1327
+  Status: Reference
+  Version: '1'
+Description: The Related Subject or Pool Identifier (RSUBJID) value should not be
+  equal to Pool Identifier (POOLID).
+Check: []
+Outcome:
+  Message: RSUBJID is equal to POOLID
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: RELSUB
+Standard: SDTM
+Publisher ID: CG0364
+IG Versions:
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD2248
+  Status: Reference
+  Version: '1'
+Description: TSVAL variable value must be in ISO 8601 format, when TSPARMCD='SENDTC'.
+Check: []
+Outcome:
+  Message: Invalid TSVAL value for SENDTC
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: TS
+Standard: SDTM
+Publisher ID: CG0286
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

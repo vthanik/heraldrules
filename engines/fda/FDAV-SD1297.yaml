@@ -1,0 +1,23 @@
+Core:
+  Id: FDAV-SD1297
+  Status: Reference
+  Version: '1'
+Description: TSVAL should not be populated with a value from the ISO 21090 null flavor
+  codelist, or synonyms of the values. The TSVALNF variable should be used to capture
+  these values, not TSVAL.
+Check: []
+Outcome:
+  Message: TSVAL is populated with a value from the ISO 21090 null flavor codelist
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: TS
+Standard: SDTM
+Publisher ID: CG0291, CG0649
+IG Versions:
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

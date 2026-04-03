@@ -1,0 +1,21 @@
+Core:
+  Id: FDAV-SD1453
+  Status: Reference
+  Version: '1'
+Description: The value of Sequence Number (DISEQ) variable must be unique for each
+  record within a domain and within each Sponsor Device Identifier (SPDEVID)
+Check: []
+Outcome:
+  Message: Duplicate value for --SEQ variable
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DI
+Standard: SDTM
+Publisher ID: CG0028
+IG Versions:
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

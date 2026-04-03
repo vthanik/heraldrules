@@ -1,0 +1,25 @@
+Core:
+  Id: FDAV-SD1023
+  Status: Reference
+  Version: '1'
+Description: Combination of Visit Name (VISIT) and Visit Number (VISITNUM) in subject-level
+  domains should match that in the TV domain with the exception of Unscheduled and
+  Unplanned visits.
+Check: []
+Outcome:
+  Message: VISIT/VISITNUM values do not match TV domain data
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: ''
+Standard: SDTM
+Publisher ID: CG0031
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG-AR 1.0
+

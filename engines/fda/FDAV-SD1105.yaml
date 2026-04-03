@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD1105
+  Status: Reference
+  Version: '1'
+Description: Epoch (EPOCH) variable value should not be populated, when Category for
+  Disposition Event (DSCAT) variable value equals 'PROTOCOL MILESTONE'.
+Check: []
+Outcome:
+  Message: EPOCH variable is populated, when DSCAT equals 'PROTOCOL MILESTONE'
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DS
+Standard: SDTM
+Publisher ID: CG0073
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+

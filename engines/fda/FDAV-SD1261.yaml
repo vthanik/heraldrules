@@ -1,0 +1,21 @@
+Core:
+  Id: FDAV-SD1261
+  Status: Reference
+  Version: '1'
+Description: Subject Status Date/Time of Assessment (SSDTC) must be greater than or
+  equal to Date/Time of Death (DTHDTC) when the subject's status is 'DEAD'.
+Check: []
+Outcome:
+  Message: SSDTC is not greater than or equal to DTHDTC, when SSSTRESC = 'DEAD'
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: SS
+Standard: SDTM
+Publisher ID: CG0171
+IG Versions:
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

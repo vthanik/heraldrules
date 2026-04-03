@@ -1,0 +1,21 @@
+Core:
+  Id: FDAV-SD1374
+  Status: Reference
+  Version: '1'
+Description: All Demographics (DM) subjects (USUBJID) should have at least one record
+  in the Disposition (DS) domain with only possible exceptions to subjects who did
+  not receive treatment (ACTARMCD is null).
+Check: []
+Outcome:
+  Message: No Disposition record found for subject
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: CG0540
+IG Versions:
+  - SDTMIG 3.3
+

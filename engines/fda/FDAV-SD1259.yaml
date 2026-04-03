@@ -1,0 +1,25 @@
+Core:
+  Id: FDAV-SD1259
+  Status: Reference
+  Version: '1'
+Description: The value of Set Code (SETCD) should be no more than 8 characters in
+  length.
+Check: []
+Outcome:
+  Message: Invalid value for SETCD
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: CG0149, 25
+IG Versions:
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

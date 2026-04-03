@@ -1,0 +1,29 @@
+Core:
+  Id: FDAV-SD1072
+  Status: Reference
+  Version: '1'
+Description: Value of Identifying Variable (IDVAR) variable must be populated, when
+  Related Domain Abbreviation (RDOMAIN) variable value is provided, with the only
+  exception of 'DM' value for RDOMAIN.
+Check: []
+Outcome:
+  Message: Missing IDVAR value, when RDOMAIN value is provided
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: RELREC, SUPPQUAL
+Standard: SDTM
+Publisher ID: CG0204, CG0371, CG0203, 286
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

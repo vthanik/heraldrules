@@ -1,0 +1,21 @@
+Core:
+  Id: FDAV-SD1373
+  Status: Reference
+  Version: '1'
+Description: RFSTDTC must be null when the Reason Arm and/or Actual Arm is Null (ARMNRS)
+  variable is populated (excluding values of UNPLANNED TREATMENT), which indicates
+  that the subject did not receive treatment.
+Check: []
+Outcome:
+  Message: RFSTDTC is populated for subject who did not receive treatment
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: CG0534
+IG Versions:
+  - SDTMIG 3.3
+

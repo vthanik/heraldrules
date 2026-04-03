@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD1381
+  Status: Reference
+  Version: '1'
+Description: 'Day of Obs Relative to Exposure (--XDY) variable value should be populated
+  as defined by CDISC standards: --XDY = (date portion of --DTC) - (date portion of
+  RFXSTDTC) +1 if --DTC is on or after RFXSTDTC; --XDY = (date portion of --DTC) -
+  (date portion of RFXSTDTC) if --DTC precedes RFXSTDTC.'
+Check: []
+Outcome:
+  Message: Incorrect value for --XDY variable
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: INTERVENTIONS, FINDINGS, EVENTS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: ''
+IG Versions:
+  - SENDIG-AR 1.0
+

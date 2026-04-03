@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD1106
+  Status: Reference
+  Version: '1'
+Description: Adverse Events (AE) dataset should be included in every submission.
+Check: []
+Outcome:
+  Message: Missing AE dataset
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: AE
+Standard: SDTM
+Publisher ID: FDAB004
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

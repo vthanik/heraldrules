@@ -1,0 +1,21 @@
+Core:
+  Id: FDAV-SD1234
+  Status: Reference
+  Version: '1'
+Description: Device Type (DEVTYPE) Parameter must be populated for each Medical Device
+  in the Device Identifiers (DI) domain.
+Check: []
+Outcome:
+  Message: Missing DEVTYPE Parameter for Device
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: DI
+Standard: SDTM
+Publisher ID: ''
+IG Versions:
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

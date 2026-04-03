@@ -1,0 +1,23 @@
+Core:
+  Id: FDAV-SD1380
+  Status: Reference
+  Version: '1'
+Description: 'At least one of the following subject identifier variables must be populated
+  for each record: Unique Subject Identifier (USUBJID), Associated Persons Identifier
+  (APID), Sponsor Device Identifier (SPDEVID), or Pool Identifier (POOLID).'
+Check: []
+Outcome:
+  Message: No subject identifier variables are populated
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: CO, SV, INTERVENTIONS, EVENTS, FINDINGS, FINDINGS ABOUT, RELSUB, SUPPQUAL
+Standard: SDTM
+Publisher ID: CG0554
+IG Versions:
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

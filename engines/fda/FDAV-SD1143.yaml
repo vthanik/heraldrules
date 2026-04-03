@@ -1,0 +1,23 @@
+Core:
+  Id: FDAV-SD1143
+  Status: Reference
+  Version: '1'
+Description: When a description of Other Medically Important Serious Adverse Events
+  category is collected on a CRF, sponsors should place the description in the SUPPAE
+  dataset using the standard supplemental qualifier name code AESOSP.
+Check: []
+Outcome:
+  Message: No Details info for AESMIE Adverse Event in SUPPAE domain
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: AE
+Standard: SDTM
+Publisher ID: CG0043
+IG Versions:
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

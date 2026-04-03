@@ -1,0 +1,28 @@
+Core:
+  Id: FDAV-SD1124
+  Status: Reference
+  Version: '1'
+Description: Value of Reason Not Done (--REASND) variable should be populated, when
+  Status (--STAT) variable value is 'NOT DONE'.
+Check: []
+Outcome:
+  Message: Missing value for --REASND, when --STAT is 'NOT DONE'
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: INTERVENTIONS, EVENTS, FINDINGS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: FDAB042
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

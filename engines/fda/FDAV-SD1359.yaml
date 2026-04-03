@@ -1,0 +1,21 @@
+Core:
+  Id: FDAV-SD1359
+  Status: Reference
+  Version: '1'
+Description: When Planned Arm Code (ARMCD)/Description of Planned Arm (ARM) are not
+  populated, the Reason Arm and/or Actual Arm is Null (ARMNRS) variable must be populated
+  with the reason ARMCD/ARM are null.
+Check: []
+Outcome:
+  Message: ARMNRS is not populated when ARMCD/ARM are not provided
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: CG0517, CG0519
+IG Versions:
+  - SDTMIG 3.3
+

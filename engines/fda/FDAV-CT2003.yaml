@@ -1,0 +1,30 @@
+Core:
+  Id: FDAV-CT2003
+  Status: Reference
+  Version: '1'
+Description: Paired variables such as TEST/TESTCD must be populated using terms with
+  the same Codelist Code value in CDISC control terminology. There is one-to-one relationship
+  between paired variable values defined in CDISC control terminology by Codelist
+  Code value.
+Check: []
+Outcome:
+  Message: Coded and Decoded values do not have the same Code in CDISC CT
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: ''
+Standard: SDTM
+Publisher ID: FDAB009
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

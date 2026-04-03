@@ -1,0 +1,23 @@
+Core:
+  Id: FDAV-SD1318
+  Status: Reference
+  Version: '1'
+Description: Subjects who have DSDECOD = 'PROTOCOL VIOLATION' or DSDECOD = 'PROTOCOL
+  DEVIATION' records in the Disposition (DS) domain should have supportive records
+  with details in the Protocol Deviations (DV) domain.
+Check: []
+Outcome:
+  Message: No records for subject are found in DV domain
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DS
+Standard: SDTM
+Publisher ID: CG0072
+IG Versions:
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

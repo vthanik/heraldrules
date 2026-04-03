@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD1323
+  Status: Reference
+  Version: '1'
+Description: TSVAL for FCNTRY record must be a valid term from ISO 3166.
+Check: []
+Outcome:
+  Message: Invalid TSVAL value for FCNTRY
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: TS
+Standard: SDTM
+Publisher ID: CG0456
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

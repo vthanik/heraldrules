@@ -1,0 +1,19 @@
+Core:
+  Id: FDAV-SD0093
+  Status: Reference
+  Version: '1'
+Description: Age Units (AGEU) should be provided, when Age (AGE) is populated.
+Check: []
+Outcome:
+  Message: Missing value for AGEU, when AGE is provided
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: CG0432, CG0665
+IG Versions:
+  - SDTMIG 3.1.2
+

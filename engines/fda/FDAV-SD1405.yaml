@@ -1,0 +1,21 @@
+Core:
+  Id: FDAV-SD1405
+  Status: Reference
+  Version: '1'
+Description: Date/Time of First Challenge Agent Admin (RFCSTDTC) variable must be
+  populated, when Date/Time of Last Challenge Agent Admin (RFXENDTC) variable value
+  is provided.
+Check: []
+Outcome:
+  Message: Missing value for RFCSTDTC, when RFCENDTC is provided
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: FDAB043
+IG Versions:
+  - SENDIG-AR 1.0
+

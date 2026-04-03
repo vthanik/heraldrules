@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD1254
+  Status: Reference
+  Version: '1'
+Description: DTHFL must equal 'Y' when there is a record in the Adverse Events (AE)
+  domain with AEOUT = 'FATAL'.
+Check: []
+Outcome:
+  Message: DTHFL does not equal 'Y' when AE.AEOUT = 'FATAL'
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: AE
+Standard: SDTM
+Publisher ID: CG0134
+IG Versions:
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

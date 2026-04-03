@@ -1,0 +1,21 @@
+Core:
+  Id: FDAV-SD1377
+  Status: Reference
+  Version: '1'
+Description: All subjects with Reason Arm and/or Actual Arm is Null (ARMNRS) equal
+  to 'SCREEN FAILURE' should have records in the Inclusion/Exclusion Criteria Not
+  Met (IE) domain.
+Check: []
+Outcome:
+  Message: No records for SCREEN FAILURE subject are found in IE domain
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: CG0109, CG0513
+IG Versions:
+  - SDTMIG 3.3
+

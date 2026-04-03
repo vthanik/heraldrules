@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD1214
+  Status: Reference
+  Version: '1'
+Description: Trial Summary (TS) domain must contain only one record for 'ADDON' Parameter.
+Check: []
+Outcome:
+  Message: Multiple ADDON records
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: TS
+Standard: SDTM
+Publisher ID: FDAB011
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

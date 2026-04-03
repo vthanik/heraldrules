@@ -1,0 +1,24 @@
+Core:
+  Id: FDAV-SD0052
+  Status: Reference
+  Version: '1'
+Description: All values of Visit Number (VISITNUM) should be the same for a given
+  value of Visit Name (VISIT).
+Check: []
+Outcome:
+  Message: Inconsistent value for VISITNUM within VISIT
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: CO, SV, INTERVENTIONS, EVENTS, FINDINGS, FINDINGS ABOUT, TV
+Standard: SDTM
+Publisher ID: CG0035
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG-AR 1.0
+

@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD1385
+  Status: Reference
+  Version: '1'
+Description: 'Start Day of Obs Rel to Challenge Agent (--CHSTDY) variable value should
+  be populated as defined by CDISC standards: --CHSTDY = (date portion of --STDTC)
+  - (date portion of RFCSTDTC) +1 if --STDTC is on or after RFCSTDTC; --CHSTDY = (date
+  portion of --STDTC) - (date portion of RFCSTDTC) if --STDTC precedes RFCSTDTC.'
+Check: []
+Outcome:
+  Message: Incorrect value for --CHSTDY variable
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: INTERVENTIONS, FINDINGS, EVENTS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: ''
+IG Versions:
+  - SENDIG-AR 1.0
+

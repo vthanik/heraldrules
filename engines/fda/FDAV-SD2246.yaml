@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD2246
+  Status: Reference
+  Version: '1'
+Description: TSVAL variable value must be numeric, when TSPARMCD='NARMS'.
+Check: []
+Outcome:
+  Message: Invalid TSVAL value for NARMS
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: TS
+Standard: SDTM
+Publisher ID: CG0284
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

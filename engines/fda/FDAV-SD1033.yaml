@@ -1,0 +1,28 @@
+Core:
+  Id: FDAV-SD1033
+  Status: Reference
+  Version: '1'
+Description: A value for Description of Planned Arm (ARM) must have a unique value
+  for Planned Arm Code (ARMCD) with the domain.
+Check: []
+Outcome:
+  Message: Inconsistent value for ARM
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: DM, TA, TV
+Standard: SDTM
+Publisher ID: FDAB009
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

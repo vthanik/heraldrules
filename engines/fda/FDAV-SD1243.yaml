@@ -1,0 +1,24 @@
+Core:
+  Id: FDAV-SD1243
+  Status: Reference
+  Version: '1'
+Description: All values of Body System or Organ Class Code (--BDSYCD) should be the
+  same for a given value of Body System or Organ Class (--BODSYS).
+Check: []
+Outcome:
+  Message: Inconsistent value for --BDSYCD within --BODSYS
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: AE, CE, MH
+Standard: SDTM
+Publisher ID: CG0083
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG-AR 1.0
+

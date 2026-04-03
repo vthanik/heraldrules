@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD1334
+  Status: Reference
+  Version: '1'
+Description: Date/Time of Informed Consent (RFICDTC) should not be after Subject Reference
+  Start Date/Time (RFSTDTC).
+Check: []
+Outcome:
+  Message: RFICDTC is after RFSTDTC
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: FDAB034
+IG Versions:
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

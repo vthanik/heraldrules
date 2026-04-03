@@ -1,0 +1,29 @@
+Core:
+  Id: FDAV-SD1073
+  Status: Reference
+  Version: '1'
+Description: Variables described in IG as inappropriate for usage must be not included
+  in the dataset.
+Check: []
+Outcome:
+  Message: Variable prohibited for use in SDTM
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: ''
+Standard: SDTM
+Publisher ID: CG0040, CG0044, CG0299, CG0300, CG0301, CG0302, CG0304, 266, 266.1,
+  267, 267.1, 268, 268.1, 269, 269.1
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

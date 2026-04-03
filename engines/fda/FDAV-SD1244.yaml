@@ -1,0 +1,28 @@
+Core:
+  Id: FDAV-SD1244
+  Status: Reference
+  Version: '1'
+Description: Planned Time Point Name (--TPT) variable must be included into the domain,
+  when Planned Time Point Number (--TPTNUM) variable is present.
+Check: []
+Outcome:
+  Message: Missing --TPT variable, when --TPTNUM variable is present
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: ''
+Standard: SDTM
+Publisher ID: CG0091, 207
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

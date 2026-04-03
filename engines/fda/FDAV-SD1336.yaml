@@ -1,0 +1,23 @@
+Core:
+  Id: FDAV-SD1336
+  Status: Reference
+  Version: '1'
+Description: A Link ID (TRLNKID) value for a tumor that is referenced in the Tumor
+  Results (TR) domain for a subject must also be present in the Tumor Identification
+  (TU) domain for that subject.
+Check: []
+Outcome:
+  Message: TRLNKID value does not exist in TU domain
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: TR
+Standard: SDTM
+Publisher ID: CG0024
+IG Versions:
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

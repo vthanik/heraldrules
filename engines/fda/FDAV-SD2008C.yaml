@@ -1,0 +1,24 @@
+Core:
+  Id: FDAV-SD2008C
+  Status: Reference
+  Version: '1'
+Description: Case for Lowest Level Term (--LLT) variable must be sentence case using
+  a Lowest Level Term of the MedDRA dictionary of a version specified in the define.xml
+  (Case-sensitive).
+Check: []
+Outcome:
+  Message: Value for --LLT is in incorrect case
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: AE, CE, MH
+Standard: SDTM
+Publisher ID: FDAB017
+IG Versions:
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG-AR 1.0
+

@@ -1,0 +1,20 @@
+Core:
+  Id: FDAV-SD1403
+  Status: Reference
+  Version: '1'
+Description: Date/Time of First Challenge Agent Admin (RFCSTDTC) variable value must
+  be less than or equal to Date/Time of Last Challenge Agent Admin (RFCENDTC).
+Check: []
+Outcome:
+  Message: RFCSTDTC date is after RFCENDTC
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: FDAB034
+IG Versions:
+  - SENDIG-AR 1.0
+

@@ -1,0 +1,20 @@
+Core:
+  Id: FDAV-SD1355
+  Status: Reference
+  Version: '1'
+Description: When the Disease Milestone Instance Name (MIDS) variable is used in any
+  dataset, the Trial Disease Milestones (TM) dataset must be present for the study.
+Check: []
+Outcome:
+  Message: Missing TM dataset, when variable MIDS is present in a dataset
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: INTERVENTIONS, EVENTS, FINDINGS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: CG0501
+IG Versions:
+  - SDTMIG 3.3
+

@@ -1,0 +1,23 @@
+Core:
+  Id: FDAV-SD1315
+  Status: Reference
+  Version: '1'
+Description: Reported Term for the Disposition Event (DSTERM) and Standardized Disposition
+  Term (DSDECOD) should contain the same value, when Category for Disposition Event
+  (DSCAT) is 'PROTOCOL MILESTONE'.
+Check: []
+Outcome:
+  Message: DSDECOD is not the same as DSTERM, when DSCAT='PROTOCOL MILESTONE'
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DS
+Standard: SDTM
+Publisher ID: CG0066
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+

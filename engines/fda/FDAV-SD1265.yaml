@@ -1,0 +1,24 @@
+Core:
+  Id: FDAV-SD1265
+  Status: Reference
+  Version: '1'
+Description: For subjective data (when QORIG='ASSIGNED'), QEVAL should be populated
+  and the value should reflect the role of the person or institution assigning the
+  value.
+Check: []
+Outcome:
+  Message: QEVAL is null when QORIG equals 'ASSIGNED'
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: SUPPQUAL
+Standard: SDTM
+Publisher ID: CG0202
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

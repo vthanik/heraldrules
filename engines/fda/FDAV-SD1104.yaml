@@ -1,0 +1,28 @@
+Core:
+  Id: FDAV-SD1104
+  Status: Reference
+  Version: '1'
+Description: Start Relative to Reference Time Point (--STRTPT) variable must be included
+  into the domain, when Start Relative Time Point (--STTPT) variable is present.
+Check: []
+Outcome:
+  Message: Missing --STRTPT variable, when --STTPT variable is present
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: SE, SM, SV, INTERVENTIONS, EVENTS, FINDINGS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: CG0060
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

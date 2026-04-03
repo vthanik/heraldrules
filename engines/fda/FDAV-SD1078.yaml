@@ -1,0 +1,24 @@
+Core:
+  Id: FDAV-SD1078
+  Status: Reference
+  Version: '1'
+Description: Permissible variable should not be present in domain, when the variable
+  has missing value for all records in the dataset.
+Check: []
+Outcome:
+  Message: Permissible variable with missing value for all records
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: ''
+Standard: SDTM
+Publisher ID: CG0015
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG-AR 1.0
+

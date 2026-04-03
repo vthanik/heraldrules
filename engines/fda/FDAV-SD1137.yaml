@@ -1,0 +1,24 @@
+Core:
+  Id: FDAV-SD1137
+  Status: Reference
+  Version: '1'
+Description: Character Result/Finding in Original Units (--ORRES) value should be
+  NULL, when Derived Flag (--DRVFL) value is 'Y'.
+Check: []
+Outcome:
+  Message: Non-missing value for --ORRES, when --DRVFL='Y'
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: FINDINGS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: CG0348
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG-AR 1.0
+

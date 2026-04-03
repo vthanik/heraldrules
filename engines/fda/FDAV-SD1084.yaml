@@ -1,0 +1,29 @@
+Core:
+  Id: FDAV-SD1084
+  Status: Reference
+  Version: '1'
+Description: Collection Study Day (--DY) variable value should be populated, when
+  Collection Study Date/Time (--DTC) and Subject Reference Start Date/Time (RFSTDTC)
+  variables values are provided, and both of them include complete date part.
+Check: []
+Outcome:
+  Message: --DY variable value is not populated
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: INTERVENTIONS, EVENTS, FINDINGS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: FDAB016
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

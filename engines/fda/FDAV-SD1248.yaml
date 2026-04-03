@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD1248
+  Status: Reference
+  Version: '1'
+Description: ECDOSE must either be null when ECOCCUR equals 'N', or ECDOSE must be
+  greater than 0. ECDOSE would be greater than 0 (when ECOCCUR equals N) for records
+  that represent specific dose amounts that are not taken, not given, or missed.
+Check: []
+Outcome:
+  Message: ECDOSE is not null or greater than 0 when ECOCCUR = 'N'
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: EC
+Standard: SDTM
+Publisher ID: CG0101
+IG Versions:
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

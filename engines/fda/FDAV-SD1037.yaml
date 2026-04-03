@@ -1,0 +1,23 @@
+Core:
+  Id: FDAV-SD1037
+  Status: Reference
+  Version: '1'
+Description: A value for a Toxicity (--TOX) variable should be provided, when a Toxicity
+  Grade (--TOXGR) variable value is populated and greater than 0.
+Check: []
+Outcome:
+  Message: Missing value for --TOX, when --TOXGR is populated
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: CV, EG, FT, LB, MK, NV, OE, PC, PP, RE, UR, AE, CE, MH
+Standard: SDTM
+Publisher ID: CG0428
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

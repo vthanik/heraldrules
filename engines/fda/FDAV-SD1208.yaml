@@ -1,0 +1,26 @@
+Core:
+  Id: FDAV-SD1208
+  Status: Reference
+  Version: '1'
+Description: Date/Time of First Study Treatment (RFXSTDTC) variable value must be
+  less than or equal to Date/Time of Last Study Treatment (RFXENDTC).
+Check: []
+Outcome:
+  Message: RFXSTDTC date is after RFXENDTC
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: FDAB034
+IG Versions:
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD2244
+  Status: Reference
+  Version: '1'
+Description: TSVCDREF variable value must be 'ISO 3166', when TSPARMCD='FCNTRY'.
+Check: []
+Outcome:
+  Message: Invalid TSVCDREF value for FCNTRY
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: TS
+Standard: SDTM
+Publisher ID: FDAB011
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

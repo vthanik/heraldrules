@@ -1,0 +1,25 @@
+Core:
+  Id: FDAV-SD1311
+  Status: Reference
+  Version: '1'
+Description: When the study type is interventional (TSPARMCD = 'STYPE' and TSVAL =
+  'INTERVENTIONAL'), the Intervention Type parameter should be provided with Parameter
+  Value populated (TSVAL should not be null when TSPARMCD = 'INTTYPE').
+Check: []
+Outcome:
+  Message: TSVAL is missing for the INTTYPE Trial Summary Parameter, when STYPE parameter
+    equals 'INTERVENTIONAL'
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: TS
+Standard: SDTM
+Publisher ID: CG0278
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

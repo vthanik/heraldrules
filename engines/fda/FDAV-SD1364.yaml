@@ -1,0 +1,21 @@
+Core:
+  Id: FDAV-SD1364
+  Status: Reference
+  Version: '1'
+Description: Actual Arm Code (ACTARMCD) and Actual Arm (ACTARM) must be null for subjects
+  who weren't treated. This includes Screen Failure subjects, Not Assigned subjects,
+  and Not Treated subjects.
+Check: []
+Outcome:
+  Message: ACTARMCD/ACTARM is populated for a subject who wasn't treated
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: CG0524
+IG Versions:
+  - SDTMIG 3.3
+

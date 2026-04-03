@@ -1,0 +1,28 @@
+Core:
+  Id: FDAV-SD1451
+  Status: Reference
+  Version: '1'
+Description: Planned Start of Assessment Interval (--STINT) variable must be included
+  in the domain, when Planned End of Assessment Interval (--ENINT) variable is present.
+Check: []
+Outcome:
+  Message: Missing --STINT variable, when --ENINT variable is present
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: CV, EG, PP, RE
+Standard: SDTM
+Publisher ID: FDAB044
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

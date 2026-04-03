@@ -1,0 +1,23 @@
+Core:
+  Id: FDAV-SD1338
+  Status: Reference
+  Version: '1'
+Description: A Link Group (RSLNKGRP) value for a response assessment that is referenced
+  in the Disease Response (RS) domain for a subject must also be present in the Tumor
+  Results (TR) domain for the appropriate measurement records for that subject.
+Check: []
+Outcome:
+  Message: RSLNKGRP value does not exist in TR domain
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: RS
+Standard: SDTM
+Publisher ID: CG0022
+IG Versions:
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

@@ -1,0 +1,25 @@
+Core:
+  Id: FDAV-SD1127
+  Status: Reference
+  Version: '1'
+Description: All values of Planned Time Point Number (--TPTNUM) variable should be
+  the same for a given value of Planned Time Point Name (--TPT) variable, Time Point
+  Reference (--TPTREF) variable, and Visit Number (VISITNUM) variable.
+Check: []
+Outcome:
+  Message: Inconsistent value for --TPTNUM within --TPT, --TPTREF, VISITNUM
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: CO, INTERVENTIONS, EVENTS, FINDINGS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: CG0240, CG0571, CG0572, CG0573
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG-AR 1.0
+

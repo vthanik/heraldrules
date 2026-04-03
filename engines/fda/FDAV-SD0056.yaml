@@ -1,0 +1,23 @@
+Core:
+  Id: FDAV-SD0056
+  Status: Reference
+  Version: '1'
+Description: Variables described in SDTM IG as Required must be included in the dataset.
+Check: []
+Outcome:
+  Message: SDTM Required variable not found
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: ''
+Standard: SDTM
+Publisher ID: CG0014, CG0313, CG0554
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG-AR 1.0
+

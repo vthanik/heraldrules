@@ -1,0 +1,20 @@
+Core:
+  Id: FDAV-SD1362
+  Status: Reference
+  Version: '1'
+Description: Description of Actual Arm (ACTARM) must be populated, when Actual Arm
+  Code (ACTARMCD) is populated, and vice versa.
+Check: []
+Outcome:
+  Message: ACTARM is populated, but ACTARMCD is null, or vice versa
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: CG0522
+IG Versions:
+  - SDTMIG 3.3
+

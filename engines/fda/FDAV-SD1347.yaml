@@ -1,0 +1,24 @@
+Core:
+  Id: FDAV-SD1347
+  Status: Reference
+  Version: '1'
+Description: Fatal Adverse Event records (AEOUT = 'FATAL') in the Adverse Events (AE)
+  domain should have End Date/Time of Adverse Event (AEENDTC) equal to subject's Date/Time
+  of Death (DTHDTC) populated in the Demographics (DM) domain. Subject's Date/Time
+  of Death info should be consistent across all domains.
+Check: []
+Outcome:
+  Message: AEENDTC for fatal AE is not the same as DM.DTHDTC
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: AE
+Standard: SDTM
+Publisher ID: FDAB006
+IG Versions:
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

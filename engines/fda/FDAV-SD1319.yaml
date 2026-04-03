@@ -1,0 +1,23 @@
+Core:
+  Id: FDAV-SD1319
+  Status: Reference
+  Version: '1'
+Description: All records in the Disposition (DS) and Protocol Deviations (DV) domains
+  should have the Start Date/Time of Event (--STDTC) equal to or after a subject's
+  Date/Time of Informed Consent (RFICDTC) in the Demographics (DM) domain.
+Check: []
+Outcome:
+  Message: --STDTC is before RFICDTC
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DS, DV
+Standard: SDTM
+Publisher ID: CG0068, CG0075
+IG Versions:
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

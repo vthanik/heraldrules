@@ -1,0 +1,29 @@
+Core:
+  Id: FDAV-SD0088
+  Status: Reference
+  Version: '1'
+Description: Subject Reference End Date/Time (RFENDTC) should be populated for all
+  randomized subjects, those where Planned Arm Code (ARMCD) is not equal to 'SCRNFAIL'
+  or 'NOTASSGN' or null.
+Check: []
+Outcome:
+  Message: RFENDTC is not provided for a randomized subject
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: CG0529
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

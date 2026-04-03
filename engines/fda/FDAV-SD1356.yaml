@@ -1,0 +1,21 @@
+Core:
+  Id: FDAV-SD1356
+  Status: Reference
+  Version: '1'
+Description: When the Temporal Relation to Milestone Instance (RELMIDS) variable is
+  used in any dataset, the Trial Disease Milestones (TM) dataset must be present for
+  the study.
+Check: []
+Outcome:
+  Message: Missing TM dataset, when variable RELMIDS is present in a dataset
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: INTERVENTIONS, EVENTS, FINDINGS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: CG0502
+IG Versions:
+  - SDTMIG 3.3
+

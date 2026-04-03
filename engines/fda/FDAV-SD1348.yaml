@@ -1,0 +1,31 @@
+Core:
+  Id: FDAV-SD1348
+  Status: Reference
+  Version: '1'
+Description: Planned Start of Assessment Interval (--STINT) and Planned End of Assessment
+  Interval (--ENINT) variables should be present and populated when Name of Measurement,
+  Test or Examination (--TEST) is over a time interval, 'T1 to T2', where 'T1' is
+  represented by the value in --STINT and 'T2' is represented by the value in --ENINT.
+Check: []
+Outcome:
+  Message: Missing values for --STINT and --ENINT variables when --TEST references
+    'T1 to T2'
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: PP
+Standard: SDTM
+Publisher ID: '295'
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

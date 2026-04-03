@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD1233
+  Status: Reference
+  Version: '1'
+Description: All Medical Devices (SPDEVID) must be present in Device Identifier (DI)
+  domain.
+Check: []
+Outcome:
+  Message: Device is not present in DI domain
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: CO, DR, INTERVENTIONS, FINDINGS, EVENTS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: ''
+IG Versions:
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG-AR 1.0
+

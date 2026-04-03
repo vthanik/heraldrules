@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD1035
+  Status: Reference
+  Version: '1'
+Description: Category for Disposition Event (DSCAT) should be populated.
+Check: []
+Outcome:
+  Message: Missing value for DSCAT
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: DS
+Standard: SDTM
+Publisher ID: FDAB014
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

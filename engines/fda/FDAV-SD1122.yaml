@@ -1,0 +1,29 @@
+Core:
+  Id: FDAV-SD1122
+  Status: Reference
+  Version: '1'
+Description: Standardized Result in Numeric Format (--STRESN) variable value should
+  be populated, when Standardized Result in Character Format (--STRESC) variable value
+  represents a numeric value.
+Check: []
+Outcome:
+  Message: Missing value for --STRESN
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: FINDINGS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: FDAB031
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

@@ -1,0 +1,23 @@
+Core:
+  Id: FDAV-SD1247
+  Status: Reference
+  Version: '1'
+Description: ECDOSE must be greater than zero when ECOCCUR does not equal 'N' , ECSTAT
+  does not equal 'NOT DONE', and ECDOSTXT is null. ECDOSE must not be set to zero
+  (0) as an alternative method for indicating doses not taken, not given, or missed.
+Check: []
+Outcome:
+  Message: ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT
+    is null
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: EC
+Standard: SDTM
+Publisher ID: CG0100
+IG Versions:
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

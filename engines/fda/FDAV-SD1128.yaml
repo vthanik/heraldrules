@@ -1,0 +1,29 @@
+Core:
+  Id: FDAV-SD1128
+  Status: Reference
+  Version: '1'
+Description: Relationship Type (RELTYPE)  variable values should be populated with
+  terms 'ONE', 'MANY', when Related Records (RELREC) dataset is used to identify relationships
+  between datasets.
+Check: []
+Outcome:
+  Message: Invalid value for RELTYPE variable
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: RELREC
+Standard: SDTM
+Publisher ID: CG0020, 253
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

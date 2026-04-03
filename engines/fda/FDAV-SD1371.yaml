@@ -1,0 +1,21 @@
+Core:
+  Id: FDAV-SD1371
+  Status: Reference
+  Version: '1'
+Description: Result or Finding in Original Units (--ORRES) should be populated when
+  Last Observation Before Exposure Flag (--LOBXFL) is set to 'Y', unless the record
+  is derived (--DRVFL = 'Y').
+Check: []
+Outcome:
+  Message: --ORRES is null when --LOBXFL = 'Y' (and --DRVFL is null)
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: FINDINGS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: CG0553
+IG Versions:
+  - SDTMIG 3.3
+

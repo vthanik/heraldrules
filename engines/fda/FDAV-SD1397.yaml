@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD1397
+  Status: Reference
+  Version: '1'
+Description: Start Day of Obs Rel to Challenge Agent (--CHSTDY) variable value should
+  be populated, when Start Date/Time of Observation (--STDTC) and Date/Time of First
+  Challenge Agent Admin (RFCSTDTC) variables values are provided, and both of them
+  include complete date parts.
+Check: []
+Outcome:
+  Message: --CHSTDY variable value is not populated
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: INTERVENTIONS, FINDINGS, EVENTS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: ''
+IG Versions:
+  - SENDIG-AR 1.0
+

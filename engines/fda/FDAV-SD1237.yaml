@@ -1,0 +1,21 @@
+Core:
+  Id: FDAV-SD1237
+  Status: Reference
+  Version: '1'
+Description: There should be one record per device property defined by SPDEVID and
+  DOTESTCD variables
+Check: []
+Outcome:
+  Message: Duplicate records in Device Property
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: DO
+Standard: SDTM
+Publisher ID: ''
+IG Versions:
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

@@ -1,0 +1,20 @@
+Core:
+  Id: FDAV-SD1407
+  Status: Reference
+  Version: '1'
+Description: '''Challenge Agent Supplier Address'' (CAGTSUPA) record must be populated
+  in Challenge Agent Characterization (AC) domain.'
+Check: []
+Outcome:
+  Message: Missing CAGTSUPA Challenge Agent Parameter
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: AC
+Standard: SDTM
+Publisher ID: ''
+IG Versions:
+  - SENDIG-AR 1.0
+

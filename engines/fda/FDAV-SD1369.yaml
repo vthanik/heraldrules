@@ -1,0 +1,20 @@
+Core:
+  Id: FDAV-SD1369
+  Status: Reference
+  Version: '1'
+Description: Reference Result in Standard Format (--STREFC) should be populated when
+  Reference Result in Original Units (--ORREF) is populated.
+Check: []
+Outcome:
+  Message: --STREFC is null when --ORREF is populated
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: FINDINGS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: CG0549
+IG Versions:
+  - SDTMIG 3.3
+

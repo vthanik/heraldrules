@@ -1,0 +1,24 @@
+Core:
+  Id: FDAV-SD2003
+  Status: Reference
+  Version: '1'
+Description: Description of Actual Arm (ACTARM) values should match entries in the
+  Trial Arms (TA) dataset, except for subjects who failed screening ('Screen Failure'),
+  or were not fully assigned to an Arm ('Not Assigned'), or randomized, but not treated
+  ('Not Treated') or received non-planned treatment ('Unplanned Treatment').
+Check: []
+Outcome:
+  Message: Invalid value for ACTARM
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: CG0118, CG0117, CG0514
+IG Versions:
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

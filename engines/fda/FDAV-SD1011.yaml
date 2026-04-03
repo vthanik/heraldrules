@@ -1,0 +1,29 @@
+Core:
+  Id: FDAV-SD1011
+  Status: Reference
+  Version: '1'
+Description: Value of Duration, Elapsed Time, and Interval variables (--DUR, --ELTM,
+  --EVLINT, --STINT, --ENINT, TDSTOFF, TDTGTPAI, TDMINPAI, TDMAXPAI) must conform
+  to the ISO 8601 international standard.
+Check: []
+Outcome:
+  Message: Invalid ISO 8601 value for variable
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: ''
+Standard: SDTM
+Publisher ID: CG0002, CG0008, CG0238, 59
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

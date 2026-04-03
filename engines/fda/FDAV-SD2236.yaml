@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD2236
+  Status: Reference
+  Version: '1'
+Description: A value for an Actual Arm Code (ACTARMCD) variable is expected to be
+  equal to a value of an Arm Code (ARMCD) variable.
+Check: []
+Outcome:
+  Message: ACTARMCD does not equal ARMCD
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: FDAB025
+IG Versions:
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

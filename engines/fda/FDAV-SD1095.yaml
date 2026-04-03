@@ -1,0 +1,28 @@
+Core:
+  Id: FDAV-SD1095
+  Status: Reference
+  Version: '1'
+Description: Split datasets must not have name of original domain. E.g., lbhm.xpt
+  is a valid name, when lb.xpt is not a valid dataset name for split domain.
+Check: []
+Outcome:
+  Message: Invalid dataset name for split domain
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: INTERVENTIONS, EVENTS, FINDINGS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: CG0017
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

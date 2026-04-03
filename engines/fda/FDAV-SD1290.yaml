@@ -1,0 +1,23 @@
+Core:
+  Id: FDAV-SD1290
+  Status: Reference
+  Version: '1'
+Description: If multiple disposition events are reported for an EPOCH, the sponsor
+  should identify a primary reason and use that to populate DSTERM and DSDECOD. Additional
+  reasons should be submitted in SUPPDS.
+Check: []
+Outcome:
+  Message: Multiple disposition events for the same EPOCH
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DS
+Standard: SDTM
+Publisher ID: CG0398
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+

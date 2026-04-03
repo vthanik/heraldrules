@@ -1,0 +1,26 @@
+Core:
+  Id: FDAV-SD0070
+  Status: Reference
+  Version: '1'
+Description: All Demographics (DM) subjects (USUBJID) participating in a study that
+  includes investigational product should have at least one record in the Exposure
+  (EX) domain, except for subjects who failed screening (ARMCD = 'SCRNFAIL'), were
+  not fully assigned to an Arm (ARMCD = 'NOTASSGN'), or did not receive study treatment
+  (ACTARMCD = 'NOTTRT').
+Check: []
+Outcome:
+  Message: No Exposure record found for subject
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: FDAB023
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

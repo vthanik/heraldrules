@@ -1,0 +1,21 @@
+Core:
+  Id: FDAV-SD1301
+  Status: Reference
+  Version: '1'
+Description: Offset from the Anchor (TDSTOFF) variable value must be either 0, ISO
+  8601 format for duration (e.g. P80Y), or null.
+Check: []
+Outcome:
+  Message: Invalid value for TDSTOFF variable
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: TD
+Standard: SDTM
+Publisher ID: CG0376
+IG Versions:
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

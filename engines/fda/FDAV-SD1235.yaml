@@ -1,0 +1,21 @@
+Core:
+  Id: FDAV-SD1235
+  Status: Reference
+  Version: '1'
+Description: Value for Sponsor Device Identifier (SPDEVID) or Unique Subject Identifier
+  (USUBJID) variables should be populated for all records in Divice In-Use (DU) domain
+Check: []
+Outcome:
+  Message: Neither SPDEVID nor USUBJID values are populated
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DU
+Standard: SDTM
+Publisher ID: CG0554
+IG Versions:
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

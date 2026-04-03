@@ -1,0 +1,20 @@
+Core:
+  Id: FDAV-SD1372
+  Status: Reference
+  Version: '1'
+Description: Character Result/Finding in Std Format (--STRESC) should be populated
+  when Last Observation Before Exposure Flag (--LOBXFL) is set to 'Y'.
+Check: []
+Outcome:
+  Message: --STRESC is null when --LOBXFL = 'Y'
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: FINDINGS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: CG0569
+IG Versions:
+  - SDTMIG 3.3
+

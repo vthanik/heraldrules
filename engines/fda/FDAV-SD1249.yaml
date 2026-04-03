@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD1249
+  Status: Reference
+  Version: '1'
+Description: EXDOSE must be equal to 0 when EXTRT = 'PLACEBO'.
+Check: []
+Outcome:
+  Message: EXDOSE does not equal 0 when EXTRT = 'PLACEBO'
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: EX
+Standard: SDTM
+Publisher ID: CG0102
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

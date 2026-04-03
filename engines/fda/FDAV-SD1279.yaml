@@ -1,0 +1,21 @@
+Core:
+  Id: FDAV-SD1279
+  Status: Reference
+  Version: '1'
+Description: Dose Description (ECDOSTXT) should be populated when Dose (ECDOSE) is
+  null, ECOCCUR does not equal 'N', and ECSTAT does not equal 'NOT DONE'.
+Check: []
+Outcome:
+  Message: ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: EC
+Standard: SDTM
+Publisher ID: CG0462
+IG Versions:
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

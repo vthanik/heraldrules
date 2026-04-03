@@ -1,0 +1,30 @@
+Core:
+  Id: FDAV-SD0007
+  Status: Reference
+  Version: '1'
+Description: Standard Units (--STRESU) must be consistent for all records with the
+  same Short Name of Measurement, Test or Examination (--TESTCD), Object of the Observation
+  (--OBJ), Measurement,Test, or Examination Detail (--TSTDTL), Category (--CAT), Subcategory
+  (--SCAT), Specimen Type (--SPEC) and Method of Test or Examination (--METHOD).
+Check: []
+Outcome:
+  Message: Inconsistent value for Standard Units
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: FINDINGS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: FDAB030
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

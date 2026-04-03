@@ -1,0 +1,26 @@
+Core:
+  Id: FDAV-SD2018
+  Status: Reference
+  Version: '1'
+Description: Value for Parameter Null Flavor (--VALNF) variable should be NULL, when
+  Parameter Value (--VAL) variable value can be populated.
+Check: []
+Outcome:
+  Message: Both --VAL and --VALNF variables are populated
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: TS
+Standard: SDTM
+Publisher ID: CG0259, CG0260, 288
+IG Versions:
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

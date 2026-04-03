@@ -1,0 +1,24 @@
+Core:
+  Id: FDAV-SD2270
+  Status: Reference
+  Version: '1'
+Description: Collection Study Date/Time (--DTC) variable should be included into dataset,
+  when Collection Study Day (--DY) variable is present.
+Check: []
+Outcome:
+  Message: Missing --DTC variable, when --DY variable is present
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: SPECIAL PURPOSE, INTERVENTIONS, EVENTS, FINDINGS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: FDAB038
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG-AR 1.0
+

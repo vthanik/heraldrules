@@ -1,0 +1,28 @@
+Core:
+  Id: FDAV-SD0024
+  Status: Reference
+  Version: '1'
+Description: Date/Time of Collection (--DTC) should not be NULL, when End Date/Time
+  of Observation (--ENDTC) is not NULL.
+Check: []
+Outcome:
+  Message: Missing value for --DTC, when --ENDTC is provided
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: FINDINGS, FINDINGS ABOUT
+Standard: SDTM
+Publisher ID: FDAB043
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+  - SENDIG 3.0
+  - SENDIG 3.1
+  - SENDIG 3.1.1
+  - SENDIG-AR 1.0
+  - SENDIG-DART 1.1
+

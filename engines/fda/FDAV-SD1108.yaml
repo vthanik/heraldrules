@@ -1,0 +1,22 @@
+Core:
+  Id: FDAV-SD1108
+  Status: Reference
+  Version: '1'
+Description: Vital Signs (VS) dataset should be included in every submission.
+Check: []
+Outcome:
+  Message: Missing VS dataset
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: VS
+Standard: SDTM
+Publisher ID: FDAB004
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

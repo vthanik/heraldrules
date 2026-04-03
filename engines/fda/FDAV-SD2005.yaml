@@ -1,0 +1,21 @@
+Core:
+  Id: FDAV-SD2005
+  Status: Reference
+  Version: '1'
+Description: Date/Time of Death (DTHDTC) should be provided, when subject died (DTHFL=Y).
+Check: []
+Outcome:
+  Message: Missing value for DTHDTC, when DTHFL is populated
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: FDA
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: FDAB006
+IG Versions:
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

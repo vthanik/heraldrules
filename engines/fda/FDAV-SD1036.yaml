@@ -1,0 +1,23 @@
+Core:
+  Id: FDAV-SD1036
+  Status: Reference
+  Version: '1'
+Description: Toxicity Grade (--TOXGR) should be provided, when Toxicity (--TOX) is
+  populated.
+Check: []
+Outcome:
+  Message: Missing value for --TOXGR, when --TOX is populated
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: CV, EG, FT, LB, MK, NV, OE, PC, PP, RE, UR, AE, CE, MH
+Standard: SDTM
+Publisher ID: CG0428
+IG Versions:
+  - SDTMIG 3.1.2
+  - SDTMIG 3.1.3
+  - SDTMIG 3.2
+  - SDTMIG 3.3
+

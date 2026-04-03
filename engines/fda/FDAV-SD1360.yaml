@@ -1,0 +1,20 @@
+Core:
+  Id: FDAV-SD1360
+  Status: Reference
+  Version: '1'
+Description: The Reason Arm and/or Actual Arm is Null (ARMNRS) variable should only
+  be populated when Planned Arm Code (ARMCD) and Actual Arm Code (ACTARMCD) are null.
+Check: []
+Outcome:
+  Message: ARMNRS is populated but ARMCD and ACTARMCD are populated
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: DM
+Standard: SDTM
+Publisher ID: CG0520
+IG Versions:
+  - SDTMIG 3.3
+

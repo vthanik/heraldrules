@@ -1,0 +1,20 @@
+Core:
+  Id: FDAV-SD1368
+  Status: Reference
+  Version: '1'
+Description: Start Date/Time of Milestone (SMSTDTC) should not be null. The start
+  date/time of the Disease Milestone is the critical date/time, and must be populated.
+Check: []
+Outcome:
+  Message: SMSTDTC is null
+Rule Type: Record Data
+Sensitivity: Record
+Authorities:
+  - Organization: CDISC
+Source: FDA Validator Rules v1.6
+Domains: SM
+Standard: SDTM
+Publisher ID: CG0547
+IG Versions:
+  - SDTMIG 3.3
+

@@ -1,6 +1,9 @@
 # Raw downloaded files (large Excel/data)
 engines/**/.raw/
 
+# P21-derived rules (Adapted Material — non-redistributable)
+.local/
+
 # OS
 .DS_Store
 Thumbs.db

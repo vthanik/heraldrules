@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "id": "cdisc-sdtm-ig-3.3",
+      "title": "CDISC SDTM Implementation Guide v3.3",
+      "url": "https://www.cdisc.org/standards/foundational/sdtmig/sdtmig-v3-3",
+      "type": "standard"
+    },
+    {
+      "id": "cdisc-sdtm-ig-3.2",
+      "title": "CDISC SDTM Implementation Guide v3.2",
+      "url": "https://www.cdisc.org/standards/foundational/sdtmig/sdtmig-v3-2",
+      "type": "standard"
+    },
+    {
+      "id": "cdisc-adam-ig-1.2",
+      "title": "CDISC ADaM Implementation Guide v1.2",
+      "url": "https://www.cdisc.org/standards/foundational/adam/adamig-v1-2",
+      "type": "standard"
+    },
+    {
+      "id": "cdisc-define-xml-2.1",
+      "title": "CDISC Define-XML v2.1 Specification",
+      "url": "https://www.cdisc.org/standards/data-exchange/define-xml",
+      "type": "standard"
+    },
+    {
+      "id": "fda-tcg-5.9",
+      "title": "FDA Technical Conformance Guide v5.9 (Oct 2024)",
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/study-data-technical-conformance-guide",
+      "type": "regulatory"
+    },
+    {
+      "id": "fda-business-rules-1.5",
+      "title": "FDA Business Rules v1.5",
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/providing-regulatory-submissions-electronic-format-standardized-study-data",
+      "type": "regulatory"
+    },
+    {
+      "id": "fda-validator-rules-1.6",
+      "title": "FDA Validator Rules v1.6",
+      "url": "https://www.fda.gov/industry/study-data-standards-resources/study-data-submission-cder-and-cber",
+      "type": "regulatory"
+    },
+    {
+      "id": "pmda-validation-rules-6.0",
+      "title": "PMDA Validation Rules v6.0 (Mar 2025)",
+      "url": "https://www.pmda.go.jp/english/review-services/reviews/advanced-efforts/0002.html",
+      "type": "regulatory"
+    },
+    {
+      "id": "nci-evs-ct",
+      "title": "NCI EVS CDISC Controlled Terminology",
+      "url": "https://api-evsrest.nci.nih.gov/api/v1/concept/ncit",
+      "type": "terminology"
+    },
+    {
+      "id": "cdisc-library",
+      "title": "CDISC Library API",
+      "url": "https://library.cdisc.org/api",
+      "type": "api"
+    }
+  ]
+}

@@ -1,19 +1,19 @@
 {
-  "ct_version": "2026-03-28",
-  "source": "NCI EVS CDISC Controlled Terminology",
-  "api_url": "https://api-evsrest.nci.nih.gov/api/v1/concept/ncit",
-  "packages": [
-    {
-      "file": "sdtm-ct.json",
-      "standard": "SDTM",
-      "codelists": 8,
-      "date": "2026-03-28"
+  "version": "2025-09-26",
+  "source": "CDISC Library API + NCI EVS extensibility",
+  "fetched": "2026-04-03T12:34:46Z",
+  "packages": {
+    "sdtm": {
+      "name": "SDTM CT 2025-09-26",
+      "effective": "2025-09-26",
+      "n_codelists": 1181,
+      "n_extensible": 267,
+      "n_non_extensible": 911
     },
-    {
-      "file": "adam-ct.json",
-      "standard": "ADaM",
-      "codelists": 3,
-      "date": "2026-03-28"
+    "adam": {
+      "name": "ADaM CT 2025-09-26",
+      "effective": "2025-09-26",
+      "n_codelists": 23
     }
-  ]
+  }
 }

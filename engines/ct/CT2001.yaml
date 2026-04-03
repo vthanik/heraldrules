@@ -1,0 +1,45 @@
+id: CT2001
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+
+description: >
+  Variable must be populated with terms from its CDISC controlled terminology
+  codelist. New terms cannot be added into non-extensible codelists.
+
+scope:
+  classes:
+    - EVENTS
+    - FINDINGS
+    - INTERVENTIONS
+    - SPECIAL-PURPOSE
+    - TRIAL DESIGN
+    - RELATIONSHIP
+    - ASSOCIATED PERSONS
+  domains: []
+
+check:
+  all:
+    - name: __ct_variable__
+      operator: in_codelist
+      value: __non_extensible__
+
+outcome:
+  message: "Variable value not found in non-extensible codelist {CODELIST}"
+  severity: Error
+
+authorities:
+  - organization: FDA
+    rule_ids: [CT2001]
+  - organization: PMDA
+    rule_ids: [CT2001]
+  - organization: CDISC
+    rule_ids: [CG0021]
+
+provenance:
+  source_doc: "FDA Validator Rules v1.6; PMDA Validation Rules v6.0"
+  ct_source: "NCI EVS CDISC SDTM CT (sdtm-ct.json, extensible=false)"
+  ct_codelists: 911

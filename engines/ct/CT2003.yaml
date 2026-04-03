@@ -1,0 +1,37 @@
+id: CT2003
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+
+description: >
+  Paired variables such as TEST/TESTCD must be populated using terms with the
+  same Codelist Code value in CDISC controlled terminology. There is a
+  one-to-one relationship between paired variable values defined in CDISC CT
+  by Codelist Code value.
+
+scope:
+  classes:
+    - FINDINGS
+  domains: []
+
+check:
+  all:
+    - name: __ct_paired_variables__
+      operator: codelist_code_match
+
+outcome:
+  message: "Coded and Decoded values do not have the same Code in CDISC CT for {VAR1}/{VAR2}"
+  severity: Error
+
+authorities:
+  - organization: FDA
+    rule_ids: [CT2003]
+  - organization: PMDA
+    rule_ids: [CT2003]
+
+provenance:
+  source_doc: "FDA Validator Rules v1.6; PMDA Validation Rules v6.0"
+  ct_source: "NCI EVS CDISC SDTM CT (paired TEST/TESTCD codelists)"

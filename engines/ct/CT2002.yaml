@@ -1,0 +1,46 @@
+id: CT2002
+version: 1
+status: Published
+standard: SDTM
+category: Controlled Terminology
+sensitivity: Record
+executability: Fully Executable
+
+description: >
+  Variable should be populated with terms from its CDISC controlled terminology
+  codelist. New terms can be added as long as they are not duplicates, synonyms,
+  or subsets of existing standard terms.
+
+scope:
+  classes:
+    - EVENTS
+    - FINDINGS
+    - INTERVENTIONS
+    - SPECIAL-PURPOSE
+    - TRIAL DESIGN
+    - RELATIONSHIP
+    - ASSOCIATED PERSONS
+  domains: []
+
+check:
+  all:
+    - name: __ct_variable__
+      operator: in_codelist
+      value: __extensible__
+
+outcome:
+  message: "Variable value not found in extensible codelist {CODELIST}"
+  severity: Warning
+
+authorities:
+  - organization: FDA
+    rule_ids: [CT2002]
+  - organization: PMDA
+    rule_ids: [CT2002]
+  - organization: CDISC
+    rule_ids: [CG0021]
+
+provenance:
+  source_doc: "FDA Validator Rules v1.6; PMDA Validation Rules v6.0"
+  ct_source: "NCI EVS CDISC SDTM CT (sdtm-ct.json, extensible=true)"
+  ct_codelists: 267

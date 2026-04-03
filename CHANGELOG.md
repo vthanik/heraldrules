@@ -8,6 +8,57 @@ for release cadence details.
 
 ---
 
+## v2026.2.1 — 2026-04-03
+
+### CDISC Library API Integration
+
+- Fetched 450 CDISC conformance rules directly from CDISC Library API
+  (`library.cdisc.org/api/mdr/rules`), replacing GitHub-sourced CORE rules.
+- SDTMIG 3.2: 392 rules, SDTMIG 3.3: 423 rules (450 unique after dedup).
+- 426 fully executable, 24 partially executable, all Published.
+- ADaM: 0 rules (CDISC has not published ADaM conformance rules).
+- Stored in `engines/cdisc/` with `herald.source = "CDISC Library API"`.
+
+### FDA Validator Rules v1.6
+
+- Parsed 732 rules from official FDA Excel (December 2022).
+- 574 SDTM rules (FDAV-* prefix), 158 SEND rules skipped.
+- Cross-references Publisher ID to FDA Business Rules and CDISC CG IDs.
+- Stored in `engines/fda/` alongside existing 86 FDAB Business Rules.
+
+### PMDA Validation Rules v6.0
+
+- Auto-downloaded and parsed 1,060 rules from pmda.go.jp official Excel.
+- SDTM: 511, ADaM: 388, Define-XML: 161.
+- Severity mapped from PMDA categories (Reject/Error/Warning).
+- Japanese notes preserved in provenance.
+- Stored in `engines/pmda/`.
+
+### Master Rules CSV (Source of Truth)
+
+- Built `herald-master-rules.csv` with 3,713 rules from all sources.
+- 20 columns including full provenance: source, source_document, source_url,
+  authority, conformance_rule_origin, cited_guidance.
+- Sources: CDISC Library API (448), FDA v1.6 (732), PMDA v6.0 (1,060),
+  P21 Community SDTM (659), ADaM v1.1 (361), ADaM v1.2 (261), Define-XML (192).
+- Separate `herald-controlled-terminology.csv` for CT reference.
+
+### P21 Dependency Audit
+
+- Audited 1,100 HRL rules in `rules/`: 100% have P21 provenance.
+- 1,050 are P21-only (no CORE cross-reference).
+- Audit report: `audit-p21-dependency.csv`.
+
+### Automation Scripts
+
+- `inst/scripts/fetch-cdisc.R` — fetch from CDISC Library API (requires API key).
+- `inst/scripts/fetch-fda.R` — parse FDA Validator Rules Excel.
+- `inst/scripts/fetch-pmda.R` — auto-download and parse PMDA Excel.
+- `inst/scripts/build-master-csv.R` — rebuild master CSV from all sources.
+- `inst/scripts/audit-p21-dependency.R` — audit HRL rules for P21 provenance.
+
+---
+
 ## v2026.2 — 2026-04-03
 
 Initial public release of the herald-rules repository.

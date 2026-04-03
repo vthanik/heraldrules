@@ -27,4 +27,4 @@ provenance:
   authority: CDISC
   section: "5.3.13.2; 5.3.13.3"
   cited_guidance: >
-    CodeListItem — For Controlled Terminologies where there are Coded and Decoded values, a CodeListItem must be provided for each Item.
+    CodeListItem -- For Controlled Terminologies where there are Coded and Decoded values, a CodeListItem must be provided for each Item.

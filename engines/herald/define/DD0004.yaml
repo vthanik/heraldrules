@@ -25,4 +25,4 @@ provenance:
   authority: CDISC
   section: "5.3.5"
   cited_guidance: >
-    def:DefineVersion — Required. '2.1.n'. Version of Define-XML to which the file conforms.
+    def:DefineVersion -- Required. '2.1.n'. Version of Define-XML to which the file conforms.

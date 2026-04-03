@@ -24,4 +24,4 @@ provenance:
   authority: CDISC
   section: "5.3.13"
   cited_guidance: >
-    OID — Required. Unique ID for the CodeList.
+    OID -- Required. Unique ID for the CodeList.

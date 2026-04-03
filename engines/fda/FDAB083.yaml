@@ -1,12 +1,12 @@
 Core:
   Id: FDAB083
   Status: Reference
-Description: If a specific organ was not examined in MI.xpt (MISTAT = ‘NOT DONE’),
+Description: If a specific organ was not examined in MI.xpt (MISTAT = 'NOT DONE'),
   then a record should be included in tumor.xpt for the same specific organ indicating
   that this organ was not examined (ORGANEXM=3).
 Check: []
 Outcome:
-  Message: If a specific organ was not examined in MI.xpt (MISTAT = ‘NOT DONE’), then
+  Message: If a specific organ was not examined in MI.xpt (MISTAT = 'NOT DONE'), then
     a record should be included in tumor.xpt for the same specific organ indicating
     that this organ was not examined (ORGANEXM=3).
 Rule Type: Record Data

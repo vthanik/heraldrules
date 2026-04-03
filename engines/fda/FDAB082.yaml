@@ -2,13 +2,13 @@ Core:
   Id: FDAB082
   Status: Reference
 Description: For carcinogenicity studies, MIRESCAT should be populated unless MISTRESC
-  has a value of ‘UNREMARKABLE’ (for SENDIGv3.1) or ‘NORMAL’ (for SENDIGv3.0) or MISTAT
-  has a value of ‘NOT DONE’.
+  has a value of 'UNREMARKABLE' (for SENDIGv3.1) or 'NORMAL' (for SENDIGv3.0) or MISTAT
+  has a value of 'NOT DONE'.
 Check: []
 Outcome:
   Message: For carcinogenicity studies, MIRESCAT should be populated unless MISTRESC
-    has a value of ‘UNREMARKABLE’ (for SENDIGv3.1) or ‘NORMAL’ (for SENDIGv3.0) or
-    MISTAT has a value of ‘NOT DONE’.
+    has a value of 'UNREMARKABLE' (for SENDIGv3.1) or 'NORMAL' (for SENDIGv3.0) or
+    MISTAT has a value of 'NOT DONE'.
 Rule Type: Record Data
 Sensitivity: Record
 Authorities:

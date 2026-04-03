@@ -30,4 +30,4 @@ provenance:
   authority: CDISC
   section: "5.3.13"
   cited_guidance: >
-    DataType — Required. 'text', 'float', 'Integer'. The data type of the codes.
+    DataType -- Required. 'text', 'float', 'Integer'. The data type of the codes.

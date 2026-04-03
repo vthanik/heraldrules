@@ -33,4 +33,4 @@ provenance:
   authority: CDISC
   section: "4.3.2; 5.3.12.3"
   cited_guidance: >
-    Type — Required. Origin type. The list of allowable values is not extensible.
+    Type -- Required. Origin type. The list of allowable values is not extensible.

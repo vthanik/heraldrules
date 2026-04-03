@@ -8,7 +8,7 @@ for release cadence details.
 
 ---
 
-## v2026.2.1 — 2026-04-03
+## v2026.2.1 -- 2026-04-03
 
 ### CDISC Library API Integration
 
@@ -51,15 +51,15 @@ for release cadence details.
 
 ### Automation Scripts
 
-- `inst/scripts/fetch-cdisc.R` — fetch from CDISC Library API (requires API key).
-- `inst/scripts/fetch-fda.R` — parse FDA Validator Rules Excel.
-- `inst/scripts/fetch-pmda.R` — auto-download and parse PMDA Excel.
-- `inst/scripts/build-master-csv.R` — rebuild master CSV from all sources.
-- `inst/scripts/audit-p21-dependency.R` — audit HRL rules for P21 provenance.
+- `inst/scripts/fetch-cdisc.R` -- fetch from CDISC Library API (requires API key).
+- `inst/scripts/fetch-fda.R` -- parse FDA Validator Rules Excel.
+- `inst/scripts/fetch-pmda.R` -- auto-download and parse PMDA Excel.
+- `inst/scripts/build-master-csv.R` -- rebuild master CSV from all sources.
+- `inst/scripts/audit-p21-dependency.R` -- audit HRL rules for P21 provenance.
 
 ---
 
-## v2026.2 — 2026-04-03
+## v2026.2 -- 2026-04-03
 
 Initial public release of the herald-rules repository.
 

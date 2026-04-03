@@ -24,4 +24,4 @@ provenance:
   authority: CDISC
   section: "5.3.12"
   cited_guidance: >
-    Name — Required. Dataset Variable name or Variable Value Name.
+    Name -- Required. Dataset Variable name or Variable Value Name.

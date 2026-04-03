@@ -27,4 +27,4 @@ provenance:
   authority: CDISC
   section: "5.3.14"
   cited_guidance: >
-    MethodOID — Reference to the unique ID of a MethodDef element. Required for each unique value of the MethodOID attribute.
+    MethodOID -- Reference to the unique ID of a MethodDef element. Required for each unique value of the MethodOID attribute.

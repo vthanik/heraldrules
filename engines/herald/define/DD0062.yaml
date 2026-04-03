@@ -27,4 +27,4 @@ provenance:
   authority: CDISC
   section: "5.3.15"
   cited_guidance: >
-    def:CommentOID — Must match the OID of a def:CommentDef element in the same MetaDataVersion.
+    def:CommentOID -- Must match the OID of a def:CommentDef element in the same MetaDataVersion.

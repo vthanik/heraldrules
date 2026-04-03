@@ -26,4 +26,4 @@ provenance:
   authority: CDISC
   section: "5.3.11.2"
   cited_guidance: >
-    def:Class — Conditional. Required when the ItemGroupDef describes a dataset that follows SDTM, SEND, or ADaM.
+    def:Class -- Conditional. Required when the ItemGroupDef describes a dataset that follows SDTM, SEND, or ADaM.

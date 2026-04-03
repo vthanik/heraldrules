@@ -24,4 +24,4 @@ provenance:
   authority: CDISC
   section: "5.3.11"
   cited_guidance: >
-    def:Structure — Required. Description of the level of detail represented by individual records in the dataset.
+    def:Structure -- Required. Description of the level of detail represented by individual records in the dataset.

@@ -24,4 +24,4 @@ provenance:
   authority: CDISC
   section: "5.3.9.1"
   cited_guidance: >
-    Description — Required for all ItemDef elements corresponding to Variable definitions in the context of a regulatory submission.
+    Description -- Required for all ItemDef elements corresponding to Variable definitions in the context of a regulatory submission.

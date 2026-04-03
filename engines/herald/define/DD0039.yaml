@@ -27,4 +27,4 @@ provenance:
   authority: CDISC
   section: "5.3.9.2"
   cited_guidance: >
-    OrderNumber — Optional. Integer. Display order of the variable within the domain dataset.
+    OrderNumber -- Optional. Integer. Display order of the variable within the domain dataset.

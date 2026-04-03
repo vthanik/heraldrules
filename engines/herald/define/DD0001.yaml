@@ -24,4 +24,4 @@ provenance:
   authority: CDISC
   section: "5.3.4.2"
   cited_guidance: >
-    StudyName — Required. Cardinality: Exactly one. A short name assigned to the study by the sponsor.
+    StudyName -- Required. Cardinality: Exactly one. A short name assigned to the study by the sponsor.

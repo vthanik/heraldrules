@@ -24,4 +24,4 @@ provenance:
   authority: CDISC
   section: "5.3.13.1; 5.3.13.2"
   cited_guidance: >
-    CodedValue — Required. The coded value.
+    CodedValue -- Required. The coded value.

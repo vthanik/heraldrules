@@ -114,7 +114,7 @@ test_script <- file.path(repo_root, "tests", "validate-rules.R")
 if (file.exists(test_script)) {
   rc <- system(paste("Rscript", shQuote(test_script)))
   if (rc != 0L) {
-    cat("\n  VALIDATION FAILED — check output above\n")
+    cat("\n  VALIDATION FAILED -- check output above\n")
     quit(status = 1L)
   }
 } else {

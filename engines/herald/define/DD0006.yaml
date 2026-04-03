@@ -24,4 +24,4 @@ provenance:
   authority: CDISC
   section: "5.3.11"
   cited_guidance: >
-    Name — Required. Short description for the ItemGroup.
+    Name -- Required. Short description for the ItemGroup.

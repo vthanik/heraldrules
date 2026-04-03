@@ -3,12 +3,12 @@ Core:
   Status: Reference
 Description: If a specific organ was not examined in tumor.xpt (ORGANEXM=3), then
   a record should be included in MI.xpt (SEND) for the same specific organ indicating
-  that this organ was not examined (MISTAT = ‘NOT DONE’).
+  that this organ was not examined (MISTAT = 'NOT DONE').
 Check: []
 Outcome:
   Message: If a specific organ was not examined in tumor.xpt (ORGANEXM=3), then a
     record should be included in MI.xpt (SEND) for the same specific organ indicating
-    that this organ was not examined (MISTAT = ‘NOT DONE’).
+    that this organ was not examined (MISTAT = 'NOT DONE').
 Rule Type: Record Data
 Sensitivity: Record
 Authorities:

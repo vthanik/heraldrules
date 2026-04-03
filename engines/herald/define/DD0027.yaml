@@ -27,4 +27,4 @@ provenance:
   authority: CDISC
   section: "5.3.12"
   cited_guidance: >
-    Length — Integer. The variable length in characters.
+    Length -- Integer. The variable length in characters.

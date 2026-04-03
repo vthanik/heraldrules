@@ -1,6 +1,6 @@
 # herald-rules
 
-Validation rules for [herald](https://github.com/vthanik/herald) — clinical dataset submission infrastructure for R.
+Validation rules for [herald](https://github.com/vthanik/herald) -- clinical dataset submission infrastructure for R.
 
 ## Structure
 

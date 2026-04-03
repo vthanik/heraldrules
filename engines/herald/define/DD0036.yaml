@@ -27,4 +27,4 @@ provenance:
   authority: CDISC
   section: "5.3.9.2; 5.3.12.3"
   cited_guidance: >
-    MethodOID — Conditional. Required when the Type attribute for the def:Origin is 'Derived'. If the variable is derived, a MethodDef must be provided.
+    MethodOID -- Conditional. Required when the Type attribute for the def:Origin is 'Derived'. If the variable is derived, a MethodDef must be provided.

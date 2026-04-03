@@ -32,4 +32,4 @@ provenance:
   authority: CDISC
   section: "5.3.7.1.1; 5.3.12.3"
   cited_guidance: >
-    def:PDFPageRef — Required for def:Origin/@Type='Collected' and def:Origin/@Source in ('Investigator','Subject').
+    def:PDFPageRef -- Required for def:Origin/@Type='Collected' and def:Origin/@Source in ('Investigator','Subject').

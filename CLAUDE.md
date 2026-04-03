@@ -1,18 +1,18 @@
-# CLAUDE.md — herald-rules
+# CLAUDE.md -- herald-rules
 
 Regulatory validation rule catalog for the herald R package.
-All rules sourced from official regulatory authorities — zero P21 dependency.
+All rules sourced from official regulatory authorities -- zero P21 dependency.
 
 ## Architecture
 
 ```
 engines/
-  cdisc/   450 YAML  — CDISC Library API (SDTMIG 3.2, 3.3 conformance rules)
-  fda/     660 YAML  — FDA Business Rules v1.5 (86) + Validator Rules v1.6 (574)
-  pmda/  1,041 YAML  — PMDA Validation Rules v6.0 (SDTM/ADaM/Define-XML)
-  ct/    1,210 YAML  — 6 meta-rules + 1,204 per-codelist CT rules
-ct/                  — Full SDTM + ADaM controlled terminology JSON
-configs/             — 10 submission profile configs (FDA/PMDA x IG versions)
+  cdisc/   450 YAML  -- CDISC Library API (SDTMIG 3.2, 3.3 conformance rules)
+  fda/     660 YAML  -- FDA Business Rules v1.5 (86) + Validator Rules v1.6 (574)
+  pmda/  1,041 YAML  -- PMDA Validation Rules v6.0 (SDTM/ADaM/Define-XML)
+  ct/    1,210 YAML  -- 6 meta-rules + 1,204 per-codelist CT rules
+ct/                  -- Full SDTM + ADaM controlled terminology JSON
+configs/             -- 10 submission profile configs (FDA/PMDA x IG versions)
 ```
 
 ## YAML Schemas
@@ -32,12 +32,12 @@ Rscript inst/scripts/refresh-all.R --dry-run     # Preview
 ```
 
 Individual scripts:
-- `fetch-cdisc.R` — CDISC Library API (requires API key)
-- `fetch-fda.R` — FDA Validator Rules Excel (manual download)
-- `fetch-pmda.R` — PMDA (auto-downloads from pmda.go.jp)
-- `build-configs.R` — Regenerate submission configs
-- `build-master-csv.R` — Rebuild master CSV
-- `build-manifest.R` — Regenerate manifest.json
+- `fetch-cdisc.R` -- CDISC Library API (requires API key)
+- `fetch-fda.R` -- FDA Validator Rules Excel (manual download)
+- `fetch-pmda.R` -- PMDA (auto-downloads from pmda.go.jp)
+- `build-configs.R` -- Regenerate submission configs
+- `build-master-csv.R` -- Rebuild master CSV
+- `build-manifest.R` -- Regenerate manifest.json
 
 ## API Key
 
@@ -45,17 +45,17 @@ CDISC Library API key stored in `.local/.env`:
 ```
 CDISC_API_KEY=<key>
 ```
-Never commit `.local/` — it's gitignored.
+Never commit `.local/` -- it's gitignored.
 
 ## Adding Rules or Engines
 
 When adding a new rule or defining a new engine, ALL of the following must be updated:
 
-1. **YAML rule file** — Create in `engines/<engine>/<rule_id>.yaml`
-2. **herald-master-rules.csv** — Append row with all 20 columns
-3. **Config JSON(s)** — Add rule ID to relevant `configs/*.json` files
-4. **manifest.json** — Update engine rule counts and config rule counts
-5. **CHANGELOG.md** — Document the addition
+1. **YAML rule file** -- Create in `engines/<engine>/<rule_id>.yaml`
+2. **herald-master-rules.csv** -- Append row with all 20 columns
+3. **Config JSON(s)** -- Add rule ID to relevant `configs/*.json` files
+4. **manifest.json** -- Update engine rule counts and config rule counts
+5. **CHANGELOG.md** -- Document the addition
 
 When modifying a rule:
 - Increment the `version` field in the YAML
@@ -87,10 +87,10 @@ Checks: YAML parsing, required fields, no duplicate IDs, config references valid
 
 ## Key Files
 
-- `herald-master-rules.csv` — 2,240 rules, 20 columns, full provenance (source of truth)
-- `herald-controlled-terminology.csv` — 44,970 CT terms with extensibility
-- `manifest.json` — engine rule counts and config summaries
-- `CHANGELOG.md` — release history
+- `herald-master-rules.csv` -- 2,240 rules, 20 columns, full provenance (source of truth)
+- `herald-controlled-terminology.csv` -- 44,970 CT terms with extensibility
+- `manifest.json` -- engine rule counts and config summaries
+- `CHANGELOG.md` -- release history
 
 ## Sources
 

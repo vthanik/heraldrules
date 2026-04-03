@@ -195,7 +195,7 @@ pmda_df <- rbind(
 cat(sprintf("   %d rules\n", nrow(pmda_df)))
 
 # =============================================================================
-# COMBINE (official sources only — no P21 dependency)
+# COMBINE (official sources only -- no P21 dependency)
 # =============================================================================
 master <- rbind(cdisc_df, fda_df, pmda_df)
 

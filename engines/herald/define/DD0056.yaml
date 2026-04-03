@@ -24,4 +24,4 @@ provenance:
   authority: CDISC
   section: "5.3.14"
   cited_guidance: >
-    OID — Required. Unique ID for the MethodDef.
+    OID -- Required. Unique ID for the MethodDef.

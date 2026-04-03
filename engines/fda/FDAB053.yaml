@@ -1,10 +1,10 @@
 Core:
   Id: FDAB053
   Status: Reference
-Description: If an age range is supplied, it should be in “number-number” format.
+Description: If an age range is supplied, it should be in "number-number" format.
 Check: []
 Outcome:
-  Message: If an age range is supplied, it should be in “number-number” format.
+  Message: If an age range is supplied, it should be in "number-number" format.
 Rule Type: Record Data
 Sensitivity: Record
 Authorities:

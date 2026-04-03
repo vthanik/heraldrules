@@ -27,4 +27,4 @@ provenance:
   authority: CDISC
   section: "5.3.16"
   cited_guidance: >
-    leafID — Reference to the unique ID of the def:leaf element.
+    leafID -- Reference to the unique ID of the def:leaf element.

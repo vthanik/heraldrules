@@ -29,4 +29,4 @@ provenance:
   authority: CDISC
   section: "5.3.3"
   cited_guidance: >
-    def:Context — Required. Allowable Values: 'Submission', 'Other'.
+    def:Context -- Required. Allowable Values: 'Submission', 'Other'.

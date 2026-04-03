@@ -46,17 +46,17 @@ Versions follow the format: **v{YYYY}.{Q}**
 
 Examples:
 
-- `v2026.1` — Q1 2026 release (March)
-- `v2026.2` — Q2 2026 release (June)
-- `v2026.3` — Q3 2026 release (September)
-- `v2026.4` — Q4 2026 release (December)
+- `v2026.1` -- Q1 2026 release (March)
+- `v2026.2` -- Q2 2026 release (June)
+- `v2026.3` -- Q3 2026 release (September)
+- `v2026.4` -- Q4 2026 release (December)
 
 ### Hotfix versions
 
 Hotfix releases between quarters use a patch suffix: **v{YYYY}.{Q}.{P}**
 
-- `v2026.2.1` — First hotfix after the Q2 2026 release.
-- `v2026.2.2` — Second hotfix.
+- `v2026.2.1` -- First hotfix after the Q2 2026 release.
+- `v2026.2.2` -- Second hotfix.
 
 Hotfixes are reserved for corrections to rules that produce incorrect
 results (false positives or false negatives). New rules are not added in

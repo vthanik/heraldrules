@@ -27,4 +27,4 @@ provenance:
   authority: CDISC
   section: "5.3.12"
   cited_guidance: >
-    SignificantDigits — Conditional. Required if DataType is 'Float'. When DataType is float, both Length and SignificantDigits must be provided.
+    SignificantDigits -- Conditional. Required if DataType is 'Float'. When DataType is float, both Length and SignificantDigits must be provided.

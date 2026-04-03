@@ -29,4 +29,4 @@ provenance:
   authority: CDISC
   section: "5.3.11"
   cited_guidance: >
-    Purpose — Required. 'Tabulation', 'Analysis'. For SDTM and SEND, use Tabulation. For ADaM, use Analysis.
+    Purpose -- Required. 'Tabulation', 'Analysis'. For SDTM and SEND, use Tabulation. For ADaM, use Analysis.

@@ -39,4 +39,4 @@ provenance:
   authority: CDISC
   section: "5.3.12"
   cited_guidance: >
-    DataType — Required. See Section 4.3.1 for valid Define-XML DataType values.
+    DataType -- Required. See Section 4.3.1 for valid Define-XML DataType values.

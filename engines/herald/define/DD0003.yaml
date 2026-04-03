@@ -24,4 +24,4 @@ provenance:
   authority: CDISC
   section: "5.3.4.4"
   cited_guidance: >
-    ProtocolName — Required. Cardinality: Exactly one. A protocol name or number assigned to the study.
+    ProtocolName -- Required. Cardinality: Exactly one. A protocol name or number assigned to the study.

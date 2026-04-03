@@ -24,4 +24,4 @@ provenance:
   authority: CDISC
   section: "5.3.9.2"
   cited_guidance: >
-    KeySequence — Conditional. Each variable that is part of the dataset key must have a KeySequence attribute. In the context of a regulatory submission, a key must be provided for each dataset.
+    KeySequence -- Conditional. Each variable that is part of the dataset key must have a KeySequence attribute. In the context of a regulatory submission, a key must be provided for each dataset.

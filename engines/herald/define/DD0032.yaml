@@ -28,4 +28,4 @@ provenance:
   authority: CDISC
   section: "4.3.2.2"
   cited_guidance: >
-    For ADaM datasets — Not Available is not valid.
+    For ADaM datasets -- Not Available is not valid.

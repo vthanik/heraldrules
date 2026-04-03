@@ -24,4 +24,4 @@ provenance:
   authority: CDISC
   section: "5.3.4.3"
   cited_guidance: >
-    StudyDescription — Required. Cardinality: Exactly one. A text description of the contents of the Study.
+    StudyDescription -- Required. Cardinality: Exactly one. A text description of the contents of the Study.

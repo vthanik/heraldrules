@@ -29,4 +29,4 @@ provenance:
   authority: CDISC
   section: "5.3.11.2.1"
   cited_guidance: >
-    def:SubClass — Name must follow CDISC Controlled Terminology for SubClass.
+    def:SubClass -- Name must follow CDISC Controlled Terminology for SubClass.

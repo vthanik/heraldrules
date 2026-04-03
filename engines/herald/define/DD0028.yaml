@@ -28,4 +28,4 @@ provenance:
   authority: CDISC
   section: "4.3.1"
   cited_guidance: >
-    text — Char — Maximum allowable length. SAS v.5 Transport files restrict variable lengths to 200 characters.
+    text -- Char -- Maximum allowable length. SAS v.5 Transport files restrict variable lengths to 200 characters.

@@ -30,4 +30,4 @@ provenance:
   authority: CDISC
   section: "5.3.12"
   cited_guidance: >
-    Length — Conditional. Required if DataType is 'Text', 'Integer', or 'Float'.
+    Length -- Conditional. Required if DataType is 'Text', 'Integer', or 'Float'.

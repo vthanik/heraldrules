@@ -27,4 +27,4 @@ provenance:
   authority: CDISC
   section: "4.3.2"
   cited_guidance: >
-    Predecessor — An entry that is copied from a variable in another dataset. The Description child element identifies the dataset and variable.
+    Predecessor -- An entry that is copied from a variable in another dataset. The Description child element identifies the dataset and variable.

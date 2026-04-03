@@ -35,4 +35,4 @@ provenance:
   authority: CDISC
   section: "5.3.10.1"
   cited_guidance: >
-    Comparator — Required. 'LT','LE','GT','GE','EQ','NE','IN','NOTIN'.
+    Comparator -- Required. 'LT','LE','GT','GE','EQ','NE','IN','NOTIN'.

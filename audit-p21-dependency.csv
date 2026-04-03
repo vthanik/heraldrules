@@ -1,0 +1,1101 @@
+"file","rule_id","standard","category","p21_id","core_id","cg_ids","fda_ids","source_doc","has_p21","has_core","has_cg"
+"HRL-AD-0001.yaml","HRL-AD-0001","ADaM","Presence","AD0001","","CG0101","FDA-AD-001","ADaM-IG v1.3 Section 3.1",TRUE,FALSE,TRUE
+"HRL-AD-0002.yaml","HRL-AD-0002","ADaM","Presence","AD0002","","CG0102","FDA-AD-002","ADaM-IG v1.3 Section 3.1",TRUE,FALSE,TRUE
+"HRL-AD-0003.yaml","HRL-AD-0003","ADaM","Consistency","AD0003","","CG0103","FDA-AD-003","ADaM-IG v1.3 Section 3.1",TRUE,FALSE,TRUE
+"HRL-AD-0004.yaml","HRL-AD-0004","ADaM","Presence","AD0004","","CG0104","FDA-AD-004","ADaM-IG v1.3 Section 3.1",TRUE,FALSE,TRUE
+"HRL-AD-0005.yaml","HRL-AD-0005","ADaM","Presence","AD0005","","CG0105","FDA-AD-005","ADaM-IG v1.3 Section 3.1.2",TRUE,FALSE,TRUE
+"HRL-AD-0006.yaml","HRL-AD-0006","ADaM","Presence","AD0006","","CG0106","FDA-AD-006","ADaM-IG v1.3 Section 3.1.2",TRUE,FALSE,TRUE
+"HRL-AD-0007.yaml","HRL-AD-0007","ADaM","Terminology","AD0007","","CG0107","FDA-AD-007","ADaM-IG v1.3 Section 3.1.3",TRUE,FALSE,TRUE
+"HRL-AD-0008.yaml","HRL-AD-0008","ADaM","Terminology","AD0008","","CG0108","FDA-AD-008","ADaM-IG v1.3 Section 3.1.3",TRUE,FALSE,TRUE
+"HRL-AD-0009.yaml","HRL-AD-0009","ADaM","Format","AD0009","","CG0109","FDA-AD-009","ADaM-IG v1.3 Section 3.1.2",TRUE,FALSE,TRUE
+"HRL-AD-0010.yaml","HRL-AD-0010","ADaM","Presence","AD0010","","CG0110","FDA-AD-010","ADaM-IG v1.3 Section 3.2",TRUE,FALSE,TRUE
+"HRL-AD-0011.yaml","HRL-AD-0011","ADaM","Consistency","AD0011","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0012.yaml","HRL-AD-0012","ADaM","Consistency","AD0012","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0013.yaml","HRL-AD-0013","ADaM","Format","AD0013","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0014.yaml","HRL-AD-0014","ADaM","Format","AD0016","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0015.yaml","HRL-AD-0015","ADaM","Metadata","AD0018","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0016.yaml","HRL-AD-0016","ADaM","Presence","AD0019","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0017.yaml","HRL-AD-0017","ADaM","Presence","AD0026","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0018.yaml","HRL-AD-0018","ADaM","Terminology","AD0033","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0019.yaml","HRL-AD-0019","ADaM","Terminology","AD0034","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0020.yaml","HRL-AD-0020","ADaM","Terminology","AD0035","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0021.yaml","HRL-AD-0021","ADaM","Terminology","AD0036","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0022.yaml","HRL-AD-0022","ADaM","Consistency","AD0037","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0023.yaml","HRL-AD-0023","ADaM","Consistency","AD0037B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0024.yaml","HRL-AD-0024","ADaM","Consistency","AD0038","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0025.yaml","HRL-AD-0025","ADaM","Consistency","AD0038B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0026.yaml","HRL-AD-0026","ADaM","Terminology","AD0039","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0027.yaml","HRL-AD-0027","ADaM","Terminology","AD0040","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0028.yaml","HRL-AD-0028","ADaM","Format","AD0041","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0029.yaml","HRL-AD-0029","ADaM","Format","AD0041A","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0030.yaml","HRL-AD-0030","ADaM","Format","AD0042","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0031.yaml","HRL-AD-0031","ADaM","Format","AD0042A","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0032.yaml","HRL-AD-0032","ADaM","Format","AD0043","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0033.yaml","HRL-AD-0033","ADaM","Format","AD0043A","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0034.yaml","HRL-AD-0034","ADaM","Consistency","AD0044","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0035.yaml","HRL-AD-0035","ADaM","Consistency","AD0045","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0036.yaml","HRL-AD-0036","ADaM","Limit","AD0046","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0037.yaml","HRL-AD-0037","ADaM","Presence","AD0047","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0038.yaml","HRL-AD-0038","ADaM","Presence","AD0048","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0039.yaml","HRL-AD-0039","ADaM","Cross-reference","AD0053","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0040.yaml","HRL-AD-0040","ADaM","Consistency","AD0054","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0041.yaml","HRL-AD-0041","ADaM","Format","AD0058","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0042.yaml","HRL-AD-0042","ADaM","Format","AD0059","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0043.yaml","HRL-AD-0043","ADaM","Format","AD0060","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0044.yaml","HRL-AD-0044","ADaM","Presence","AD0061","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0045.yaml","HRL-AD-0045","ADaM","Presence","AD0061A","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0046.yaml","HRL-AD-0046","ADaM","Format","AD0062","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0047.yaml","HRL-AD-0047","ADaM","Format","AD0063","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0048.yaml","HRL-AD-0048","ADaM","Presence","AD0064","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0049.yaml","HRL-AD-0049","ADaM","Format","AD0065","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0050.yaml","HRL-AD-0050","ADaM","Presence","AD0066","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0051.yaml","HRL-AD-0051","ADaM","Format","AD0068","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0052.yaml","HRL-AD-0052","ADaM","Presence","AD0070","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0053.yaml","HRL-AD-0053","ADaM","Format","AD0073","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0054.yaml","HRL-AD-0054","ADaM","Format","AD0074","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0055.yaml","HRL-AD-0055","ADaM","Presence","AD0075","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0056.yaml","HRL-AD-0056","ADaM","Consistency","AD0076","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0057.yaml","HRL-AD-0057","ADaM","Consistency","AD0076B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0058.yaml","HRL-AD-0058","ADaM","Consistency","AD0077","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0059.yaml","HRL-AD-0059","ADaM","Consistency","AD0077B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0060.yaml","HRL-AD-0060","ADaM","Presence","AD0078","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0061.yaml","HRL-AD-0061","ADaM","Presence","AD0079","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0062.yaml","HRL-AD-0062","ADaM","Presence","AD0080","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0063.yaml","HRL-AD-0063","ADaM","Consistency","AD0083","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0064.yaml","HRL-AD-0064","ADaM","Consistency","AD0084","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0065.yaml","HRL-AD-0065","ADaM","Presence","AD0090","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0066.yaml","HRL-AD-0066","ADaM","Consistency","AD0092","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0067.yaml","HRL-AD-0067","ADaM","Consistency","AD0092B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0068.yaml","HRL-AD-0068","ADaM","Consistency","AD0093","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0069.yaml","HRL-AD-0069","ADaM","Consistency","AD0093B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0070.yaml","HRL-AD-0070","ADaM","Format","AD0094","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0071.yaml","HRL-AD-0071","ADaM","Consistency","AD0095","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0072.yaml","HRL-AD-0072","ADaM","Consistency","AD0095B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0073.yaml","HRL-AD-0073","ADaM","Consistency","AD0096","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0074.yaml","HRL-AD-0074","ADaM","Consistency","AD0096B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0075.yaml","HRL-AD-0075","ADaM","Presence","AD0097","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0076.yaml","HRL-AD-0076","ADaM","Consistency","AD0098","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0077.yaml","HRL-AD-0077","ADaM","Consistency","AD0099","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0078.yaml","HRL-AD-0078","ADaM","Cross-reference","AD0100","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0079.yaml","HRL-AD-0079","ADaM","Cross-reference","AD0101","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0080.yaml","HRL-AD-0080","ADaM","Cross-reference","AD0102","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0081.yaml","HRL-AD-0081","ADaM","Cross-reference","AD0103","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0082.yaml","HRL-AD-0082","ADaM","Cross-reference","AD0104","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0083.yaml","HRL-AD-0083","ADaM","Consistency","AD0105","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0084.yaml","HRL-AD-0084","ADaM","Consistency","AD0105B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0085.yaml","HRL-AD-0085","ADaM","Consistency","AD0106","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0086.yaml","HRL-AD-0086","ADaM","Consistency","AD0106B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0087.yaml","HRL-AD-0087","ADaM","Cross-reference","AD0107","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0088.yaml","HRL-AD-0088","ADaM","Cross-reference","AD0108","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0089.yaml","HRL-AD-0089","ADaM","Consistency","AD0109","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0090.yaml","HRL-AD-0090","ADaM","Consistency","AD0109B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0091.yaml","HRL-AD-0091","ADaM","Consistency","AD0110","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0092.yaml","HRL-AD-0092","ADaM","Consistency","AD0110B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0093.yaml","HRL-AD-0093","ADaM","Presence","AD0111","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0094.yaml","HRL-AD-0094","ADaM","Consistency","AD0112","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0095.yaml","HRL-AD-0095","ADaM","Presence","AD0113","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0096.yaml","HRL-AD-0096","ADaM","Consistency","AD0115","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0097.yaml","HRL-AD-0097","ADaM","Consistency","AD0117","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0098.yaml","HRL-AD-0098","ADaM","Consistency","AD0117B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0099.yaml","HRL-AD-0099","ADaM","Consistency","AD0118","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0100.yaml","HRL-AD-0100","ADaM","Consistency","AD0118B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0101.yaml","HRL-AD-0101","ADaM","Consistency","AD0121","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0102.yaml","HRL-AD-0102","ADaM","Consistency","AD0122","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0103.yaml","HRL-AD-0103","ADaM","Consistency","AD0123","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0104.yaml","HRL-AD-0104","ADaM","Consistency","AD0124","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0105.yaml","HRL-AD-0105","ADaM","Consistency","AD0125","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0106.yaml","HRL-AD-0106","ADaM","Consistency","AD0125B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0107.yaml","HRL-AD-0107","ADaM","Consistency","AD0126","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0108.yaml","HRL-AD-0108","ADaM","Consistency","AD0126B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0109.yaml","HRL-AD-0109","ADaM","Presence","AD0127","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0110.yaml","HRL-AD-0110","ADaM","Presence","AD0127A","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0111.yaml","HRL-AD-0111","ADaM","Consistency","AD0129","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0112.yaml","HRL-AD-0112","ADaM","Consistency","AD0130","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0113.yaml","HRL-AD-0113","ADaM","Consistency","AD0132","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0114.yaml","HRL-AD-0114","ADaM","Consistency","AD0132A","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0115.yaml","HRL-AD-0115","ADaM","Consistency","AD0132B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0116.yaml","HRL-AD-0116","ADaM","Consistency","AD0133","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0117.yaml","HRL-AD-0117","ADaM","Presence","AD0133A","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0118.yaml","HRL-AD-0118","ADaM","Consistency","AD0133B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0119.yaml","HRL-AD-0119","ADaM","Consistency","AD0133C","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0120.yaml","HRL-AD-0120","ADaM","Consistency","AD0134","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0121.yaml","HRL-AD-0121","ADaM","Presence","AD0134A","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0122.yaml","HRL-AD-0122","ADaM","Consistency","AD0134B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0123.yaml","HRL-AD-0123","ADaM","Consistency","AD0134C","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0124.yaml","HRL-AD-0124","ADaM","Consistency","AD0135","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0125.yaml","HRL-AD-0125","ADaM","Consistency","AD0135B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0126.yaml","HRL-AD-0126","ADaM","Consistency","AD0136","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0127.yaml","HRL-AD-0127","ADaM","Consistency","AD0136B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0128.yaml","HRL-AD-0128","ADaM","Consistency","AD0137","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0129.yaml","HRL-AD-0129","ADaM","Consistency","AD0141","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0130.yaml","HRL-AD-0130","ADaM","Consistency","AD0142","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0131.yaml","HRL-AD-0131","ADaM","Format","AD0143","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0132.yaml","HRL-AD-0132","ADaM","Consistency","AD0146","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0133.yaml","HRL-AD-0133","ADaM","Consistency","AD0146B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0134.yaml","HRL-AD-0134","ADaM","Consistency","AD0147","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0135.yaml","HRL-AD-0135","ADaM","Consistency","AD0147B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0136.yaml","HRL-AD-0136","ADaM","Format","AD0148","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0137.yaml","HRL-AD-0137","ADaM","Consistency","AD0149","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0138.yaml","HRL-AD-0138","ADaM","Consistency","AD0149B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0139.yaml","HRL-AD-0139","ADaM","Consistency","AD0150","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0140.yaml","HRL-AD-0140","ADaM","Consistency","AD0151","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0141.yaml","HRL-AD-0141","ADaM","Consistency","AD0152","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0142.yaml","HRL-AD-0142","ADaM","Consistency","AD0153","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0143.yaml","HRL-AD-0143","ADaM","Consistency","AD0154","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0144.yaml","HRL-AD-0144","ADaM","Presence","AD0156","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0145.yaml","HRL-AD-0145","ADaM","Presence","AD0157","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0146.yaml","HRL-AD-0146","ADaM","Presence","AD0158","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0147.yaml","HRL-AD-0147","ADaM","Consistency","AD0159","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0148.yaml","HRL-AD-0148","ADaM","Presence","AD0160","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0149.yaml","HRL-AD-0149","ADaM","Consistency","AD0161","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0150.yaml","HRL-AD-0150","ADaM","Consistency","AD0162","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0151.yaml","HRL-AD-0151","ADaM","Presence","AD0163","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0152.yaml","HRL-AD-0152","ADaM","Presence","AD0164","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0153.yaml","HRL-AD-0153","ADaM","Consistency","AD0165","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0154.yaml","HRL-AD-0154","ADaM","Presence","AD0166","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0155.yaml","HRL-AD-0155","ADaM","Presence","AD0167","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0156.yaml","HRL-AD-0156","ADaM","Consistency","AD0168","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0157.yaml","HRL-AD-0157","ADaM","Limit","AD0169","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0158.yaml","HRL-AD-0158","ADaM","Presence","AD0170","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0159.yaml","HRL-AD-0159","ADaM","Cross-reference","AD0171","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0160.yaml","HRL-AD-0160","ADaM","Cross-reference","AD0172","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0161.yaml","HRL-AD-0161","ADaM","Cross-reference","AD0173","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0162.yaml","HRL-AD-0162","ADaM","Cross-reference","AD0174","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0163.yaml","HRL-AD-0163","ADaM","Consistency","AD0175","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0164.yaml","HRL-AD-0164","ADaM","Terminology","AD0176","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0165.yaml","HRL-AD-0165","ADaM","Terminology","AD0178","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0166.yaml","HRL-AD-0166","ADaM","Cross-reference","AD0179","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0167.yaml","HRL-AD-0167","ADaM","Format","AD0185","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0168.yaml","HRL-AD-0168","ADaM","Format","AD0186","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0169.yaml","HRL-AD-0169","ADaM","Format","AD0187","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0170.yaml","HRL-AD-0170","ADaM","Format","AD0188","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0171.yaml","HRL-AD-0171","ADaM","Format","AD0189","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0172.yaml","HRL-AD-0172","ADaM","Format","AD0190","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0173.yaml","HRL-AD-0173","ADaM","Format","AD0191","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0174.yaml","HRL-AD-0174","ADaM","Format","AD0192","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0175.yaml","HRL-AD-0175","ADaM","Format","AD0193","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0176.yaml","HRL-AD-0176","ADaM","Presence","AD0196","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0177.yaml","HRL-AD-0177","ADaM","Presence","AD0198","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0178.yaml","HRL-AD-0178","ADaM","Presence","AD0201","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0179.yaml","HRL-AD-0179","ADaM","Cross-reference","AD0202","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0180.yaml","HRL-AD-0180","ADaM","Cross-reference","AD0203","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0181.yaml","HRL-AD-0181","ADaM","Cross-reference","AD0204","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0182.yaml","HRL-AD-0182","ADaM","Cross-reference","AD0205","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0183.yaml","HRL-AD-0183","ADaM","Cross-reference","AD0206","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0184.yaml","HRL-AD-0184","ADaM","Cross-reference","AD0207","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0185.yaml","HRL-AD-0185","ADaM","Cross-reference","AD0208","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0186.yaml","HRL-AD-0186","ADaM","Cross-reference","AD0209","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0187.yaml","HRL-AD-0187","ADaM","Cross-reference","AD0210","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0188.yaml","HRL-AD-0188","ADaM","Terminology","AD0211","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0189.yaml","HRL-AD-0189","ADaM","Terminology","AD0212","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0190.yaml","HRL-AD-0190","ADaM","Format","AD0213","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0191.yaml","HRL-AD-0191","ADaM","Format","AD0215","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0192.yaml","HRL-AD-0192","ADaM","Consistency","AD0221","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0193.yaml","HRL-AD-0193","ADaM","Consistency","AD0223","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0194.yaml","HRL-AD-0194","ADaM","Consistency","AD0225","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0195.yaml","HRL-AD-0195","ADaM","Consistency","AD0225A","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0196.yaml","HRL-AD-0196","ADaM","Consistency","AD0227","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0197.yaml","HRL-AD-0197","ADaM","Consistency","AD0227B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0198.yaml","HRL-AD-0198","ADaM","Consistency","AD0228","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0199.yaml","HRL-AD-0199","ADaM","Consistency","AD0228B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0200.yaml","HRL-AD-0200","ADaM","Consistency","AD0229","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0201.yaml","HRL-AD-0201","ADaM","Consistency","AD0229B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0202.yaml","HRL-AD-0202","ADaM","Consistency","AD0230","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0203.yaml","HRL-AD-0203","ADaM","Consistency","AD0230B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0204.yaml","HRL-AD-0204","ADaM","Consistency","AD0231","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0205.yaml","HRL-AD-0205","ADaM","Consistency","AD0232","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0206.yaml","HRL-AD-0206","ADaM","Consistency","AD0232B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0207.yaml","HRL-AD-0207","ADaM","Consistency","AD0233","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0208.yaml","HRL-AD-0208","ADaM","Consistency","AD0234","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0209.yaml","HRL-AD-0209","ADaM","Consistency","AD0235","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0210.yaml","HRL-AD-0210","ADaM","Consistency","AD0235B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0211.yaml","HRL-AD-0211","ADaM","Consistency","AD0236","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0212.yaml","HRL-AD-0212","ADaM","Consistency","AD0236B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0213.yaml","HRL-AD-0213","ADaM","Consistency","AD0237","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0214.yaml","HRL-AD-0214","ADaM","Consistency","AD0237B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0215.yaml","HRL-AD-0215","ADaM","Consistency","AD0238","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0216.yaml","HRL-AD-0216","ADaM","Consistency","AD0238B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0217.yaml","HRL-AD-0217","ADaM","Presence","AD0239","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0218.yaml","HRL-AD-0218","ADaM","Presence","AD0239A","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0219.yaml","HRL-AD-0219","ADaM","Consistency","AD0240","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0220.yaml","HRL-AD-0220","ADaM","Consistency","AD0240B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0221.yaml","HRL-AD-0221","ADaM","Consistency","AD0241","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0222.yaml","HRL-AD-0222","ADaM","Consistency","AD0241B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0223.yaml","HRL-AD-0223","ADaM","Consistency","AD0242","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0224.yaml","HRL-AD-0224","ADaM","Consistency","AD0242B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0225.yaml","HRL-AD-0225","ADaM","Consistency","AD0243","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0226.yaml","HRL-AD-0226","ADaM","Consistency","AD0243B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0227.yaml","HRL-AD-0227","ADaM","Presence","AD0245","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0228.yaml","HRL-AD-0228","ADaM","Presence","AD0246","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0229.yaml","HRL-AD-0229","ADaM","Consistency","AD0247","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0230.yaml","HRL-AD-0230","ADaM","Presence","AD0250","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0231.yaml","HRL-AD-0231","ADaM","Presence","AD0251","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0232.yaml","HRL-AD-0232","ADaM","Presence","AD0252","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0233.yaml","HRL-AD-0233","ADaM","Cross-reference","AD0253","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0234.yaml","HRL-AD-0234","ADaM","Cross-reference","AD0256","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0235.yaml","HRL-AD-0235","ADaM","Cross-reference","AD0258","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0236.yaml","HRL-AD-0236","ADaM","Consistency","AD0263","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0237.yaml","HRL-AD-0237","ADaM","Consistency","AD0264","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0238.yaml","HRL-AD-0238","ADaM","Consistency","AD0267","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0239.yaml","HRL-AD-0239","ADaM","Terminology","AD0269","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0240.yaml","HRL-AD-0240","ADaM","Terminology","AD0272","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0241.yaml","HRL-AD-0241","ADaM","Format","AD0273","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0242.yaml","HRL-AD-0242","ADaM","Consistency","AD0274","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0243.yaml","HRL-AD-0243","ADaM","Consistency","AD0275","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0244.yaml","HRL-AD-0244","ADaM","Terminology","AD0279","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0245.yaml","HRL-AD-0245","ADaM","Consistency","AD0280","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0246.yaml","HRL-AD-0246","ADaM","Consistency","AD0280B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0247.yaml","HRL-AD-0247","ADaM","Consistency","AD0281","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0248.yaml","HRL-AD-0248","ADaM","Consistency","AD0281B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0249.yaml","HRL-AD-0249","ADaM","Presence","AD0282A","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0250.yaml","HRL-AD-0250","ADaM","Consistency","AD0283","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0251.yaml","HRL-AD-0251","ADaM","Consistency","AD0283B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0252.yaml","HRL-AD-0252","ADaM","Consistency","AD0284","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0253.yaml","HRL-AD-0253","ADaM","Consistency","AD0284B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0254.yaml","HRL-AD-0254","ADaM","Consistency","AD0287","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0255.yaml","HRL-AD-0255","ADaM","Consistency","AD0287B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0256.yaml","HRL-AD-0256","ADaM","Consistency","AD0288","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0257.yaml","HRL-AD-0257","ADaM","Consistency","AD0288B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0258.yaml","HRL-AD-0258","ADaM","Consistency","AD0289","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0259.yaml","HRL-AD-0259","ADaM","Consistency","AD0289B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0260.yaml","HRL-AD-0260","ADaM","Consistency","AD0290","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0261.yaml","HRL-AD-0261","ADaM","Consistency","AD0290B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0262.yaml","HRL-AD-0262","ADaM","Consistency","AD0293","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0263.yaml","HRL-AD-0263","ADaM","Consistency","AD0293B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0264.yaml","HRL-AD-0264","ADaM","Consistency","AD0294","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0265.yaml","HRL-AD-0265","ADaM","Consistency","AD0294B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0266.yaml","HRL-AD-0266","ADaM","Consistency","AD0295","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0267.yaml","HRL-AD-0267","ADaM","Consistency","AD0295B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0268.yaml","HRL-AD-0268","ADaM","Consistency","AD0296","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0269.yaml","HRL-AD-0269","ADaM","Consistency","AD0296B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0270.yaml","HRL-AD-0270","ADaM","Format","AD0299","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0271.yaml","HRL-AD-0271","ADaM","Format","AD0303","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0272.yaml","HRL-AD-0272","ADaM","Consistency","AD0304","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0273.yaml","HRL-AD-0273","ADaM","Consistency","AD0310","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0274.yaml","HRL-AD-0274","ADaM","Consistency","AD0310B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0275.yaml","HRL-AD-0275","ADaM","Consistency","AD0311","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0276.yaml","HRL-AD-0276","ADaM","Consistency","AD0311B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0277.yaml","HRL-AD-0277","ADaM","Terminology","AD0312","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0278.yaml","HRL-AD-0278","ADaM","Terminology","AD0313","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0279.yaml","HRL-AD-0279","ADaM","Format","AD0314","","","","ADaM-IG v1.0",TRUE,FALSE,FALSE
+"HRL-AD-0280.yaml","HRL-AD-0280","ADaM","Consistency","AD0320","","","","P21 rule AD0320",TRUE,FALSE,FALSE
+"HRL-AD-0281.yaml","HRL-AD-0281","ADaM","Consistency","AD0323","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0282.yaml","HRL-AD-0282","ADaM","Consistency","AD0324","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0283.yaml","HRL-AD-0283","ADaM","Consistency","AD0325","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0284.yaml","HRL-AD-0284","ADaM","Consistency","AD0326","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0285.yaml","HRL-AD-0285","ADaM","Consistency","AD0327","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0286.yaml","HRL-AD-0286","ADaM","Consistency","AD0328","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0287.yaml","HRL-AD-0287","ADaM","Consistency","AD0329","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0288.yaml","HRL-AD-0288","ADaM","Consistency","AD0330","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0289.yaml","HRL-AD-0289","ADaM","Consistency","AD0331","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0290.yaml","HRL-AD-0290","ADaM","Consistency","AD0332","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0291.yaml","HRL-AD-0291","ADaM","Consistency","AD0333","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0292.yaml","HRL-AD-0292","ADaM","Consistency","AD0334","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0293.yaml","HRL-AD-0293","ADaM","Presence","AD0337","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0294.yaml","HRL-AD-0294","ADaM","Presence","AD0338","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0295.yaml","HRL-AD-0295","ADaM","Consistency","AD0339","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0296.yaml","HRL-AD-0296","ADaM","Consistency","AD0340","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0297.yaml","HRL-AD-0297","ADaM","Consistency","AD0341","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0298.yaml","HRL-AD-0298","ADaM","Consistency","AD0342","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0299.yaml","HRL-AD-0299","ADaM","Consistency","AD0343","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0300.yaml","HRL-AD-0300","ADaM","Consistency","AD0344","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0301.yaml","HRL-AD-0301","ADaM","Consistency","AD0345","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0302.yaml","HRL-AD-0302","ADaM","Presence","AD0346","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0303.yaml","HRL-AD-0303","ADaM","Consistency","AD0347","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0304.yaml","HRL-AD-0304","ADaM","Consistency","AD0348","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0305.yaml","HRL-AD-0305","ADaM","Presence","AD0349","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0306.yaml","HRL-AD-0306","ADaM","Consistency","AD0350","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0307.yaml","HRL-AD-0307","ADaM","Consistency","AD0351","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0308.yaml","HRL-AD-0308","ADaM","Presence","AD0352","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0309.yaml","HRL-AD-0309","ADaM","Consistency","AD0353","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0310.yaml","HRL-AD-0310","ADaM","Consistency","AD0355","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0311.yaml","HRL-AD-0311","ADaM","Consistency","AD0356","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0312.yaml","HRL-AD-0312","ADaM","Consistency","AD0359","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0313.yaml","HRL-AD-0313","ADaM","Consistency","AD0360","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0314.yaml","HRL-AD-0314","ADaM","Limit","AD0361","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0315.yaml","HRL-AD-0315","ADaM","Limit","AD0362","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0316.yaml","HRL-AD-0316","ADaM","Presence","AD0364","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0317.yaml","HRL-AD-0317","ADaM","Presence","AD0366","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0318.yaml","HRL-AD-0318","ADaM","Consistency","AD0366A","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0319.yaml","HRL-AD-0319","ADaM","Consistency","AD0366B","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0320.yaml","HRL-AD-0320","ADaM","Cross-reference","AD0367","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0321.yaml","HRL-AD-0321","ADaM","Presence","AD0543","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0322.yaml","HRL-AD-0322","ADaM","Presence","AD0544","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0323.yaml","HRL-AD-0323","ADaM","Presence","AD0545","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0324.yaml","HRL-AD-0324","ADaM","Presence","AD0546","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0325.yaml","HRL-AD-0325","ADaM","Presence","AD0552","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0326.yaml","HRL-AD-0326","ADaM","Consistency","AD0616","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0327.yaml","HRL-AD-0327","ADaM","Consistency","AD0617","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0328.yaml","HRL-AD-0328","ADaM","Consistency","AD0618","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0329.yaml","HRL-AD-0329","ADaM","Consistency","AD1011","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0330.yaml","HRL-AD-0330","ADaM","Presence","AD1012","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0331.yaml","HRL-AD-0331","ADaM","Presence","AD1012A","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0332.yaml","HRL-AD-0332","ADaM","Presence","AD1015","","","","P21 Community ADaM-IG 1.0 (PMDA)",TRUE,FALSE,FALSE
+"HRL-AD-0333.yaml","HRL-AD-0333","ADaM","Format","AD1018","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0334.yaml","HRL-AD-0334","ADaM","Format","AD1019","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0335.yaml","HRL-AD-0335","ADaM","Presence","AD1024","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0336.yaml","HRL-AD-0336","ADaM","Presence","AD1025","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0337.yaml","HRL-AD-0337","ADaM","Presence","AD1026","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-AD-0338.yaml","HRL-AD-0338","ADaM","Presence","AD9999","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-CT-0001.yaml","HRL-CT-0001","SDTM","Terminology","CT0001","CORE-000259","CG0301","FDA-CT-001","CDISC CT 2023-12-15, Codelist C66731",TRUE,TRUE,TRUE
+"HRL-CT-0002.yaml","HRL-CT-0002","SDTM","Terminology","CT0002","CORE-000260","CG0302","FDA-CT-002","CDISC CT 2023-12-15, Codelist C74457",TRUE,TRUE,TRUE
+"HRL-CT-0003.yaml","HRL-CT-0003","SDTM","Terminology","CT0003","CORE-000261","CG0303","FDA-CT-003","CDISC CT 2023-12-15, Codelist C66790",TRUE,TRUE,TRUE
+"HRL-CT-0004.yaml","HRL-CT-0004","CT","Terminology","CT2001","","","FDAB017","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-CT-0005.yaml","HRL-CT-0005","CT","Terminology","CT2002","","","FDAB017","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-CT-0006.yaml","HRL-CT-0006","CT","Terminology","CT2003","","","FDAB009","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-CT-0007.yaml","HRL-CT-0007","CT","Terminology","CT2004","","CG0021","","ADaM-IG v1.1",TRUE,FALSE,TRUE
+"HRL-CT-0008.yaml","HRL-CT-0008","CT","Terminology","CT2005","","CG0021","","ADaM-IG v1.1",TRUE,FALSE,TRUE
+"HRL-CT-0009.yaml","HRL-CT-0009","CT","Terminology","CT2006","","","FDAB009","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-DD-0001.yaml","HRL-DD-0001","Define-XML","Presence","DD0001","","CG0201","FDA-DEF-001","Define-XML v2.1 Specification Section 4.1",TRUE,FALSE,TRUE
+"HRL-DD-0002.yaml","HRL-DD-0002","Define-XML","Presence","DD0002","","CG0202","FDA-DEF-002","Define-XML v2.1 Specification Section 4.2",TRUE,FALSE,TRUE
+"HRL-DD-0003.yaml","HRL-DD-0003","Define-XML","Structure","DD0003","","CG0203","FDA-DEF-003","Define-XML v2.1 Specification Section 4.2, SAS V5 Format",TRUE,FALSE,TRUE
+"HRL-DD-0004.yaml","HRL-DD-0004","Define-XML","Structure","DD0004","","CG0204","FDA-DEF-004","Define-XML v2.1 Specification Section 4.1, SAS V5 Format",TRUE,FALSE,TRUE
+"HRL-DD-0005.yaml","HRL-DD-0005","Define-XML","Structure","DD0005","","CG0205","FDA-DEF-005","Define-XML v2.1 Specification Section 4.2",TRUE,FALSE,TRUE
+"HRL-DD-0006.yaml","HRL-DD-0006","Define-XML","Presence","DD0000","","","","P21 Community Define.xml (PMDA)",TRUE,FALSE,FALSE
+"HRL-DD-0007.yaml","HRL-DD-0007","Define-XML","Presence","DD0006","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0008.yaml","HRL-DD-0008","Define-XML","Metadata","DD0007","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0009.yaml","HRL-DD-0009","Define-XML","Metadata","DD0008","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0010.yaml","HRL-DD-0010","Define-XML","Consistency","DD0009","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0011.yaml","HRL-DD-0011","Define-XML","Metadata","DD0010","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0012.yaml","HRL-DD-0012","Define-XML","Metadata","DD0011","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0013.yaml","HRL-DD-0013","Define-XML","Consistency","DD0012","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0014.yaml","HRL-DD-0014","Define-XML","Consistency","DD0013","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0015.yaml","HRL-DD-0015","Define-XML","Consistency","DD0014","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0016.yaml","HRL-DD-0016","Define-XML","Cross-reference","DD0015","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0017.yaml","HRL-DD-0017","Define-XML","Cross-reference","DD0016","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0018.yaml","HRL-DD-0018","Define-XML","Cross-reference","DD0017","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0019.yaml","HRL-DD-0019","Define-XML","Consistency","DD0018","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0020.yaml","HRL-DD-0020","Define-XML","Terminology","DD0019","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0021.yaml","HRL-DD-0021","Define-XML","Terminology","DD0020","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0022.yaml","HRL-DD-0022","Define-XML","Terminology","DD0021","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0023.yaml","HRL-DD-0023","Define-XML","Terminology","DD0022","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0024.yaml","HRL-DD-0024","Define-XML","Metadata","DD0024","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0025.yaml","HRL-DD-0025","Define-XML","Format","DD0025","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0026.yaml","HRL-DD-0026","Define-XML","Terminology","DD0028","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0027.yaml","HRL-DD-0027","Define-XML","Presence","DD0029","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0028.yaml","HRL-DD-0028","Define-XML","Terminology","DD0030","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0029.yaml","HRL-DD-0029","Define-XML","Terminology","DD0031","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0030.yaml","HRL-DD-0030","Define-XML","Terminology","DD0032","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0031.yaml","HRL-DD-0031","Define-XML","Terminology","DD0033","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0032.yaml","HRL-DD-0032","Define-XML","Terminology","DD0034","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0033.yaml","HRL-DD-0033","Define-XML","Presence","DD0035","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0034.yaml","HRL-DD-0034","Define-XML","Presence","DD0037","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0035.yaml","HRL-DD-0035","Define-XML","Presence","DD0038","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0036.yaml","HRL-DD-0036","Define-XML","Consistency","DD0039","","","","P21 Community Define.xml (PMDA)",TRUE,FALSE,FALSE
+"HRL-DD-0037.yaml","HRL-DD-0037","Define-XML","Metadata","DD0040","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0038.yaml","HRL-DD-0038","Define-XML","Consistency","DD0041","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0039.yaml","HRL-DD-0039","Define-XML","Presence","DD0042","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0040.yaml","HRL-DD-0040","Define-XML","Terminology","DD0044","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0041.yaml","HRL-DD-0041","Define-XML","Presence","DD0045","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0042.yaml","HRL-DD-0042","Define-XML","Consistency","DD0046","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0043.yaml","HRL-DD-0043","Define-XML","Presence","DD0047","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0044.yaml","HRL-DD-0044","Define-XML","Format","DD0048","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0045.yaml","HRL-DD-0045","Define-XML","Consistency","DD0049","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0046.yaml","HRL-DD-0046","Define-XML","Consistency","DD0050","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0047.yaml","HRL-DD-0047","Define-XML","Consistency","DD0051","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0048.yaml","HRL-DD-0048","Define-XML","Consistency","DD0052","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0049.yaml","HRL-DD-0049","Define-XML","Terminology","DD0053","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0050.yaml","HRL-DD-0050","Define-XML","Presence","DD0054","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0051.yaml","HRL-DD-0051","Define-XML","Terminology","DD0055","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0052.yaml","HRL-DD-0052","Define-XML","Presence","DD0056","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0053.yaml","HRL-DD-0053","Define-XML","Presence","DD0057","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0054.yaml","HRL-DD-0054","Define-XML","Presence","DD0058","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0055.yaml","HRL-DD-0055","Define-XML","Cross-reference","DD0059","","","","P21 Community Define.xml (PMDA)",TRUE,FALSE,FALSE
+"HRL-DD-0056.yaml","HRL-DD-0056","Define-XML","Cross-reference","DD0060","","","","P21 Community Define.xml (PMDA)",TRUE,FALSE,FALSE
+"HRL-DD-0057.yaml","HRL-DD-0057","Define-XML","Presence","DD0061","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0058.yaml","HRL-DD-0058","Define-XML","Consistency","DD0062","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0059.yaml","HRL-DD-0059","Define-XML","Presence","DD0063","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0060.yaml","HRL-DD-0060","Define-XML","Terminology","DD0064","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0061.yaml","HRL-DD-0061","Define-XML","Consistency","DD0067","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0062.yaml","HRL-DD-0062","Define-XML","Presence","DD0068","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0063.yaml","HRL-DD-0063","Define-XML","Presence","DD0069","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0064.yaml","HRL-DD-0064","Define-XML","Presence","DD0070","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0065.yaml","HRL-DD-0065","Define-XML","Cross-reference","DD0071","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0066.yaml","HRL-DD-0066","Define-XML","Presence","DD0072","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0067.yaml","HRL-DD-0067","Define-XML","Terminology","DD0073","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0068.yaml","HRL-DD-0068","Define-XML","Terminology","DD0074","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0069.yaml","HRL-DD-0069","Define-XML","Consistency","DD0075","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0070.yaml","HRL-DD-0070","Define-XML","Consistency","DD0076","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0071.yaml","HRL-DD-0071","Define-XML","Consistency","DD0077","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0072.yaml","HRL-DD-0072","Define-XML","Consistency","DD0078","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0073.yaml","HRL-DD-0073","Define-XML","Consistency","DD0079","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0074.yaml","HRL-DD-0074","Define-XML","Consistency","DD0080","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0075.yaml","HRL-DD-0075","Define-XML","Consistency","DD0081","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0076.yaml","HRL-DD-0076","Define-XML","Consistency","DD0082","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0077.yaml","HRL-DD-0077","Define-XML","Consistency","DD0083","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0078.yaml","HRL-DD-0078","Define-XML","Cross-reference","DD0084","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0079.yaml","HRL-DD-0079","Define-XML","Cross-reference","DD0085","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0080.yaml","HRL-DD-0080","Define-XML","Consistency","DD0086","","","FDAB035","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0081.yaml","HRL-DD-0081","Define-XML","Metadata","DD0087","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0082.yaml","HRL-DD-0082","Define-XML","Consistency","DD0088","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0083.yaml","HRL-DD-0083","Define-XML","Consistency","DD0089","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0084.yaml","HRL-DD-0084","Define-XML","Presence","DD0090","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0085.yaml","HRL-DD-0085","Define-XML","Consistency","DD0091","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0086.yaml","HRL-DD-0086","Define-XML","Presence","DD0092","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0087.yaml","HRL-DD-0087","Define-XML","Consistency","DD0093","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0088.yaml","HRL-DD-0088","Define-XML","Presence","DD0094","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0089.yaml","HRL-DD-0089","Define-XML","Metadata","DD0095","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0090.yaml","HRL-DD-0090","Define-XML","Presence","DD0096","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0091.yaml","HRL-DD-0091","Define-XML","Presence","DD0097","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0092.yaml","HRL-DD-0092","Define-XML","Presence","DD0098","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0093.yaml","HRL-DD-0093","Define-XML","Consistency","DD0099","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0094.yaml","HRL-DD-0094","Define-XML","Consistency","DD0100","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0095.yaml","HRL-DD-0095","Define-XML","Presence","DD0101","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-DD-0096.yaml","HRL-DD-0096","Define-XML","Consistency","DD0102","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0097.yaml","HRL-DD-0097","Define-XML","Presence","DD0103","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0098.yaml","HRL-DD-0098","Define-XML","Terminology","DD0104","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0099.yaml","HRL-DD-0099","Define-XML","Consistency","DD0105","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0100.yaml","HRL-DD-0100","Define-XML","Consistency","DD0106","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0101.yaml","HRL-DD-0101","Define-XML","Consistency","DD0107","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0102.yaml","HRL-DD-0102","Define-XML","Consistency","DD0108","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0103.yaml","HRL-DD-0103","Define-XML","Consistency","DD0109","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0104.yaml","HRL-DD-0104","Define-XML","Consistency","DD0110","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0105.yaml","HRL-DD-0105","Define-XML","Presence","DD0111","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0106.yaml","HRL-DD-0106","Define-XML","Presence","DD0112","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0107.yaml","HRL-DD-0107","Define-XML","Presence","DD0113","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0108.yaml","HRL-DD-0108","Define-XML","Presence","DD0114","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0109.yaml","HRL-DD-0109","Define-XML","Presence","DD0115","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0110.yaml","HRL-DD-0110","Define-XML","Consistency","DD0116","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0111.yaml","HRL-DD-0111","Define-XML","Presence","DD0117","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0112.yaml","HRL-DD-0112","Define-XML","Consistency","DD0118","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0113.yaml","HRL-DD-0113","Define-XML","Presence","DD0119","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0114.yaml","HRL-DD-0114","Define-XML","Consistency","DD0120","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0115.yaml","HRL-DD-0115","Define-XML","Presence","DD0121","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0116.yaml","HRL-DD-0116","Define-XML","Cross-reference","DD0122","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0117.yaml","HRL-DD-0117","Define-XML","Consistency","DD0123","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0118.yaml","HRL-DD-0118","Define-XML","Terminology","DD0124","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0119.yaml","HRL-DD-0119","Define-XML","Cross-reference","DD0125","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0120.yaml","HRL-DD-0120","Define-XML","Consistency","DD0126","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0121.yaml","HRL-DD-0121","Define-XML","Consistency","DD0127","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0122.yaml","HRL-DD-0122","Define-XML","Presence","DD0128","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0123.yaml","HRL-DD-0123","Define-XML","Presence","DD0129","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0124.yaml","HRL-DD-0124","Define-XML","Terminology","DD0130","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0125.yaml","HRL-DD-0125","Define-XML","Consistency","DD0131","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0126.yaml","HRL-DD-0126","Define-XML","Consistency","DD0132","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0127.yaml","HRL-DD-0127","Define-XML","Presence","DD0133","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0128.yaml","HRL-DD-0128","Define-XML","Presence","DD0134","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0129.yaml","HRL-DD-0129","Define-XML","Consistency","DD0135","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0130.yaml","HRL-DD-0130","Define-XML","Terminology","DD0136","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0131.yaml","HRL-DD-0131","Define-XML","Terminology","DD0137","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0132.yaml","HRL-DD-0132","Define-XML","Cross-reference","DD0138","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0133.yaml","HRL-DD-0133","Define-XML","Consistency","DD0139","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0134.yaml","HRL-DD-0134","Define-XML","Consistency","DD0140","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0135.yaml","HRL-DD-0135","Define-XML","Terminology","DD0141","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0136.yaml","HRL-DD-0136","Define-XML","Consistency","DD0145","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0137.yaml","HRL-DD-0137","Define-XML","Consistency","DD0146","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0138.yaml","HRL-DD-0138","Define-XML","Consistency","DD0147","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0139.yaml","HRL-DD-0139","Define-XML","Consistency","OD0001","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0140.yaml","HRL-DD-0140","Define-XML","Consistency","OD0010","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0141.yaml","HRL-DD-0141","Define-XML","Consistency","OD0011","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0142.yaml","HRL-DD-0142","Define-XML","Consistency","OD0012","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0143.yaml","HRL-DD-0143","Define-XML","Format","OD0013","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0144.yaml","HRL-DD-0144","Define-XML","Format","OD0017","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0145.yaml","HRL-DD-0145","Define-XML","Format","OD0019","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0146.yaml","HRL-DD-0146","Define-XML","Format","OD0021","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0147.yaml","HRL-DD-0147","Define-XML","Consistency","OD0022","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0148.yaml","HRL-DD-0148","Define-XML","Consistency","OD0027","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0149.yaml","HRL-DD-0149","Define-XML","Consistency","OD0030","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0150.yaml","HRL-DD-0150","Define-XML","Consistency","OD0031","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0151.yaml","HRL-DD-0151","Define-XML","Consistency","OD0032","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0152.yaml","HRL-DD-0152","Define-XML","Consistency","OD0041","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0153.yaml","HRL-DD-0153","Define-XML","Consistency","OD0042","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0154.yaml","HRL-DD-0154","Define-XML","Cross-reference","OD0046","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0155.yaml","HRL-DD-0155","Define-XML","Cross-reference","OD0048","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0156.yaml","HRL-DD-0156","Define-XML","Presence","OD0070","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0157.yaml","HRL-DD-0157","Define-XML","Presence","OD0071","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0158.yaml","HRL-DD-0158","Define-XML","Terminology","OD0072","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0159.yaml","HRL-DD-0159","Define-XML","Terminology","OD0073","","","","Define.xml",TRUE,FALSE,FALSE
+"HRL-DD-0160.yaml","HRL-DD-0160","Define-XML","Terminology","OD0074","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0161.yaml","HRL-DD-0161","Define-XML","Terminology","OD0075","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0162.yaml","HRL-DD-0162","Define-XML","Terminology","OD0076","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0163.yaml","HRL-DD-0163","Define-XML","Format","OD0077","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0164.yaml","HRL-DD-0164","Define-XML","Format","OD0078","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0165.yaml","HRL-DD-0165","Define-XML","Consistency","OD0079","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0166.yaml","HRL-DD-0166","Define-XML","Consistency","OD0080","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0167.yaml","HRL-DD-0167","Define-XML","Consistency","OD0081","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-DD-0168.yaml","HRL-DD-0168","Define-XML","Consistency","OD0082","","","","P21 Community Define.xml (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0001.yaml","HRL-SD-0001","SDTM","Presence","SD0001","CORE-000252","CG0001","","SDTM-IG v3.3 Section 4.1.1",TRUE,TRUE,TRUE
+"HRL-SD-0002.yaml","HRL-SD-0002","SDTM","Presence","SD0002","CORE-000253","CG0002","","SDTM-IG v3.3 Section 4.1.1",TRUE,TRUE,TRUE
+"HRL-SD-0003.yaml","HRL-SD-0003","SDTM","Presence","SD0003","CORE-000254","CG0003","","SDTM-IG v3.3 Section 4.1.1",TRUE,TRUE,TRUE
+"HRL-SD-0004.yaml","HRL-SD-0004","SDTM","Consistency","SD0004","CORE-000255","CG0004","","SDTM-IG v3.3 Section 4.1.1",TRUE,TRUE,TRUE
+"HRL-SD-0005.yaml","HRL-SD-0005","SDTM","Consistency","SD0005","CORE-000256","CG0005","","SDTM-IG v3.3 Section 4.1.2",TRUE,TRUE,TRUE
+"HRL-SD-0006.yaml","HRL-SD-0006","SDTM","Consistency","SD0006","CORE-000257","CG0006","","SDTM-IG v3.3 Section 5.1",TRUE,TRUE,TRUE
+"HRL-SD-0007.yaml","HRL-SD-0007","SDTM","Consistency","SD0007","CORE-000258","CG0007","","SDTM-IG v3.3 Section 5.1",TRUE,TRUE,TRUE
+"HRL-SD-0008.yaml","HRL-SD-0008","SDTM","Terminology","CT0008","CORE-000259","CG0008","","SDTM-IG v3.3 Section 5.1, CDISC CT 2023-12-15",TRUE,TRUE,TRUE
+"HRL-SD-0009.yaml","HRL-SD-0009","SDTM","Terminology","CT0009","CORE-000260","CG0009","","SDTM-IG v3.3 Section 5.1, CDISC CT 2023-12-15",TRUE,TRUE,TRUE
+"HRL-SD-0010.yaml","HRL-SD-0010","SDTM","Presence","SD0010","CORE-000261","CG0010","","SDTM-IG v3.3 Section 5.1",TRUE,TRUE,TRUE
+"HRL-SD-0011.yaml","HRL-SD-0011","SDTM","Presence","SD0011","CORE-000262","CG0011","","SDTM-IG v3.3 Section 5.1",TRUE,TRUE,TRUE
+"HRL-SD-0012.yaml","HRL-SD-0012","SDTM","Format","SD0012","CORE-000263","CG0012","","SDTM-IG v3.3 Section 5.1",TRUE,TRUE,TRUE
+"HRL-SD-0013.yaml","HRL-SD-0013","SDTM","Format","SD0013","CORE-000264","CG0013","","SDTM-IG v3.3 Section 5.1",TRUE,TRUE,TRUE
+"HRL-SD-0014.yaml","HRL-SD-0014","SDTM","Consistency","SD0014","CORE-000265","CG0014","","SDTM-IG v3.3 Section 5.1",TRUE,TRUE,TRUE
+"HRL-SD-0015.yaml","HRL-SD-0015","SDTM","Format","SD0015","CORE-000266","CG0015","","SDTM-IG v3.3 Section 5.1",TRUE,TRUE,TRUE
+"HRL-SD-0016.yaml","HRL-SD-0016","SDTM","Limit","SD0016","CORE-000267","CG0016","","SDTM-IG v3.3 Section 5.1",TRUE,TRUE,TRUE
+"HRL-SD-0017.yaml","HRL-SD-0017","SDTM","Presence","SD0017","CORE-000268","CG0017","FDA-AE-001","SDTM-IG v3.3 Section 6.2.1",TRUE,TRUE,TRUE
+"HRL-SD-0018.yaml","HRL-SD-0018","SDTM","Presence","SD0018","CORE-000269","CG0018","FDA-AE-002","SDTM-IG v3.3 Section 6.2.1",TRUE,TRUE,TRUE
+"HRL-SD-0019.yaml","HRL-SD-0019","SDTM","Format","SD0019","CORE-000270","CG0019","","SDTM-IG v3.3 Section 6.2.1",TRUE,TRUE,TRUE
+"HRL-SD-0020.yaml","HRL-SD-0020","SDTM","Terminology","CT0020","CORE-000271","CG0020","FDA-AE-003","SDTM-IG v3.3 Section 6.2.1, CDISC CT C66742",TRUE,TRUE,TRUE
+"HRL-SD-0021.yaml","HRL-SD-0021","SDTM","Terminology","CT0021","CORE-000272","CG0021","","SDTM-IG v3.3 Section 6.2.1, CDISC CT C66769",TRUE,TRUE,TRUE
+"HRL-SD-0022.yaml","HRL-SD-0022","SDTM","Terminology","CT0022","CORE-000273","CG0022","","SDTM-IG v3.3 Section 6.2.1, CDISC CT C66767",TRUE,TRUE,TRUE
+"HRL-SD-0023.yaml","HRL-SD-0023","SDTM","Terminology","CT0023","CORE-000274","CG0023","FDA-AE-004","SDTM-IG v3.3 Section 6.2.1, CDISC CT C66768",TRUE,TRUE,TRUE
+"HRL-SD-0024.yaml","HRL-SD-0024","SDTM","Presence","SD0024","CORE-000275","CG0024","","SDTM-IG v3.3 Section 6.3.7",TRUE,TRUE,TRUE
+"HRL-SD-0025.yaml","HRL-SD-0025","SDTM","Presence","SD0025","CORE-000276","CG0025","","SDTM-IG v3.3 Section 6.3.7",TRUE,TRUE,TRUE
+"HRL-SD-0026.yaml","HRL-SD-0026","SDTM","Presence","SD0026","CORE-000277","CG0026","","SDTM-IG v3.3 Section 6.3.7",TRUE,TRUE,TRUE
+"HRL-SD-0027.yaml","HRL-SD-0027","SDTM","Presence","SD0027","CORE-000278","CG0027","","SDTM-IG v3.3 Section 6.3.7",TRUE,TRUE,TRUE
+"HRL-SD-0028.yaml","HRL-SD-0028","SDTM","Format","SD0028","CORE-000279","CG0028","","SDTM-IG v3.3 Section 6.3.7",TRUE,TRUE,TRUE
+"HRL-SD-0029.yaml","HRL-SD-0029","SDTM","Presence","SD0029","CORE-000280","CG0029","","SDTM-IG v3.3 Section 6.3.4",TRUE,TRUE,TRUE
+"HRL-SD-0030.yaml","HRL-SD-0030","SDTM","Presence","SD0030","CORE-000281","CG0030","","SDTM-IG v3.3 Section 6.3.4",TRUE,TRUE,TRUE
+"HRL-SD-0031.yaml","HRL-SD-0031","SDTM","Presence","SD0031","CORE-000282","CG0031","","SDTM-IG v3.3 Section 6.3.4",TRUE,TRUE,TRUE
+"HRL-SD-0032.yaml","HRL-SD-0032","SDTM","Presence","SD0032","CORE-000283","CG0032","","SDTM-IG v3.3 Section 6.3.4",TRUE,TRUE,TRUE
+"HRL-SD-0033.yaml","HRL-SD-0033","SDTM","Format","SD0033","CORE-000284","CG0033","","SDTM-IG v3.3 Section 6.3.4",TRUE,TRUE,TRUE
+"HRL-SD-0034.yaml","HRL-SD-0034","SDTM","Presence","SD0034","CORE-000285","CG0034","","SDTM-IG v3.3 Section 6.1.2",TRUE,TRUE,TRUE
+"HRL-SD-0035.yaml","HRL-SD-0035","SDTM","Presence","SD0035","CORE-000286","CG0035","","SDTM-IG v3.3 Section 6.1.2",TRUE,TRUE,TRUE
+"HRL-SD-0036.yaml","HRL-SD-0036","SDTM","Format","SD0036","CORE-000287","CG0036","","SDTM-IG v3.3 Section 6.1.2",TRUE,TRUE,TRUE
+"HRL-SD-0037.yaml","HRL-SD-0037","SDTM","Presence","SD0037","CORE-000288","CG0037","","SDTM-IG v3.3 Section 6.2.3",TRUE,TRUE,TRUE
+"HRL-SD-0038.yaml","HRL-SD-0038","SDTM","Presence","SD0038","CORE-000289","CG0038","","SDTM-IG v3.3 Section 6.2.3",TRUE,TRUE,TRUE
+"HRL-SD-0039.yaml","HRL-SD-0039","SDTM","Limit","SD0039","CORE-000290","CG0039","","SDTM-IG v3.3 Section 6.1.1",TRUE,TRUE,TRUE
+"HRL-SD-0040.yaml","HRL-SD-0040","SDTM","Presence","SD0040","CORE-000291","CG0040","","SDTM-IG v3.3 Section 6.1.1",TRUE,TRUE,TRUE
+"HRL-SD-0041.yaml","HRL-SD-0041","SDTM","Terminology","CT0041","CORE-000292","CG0041","","SDTM-IG v3.3 Section 4.1.5, CDISC CT C99079",TRUE,TRUE,TRUE
+"HRL-SD-0043.yaml","HRL-SD-0043","SDTM","Structure","SD0043","CORE-000294","CG0043","FDA-STR-001","SAS V5 Transport Format Specification",TRUE,TRUE,TRUE
+"HRL-SD-0044.yaml","HRL-SD-0044","SDTM","Structure","SD0044","CORE-000295","CG0044","FDA-STR-002","SAS V5 Transport Format Specification",TRUE,TRUE,TRUE
+"HRL-SD-0045.yaml","HRL-SD-0045","SDTM","Structure","SD0045","CORE-000296","CG0045","FDA-STR-003","SAS V5 Transport Format Specification",TRUE,TRUE,TRUE
+"HRL-SD-0046.yaml","HRL-SD-0046","SDTM","Format","SD0046","","CG0046","FDA-FMT-001","FDA Study Data Technical Conformance Guide v4.5",TRUE,FALSE,TRUE
+"HRL-SD-0047.yaml","HRL-SD-0047","SDTM","Format","SD0047","CORE-000297","CG0047","","SDTM-IG v3.3 Section 4.1.3",TRUE,TRUE,TRUE
+"HRL-SD-0048.yaml","HRL-SD-0048","SDTM","Format","SD0048","CORE-000298","CG0048","","SDTM-IG v3.3 Section 4.1.5",TRUE,TRUE,TRUE
+"HRL-SD-0050.yaml","HRL-SD-0050","SDTM","Presence","SD0050","CORE-000300","CG0050","","SDTM-IG v3.3 Section 6.2.2",TRUE,TRUE,TRUE
+"HRL-SD-0051.yaml","HRL-SD-0051","SDTM","Terminology","SD0008","","CG0379","FDAB003","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0052.yaml","HRL-SD-0052","SDTM","Terminology","SD0008C","","","FDAB017","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0053.yaml","HRL-SD-0053","SDTM","Consistency","SD0009","","CG0042","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0054.yaml","HRL-SD-0054","SDTM","Format","SD0020","","CG0257","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0055.yaml","HRL-SD-0055","SDTM","Consistency","SD0021","","","FDAB038","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0056.yaml","HRL-SD-0056","SDTM","Consistency","SD0022","","","FDAB038","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0057.yaml","HRL-SD-0057","SDTM","Consistency","SD0023","","CG0094","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0058.yaml","HRL-SD-0058","SDTM","Consistency","SD0041","","CG0086;CG0087;CG0089;CG0654","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0059.yaml","HRL-SD-0059","SDTM","Consistency","SD0049","","","FDAB044","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0060.yaml","HRL-SD-0060","SDTM","Consistency","SD0051","","CG0035","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0061.yaml","HRL-SD-0061","SDTM","Consistency","SD0052","","CG0035","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0062.yaml","HRL-SD-0062","SDTM","Consistency","SD0053","","CG0129","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0063.yaml","HRL-SD-0063","SDTM","Metadata","SD0054","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-SD-0064.yaml","HRL-SD-0064","SDTM","Metadata","SD0055","","CG0012","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0065.yaml","HRL-SD-0065","SDTM","Metadata","SD0056","","CG0014;CG0313;CG0554","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0066.yaml","HRL-SD-0066","SDTM","Metadata","SD0057","","CG0016","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0067.yaml","HRL-SD-0067","SDTM","Metadata","SD0058","","CG0013;CG0542;CG0564;CG0565;CG0566;CG0567","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0068.yaml","HRL-SD-0068","SDTM","Metadata","SD0059","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-SD-0069.yaml","HRL-SD-0069","SDTM","Metadata","SD0060","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-SD-0070.yaml","HRL-SD-0070","SDTM","Metadata","SD0061","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-SD-0071.yaml","HRL-SD-0071","SDTM","Format","SD0062","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-SD-0072.yaml","HRL-SD-0072","SDTM","Metadata","SD0063","","CG0303","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0073.yaml","HRL-SD-0073","SDTM","Metadata","SD0063A","","CG0303","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0074.yaml","HRL-SD-0074","SDTM","Cross-reference","SD0064","","CG0029","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0075.yaml","HRL-SD-0075","SDTM","Cross-reference","SD0065","","CG0034","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0076.yaml","HRL-SD-0076","SDTM","Cross-reference","SD0066","","CG0126","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0077.yaml","HRL-SD-0077","SDTM","Cross-reference","SD0067","","CG0414","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0078.yaml","HRL-SD-0078","SDTM","Cross-reference","SD0068","","CG0179","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0079.yaml","HRL-SD-0079","SDTM","Presence","SD0069","","CG0412","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0080.yaml","HRL-SD-0080","SDTM","Presence","SD0070","","CG0109","FDAB023","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0081.yaml","HRL-SD-0081","SDTM","Cross-reference","SD0071","","CG0120;CG0121;CG0126;CG0128;CG0516;CG0518","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0082.yaml","HRL-SD-0082","SDTM","Consistency","SD0072","","CG0369;CG0373;CG0374","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0083.yaml","HRL-SD-0083","SDTM","Consistency","SD0075","","CG0370","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0084.yaml","HRL-SD-0084","SDTM","Cross-reference","SD0077","","CG0371;CG0465","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0085.yaml","HRL-SD-0085","SDTM","Consistency","SD0079","","","FDAB023","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0086.yaml","HRL-SD-0086","SDTM","Consistency","SD0080","","","FDAB034","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0087.yaml","HRL-SD-0087","SDTM","Consistency","SD0082","","","FDAB034","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0088.yaml","HRL-SD-0088","SDTM","Consistency","SD0083","","CG0151","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0089.yaml","HRL-SD-0089","SDTM","Limit","SD0084","","","FDAB040","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0090.yaml","HRL-SD-0090","SDTM","Consistency","SD0085","","CG0177","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0091.yaml","HRL-SD-0091","SDTM","Consistency","SD0086","","CG0411","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0092.yaml","HRL-SD-0092","SDTM","Consistency","SD0087","","CG0146;CG0532","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0093.yaml","HRL-SD-0093","SDTM","Consistency","SD0088","","CG0529","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0094.yaml","HRL-SD-0094","SDTM","Consistency","SD0089","","CG0328;CG0329","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0095.yaml","HRL-SD-0095","SDTM","Consistency","SD0090","","","","P21 rule SD0090",TRUE,FALSE,FALSE
+"HRL-SD-0096.yaml","HRL-SD-0096","SDTM","Consistency","SD0091","","","","P21 rule SD0091",TRUE,FALSE,FALSE
+"HRL-SD-0097.yaml","HRL-SD-0097","SDTM","Consistency","SD0092","","CG0211","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0098.yaml","HRL-SD-0098","SDTM","Consistency","SD0093","","CG0432;CG0665","","SDTM-IG v3.1.2",TRUE,FALSE,TRUE
+"HRL-SD-0099.yaml","HRL-SD-0099","SDTM","Presence","SD0095","","CG0203;CG0369","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0100.yaml","HRL-SD-0100","SDTM","Consistency","SD1001","","CG0150","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0101.yaml","HRL-SD-0101","SDTM","Limit","SD1002","","","FDAB034","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0102.yaml","HRL-SD-0102","SDTM","Consistency","SD1003","","CG0433;CG0666","","SDTM-IG v3.1.2",TRUE,FALSE,TRUE
+"HRL-SD-0103.yaml","HRL-SD-0103","SDTM","Format","SD1004","","CG0153","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0104.yaml","HRL-SD-0104","SDTM","Consistency","SD1005","","CG0409","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0105.yaml","HRL-SD-0105","SDTM","Consistency","SD1008","","CG0168","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0106.yaml","HRL-SD-0106","SDTM","Format","SD1009","","CG0246","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0107.yaml","HRL-SD-0107","SDTM","Consistency","SD1010","","CG0152","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0108.yaml","HRL-SD-0108","SDTM","Format","SD1011","","CG0002;CG0008;CG0238","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0109.yaml","HRL-SD-0109","SDTM","Cross-reference","SD1012","","CG0414","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0110.yaml","HRL-SD-0110","SDTM","Consistency","SD1013","","CG0206","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0111.yaml","HRL-SD-0111","SDTM","Cross-reference","SD1014","","CG0418","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0112.yaml","HRL-SD-0112","SDTM","Cross-reference","SD1015","","CG0009","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0113.yaml","HRL-SD-0113","SDTM","Cross-reference","SD1016","","CG0178","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0114.yaml","HRL-SD-0114","SDTM","Cross-reference","SD1017","","CG0213","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0115.yaml","HRL-SD-0115","SDTM","Cross-reference","SD1018","","CG0031;CG0032;CG0033;CG0215;CG0657","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0116.yaml","HRL-SD-0116","SDTM","Consistency","SD1019","","CG0216","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0117.yaml","HRL-SD-0117","SDTM","Presence","SD1020","","CG0368","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0118.yaml","HRL-SD-0118","SDTM","Format","SD1021","","","FDAB015","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0119.yaml","HRL-SD-0119","SDTM","Format","SD1022","","CG0417","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0120.yaml","HRL-SD-0120","SDTM","Cross-reference","SD1023","","CG0031","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0121.yaml","HRL-SD-0121","SDTM","Consistency","SD1026","","CG0419","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0122.yaml","HRL-SD-0122","SDTM","Consistency","SD1027","","CG0154","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0123.yaml","HRL-SD-0123","SDTM","Format","SD1029","","CG0257;CG0258;CG0372;CG0406","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0124.yaml","HRL-SD-0124","SDTM","Consistency","SD1030","","CG0226","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0125.yaml","HRL-SD-0125","SDTM","Consistency","SD1031","","CG0227","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0126.yaml","HRL-SD-0126","SDTM","Consistency","SD1032","","","FDAB028","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0127.yaml","HRL-SD-0127","SDTM","Consistency","SD1033","","","FDAB009","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0128.yaml","HRL-SD-0128","SDTM","Consistency","SD1034","","","FDAB009","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0129.yaml","HRL-SD-0129","SDTM","Presence","SD1035","","","FDAB014","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0130.yaml","HRL-SD-0130","SDTM","Consistency","SD1036","","CG0428","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0131.yaml","HRL-SD-0131","SDTM","Consistency","SD1037","","CG0428","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0132.yaml","HRL-SD-0132","SDTM","Consistency","SD1038","","CG0268","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0133.yaml","HRL-SD-0133","SDTM","Consistency","SD1039","","CG0077;CG0336;CG0337","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0134.yaml","HRL-SD-0134","SDTM","Consistency","SD1040","","CG0338;CG0339;CG0340;CG0350","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0135.yaml","HRL-SD-0135","SDTM","Consistency","SD1041","","CG0027","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0136.yaml","HRL-SD-0136","SDTM","Consistency","SD1042","","CG0420;CG0421","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0137.yaml","HRL-SD-0137","SDTM","Consistency","SD1043","","","FDAB009","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0138.yaml","HRL-SD-0138","SDTM","Presence","SD1044","","","FDAB013","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0139.yaml","HRL-SD-0139","SDTM","Consistency","SD1045","","CG0175","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0140.yaml","HRL-SD-0140","SDTM","Consistency","SD1046","","CG0176","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0141.yaml","HRL-SD-0141","SDTM","Consistency","SD1047","","CG0110;CG0111","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0142.yaml","HRL-SD-0142","SDTM","Format","SD1049","","CG0416","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0143.yaml","HRL-SD-0143","SDTM","Consistency","SD1050","","","FDAB009","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0144.yaml","HRL-SD-0144","SDTM","Consistency","SD1051","","CG0203;CG0204","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0145.yaml","HRL-SD-0145","SDTM","Consistency","SD1052","","CG0247","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0146.yaml","HRL-SD-0146","SDTM","Consistency","SD1053","","CG0244;CG0415","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0147.yaml","HRL-SD-0147","SDTM","Consistency","SD1060","","CG0410","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0148.yaml","HRL-SD-0148","SDTM","Presence","SD1061","","CG0191","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0149.yaml","HRL-SD-0149","SDTM","Consistency","SD1062","","CG0041","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0150.yaml","HRL-SD-0150","SDTM","Metadata","SD1063","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-SD-0151.yaml","HRL-SD-0151","SDTM","Consistency","SD1064","","","FDAB009","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0152.yaml","HRL-SD-0152","SDTM","Presence","SD1065","","CG0164;CG0166","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0153.yaml","HRL-SD-0153","SDTM","Presence","SD1066","","CG0201;CG0419","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0154.yaml","HRL-SD-0154","SDTM","Presence","SD1067","","CG0201;CG0419","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0155.yaml","HRL-SD-0155","SDTM","Consistency","SD1068","","","FDAB009","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0156.yaml","HRL-SD-0156","SDTM","Consistency","SD1069","","CG0307","FDAB009","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0157.yaml","HRL-SD-0157","SDTM","Consistency","SD1070","","CG0307","FDAB009","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0158.yaml","HRL-SD-0158","SDTM","Metadata","SD1071","","","FDAB024","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-SD-0159.yaml","HRL-SD-0159","SDTM","Consistency","SD1072","","CG0204;CG0371;CG0203","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0160.yaml","HRL-SD-0160","SDTM","Metadata","SD1073","","CG0040;CG0044;CG0299;CG0300;CG0301;CG0302;CG0304","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0161.yaml","HRL-SD-0161","SDTM","Metadata","SD1074","","CG0352;CG0353;CG0354;CG0355;CG0356;CG0357;CG0358;CG0621-CG0644","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0162.yaml","HRL-SD-0162","SDTM","Metadata","SD1075","","CG0467","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0163.yaml","HRL-SD-0163","SDTM","Metadata","SD1076","","CG0013","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0164.yaml","HRL-SD-0164","SDTM","Metadata","SD1077","","","FDAB022","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0165.yaml","HRL-SD-0165","SDTM","Presence","SD1083","","","FDAB016","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0166.yaml","HRL-SD-0166","SDTM","Presence","SD1084","","CG0007","FDAB016","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0167.yaml","HRL-SD-0167","SDTM","Presence","SD1085","","CG0007","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0168.yaml","HRL-SD-0168","SDTM","Presence","SD1086","","CG0006","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0169.yaml","HRL-SD-0169","SDTM","Presence","SD1087","","","FDAB034","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0170.yaml","HRL-SD-0170","SDTM","Presence","SD1088","","CG0220","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0171.yaml","HRL-SD-0171","SDTM","Presence","SD1089","","CG0221","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0172.yaml","HRL-SD-0172","SDTM","Presence","SD1090","","CG0220","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0173.yaml","HRL-SD-0173","SDTM","Presence","SD1091","","","FDAB034","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0174.yaml","HRL-SD-0174","SDTM","Presence","SD1092","","CG0222","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0175.yaml","HRL-SD-0175","SDTM","Presence","SD1093","","CG0223","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0176.yaml","HRL-SD-0176","SDTM","Presence","SD1094","","CG0222","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0177.yaml","HRL-SD-0177","SDTM","Consistency","SD1095","","CG0017","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0178.yaml","HRL-SD-0178","SDTM","Format","SD1096","","","FDAB018","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0179.yaml","HRL-SD-0179","SDTM","Presence","SD1097","","","FDAB001","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0180.yaml","HRL-SD-0180","SDTM","Presence","SD1098","","CG0429","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0181.yaml","HRL-SD-0181","SDTM","Presence","SD1099","","CG0430","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0182.yaml","HRL-SD-0182","SDTM","Presence","SD1101","","CG0058","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0183.yaml","HRL-SD-0183","SDTM","Presence","SD1102","","CG0057","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0184.yaml","HRL-SD-0184","SDTM","Presence","SD1103","","CG0062","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0185.yaml","HRL-SD-0185","SDTM","Presence","SD1104","","CG0060","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0186.yaml","HRL-SD-0186","SDTM","Consistency","SD1105","","","","P21 rule SD1105",TRUE,FALSE,FALSE
+"HRL-SD-0187.yaml","HRL-SD-0187","SDTM","Presence","SD1106","","","FDAB004","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0188.yaml","HRL-SD-0188","SDTM","Presence","SD1107","","","FDAB004","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0189.yaml","HRL-SD-0189","SDTM","Presence","SD1108","","","FDAB004","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0190.yaml","HRL-SD-0190","SDTM","Presence","SD1109","","CG0407","FDAB004","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0191.yaml","HRL-SD-0191","SDTM","Presence","SD1110","","","FDAB004","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0192.yaml","HRL-SD-0192","SDTM","Presence","SD1111","","","FDAB004","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0193.yaml","HRL-SD-0193","SDTM","Presence","SD1112","","","FDAB011","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0194.yaml","HRL-SD-0194","SDTM","Presence","SD1113","","","FDAB011","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0195.yaml","HRL-SD-0195","SDTM","Terminology","SD1114","","CG0385","FDAB003","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0196.yaml","HRL-SD-0196","SDTM","Terminology","SD1114C","","","FDAB017","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0197.yaml","HRL-SD-0197","SDTM","Presence","SD1115","","","","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0198.yaml","HRL-SD-0198","SDTM","Consistency","SD1116","","","FDAB018","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0199.yaml","HRL-SD-0199","SDTM","Consistency","SD1117","","CG0019","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0200.yaml","HRL-SD-0200","SDTM","Presence","SD1118","","","FDAB038","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0201.yaml","HRL-SD-0201","SDTM","Consistency","SD1119","","CG0168","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0202.yaml","HRL-SD-0202","SDTM","Presence","SD1120","","CG0167","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0203.yaml","HRL-SD-0203","SDTM","Presence","SD1121","","","FDAB005","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0204.yaml","HRL-SD-0204","SDTM","Consistency","SD1122","","","FDAB031","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0205.yaml","HRL-SD-0205","SDTM","Consistency","SD1125","","CG0241","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0206.yaml","HRL-SD-0206","SDTM","Consistency","SD1126","","CG0240;CG0571;CG0572;CG0573","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0207.yaml","HRL-SD-0207","SDTM","Consistency","SD1127","","CG0240;CG0571;CG0572;CG0573","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0208.yaml","HRL-SD-0208","SDTM","Consistency","SD1128","","CG0020","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0209.yaml","HRL-SD-0209","SDTM","Presence","SD1129","","","FDAB005","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0210.yaml","HRL-SD-0210","SDTM","Consistency","SD1130","","","FDAB009","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0211.yaml","HRL-SD-0211","SDTM","Presence","SD1131","","","FDAB026","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0212.yaml","HRL-SD-0212","SDTM","Consistency","SD1132","","CG0041","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0213.yaml","HRL-SD-0213","SDTM","Consistency","SD1133","","","FDAB009","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0214.yaml","HRL-SD-0214","SDTM","Consistency","SD1134","","","FDAB009","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0215.yaml","HRL-SD-0215","SDTM","Limit","SD1135","","","FDAB036","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0216.yaml","HRL-SD-0216","SDTM","Consistency","SD1137","","CG0348","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0217.yaml","HRL-SD-0217","SDTM","Consistency","SD1138","","CG0348","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0218.yaml","HRL-SD-0218","SDTM","Metadata","SD1140","","","","P21 Community SDTM-IG 3.2 (PMDA)",TRUE,FALSE,FALSE
+"HRL-SD-0219.yaml","HRL-SD-0219","SDTM","Presence","SD1141","","","","P21 Community SDTM-IG 3.2 (PMDA)",TRUE,FALSE,FALSE
+"HRL-SD-0220.yaml","HRL-SD-0220","SDTM","Metadata","SD1142","","","","P21 Community SDTM-IG 3.2 (PMDA)",TRUE,FALSE,FALSE
+"HRL-SD-0221.yaml","HRL-SD-0221","SDTM","Presence","SD1143","","CG0043","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0222.yaml","HRL-SD-0222","SDTM","Limit","SD1144","","CG0079","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0223.yaml","HRL-SD-0223","SDTM","Limit","SD1145","","CG0078","","SDTM-IG v3.2",TRUE,FALSE,TRUE
+"HRL-SD-0224.yaml","HRL-SD-0224","SDTM","Presence","SD1147","","CG0088","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0225.yaml","HRL-SD-0225","SDTM","Limit","SD1148","","","FDAB008","SEND-IG v3.0",TRUE,FALSE,FALSE
+"HRL-SD-0226.yaml","HRL-SD-0226","SDTM","Consistency","SD1150","","","FDAB009","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0227.yaml","HRL-SD-0227","SDTM","Consistency","SD1151","","","FDAB009","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0228.yaml","HRL-SD-0228","SDTM","Consistency","SD1201","","CG0019","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0229.yaml","HRL-SD-0229","SDTM","Limit","SD1202","","","FDAB034","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0230.yaml","HRL-SD-0230","SDTM","Limit","SD1203","","","FDAB034","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0231.yaml","HRL-SD-0231","SDTM","Limit","SD1204","","","FDAB034","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0232.yaml","HRL-SD-0232","SDTM","Limit","SD1205","","CG0148","FDAB008","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0233.yaml","HRL-SD-0233","SDTM","Limit","SD1206","","CG0147","FDAB034","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0234.yaml","HRL-SD-0234","SDTM","Limit","SD1207","","CG0147","FDAB034","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0235.yaml","HRL-SD-0235","SDTM","Limit","SD1208","","","FDAB034","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0236.yaml","HRL-SD-0236","SDTM","Limit","SD1209","","","FDAB043","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0237.yaml","HRL-SD-0237","SDTM","Presence","SD1210","","","FDAB038","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0238.yaml","HRL-SD-0238","SDTM","Consistency","SD1212","","","FDAB031","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0239.yaml","HRL-SD-0239","SDTM","Consistency","SD1213","","","FDAB038","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0240.yaml","HRL-SD-0240","SDTM","Consistency","SD1214","","","FDAB011","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0241.yaml","HRL-SD-0241","SDTM","Format","SD1215","","CG0270","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0242.yaml","HRL-SD-0242","SDTM","Consistency","SD1216","","","FDAB011","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0243.yaml","HRL-SD-0243","SDTM","Format","SD1217","","CG0438","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0244.yaml","HRL-SD-0244","SDTM","Consistency","SD1218","","","FDAB011","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0245.yaml","HRL-SD-0245","SDTM","Format","SD1219","","CG0439","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0246.yaml","HRL-SD-0246","SDTM","Consistency","SD1220","","","FDAB011","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0247.yaml","HRL-SD-0247","SDTM","Format","SD1221","","CG0440","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0248.yaml","HRL-SD-0248","SDTM","Consistency","SD1222","","","FDAB011","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0249.yaml","HRL-SD-0249","SDTM","Terminology","SD1223","","CG0271","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0250.yaml","HRL-SD-0250","SDTM","Consistency","SD1224","","","FDAB011","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0251.yaml","HRL-SD-0251","SDTM","Consistency","SD1225","","","FDAB011","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0252.yaml","HRL-SD-0252","SDTM","Presence","SD1226","","","","P21 Community SDTM-IG 3.2 (PMDA)",TRUE,FALSE,FALSE
+"HRL-SD-0253.yaml","HRL-SD-0253","SDTM","Consistency","SD1227","","","FDAB011","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0254.yaml","HRL-SD-0254","SDTM","Terminology","SD1228","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-SD-0255.yaml","HRL-SD-0255","SDTM","Terminology","SD1229","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-SD-0256.yaml","HRL-SD-0256","SDTM","Format","SD1230","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-SD-0257.yaml","HRL-SD-0257","SDTM","Limit","SD1231","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-SD-0258.yaml","HRL-SD-0258","SDTM","Cross-reference","SD1233","","","","P21 Community SDTM-IG 3.3 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0259.yaml","HRL-SD-0259","SDTM","Presence","SD1234","","","","P21 Community SDTM-IG 3.3 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0260.yaml","HRL-SD-0260","SDTM","Presence","SD1235","","CG0554","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0261.yaml","HRL-SD-0261","SDTM","Consistency","SD1236","","CG0028","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0262.yaml","HRL-SD-0262","SDTM","Consistency","SD1237","","","","P21 Community SDTM-IG 3.3 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0263.yaml","HRL-SD-0263","SDTM","Consistency","SD1238","","CG0026","FDAB037","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0264.yaml","HRL-SD-0264","SDTM","Presence","SD1240","","CG0143","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0265.yaml","HRL-SD-0265","SDTM","Consistency","SD1241","","CG0082","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0266.yaml","HRL-SD-0266","SDTM","Consistency","SD1242","","CG0083","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0267.yaml","HRL-SD-0267","SDTM","Consistency","SD1243","","CG0083","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0268.yaml","HRL-SD-0268","SDTM","Presence","SD1244","","CG0091","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0269.yaml","HRL-SD-0269","SDTM","Presence","SD1245","","CG0090","FDAB037","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0270.yaml","HRL-SD-0270","SDTM","Presence","SD1246","","CG0092","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0271.yaml","HRL-SD-0271","SDTM","Consistency","SD1247","","CG0100","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0272.yaml","HRL-SD-0272","SDTM","Consistency","SD1248","","CG0101","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0273.yaml","HRL-SD-0273","SDTM","Consistency","SD1249","","CG0102","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0274.yaml","HRL-SD-0274","SDTM","Presence","SD1250","","CG0468","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0275.yaml","HRL-SD-0275","SDTM","Consistency","SD1251","","CG0108","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0276.yaml","HRL-SD-0276","SDTM","Consistency","SD1252","","","","P21 rule SD1252",TRUE,FALSE,FALSE
+"HRL-SD-0277.yaml","HRL-SD-0277","SDTM","Presence","SD1253","","CG0133","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0278.yaml","HRL-SD-0278","SDTM","Consistency","SD1254","","","","P21 rule SD1254",TRUE,FALSE,FALSE
+"HRL-SD-0279.yaml","HRL-SD-0279","SDTM","Presence","SD1255","","CG0135","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0280.yaml","HRL-SD-0280","SDTM","Consistency","SD1256","","","","P21 rule SD1256",TRUE,FALSE,FALSE
+"HRL-SD-0281.yaml","HRL-SD-0281","SDTM","Consistency","SD1258","","CG0145","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0282.yaml","HRL-SD-0282","SDTM","Format","SD1259","","CG0149","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0283.yaml","HRL-SD-0283","SDTM","Consistency","SD1260","","CG0267","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0284.yaml","HRL-SD-0284","SDTM","Consistency","SD1261","","","","P21 rule SD1261",TRUE,FALSE,FALSE
+"HRL-SD-0285.yaml","HRL-SD-0285","SDTM","Consistency","SD1262","","","","P21 rule SD1262",TRUE,FALSE,FALSE
+"HRL-SD-0286.yaml","HRL-SD-0286","SDTM","Consistency","SD1263","","CG0193","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0287.yaml","HRL-SD-0287","SDTM","Consistency","SD1264","","CG0201","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0288.yaml","HRL-SD-0288","SDTM","Consistency","SD1265","","CG0202","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0289.yaml","HRL-SD-0289","SDTM","Consistency","SD1266","","CG0210","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0290.yaml","HRL-SD-0290","SDTM","Format","SD1267","","CG0248","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0291.yaml","HRL-SD-0291","SDTM","Consistency","SD1268","","CG0266","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0292.yaml","HRL-SD-0292","SDTM","Consistency","SD1269","","CG0280","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0293.yaml","HRL-SD-0293","SDTM","Presence","SD1270","","CG0318","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0294.yaml","HRL-SD-0294","SDTM","Consistency","SD1271","","CG0325","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0295.yaml","HRL-SD-0295","SDTM","Consistency","SD1272","","CG0341","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0296.yaml","HRL-SD-0296","SDTM","Consistency","SD1275","","CG0344","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0297.yaml","HRL-SD-0297","SDTM","Consistency","SD1278","","CG0265","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0298.yaml","HRL-SD-0298","SDTM","Consistency","SD1279","","CG0462","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0299.yaml","HRL-SD-0299","SDTM","Presence","SD1280","","CG0084","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0300.yaml","HRL-SD-0300","SDTM","Presence","SD1281","","CG0088","","SDTM-IG v3.2",TRUE,FALSE,TRUE
+"HRL-SD-0301.yaml","HRL-SD-0301","SDTM","Presence","SD1282","","CG0093","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0302.yaml","HRL-SD-0302","SDTM","Presence","SD1283","","CG0095","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0303.yaml","HRL-SD-0303","SDTM","Presence","SD1284","","CG0115","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0304.yaml","HRL-SD-0304","SDTM","Presence","SD1285","","CG0116","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0305.yaml","HRL-SD-0305","SDTM","Consistency","SD1286","","CG0255","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0306.yaml","HRL-SD-0306","SDTM","Consistency","SD1287","","CG0049","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0307.yaml","HRL-SD-0307","SDTM","Consistency","SD1288","","CG0049","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0308.yaml","HRL-SD-0308","SDTM","Consistency","SD1289","","CG0050","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0309.yaml","HRL-SD-0309","SDTM","Consistency","SD1290","","CG0398","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0310.yaml","HRL-SD-0310","SDTM","Consistency","SD1291","","CG0045","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0311.yaml","HRL-SD-0311","SDTM","Consistency","SD1292","","CG0059","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0312.yaml","HRL-SD-0312","SDTM","Presence","SD1293","","CG0053","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0313.yaml","HRL-SD-0313","SDTM","Presence","SD1294","","CG0056","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0314.yaml","HRL-SD-0314","SDTM","Terminology","SD1295","","CG0269","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0315.yaml","HRL-SD-0315","SDTM","Terminology","SD1296","","CG0282","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0316.yaml","HRL-SD-0316","SDTM","Consistency","SD1297","","CG0291;CG0649","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0317.yaml","HRL-SD-0317","SDTM","Consistency","SD1298","","CG0185","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0318.yaml","HRL-SD-0318","SDTM","Presence","SD1299","","CG0219","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0319.yaml","HRL-SD-0319","SDTM","Format","SD1300","","CG0308","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0320.yaml","HRL-SD-0320","SDTM","Format","SD1301","","CG0376","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0321.yaml","HRL-SD-0321","SDTM","Presence","SD1306","","CG0272","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0322.yaml","HRL-SD-0322","SDTM","Presence","SD1307","","CG0273","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0323.yaml","HRL-SD-0323","SDTM","Presence","SD1308","","CG0275","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0324.yaml","HRL-SD-0324","SDTM","Presence","SD1309","","CG0276","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0325.yaml","HRL-SD-0325","SDTM","Presence","SD1310","","CG0277","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0326.yaml","HRL-SD-0326","SDTM","Presence","SD1311","","CG0278","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0327.yaml","HRL-SD-0327","SDTM","Presence","SD1312","","CG0279","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0328.yaml","HRL-SD-0328","SDTM","Consistency","SD1313","","","","P21 rule SD1313",TRUE,FALSE,FALSE
+"HRL-SD-0329.yaml","HRL-SD-0329","SDTM","Consistency","SD1314","","CG0065","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0330.yaml","HRL-SD-0330","SDTM","Consistency","SD1315","","CG0066","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0331.yaml","HRL-SD-0331","SDTM","Consistency","SD1316","","","","P21 rule SD1316",TRUE,FALSE,FALSE
+"HRL-SD-0332.yaml","HRL-SD-0332","SDTM","Consistency","SD1317","","","","P21 rule SD1317",TRUE,FALSE,FALSE
+"HRL-SD-0333.yaml","HRL-SD-0333","SDTM","Consistency","SD1318","","","","P21 rule SD1318",TRUE,FALSE,FALSE
+"HRL-SD-0334.yaml","HRL-SD-0334","SDTM","Limit","SD1319","","CG0068;CG0075","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0335.yaml","HRL-SD-0335","SDTM","Consistency","SD1320","","CG0348","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0336.yaml","HRL-SD-0336","SDTM","Presence","SD1321","","","FDAB001","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0337.yaml","HRL-SD-0337","SDTM","Terminology","SD1322","","","FDAB017","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0338.yaml","HRL-SD-0338","SDTM","Terminology","SD1323","","CG0456","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0339.yaml","HRL-SD-0339","SDTM","Metadata","SD1324","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-SD-0340.yaml","HRL-SD-0340","SDTM","Metadata","SD1325","","","","ADaM-IG v1.1",TRUE,FALSE,FALSE
+"HRL-SD-0341.yaml","HRL-SD-0341","SDTM","Consistency","SD1326","","CG0365","","SDTM-IG v3.2",TRUE,FALSE,TRUE
+"HRL-SD-0342.yaml","HRL-SD-0342","SDTM","Consistency","SD1327","","CG0364","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0343.yaml","HRL-SD-0343","SDTM","Consistency","SD1328","","CG0363","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0344.yaml","HRL-SD-0344","SDTM","Limit","SD1330","","","FDAB034","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0345.yaml","HRL-SD-0345","SDTM","Limit","SD1331","","","FDAB034","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0346.yaml","HRL-SD-0346","SDTM","Consistency","SD1332","","","","P21 rule SD1332",TRUE,FALSE,FALSE
+"HRL-SD-0347.yaml","HRL-SD-0347","SDTM","Consistency","SD1333","","","","P21 rule SD1333",TRUE,FALSE,FALSE
+"HRL-SD-0348.yaml","HRL-SD-0348","SDTM","Limit","SD1334","","","FDAB034","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0349.yaml","HRL-SD-0349","SDTM","Limit","SD1335","","","FDAB034","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0350.yaml","HRL-SD-0350","SDTM","Cross-reference","SD1336","","CG0024","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0351.yaml","HRL-SD-0351","SDTM","Cross-reference","SD1337","","CG0024","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0352.yaml","HRL-SD-0352","SDTM","Cross-reference","SD1338","","CG0022","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0353.yaml","HRL-SD-0353","SDTM","Presence","SD1339","","","FDAB022","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0354.yaml","HRL-SD-0354","SDTM","Consistency","SD1340","","","FDAB023","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0355.yaml","HRL-SD-0355","SDTM","Limit","SD1342","","","FDAB038","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0356.yaml","HRL-SD-0356","SDTM","Limit","SD1343","","","FDAB038","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0357.yaml","HRL-SD-0357","SDTM","Terminology","SD1344","","","FDAB017","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0358.yaml","HRL-SD-0358","SDTM","Terminology","SD1345","","","FDAB017","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0359.yaml","HRL-SD-0359","SDTM","Terminology","SD1346","","","FDAB017","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0360.yaml","HRL-SD-0360","SDTM","Consistency","SD1347","","","","P21 rule SD1347",TRUE,FALSE,FALSE
+"HRL-SD-0361.yaml","HRL-SD-0361","SDTM","Consistency","SD1348","","","","P21 Community SDTM-IG 3.3 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0362.yaml","HRL-SD-0362","SDTM","Consistency","SD1349","","CG0409","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0363.yaml","HRL-SD-0363","SDTM","Consistency","SD1350","","","","P21 Community SDTM-IG 3.3 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0364.yaml","HRL-SD-0364","SDTM","Consistency","SD1351","","","","P21 Community SDTM-IG 3.3 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0365.yaml","HRL-SD-0365","SDTM","Consistency","SD1352","","CG0019","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0366.yaml","HRL-SD-0366","SDTM","Consistency","SD1353","","CG0397","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0367.yaml","HRL-SD-0367","SDTM","Cross-reference","SD1354","","CG0126","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0368.yaml","HRL-SD-0368","SDTM","Presence","SD1355","","CG0501","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0369.yaml","HRL-SD-0369","SDTM","Presence","SD1356","","CG0502","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0370.yaml","HRL-SD-0370","SDTM","Presence","SD1357","","CG0503","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0371.yaml","HRL-SD-0371","SDTM","Consistency","SD1358","","CG0513;CG0515","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0372.yaml","HRL-SD-0372","SDTM","Consistency","SD1359","","CG0517;CG0519","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0373.yaml","HRL-SD-0373","SDTM","Consistency","SD1360","","CG0520","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0374.yaml","HRL-SD-0374","SDTM","Consistency","SD1361","","CG0521","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0375.yaml","HRL-SD-0375","SDTM","Consistency","SD1362","","CG0522","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0376.yaml","HRL-SD-0376","SDTM","Consistency","SD1363","","CG0523;CG0570","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0377.yaml","HRL-SD-0377","SDTM","Consistency","SD1364","","CG0524","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0378.yaml","HRL-SD-0378","SDTM","Consistency","SD1365","","CG0528","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0379.yaml","HRL-SD-0379","SDTM","Consistency","SD1366","","CG0530","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0380.yaml","HRL-SD-0380","SDTM","Consistency","SD1367","","CG0536;CG0537","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0381.yaml","HRL-SD-0381","SDTM","Consistency","SD1368","","CG0547","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0382.yaml","HRL-SD-0382","SDTM","Consistency","SD1369","","CG0549","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0383.yaml","HRL-SD-0383","SDTM","Consistency","SD1370","","CG0550","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0384.yaml","HRL-SD-0384","SDTM","Consistency","SD1371","","CG0553","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0385.yaml","HRL-SD-0385","SDTM","Consistency","SD1372","","CG0569","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0386.yaml","HRL-SD-0386","SDTM","Consistency","SD1373","","CG0534","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0387.yaml","HRL-SD-0387","SDTM","Presence","SD1374","","CG0540","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0388.yaml","HRL-SD-0388","SDTM","Consistency","SD1375","","CG0141","","SDTM-IG v3.2",TRUE,FALSE,TRUE
+"HRL-SD-0389.yaml","HRL-SD-0389","SDTM","Consistency","SD1376","","CG0142","","SDTM-IG v3.2",TRUE,FALSE,TRUE
+"HRL-SD-0390.yaml","HRL-SD-0390","SDTM","Consistency","SD1377","","CG0109;CG0513","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0391.yaml","HRL-SD-0391","SDTM","Cross-reference","SD1378","","CG0414","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0392.yaml","HRL-SD-0392","SDTM","Cross-reference","SD1379","","CG0414","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0393.yaml","HRL-SD-0393","SDTM","Presence","SD1380","","CG0554","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0394.yaml","HRL-SD-0394","SDTM","Presence","SD1381","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0395.yaml","HRL-SD-0395","SDTM","Presence","SD1382","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0396.yaml","HRL-SD-0396","SDTM","Presence","SD1383","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0397.yaml","HRL-SD-0397","SDTM","Presence","SD1384","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0398.yaml","HRL-SD-0398","SDTM","Presence","SD1385","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0399.yaml","HRL-SD-0399","SDTM","Presence","SD1386","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0400.yaml","HRL-SD-0400","SDTM","Presence","SD1387","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0401.yaml","HRL-SD-0401","SDTM","Presence","SD1388","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0402.yaml","HRL-SD-0402","SDTM","Presence","SD1389","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0403.yaml","HRL-SD-0403","SDTM","Presence","SD1390","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0404.yaml","HRL-SD-0404","SDTM","Presence","SD1391","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0405.yaml","HRL-SD-0405","SDTM","Presence","SD1392","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0406.yaml","HRL-SD-0406","SDTM","Presence","SD1393","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0407.yaml","HRL-SD-0407","SDTM","Presence","SD1394","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0408.yaml","HRL-SD-0408","SDTM","Presence","SD1395","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0409.yaml","HRL-SD-0409","SDTM","Presence","SD1396","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0410.yaml","HRL-SD-0410","SDTM","Presence","SD1397","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0411.yaml","HRL-SD-0411","SDTM","Presence","SD1398","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0412.yaml","HRL-SD-0412","SDTM","Limit","SD1399","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0413.yaml","HRL-SD-0413","SDTM","Limit","SD1401","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0414.yaml","HRL-SD-0414","SDTM","Limit","SD1402","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0415.yaml","HRL-SD-0415","SDTM","Limit","SD1403","","","FDAB034","SEND-IG-AR v1.0",TRUE,FALSE,FALSE
+"HRL-SD-0416.yaml","HRL-SD-0416","SDTM","Limit","SD1404","","","FDAB043","SEND-IG-AR v1.0",TRUE,FALSE,FALSE
+"HRL-SD-0417.yaml","HRL-SD-0417","SDTM","Limit","SD1405","","","FDAB043","SEND-IG-AR v1.0",TRUE,FALSE,FALSE
+"HRL-SD-0418.yaml","HRL-SD-0418","SDTM","Presence","SD1406","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0419.yaml","HRL-SD-0419","SDTM","Presence","SD1407","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0420.yaml","HRL-SD-0420","SDTM","Presence","SD1408","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0421.yaml","HRL-SD-0421","SDTM","Presence","SD1409","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0422.yaml","HRL-SD-0422","SDTM","Presence","SD1410","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0423.yaml","HRL-SD-0423","SDTM","Presence","SD1411","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0424.yaml","HRL-SD-0424","SDTM","Presence","SD1412","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0425.yaml","HRL-SD-0425","SDTM","Presence","SD1413","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0426.yaml","HRL-SD-0426","SDTM","Presence","SD1414","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0427.yaml","HRL-SD-0427","SDTM","Presence","SD1415","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0428.yaml","HRL-SD-0428","SDTM","Presence","SD1416","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0429.yaml","HRL-SD-0429","SDTM","Presence","SD1417","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0430.yaml","HRL-SD-0430","SDTM","Presence","SD1418","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0431.yaml","HRL-SD-0431","SDTM","Presence","SD1419","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0432.yaml","HRL-SD-0432","SDTM","Presence","SD1420","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0433.yaml","HRL-SD-0433","SDTM","Presence","SD1421","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0434.yaml","HRL-SD-0434","SDTM","Presence","SD1422","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0435.yaml","HRL-SD-0435","SDTM","Presence","SD1423","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0436.yaml","HRL-SD-0436","SDTM","Presence","SD1424","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0437.yaml","HRL-SD-0437","SDTM","Presence","SD1425","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0438.yaml","HRL-SD-0438","SDTM","Presence","SD1426","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0439.yaml","HRL-SD-0439","SDTM","Presence","SD1427","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0440.yaml","HRL-SD-0440","SDTM","Presence","SD1428","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0441.yaml","HRL-SD-0441","SDTM","Presence","SD1429","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0442.yaml","HRL-SD-0442","SDTM","Presence","SD1430","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0443.yaml","HRL-SD-0443","SDTM","Presence","SD1431","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0444.yaml","HRL-SD-0444","SDTM","Presence","SD1432","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0445.yaml","HRL-SD-0445","SDTM","Presence","SD1433","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0446.yaml","HRL-SD-0446","SDTM","Presence","SD1434","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0447.yaml","HRL-SD-0447","SDTM","Presence","SD1435","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0448.yaml","HRL-SD-0448","SDTM","Presence","SD1436","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0449.yaml","HRL-SD-0449","SDTM","Presence","SD1437","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0450.yaml","HRL-SD-0450","SDTM","Presence","SD1438","","","","P21 Community SEND-IG-AR 1.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0451.yaml","HRL-SD-0451","SDTM","Consistency","SD1439","","","FDAB026","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0452.yaml","HRL-SD-0452","SDTM","Consistency","SD1440","","","FDAB003","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0453.yaml","HRL-SD-0453","SDTM","Consistency","SD1441","","","FDAB003","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0454.yaml","HRL-SD-0454","SDTM","Consistency","SD1442","","","FDAB003","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0455.yaml","HRL-SD-0455","SDTM","Consistency","SD1443","","","FDAB003","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0456.yaml","HRL-SD-0456","SDTM","Consistency","SD1444","","","FDAB003","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0457.yaml","HRL-SD-0457","SDTM","Consistency","SD1445","","","FDAB026","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0458.yaml","HRL-SD-0458","SDTM","Consistency","SD1446","","","FDAB034","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0459.yaml","HRL-SD-0459","SDTM","Consistency","SD1448","","","FDAB031","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0460.yaml","HRL-SD-0460","SDTM","Presence","SD1449","","","FDAB003","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0461.yaml","HRL-SD-0461","SDTM","Presence","SD1450","","","FDAB044","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0462.yaml","HRL-SD-0462","SDTM","Presence","SD1451","","","FDAB044","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0463.yaml","HRL-SD-0463","SDTM","Limit","SD1452","","","FDAB040","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0464.yaml","HRL-SD-0464","SDTM","Consistency","SD1453","","CG0028","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0465.yaml","HRL-SD-0465","SDTM","Format","SD2001","","CG0123","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0466.yaml","HRL-SD-0466","SDTM","Cross-reference","SD2002","","CG0124;CG0125;CG0512","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0467.yaml","HRL-SD-0467","SDTM","Cross-reference","SD2003","","CG0118;CG0117;CG0514","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0468.yaml","HRL-SD-0468","SDTM","Consistency","SD2004","","CG0435","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0469.yaml","HRL-SD-0469","SDTM","Consistency","SD2005","","","FDAB006","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0470.yaml","HRL-SD-0470","SDTM","Consistency","SD2006","","","FDAB003","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0471.yaml","HRL-SD-0471","SDTM","Terminology","SD2007","","CG0380","FDAB003","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0472.yaml","HRL-SD-0472","SDTM","Terminology","SD2008","","CG0377","FDAB003","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0473.yaml","HRL-SD-0473","SDTM","Terminology","SD2008C","","","FDAB017","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0474.yaml","HRL-SD-0474","SDTM","Terminology","SD2009","","CG0378","FDAB003","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0475.yaml","HRL-SD-0475","SDTM","Terminology","SD2010","","CG0381","FDAB003","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0476.yaml","HRL-SD-0476","SDTM","Terminology","SD2010C","","","FDAB017","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0477.yaml","HRL-SD-0477","SDTM","Terminology","SD2011","","CG0382","FDAB003","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0478.yaml","HRL-SD-0478","SDTM","Terminology","SD2012","","CG0383","FDAB003","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0479.yaml","HRL-SD-0479","SDTM","Terminology","SD2012C","","","FDAB017","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0480.yaml","HRL-SD-0480","SDTM","Terminology","SD2013","","CG0384","FDAB003","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0481.yaml","HRL-SD-0481","SDTM","Terminology","SD2014","","CG0386","FDAB003","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0482.yaml","HRL-SD-0482","SDTM","Terminology","SD2015","","CG0436","FDAB003","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0483.yaml","HRL-SD-0483","SDTM","Terminology","SD2015C","","","FDAB017","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0484.yaml","HRL-SD-0484","SDTM","Terminology","SD2016","","CG0437","FDAB003","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0485.yaml","HRL-SD-0485","SDTM","Presence","SD2017","","CG0259;CG0260","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0486.yaml","HRL-SD-0486","SDTM","Presence","SD2018","","CG0259;CG0260","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0487.yaml","HRL-SD-0487","SDTM","Format","SD2019","","CG0434","FDAB005","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0488.yaml","HRL-SD-0488","SDTM","Consistency","SD2020","","","FDAB005","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0489.yaml","HRL-SD-0489","SDTM","Consistency","SD2021","","CG0433;CG0434","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0490.yaml","HRL-SD-0490","SDTM","Consistency","SD2022","","CG0432","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0491.yaml","HRL-SD-0491","SDTM","Consistency","SD2023","","","FDAB005","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0492.yaml","HRL-SD-0492","SDTM","Consistency","SD2024","","CG0361;CG0362","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0493.yaml","HRL-SD-0493","SDTM","Presence","SD2201","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0494.yaml","HRL-SD-0494","SDTM","Presence","SD2202","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0495.yaml","HRL-SD-0495","SDTM","Presence","SD2203","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0496.yaml","HRL-SD-0496","SDTM","Presence","SD2204","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0497.yaml","HRL-SD-0497","SDTM","Presence","SD2205","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0498.yaml","HRL-SD-0498","SDTM","Presence","SD2206","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0499.yaml","HRL-SD-0499","SDTM","Presence","SD2207","","CG0287","FDAB011","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0500.yaml","HRL-SD-0500","SDTM","Presence","SD2208","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0501.yaml","HRL-SD-0501","SDTM","Presence","SD2209","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0502.yaml","HRL-SD-0502","SDTM","Presence","SD2210","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0503.yaml","HRL-SD-0503","SDTM","Presence","SD2211","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0504.yaml","HRL-SD-0504","SDTM","Presence","SD2212","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0505.yaml","HRL-SD-0505","SDTM","Presence","SD2213","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0506.yaml","HRL-SD-0506","SDTM","Presence","SD2214","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0507.yaml","HRL-SD-0507","SDTM","Presence","SD2215","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0508.yaml","HRL-SD-0508","SDTM","Presence","SD2216","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0509.yaml","HRL-SD-0509","SDTM","Presence","SD2217","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0510.yaml","HRL-SD-0510","SDTM","Presence","SD2218","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0511.yaml","HRL-SD-0511","SDTM","Presence","SD2219","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0512.yaml","HRL-SD-0512","SDTM","Presence","SD2221","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0513.yaml","HRL-SD-0513","SDTM","Presence","SD2222","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0514.yaml","HRL-SD-0514","SDTM","Presence","SD2223","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0515.yaml","HRL-SD-0515","SDTM","Presence","SD2224","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0516.yaml","HRL-SD-0516","SDTM","Presence","SD2225","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0517.yaml","HRL-SD-0517","SDTM","Presence","SD2226","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0518.yaml","HRL-SD-0518","SDTM","Presence","SD2227","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0519.yaml","HRL-SD-0519","SDTM","Presence","SD2228","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0520.yaml","HRL-SD-0520","SDTM","Presence","SD2229","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0521.yaml","HRL-SD-0521","SDTM","Presence","SD2230","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0522.yaml","HRL-SD-0522","SDTM","Presence","SD2231","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0523.yaml","HRL-SD-0523","SDTM","Presence","SD2232","","CG0287","FDAB011","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0524.yaml","HRL-SD-0524","SDTM","Presence","SD2233","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0525.yaml","HRL-SD-0525","SDTM","Presence","SD2234","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0526.yaml","HRL-SD-0526","SDTM","Presence","SD2235","","CG0287","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0527.yaml","HRL-SD-0527","SDTM","Consistency","SD2236","","CG0127","FDAB025","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0528.yaml","HRL-SD-0528","SDTM","Consistency","SD2237","","CG0119","FDAB025","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0529.yaml","HRL-SD-0529","SDTM","Consistency","SD2238","","CG0059;CG0060;CG0061;CG0062","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0530.yaml","HRL-SD-0530","SDTM","Consistency","SD2239","","CG0240","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0531.yaml","HRL-SD-0531","SDTM","Consistency","SD2240","","CG0458","FDAB011","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0532.yaml","HRL-SD-0532","SDTM","Consistency","SD2241","","CG0444","FDAB011","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0533.yaml","HRL-SD-0533","SDTM","Consistency","SD2242","","CG0444","FDAB011","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0534.yaml","HRL-SD-0534","SDTM","Consistency","SD2243","","CG0455","FDAB011","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0535.yaml","HRL-SD-0535","SDTM","Consistency","SD2244","","CG0456","FDAB011","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0536.yaml","HRL-SD-0536","SDTM","Format","SD2245","","CG0283","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0537.yaml","HRL-SD-0537","SDTM","Format","SD2246","","CG0284","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0538.yaml","HRL-SD-0538","SDTM","Format","SD2247","","CG0285","FDAB011","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0539.yaml","HRL-SD-0539","SDTM","Format","SD2248","","CG0286","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0540.yaml","HRL-SD-0540","SDTM","Format","SD2249","","CG0457","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0541.yaml","HRL-SD-0541","SDTM","Terminology","SD2250","","CG0442","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0542.yaml","HRL-SD-0542","SDTM","Terminology","SD2251","","CG0443","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0543.yaml","HRL-SD-0543","SDTM","Terminology","SD2252","","CG0265","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0544.yaml","HRL-SD-0544","SDTM","Terminology","SD2253","","CG0445","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0545.yaml","HRL-SD-0545","SDTM","Terminology","SD2254","","CG0446","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0546.yaml","HRL-SD-0546","SDTM","Terminology","SD2255","","CG0265","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0547.yaml","HRL-SD-0547","SDTM","Consistency","SD2256","","CG0444","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0548.yaml","HRL-SD-0548","SDTM","Terminology","SD2257","","CG0448","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0549.yaml","HRL-SD-0549","SDTM","Terminology","SD2258","","CG0449","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0550.yaml","HRL-SD-0550","SDTM","Terminology","SD2259","","CG0265","FDAB011","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0551.yaml","HRL-SD-0551","SDTM","Terminology","SD2260","","CG0450","FDAB011","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0552.yaml","HRL-SD-0552","SDTM","Terminology","SD2261","","CG0451","FDAB011","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0553.yaml","HRL-SD-0553","SDTM","Terminology","SD2262","","CG0265","FDAB011","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0554.yaml","HRL-SD-0554","SDTM","Terminology","SD2263","","CG0453","FDAB011","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0555.yaml","HRL-SD-0555","SDTM","Terminology","SD2264","","CG0454","FDAB011","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0556.yaml","HRL-SD-0556","SDTM","Terminology","SD2265","","CG0265","FDAB011","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0557.yaml","HRL-SD-0557","SDTM","Consistency","SD2266","","CG0458","FDAB011","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0558.yaml","HRL-SD-0558","SDTM","Terminology","SD2267","","CG0448","FDAB011","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0559.yaml","HRL-SD-0559","SDTM","Terminology","SD2268","","CG0449","FDAB011","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0560.yaml","HRL-SD-0560","SDTM","Terminology","SD2269","","CG0265","FDAB011","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0561.yaml","HRL-SD-0561","SDTM","Presence","SD2270","","","FDAB038","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0562.yaml","HRL-SD-0562","SDTM","Presence","SD2271","","","FDAB038","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0563.yaml","HRL-SD-0563","SDTM","Presence","SD2272","","","FDAB038","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0564.yaml","HRL-SD-0564","SDTM","Presence","SD2273","","","FDAB011","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0565.yaml","HRL-SD-0565","SDTM","Presence","SD2274","","","FDAB011","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0566.yaml","HRL-SD-0566","SDTM","Presence","SD2275","","","FDAB011","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0567.yaml","HRL-SD-0567","SDTM","Presence","SD2276","","","FDAB011","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0568.yaml","HRL-SD-0568","SDTM","Presence","SD2277","","","FDAB011","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0569.yaml","HRL-SD-0569","SDTM","Presence","SD2278","","","FDAB011","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0570.yaml","HRL-SD-0570","SDTM","Presence","SD2279","","","FDAB011","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0571.yaml","HRL-SD-0571","SDTM","Presence","SD2280","","","FDAB011","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0572.yaml","HRL-SD-0572","SDTM","Presence","SD2281","","","FDAB011","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0573.yaml","HRL-SD-0573","SDTM","Presence","SD2282","","","FDAB011","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0574.yaml","HRL-SD-0574","SDTM","Terminology","SD2283","","","FDAB011","SDTM-IG v3.3",TRUE,FALSE,FALSE
+"HRL-SD-0575.yaml","HRL-SD-0575","SDTM","Terminology","SD2285","","CG0400","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0576.yaml","HRL-SD-0576","SDTM","Presence","SD9999","","CG0320;CG0321;CG0463;CG0464","","SDTM-IG v3.3",TRUE,FALSE,TRUE
+"HRL-SD-0577.yaml","HRL-SD-0577","SDTM","Consistency","SD1123","","","FDAB042","P21 Community SEND-IG 3.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0578.yaml","HRL-SD-0578","SDTM","Consistency","SD1124","","","FDAB042","P21 Community SEND-IG 3.0 (FDA)",TRUE,FALSE,FALSE
+"HRL-SD-0579.yaml","HRL-SD-0579","SDTM","Consistency","SD1273","","CG0342","","P21 Community SDTM-IG 3.3 (FDA)",TRUE,FALSE,TRUE
+"HRL-SD-0580.yaml","HRL-SD-0580","SDTM","Consistency","SD1274","","CG0343","","P21 Community SDTM-IG 3.3 (FDA)",TRUE,FALSE,TRUE
+"HRL-SD-0581.yaml","HRL-SD-0581","SDTM","Consistency","SD1276","","CG0345","","P21 Community SDTM-IG 3.3 (FDA)",TRUE,FALSE,TRUE
+"HRL-SD-0582.yaml","HRL-SD-0582","SDTM","Consistency","SD1277","","CG0346","","P21 Community SDTM-IG 3.3 (FDA)",TRUE,FALSE,TRUE
+"HRL-XP-0001.yaml","HRL-XP-0001","XPT","Structure","XP0001","","CG0401","FDA-XPT-001","SAS V5 Transport Format Specification",TRUE,FALSE,TRUE
+"HRL-XP-0002.yaml","HRL-XP-0002","XPT","Structure","XP0002","","CG0402","FDA-XPT-002","SAS V5 Transport Format Specification",TRUE,FALSE,TRUE
+"HRL-XP-0003.yaml","HRL-XP-0003","XPT","Limit","XP0003","","CG0403","FDA-XPT-003","SAS V5 Transport Format Specification",TRUE,FALSE,TRUE
+"HRL-XP-0004.yaml","HRL-XP-0004","XPT","Structure","XP0004","","CG0404","FDA-XPT-004","SAS V5 Transport Format Specification",TRUE,FALSE,TRUE
+"HRL-XP-0005.yaml","HRL-XP-0005","XPT","Structure","XP0005","","CG0405","FDA-XPT-005","SAS V5 Transport Format Specification",TRUE,FALSE,TRUE

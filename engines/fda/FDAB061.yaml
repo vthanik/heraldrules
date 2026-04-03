@@ -1,18 +1,20 @@
 Core:
   Id: FDAB061
   Status: Reference
-Description: 'When collecting demographic information from clinical trial participants,
+Description: >
+  When collecting demographic information from clinical trial participants,
   more detailed/granular choices may be desired with regards to race and ethnicity
   (ex: clinical trial conducted outside the U.S).  In these scenarios, sponsors should
   consult with the appropriate FDA review division and the FDA guidance document from
-  October 2016 “Collection of Race and Ethnicity Data in Clinical Trials.”'
+  October 2016 Collection of Race and Ethnicity Data in Clinical Trials.
 Check: []
 Outcome:
-  Message: 'When collecting demographic information from clinical trial participants,
+  Message: >
+    When collecting demographic information from clinical trial participants,
     more detailed/granular choices may be desired with regards to race and ethnicity
     (ex: clinical trial conducted outside the U.S).  In these scenarios, sponsors
     should consult with the appropriate FDA review division and the FDA guidance document
-    from October 2016 “Collection of Race and Ethnicity Data in Clinical Trials.”'
+    from October 2016 Collection of Race and Ethnicity Data in Clinical Trials.
 Rule Type: Record Data
 Sensitivity: Record
 Authorities:

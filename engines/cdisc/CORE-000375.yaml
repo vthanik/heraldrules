@@ -5,7 +5,7 @@ Authorities:
         References:
           - Citations:
               - Cited_Guidance: For objective data, the value in QEVAL will be null.
-                  For subjective data (when QORIG=”ASSIGNED”), the value in QEVAL
+                  For subjective data (when QORIG=<U+201D>ASSIGNED<U+201D>), the value in QEVAL
                   should reflect the role of the person or institution assigning the
                   value (e.g., SPONSOR or ADJUDICATION COMMITTEE).
                 Document: IG v3.2
@@ -20,7 +20,7 @@ Authorities:
         References:
           - Citations:
               - Cited_Guidance: For objective data, the value in QEVAL will be null.
-                  For subjective data (when QORIG=”ASSIGNED”), the value in QEVAL
+                  For subjective data (when QORIG=<U+201D>ASSIGNED<U+201D>), the value in QEVAL
                   should reflect the role of the person or institution assigning the
                   value (e.g., SPONSOR or ADJUDICATION COMMITTEE).
                 Document: IG v3.3
@@ -64,5 +64,5 @@ herald:
   catalogs:
     - SDTMIG 3.2
     - SDTMIG 3.3
-  fetched: '2026-04-03T12:15:16Z'
+  fetched: '2026-04-03T12:57:40Z'
 

@@ -75,7 +75,7 @@ Authorities:
               - Cited_Guidance: TAETORD will not be populated for subject Elements
                   that are not planned for the Arm to which the subject was assigned.
                   Thus, TAETORD will not be populated for any Element with an ETCD
-                  value of “UNPLAN”.
+                  value of <U+201C>UNPLAN<U+201D>.
                 Document: TIG 1.0
                 Item: Assumption  5
                 Section: 2.8.10.24
@@ -119,5 +119,5 @@ herald:
   catalogs:
     - SDTMIG 3.2
     - SDTMIG 3.3
-  fetched: '2026-04-03T12:15:16Z'
+  fetched: '2026-04-03T12:57:40Z'
 

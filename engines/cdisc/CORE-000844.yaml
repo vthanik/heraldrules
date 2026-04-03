@@ -20,7 +20,7 @@ Authorities:
         References:
           - Citations:
               - Cited_Guidance: If multiple races are collected, then the value of
-                  RACE should be “MULTIPLE” and the additional information will be
+                  RACE should be <U+201C>MULTIPLE<U+201D> and the additional information will be
                   included in the Supplemental Qualifiers dataset.
                 Document: IG v3.4
                 Item: Assumption 6
@@ -68,6 +68,7 @@ Sensitivity: Record
 herald:
   source: CDISC Library API
   catalogs:
+    - SDTMIG 3.2
     - SDTMIG 3.3
-  fetched: '2026-04-03T12:15:16Z'
+  fetched: '2026-04-03T12:57:40Z'
 

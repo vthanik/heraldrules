@@ -6,7 +6,7 @@ Authorities:
           - Citations:
               - Cited_Guidance: The intent of the domain model is to collect responses
                   to only those criteria that the subject did not meet, and not the
-                  responses to all criteria. 
+                  responses to all criteria.<U+00A0>
                 Document: SDTMIG v3.4
                 Item: Assumption 1
                 Section: 6.3.4
@@ -99,5 +99,5 @@ herald:
   catalogs:
     - SDTMIG 3.2
     - SDTMIG 3.3
-  fetched: '2026-04-03T12:15:16Z'
+  fetched: '2026-04-03T12:57:40Z'
 

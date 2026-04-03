@@ -4,7 +4,7 @@ Authorities:
       - Name: SDTMIG
         References:
           - Citations:
-              - Cited_Guidance: An event with DSCAT = “DISPOSITION EVENT” describes
+              - Cited_Guidance: An event with DSCAT = <U+201C>DISPOSITION EVENT<U+201D> describes
                   either disposition of study participation or of a study treatment.  It
                   describes whether a subject completed study participation or a study
                   treatment, and if not, the reason they did not complete it. Dispositions
@@ -19,7 +19,7 @@ Authorities:
                   a study has only a single treatment. If a study has multiple treatments,
                   then DSSCAT should name the individual treatment.
                 Document: IG v3.4
-                Item: DS – Assumption 2b
+                Item: DS <U+2013> Assumption 2b
                 Section: 6.2.3
             Origin: SDTM and SDTMIG Conformance Rules
             Rule_Identifier:
@@ -45,7 +45,7 @@ Authorities:
       - Name: TIG
         References:
           - Citations:
-              - Cited_Guidance: An event with DSCAT = “DISPOSITION EVENT” describes
+              - Cited_Guidance: An event with DSCAT = <U+201C>DISPOSITION EVENT<U+201D> describes
                   either disposition of study participation or of a product exposure.
                   It describes whether a subject completed study participation or
                   a product exposure and, if not, the reason they did not complete
@@ -101,6 +101,7 @@ Sensitivity: Dataset
 herald:
   source: CDISC Library API
   catalogs:
+    - SDTMIG 3.2
     - SDTMIG 3.3
-  fetched: '2026-04-03T12:15:16Z'
+  fetched: '2026-04-03T12:57:40Z'
 

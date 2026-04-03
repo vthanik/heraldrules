@@ -166,7 +166,7 @@ Authorities:
         References:
           - Citations:
               - Cited_Guidance: For unplanned Elements, ETCD should be populated with
-                  “UNPLAN”, ELEMENT should be left blank, and SEUPDES should be populated
+                  <U+201C>UNPLAN<U+201D>, ELEMENT should be left blank, and SEUPDES should be populated
                   with a description of the unplanned Element.
                 Document: TIG v1.0
                 Item: Assumption 5
@@ -211,5 +211,5 @@ herald:
   catalogs:
     - SDTMIG 3.2
     - SDTMIG 3.3
-  fetched: '2026-04-03T12:15:16Z'
+  fetched: '2026-04-03T12:57:40Z'
 

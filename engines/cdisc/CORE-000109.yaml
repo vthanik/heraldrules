@@ -6,7 +6,7 @@ Authorities:
           - Citations:
               - Cited_Guidance: The start date/time of the Disease Milestone is the
                   critical date/time, and must be populated. If the Disease Milestone
-                  is an event, then the meaning of “start date” for the event may
+                  is an event, then the meaning of <U+201C>start date<U+201D> for the event may
                   need to be defined.
                 Document: SDTMIG v3.4
                 Section: '5.4'
@@ -56,6 +56,7 @@ Sensitivity: Record
 herald:
   source: CDISC Library API
   catalogs:
+    - SDTMIG 3.2
     - SDTMIG 3.3
-  fetched: '2026-04-03T12:15:16Z'
+  fetched: '2026-04-03T12:57:40Z'
 

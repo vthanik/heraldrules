@@ -69,7 +69,7 @@ Authorities:
           - Citations:
               - Cited_Guidance: Apply the domain code to the appropriate variables
                   in the domain by replacing all variable prefixes (shown in the SDTM
-                  as “--“) with the domain code.
+                  as <U+201C>--<U+201C>) with the domain code.
                 Document: TIG 1.0
                 Item: 5a
                 Section: 2.8.3
@@ -151,5 +151,5 @@ herald:
   catalogs:
     - SDTMIG 3.2
     - SDTMIG 3.3
-  fetched: '2026-04-03T12:15:16Z'
+  fetched: '2026-04-03T12:57:40Z'
 

@@ -28,7 +28,7 @@ Authorities:
                   circumstances of a subject's status. The response to the status
                   assessment may trigger collection of additional details but those
                   details are to be stored in appropriate separate domains. For example,
-                  if a subject's Survival Status is “DEAD”, the date of death must
+                  if a subject's Survival Status is <U+201C>DEAD<U+201D>, the date of death must
                   be stored in DM and within a final disposition record in DS. Only
                   the status collection date, the status question and the status response
                   are stored in SS.
@@ -103,5 +103,5 @@ herald:
   catalogs:
     - SDTMIG 3.2
     - SDTMIG 3.3
-  fetched: '2026-04-03T12:15:16Z'
+  fetched: '2026-04-03T12:57:40Z'
 

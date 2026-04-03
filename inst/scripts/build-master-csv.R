@@ -10,10 +10,6 @@
 #   1. CDISC Library API rules (engines/cdisc/)
 #   2. FDA Validator Rules v1.6 (.local/sources/)
 #   3. PMDA Validation Rules v6.0 (.local/sources/)
-#   4. P21 Community SDTM rules (.local/rules/sdtmrules.csv)
-#   5. P21 Community ADaM v1.1 rules (.local/rules/adamv1.1rules.csv)
-#   6. P21 Community ADaM v1.2 rules (.local/rules/adamv1.2_rules.csv)
-#   7. P21 Community Define-XML rules (.local/rules/define_rules.xlsx)
 #
 # Output:
 #   herald-master-rules.csv
@@ -31,9 +27,6 @@ repo_root <- getwd()
 if (grepl("inst/scripts$", repo_root)) {
   repo_root <- normalizePath(file.path(repo_root, "..", ".."))
 }
-
-herald_root <- gsub("herald-rules$", "herald", repo_root)
-local_rules <- file.path(herald_root, ".local", "rules")
 
 if (!requireNamespace("yaml", quietly = TRUE)) stop("yaml required")
 if (!requireNamespace("readxl", quietly = TRUE)) stop("readxl required")
@@ -202,95 +195,9 @@ pmda_df <- rbind(
 cat(sprintf("   %d rules\n", nrow(pmda_df)))
 
 # =============================================================================
-# 4. P21 Community SDTM rules (reference catalog)
+# COMBINE (official sources only — no P21 dependency)
 # =============================================================================
-cat("4. P21 Community SDTM rules...\n")
-sdtm_csv <- file.path(local_rules, "sdtmrules.csv")
-sdtm_p21 <- read.csv(sdtm_csv, stringsAsFactors = FALSE)
-sdtm_p21_rows <- lapply(seq_len(nrow(sdtm_p21)), function(i) {
-  row <- sdtm_p21[i, ]
-  make_row(
-    rule_id = trimws(row$ID), source = "P21 Community Rule Catalog",
-    source_document = "Pinnacle 21 Community SDTM Rules",
-    source_url = "https://bitbucket.org/niconsulting/p21_community/",
-    authority = "P21/CDISC", standard = "SDTM",
-    message = na_to_empty(trimws(row$Message)),
-    description = na_to_empty(trimws(row$Description)),
-    executability = "Reference", status = "Published"
-  )
-})
-sdtm_p21_df <- do.call(rbind, sdtm_p21_rows)
-cat(sprintf("   %d rules\n", nrow(sdtm_p21_df)))
-
-# =============================================================================
-# 5. P21 Community ADaM v1.1 rules
-# =============================================================================
-cat("5. P21 Community ADaM v1.1 rules...\n")
-adam11 <- read.csv(file.path(local_rules, "adamv1.1rules.csv"), stringsAsFactors = FALSE)
-adam11_rows <- lapply(seq_len(nrow(adam11)), function(i) {
-  row <- adam11[i, ]
-  make_row(
-    rule_id = trimws(row$ID), source = "P21 Community Rule Catalog",
-    source_document = "Pinnacle 21 Community ADaM v1.1 Rules",
-    source_url = "https://bitbucket.org/niconsulting/p21_community/",
-    authority = "P21/CDISC", standard = "ADaM", ig_versions = "ADaMIG 1.1",
-    message = na_to_empty(trimws(row$Message)),
-    description = na_to_empty(trimws(row$Description)),
-    executability = "Reference", status = "Published"
-  )
-})
-adam11_df <- do.call(rbind, adam11_rows)
-cat(sprintf("   %d rules\n", nrow(adam11_df)))
-
-# =============================================================================
-# 6. P21 Community ADaM v1.2 rules
-# =============================================================================
-cat("6. P21 Community ADaM v1.2 rules...\n")
-adam12 <- read.csv(file.path(local_rules, "adamv1.2_rules.csv"), stringsAsFactors = FALSE)
-adam12_rows <- lapply(seq_len(nrow(adam12)), function(i) {
-  row <- adam12[i, ]
-  make_row(
-    rule_id = trimws(row$ID), source = "P21 Community Rule Catalog",
-    source_document = "Pinnacle 21 Community ADaM v1.2 / Define-XML Rules",
-    source_url = "https://bitbucket.org/niconsulting/p21_community/",
-    authority = "P21/CDISC", standard = "ADaM", ig_versions = "ADaMIG 1.2",
-    message = na_to_empty(trimws(row$Message)),
-    description = na_to_empty(trimws(row$Description)),
-    executability = "Reference", status = "Published"
-  )
-})
-adam12_df <- do.call(rbind, adam12_rows)
-cat(sprintf("   %d rules\n", nrow(adam12_df)))
-
-# =============================================================================
-# 7. P21 Community Define-XML rules
-# =============================================================================
-cat("7. P21 Community Define-XML rules...\n")
-def_xlsx <- file.path(local_rules, "define_rules.xlsx")
-def_raw <- readxl::read_excel(def_xlsx)
-def_rows <- lapply(seq_len(nrow(def_raw)), function(i) {
-  row <- def_raw[i, ]
-  rid <- trimws(as.character(row[["Rule ID"]] %||% ""))
-  status_val <- na_to_empty(trimws(as.character(row[["Default Status"]] %||% "")))
-  fix_tip <- na_to_empty(trimws(as.character(row[["Fix Tip 1"]] %||% "")))
-  expl <- na_to_empty(trimws(as.character(row[["Explanation 1"]] %||% "")))
-  make_row(
-    rule_id = rid, source = "P21 Community Rule Catalog",
-    source_document = "Pinnacle 21 Community Define-XML Rules",
-    source_url = "https://bitbucket.org/niconsulting/p21_community/",
-    authority = "P21/CDISC", standard = "Define-XML",
-    description = expl, executability = "Reference",
-    status = if (nzchar(status_val)) status_val else "Published",
-    notes = fix_tip
-  )
-})
-def_df <- do.call(rbind, def_rows)
-cat(sprintf("   %d rules\n", nrow(def_df)))
-
-# =============================================================================
-# COMBINE
-# =============================================================================
-master <- rbind(cdisc_df, fda_df, pmda_df, sdtm_p21_df, adam11_df, adam12_df, def_df)
+master <- rbind(cdisc_df, fda_df, pmda_df)
 
 cat(sprintf("\n=== MASTER CSV ===\n"))
 cat(sprintf("Total: %d rules\n", nrow(master)))

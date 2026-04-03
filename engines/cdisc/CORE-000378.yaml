@@ -7,8 +7,8 @@ Authorities:
               - Cited_Guidance: 'IG v3.2[5][Specification: RFENDTC][Required for all
                   randomized subjects; null for screen failures or unassigned subjects.]|IG
                   v3.2[5][Specification: ACTARM][Randomized subjects who were not
-                  treated will be given a value of “Not Treated”. Values should be
-                  “Screen Failure” for screen failures and “Not Assigned” for subjects
+                  treated will be given a value of <U+201C>Not Treated<U+201D>. Values should be
+                  <U+201C>Screen Failure<U+201D> for screen failures and <U+201C>Not Assigned<U+201D> for subjects
                   not assigned to treatment.]|IG v3.2[5][Assumption 10][This definition
                   applies for most interventional studies, when the start of treatment
                   is the natural and preferred starting point for study day variables
@@ -63,5 +63,6 @@ herald:
   source: CDISC Library API
   catalogs:
     - SDTMIG 3.2
-  fetched: '2026-04-03T12:15:16Z'
+    - SDTMIG 3.3
+  fetched: '2026-04-03T12:57:40Z'
 

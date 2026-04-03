@@ -5,7 +5,7 @@ Authorities:
         References:
           - Citations:
               - Cited_Guidance: The combined set of values for the first six columns
-                  (STUDYID…QNAM) should be unique for every record. That is, there
+                  (STUDYID<U+2026>QNAM) should be unique for every record. That is, there
                   should not be multiple records in a SUPP-- dataset for the same
                   QNAM value, as it relates to IDVAR/IDVARVAL for a USUBJID in a domain.
                 Document: IG v3.4
@@ -112,5 +112,5 @@ herald:
   catalogs:
     - SDTMIG 3.2
     - SDTMIG 3.3
-  fetched: '2026-04-03T12:15:16Z'
+  fetched: '2026-04-03T12:57:40Z'
 

@@ -5,9 +5,9 @@ Authorities:
         References:
           - Citations:
               - Cited_Guidance: Description of actual Arm. When an Arm is not planned
-                  (not in Trial Arms), ACTARM will be “Unplanned Treatment”. Randomized
-                  subjects who were not treated will be given a value of “Not Treated”.
-                  Values should be “Screen Failure” for screen failures and “Not Assigned”
+                  (not in Trial Arms), ACTARM will be <U+201C>Unplanned Treatment<U+201D>. Randomized
+                  subjects who were not treated will be given a value of <U+201C>Not Treated<U+201D>.
+                  Values should be <U+201C>Screen Failure<U+201D> for screen failures and <U+201C>Not Assigned<U+201D>
                   for subjects not assigned to treatment. Restricted to values in
                   Trial Arms in all other cases.
                 Document: IG v3.2
@@ -23,9 +23,9 @@ Authorities:
         References:
           - Citations:
               - Cited_Guidance: Description of actual Arm. When an Arm is not planned
-                  (not in Trial Arms), ACTARM will be “Unplanned Treatment”. Randomized
-                  subjects who were not treated will be given a value of “Not Treated”.
-                  Values should be “Screen Failure” for screen failures and “Not Assigned”
+                  (not in Trial Arms), ACTARM will be <U+201C>Unplanned Treatment<U+201D>. Randomized
+                  subjects who were not treated will be given a value of <U+201C>Not Treated<U+201D>.
+                  Values should be <U+201C>Screen Failure<U+201D> for screen failures and <U+201C>Not Assigned<U+201D>
                   for subjects not assigned to treatment. Restricted to values in
                   Trial Arms in all other cases.
                 Document: IG v3.2
@@ -83,5 +83,6 @@ herald:
   source: CDISC Library API
   catalogs:
     - SDTMIG 3.2
-  fetched: '2026-04-03T12:15:16Z'
+    - SDTMIG 3.3
+  fetched: '2026-04-03T12:57:40Z'
 

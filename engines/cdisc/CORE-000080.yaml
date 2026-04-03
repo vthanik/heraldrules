@@ -6,7 +6,7 @@ Authorities:
           - Citations:
               - Cited_Guidance: The description of a time point that acts as a fixed
                   reference for a series of planned time points, used for study data
-                  tabulation. Description of the fixed reference point referred to
+                  tabulation.<U+00A0>Description of the fixed reference point referred to
                   by --ELTM, --TPTNUM, --TPT, --STINT, and --ENINT.
                 Document: Model v2.0
                 Item: --TPTREF
@@ -103,5 +103,5 @@ herald:
   catalogs:
     - SDTMIG 3.2
     - SDTMIG 3.3
-  fetched: '2026-04-03T12:15:16Z'
+  fetched: '2026-04-03T12:57:40Z'
 

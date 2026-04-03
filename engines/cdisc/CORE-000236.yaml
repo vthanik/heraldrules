@@ -83,7 +83,7 @@ Authorities:
       - Name: TIG
         References:
           - Citations:
-              - Cited_Guidance: Custom domains will be used to represent logically
+              - Cited_Guidance: Custom domains will be used to represent<U+00A0>logically
                   related observations based on the scientific subject matter of the
                   data and will not be created based on:The timing of collected observations
                   (e.g., all vital signs measurements will be represented in domain
@@ -136,5 +136,5 @@ herald:
   catalogs:
     - SDTMIG 3.2
     - SDTMIG 3.3
-  fetched: '2026-04-03T12:15:16Z'
+  fetched: '2026-04-03T12:57:40Z'
 

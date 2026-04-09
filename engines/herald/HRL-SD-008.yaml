@@ -7,7 +7,7 @@ sensitivity: Dataset
 executability: Fully Executable
 description: Per FDA Study Data Technical Conformance Guide, an additional custom
   domain called LC structured identically to LB should contain conventional units
-  in <U+2013>STRESU for the results in conventional units in the <U+2013>STRESC and <U+2013>STRESN variables.
+  in --STRESU for the results in conventional units in the --STRESC and --STRESN variables.
 scope:
   classes: []
   domains: []

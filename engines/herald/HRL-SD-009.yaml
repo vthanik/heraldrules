@@ -5,7 +5,7 @@ standard: SDTM
 category: Presence
 sensitivity: Record
 executability: Fully Executable
-description: Study Start Date must be populated in TS dataset. TSPARMCD=<U+201D>SSTDTC<U+201D>,
+description: Study Start Date must be populated in TS dataset. TSPARMCD="SSTDTC",
   TSVAL != null.
 scope:
   classes: []

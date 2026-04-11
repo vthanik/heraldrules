@@ -1,26 +1,24 @@
-Package: heraldrules
-Type: Package
-Title: Validation Rules Data for the 'herald' Package
-Version: 0.1.0
-Authors@R: person("Vignesh", role = c("aut", "cre"),
-    email = "vthanik@users.noreply.github.com")
-Description: Provides pre-compiled validation rules, submission profile
-    configurations, and CDISC controlled terminology for use with the
-    'herald' clinical dataset submission package. Includes 3,593 rules
-    covering CDISC conformance (CDISC Library), FDA Business and Validator
-    rules, PMDA rules, NCI EVS controlled terminology, and Herald-original
-    gap-fill rules. Bundling rules as a CRAN data package ensures fully
-    offline operation, version-pinned reproducibility, and compliance with
-    air-gapped pharmaceutical validation environments.
-License: MIT + file LICENSE
-Encoding: UTF-8
-LazyData: true
-LazyDataCompression: xz
-Depends: R (>= 4.1.0)
-Suggests:
-    herald,
-    testthat (>= 3.0.0)
+Title: Herald Validation Rule Catalog
+Version: 2026.2.2
+Maintainer: Vignesh <vthanik@users.noreply.github.com>
+License: MIT
 URL: https://github.com/vthanik/heraldrules
-BugReports: https://github.com/vthanik/heraldrules/issues
-RoxygenNote: 7.3.3
-Config/testthat/edition: 3
+
+Description:
+  Source-of-truth rule catalog for the herald R package.
+  Contains 3,593 regulatory validation rules (YAML/JSON) covering
+  CDISC conformance, FDA Business and Validator rules, PMDA rules,
+  NCI EVS controlled terminology, and Herald-original gap-fill rules.
+
+  This is NOT an R package. It is a versioned rule catalog:
+    1. Rules are authored and validated here (see tests/)
+    2. Quarterly refreshes run via inst/scripts/refresh-all.R
+    3. At herald release time, copy into herald/inst/rules/:
+         cp -r engines configs ct manifest.json ../herald/inst/rules/
+
+Engines:
+  cdisc/     450 rules  CDISC Library conformance rules
+  fda/       660 rules  FDA Business Rules v1.5 + Validator Rules v1.6
+  pmda/    1,041 rules  PMDA Validation Rules v6.0
+  ct/      1,210 rules  Per-codelist controlled terminology rules
+  herald/    232 rules  Herald gap-fill and hardcoded spec checks

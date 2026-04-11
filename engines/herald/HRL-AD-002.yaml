@@ -23,3 +23,24 @@ provenance:
   authority: Herald
   p21_reference: AD0003-NI
 
+tests:
+  - name: "shared variable has matching formats in ADaM and SDTM"
+    type: positive
+    skip: true
+    datasets:
+      ADAE:
+        variables: [STUDYID, USUBJID]
+        records:
+          - ["S1", "S1-001"]
+    expected_findings: 0
+
+  - name: "shared variable has mismatched format between ADaM and SDTM"
+    type: negative
+    skip: true
+    datasets:
+      ADAE:
+        variables: [STUDYID, USUBJID]
+        records:
+          - ["S1", "S1-001"]
+    expected_findings: 1
+

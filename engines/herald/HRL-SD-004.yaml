@@ -26,3 +26,24 @@ provenance:
   authority: Herald
   p21_reference: SD1478
 
+tests:
+  - name: "subject has at least one LOBXFL=Y record in the domain"
+    type: positive
+    skip: true
+    datasets:
+      LB:
+        variables: [STUDYID, USUBJID, LBLOBXFL]
+        records:
+          - ["S1", "S1-001", "Y"]
+    expected_findings: 0
+
+  - name: "subject has no LOBXFL=Y record in the domain"
+    type: negative
+    skip: true
+    datasets:
+      LB:
+        variables: [STUDYID, USUBJID, LBLOBXFL]
+        records:
+          - ["S1", "S1-001", ""]
+    expected_findings: 1
+

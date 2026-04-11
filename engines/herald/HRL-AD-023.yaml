@@ -29,3 +29,22 @@ provenance:
   source_doc: PMDA Validation Rules v6.0
   authority: Herald
   p21_reference: AD0168
+
+tests:
+  - name: "ABLFL=Y and BNRIND equals ANRIND"
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, ABLFL, BNRIND, ANRIND]
+        records:
+          - ["S1", "S1-001", "Y", "NORMAL", "NORMAL"]
+    expected_findings: 0
+
+  - name: "ABLFL=Y but BNRIND does not equal ANRIND"
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, ABLFL, BNRIND, ANRIND]
+        records:
+          - ["S1", "S1-001", "Y", "HIGH", "NORMAL"]
+    expected_findings: 1

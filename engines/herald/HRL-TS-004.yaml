@@ -24,3 +24,22 @@ provenance:
   authority: Herald
   p21_reference: TS0053
 
+tests:
+  - name: "AESEV is populated providing at least one of the required severity fields"
+    type: positive
+    datasets:
+      AE:
+        variables: [STUDYID, USUBJID, AESEV, AETOXGR]
+        records:
+          - ["S1", "S1-001", "MILD", ""]
+    expected_findings: 0
+
+  - name: "both AESEV and AETOXGR are empty"
+    type: negative
+    datasets:
+      AE:
+        variables: [STUDYID, USUBJID, AESEV, AETOXGR]
+        records:
+          - ["S1", "S1-001", "", ""]
+    expected_findings: 1
+

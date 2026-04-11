@@ -23,3 +23,22 @@ provenance:
   authority: Herald
   p21_reference: SD2247B
 
+tests:
+  - name: "TSVAL populated when TSPARMCD equals SSTDTC"
+    type: positive
+    datasets:
+      TS:
+        variables: [STUDYID, TSPARMCD, TSVAL]
+        records:
+          - ["S1", "SSTDTC", "2024-01-01"]
+    expected_findings: 0
+
+  - name: "TSVAL empty when TSPARMCD equals SSTDTC"
+    type: negative
+    datasets:
+      TS:
+        variables: [STUDYID, TSPARMCD, TSVAL]
+        records:
+          - ["S1", "SSTDTC", ""]
+    expected_findings: 1
+

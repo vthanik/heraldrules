@@ -24,3 +24,22 @@ provenance:
   authority: Herald
   p21_reference: AD0017-NI
 
+tests:
+  - name: "character value within 200-character limit"
+    type: positive
+    datasets:
+      ADAE:
+        variables: [STUDYID]
+        records:
+          - ["S1"]
+    expected_findings: 0
+
+  - name: "character value exceeds 200-character limit"
+    type: negative
+    datasets:
+      ADAE:
+        variables: [STUDYID]
+        records:
+          - ["xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"]
+    expected_findings: 1
+

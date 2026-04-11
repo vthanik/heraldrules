@@ -32,3 +32,24 @@ provenance:
   source_doc: PMDA Validation Rules v6.0
   authority: Herald
   p21_reference: AD0154
+
+tests:
+  - name: "only one ABLFL=Y record per USUBJID, PARAMCD, BASETYPE combination"
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, BASETYPE, ABLFL]
+        records:
+          - ["S1", "S1-001", "AVAL", "LAST", "Y"]
+          - ["S1", "S1-001", "AVAL", "LAST", ""]
+    expected_findings: 0
+
+  - name: "multiple ABLFL=Y records for the same USUBJID, PARAMCD, BASETYPE"
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, BASETYPE, ABLFL]
+        records:
+          - ["S1", "S1-001", "AVAL", "LAST", "Y"]
+          - ["S1", "S1-001", "AVAL", "LAST", "Y"]
+    expected_findings: 1

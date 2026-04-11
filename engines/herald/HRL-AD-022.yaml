@@ -28,3 +28,24 @@ provenance:
   source_doc: PMDA Validation Rules v6.0
   authority: Herald
   p21_reference: AD0143
+
+tests:
+  - name: "PARAMCD follows valid naming pattern (uppercase letters digits underscores, 8 chars)"
+    type: positive
+    skip: true
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD]
+        records:
+          - ["S1", "S1-001", "AVAL"]
+    expected_findings: 0
+
+  - name: "PARAMCD contains lowercase letters violating naming pattern"
+    type: negative
+    skip: true
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD]
+        records:
+          - ["S1", "S1-001", "aval"]
+    expected_findings: 1

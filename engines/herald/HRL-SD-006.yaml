@@ -25,3 +25,25 @@ provenance:
   authority: Herald
   p21_reference: SD1483
 
+tests:
+  - name: "key variable combination is unique across all records"
+    type: positive
+    skip: true
+    datasets:
+      SQAPCE:
+        variables: [STUDYID, APID, IDVAR, IDVARVAL, QNAM]
+        records:
+          - ["S1", "AP001", "CESEQ", "1", "CEEVAL"]
+    expected_findings: 0
+
+  - name: "duplicate key variable combination exists across records"
+    type: negative
+    skip: true
+    datasets:
+      SQAPCE:
+        variables: [STUDYID, APID, IDVAR, IDVARVAL, QNAM]
+        records:
+          - ["S1", "AP001", "CESEQ", "1", "CEEVAL"]
+          - ["S1", "AP001", "CESEQ", "1", "CEEVAL"]
+    expected_findings: 1
+

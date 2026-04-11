@@ -24,3 +24,22 @@ provenance:
   authority: Herald
   p21_reference: TS0057
 
+tests:
+  - name: "LBSTNRHI populated when LBSTRESN is populated"
+    type: positive
+    datasets:
+      LB:
+        variables: [STUDYID, USUBJID, LBSTRESN, LBSTNRHI]
+        records:
+          - ["S1", "S1-001", "5.2", "10.0"]
+    expected_findings: 0
+
+  - name: "LBSTRESN populated but LBSTNRHI is empty"
+    type: negative
+    datasets:
+      LB:
+        variables: [STUDYID, USUBJID, LBSTRESN, LBSTNRHI]
+        records:
+          - ["S1", "S1-001", "5.2", ""]
+    expected_findings: 1
+

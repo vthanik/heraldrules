@@ -24,3 +24,22 @@ provenance:
   authority: Herald
   p21_reference: AD0794
 
+tests:
+  - name: "ASTDTM is less than or equal to AENDTM"
+    type: positive
+    datasets:
+      ADAE:
+        variables: [STUDYID, USUBJID, ASTDTM, AENDTM]
+        records:
+          - ["S1", "S1-001", "2024-01-01T08:00", "2024-01-10T18:00"]
+    expected_findings: 0
+
+  - name: "ASTDTM is greater than AENDTM"
+    type: negative
+    datasets:
+      ADAE:
+        variables: [STUDYID, USUBJID, ASTDTM, AENDTM]
+        records:
+          - ["S1", "S1-001", "2024-01-10T18:00", "2024-01-01T08:00"]
+    expected_findings: 1
+

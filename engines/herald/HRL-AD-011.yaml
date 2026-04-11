@@ -23,3 +23,24 @@ provenance:
   authority: Herald
   p21_reference: AD0185
 
+tests:
+  - name: "PARCATyN variable uses integer replacing y (e.g. PARCAT1N)"
+    type: positive
+    skip: true
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARCAT1N]
+        records:
+          - ["S1", "S1-001", 1]
+    expected_findings: 0
+
+  - name: "PARCATyN variable name uses literal y instead of integer"
+    type: negative
+    skip: true
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARCATyN]
+        records:
+          - ["S1", "S1-001", 1]
+    expected_findings: 1
+

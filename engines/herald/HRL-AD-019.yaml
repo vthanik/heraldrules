@@ -26,3 +26,26 @@ provenance:
   authority: Herald
   p21_reference: AD0895
 
+tests:
+  - name: "CATy values are consistent within subject and PARAMCD"
+    type: positive
+    skip: true
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, AVALCAT1]
+        records:
+          - ["S1", "S1-001", "ALB", "LOW"]
+          - ["S1", "S1-001", "ALB", "LOW"]
+    expected_findings: 0
+
+  - name: "CATy values are inconsistent across records within subject and PARAMCD"
+    type: negative
+    skip: true
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, AVALCAT1]
+        records:
+          - ["S1", "S1-001", "ALB", "LOW"]
+          - ["S1", "S1-001", "ALB", "HIGH"]
+    expected_findings: 1
+

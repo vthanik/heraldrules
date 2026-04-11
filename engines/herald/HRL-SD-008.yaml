@@ -24,3 +24,28 @@ provenance:
   authority: Herald
   p21_reference: SD1485
 
+tests:
+  - name: "LC dataset present when LB dataset is present"
+    type: positive
+    skip: true
+    datasets:
+      LB:
+        variables: [STUDYID, USUBJID]
+        records:
+          - ["S1", "S1-001"]
+      LC:
+        variables: [STUDYID, USUBJID]
+        records:
+          - ["S1", "S1-001"]
+    expected_findings: 0
+
+  - name: "LB dataset present but LC dataset is missing"
+    type: negative
+    skip: true
+    datasets:
+      LB:
+        variables: [STUDYID, USUBJID]
+        records:
+          - ["S1", "S1-001"]
+    expected_findings: 1
+

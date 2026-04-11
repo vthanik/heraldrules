@@ -27,3 +27,22 @@ provenance:
   source_doc: PMDA Validation Rules v6.0 (March 2025)
   authority: Herald
   p21_reference: AD0225
+
+tests:
+  - name: "PCHG correctly computed as (AVAL-BASE)/BASE*100 within tolerance"
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, AVAL, BASE, PCHG]
+        records:
+          - ["S1", "S1-001", 12, 10, 20.0]
+    expected_findings: 0
+
+  - name: "PCHG deviates from formula by more than tolerance"
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, AVAL, BASE, PCHG]
+        records:
+          - ["S1", "S1-001", 12, 10, 25.0]
+    expected_findings: 1

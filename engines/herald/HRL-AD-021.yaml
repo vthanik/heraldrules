@@ -25,3 +25,32 @@ provenance:
   authority: Herald
   p21_reference: AD2001
 
+tests:
+  - name: "USUBJID from DM exists in ADSL"
+    type: positive
+    skip: true
+    datasets:
+      DM:
+        variables: [STUDYID, USUBJID]
+        records:
+          - ["S1", "S1-001"]
+      ADSL:
+        variables: [STUDYID, USUBJID]
+        records:
+          - ["S1", "S1-001"]
+    expected_findings: 0
+
+  - name: "USUBJID from DM does not exist in ADSL"
+    type: negative
+    skip: true
+    datasets:
+      DM:
+        variables: [STUDYID, USUBJID]
+        records:
+          - ["S1", "S1-999"]
+      ADSL:
+        variables: [STUDYID, USUBJID]
+        records:
+          - ["S1", "S1-001"]
+    expected_findings: 1
+

@@ -465,7 +465,10 @@
     "HRL-LEN-001",
     "HRL-TYP-001",
     "HRL-VAR-001",
-    "HRL-VAR-002"
+    "HRL-VAR-002",
+    "HRL-AD-022",
+    "HRL-AD-023",
+    "HRL-AD-024"
   ],
   "severity_overrides": []
 }

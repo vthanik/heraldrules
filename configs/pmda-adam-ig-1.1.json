@@ -514,7 +514,10 @@
     "PMDA-NAM-002",
     "PMDA-XPT-001",
     "PMDA-XPT-002",
-    "PMDA-XPT-003"
+    "PMDA-XPT-003",
+    "HRL-AD-022",
+    "HRL-AD-023",
+    "HRL-AD-024"
   ],
   "severity_overrides": []
 }

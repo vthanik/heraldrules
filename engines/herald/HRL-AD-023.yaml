@@ -1,0 +1,31 @@
+id: HRL-AD-023
+version: 1
+status: Published
+standard: ADaM
+category: Data Quality
+sensitivity: Record
+executability: Fully Executable
+description: >
+  When a record is flagged as the baseline (ABLFL = "Y"), the baseline normal
+  range indicator (BNRIND) must equal the analysis normal range indicator
+  (ANRIND). Both variables must be non-missing for the check to apply.
+scope:
+  classes: []
+  domains:
+    - BDS
+    - ADNCA
+check:
+  all:
+    - name: ABLFL
+      operator: not_equal_to
+      value: "Y"
+    - name: BNRIND
+      operator: not_equal_to_variable
+      within: ANRIND
+outcome:
+  message: "ABLFL = Y, but BNRIND != ANRIND"
+  severity: Error
+provenance:
+  source_doc: PMDA Validation Rules v6.0
+  authority: Herald
+  p21_reference: AD0168

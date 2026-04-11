@@ -1,0 +1,30 @@
+id: HRL-AD-022
+version: 1
+status: Published
+standard: ADaM
+category: Data Quality
+sensitivity: Record
+executability: Fully Executable
+description: >
+  PARAMCD must be no more than 8 characters, start with an uppercase letter
+  or underscore, and contain only uppercase letters, digits, and underscores.
+scope:
+  classes: []
+  domains:
+    - BDS
+    - ADNCA
+    - ADSL
+check:
+  all:
+    - name: PARAMCD
+      operator: empty
+    - name: PARAMCD
+      operator: matches_regex
+      value: "^[A-Z_][A-Z0-9_]{0,7}$"
+outcome:
+  message: "Illegal PARAMCD value"
+  severity: Error
+provenance:
+  source_doc: PMDA Validation Rules v6.0
+  authority: Herald
+  p21_reference: AD0143

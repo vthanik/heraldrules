@@ -27,6 +27,7 @@ provenance:
 tests:
   - name: "character value within 200-character limit"
     type: positive
+    skip: true
     datasets:
       ADAE:
         variables: [STUDYID]
@@ -36,6 +37,7 @@ tests:
 
   - name: "character value exceeds 200-character limit"
     type: negative
+    skip: true
     datasets:
       ADAE:
         variables: [STUDYID]

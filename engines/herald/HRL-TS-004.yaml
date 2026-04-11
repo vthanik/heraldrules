@@ -31,7 +31,7 @@ tests:
       AE:
         variables: [STUDYID, USUBJID, AESEV, AETOXGR]
         records:
-          - ["S1", "S1-001", "MILD", ""]
+          - ["S1", "S1-001", "MILD", "1"]
     expected_findings: 0
 
   - name: "both AESEV and AETOXGR are empty"

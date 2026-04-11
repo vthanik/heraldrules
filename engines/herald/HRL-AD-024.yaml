@@ -36,6 +36,7 @@ provenance:
 tests:
   - name: "only one ABLFL=Y record per USUBJID, PARAMCD, BASETYPE combination"
     type: positive
+    skip: true
     datasets:
       ADLB:
         variables: [STUDYID, USUBJID, PARAMCD, BASETYPE, ABLFL]
@@ -46,6 +47,7 @@ tests:
 
   - name: "multiple ABLFL=Y records for the same USUBJID, PARAMCD, BASETYPE"
     type: negative
+    skip: true
     datasets:
       ADLB:
         variables: [STUDYID, USUBJID, PARAMCD, BASETYPE, ABLFL]

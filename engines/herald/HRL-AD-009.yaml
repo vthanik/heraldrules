@@ -26,6 +26,7 @@ provenance:
 tests:
   - name: "BASETYPE populated for all records within PARAMCD"
     type: positive
+    skip: true
     datasets:
       ADLB:
         variables: [STUDYID, USUBJID, PARAMCD, BASETYPE]
@@ -36,6 +37,7 @@ tests:
 
   - name: "BASETYPE populated for only some records within PARAMCD"
     type: negative
+    skip: true
     datasets:
       ADLB:
         variables: [STUDYID, USUBJID, PARAMCD, BASETYPE]

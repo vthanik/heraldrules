@@ -1,0 +1,98 @@
+# Allowed operators for herald rule check: blocks
+# One operator per line. Lines starting with # are comments.
+# Used by validate-herald-rules.R, validate-define-rules.R, validate-test-data.R
+
+# Existence / emptiness
+empty
+non_empty
+not_empty
+exists
+not_exists
+non_empty_when
+
+# Equality
+equal_to
+not_equal_to
+equal_to_variable
+not_equal_to_variable
+column_equal_to
+column_not_equal_to
+
+# Comparison (numeric / string)
+less_than
+less_than_or_equal_to
+greater_than
+greater_than_or_equal_to
+less_than_variable
+less_than_or_equal_to_variable
+greater_than_variable
+greater_than_or_equal_to_variable
+
+# String
+contains
+not_contains
+starts_with
+ends_with
+matches_regex
+not_matches_regex
+is_uppercase
+is_lowercase
+max_length
+min_length
+length_less_than_or_equal_to
+length_greater_than
+shorter_than
+
+# Set / codelist
+in
+not_in
+in_codelist
+not_in_codelist
+is_subset_of
+is_superset_of
+is_not_contained_by
+
+# Type checks
+is_integer
+is_numeric
+is_date
+is_datetime
+is_complete_date
+is_iso_8601
+is_valid_url
+
+# Uniqueness / sequence
+is_unique
+not_unique
+unique
+
+# Row / dataset-level
+row_count_greater_than
+row_count_equal_to
+dataset_exists
+dataset_exists_when
+exists_in_dataset
+
+# Cross-dataset / define references
+exists_in_define
+not_exists_in_define
+__exists
+__not_exists
+has_variable
+not_has_variable
+
+# Herald-specific computed operators
+label_match
+format_match
+length_match
+type_match
+valid_naming_pattern
+is_valid_domain_code
+has_flag_record
+valid_reference
+consistent_population
+consistent_within_subject
+sequential_present
+within_tolerance_of_formula
+present_on_multiple_rows_within
+compound_key

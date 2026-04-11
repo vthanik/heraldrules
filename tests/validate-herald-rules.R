@@ -218,10 +218,37 @@ for (fname in names(rules)) {
   if (ex == "Executable" && length(chk) == 0L) {
     warn(sprintf("%s: Executable rule has empty check: block", fname))
   }
+
+  # Enum: status
+  valid_status <- c("Published", "Reference", "Draft", "Deprecated")
+  st <- r[["status"]] %||% ""
+  if (nzchar(st) && !st %in% valid_status) {
+    fail(sprintf("%s: invalid status '%s' (allowed: %s)", fname, st,
+                 paste(valid_status, collapse = ", ")))
+    exec_errors <- exec_errors + 1L
+  }
+
+  # Enum: sensitivity
+  valid_sens <- c("Study", "Dataset", "Record")
+  sn <- r[["sensitivity"]] %||% ""
+  if (nzchar(sn) && !sn %in% valid_sens) {
+    fail(sprintf("%s: invalid sensitivity '%s' (allowed: %s)", fname, sn,
+                 paste(valid_sens, collapse = ", ")))
+    exec_errors <- exec_errors + 1L
+  }
+
+  # Enum: outcome.severity
+  valid_sev <- c("Error", "Warning")
+  sv <- (r[["outcome"]] %||% list())[["severity"]] %||% ""
+  if (nzchar(sv) && !sv %in% valid_sev) {
+    fail(sprintf("%s: invalid outcome.severity '%s' (allowed: %s)", fname, sv,
+                 paste(valid_sev, collapse = ", ")))
+    exec_errors <- exec_errors + 1L
+  }
 }
 
 if (exec_errors == 0L) {
-  pass("All executability values valid and consistent with check: blocks")
+  pass("All executability, status, sensitivity, severity values valid")
 }
 
 # ---------------------------------------------------------------------------
@@ -229,22 +256,11 @@ if (exec_errors == 0L) {
 # ---------------------------------------------------------------------------
 cat("\n[5/7] Checking operator names in check: blocks...\n")
 
-# Known herald operators (core set)
-known_operators <- c(
-  "empty", "non_empty", "equal_to", "not_equal_to",
-  "less_than", "less_than_or_equal_to", "greater_than", "greater_than_or_equal_to",
-  "contains", "not_contains", "starts_with", "ends_with",
-  "matches_regex", "not_matches_regex",
-  "is_complete_date", "is_iso_8601", "is_numeric", "is_integer",
-  "unique", "not_unique", "exists_in", "not_exists_in",
-  "column_equal_to", "column_not_equal_to",
-  "is_valid_url", "min_length", "max_length",
-  "length_less_than_or_equal_to", "length_greater_than",
-  "is_subset_of", "is_superset_of",
-  "row_count_greater_than", "row_count_equal_to",
-  "exists_in_define", "not_exists_in_define",
-  "__exists", "__not_exists"
-)
+# Load allowed operators from shared file
+ops_file <- file.path(repo_root, "tests", "allowed-operators.txt")
+if (!file.exists(ops_file)) stop("tests/allowed-operators.txt not found")
+known_operators <- grep("^[^#]", readLines(ops_file, warn = FALSE), value = TRUE)
+known_operators <- trimws(known_operators[nzchar(trimws(known_operators))])
 
 extract_operators <- function(chk) {
   ops <- character()

@@ -69,18 +69,18 @@ if (errors == 0L) pass(sprintf("All %d rules have required fields", length(rules
 
 # --- 2. Sequential IDs -------------------------------------------------------
 cat("\n[2/10] ID sequence...\n")
-expected_ids <- sprintf("DD%04d", seq_len(85))
-actual_ids <- sort(names(rules))
-missing_ids <- setdiff(expected_ids, actual_ids)
-extra_ids <- setdiff(actual_ids, expected_ids)
+actual_ids   <- sort(names(rules))
+max_num      <- max(as.integer(sub("^DD0*", "", actual_ids)), na.rm = TRUE)
+expected_ids <- sprintf("DD%04d", seq_len(max_num))
+missing_ids  <- setdiff(expected_ids, actual_ids)
 
 if (length(missing_ids) > 0L) {
-  fail(sprintf("Missing IDs: %s", paste(head(missing_ids, 5), collapse = ", ")))
+  fail(sprintf("Missing IDs (gaps in sequence): %s",
+               paste(head(missing_ids, 5), collapse = ", ")))
 }
-if (length(extra_ids) > 0L) {
-  warn(sprintf("Extra IDs beyond DD0085: %s", paste(head(extra_ids, 5), collapse = ", ")))
+if (length(missing_ids) == 0L) {
+  pass(sprintf("DD0001--DD%04d all present, no gaps", max_num))
 }
-if (length(missing_ids) == 0L) pass("DD0001--DD0085 all present, no gaps")
 
 # --- 3. Valid enumerated values -----------------------------------------------
 cat("\n[3/10] Enumerated value checks...\n")
@@ -88,7 +88,8 @@ valid_categories <- c(
   "Study Metadata", "Dataset Definition", "Standards Reference",
   "Variable Definition", "Origin Metadata", "Cross-Reference",
   "Value-Level Metadata", "Codelist Definition", "Method Definition",
-  "Comment Definition", "Orphan Detection", "ARM Metadata"
+  "Comment Definition", "Orphan Detection", "ARM Metadata",
+  "Conformance"
 )
 valid_sensitivity <- c("Study", "Dataset", "Record")
 valid_severity <- c("Error", "Warning")
@@ -114,29 +115,25 @@ pass("Category, sensitivity, severity, status values valid")
 
 # --- 4. Check operators -------------------------------------------------------
 cat("\n[4/10] Check operator validation...\n")
-valid_operators <- c(
-  "empty", "not_empty", "exists", "not_exists",
-  "equal_to", "not_equal_to", "less_than", "less_than_or_equal_to",
-  "greater_than", "greater_than_or_equal_to",
-  "matches_regex", "not_matches_regex", "starts_with", "ends_with",
-  "contains", "not_contains", "is_uppercase", "is_lowercase",
-  "max_length", "min_length",
-  "in", "not_in", "is_unique", "not_unique",
-  "is_integer", "is_numeric", "is_date", "is_datetime",
-  "equal_to_variable", "less_than_variable", "greater_than_variable",
-  "less_than_or_equal_to_variable", "greater_than_or_equal_to_variable",
-  "has_variable", "not_has_variable", "row_count_greater_than", "row_count_equal_to",
-  "in_codelist", "not_in_codelist",
-  "non_empty_when"
-)
+# Load allowed operators from shared file
+ops_file <- file.path(repo_root, "tests", "allowed-operators.txt")
+if (!file.exists(ops_file)) stop("tests/allowed-operators.txt not found")
+valid_operators <- grep("^[^#]", readLines(ops_file, warn = FALSE), value = TRUE)
+valid_operators <- trimws(valid_operators[nzchar(trimws(valid_operators))])
 
 extract_operators <- function(check) {
   ops <- c()
   if (is.list(check)) {
     for (nm in names(check)) {
-      if (nm %in% c("all", "any")) {
-        for (item in check[[nm]]) {
-          ops <- c(ops, extract_operators(item))
+      if (nm %in% c("all", "any", "not")) {
+        sub <- check[[nm]]
+        # "not" may be a single item or a list
+        if (is.list(sub) && !is.null(names(sub))) {
+          ops <- c(ops, extract_operators(sub))
+        } else if (is.list(sub)) {
+          for (item in sub) {
+            ops <- c(ops, extract_operators(item))
+          }
         }
       }
     }

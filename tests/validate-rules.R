@@ -69,23 +69,28 @@ for (eng in engines) {
 
 if (parse_errors == 0L) pass("All YAML files parse successfully")
 
-# --- 2. Required fields ------------------------------------------------------
+# --- 2. Required fields (all files) ------------------------------------------
 cat("\n[2/6] Checking required fields...\n")
-# Spot check first file of each engine
+field_fail_count <- 0L
 for (eng in engines) {
   d <- file.path(repo_root, "engines", eng)
-  files <- list.files(d, pattern = "\\.yaml$", full.names = TRUE)
-  if (length(files) > 0L) {
-    r <- tryCatch(yaml::read_yaml(files[1]), error = function(e) NULL)
+  files <- list.files(d, pattern = "\\.yaml$", full.names = TRUE, recursive = TRUE)
+  for (f in files) {
+    r <- tryCatch(yaml::read_yaml(f), error = function(e) NULL)
     if (!is.null(r)) {
-      has_id <- !is.null(r$id) || !is.null(r$Core$Id)
+      has_id   <- !is.null(r$id) || !is.null(r$Core$Id)
       has_desc <- !is.null(r$description) || !is.null(r$Description)
-      if (!has_id) fail(sprintf("%s: missing rule ID in %s", eng, basename(files[1])))
-      if (!has_desc) warn(sprintf("%s: missing description in %s", eng, basename(files[1])))
+      if (!has_id) {
+        fail(sprintf("%s/%s: missing rule ID", eng, basename(f)))
+        field_fail_count <- field_fail_count + 1L
+      }
+      if (!has_desc) {
+        warn(sprintf("%s/%s: missing description", eng, basename(f)))
+      }
     }
   }
 }
-pass("Required fields check complete")
+if (field_fail_count == 0L) pass("All files have required fields (id/Core.Id, description/Description)")
 
 # --- 3. Duplicate IDs within each engine --------------------------------------
 cat("\n[3/6] Checking for duplicate IDs within engines...\n")

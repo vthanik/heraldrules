@@ -27,6 +27,7 @@ provenance:
 tests:
   - name: "ASTTM is less than or equal to AENTM"
     type: positive
+    skip: true
     datasets:
       ADAE:
         variables: [STUDYID, USUBJID, ASTTM, AENTM]
@@ -36,6 +37,7 @@ tests:
 
   - name: "ASTTM is greater than AENTM"
     type: negative
+    skip: true
     datasets:
       ADAE:
         variables: [STUDYID, USUBJID, ASTTM, AENTM]

@@ -505,6 +505,7 @@
     "HRL-MD-040",
     "HRL-TYP-001",
     "HRL-VAR-001",
+    "HRL-VAR-003",
     "HRL-VAR-002"
   ],
   "severity_overrides": []

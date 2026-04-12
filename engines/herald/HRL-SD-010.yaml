@@ -16,7 +16,7 @@ scope:
 check:
   all:
     - name: AESTDTC
-      operator: less_than
+      operator: greater_than_or_equal_to
       value:
         name: EXSTDTC
         aggregate: min

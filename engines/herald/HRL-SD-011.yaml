@@ -17,7 +17,7 @@ scope:
 check:
   all:
     - name: RFSTDTC
-      operator: not_equal_to
+      operator: equal_to
       value:
         name: EXSTDTC
         aggregate: min

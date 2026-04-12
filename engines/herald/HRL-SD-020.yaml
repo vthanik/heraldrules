@@ -23,7 +23,7 @@ scope:
 check:
   all:
     - name: QNAM
-      operator: longer_than
+      operator: max_length
       value: 8
 outcome:
   message: QNAM exceeds 8-character limit

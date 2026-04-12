@@ -11,7 +11,7 @@ scope:
   classes: []
   domains: []
 check:
-  any:
+  all:
     - name: __STDTC__
       operator: non_empty
     - name: __STDY__

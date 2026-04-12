@@ -16,7 +16,7 @@ scope:
 check:
   all:
     - name: LBSTRESC
-      operator: in
+      operator: not_in
       value:
         - POSITIVE
         - NEGATIVE
@@ -24,7 +24,7 @@ check:
         - ABNORMAL
         - TRACE
     - name: LBSTRESN
-      operator: non_empty
+      operator: empty
 outcome:
   message: LBSTRESN populated when LBSTRESC is qualitative (should be null)
   severity: Error

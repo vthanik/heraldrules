@@ -17,7 +17,7 @@ scope:
 check:
   all:
     - name: QNAM
-      operator: in
+      operator: not_in
       value:
         - COMPLT
         - FULLSET

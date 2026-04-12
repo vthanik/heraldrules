@@ -16,7 +16,7 @@ scope:
 check:
   all:
     - name: IDVARVAL
-      operator: non_empty
+      operator: empty
     - name: __cross_check__
       operator: no_matching_record
       value:

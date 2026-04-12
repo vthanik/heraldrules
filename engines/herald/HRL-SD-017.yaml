@@ -16,10 +16,10 @@ scope:
 check:
   all:
     - name: LBORRES
-      operator: matches_regex
+      operator: does_not_match_regex
       value: '^[<>]'
     - name: LBSTRESC
-      operator: not_matches_regex
+      operator: matches_regex
       value: '^[<>]'
 outcome:
   message: LBORRES contains inequality operator but LBSTRESC does not preserve it

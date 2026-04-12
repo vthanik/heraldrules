@@ -23,6 +23,101 @@ Two schemas coexist:
 - **lowercase** (herald format): `engines/pmda/`, `engines/ct/`
   - Keys: `id`, `description`, `check`, `outcome`, `provenance`
 
+## Operator Semantics (CRITICAL — read before writing any `check:` block)
+
+Herald's rule engine uses **passing-condition semantics**: the operator name describes what **valid data should look like**, and the function internally returns `TRUE` for **violations**. The `check:` block is NOT a violation template — it is a description of correct data, and the engine flags rows that fail to meet it.
+
+### Core convention
+
+```
+operator name  = what valid data SHOULD do
+operator body  = returns TRUE when data VIOLATES that expectation
+```
+
+Source: `R/rule-operator.R:9` — *"each operator returns TRUE where a VIOLATION is found"*
+
+### Quick-reference: error-prone operators
+
+| Operator | Passes when data... | Flags (violation) when data... |
+|----------|--------------------|-----------------------------|
+| `equal_to` | equals the value | **does not** equal the value |
+| `not_equal_to` | does not equal | **does** equal |
+| `in` | is in the set | **is not** in the set |
+| `not_in` | is not in the set | **is** in the set |
+| `empty` | is empty/null | **is populated** |
+| `non_empty` | is populated | **is empty/null** |
+| `matches_regex` | matches pattern | **does not** match |
+| `does_not_match_regex` | does not match | **does** match |
+| `less_than` | is < value | is **≥** value |
+| `greater_than` | is > value | is **≤** value |
+| `less_than_or_equal_to` | is ≤ value | is **>** value |
+| `greater_than_or_equal_to` | is ≥ value | is **<** value |
+| `not_equal_to_variable` | — | x **≠** other column (exception: this one flags the mismatch directly) |
+| `equal_to_variable` | — | x **=** other column (flags the match directly) |
+
+> **Note on cross-variable operators**: `not_equal_to_variable` and `equal_to_variable` use their literal body (`x != other` and `x == other`) — they do NOT invert. Use them directly to describe the violation state.
+
+### `all:` vs `any:` combiner semantics
+
+- **`all:`** — flags a row only when **every** condition's violation function returns `TRUE`
+  - Use for: multi-condition violations where ALL parts must be present (pre-conditions + check)
+  - Pattern: pre-conditions come first, actual check is last
+
+- **`any:`** — flags a row when **any** condition's violation function returns `TRUE`
+  - Use for: "flag if outside range A OR outside range B" (independent violation reasons)
+
+### Conditional rule pattern (IF X THEN Y)
+
+To express: *"When FIELD = VALUE, some other condition must hold"*
+
+```yaml
+# WRONG — equal_to fires when FIELD != VALUE (flags the non-matching rows)
+- name: FIELD
+  operator: equal_to
+  value: "VALUE"
+
+# CORRECT — not_equal_to fires when FIELD == VALUE (pre-condition met → engine checks further)
+- name: FIELD
+  operator: not_equal_to
+  value: "VALUE"
+```
+
+The pre-condition must use the **opposite** of the intuitive operator so that it fires when the condition IS true, allowing `all:` to proceed to the actual check.
+
+### "At least one of X or Y must be populated" pattern
+
+```yaml
+# WRONG — any: + non_empty fires when EITHER is empty (too aggressive)
+check:
+  any:
+    - name: X
+      operator: non_empty
+    - name: Y
+      operator: non_empty
+
+# CORRECT — all: + non_empty fires only when BOTH are empty
+check:
+  all:
+    - name: X
+      operator: non_empty
+    - name: Y
+      operator: non_empty
+```
+
+### Verification checklist — run mentally before committing any rule
+
+1. **Positive test**: substitute the passing record into each operator. Each operator's violation function should return `FALSE`. Combined result should yield 0 findings.
+2. **Negative test**: substitute the failing record. Each relevant operator should return `TRUE`. Combined result should yield ≥ 1 finding.
+3. **Conditional rules**: the pre-condition operator should return `TRUE` (fire) when the IF-condition IS met.
+4. **Presence checks**: if the rule means "must be populated", use `non_empty` (violation = empty). If the rule means "must be null/empty", use `empty` (violation = populated).
+5. **Range checks**: `less_than` flags rows where the value is ≥ the threshold. If you want to flag values that are too small, use `greater_than_or_equal_to`.
+
+### Known past mistakes (2025-04)
+
+These 12 HRL-SD rules had all operators inverted (treated `check:` as violation template instead of passing template): HRL-SD-010, 011, 012, 013, 014, 016, 017, 018, 020, 021. HRL-TS-002 and HRL-TS-004 had `any:` where `all:` was needed.
+
+---
+
 ## Quarterly Refresh
 
 ```bash

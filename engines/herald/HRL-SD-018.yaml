@@ -17,9 +17,9 @@ scope:
 check:
   all:
     - name: LBORRESU
-      operator: non_empty
+      operator: empty
     - name: LBSTRESU
-      operator: non_empty
+      operator: empty
     - name: LBORRESU
       operator: not_equal_to_variable
       value: LBSTRESU

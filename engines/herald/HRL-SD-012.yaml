@@ -17,7 +17,7 @@ scope:
 check:
   all:
     - name: DTHFL
-      operator: equal_to
+      operator: not_equal_to
       value: 'Y'
     - name: __cross_check__
       operator: no_matching_record

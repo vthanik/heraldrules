@@ -18,13 +18,13 @@ scope:
 check:
   any:
     - name: LBDTC
-      operator: less_than
+      operator: greater_than_or_equal_to
       value:
         name: RFSTDTC
         dataset: DM
         by: USUBJID
     - name: LBDTC
-      operator: greater_than
+      operator: less_than_or_equal_to
       value:
         name: RFENDTC
         dataset: DM

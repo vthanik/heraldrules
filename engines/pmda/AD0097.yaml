@@ -1,5 +1,5 @@
 id: AD0097
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: ADaM Conformance
@@ -16,8 +16,10 @@ scope:
     - ADAMOTHER
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: TRTPG1N
+      operator: non_empty
+    - name: TRTPG1
+      operator: empty
 outcome:
   message: TRTPGyN is present, but TRTPGy is not present
   severity: Error

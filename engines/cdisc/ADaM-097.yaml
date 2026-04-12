@@ -1,0 +1,63 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  If Planned Pooled Treatment y numeric variable (TRTPGyN) is present, its corresponding character variable (TRTPGy) must also be present.
+                Document: ADaM IG v1.1
+                Section: '3.3'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-97
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: TRTPG1N
+      operator: non_empty
+    - name: TRTPG1
+      operator: empty
+Core:
+  Id: ADaM-097
+  Status: Published
+  Version: '1'
+Description: >-
+  When TRTPG1N (Planned Pooled Treatment 1 Numeric) is present, TRTPG1 (Planned Pooled Treatment 1) must also be present.
+Executability: Partially Executable
+Outcome:
+  Message: 'TRTPGyN (numeric pooled planned treatment) is populated but TRTPGy (character) is missing'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - BDS
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: PMDA Validation Rules v6.0 (March 2025)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "TRTPG1 and TRTPG1N both populated"
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, TRTPG1, TRTPG1N]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "Active", 1]
+    expected_findings: 0
+  - name: "TRTPG1N populated but TRTPG1 is null"
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, TRTPG1, TRTPG1N]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "", 1]
+    expected_findings: 1

@@ -1,0 +1,63 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  For ADSL trial dates xx variables of form TRxx... and APxx..., 'xx' must be a valid period ordinal (01 or 02 for most studies). Uses TRT01P and TRT02P as representative variables for two-period studies.
+                Document: ADaM IG v1.1
+                Section: '3.2'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-1019
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: TRT01P
+      operator: empty
+    - name: TRT02P
+      operator: empty
+Core:
+  Id: ADaM-1019
+  Status: Published
+  Version: '1'
+Description: >-
+  ADSL must include at least one period treatment variable (TRT01P or TRT02P) to indicate the treatment periods. Uses TRT01P/TRT02P as representative.
+Executability: Partially Executable
+Outcome:
+  Message: 'ADSL has neither TRT01P nor TRT02P (no treatment period variables found)'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ADSL
+Sensitivity: Record
+herald:
+  source: PMDA Validation Rules v6.0 (March 2025)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "TRT01P is populated (first period treatment present)"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, TRT01P]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "Placebo"]
+    expected_findings: 0
+  - name: "Neither TRT01P nor TRT02P populated"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, TRT01P, TRT02P]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "", ""]
+    expected_findings: 1

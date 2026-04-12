@@ -1,0 +1,77 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  Treatment Dose Units (DOSEU) variable is required when either Treatment Dose (DOSE) or Actual Treatment Dose (DOSEA) is populated.
+                Document: ADaM IG v1.1
+                Section: '3.2'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-364
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  any:
+    - all:
+        - name: DOSE
+          operator: non_empty
+        - name: DOSEU
+          operator: empty
+    - all:
+        - name: DOSEA
+          operator: non_empty
+        - name: DOSEU
+          operator: empty
+Core:
+  Id: ADaM-364
+  Status: Published
+  Version: '1'
+Description: >-
+  When DOSE or DOSEA is populated, DOSEU (Dose Units) must also be populated to provide context for the dose value.
+Executability: Fully Executable
+Outcome:
+  Message: 'DOSE or DOSEA is populated but DOSEU (dose units) is missing'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ADSL
+Sensitivity: Record
+herald:
+  source: PMDA Validation Rules v6.0 (March 2025)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "DOSE and DOSEU both populated (complete)"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, DOSE, DOSEU]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", 54.0, "mg"]
+    expected_findings: 0
+  - name: "Neither DOSE nor DOSEA populated (not applicable)"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, DOSE, DOSEA, DOSEU]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "", "", ""]
+    expected_findings: 0
+  - name: "DOSE populated but DOSEU is null"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, DOSE, DOSEU]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", 54.0, ""]
+    expected_findings: 1

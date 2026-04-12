@@ -1,0 +1,66 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  For a given period xx, if both Actual Treatment for Period xx (TRTxxA) and Planned Pooled Treatment y for Period xx (TRxxPGy) are populated, they must be consistent.
+                Document: ADaM IG v1.1
+                Section: '3.2'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-239A
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: TRT01A
+      operator: non_empty
+    - name: TR01P1
+      operator: non_empty
+    - name: TRT01A
+      operator: not_equal_to_variable
+      value: TR01P1
+Core:
+  Id: ADaM-239A
+  Status: Published
+  Version: '1'
+Description: >-
+  When TRT01A (Actual Treatment Period 01) and TR01P1 (Planned Pooled Treatment Period 01) are both populated, they should be consistent.
+Executability: Partially Executable
+Outcome:
+  Message: 'TRT01A and TR01P1 are both populated but inconsistent'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ADSL
+Sensitivity: Record
+herald:
+  source: PMDA Validation Rules v6.0 (March 2025)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "TRT01A and TR01P1 are consistent"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, TRT01A, TR01P1]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "Placebo", "Placebo"]
+    expected_findings: 0
+  - name: "TRT01A differs from TR01P1"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, TRT01A, TR01P1]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "Placebo", "Active"]
+    expected_findings: 1

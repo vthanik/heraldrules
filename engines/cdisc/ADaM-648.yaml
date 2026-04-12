@@ -1,0 +1,65 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  If TRTEMwFL (Treatment Emergent Flag for Window w) is included, TRTEMFL is defined as the overall treatment emergent flag. If TRTEMwFL=Y then TRTEMFL must be Y.
+                Document: ADaM IG v1.1
+                Section: '4.3'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-648
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: TRTEM1FL
+      operator: equal_to
+      value: 'Y'
+    - name: TRTEMFL
+      operator: not_equal_to
+      value: 'Y'
+Core:
+  Id: ADaM-648
+  Status: Published
+  Version: '1'
+Description: >-
+  When TRTEM1FL (Treatment Emergent Flag Window 1) is Y, TRTEMFL must also be Y.
+Executability: Partially Executable
+Outcome:
+  Message: 'TRTEM1FL is Y but TRTEMFL is not Y (window flag implies overall flag must be Y)'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - OCCDS
+  Domains:
+    Include:
+      - ADAE
+Sensitivity: Record
+herald:
+  source: PMDA Validation Rules v6.0 (March 2025)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "TRTEM1FL=Y and TRTEMFL=Y (consistent)"
+    type: positive
+    datasets:
+      ADAE:
+        variables: [STUDYID, USUBJID, AETERM, TRTEM1FL, TRTEMFL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "HEADACHE", "Y", "Y"]
+    expected_findings: 0
+  - name: "TRTEM1FL=Y but TRTEMFL null (inconsistent)"
+    type: negative
+    datasets:
+      ADAE:
+        variables: [STUDYID, USUBJID, AETERM, TRTEM1FL, TRTEMFL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "HEADACHE", "Y", ""]
+    expected_findings: 1

@@ -1,5 +1,5 @@
 id: AD0070
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: ADaM Conformance
@@ -15,8 +15,10 @@ scope:
     - ADDL
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: TR01A1N
+      operator: non_empty
+    - name: TR01A1
+      operator: empty
 outcome:
   message: TRxxAGyN is present, but TRxxAGy is not present
   severity: Error

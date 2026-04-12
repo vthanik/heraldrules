@@ -1,5 +1,5 @@
 id: AD1019
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: ADaM Conformance
@@ -14,8 +14,10 @@ scope:
   domains: ADSL
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: TRT01P
+      operator: empty
+    - name: TRT02P
+      operator: empty
 outcome:
   message: 'Illegal variable name: xx is not in [01-99] for an ADSL trial date'
   severity: Error

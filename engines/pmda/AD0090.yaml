@@ -1,5 +1,5 @@
 id: AD0090
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: ADaM Conformance
@@ -19,8 +19,10 @@ scope:
     - MDBDS
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: TRTP
+      operator: empty
+    - name: TRTA
+      operator: empty
 outcome:
   message: None of the subject-level or record-level treatment variables defined in
     the IG are present

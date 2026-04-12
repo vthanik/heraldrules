@@ -1,0 +1,61 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  Date of First Exposure to Treatment (TRTSDT) must equal the first treatment date derived from SDTM.EX. TRTSDT should be consistent with the exposure data.
+                Document: ADaM IG v1.1
+                Section: '3.2'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-83
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: TRTSDT
+      operator: empty
+Core:
+  Id: ADaM-083
+  Status: Published
+  Version: '1'
+Description: >-
+  TRTSDT (Date of First Exposure to Treatment) must be populated in ADSL when the subject received treatment. A null TRTSDT may indicate missing treatment date derivation.
+Executability: Partially Executable
+Outcome:
+  Message: 'TRTSDT (Date of First Exposure to Treatment) is null when treatment data exists'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ADSL
+Sensitivity: Record
+herald:
+  source: PMDA Validation Rules v6.0 (March 2025)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "TRTSDT is populated (first treatment date present)"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, TRT01A, TRTSDT]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "Placebo", "2014-01-03"]
+    expected_findings: 0
+  - name: "TRTSDT is null when treatment exists"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, TRT01A, TRTSDT]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "Placebo", ""]
+    expected_findings: 1

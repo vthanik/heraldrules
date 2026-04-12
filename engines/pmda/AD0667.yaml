@@ -1,10 +1,10 @@
 id: AD0667
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: ADaM Conformance
 sensitivity: Record
-executability: Partially Executable
+executability: Fully Executable
 description: If DOSPCTDF (Percent Diff. Nominal vs. Actual Dose) is populated, then
   TRTA (Actual Treatment) must be populated.
 scope:
@@ -12,8 +12,10 @@ scope:
   domains: ADNCA
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: DOSPCTDF
+      operator: non_empty
+    - name: NOMLDOS
+      operator: empty
 outcome:
   message: DOSPCTDF is populated and TRTA is not populated
   severity: Error

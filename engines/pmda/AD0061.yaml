@@ -1,5 +1,5 @@
 id: AD0061
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: ADaM Conformance
@@ -13,8 +13,10 @@ scope:
   domains: []
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: TRT01P
+      operator: empty
+    - name: TRT01A
+      operator: empty
 outcome:
   message: SDTM.EX is present, but neither ADSL TRTSDT nor TRTSDTM are present
   severity: Error

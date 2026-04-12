@@ -1,0 +1,63 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  If DOSPCTDF (Percent Difference Nominal vs. Actual Dose) is populated, then NOMLDOS (Nominal Dose) and DOSEA (Actual Dose) must also be populated.
+                Document: ADaM IG v1.1
+                Section: '4.7'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-667
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: DOSPCTDF
+      operator: non_empty
+    - name: NOMLDOS
+      operator: empty
+Core:
+  Id: ADaM-667
+  Status: Published
+  Version: '1'
+Description: >-
+  When DOSPCTDF is populated, NOMLDOS must also be present since the percentage difference requires both nominal and actual dose values.
+Executability: Fully Executable
+Outcome:
+  Message: 'DOSPCTDF is populated but NOMLDOS is missing (required for dose difference calculation)'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ADNCA
+Sensitivity: Record
+herald:
+  source: PMDA Validation Rules v6.0 (March 2025)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "DOSPCTDF and NOMLDOS both populated"
+    type: positive
+    datasets:
+      ADNCA:
+        variables: [STUDYID, USUBJID, PARAMCD, NOMLDOS, DOSPCTDF]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "AUC", 100.0, 5.0]
+    expected_findings: 0
+  - name: "DOSPCTDF populated but NOMLDOS is null"
+    type: negative
+    datasets:
+      ADNCA:
+        variables: [STUDYID, USUBJID, PARAMCD, NOMLDOS, DOSPCTDF]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "AUC", "", 5.0]
+    expected_findings: 1

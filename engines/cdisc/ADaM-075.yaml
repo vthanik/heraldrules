@@ -1,0 +1,63 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  If Planned Treatment numeric variable (TRTxxPN) is present, its corresponding character variable (TRTxxP) must also be present.
+                Document: ADaM IG v1.1
+                Section: '3.2'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-75
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: TRT01PN
+      operator: non_empty
+    - name: TRT01P
+      operator: empty
+Core:
+  Id: ADaM-075
+  Status: Published
+  Version: '1'
+Description: >-
+  When TRT01PN (Planned Treatment for Period 01 Numeric) is present, TRT01P (Planned Treatment for Period 01) must also be present.
+Executability: Partially Executable
+Outcome:
+  Message: 'TRT01PN is populated but corresponding TRT01P is missing'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ADSL
+Sensitivity: Record
+herald:
+  source: PMDA Validation Rules v6.0 (March 2025)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "TRT01P and TRT01PN both populated"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, TRT01P, TRT01PN]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "Placebo", 0]
+    expected_findings: 0
+  - name: "TRT01PN populated but TRT01P is null"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, TRT01P, TRT01PN]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "", 54]
+    expected_findings: 1

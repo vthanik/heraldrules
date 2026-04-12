@@ -1,0 +1,65 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  Date of Last Exposure to Treatment (TRTEDT) should be greater than or equal to Date of First Exposure to Treatment (TRTSDT).
+                Document: ADaM IG v1.1
+                Section: '3.2'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-84
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: TRTSDT
+      operator: non_empty
+    - name: TRTEDT
+      operator: less_than_variable
+      value: TRTSDT
+Core:
+  Id: ADaM-084
+  Status: Published
+  Version: '1'
+Description: >-
+  TRTEDT (Date of Last Exposure to Treatment) must be on or after TRTSDT (Date of First Exposure to Treatment).
+Executability: Fully Executable
+Outcome:
+  Message: 'TRTEDT is before TRTSDT (last exposure date is earlier than first exposure date)'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ADSL
+Sensitivity: Record
+herald:
+  source: PMDA Validation Rules v6.0 (March 2025)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "TRTEDT is on or after TRTSDT (valid)"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, TRTSDT, TRTEDT]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "2014-01-03", "2014-07-02"]
+          - ["CDISCPILOT01", "01-701-1023", "2014-01-12", "2014-01-12"]
+    expected_findings: 0
+  - name: "TRTEDT is before TRTSDT (invalid)"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, TRTSDT, TRTEDT]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "2014-07-02", "2014-01-03"]
+    expected_findings: 1

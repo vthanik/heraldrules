@@ -1,0 +1,63 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  The presence of SDTM.EX (Exposure) domain implies that there should be at least one treatment variable in ADaM datasets.
+                Document: ADaM IG v1.1
+                Section: '3.2'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-61A
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: TRTP
+      operator: empty
+    - name: TRTA
+      operator: empty
+Core:
+  Id: ADaM-061A
+  Status: Published
+  Version: '1'
+Description: >-
+  Treatment variables (TRTP or TRTA) should be present if exposure data exists. Uses TRTP/TRTA as representative treatment variables for non-ADSL domains.
+Executability: Partially Executable
+Outcome:
+  Message: 'No treatment variable (TRTP or TRTA) present in dataset despite exposure data'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: PMDA Validation Rules v6.0 (March 2025)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "TRTP is populated (treatment variable present)"
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, TRTP, TRTA]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "Placebo", "Placebo"]
+    expected_findings: 0
+  - name: "Both TRTP and TRTA are null"
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, TRTP, TRTA]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "", ""]
+    expected_findings: 1

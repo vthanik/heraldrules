@@ -1,0 +1,63 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  The presence of SDTM.EX (Exposure) domain implies that there should be at least one treatment variable in ADSL (e.g., TRT01P or TRT01A).
+                Document: ADaM IG v1.1
+                Section: '3.2'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-61
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: TRT01P
+      operator: empty
+    - name: TRT01A
+      operator: empty
+Core:
+  Id: ADaM-061
+  Status: Published
+  Version: '1'
+Description: >-
+  If exposure data (EX domain) exists, at least one treatment variable must be present in ADSL (TRT01P or TRT01A). Uses TRT01P/TRT01A as representative treatment variables.
+Executability: Partially Executable
+Outcome:
+  Message: 'ADSL has no treatment variable (TRT01P or TRT01A) suggesting EX data is not linked'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ADSL
+Sensitivity: Record
+herald:
+  source: PMDA Validation Rules v6.0 (March 2025)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "TRT01P is populated (treatment variable present)"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, TRT01P, TRT01A]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "Placebo", "Placebo"]
+    expected_findings: 0
+  - name: "Both TRT01P and TRT01A are null (no treatment variable)"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, TRT01P, TRT01A]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "", ""]
+    expected_findings: 1

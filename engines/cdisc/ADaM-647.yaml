@@ -1,0 +1,66 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  If TREMxxFL (Treatment Emergent Flag for Period xx) is included, TRTEMFL is defined as the overall treatment emergent flag. Both cannot conflict: if TREMxxFL=Y then TRTEMFL must be Y.
+                Document: ADaM IG v1.1
+                Section: '4.3'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-647
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: TREM01FL
+      operator: equal_to
+      value: 'Y'
+    - name: TRTEMFL
+      operator: not_equal_to
+      value: 'Y'
+Core:
+  Id: ADaM-647
+  Status: Published
+  Version: '1'
+Description: >-
+  When TREM01FL (Treatment Emergent Flag Period 01) is Y, TRTEMFL (overall Treatment Emergent Flag) must also be Y.
+Executability: Partially Executable
+Outcome:
+  Message: 'TREM01FL is Y but TRTEMFL is not Y (period flag implies overall flag must be Y)'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - OCCDS
+  Domains:
+    Include:
+      - ADAE
+Sensitivity: Record
+herald:
+  source: PMDA Validation Rules v6.0 (March 2025)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "TREM01FL=Y and TRTEMFL=Y (consistent)"
+    type: positive
+    datasets:
+      ADAE:
+        variables: [STUDYID, USUBJID, AETERM, TREM01FL, TRTEMFL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "HEADACHE", "Y", "Y"]
+          - ["CDISCPILOT01", "01-701-1023", "NAUSEA", "", ""]
+    expected_findings: 0
+  - name: "TREM01FL=Y but TRTEMFL is null (inconsistent)"
+    type: negative
+    datasets:
+      ADAE:
+        variables: [STUDYID, USUBJID, AETERM, TREM01FL, TRTEMFL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "HEADACHE", "Y", ""]
+    expected_findings: 1

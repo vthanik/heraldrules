@@ -1,0 +1,63 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  If Actual Treatment (TRTxxA) is present, its corresponding Planned Treatment (TRTxxP) must also be present. The planned treatment must be defined before an actual treatment can be recorded.
+                Document: ADaM IG v1.1
+                Section: '3.2'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-80
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: TRT01A
+      operator: non_empty
+    - name: TRT01P
+      operator: empty
+Core:
+  Id: ADaM-080
+  Status: Published
+  Version: '1'
+Description: >-
+  When TRT01A (Actual Treatment for Period 01) is present, TRT01P (Planned Treatment for Period 01) must also be present.
+Executability: Partially Executable
+Outcome:
+  Message: 'TRT01A is populated but corresponding planned treatment TRT01P is missing'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ADSL
+Sensitivity: Record
+herald:
+  source: PMDA Validation Rules v6.0 (March 2025)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "TRT01P and TRT01A both populated"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, TRT01P, TRT01A]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "Placebo", "Placebo"]
+    expected_findings: 0
+  - name: "TRT01A populated but TRT01P is null"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, TRT01P, TRT01A]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "", "Placebo"]
+    expected_findings: 1

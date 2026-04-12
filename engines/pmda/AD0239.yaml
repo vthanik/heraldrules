@@ -1,5 +1,5 @@
 id: AD0239
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: ADaM Conformance
@@ -15,8 +15,13 @@ scope:
     - MDBDS
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: TRTA
+      operator: non_empty
+    - name: TRTPG1
+      operator: non_empty
+    - name: TRTA
+      operator: not_equal_to_variable
+      value: TRTPG1
 outcome:
   message: TRTPGy and TRTA are present, but TRTAGy is not present
   severity: Error

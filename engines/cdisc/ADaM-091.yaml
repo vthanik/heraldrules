@@ -1,0 +1,63 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  If Planned Treatment numeric (TRTPN) is present, its character counterpart (TRTP) must also be present.
+                Document: ADaM IG v1.1
+                Section: '3.3'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-91
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: TRTPN
+      operator: non_empty
+    - name: TRTP
+      operator: empty
+Core:
+  Id: ADaM-091
+  Status: Published
+  Version: '1'
+Description: >-
+  When TRTPN (Planned Treatment Numeric) is present, TRTP (Planned Treatment) must also be present in BDS datasets.
+Executability: Partially Executable
+Outcome:
+  Message: 'TRTPN is populated but TRTP is missing'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - BDS
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: PMDA Validation Rules v6.0 (March 2025)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "TRTP and TRTPN both populated"
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, TRTP, TRTPN]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "Placebo", 0]
+    expected_findings: 0
+  - name: "TRTPN populated but TRTP is null"
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, TRTP, TRTPN]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "", 54]
+    expected_findings: 1

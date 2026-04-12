@@ -1,5 +1,5 @@
 id: AD0652
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: ADaM Conformance
@@ -15,8 +15,10 @@ scope:
     - MDOCCDS
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: ONTRT1FL
+      operator: non_empty
+    - name: ONTRTFL
+      operator: empty
 outcome:
   message: ONTRTwFL is present but ONTRTFL is not present
   severity: Error

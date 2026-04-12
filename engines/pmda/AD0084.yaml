@@ -1,10 +1,10 @@
 id: AD0084
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: ADaM Conformance
 sensitivity: Record
-executability: Partially Executable
+executability: Fully Executable
 description: Date of Last Exposure to Treatment (TRTEDT) for this patient record should
   be equal to the max Last Treatment Date (TRxxEDT) among all Periods 01 thru xx.
 scope:
@@ -14,8 +14,11 @@ scope:
     - ADDL
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: TRTSDT
+      operator: non_empty
+    - name: TRTEDT
+      operator: less_than_variable
+      value: TRTSDT
 outcome:
   message: TRTEDT != Maximum TRxxEDT on this record
   severity: Warning

@@ -1,0 +1,63 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  If Actual Pooled Treatment y for Period xx numeric variable (TRxxAGyN) is present, its corresponding character variable (TRxxAGy) must also be present.
+                Document: ADaM IG v1.1
+                Section: '3.2'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-70
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: TR01A1N
+      operator: non_empty
+    - name: TR01A1
+      operator: empty
+Core:
+  Id: ADaM-070
+  Status: Published
+  Version: '1'
+Description: >-
+  When TRxxAGyN (Actual Pooled Treatment Numeric) is present, TRxxAGy (Actual Pooled Treatment) must also be present.
+Executability: Partially Executable
+Outcome:
+  Message: 'TRxxAGyN (numeric actual pooled treatment) is populated but TRxxAGy (character) is missing'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ADSL
+Sensitivity: Record
+herald:
+  source: PMDA Validation Rules v6.0 (March 2025)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "TR01A1 and TR01A1N both populated"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, TR01A1, TR01A1N]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "Active", 1]
+    expected_findings: 0
+  - name: "TR01A1N populated but TR01A1 is null"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, TR01A1, TR01A1N]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "", 1]
+    expected_findings: 1

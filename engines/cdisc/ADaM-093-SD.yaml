@@ -1,0 +1,71 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  Within a study, all TRTP values must be the same for each
+                  unique value of TRTPN when the numeric variable TRTPN is populated.
+                Document: ADaM IG v1.1
+                Section: "4.1"
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-093-SD
+              Version: "1"
+            Version: "1.0"
+        Version: "1.1"
+Check:
+  all:
+    - name: TRTPN
+      operator: non_empty
+    - name: TRTP
+      operator: non_empty
+    - name: TRTP
+      operator: not_consistent_with_variable
+      value: TRTPN
+Core:
+  Id: ADaM-093-SD
+  Status: Published
+  Version: "1"
+Description: >-
+  Within a study, all TRTP values must be the same for each unique value of
+  TRTPN when the numeric variable TRTPN is populated.
+Executability: Partially Executable
+Outcome:
+  Message: "Inconsistent value for TRTP across TRTPN values"
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - BASIC DATA STRUCTURE
+      - OCCURRENCE DATA STRUCTURE
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: "2026-04-12"
+
+tests:
+  - name: TRTP consistent for TRTPN value
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, TRTPN, TRTP]
+        records:
+          - [CDISCPILOT01, 01-701-1015, SODIUM, 0, Placebo]
+          - [CDISCPILOT01, 01-701-1028, SODIUM, 0, Placebo]
+    expected_findings: 0
+  - name: TRTP inconsistent for same TRTPN value
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, TRTPN, TRTP]
+        records:
+          - [CDISCPILOT01, 01-701-1015, SODIUM, 0, Placebo]
+          - [CDISCPILOT01, 01-701-1028, SODIUM, 0, "Active Low Dose 54mg"]
+    expected_findings: 1

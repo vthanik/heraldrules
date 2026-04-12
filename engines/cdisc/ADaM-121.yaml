@@ -1,0 +1,69 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  Any variable ending in SDT (Start Date) must have a value less than
+                  or equal to its corresponding EDT (End Date) variable value.
+                Document: ADaM IG v1.1
+                Section: "3.2"
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-121
+              Version: "1"
+            Version: "1.0"
+        Version: "1.1"
+Check:
+  all:
+    - name: ASTDT
+      operator: non_empty
+    - name: AENDT
+      operator: non_empty
+    - name: AENDT
+      operator: less_than_variable
+      value: ASTDT
+Core:
+  Id: ADaM-121
+  Status: Published
+  Version: "1"
+Description: >-
+  Any variable ending in SDT (Start Date) must have a value less than or equal
+  to its corresponding EDT (End Date) variable value.
+Executability: Partially Executable
+Outcome:
+  Message: "Start date is greater than end date"
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - BASIC DATA STRUCTURE
+      - OCCURRENCE DATA STRUCTURE
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: "2026-04-12"
+
+tests:
+  - name: ASTDT less than AENDT (valid)
+    type: positive
+    datasets:
+      ADAE:
+        variables: [STUDYID, USUBJID, AETERM, ASTDT, AENDT]
+        records:
+          - [CDISCPILOT01, 01-701-1015, HEADACHE, "2014-02-10", "2014-02-15"]
+    expected_findings: 0
+  - name: ASTDT greater than AENDT (violation)
+    type: negative
+    datasets:
+      ADAE:
+        variables: [STUDYID, USUBJID, AETERM, ASTDT, AENDT]
+        records:
+          - [CDISCPILOT01, 01-701-1015, HEADACHE, "2014-02-20", "2014-02-15"]
+    expected_findings: 1

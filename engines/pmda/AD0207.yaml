@@ -1,5 +1,5 @@
 id: AD0207
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: ADaM Conformance
@@ -12,8 +12,8 @@ scope:
   domains: ADSL
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: RACE
+      operator: empty
 outcome:
   message: For the same USUBJID, the ADSL.RACE != DM.RACE
   severity: Error

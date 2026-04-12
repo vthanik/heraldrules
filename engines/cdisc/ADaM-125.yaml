@@ -1,0 +1,70 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  Within a study, all PARCATy values must be the same for each
+                  unique value of PARAMCD across all datasets.
+                Document: ADaM IG v1.1
+                Section: "4.1"
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-125
+              Version: "1"
+            Version: "1.0"
+        Version: "1.1"
+Check:
+  all:
+    - name: PARAMCD
+      operator: non_empty
+    - name: PARCAT1
+      operator: non_empty
+    - name: PARCAT1
+      operator: not_consistent_with_variable
+      value: PARAMCD
+Core:
+  Id: ADaM-125
+  Status: Published
+  Version: "1"
+Description: >-
+  Within a study, all PARCATy values must be the same for each unique value
+  of PARAMCD across all datasets. Uses PARCAT1 as representative.
+Executability: Partially Executable
+Outcome:
+  Message: "Inconsistent PARCATy value for PARAMCD across datasets"
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - BASIC DATA STRUCTURE
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: "2026-04-12"
+
+tests:
+  - name: PARCAT1 consistent for PARAMCD across records
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, PARCAT1]
+        records:
+          - [CDISCPILOT01, 01-701-1015, SODIUM, CHEMISTRY]
+          - [CDISCPILOT01, 01-701-1028, SODIUM, CHEMISTRY]
+    expected_findings: 0
+  - name: PARCAT1 inconsistent for same PARAMCD
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, PARCAT1]
+        records:
+          - [CDISCPILOT01, 01-701-1015, SODIUM, CHEMISTRY]
+          - [CDISCPILOT01, 01-701-1028, SODIUM, ELECTROLYTES]
+    expected_findings: 1

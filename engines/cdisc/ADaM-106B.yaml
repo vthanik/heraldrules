@@ -1,0 +1,68 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  Within a study, all APERIOD values must be the same for each
+                  unique value of APERIODC. Variant B: when APERIODC is populated,
+                  APERIOD must also be populated.
+                Document: ADaM IG v1.1
+                Section: "4.2"
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-106B
+              Version: "1"
+            Version: "1.0"
+        Version: "1.1"
+Check:
+  all:
+    - name: APERIODC
+      operator: non_empty
+    - name: APERIOD
+      operator: empty
+Core:
+  Id: ADaM-106B
+  Status: Published
+  Version: "1"
+Description: >-
+  Within a study, all APERIOD values must be the same for each unique value
+  of APERIODC. Variant B: when APERIODC is populated, APERIOD must also be
+  populated.
+Executability: Fully Executable
+Outcome:
+  Message: "APERIODC is present but APERIOD is not present"
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - BASIC DATA STRUCTURE
+      - OCCURRENCE DATA STRUCTURE
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: "2026-04-12"
+
+tests:
+  - name: APERIODC and APERIOD both present (valid)
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, APERIODC, APERIOD]
+        records:
+          - [CDISCPILOT01, 01-701-1015, SODIUM, "Period 1", 1]
+    expected_findings: 0
+  - name: APERIODC present but APERIOD missing (violation)
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, APERIODC, APERIOD]
+        records:
+          - [CDISCPILOT01, 01-701-1015, SODIUM, "Period 1", ""]
+    expected_findings: 1

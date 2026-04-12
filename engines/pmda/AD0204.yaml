@@ -1,5 +1,5 @@
 id: AD0204
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: ADaM Conformance
@@ -12,8 +12,10 @@ scope:
   domains: ADSL
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: AGE
+      operator: non_empty
+    - name: AGEU
+      operator: empty
 outcome:
   message: For the same USUBJID, the ADSL.AGE != DM.AGE
   severity: Error

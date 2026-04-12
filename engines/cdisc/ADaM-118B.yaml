@@ -1,0 +1,65 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  Within a study, all ATPTN values must be the same for each unique
+                  value of ATPT (variant B: ATPT must be populated when ATPTN is present).
+                Document: ADaM IG v1.1
+                Section: "4.3"
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-118B
+              Version: "1"
+            Version: "1.0"
+        Version: "1.1"
+Check:
+  all:
+    - name: ATPTN
+      operator: non_empty
+    - name: ATPT
+      operator: empty
+Core:
+  Id: ADaM-118B
+  Status: Published
+  Version: "1"
+Description: >-
+  Within a study, all ATPTN values must be the same for each unique value of
+  ATPT. Variant B: when ATPTN is populated, ATPT must also be populated.
+Executability: Fully Executable
+Outcome:
+  Message: "ATPTN is present but ATPT is not present"
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - BASIC DATA STRUCTURE
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: "2026-04-12"
+
+tests:
+  - name: ATPTN and ATPT both present (valid)
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, ATPTN, ATPT]
+        records:
+          - [CDISCPILOT01, 01-701-1015, SODIUM, 1, "Pre-dose"]
+    expected_findings: 0
+  - name: ATPTN present but ATPT missing (violation)
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, ATPTN, ATPT]
+        records:
+          - [CDISCPILOT01, 01-701-1015, SODIUM, 1, ""]
+    expected_findings: 1

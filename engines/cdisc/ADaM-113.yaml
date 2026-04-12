@@ -1,0 +1,68 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  When ARELTM is present, the anchor time variable and ARELTMU must
+                  also be included in the dataset, and the anchor time variable must
+                  be identified in the metadata for ARELTM.
+                Document: ADaM IG v1.1
+                Section: "4.4"
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-113
+              Version: "1"
+            Version: "1.0"
+        Version: "1.1"
+Check:
+  all:
+    - name: ARELTMU
+      operator: non_empty
+    - name: ARELTM
+      operator: non_empty
+    - name: RELTMU
+      operator: empty
+Core:
+  Id: ADaM-113
+  Status: Published
+  Version: "1"
+Description: >-
+  When ARELTM is present, the anchor time variable and ARELTMU must also be
+  included in the dataset. ARELTMU is present but ARELTM is not present.
+Executability: Partially Executable
+Outcome:
+  Message: "ARELTMU is present, but ARELTM is not present"
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - BASIC DATA STRUCTURE
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: "2026-04-12"
+
+tests:
+  - name: ARELTMU and ARELTM both present (valid)
+    type: positive
+    datasets:
+      ADNCA:
+        variables: [STUDYID, USUBJID, PARAMCD, ARELTMU, ARELTM]
+        records:
+          - [CDISCPILOT01, 01-701-1015, CONC, HOURS, 2.0]
+    expected_findings: 0
+  - name: ARELTM missing when ARELTMU present (violation)
+    type: negative
+    datasets:
+      ADNCA:
+        variables: [STUDYID, USUBJID, PARAMCD, ARELTMU, ARELTM]
+        records:
+          - [CDISCPILOT01, 01-701-1015, CONC, HOURS, ""]
+    expected_findings: 1

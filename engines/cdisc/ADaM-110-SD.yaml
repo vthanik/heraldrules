@@ -1,0 +1,71 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  Within a study, all AVISIT values must be the same for each
+                  unique value of AVISITN when the numeric variable AVISITN is populated.
+                Document: ADaM IG v1.1
+                Section: "4.3"
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-110-SD
+              Version: "1"
+            Version: "1.0"
+        Version: "1.1"
+Check:
+  all:
+    - name: AVISITN
+      operator: non_empty
+    - name: AVISIT
+      operator: non_empty
+    - name: AVISIT
+      operator: not_consistent_with_variable
+      value: AVISITN
+Core:
+  Id: ADaM-110-SD
+  Status: Published
+  Version: "1"
+Description: >-
+  Within a study, all AVISIT values must be the same for each unique value
+  of AVISITN when the numeric variable AVISITN is populated.
+Executability: Partially Executable
+Outcome:
+  Message: "Inconsistent value for AVISIT across AVISITN values"
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - BASIC DATA STRUCTURE
+      - OCCURRENCE DATA STRUCTURE
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: "2026-04-12"
+
+tests:
+  - name: AVISIT consistent for AVISITN value
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, AVISITN, AVISIT]
+        records:
+          - [CDISCPILOT01, 01-701-1015, SODIUM, 4, "Week 4"]
+          - [CDISCPILOT01, 01-701-1028, SODIUM, 4, "Week 4"]
+    expected_findings: 0
+  - name: AVISIT inconsistent for same AVISITN value
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, AVISITN, AVISIT]
+        records:
+          - [CDISCPILOT01, 01-701-1015, SODIUM, 4, "Week 4"]
+          - [CDISCPILOT01, 01-701-1028, SODIUM, 4, "Month 1"]
+    expected_findings: 1

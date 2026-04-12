@@ -1,0 +1,71 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  Within a study, all AVISITN values must be the same for each
+                  unique value of AVISIT when the primary variable AVISIT is populated.
+                Document: ADaM IG v1.1
+                Section: "4.3"
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-109-SD
+              Version: "1"
+            Version: "1.0"
+        Version: "1.1"
+Check:
+  all:
+    - name: AVISIT
+      operator: non_empty
+    - name: AVISITN
+      operator: non_empty
+    - name: AVISITN
+      operator: not_consistent_with_variable
+      value: AVISIT
+Core:
+  Id: ADaM-109-SD
+  Status: Published
+  Version: "1"
+Description: >-
+  Within a study, all AVISITN values must be the same for each unique value
+  of AVISIT when the primary variable AVISIT is populated.
+Executability: Partially Executable
+Outcome:
+  Message: "Inconsistent value for AVISITN across AVISIT values"
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - BASIC DATA STRUCTURE
+      - OCCURRENCE DATA STRUCTURE
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: "2026-04-12"
+
+tests:
+  - name: AVISITN consistent for AVISIT value
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, AVISIT, AVISITN]
+        records:
+          - [CDISCPILOT01, 01-701-1015, SODIUM, "Week 4", 4]
+          - [CDISCPILOT01, 01-701-1028, SODIUM, "Week 4", 4]
+    expected_findings: 0
+  - name: AVISITN inconsistent for same AVISIT value
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, AVISIT, AVISITN]
+        records:
+          - [CDISCPILOT01, 01-701-1015, SODIUM, "Week 4", 4]
+          - [CDISCPILOT01, 01-701-1028, SODIUM, "Week 4", 5]
+    expected_findings: 1

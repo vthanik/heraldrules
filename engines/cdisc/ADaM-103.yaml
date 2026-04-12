@@ -1,0 +1,68 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  The Analysis Period (APERIOD) values will be a number like 01.
+                  There must be a corresponding Date of First Exposure in Period xx
+                  variable (like TR01SDT) in ADSL for every unique APERIOD value.
+                Document: ADaM IG v1.1
+                Section: "4.2"
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-103
+              Version: "1"
+            Version: "1.0"
+        Version: "1.1"
+Check:
+  all:
+    - name: APERIOD
+      operator: non_empty
+    - name: TR01SDT
+      operator: empty
+Core:
+  Id: ADaM-103
+  Status: Published
+  Version: "1"
+Description: >-
+  The Analysis Period (APERIOD) values will be a number like 01. There must be
+  a corresponding Date of First Exposure in Period (TRxxSDT) variable in ADSL
+  for every unique APERIOD value.
+Executability: Partially Executable
+Outcome:
+  Message: "There is no TRxxSDT variable in ADSL for every unique xx value of APERIOD"
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - BASIC DATA STRUCTURE
+      - OCCURRENCE DATA STRUCTURE
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: "2026-04-12"
+
+tests:
+  - name: APERIOD present with TR01SDT in ADSL
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, APERIOD, TR01SDT]
+        records:
+          - [CDISCPILOT01, 01-701-1015, SODIUM, 1, "2014-01-02"]
+    expected_findings: 0
+  - name: APERIOD present but TR01SDT missing
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, APERIOD, TR01SDT]
+        records:
+          - [CDISCPILOT01, 01-701-1015, SODIUM, 1, ""]
+    expected_findings: 1

@@ -1,0 +1,66 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  When ARELTM is present, the Anchor Time variable and ARELTMU
+                  (Analysis Relative Time unit) must also be included in the dataset.
+                Document: ADaM IG v1.1
+                Section: "4.4"
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-111
+              Version: "1"
+            Version: "1.0"
+        Version: "1.1"
+Check:
+  all:
+    - name: ARELTM
+      operator: non_empty
+    - name: ARELTMU
+      operator: empty
+Core:
+  Id: ADaM-111
+  Status: Published
+  Version: "1"
+Description: >-
+  When ARELTM (Analysis Relative Time) is present, the Anchor Time variable
+  and ARELTMU (Analysis Relative Time unit) must also be included in the
+  dataset.
+Executability: Fully Executable
+Outcome:
+  Message: "ARELTM is present, but ARELTMU is not present"
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - BASIC DATA STRUCTURE
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: "2026-04-12"
+
+tests:
+  - name: ARELTM and ARELTMU both present (valid)
+    type: positive
+    datasets:
+      ADNCA:
+        variables: [STUDYID, USUBJID, PARAMCD, ARELTM, ARELTMU]
+        records:
+          - [CDISCPILOT01, 01-701-1015, CONC, 2.0, HOURS]
+    expected_findings: 0
+  - name: ARELTM present but ARELTMU missing (violation)
+    type: negative
+    datasets:
+      ADNCA:
+        variables: [STUDYID, USUBJID, PARAMCD, ARELTM, ARELTMU]
+        records:
+          - [CDISCPILOT01, 01-701-1015, CONC, 2.0, ""]
+    expected_findings: 1

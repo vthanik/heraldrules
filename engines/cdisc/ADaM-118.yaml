@@ -1,0 +1,70 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  Within a study, all ATPTN values must be the same for each unique
+                  value of ATPT when the primary variable ATPT is populated.
+                Document: ADaM IG v1.1
+                Section: "4.3"
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-118
+              Version: "1"
+            Version: "1.0"
+        Version: "1.1"
+Check:
+  all:
+    - name: ATPT
+      operator: non_empty
+    - name: ATPTN
+      operator: non_empty
+    - name: ATPTN
+      operator: not_consistent_with_variable
+      value: ATPT
+Core:
+  Id: ADaM-118
+  Status: Published
+  Version: "1"
+Description: >-
+  Within a study, all ATPTN values must be the same for each unique value of
+  ATPT when the primary variable ATPT is populated.
+Executability: Fully Executable
+Outcome:
+  Message: "Inconsistent value for ATPTN across ATPT values"
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - BASIC DATA STRUCTURE
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: "2026-04-12"
+
+tests:
+  - name: ATPTN consistent for ATPT value
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, ATPT, ATPTN]
+        records:
+          - [CDISCPILOT01, 01-701-1015, SODIUM, "Pre-dose", 1]
+          - [CDISCPILOT01, 01-701-1028, SODIUM, "Pre-dose", 1]
+    expected_findings: 0
+  - name: ATPTN inconsistent for same ATPT value
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, ATPT, ATPTN]
+        records:
+          - [CDISCPILOT01, 01-701-1015, SODIUM, "Pre-dose", 1]
+          - [CDISCPILOT01, 01-701-1028, SODIUM, "Pre-dose", 2]
+    expected_findings: 1

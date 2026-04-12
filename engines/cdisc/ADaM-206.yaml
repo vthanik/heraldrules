@@ -1,0 +1,64 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  The same subject in ADSL and DM must have the same value for
+                  Sex (SEX). There must be traceability between ADaM and SDTM.
+                Document: ADaM IG v1.1
+                Section: "3.1"
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-206
+              Version: "1"
+            Version: "1.0"
+        Version: "1.1"
+Check:
+  all:
+    - name: SEX
+      operator: empty
+Core:
+  Id: ADaM-206
+  Status: Published
+  Version: "1"
+Description: >-
+  The same subject in ADSL and DM must have the same value for Sex (SEX).
+  There must be traceability between ADaM and SDTM. SEX must be present
+  in ADSL for every subject.
+Executability: Partially Executable
+Outcome:
+  Message: "For the same USUBJID, the ADSL.SEX != DM.SEX"
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - SUBJECT LEVEL
+  Domains:
+    Include:
+      - ADSL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: "2026-04-12"
+
+tests:
+  - name: SEX populated in ADSL (valid)
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, SEX]
+        records:
+          - [CDISCPILOT01, 01-701-1015, F]
+    expected_findings: 0
+  - name: SEX missing in ADSL (violation)
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, SEX]
+        records:
+          - [CDISCPILOT01, 01-701-1015, ""]
+    expected_findings: 1

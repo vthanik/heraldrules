@@ -1,10 +1,10 @@
 id: AD0113
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: ADaM Conformance
 sensitivity: Record
-executability: Partially Executable
+executability: Fully Executable
 description: When ARELTM is present, the anchor time variable and ARELTMU must also
   be included in the dataset, and the anchor time variable must be identified in the
   metadata for ARELTM.
@@ -17,8 +17,10 @@ scope:
     - ADAMOTHER
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: ARELTMU
+      operator: non_empty
+    - name: ARELTM
+      operator: empty
 outcome:
   message: ARELTMU is present, but ARELTM is not present
   severity: Error

@@ -1,0 +1,64 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  The same subject in ADSL and DM must have the same value for
+                  Subject ID (SUBJID). There must be traceability between ADaM and SDTM.
+                Document: ADaM IG v1.1
+                Section: "3.1"
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-208
+              Version: "1"
+            Version: "1.0"
+        Version: "1.1"
+Check:
+  all:
+    - name: SUBJID
+      operator: empty
+Core:
+  Id: ADaM-208
+  Status: Published
+  Version: "1"
+Description: >-
+  The same subject in ADSL and DM must have the same value for Subject ID
+  (SUBJID). There must be traceability between ADaM and SDTM. SUBJID must
+  be present in ADSL for every subject.
+Executability: Partially Executable
+Outcome:
+  Message: "For the same USUBJID, the ADSL.SUBJID != DM.SUBJID"
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - SUBJECT LEVEL
+  Domains:
+    Include:
+      - ADSL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: "2026-04-12"
+
+tests:
+  - name: SUBJID populated in ADSL (valid)
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, SUBJID]
+        records:
+          - [CDISCPILOT01, 01-701-1015, "1015"]
+    expected_findings: 0
+  - name: SUBJID missing in ADSL (violation)
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, SUBJID]
+        records:
+          - [CDISCPILOT01, 01-701-1015, ""]
+    expected_findings: 1

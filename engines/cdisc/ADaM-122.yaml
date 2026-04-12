@@ -1,0 +1,69 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  Any variable ending in SDTM (Start Datetime) must have a value
+                  less than or equal to its corresponding EDTM (End Datetime) variable.
+                Document: ADaM IG v1.1
+                Section: "3.2"
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-122
+              Version: "1"
+            Version: "1.0"
+        Version: "1.1"
+Check:
+  all:
+    - name: ASTDTM
+      operator: non_empty
+    - name: AENDTM
+      operator: non_empty
+    - name: AENDTM
+      operator: less_than_variable
+      value: ASTDTM
+Core:
+  Id: ADaM-122
+  Status: Published
+  Version: "1"
+Description: >-
+  Any variable ending in SDTM (Start Datetime) must have a value less than or
+  equal to its corresponding EDTM (End Datetime) variable value.
+Executability: Partially Executable
+Outcome:
+  Message: "Start datetime is greater than end datetime"
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - BASIC DATA STRUCTURE
+      - OCCURRENCE DATA STRUCTURE
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: "2026-04-12"
+
+tests:
+  - name: ASTDTM less than AENDTM (valid)
+    type: positive
+    datasets:
+      ADAE:
+        variables: [STUDYID, USUBJID, AETERM, ASTDTM, AENDTM]
+        records:
+          - [CDISCPILOT01, 01-701-1015, HEADACHE, "2014-02-10T08:00", "2014-02-15T18:00"]
+    expected_findings: 0
+  - name: ASTDTM greater than AENDTM (violation)
+    type: negative
+    datasets:
+      ADAE:
+        variables: [STUDYID, USUBJID, AETERM, ASTDTM, AENDTM]
+        records:
+          - [CDISCPILOT01, 01-701-1015, HEADACHE, "2014-02-20T08:00", "2014-02-15T18:00"]
+    expected_findings: 1

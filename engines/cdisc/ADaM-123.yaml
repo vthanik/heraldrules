@@ -1,0 +1,70 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  Within a study, all PARAMTYP values must be the same for each
+                  unique value of PARAMCD.
+                Document: ADaM IG v1.1
+                Section: "4.1"
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-123
+              Version: "1"
+            Version: "1.0"
+        Version: "1.1"
+Check:
+  all:
+    - name: PARAMCD
+      operator: non_empty
+    - name: PARAMTYP
+      operator: non_empty
+    - name: PARAMTYP
+      operator: not_consistent_with_variable
+      value: PARAMCD
+Core:
+  Id: ADaM-123
+  Status: Published
+  Version: "1"
+Description: >-
+  Within a study, all PARAMTYP values must be the same for each unique value
+  of PARAMCD.
+Executability: Fully Executable
+Outcome:
+  Message: "Inconsistent value for PARAMTYP across PARAMCD values"
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - BASIC DATA STRUCTURE
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: "2026-04-12"
+
+tests:
+  - name: PARAMTYP consistent for PARAMCD value
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, PARAMTYP]
+        records:
+          - [CDISCPILOT01, 01-701-1015, SODIUM, DERIVED]
+          - [CDISCPILOT01, 01-701-1028, SODIUM, DERIVED]
+    expected_findings: 0
+  - name: PARAMTYP inconsistent for same PARAMCD value
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, PARAMTYP]
+        records:
+          - [CDISCPILOT01, 01-701-1015, SODIUM, DERIVED]
+          - [CDISCPILOT01, 01-701-1028, SODIUM, SUPPRESSED]
+    expected_findings: 1

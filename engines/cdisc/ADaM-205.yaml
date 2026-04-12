@@ -1,0 +1,65 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  The same subject in ADSL and DM must have the same value for
+                  Age Unit (AGEU). There must be traceability between ADaM and SDTM.
+                Document: ADaM IG v1.1
+                Section: "3.1"
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-205
+              Version: "1"
+            Version: "1.0"
+        Version: "1.1"
+Check:
+  all:
+    - name: AGEU
+      operator: non_empty
+    - name: AGE
+      operator: empty
+Core:
+  Id: ADaM-205
+  Status: Published
+  Version: "1"
+Description: >-
+  The same subject in ADSL and DM must have the same value for Age Unit
+  (AGEU). There must be traceability between ADaM and SDTM.
+Executability: Partially Executable
+Outcome:
+  Message: "For the same USUBJID, the ADSL.AGEU != DM.AGEU"
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - SUBJECT LEVEL
+  Domains:
+    Include:
+      - ADSL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: "2026-04-12"
+
+tests:
+  - name: AGEU and AGE both populated (valid)
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, AGEU, AGE]
+        records:
+          - [CDISCPILOT01, 01-701-1015, YEARS, 63]
+    expected_findings: 0
+  - name: AGEU present but AGE missing (violation)
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, AGEU, AGE]
+        records:
+          - [CDISCPILOT01, 01-701-1015, YEARS, ""]
+    expected_findings: 1

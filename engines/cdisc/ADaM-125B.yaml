@@ -1,0 +1,66 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  Within a study, all PARCATy values must be the same for each
+                  unique value of PARAMCD (variant B: PARCATyN must match PARCATy).
+                Document: ADaM IG v1.1
+                Section: "4.1"
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-125B
+              Version: "1"
+            Version: "1.0"
+        Version: "1.1"
+Check:
+  all:
+    - name: PARCAT1
+      operator: non_empty
+    - name: PARCAT1N
+      operator: empty
+Core:
+  Id: ADaM-125B
+  Status: Published
+  Version: "1"
+Description: >-
+  Within a study, all PARCATy values must be the same for each unique value
+  of PARAMCD. Variant B: when PARCAT1 is populated, PARCAT1N must also be
+  populated.
+Executability: Fully Executable
+Outcome:
+  Message: "PARCAT1 is present but PARCAT1N is not present"
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - BASIC DATA STRUCTURE
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: "2026-04-12"
+
+tests:
+  - name: PARCAT1 and PARCAT1N both present (valid)
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, PARCAT1, PARCAT1N]
+        records:
+          - [CDISCPILOT01, 01-701-1015, SODIUM, CHEMISTRY, 1]
+    expected_findings: 0
+  - name: PARCAT1 present but PARCAT1N missing (violation)
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, PARCAT1, PARCAT1N]
+        records:
+          - [CDISCPILOT01, 01-701-1015, SODIUM, CHEMISTRY, ""]
+    expected_findings: 1

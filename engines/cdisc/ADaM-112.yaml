@@ -1,0 +1,65 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  If ARELTMU (Analysis Relative Time unit) or ARELTM (Analysis
+                  Relative Time) is populated, then both must be populated together.
+                Document: ADaM IG v1.1
+                Section: "4.4"
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-112
+              Version: "1"
+            Version: "1.0"
+        Version: "1.1"
+Check:
+  all:
+    - name: ARELTMU
+      operator: non_empty
+    - name: ARELTM
+      operator: empty
+Core:
+  Id: ADaM-112
+  Status: Published
+  Version: "1"
+Description: >-
+  If ARELTMU (Analysis Relative Time unit) or ARELTM (Analysis Relative Time)
+  is populated, then both must be populated together.
+Executability: Fully Executable
+Outcome:
+  Message: "Only one of these variables is populated: ARELTM, ARELTMU"
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - BASIC DATA STRUCTURE
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: "2026-04-12"
+
+tests:
+  - name: ARELTMU and ARELTM both present (valid)
+    type: positive
+    datasets:
+      ADNCA:
+        variables: [STUDYID, USUBJID, PARAMCD, ARELTMU, ARELTM]
+        records:
+          - [CDISCPILOT01, 01-701-1015, CONC, HOURS, 2.0]
+    expected_findings: 0
+  - name: ARELTMU present but ARELTM missing (violation)
+    type: negative
+    datasets:
+      ADNCA:
+        variables: [STUDYID, USUBJID, PARAMCD, ARELTMU, ARELTM]
+        records:
+          - [CDISCPILOT01, 01-701-1015, CONC, HOURS, ""]
+    expected_findings: 1

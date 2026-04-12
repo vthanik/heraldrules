@@ -1,5 +1,5 @@
 id: AD0269
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: ADaM Conformance
@@ -21,8 +21,11 @@ scope:
     - ADAMOTHER
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: TRTEMFL
+      operator: non_empty
+    - name: TRTEMFL
+      operator: not_equal_to
+      value: 'Y'
 outcome:
   message: Variable flag value is not Y or null
   severity: Error

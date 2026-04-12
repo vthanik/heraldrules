@@ -1,0 +1,65 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  Variables described in ADaM as Required must be included in the
+                  dataset. This includes STUDYID, USUBJID, and other required variables
+                  specified in the ADaM Implementation Guide for each dataset class.
+                Document: ADaM IG v1.1
+                Section: '3.1'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-47
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: USUBJID
+      operator: empty
+Core:
+  Id: ADaM-047
+  Status: Published
+  Version: '1'
+Description: >-
+  All variables described as Required in the ADaM IG must be included in the dataset.
+  USUBJID is checked as the universally required subject identifier. Full coverage
+  requires checking all required variables per the IG for each dataset class.
+Executability: Partially Executable
+Outcome:
+  Message: 'Required variable (USUBJID) is missing or null'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "USUBJID is present and populated"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID]
+        records:
+          - ["CDISCPILOT01", "01-701-1015"]
+    expected_findings: 0
+  - name: "USUBJID is null (required variable missing)"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID]
+        records:
+          - ["CDISCPILOT01", ""]
+    expected_findings: 1

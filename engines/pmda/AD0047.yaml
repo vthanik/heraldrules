@@ -1,5 +1,5 @@
 id: AD0047
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: ADaM Conformance
@@ -20,8 +20,8 @@ scope:
     - ADAMOTHER
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: USUBJID
+      operator: empty
 outcome:
   message: Required variable is not present
   severity: Error

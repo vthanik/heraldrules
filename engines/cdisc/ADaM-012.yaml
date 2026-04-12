@@ -1,0 +1,67 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  When a variable with a suffix of FL is null, the corresponding
+                  variable with the same root and a suffix of FN must also be null.
+                Document: ADaM IG v1.1
+                Section: '3.2'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-12
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: ONTRTFL
+      operator: empty
+    - name: ONTRTFN
+      operator: non_empty
+Core:
+  Id: ADaM-012
+  Status: Published
+  Version: '1'
+Description: >-
+  When a flag variable (*FL) is null, its corresponding numeric flag (*FN) must also
+  be null. Uses ONTRTFL/ONTRTFN as representative pair (non-population flags where
+  null is allowed).
+Executability: Partially Executable
+Outcome:
+  Message: '*FL is null but corresponding *FN is not null'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "ONTRTFL and ONTRTFN both null (consistent)"
+    type: positive
+    datasets:
+      ADAE:
+        variables: [STUDYID, USUBJID, ONTRTFL, ONTRTFN]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "", ""]
+          - ["CDISCPILOT01", "01-701-1023", "Y", 1]
+    expected_findings: 0
+  - name: "ONTRTFL null but ONTRTFN populated (inconsistent)"
+    type: negative
+    datasets:
+      ADAE:
+        variables: [STUDYID, USUBJID, ONTRTFL, ONTRTFN]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "", 1]
+    expected_findings: 1

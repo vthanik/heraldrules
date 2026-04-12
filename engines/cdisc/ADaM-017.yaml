@@ -1,0 +1,66 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  The length of a variable value may not be greater than 200 characters.
+                  All character variable values in ADaM datasets must be no more than
+                  200 characters in length.
+                Document: ADaM IG v1.1
+                Section: '3.1'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-17
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: PARAM
+      operator: length_greater_than
+      value: 200
+Core:
+  Id: ADaM-017
+  Status: Published
+  Version: '1'
+Description: >-
+  All ADaM character variable values must be no more than 200 characters in length.
+  Uses PARAM as a representative character variable. Full coverage requires checking
+  all character variables across all ADaM datasets.
+Executability: Partially Executable
+Outcome:
+  Message: 'Character variable value exceeds maximum length of 200 characters'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "PARAM value within 200 character limit"
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAM]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "Sodium (mmol/L)"]
+    expected_findings: 0
+  - name: "PARAM value exceeds 200 characters"
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAM]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "A" * 201]
+    expected_findings: 1

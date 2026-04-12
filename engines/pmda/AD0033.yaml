@@ -1,5 +1,5 @@
 id: AD0033
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: ADaM Conformance
@@ -14,8 +14,11 @@ scope:
     - ADAMOTHER
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: ABLFL
+      operator: non_empty
+    - name: ABLFL
+      operator: not_equal_to
+      value: 'Y'
 outcome:
   message: '*RFL value is not Y or null'
   severity: Error

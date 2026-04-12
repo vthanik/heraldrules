@@ -1,0 +1,75 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  Subject-level population flag variables (e.g. SAFFL, ITTFL) must
+                  have a value of Y or N; null values are not allowed.
+                Document: ADaM IG v1.1
+                Section: '3.2'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-25
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: ENRLFL
+      operator: non_empty
+    - name: ENRLFL
+      operator: not_in
+      value:
+        - 'Y'
+        - 'N'
+Core:
+  Id: ADaM-025
+  Status: Published
+  Version: '1'
+Description: "ENRLFL may only have a value of Y or N. Null is not allowed for ADSL population flag variables."
+Executability: Fully Executable
+Outcome:
+  Message: "ENRLFL has a value other than Y or N"
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ADSL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "ENRLFL has valid value Y"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, ENRLFL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "Y"]
+          - ["CDISCPILOT01", "01-701-1023", "N"]
+    expected_findings: 0
+  - name: "ENRLFL has invalid value X"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, ENRLFL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "X"]
+    expected_findings: 1
+  - name: "ENRLFL is null (not allowed for population flags)"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, ENRLFL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", ""]
+    expected_findings: 1

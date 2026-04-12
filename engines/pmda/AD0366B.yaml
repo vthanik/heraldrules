@@ -1,10 +1,10 @@
 id: AD0366B
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: Conformance
 sensitivity: Record
-executability: Partially Executable
+executability: Fully Executable
 description: Randomized Population Flag (RANDFL) variable value should be 'Y' for
   randomized subject (when Date of Randomization (RANDDT) variable value is populated).
 scope:
@@ -14,8 +14,11 @@ scope:
     - ADDL
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: RANDDT
+      operator: non_empty
+    - name: RANDFL
+      operator: not_equal_to
+      value: 'Y'
 outcome:
   message: RANDFL value is not Y when RANDDT is populated
   severity: Error

@@ -1,0 +1,72 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  ADSL must have at least one variable that ends in FL because at least
+                  one subject-level population flag is required. Population flags identify
+                  the analysis populations (safety, ITT, PP, etc.).
+                Document: ADaM IG v1.1
+                Section: '3.2'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-48
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: SAFFL
+      operator: empty
+    - name: ITTFL
+      operator: empty
+    - name: COMPLFL
+      operator: empty
+    - name: ENRLFL
+      operator: empty
+Core:
+  Id: ADaM-048
+  Status: Published
+  Version: '1'
+Description: >-
+  ADSL must include at least one subject-level population flag variable (ending in FL).
+  This check fires when all of SAFFL, ITTFL, COMPLFL, and ENRLFL are null, suggesting
+  no population flags are present. Full check requires verifying at least one *FL
+  column exists in the dataset structure.
+Executability: Partially Executable
+Outcome:
+  Message: 'ADSL has no subject-level population flag variable (*FL) populated'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ADSL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "ADSL has SAFFL population flag"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, SAFFL, ITTFL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "Y", "Y"]
+    expected_findings: 0
+  - name: "ADSL has no population flags"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, SAFFL, ITTFL, COMPLFL, ENRLFL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "", "", "", ""]
+    expected_findings: 1

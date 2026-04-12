@@ -1,0 +1,68 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  When a variable with a suffix of FL has the value Y, the corresponding
+                  variable with the same root and a suffix of FN must have the value 1.
+                Document: ADaM IG v1.1
+                Section: '3.2'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-10
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: SAFFL
+      operator: equal_to
+      value: 'Y'
+    - name: SAFFN
+      operator: not_equal_to
+      value: 1
+Core:
+  Id: ADaM-010
+  Status: Published
+  Version: '1'
+Description: >-
+  When a flag variable (*FL) has value Y, its corresponding numeric flag (*FN) must
+  be 1. This rule uses SAFFL/SAFFN as a representative *FL/*FN pair.
+Executability: Partially Executable
+Outcome:
+  Message: '*FL = Y but corresponding *FN is not 1'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "SAFFL=Y and SAFFN=1 (consistent)"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, SAFFL, SAFFN]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "Y", 1]
+          - ["CDISCPILOT01", "01-701-1023", "N", 0]
+    expected_findings: 0
+  - name: "SAFFL=Y but SAFFN=0 (inconsistent)"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, SAFFL, SAFFN]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "Y", 0]
+    expected_findings: 1

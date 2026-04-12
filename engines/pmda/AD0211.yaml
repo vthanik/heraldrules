@@ -1,10 +1,10 @@
 id: AD0211
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: ADaM Conformance
 sensitivity: Record
-executability: Partially Executable
+executability: Fully Executable
 description: 'ABLFN (Analysis Baseline Flag Numeric) must be 1 or null. For Parameter-Level
   and Record-Level Numeric Population Flag variables: 1 = yes (included). Null values
   are allowed.'
@@ -16,8 +16,11 @@ scope:
     - MDBDS
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: ABLFN
+      operator: non_empty
+    - name: ABLFN
+      operator: not_equal_to
+      value: 1
 outcome:
   message: ABLFN value is not 1 or null
   severity: Error

@@ -1,0 +1,66 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  A variable name may not contain characters other than English letters
+                  (A-Z, a-z), underscores (_), or numerals (0-9). No special characters,
+                  spaces, or punctuation are allowed in ADaM variable names.
+                Document: ADaM IG v1.1
+                Section: '3.1'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-15
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: STUDYID
+      operator: matches_regex
+      value: '^[A-Za-z][A-Za-z0-9_]*$'
+Core:
+  Id: ADaM-015
+  Status: Published
+  Version: '1'
+Description: >-
+  All ADaM variable names may only contain English letters (A-Z, a-z), underscores
+  (_), or numerals (0-9). No special characters or spaces are allowed. This is a
+  structural metadata rule; STUDYID is used as a representative variable.
+Executability: Partially Executable
+Outcome:
+  Message: 'Variable name contains characters other than letters, digits, or underscore'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "STUDYID contains only valid characters"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID]
+        records:
+          - ["CDISCPILOT01", "01-701-1015"]
+    expected_findings: 0
+  - name: "STUDYID contains special character (invalid)"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID]
+        records:
+          - ["CDISC-PILOT!", "01-701-1015"]
+    expected_findings: 1

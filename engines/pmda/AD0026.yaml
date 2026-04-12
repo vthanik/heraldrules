@@ -1,5 +1,5 @@
 id: AD0026
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: ADaM Conformance
@@ -14,8 +14,13 @@ scope:
     - ADDL
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: SAFFN
+      operator: non_empty
+    - name: SAFFN
+      operator: not_in
+      value:
+        - 0
+        - 1
 outcome:
   message: Variable subject-population flag value is null
   severity: Error

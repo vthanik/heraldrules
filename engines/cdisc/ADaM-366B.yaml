@@ -1,0 +1,76 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  Randomized Population Flag (RANDFL) variable value should be Y for
+                  a randomized subject (when Date of Randomization RANDDT variable
+                  value is populated).
+                Document: ADaM IG v1.1
+                Section: '3.2'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-366B
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: RANDDT
+      operator: non_empty
+    - name: RANDFL
+      operator: not_equal_to
+      value: 'Y'
+Core:
+  Id: ADaM-366B
+  Status: Published
+  Version: '1'
+Description: >-
+  When RANDDT (Date of Randomization) is populated, RANDFL (Randomized Population
+  Flag) must be Y. A subject with a randomization date must be flagged as randomized.
+Executability: Fully Executable
+Outcome:
+  Message: 'RANDDT is populated but RANDFL is not Y'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ADSL
+Sensitivity: Record
+herald:
+  source: PMDA Validation Rules v6.0 (March 2025)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "RANDDT populated and RANDFL=Y (consistent)"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, RANDDT, RANDFL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "2014-01-03", "Y"]
+          - ["CDISCPILOT01", "01-701-1023", "", "N"]
+    expected_findings: 0
+  - name: "RANDDT populated but RANDFL is N (screen failure)"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, RANDDT, RANDFL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "2014-01-03", "N"]
+    expected_findings: 1
+  - name: "RANDDT populated but RANDFL is null"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, RANDDT, RANDFL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "2014-01-03", ""]
+    expected_findings: 1

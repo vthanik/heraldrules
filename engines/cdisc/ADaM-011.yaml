@@ -1,0 +1,68 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  When a variable with a suffix of FL has the value N, the corresponding
+                  variable with the same root and a suffix of FN must have the value 0.
+                Document: ADaM IG v1.1
+                Section: '3.2'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-11
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: SAFFL
+      operator: equal_to
+      value: 'N'
+    - name: SAFFN
+      operator: not_equal_to
+      value: 0
+Core:
+  Id: ADaM-011
+  Status: Published
+  Version: '1'
+Description: >-
+  When a flag variable (*FL) has value N, its corresponding numeric flag (*FN) must
+  be 0. This rule uses SAFFL/SAFFN as a representative *FL/*FN pair.
+Executability: Partially Executable
+Outcome:
+  Message: '*FL = N but corresponding *FN is not 0'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "SAFFL=N and SAFFN=0 (consistent)"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, SAFFL, SAFFN]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "N", 0]
+          - ["CDISCPILOT01", "01-701-1023", "Y", 1]
+    expected_findings: 0
+  - name: "SAFFL=N but SAFFN=1 (inconsistent)"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, SAFFL, SAFFN]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "N", 1]
+    expected_findings: 1

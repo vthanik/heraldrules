@@ -1,0 +1,75 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  Numeric population flag variables (e.g. SAFFN, ITTFN) must
+                  have a value of 1 or 0; null values are not allowed.
+                Document: ADaM IG v1.1
+                Section: '3.2'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-30
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: SAFFN
+      operator: non_empty
+    - name: SAFFN
+      operator: not_in
+      value:
+        - 0
+        - 1
+Core:
+  Id: ADaM-030
+  Status: Published
+  Version: '1'
+Description: "SAFFN may only have a value of 1 or 0. Null is not allowed for ADSL numeric population flag variables."
+Executability: Fully Executable
+Outcome:
+  Message: "SAFFN has a value other than 1 or 0"
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ADSL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "SAFFN has valid value 1"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, SAFFN]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", 1]
+          - ["CDISCPILOT01", "01-701-1023", 0]
+    expected_findings: 0
+  - name: "SAFFN has invalid value 2"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, SAFFN]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", 2]
+    expected_findings: 1
+  - name: "SAFFN is null (not allowed for numeric population flags)"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, SAFFN]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", ""]
+    expected_findings: 1

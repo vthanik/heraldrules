@@ -1,0 +1,66 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  A variable must start with an English letter (A-Z, a-z). Variable
+                  names in ADaM datasets must begin with an alphabetic character.
+                Document: ADaM IG v1.1
+                Section: '3.1'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-14
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: STUDYID
+      operator: matches_regex
+      value: '^[A-Za-z]'
+Core:
+  Id: ADaM-014
+  Status: Published
+  Version: '1'
+Description: >-
+  All ADaM variable names must start with an English letter (A-Z or a-z). This is
+  a structural metadata rule; the check uses STUDYID as a representative to confirm
+  the dataset is well-formed. Full enforcement requires checking all variable names
+  in dataset metadata.
+Executability: Partially Executable
+Outcome:
+  Message: 'Variable name does not start with an English letter (A-Z, a-z)'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "STUDYID starts with letter (valid)"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID]
+        records:
+          - ["CDISCPILOT01", "01-701-1015"]
+    expected_findings: 0
+  - name: "STUDYID starts with digit (invalid)"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID]
+        records:
+          - ["1CDISCPILOT", "01-701-1015"]
+    expected_findings: 1

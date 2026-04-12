@@ -1,5 +1,5 @@
 id: AD0011
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: ADaM Conformance
@@ -21,8 +21,12 @@ scope:
     - ADAMOTHER
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: SAFFL
+      operator: equal_to
+      value: 'N'
+    - name: SAFFN
+      operator: not_equal_to
+      value: 0
 outcome:
   message: '*FL = N and *FN != 0'
   severity: Error

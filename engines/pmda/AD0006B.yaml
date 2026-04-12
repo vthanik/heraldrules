@@ -1,5 +1,5 @@
 id: AD0006B
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: Conformance
@@ -23,8 +23,13 @@ scope:
     - ADAMOTHER
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: ONTRTFN
+      operator: non_empty
+    - name: ONTRTFN
+      operator: not_in
+      value:
+        - 0
+        - 1
 outcome:
   message: '*FN value is not 0, 1 or null'
   severity: Error

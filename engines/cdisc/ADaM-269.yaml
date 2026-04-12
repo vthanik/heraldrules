@@ -1,0 +1,71 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  Treatment flag variables must have a value of Y or null. Examples
+                  include Treatment Emergent Analysis Flag (TRTEMFL), Pre-treatment
+                  Flag (PREFL), On Treatment Record Flag (ONTRTFL), Follow-up Flag
+                  (FUPFL), and Last Value On Treatment Record Flag (LVOTFL).
+                Document: ADaM IG v1.1
+                Section: '4.3'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-269
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: TRTEMFL
+      operator: non_empty
+    - name: TRTEMFL
+      operator: not_equal_to
+      value: 'Y'
+Core:
+  Id: ADaM-269
+  Status: Published
+  Version: '1'
+Description: >-
+  Treatment flag variables (TRTEMFL, ONTRTFL, PREFL, FUPFL, LVOTFL) must have a
+  value of Y or null. Uses TRTEMFL (Treatment Emergent Analysis Flag) as representative.
+  N is not a valid value for treatment flags.
+Executability: Partially Executable
+Outcome:
+  Message: 'Treatment flag variable (e.g. TRTEMFL) has a value other than Y or null'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - BDS
+      - OCCDS
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: PMDA Validation Rules v6.0 (March 2025)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "TRTEMFL has valid value Y"
+    type: positive
+    datasets:
+      ADAE:
+        variables: [STUDYID, USUBJID, AETERM, TRTEMFL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "HEADACHE", "Y"]
+          - ["CDISCPILOT01", "01-701-1023", "NAUSEA", ""]
+    expected_findings: 0
+  - name: "TRTEMFL has invalid value N"
+    type: negative
+    datasets:
+      ADAE:
+        variables: [STUDYID, USUBJID, AETERM, TRTEMFL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "HEADACHE", "N"]
+    expected_findings: 1

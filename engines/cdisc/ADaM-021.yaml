@@ -1,0 +1,75 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  Subject-level population flag variables (e.g. SAFFL, ITTFL) must
+                  have a value of Y or N; null values are not allowed.
+                Document: ADaM IG v1.1
+                Section: '3.2'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-21
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: ITTFL
+      operator: non_empty
+    - name: ITTFL
+      operator: not_in
+      value:
+        - 'Y'
+        - 'N'
+Core:
+  Id: ADaM-021
+  Status: Published
+  Version: '1'
+Description: "ITTFL may only have a value of Y or N. Null is not allowed for ADSL population flag variables."
+Executability: Fully Executable
+Outcome:
+  Message: "ITTFL has a value other than Y or N"
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ADSL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "ITTFL has valid value Y"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, ITTFL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "Y"]
+          - ["CDISCPILOT01", "01-701-1023", "N"]
+    expected_findings: 0
+  - name: "ITTFL has invalid value X"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, ITTFL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "X"]
+    expected_findings: 1
+  - name: "ITTFL is null (not allowed for population flags)"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, ITTFL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", ""]
+    expected_findings: 1

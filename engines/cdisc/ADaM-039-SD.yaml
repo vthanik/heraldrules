@@ -1,0 +1,73 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  A variable with a suffix of DTF must have a value within Controlled
+                  Terminology for DATEFL: 'D' (day imputed), 'M' (month and day imputed),
+                  'Y' (year, month, and day imputed), or null (no imputation).
+                Document: ADaM IG v1.1
+                Section: '4.4'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-39-SD
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: ADTF
+      operator: non_empty
+    - name: ADTF
+      operator: not_in
+      value:
+        - 'Y'
+        - 'M'
+        - 'D'
+Core:
+  Id: ADaM-039-SD
+  Status: Published
+  Version: '1'
+Description: >-
+  Date imputation flag variables (*DTF) must have a value of Y (year, month, and day
+  imputed), M (month and day imputed), D (day imputed), or null. Uses ADTF (Analysis
+  Date Imputation Flag) as representative. Single-dataset variant.
+Executability: Partially Executable
+Outcome:
+  Message: 'Date imputation flag (*DTF) has a value outside controlled terminology (Y/M/D)'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "ADTF has valid value D (day imputed)"
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, ADT, ADTF]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "2014-01-15", ""]
+          - ["CDISCPILOT01", "01-701-1023", "SODIUM", "2014-01-15", "D"]
+          - ["CDISCPILOT01", "01-701-1028", "SODIUM", "2014-01-01", "M"]
+    expected_findings: 0
+  - name: "ADTF has invalid value X (not in CT)"
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, ADT, ADTF]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "2014-01-15", "X"]
+    expected_findings: 1

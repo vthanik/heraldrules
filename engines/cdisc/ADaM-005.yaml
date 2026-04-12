@@ -1,0 +1,73 @@
+Authorities:
+  - Organization: CDISC
+    Standards:
+      - Name: ADaMIG
+        References:
+          - Citations:
+              - Cited_Guidance: >-
+                  A variable with a suffix of FL must have a value that is Y, N, or
+                  null. Exception: population flags (SAFFL, ITTFL, etc.) cannot be null
+                  (covered by ADaM-019 through ADaM-025). Exception: ABLFL, ANLzzFL may
+                  only be Y or null.
+                Document: ADaM IG v1.1
+                Section: '3.2'
+            Origin: ADaM IG Conformance Rules
+            Rule_Identifier:
+              Id: ADaM-5
+              Version: '1'
+            Version: '1.0'
+        Version: '1.1'
+Check:
+  all:
+    - name: ONTRTFL
+      operator: non_empty
+    - name: ONTRTFL
+      operator: not_in
+      value:
+        - 'Y'
+        - 'N'
+Core:
+  Id: ADaM-005
+  Status: Published
+  Version: '1'
+Description: >-
+  A variable with a suffix of FL must have a value of Y, N, or null. This rule
+  uses ONTRTFL as a representative *FL variable. Full coverage requires checking
+  all *FL columns across all ADaM datasets.
+Executability: Partially Executable
+Outcome:
+  Message: '*FL variable has a value other than Y, N, or null'
+Rule_Type: Record Data
+Scope:
+  Classes:
+    Include:
+      - ALL
+  Domains:
+    Include:
+      - ALL
+Sensitivity: Record
+herald:
+  source: CDISC ADaM Validation Rules XML (September 2015)
+  catalogs:
+    - ADaMIG 1.1
+  fetched: '2026-04-12'
+
+tests:
+  - name: "ONTRTFL has valid value Y"
+    type: positive
+    datasets:
+      ADAE:
+        variables: [STUDYID, USUBJID, ONTRTFL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "Y"]
+          - ["CDISCPILOT01", "01-701-1023", "N"]
+          - ["CDISCPILOT01", "01-701-1028", ""]
+    expected_findings: 0
+  - name: "ONTRTFL has invalid value X"
+    type: negative
+    datasets:
+      ADAE:
+        variables: [STUDYID, USUBJID, ONTRTFL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "X"]
+    expected_findings: 1

@@ -1,5 +1,5 @@
 id: AD0007
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: ADaM Conformance
@@ -21,8 +21,10 @@ scope:
     - ADAMOTHER
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: SAFFN
+      operator: non_empty
+    - name: SAFFL
+      operator: empty
 outcome:
   message: Secondary variable *FN is present, but its primary variable *FL is not
     present

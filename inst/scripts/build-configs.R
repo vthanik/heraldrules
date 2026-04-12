@@ -117,11 +117,11 @@ write_config("fda-sdtm-ig-3.2", "FDA", "SDTM-IG", "3.2",
 
 write_config("fda-adam-ig-1.1", "FDA", "ADaM-IG", "1.1",
              c("CDISC ADaM-IG v1.1", "FDA Validator Rules v1.6", "Herald custom rules"),
-             c(fda_sdtm, ct_ids, herald_ids))
+             c(cdisc_ids, fda_sdtm, ct_ids, herald_ids))
 
 write_config("fda-adam-ig-1.2", "FDA", "ADaM-IG", "1.2",
              c("CDISC ADaM-IG v1.2", "FDA Validator Rules v1.6", "Herald custom rules"),
-             c(fda_sdtm, ct_ids, herald_ids))
+             c(cdisc_ids, fda_sdtm, ct_ids, herald_ids))
 
 write_config("fda-define-xml-2.1", "FDA", "Define-XML", "2.1",
              c("CDISC Define-XML v2.1", "FDA Validator Rules v1.6", "Herald custom rules"),
@@ -137,7 +137,7 @@ write_config("pmda-sdtm-ig-3.2", "PMDA", "SDTM-IG", "3.2",
 
 write_config("pmda-adam-ig-1.1", "PMDA", "ADaM-IG", "1.1",
              c("CDISC ADaM-IG v1.1", "PMDA Validation Rules v6.0", "Herald custom rules"),
-             c(pmda_adam_11, ct_ids, herald_ids))
+             c(cdisc_ids, pmda_adam_11, ct_ids, herald_ids))
 
 write_config("pmda-define-xml-2.1", "PMDA", "Define-XML", "2.1",
              c("CDISC Define-XML v2.1", "PMDA Validation Rules v6.0", "Herald custom rules"),

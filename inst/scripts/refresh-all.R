@@ -50,9 +50,9 @@ run_script <- function(name, extra_args = character(0)) {
   }
   all_args <- c(extra_args, if (verbose) "--verbose")
   cmd <- paste("Rscript", shQuote(script), paste(all_args, collapse = " "))
-  cat(sprintf("\n{'='*60}\n"))
+  cat(sprintf("\n%s\n", strrep("=", 60)))
   cat(sprintf("  Running: %s %s\n", name, paste(extra_args, collapse = " ")))
-  cat(sprintf("{'='*60}\n\n"))
+  cat(sprintf("%s\n\n", strrep("=", 60)))
   rc <- system(cmd)
   if (rc != 0L) cat(sprintf("  WARNING: %s exited with code %d\n", name, rc))
   invisible(rc)
@@ -85,9 +85,8 @@ if (!skip_fetch) {
 
 # --- Step 4-5: Fetch CT and generate per-codelist rules -----------------------
 if (!skip_fetch) {
-  cat("\n[4/9] Fetching controlled terminology (CDISC Library + NCI EVS)...\n")
-  # CT fetch is done inline since it needs extensibility merge
-  source(file.path(scripts_dir, "fetch-ct-full.R"), local = TRUE)
+  cat("\n[4/9] Fetching controlled terminology (NCI EVS)...\n")
+  run_script("fetch-ct.R", if (dry_run) "--dry-run" else character(0))
 }
 
 # --- Step 6: Rebuild configs --------------------------------------------------
@@ -124,7 +123,7 @@ if (file.exists(test_script)) {
 # --- Summary ------------------------------------------------------------------
 elapsed <- as.numeric(difftime(Sys.time(), start_time, units = "secs"))
 
-cat(sprintf("\n{'='*60}\n"))
+cat(sprintf("\n%s\n", strrep("=", 60)))
 cat(sprintf("=== Refresh Complete ===\n"))
 cat(sprintf("  Elapsed: %.0f seconds\n", elapsed))
 

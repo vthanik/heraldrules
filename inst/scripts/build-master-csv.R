@@ -195,9 +195,92 @@ pmda_df <- rbind(
 cat(sprintf("   %d rules\n", nrow(pmda_df)))
 
 # =============================================================================
-# COMBINE (official sources only -- no P21 dependency)
+# 4. Herald engine rules (engines/herald/ + engines/herald/define/)
 # =============================================================================
-master <- rbind(cdisc_df, fda_df, pmda_df)
+cat("4. Herald engine rules...\n")
+
+parse_herald_yaml <- function(f) {
+  tryCatch({
+    r <- yaml::read_yaml(f)
+    rid <- r$id %||% ""
+    if (!nzchar(rid)) return(NULL)
+    prov <- r$provenance %||% list()
+    make_row(
+      rule_id    = rid,
+      source     = "Herald (gap-fill for P21 parity)",
+      source_document = prov$source_doc %||% "Herald-original",
+      authority  = prov$authority %||% "Herald",
+      standard   = r$standard %||% "",
+      rule_type  = r$category %||% "",
+      cited_guidance = prov$cited_guidance %||% "",
+      message    = r$outcome$message %||% "",
+      description = r$description %||% "",
+      domains    = paste(unlist(r$scope$domains), collapse = ", "),
+      classes    = paste(unlist(r$scope$classes), collapse = ", "),
+      severity   = r$outcome$severity %||% "",
+      sensitivity = r$sensitivity %||% "",
+      executability = r$executability %||% "",
+      status     = r$status %||% "",
+      notes      = if (nzchar(prov$p21_reference %||% ""))
+                     paste0("p21_reference: ", prov$p21_reference) else ""
+    )
+  }, error = function(e) NULL)
+}
+
+herald_dir  <- file.path(repo_root, "engines", "herald")
+herald_files <- c(
+  list.files(herald_dir, pattern = "\\.yaml$", full.names = TRUE),
+  list.files(file.path(herald_dir, "define"), pattern = "\\.yaml$",
+             full.names = TRUE, recursive = FALSE)
+)
+herald_rows <- lapply(herald_files, parse_herald_yaml)
+herald_df   <- do.call(rbind, Filter(Negate(is.null), herald_rows))
+cat(sprintf("   %d rules\n", nrow(herald_df)))
+
+# =============================================================================
+# 5. CT per-codelist rules (engines/ct/)
+# =============================================================================
+cat("5. CT per-codelist rules...\n")
+
+ct_files <- list.files(file.path(repo_root, "engines", "ct"),
+                       pattern = "\\.yaml$", full.names = TRUE)
+ct_rows <- lapply(ct_files, function(f) {
+  tryCatch({
+    r <- yaml::read_yaml(f)
+    rid <- r$id %||% ""
+    if (!nzchar(rid)) return(NULL)
+    prov <- r$provenance %||% list()
+    make_row(
+      rule_id    = rid,
+      source     = prov$source_doc %||% "NCI EVS CDISC Controlled Terminology",
+      source_document = prov$source_doc %||% "NCI EVS CDISC Controlled Terminology",
+      source_url = "https://evs.nci.nih.gov/ftp1/CDISC/",
+      authority  = prov$authority %||% "CDISC",
+      standard   = r$standard %||% "SDTM",
+      rule_type  = r$category %||% "Controlled Terminology",
+      message    = r$outcome$message %||% "",
+      description = r$description %||% "",
+      domains    = paste(unlist(r$scope$domains), collapse = ", "),
+      classes    = paste(unlist(r$scope$classes), collapse = ", "),
+      severity   = r$outcome$severity %||% "",
+      sensitivity = r$sensitivity %||% "",
+      executability = r$executability %||% "",
+      status     = r$status %||% "",
+      notes      = if (nzchar(prov$codelist_code %||% ""))
+                     paste0("codelist: ", prov$codelist_code,
+                            if (nzchar(prov$codelist_name %||% ""))
+                              paste0(" (", prov$codelist_name, ")") else "")
+                   else ""
+    )
+  }, error = function(e) NULL)
+})
+ct_df <- do.call(rbind, Filter(Negate(is.null), ct_rows))
+cat(sprintf("   %d rules\n", nrow(ct_df)))
+
+# =============================================================================
+# COMBINE (all engines -- no P21 dependency)
+# =============================================================================
+master <- rbind(cdisc_df, fda_df, pmda_df, herald_df, ct_df)
 
 cat(sprintf("\n=== MASTER CSV ===\n"))
 cat(sprintf("Total: %d rules\n", nrow(master)))

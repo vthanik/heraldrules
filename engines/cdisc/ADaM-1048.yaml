@@ -44,3 +44,24 @@ herald:
     - ADaMIG 1.2
   fetched: '2026-04-12'
 
+tests:
+  - name: "BASETYPE consistent within PARAMCD (all non-null)"
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, BASETYPE]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "LAST"]
+          - ["CDISCPILOT01", "01-701-1023", "SODIUM", "LAST"]
+          - ["CDISCPILOT01", "01-701-1015", "ALT", ""]
+          - ["CDISCPILOT01", "01-701-1023", "ALT", ""]
+    expected_findings: 0
+  - name: "BASETYPE inconsistent within PARAMCD (some null, some non-null)"
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, BASETYPE]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "LAST"]
+          - ["CDISCPILOT01", "01-701-1023", "SODIUM", ""]
+    expected_findings: 1

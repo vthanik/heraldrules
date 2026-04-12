@@ -76,6 +76,7 @@ When deprecating a rule:
 - SEND rules deferred to post-CRAN release
 - ADaM: 253 ADaM IG conformance rules in engines/cdisc/ (ADaM-NNN prefix, v1.1+v1.2) + PMDA (388 rules); ADaM-1020..1049 are herald-authored v1.2-specific rules; all rules carry `herald.ig_versions` for version-filtered config assembly
 - CT rules: each codelist gets its own executable YAML with terms baked in
+- Every rule YAML must include a `tests:` block with at least one `type: positive` and one `type: negative` test using embedded CDISCPILOT01 records; no `skip: true` is allowed
 
 ## Validation
 

@@ -45,3 +45,21 @@ herald:
     - ADaMIG 1.2
   fetched: '2026-04-12'
 
+tests:
+  - name: "AWU present when AWTARGET present"
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, AWTARGET, AWU]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "14", "DAYS"]
+          - ["CDISCPILOT01", "01-701-1023", "SODIUM", "", ""]
+    expected_findings: 0
+  - name: "AWU missing but AWTARGET present"
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, AWTARGET, AWU]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "14", ""]
+    expected_findings: 1

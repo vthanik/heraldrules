@@ -45,3 +45,21 @@ herald:
     - ADaMIG 1.2
   fetched: '2026-04-12'
 
+tests:
+  - name: "TRTP present when TRTPN present (primary with secondary)"
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, TRTP, TRTPN]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "Drug A", "1"]
+          - ["CDISCPILOT01", "01-701-1023", "SODIUM", "", ""]
+    expected_findings: 0
+  - name: "TRTPN present but TRTP absent"
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, TRTP, TRTPN]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "", "1"]
+    expected_findings: 1

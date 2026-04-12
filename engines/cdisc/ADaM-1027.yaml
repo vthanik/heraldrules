@@ -43,3 +43,21 @@ herald:
     - ADaMIG 1.2
   fetched: '2026-04-12'
 
+tests:
+  - name: "BCHG has numeric value"
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, BCHG]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "1.5"]
+          - ["CDISCPILOT01", "01-701-1023", "SODIUM", "-0.5"]
+    expected_findings: 0
+  - name: "BCHG has non-numeric value"
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, BCHG]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "HIGH"]
+    expected_findings: 1

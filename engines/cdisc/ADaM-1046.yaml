@@ -44,3 +44,25 @@ herald:
     - ADaMIG 1.2
   fetched: '2026-04-12'
 
+tests:
+  - name: "ADSL-shared variables consistent across datasets"
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, AVAL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "140"]
+          - ["CDISCPILOT01", "01-701-1023", "SODIUM", "135"]
+    expected_findings: 0
+  - name: "Variable matching ADSL name has inconsistent value"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, AGE]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "63"]
+      ADLB:
+        variables: [STUDYID, USUBJID, AGE, PARAMCD, AVAL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "99", "SODIUM", "140"]
+    expected_findings: 1

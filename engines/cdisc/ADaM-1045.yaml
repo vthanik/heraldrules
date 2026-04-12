@@ -45,3 +45,22 @@ herald:
     - ADaMIG 1.2
   fetched: '2026-04-12'
 
+tests:
+  - name: "STRAT1VN present with STRAT1V also present"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, STRAT1V, STRAT1VN]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "HIGH", "2"]
+          - ["CDISCPILOT01", "01-701-1023", "LOW", "1"]
+          - ["CDISCPILOT01", "01-701-1028", "", ""]
+    expected_findings: 0
+  - name: "STRAT1VN present but STRAT1V absent"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID, STRAT1V, STRAT1VN]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "", "2"]
+    expected_findings: 1

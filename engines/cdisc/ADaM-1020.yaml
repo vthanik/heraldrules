@@ -48,3 +48,22 @@ herald:
     - ADaMIG 1.2
   fetched: '2026-04-12'
 
+tests:
+  - name: "ABLFL valid values Y, N, or null (v1.2 allows N)"
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, ABLFL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "Y"]
+          - ["CDISCPILOT01", "01-701-1023", "SODIUM", "N"]
+          - ["CDISCPILOT01", "01-701-1028", "SODIUM", ""]
+    expected_findings: 0
+  - name: "ABLFL has invalid value X"
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, ABLFL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "X"]
+    expected_findings: 1

@@ -43,3 +43,20 @@ herald:
     - ADaMIG 1.2
   fetched: '2026-04-12'
 
+tests:
+  - name: "SHIFT1 absent (no informational finding)"
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, SHIFT1]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", ""]
+    expected_findings: 0
+  - name: "SHIFT1 present (informational: verify approved pair)"
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, SHIFT1]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "HIGH to LOW"]
+    expected_findings: 1

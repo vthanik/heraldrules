@@ -48,3 +48,22 @@ herald:
     - ADaMIG 1.2
   fetched: '2026-04-12'
 
+tests:
+  - name: "ANL01FN valid values 0, 1, or null (numeric PFL)"
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, ANL01FN]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "1"]
+          - ["CDISCPILOT01", "01-701-1023", "SODIUM", "0"]
+          - ["CDISCPILOT01", "01-701-1028", "SODIUM", ""]
+    expected_findings: 0
+  - name: "ANL01FN has invalid value 2"
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, ANL01FN]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "2"]
+    expected_findings: 1

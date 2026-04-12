@@ -45,3 +45,21 @@ herald:
     - ADaMIG 1.2
   fetched: '2026-04-12'
 
+tests:
+  - name: "APERIOD present when TRT01P present"
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, TRT01P, APERIOD]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "Drug A", "1"]
+          - ["CDISCPILOT01", "01-701-1023", "SODIUM", "", ""]
+    expected_findings: 0
+  - name: "APERIOD missing but TRT01P present"
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, TRT01P, APERIOD]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "Drug A", ""]
+    expected_findings: 1

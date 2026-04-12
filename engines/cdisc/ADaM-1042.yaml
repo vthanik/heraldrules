@@ -45,3 +45,21 @@ herald:
     - ADaMIG 1.2
   fetched: '2026-04-12'
 
+tests:
+  - name: "BTOXGRHN present with BTOXGRH also present"
+    type: positive
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, BTOXGRH, BTOXGRHN]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "Grade 2", "2"]
+          - ["CDISCPILOT01", "01-701-1023", "SODIUM", "", ""]
+    expected_findings: 0
+  - name: "BTOXGRHN present but BTOXGRH absent"
+    type: negative
+    datasets:
+      ADLB:
+        variables: [STUDYID, USUBJID, PARAMCD, BTOXGRH, BTOXGRHN]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SODIUM", "", "2"]
+    expected_findings: 1

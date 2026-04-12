@@ -124,6 +124,13 @@ filter_fda_by_std <- function(std_pattern) {
 # --- Write config JSON --------------------------------------------------------
 
 write_config <- function(config_id, authority, standard, version, source_docs, rule_ids) {
+  # ADR-007: Detect duplicates explicitly before deduplication -- never silently collapse
+  dupes <- rule_ids[duplicated(rule_ids)]
+  if (length(dupes) > 0L) {
+    warning(sprintf("  %s: %d duplicate rule ID(s) found and removed: %s",
+                    config_id, length(dupes),
+                    paste(head(unique(dupes), 10L), collapse = ", ")))
+  }
   cfg <- list(
     config_id = config_id,
     authority = authority,

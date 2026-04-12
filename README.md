@@ -4,11 +4,11 @@ Regulatory validation rule catalog for the [herald](https://github.com/vthanik/h
 
 ## Overview
 
-**3,596 YAML rules** covering FDA, PMDA, and CDISC conformance requirements for SDTM, ADaM, SEND, and Define-XML submissions.
+**3,819 YAML rules** covering FDA, PMDA, and CDISC conformance requirements for SDTM, ADaM, SEND, and Define-XML submissions.
 
 | Engine | Rules | Source |
 |--------|------:|--------|
-| `cdisc` | 450 | CDISC Library API (SDTMIG 3.2, 3.3 conformance rules) |
+| `cdisc` | 673 | CDISC Library API (SDTM/SEND, 450 CORE rules) + ADaM IG Conformance (223 ADaM-NNN rules) |
 | `fda` | 660 | FDA Business Rules v1.5 (86) + Validator Rules v1.6 (574) |
 | `pmda` | 1,041 | PMDA Validation Rules v6.0 (SDTM/ADaM/Define-XML) |
 | `ct` | 1,210 | NCI EVS Controlled Terminology (6 meta-rules + 1,204 per-codelist) |
@@ -19,7 +19,7 @@ Regulatory validation rule catalog for the [herald](https://github.com/vthanik/h
 ```
 herald-rules/
 ├── engines/
-│   ├── cdisc/              450 YAML -- CDISC Library conformance rules
+│   ├── cdisc/              673 YAML -- CDISC Library conformance rules (450 CORE) + ADaM IG (223 ADaM-NNN)
 │   ├── ct/               1,210 YAML -- Per-codelist CT rules with baked-in terms
 │   ├── fda/                660 YAML -- FDA Business + Validator Rules
 │   ├── herald/             135 YAML -- Herald-original gap-fill + hardcoded spec checks (HRL- prefix)

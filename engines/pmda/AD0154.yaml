@@ -1,5 +1,5 @@
 id: AD0154
-version: 1
+version: 2
 status: Reference
 standard: ADaM
 category: ADaM Conformance
@@ -14,8 +14,11 @@ scope:
     - ADNCA
 check:
   all:
-    - name: __see_description__
-      operator: manual_review
+    - name: ABLFL
+      operator: equal_to
+      value: 'Y'
+    - name: BASETYPE
+      operator: non_empty
 outcome:
   message: Multiple baseline records exist for a unique USUBJID, PARAMCD, BASETYPE
   severity: Error

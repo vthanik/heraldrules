@@ -8,6 +8,36 @@ for release cadence details.
 
 ---
 
+## v2026.2.4 -- 2026-04-12
+
+### ADaM IG Core Conformance Rules (223 rules)
+
+Added 223 ADaM IG conformance rules to `engines/cdisc/` using `ADaM-NNN` ID prefix.
+Source: CDISC ADaM Validation Rules XML (September 2015) cross-referenced with PMDA Validation Rules v6.0.
+
+Rules cover 7 categories:
+- **Batch 1** (42 rules): Population flags & flag variables (ADaM-005 to ADaM-048)
+- **Batch 2** (28 rules): Variable naming & format (ADaM-013 to ADaM-1012A)
+- **Batch 3** (26 rules): Treatment variables (ADaM-061 to ADaM-1019)
+- **Batch 4** (38 rules): Baseline & calculation (ADaM-127A to ADaM-544)
+- **Batch 5** (21 rules): Date/time (ADaM-041A to ADaM-662)
+- **Batch 6** (34 rules): Period/visit & parameter (ADaM-092-SD to ADaM-208)
+- **Batch 7** (42 rules): Traceability & miscellaneous (ADaM-053 to ADaM-1018)
+
+All rules include embedded CDISCPILOT01 test datasets (no `skip: true`).
+
+### PMDA ADaM Rule Upgrades (179 rules)
+
+Upgraded 179 PMDA ADaM rules in `engines/pmda/` from `operator: manual_review` to real
+executable check logic (Fully Executable or Partially Executable with best-effort logic).
+
+### Totals
+
+- `engines/cdisc/`: 450 CORE rules + 223 ADaM-NNN rules = **673 rules**
+- Total rule catalog: **3,819 rules** (was 3,596)
+
+---
+
 ## v2026.2.3 -- 2026-04-11
 
 ### New ADaM Rules (HRL-AD-022/023/024)

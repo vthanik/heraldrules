@@ -3,7 +3,7 @@
   "herald_min_version": "0.1.0",
   "generated": "2026-04-11",
   "sources": {
-    "cdisc": "CDISC Library API (library.cdisc.org)",
+    "cdisc": "CDISC Library API (SDTM/SEND) + ADaM IG Conformance Rules (ADaM)",
     "fda": "FDA Validator Rules v1.6 (December 2022) + Business Rules v1.5",
     "pmda": "PMDA Validation Rules v6.0 (March 2025)",
     "ct": "NCI EVS CDISC Controlled Terminology (2025-09-26)",
@@ -11,9 +11,9 @@
     "herald-define": "Herald Define-XML v2.1 spec validation (100 rules in engines/herald/define/)"
   },
   "stats": {
-    "total_engine_rules": 3596,
+    "total_engine_rules": 3819,
     "by_engine": {
-      "cdisc": 450,
+      "cdisc": 673,
       "ct": 1210,
       "fda": 660,
       "herald": 235,

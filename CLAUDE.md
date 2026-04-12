@@ -47,27 +47,66 @@ CDISC_API_KEY=<key>
 ```
 Never commit `.local/` -- it's gitignored.
 
-## Adding Rules or Engines
+## Adding / Modifying / Deleting Rules — Affected Files Checklist
 
-When adding a new rule or defining a new engine, ALL of the following must be updated:
+Every rule change touches multiple files. Use this checklist to ensure nothing is missed.
+Run the rebuild scripts (see below) rather than editing configs/manifest by hand.
 
-1. **YAML rule file** -- Create in `engines/<engine>/<rule_id>.yaml`
-2. **herald-master-rules.csv** -- Append row with all 20 columns
-3. **Config JSON(s)** -- Add rule ID to relevant `configs/*.json` files
-4. **manifest.json** -- Update engine rule counts and config rule counts
-5. **CHANGELOG.md** -- Document the addition
+### When ADDING a new rule
 
-When modifying a rule:
-- Increment the `version` field in the YAML
-- Update the master CSV row
-- Update CHANGELOG.md
+| # | File / Action | How |
+|---|---------------|-----|
+| 1 | **`engines/<engine>/<rule_id>.yaml`** | Create rule YAML (positive + negative tests required) |
+| 2 | **`herald-master-rules.csv`** | Append row with all 20 columns |
+| 3 | **`configs/*.json`** | Run `Rscript inst/scripts/build-configs.R` — auto-adds to relevant configs |
+| 4 | **`manifest.json`** | Run `Rscript inst/scripts/build-manifest.R` — auto-updates engine counts |
+| 5 | **`CHANGELOG.md`** | Add entry under current version heading |
+| 6 | **`README.md`** | Update engine rule count in the table (e.g. `herald \| 147`) |
+| 7 | **`CLAUDE.md`** | Update rule count in Architecture block and Herald Rule ID Convention table |
 
-When deprecating a rule:
-- Set `status: Deprecated` in YAML
-- Add `deprecated` section with date, reason, replaced_by
-- Update master CSV status column
-- Do NOT remove from config JSON (keeps audit trail)
-- Update CHANGELOG.md
+### When MODIFYING an existing rule
+
+| # | File / Action | How |
+|---|---------------|-----|
+| 1 | **`engines/<engine>/<rule_id>.yaml`** | Edit rule; increment `version` field |
+| 2 | **`herald-master-rules.csv`** | Update the matching row |
+| 3 | **`configs/*.json`** | Re-run `build-configs.R` only if scope/domains changed |
+| 4 | **`manifest.json`** | Re-run `build-manifest.R` only if executability/status changed |
+| 5 | **`CHANGELOG.md`** | Document what changed and why |
+
+### When DELETING a rule
+
+| # | File / Action | How |
+|---|---------------|-----|
+| 1 | **`engines/<engine>/<rule_id>.yaml`** | Set `status: Deprecated` — do NOT delete the file |
+| 2 | **YAML `deprecated:` block** | Add `date`, `reason`, `replaced_by` fields |
+| 3 | **`herald-master-rules.csv`** | Set status column to `Deprecated` |
+| 4 | **`configs/*.json`** | Keep rule ID in configs (audit trail) — do not remove |
+| 5 | **`manifest.json`** | Re-run `build-manifest.R` |
+| 6 | **`CHANGELOG.md`** | Document deprecation |
+
+### Rebuild commands (always run in order)
+
+```bash
+Rscript inst/scripts/build-configs.R    # Regenerates all configs/*.json
+Rscript inst/scripts/build-manifest.R  # Regenerates manifest.json
+```
+
+### Quick verification after any rule change
+
+```bash
+# 1. No duplicate rule IDs in any config
+python3 -c "
+import json, glob, sys
+for f in sorted(glob.glob('configs/*.json')):
+    d = json.load(open(f)); ids = d['rule_ids']
+    if len(ids) != len(set(ids)): print('FAIL', f); sys.exit(1)
+    print('OK', f, len(ids))
+"
+
+# 2. All rule YAMLs parse cleanly
+Rscript tests/validate-rules.R
+```
 
 ## Rules
 

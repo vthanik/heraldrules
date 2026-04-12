@@ -80,8 +80,16 @@ hotfix releases.
 
 ### Release candidate (T-1 week)
 
-4. **Build and validate.** Run `Rscript inst/scripts/build-release.R`
-   to validate all rules, run test cases, and regenerate the manifest.
+4. **Build and validate.** Run the rebuild scripts, then validate all
+   rules and test cases:
+
+   ```bash
+   Rscript inst/scripts/build-configs.R
+   Rscript inst/scripts/build-manifest.R
+   Rscript tests/validate-rules.R
+   Rscript tests/validate-herald-rules.R
+   Rscript tests/validate-define-rules.R
+   ```
 
 5. **Tag the release candidate:** `git tag v2026.2-rc1`
 
@@ -97,10 +105,15 @@ hotfix releases.
 
 7. **Tag the release:** `git tag v2026.2`
 
-8. **Create the release tarball:**
-   `Rscript inst/scripts/build-release.R --release`
+8. **Build artifacts for release:**
 
-9. **Create a GitHub release** with the tarball and release notes.
+   ```bash
+   Rscript inst/scripts/build-configs.R
+   Rscript inst/scripts/build-master-csv.R
+   Rscript inst/scripts/build-manifest.R
+   ```
+
+9. **Create a GitHub release** with the release notes.
 
 10. **Update CHANGELOG.md** with the final release entry.
 
@@ -111,7 +124,7 @@ hotfix releases.
 
 ## Merge Policy
 
-### Rule changes (engines/, rules/)
+### Rule changes (engines/)
 
 - **Two approvals required.** At least one reviewer must have domain
   expertise in the relevant standard.
@@ -230,7 +243,7 @@ herald-rules tracks the following upstream sources:
 
 | Source | Sync Frequency | Method |
 |--------|----------------|--------|
-| CDISC CORE | Each release | Manual review of cdisc-open-rules releases |
+| CDISC CORE | Each release | `inst/scripts/fetch-cdisc.R` (CDISC Library API) |
 | NCI EVS CT | Quarterly | `inst/scripts/fetch-ct.R` |
 | FDA TCG | As published | Manual review |
 | FDA Business Rules | As published | Manual review |

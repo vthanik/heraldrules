@@ -55,23 +55,19 @@ of accuracy, traceability, and review rigor.
 ```
 herald-rules/
 ├── engines/
-│   ├── core/           # CDISC CORE rules (CORE-000001.yaml ...)
-│   ├── fda/            # FDA Business Rules (FDAB001.yaml ...)
-│   ├── pmda/           # PMDA Validation Rules
-│   └── ct/             # Controlled Terminology rules
-├── rules/
-│   ├── xpt/            # XPT transport-level rules
-│   ├── sdtm/           # SDTM domain-level rules
-│   ├── adam/            # ADaM domain-level rules
-│   ├── define/         # Define-XML rules
-│   ├── meta/           # Metadata-level rules
-│   └── ct/             # Controlled Terminology rules
-├── configs/            # Agency-specific rule configurations
-├── ct/                 # Controlled Terminology data files
-├── tests/              # Test case files
+│   ├── cdisc/          # CDISC Library CORE rules + ADaM IG conformance (ADaM-NNN)
+│   ├── fda/            # FDA Business Rules v1.5 (FDAB*) + Validator Rules v1.6 (FDAV-*)
+│   ├── pmda/           # PMDA Validation Rules v6.0
+│   ├── ct/             # Per-codelist CT rules (HRL-CT-NNNN)
+│   └── herald/         # Herald-original gap-fill rules (HRL-* prefix)
+│       └── define/     # Define-XML spec rules (HRL-DD-NNN, DD0001-DD0086)
+├── configs/            # 10 submission profile JSONs (FDA/PMDA × IG version)
+├── ct/                 # Full SDTM + ADaM controlled terminology JSON
+├── tests/              # Rule validation test suite (validate-rules.R etc.)
 ├── inst/
-│   ├── sources.json    # Canonical source URLs and versions
-│   └── scripts/        # Build, check, and fetch scripts
+│   └── scripts/        # Quarterly refresh scripts (fetch-*, build-*)
+├── herald-master-rules.csv  # All 3,761+ rules, 20 columns (source of truth)
+├── manifest.json            # Engine counts and config summaries
 ├── RULE_SCHEMA.md      # Full YAML schema documentation
 ├── GOVERNANCE.md       # Release cadence and decision-making
 ├── CHANGELOG.md        # Release history
@@ -161,15 +157,54 @@ Authorities:
 
 See [RULE_SCHEMA.md](RULE_SCHEMA.md) for complete field documentation.
 
-### Step 3: Add test cases
+### Step 3: Add embedded test cases
 
-Create a corresponding test case in `tests/` (see
-[Writing Test Cases](#writing-test-cases)).
+Tests are embedded in the rule YAML file itself under a `tests:` block
+(not in a separate file). Every Published rule must have at least one
+positive and one negative test using CDISCPILOT01 records:
 
-### Step 4: Validate
+```yaml
+tests:
+  - name: "Valid data passes rule"
+    type: positive
+    datasets:
+      EX:
+        variables: [STUDYID, USUBJID, EXTRT, EXDOSE]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "PLACEBO", "0"]
+    expected_findings: 0
+  - name: "PLACEBO with non-zero dose fails"
+    type: negative
+    datasets:
+      EX:
+        variables: [STUDYID, USUBJID, EXTRT, EXDOSE]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "PLACEBO", "5"]
+    expected_findings: 1
+```
+
+No `skip: true` is allowed on published rules.
+
+### Step 4: Update all affected artifacts
+
+After creating the YAML, run the rebuild scripts and update docs (see
+**Affected Files Checklist** in [CLAUDE.md](CLAUDE.md)):
 
 ```bash
-Rscript inst/scripts/build-release.R --validate-only
+Rscript inst/scripts/build-configs.R    # Regenerate all configs/*.json
+Rscript inst/scripts/build-manifest.R  # Regenerate manifest.json
+```
+
+Then update manually:
+- `herald-master-rules.csv` — append a row for the new rule
+- `CHANGELOG.md` — add entry under current version
+- `README.md` — update engine rule count in the table
+- `CLAUDE.md` — update Architecture rule count and HRL ID Convention table
+
+### Step 5: Validate
+
+```bash
+Rscript tests/validate-rules.R
 ```
 
 This checks:
@@ -243,39 +278,40 @@ Rules should never be deleted. Instead, deprecate them:
 
 ## Writing Test Cases
 
-Every rule with `Status: Published` must have test cases. Test cases live
-in the `tests/` directory.
+Every rule with `Status: Published` must have embedded test cases in the
+rule YAML file (under a `tests:` block at the end of the file). No
+separate test files are needed.
 
 ### Test case format
 
 ```yaml
-# tests/CORE-000005.yaml
-rule_id: CORE-000005
+# Appended to the end of the rule YAML file
 tests:
   - name: "Placebo with zero dose passes"
-    data:
+    type: positive
+    datasets:
       EX:
-        - {EXTRT: "PLACEBO", EXDOSE: 0}
-    expect: pass
+        variables: [STUDYID, USUBJID, EXTRT, EXDOSE]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "PLACEBO", "0"]
+    expected_findings: 0
 
   - name: "Placebo with non-zero dose fails"
-    data:
+    type: negative
+    datasets:
       EX:
-        - {EXTRT: "PLACEBO", EXDOSE: 5}
-    expect: fail
-    expected_message: "EXTRT is PLACEBO, but EXDOSE is not equal to 0."
-
-  - name: "Non-placebo treatment is not checked"
-    data:
-      EX:
-        - {EXTRT: "ASPIRIN", EXDOSE: 100}
-    expect: pass
+        variables: [STUDYID, USUBJID, EXTRT, EXDOSE]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "PLACEBO", "5"]
+    expected_findings: 1
 ```
 
 ### Test case requirements
 
-- At least one **pass** case and one **fail** case per rule.
-- At least one **edge case** (null values, empty strings, boundary values).
+- At least one `type: positive` case (`expected_findings: 0`).
+- At least one `type: negative` case (`expected_findings: N > 0`).
+- Use CDISCPILOT01 as STUDYID and realistic USUBJID values.
+- No `skip: true` — every Published rule must be testable.
 - For rules with conditions, test both the condition-met and
   condition-not-met paths.
 

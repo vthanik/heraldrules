@@ -2,6 +2,12 @@
 
 Regulatory validation rule catalog for the [herald](https://github.com/vthanik/herald) R package -- clinical dataset submission infrastructure that replaces metacore + xportr + Pinnacle 21.
 
+All rules follow the public regulatory corpus: FDA Study Data
+Technical Conformance Guide, PMDA Validation Rules v6.0, CDISC CORE
+rule catalogue, CDISC IG conformance tables, and CDISC controlled
+terminology releases. Each rule YAML's `provenance` block cites the
+specific document and section it enforces.
+
 ## Overview
 
 **3,870 YAML rules** covering FDA, PMDA, and CDISC conformance requirements for SDTM, ADaM, SEND, and Define-XML submissions.
@@ -12,7 +18,7 @@ Regulatory validation rule catalog for the [herald](https://github.com/vthanik/h
 | `fda` | 660 | FDA Business Rules v1.5 (86) + Validator Rules v1.6 (574) |
 | `pmda` | 1,041 | PMDA Validation Rules v6.0 (SDTM/ADaM/Define-XML) |
 | `ct` | 1,210 | CDISC Library Controlled Terminology (6 meta-rules + 1,204 per-codelist) |
-| `herald` | 256 | Herald-original: 147 gap-fill + hardcoded checks (HRL-AD/FM/MD/OD/SD/TS/VAR/LBL/TYP/LEN/DS/CL) + 109 Define-XML spec (HRL-DD-001..109) |
+| `herald` | 260 | Herald-original: 151 gap-fill + hardcoded checks (HRL-AD/FM/MD/OD/SD/TS/VAR/LBL/TYP/LEN/DS/CL) + 109 Define-XML spec (HRL-DD-001..109) |
 
 ## Repository Structure
 

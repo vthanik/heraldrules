@@ -207,6 +207,8 @@ Rscript tests/validate-rules.R
 
 - Never re-introduce P21 dependency (engines/core/ was deleted, rules/ was deleted)
 - Never bump version without explicit user approval
+- **Do NOT edit any rule YAML's `version:` field until the herald R package reaches CRAN.** Rule content edits are fine; the `version:` number stays at 1 across the pre-CRAN lifetime so downstream pipelines that key off it don't spuriously see drift.
+- **Never edit the sibling herald R package (`../herald/`) directly from this repo's Claude session.** When a rule change requires matching code in `R/val-checks.R`, `R/val-engine.R`, `R/rule-execute.R`, or any other herald file, write a handover note to `HANDOFF_TO_HERALD.md` (or a dated variant) describing the required changes, then let the user apply them in a fresh Claude session opened inside the herald repo. This keeps each repo's review, test, and commit boundaries clean. The global rule in `~/.claude/CLAUDE.md` about syncing sibling repos still applies — but the *execution* of the sync happens from the herald session, not here.
 - SEND rules deferred to post-CRAN release
 - ADaM: 253 ADaM IG conformance rules in engines/cdisc/ (ADaM-NNN prefix, v1.1+v1.2) + PMDA (388 rules); ADaM-1020..1049 are herald-authored v1.2-specific rules; all rules carry `herald.ig_versions` for version-filtered config assembly
 - CT rules: each codelist gets its own executable YAML with terms baked in
@@ -233,7 +235,7 @@ ALL herald-authored rules use `HRL-{CAT}-NNN` prefix:
 | `HRL-SD-NNN` | SDTM gap-fill | `engines/herald/` | 21 rules |
 | `HRL-TS-NNN` | Trial summary | `engines/herald/` | 5 rules |
 | `HRL-DD-NNN` | Define-XML spec | `engines/herald/define/` | 109 rules (HRL-DD-001..023 herald-original, HRL-DD-024..109 renamed from old DD0001..DD0086 to avoid collision with PMDA DD rules) |
-| `HRL-VAR/LBL/TYP/LEN/DS/CL-NNN` | Hardcoded spec checks | `engines/herald/` | 8 rules |
+| `HRL-VAR/LBL/TYP/LEN/DS/CL-NNN` | Hardcoded spec checks | `engines/herald/` | 12 rules (CL: 001, 002, 010, 020, 021; remainder 7) |
 | `HRL-CT-NNNN` | CT per-codelist | `engines/ct/` | 1,210 rules |
 
 P21 IDs preserved in `p21_reference` provenance field. The `DDnnnn` bare prefix is now reserved for PMDA-authored rules in `engines/pmda/` (from PMDA Validation Rules v6.0). Previously DD prefix was shared with herald/define/ rules, which caused silent config deduplication and was resolved by renaming herald/define/DD00nn → HRL-DD-NNN where NNN = nn + 23.
@@ -243,7 +245,7 @@ P21 IDs preserved in `p21_reference` provenance field. The `DDnnnn` bare prefix 
 The herald R package (sibling repo at `../herald/` relative to this one) consumes rules from this catalog.
 
 ### Key Files in Herald R Package
-- `R/val-checks.R` -- 8 hardcoded HRL-* spec checks (`HRL-VAR-001/002/003`, `HRL-LBL-001`, `HRL-TYP-001`, `HRL-LEN-001`, `HRL-DS-001`, `HRL-CL-001`)
+- `R/val-checks.R` -- 12 hardcoded HRL-* spec checks (`HRL-VAR-001/002/003`, `HRL-LBL-001`, `HRL-TYP-001`, `HRL-LEN-001`, `HRL-DS-001`, `HRL-CL-001/002/010/020/021`)
 - `R/val-engine.R` -- `validate()` orchestrator
 - `R/rule-execute.R` -- YAML rule execution, `grepl("^HRL-", rule_id)` routing
 - `R/rule-operator.R` -- Operator registry (96 core + 60 herald operators)
@@ -262,7 +264,7 @@ Always sync `README.md` after any rule additions, ID changes, or count updates.
 
 ## Key Files
 
-- `herald-master-rules.csv` -- 2,402 rules, 20 columns, full provenance (source of truth)
+- `herald-master-rules.csv` -- 2,862 rules, 20 columns, full provenance (source of truth)
 - `herald-controlled-terminology.csv` -- 44,970 CT terms with extensibility
 - `manifest.json` -- engine rule counts and config summaries
 - `CHANGELOG.md` -- release history

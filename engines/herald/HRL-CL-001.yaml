@@ -5,14 +5,15 @@ standard: SDTM
 category: Conformance
 sensitivity: Study
 executability: Hardcoded
-description: A value in the dataset is not found in the codelist defined for that
-  variable in the specification. Only applies to variables with an associated codelist.
+description: A dataset value is not one of the Terms listed for the variable's
+  referenced codelist. Fires only after HRL-CL-002 confirms the variable and codelist
+  data types match; otherwise the mismatch is reported by HRL-CL-002 instead.
 scope:
   classes: []
   domains: []
 check: []
 outcome:
-  message: Value not in spec codelist
+  message: Value not in spec codelist (value not in Terms)
   severity: Error
 provenance:
   source_doc: Herald R Package (hardcoded spec check)

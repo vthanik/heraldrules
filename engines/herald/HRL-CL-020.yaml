@@ -1,0 +1,23 @@
+id: HRL-CL-020
+version: 1
+status: Published
+standard: SDTM
+category: Conformance
+sensitivity: Study
+executability: Hardcoded
+description: When Origin = Predecessor and the Predecessor column points at a
+  specific source variable (pattern "<DS>.<VAR>"), the row's Codelist must equal
+  the source variable's Codelist whenever the source has one. Enforces codelist
+  inheritance so derived predecessor copies cannot silently drift onto a
+  different (or stray) codelist ID.
+scope:
+  classes: []
+  domains: []
+check: []
+outcome:
+  message: Predecessor variable does not inherit its source's codelist
+  severity: Error
+provenance:
+  source_doc: Herald R Package (hardcoded spec check)
+  authority: Herald
+  p21_reference: ""

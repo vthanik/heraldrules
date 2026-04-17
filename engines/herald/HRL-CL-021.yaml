@@ -1,0 +1,23 @@
+id: HRL-CL-021
+version: 1
+status: Published
+standard: SDTM
+category: Conformance
+sensitivity: Study
+executability: Hardcoded
+description: Every non-empty Codelist reference on the Variables sheet must exist
+  as an ID on the Codelists sheet. Catches stray or leaked identifiers (e.g.
+  Analysis Display or Document IDs accidentally placed in the Codelist column)
+  that would otherwise surface as mysterious HRL-CL-001 "empty codelist"
+  failures.
+scope:
+  classes: []
+  domains: []
+check: []
+outcome:
+  message: Variable references a codelist ID that does not exist on the Codelists sheet
+  severity: Error
+provenance:
+  source_doc: Herald R Package (hardcoded spec check)
+  authority: Herald
+  p21_reference: ""

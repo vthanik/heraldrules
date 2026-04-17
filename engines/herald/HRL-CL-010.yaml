@@ -1,0 +1,25 @@
+id: HRL-CL-010
+version: 1
+status: Published
+standard: SDTM
+category: Conformance
+sensitivity: Study
+executability: Hardcoded
+description: Paired numeric/character variables (e.g. AGEGR1 and AGEGR1N, TRT01P
+  and TRT01PN, SEX and SEXN) must reference two distinct codelists — a text
+  codelist for the character variable whose Terms are the decoded strings, and an
+  integer codelist for the numeric companion whose Terms are the codes and whose
+  Decoded Value column carries the matching strings. Sharing a single codelist
+  between the pair guarantees that one of the two variables' values will not
+  appear in the codelist's Terms column.
+scope:
+  classes: []
+  domains: []
+check: []
+outcome:
+  message: Paired num/char variables share a codelist or use wrong codelist types
+  severity: Error
+provenance:
+  source_doc: Herald R Package (hardcoded spec check)
+  authority: Herald
+  p21_reference: ""

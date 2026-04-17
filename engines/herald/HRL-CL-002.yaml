@@ -1,0 +1,23 @@
+id: HRL-CL-002
+version: 1
+status: Published
+standard: SDTM
+category: Conformance
+sensitivity: Study
+executability: Hardcoded
+description: A variable references a codelist whose data type does not match the
+  variable's Data Type (e.g. a character variable pointing at an integer codelist
+  or vice versa). Prevents HRL-CL-001 from firing with a misleading "value not in
+  terms" message when the underlying problem is that the codelist reference itself
+  is wrong.
+scope:
+  classes: []
+  domains: []
+check: []
+outcome:
+  message: Codelist type mismatch between variable and referenced codelist
+  severity: Error
+provenance:
+  source_doc: Herald R Package (hardcoded spec check)
+  authority: Herald
+  p21_reference: ""

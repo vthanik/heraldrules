@@ -12,6 +12,35 @@ for release cadence details.
 
 ### Added
 
+- **HRL-CL-002** — Codelist type mismatch between variable and referenced
+  codelist. Hardcoded check in `herald::check_codelist()` that fires before the
+  existing HRL-CL-001 value-in-terms scan so reviewers see a single
+  "wrong codelist reference" finding instead of a flood of "value not in terms"
+  errors. Motivated by HBPD03 buildspec session 2026-04-17.
+- **HRL-CL-010** — Paired numeric/character variables (e.g. AGEGR1/AGEGR1N)
+  must reference two distinct codelists of the correct data types (text for the
+  char variable, integer for its numeric companion). New hardcoded check
+  `herald::check_paired_codelists()`. Catches shared-codelist bugs directly.
+- **HRL-CL-020** — Origin=Predecessor variables must inherit the source
+  variable's codelist when the Predecessor column follows the "<DS>.<VAR>"
+  pattern. New hardcoded check `herald::check_predecessor_codelist()`.
+- **HRL-CL-021** — Any Codelist reference on the Variables sheet must exist
+  as an ID on the Codelists sheet. New hardcoded check
+  `herald::check_codelist_id_exists()`. Catches stray/leaked identifiers
+  (Analysis Display IDs, Document IDs, typos) before they surface as
+  misleading HRL-CL-001 failures. Caught AIMS0101T07STR, BPRSA118STR, OUTN
+  in the HBPD03 session with zero false positives.
+
+### Changed
+
+- **HRL-CL-001** (version 2) — description and message narrowed to the
+  "value not in Terms" failure mode only; the former "wrong codelist
+  reference" case is now reported by HRL-CL-002. Rule semantics are
+  backward compatible (same ID, same severity, same trigger condition).
+- Herald engine rule count: 256 → 260 (HRL-CL: 1 → 5; sequence intentionally
+  non-contiguous — 01x = paired-variable integrity, 02x = Origin/Predecessor
+  integrity).
+
 - **CT per-term NCI codes** — `ct/sdtm-ct.json` and `ct/adam-ct.json` now
   ship object-shaped term entries with `submissionValue`, `conceptId`, and
   `preferredTerm` per term (was plain character array). `inst/scripts/fetch-ct.R`

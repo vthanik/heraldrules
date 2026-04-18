@@ -15,10 +15,10 @@ scope:
 check:
   all:
     - name: dataset
-      operator: non_empty
+      operator: empty
     - name: __dataset_exists_in_ds_spec
       operator: equal_to
-      value: false
+      value: true
 outcome:
   message: "Dataset referenced in Variables sheet does not exist in the Datasets sheet."
   severity: Error

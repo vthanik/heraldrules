@@ -17,16 +17,16 @@ Authorities:
 Check:
   all:
     - name: PCHG
-      operator: non_empty
+      operator: empty
     - name: BASE
-      operator: non_empty
+      operator: empty
     - name: AVAL
-      operator: non_empty
+      operator: empty
     - name: BASE
-      operator: not_equal_to
+      operator: equal_to
       value: 0
     - name: PCHG
-      operator: not_within_tolerance_of_formula
+      operator: within_tolerance_of_formula
       value: 100 * (AVAL - BASE) / BASE
       tolerance: 0.01
 Core:

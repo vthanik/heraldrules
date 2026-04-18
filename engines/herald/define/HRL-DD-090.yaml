@@ -15,10 +15,10 @@ scope:
 check:
   all:
     - name: codelist_id
-      operator: non_empty
+      operator: empty
     - name: __codelist_exists_in_cl_spec
       operator: equal_to
-      value: false
+      value: true
 outcome:
   message: "ValueLevel references a Codelist ID that does not exist in the Codelists sheet."
   severity: Error

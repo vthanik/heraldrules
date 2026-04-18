@@ -15,10 +15,10 @@ scope:
 check:
   all:
     - name: decoded_value
-      operator: empty
+      operator: non_empty
     - name: __codelist_has_any_decodes
       operator: equal_to
-      value: true
+      value: false
 outcome:
   message: "Decoded Value is missing for a codelist term. When a codelist uses CodeListItem format, all terms must have Decode values."
   severity: Error

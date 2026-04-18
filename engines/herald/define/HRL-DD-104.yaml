@@ -15,10 +15,10 @@ scope:
 check:
   all:
     - name: purpose
-      operator: non_empty
+      operator: empty
     - name: __purpose_in_adam_ct
       operator: equal_to
-      value: false
+      value: true
 outcome:
   message: "AnalysisPurpose value is not in ADaM Controlled Terminology. Values are controlled by the AnalysisPurpose extensible codelist."
   severity: Warning

@@ -116,21 +116,29 @@ check:
 
 These 12 HRL-SD rules had all operators inverted (treated `check:` as violation template instead of passing template): HRL-SD-010, 011, 012, 013, 014, 016, 017, 018, 020, 021. HRL-TS-002 and HRL-TS-004 had `any:` where `all:` was needed.
 
-### Known open polarity issues (2026-04, Phase 2d audit)
+### Known past mistakes (2026-04, Phase 2e polarity audit)
 
-- **HRL-DD Define-XML rules** may have the same polarity issue as the
-  HRL-SD/TS rules fixed in 2025-04. Spot check: HRL-DD-031 currently
-  uses `non_empty` as an IF-populated pre-condition — per the passing
-  convention, IF-populated pre-conditions should use `empty` (which
-  flags when populated). Needs a focused polarity audit across all 109
-  HRL-DD rules before Phase 3 (engine) goes live.
-- **`not_within_tolerance_of_formula`** (19 rules across CDISC + PMDA,
-  including AD0223, AD0225, AD0131, AD0132) references an operator
-  that does not exist in herald. Likely a polarity error: herald has
-  `within_tolerance_of_formula` which already flags when the formula
-  is violated, making the explicit "not_" form wrong. Resolve together
-  with the HRL-DD polarity audit.
-- 12 other operators are referenced by catalog YAMLs but absent from
+Phase 2e fixed 43 rules with inverted polarity:
+
+- **19 tolerance-formula rules** across `engines/pmda/` (AD0131-134,
+  AD0223, AD0225, AD0582, AD0586) and `engines/cdisc/` (ADaM-131-134,
+  ADaM-131-SD-134-SD, ADaM-223, ADaM-225, ADaM-582, ADaM-586) had
+  `non_empty` pre-conditions inverted, used the nonexistent
+  `not_within_tolerance_of_formula` operator, and (where applicable)
+  inverted the `BASE != 0` guard as `not_equal_to 0`. Fixed with
+  `non_empty`→`empty`, `not_within...`→`within...`, `not_equal_to`→
+  `equal_to`.
+- **24 HRL-DD rules** with inverted "IF X populated AND Y missing"
+  patterns: HRL-DD-031, 063, 067, 075, 076, 077, 078, 082, 085, 086,
+  087, 088, 089, 090, 091, 092, 093, 094, 095, 096, 101, 103, 104, 106.
+
+### Known open polarity issues (remaining)
+
+- **Other HRL-DD operator patterns** were not audited in Phase 2e:
+  `not_equal_to+empty` (5 rules), `equal_to+not_in` (3), and the
+  one-off patterns. Inspect each before Phase 3 (engine) goes live to
+  ensure semantics match descriptions.
+- **12 operators** are referenced by catalog YAMLs but absent from
   `../herald/R/rule-operator.R`. See HANDOFF §4j for the full list and
   recommended implementation order.
 
@@ -285,6 +293,7 @@ Phased execution (see `/Users/vignesh/.claude/plans/plan-are-we-focusing-wobbly-
 | 2c | 25 herald Reference rules annotated; HANDOFF §4h/§4i added; 84 stubs stripped; define validator fixed | heraldrules (done) |
 | 6 | `inst/benchmarks/p21-parity/` harness + 5 fixtures + truth table + diagnostic-mode runner | heraldrules (done) |
 | 2d | Operator audit: 4 aliases renamed; 12 missing operators documented as HANDOFF §4j; polarity bug flagged | heraldrules (done) |
+| 2e | Polarity audit fixed 43 rules (19 tolerance + 24 HRL-DD spec cross-reference) | heraldrules (done) |
 | 3 | Implement the 68 new herald operators (HANDOFF §4a-j) to unlock ~260 rules | herald, 3-4 sessions |
 | 3 | 28 new operators implemented | herald, 2-3 sessions |
 | 4 | 163 "Bucket B/C/D/E" rules authored | heraldrules, 2 sessions |

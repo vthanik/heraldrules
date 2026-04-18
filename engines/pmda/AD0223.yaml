@@ -16,13 +16,13 @@ scope:
 check:
   all:
     - name: CHG
-      operator: non_empty
+      operator: empty
     - name: AVAL
-      operator: non_empty
+      operator: empty
     - name: BASE
-      operator: non_empty
+      operator: empty
     - name: CHG
-      operator: not_within_tolerance_of_formula
+      operator: within_tolerance_of_formula
       value: AVAL - BASE
       tolerance: 0.001
 outcome:

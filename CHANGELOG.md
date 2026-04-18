@@ -10,6 +10,69 @@ for release cadence details.
 
 ## Unreleased
 
+### Beat P21 — Phase 2e (2026-04-18, polarity audit)
+
+#### Fixed
+
+Resolved the polarity bugs flagged by Phase 2d. The Phase 2d audit
+identified that many rules treated `check:` as a violation template
+rather than a passing template, inverting operators. Per CLAUDE.md
+passing-condition convention: operator names describe **valid**
+state, operator bodies return TRUE when data **violates** that state.
+Under this convention:
+
+- IF-populated pre-conditions use `empty` (flags when populated);
+- `non_empty` flags when empty; `equal_to X` flags when NOT X.
+
+**Tolerance-formula rules (19):** CHG/PCHG/ratio calculation rules
+across `engines/pmda/` and `engines/cdisc/` used the nonexistent
+`not_within_tolerance_of_formula` operator and inverted pre-conditions.
+Fixed:
+- `non_empty` → `empty` on IF-populated pre-conditions (e.g. CHG
+  populated, AVAL populated, BASE populated).
+- `not_within_tolerance_of_formula` → `within_tolerance_of_formula`
+  (which already exists in herald and correctly flags when the
+  formula is violated).
+- `not_equal_to 0` → `equal_to 0` on BASE/denominator guards
+  (IF-`!= 0` pre-condition -- `equal_to 0` flags when BASE != 0, which
+  IS the pre-condition firing as intended).
+
+Affected files: AD0131, AD0132, AD0133, AD0134, AD0223, AD0225,
+AD0582, AD0586 (PMDA) and ADaM-131, -131-SD, -132, -132-SD, -133,
+-133-SD, -134, -134-SD, -223, -225, -582, -586 (CDISC).
+
+**HRL-DD spec-exists rules (20):** The `non_empty ID + equal_to
+__computed` pattern was inverted across 20 rules that check
+cross-references in the spec (dataset exists, codelist_id exists,
+method_id exists, comment_id exists, etc.). Fixed with a paired
+swap: operators `non_empty` <-> `empty` AND values `true` <-> `false`
+so that (ID populated) AND (reference target missing) fires the
+violation.
+
+Affected: HRL-DD-063, -067, -078, -082, -085, -086, -087, -088,
+-089, -090, -091, -092, -093, -094, -095, -096, -101, -103, -104,
+-106.
+
+**HRL-DD IF-populated/THEN-empty rules (3):** HRL-DD-031, -075, -076
+used `non_empty + empty` (intent: IF X populated AND Y empty, flag).
+Swapped to `empty + non_empty` per the convention.
+
+**HRL-DD-077:** Manually corrected -- `empty + equal_to true` to
+`non_empty + equal_to false` (semantic: flag when decoded_value
+empty AND codelist uses CodeListItem format).
+
+**Total: 43 rules fixed.** All three validators pass. Catalog
+runnable count unchanged (3,700) because these rules were already
+marked runnable; they were previously producing incorrect findings
+(likely zero findings on real data) and now produce the correct set.
+
+#### Ongoing
+
+- HRL-DD rules using other operator patterns (`not_equal_to+empty`,
+  `equal_to+not_in`, etc.) were not audited in this pass. A follow-up
+  session should inspect each remaining pattern group (totals in
+  CLAUDE.md "Known open polarity issues").
+
 ### Beat P21 — Phase 2d (2026-04-18, operator audit)
 
 #### Fixed

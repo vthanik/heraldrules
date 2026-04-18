@@ -15,9 +15,9 @@ scope:
 check:
   all:
     - name: terminology
-      operator: non_empty
-    - name: nci_term_code
       operator: empty
+    - name: nci_term_code
+      operator: non_empty
 outcome:
   message: "NCI Term Code is missing for a term in a CDISC CT codelist. Alias with C-Code is required for each term in CDISC CT."
   severity: Error

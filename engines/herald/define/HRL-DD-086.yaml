@@ -15,10 +15,10 @@ scope:
 check:
   all:
     - name: document_id
-      operator: non_empty
+      operator: empty
     - name: __document_exists
       operator: equal_to
-      value: false
+      value: true
 outcome:
   message: "Document ID referenced does not exist in the Documents sheet."
   severity: Error

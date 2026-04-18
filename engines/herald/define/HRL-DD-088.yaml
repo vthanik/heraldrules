@@ -15,10 +15,10 @@ scope:
 check:
   all:
     - name: method_id
-      operator: non_empty
+      operator: empty
     - name: __method_exists_in_mt_spec
       operator: equal_to
-      value: false
+      value: true
 outcome:
   message: "Variable references a Method ID that does not exist in the Methods sheet."
   severity: Error

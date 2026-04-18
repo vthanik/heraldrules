@@ -15,10 +15,10 @@ scope:
 check:
   all:
     - name: display_id
-      operator: non_empty
+      operator: empty
     - name: __display_exists_in_disp_spec
       operator: equal_to
-      value: false
+      value: true
 outcome:
   message: "AnalysisResults references a Display ID that does not exist in the AnalysisDisplays sheet."
   severity: Error

@@ -44,6 +44,7 @@ state and plan:
 | 2c | **done** | 25 un-annotated herald Reference rules (ODM/SD/DD) tagged with exact operator blockers; HANDOFF §4h (XML) + §4i (ARM) added; 84 `check: []` stubs stripped; define validator fixed to distinguish Reference from executable |
 | 6 | **done** | `inst/benchmarks/p21-parity/` harness with 5 fixtures + truth table + diagnostic-mode runner -- regression floor for reviewer-cited findings |
 | 2d | **done** | Operator audit: 4 aliases renamed in catalog; 12 truly-missing operators documented as HANDOFF §4j; polarity-bug flagged for HRL-DD rules |
+| 2e | **done** | Polarity audit fixed 43 rules (19 tolerance-formula + 24 HRL-DD spec cross-reference) |
 | 3 | blocked on herald | Implement the 68 operators specified in HANDOFF §4 (a-j) to unlock ~260 additional rules |
 | 3 | blocked on herald | 28 new operators (required_variables, in_range, paired-suffix date/time, cross-dataset population, etc.) |
 | 4 | blocked on Phase 3 | 163 additional rules unlocked by Phase 3 operators |

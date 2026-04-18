@@ -15,10 +15,10 @@ scope:
 check:
   all:
     - name: comment_id
-      operator: non_empty
+      operator: empty
     - name: __comment_exists_in_cm_spec
       operator: equal_to
-      value: false
+      value: true
 outcome:
   message: "ValueLevel references a Comment ID that does not exist in the Comments sheet."
   severity: Error

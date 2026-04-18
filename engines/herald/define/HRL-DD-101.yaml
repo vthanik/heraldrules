@@ -15,10 +15,10 @@ scope:
 check:
   all:
     - name: variables
-      operator: non_empty
+      operator: empty
     - name: __arm_variables_unique
       operator: equal_to
-      value: false
+      value: true
 outcome:
   message: "AnalysisVariable is not unique within the AnalysisResult. Each variable should appear only once per result."
   severity: Error

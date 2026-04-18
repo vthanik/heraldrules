@@ -16,16 +16,16 @@ scope:
 check:
   all:
     - name: R2A1HI
-      operator: non_empty
+      operator: empty
     - name: A1HI
-      operator: non_empty
+      operator: empty
     - name: AVAL
-      operator: non_empty
+      operator: empty
     - name: A1HI
-      operator: not_equal_to
+      operator: equal_to
       value: 0
     - name: R2A1HI
-      operator: not_within_tolerance_of_formula
+      operator: within_tolerance_of_formula
       value: AVAL / A1HI
       tolerance: 0.001
 outcome:

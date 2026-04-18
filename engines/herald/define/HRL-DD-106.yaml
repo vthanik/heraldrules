@@ -15,10 +15,10 @@ scope:
 check:
   all:
     - name: codelist_id
-      operator: non_empty
+      operator: empty
     - name: __datatype_matches_codelist
       operator: equal_to
-      value: false
+      value: true
 outcome:
   message: "Variable Data Type does not match the referenced Codelist Data Type. These must be consistent."
   severity: Error

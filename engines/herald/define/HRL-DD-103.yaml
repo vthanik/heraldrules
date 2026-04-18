@@ -15,10 +15,10 @@ scope:
 check:
   all:
     - name: reason
-      operator: non_empty
+      operator: empty
     - name: __reason_in_adam_ct
       operator: equal_to
-      value: false
+      value: true
 outcome:
   message: "AnalysisReason value is not in ADaM Controlled Terminology. Values are controlled by the Analysis Reason extensible codelist."
   severity: Warning

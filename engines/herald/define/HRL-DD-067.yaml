@@ -15,10 +15,10 @@ scope:
 check:
   all:
     - name: length
-      operator: non_empty
+      operator: empty
     - name: __length_exceeds_parent
       operator: equal_to
-      value: true
+      value: false
 outcome:
   message: "Value-level Length exceeds the parent variable Length. For ItemDef referenced from a ValueListDef, Length must be <= parent variable length."
   severity: Error

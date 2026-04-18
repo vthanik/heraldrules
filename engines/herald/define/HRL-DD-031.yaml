@@ -15,9 +15,9 @@ scope:
 check:
   all:
     - name: standard
-      operator: non_empty
-    - name: class
       operator: empty
+    - name: class
+      operator: non_empty
 outcome:
   message: "Class is missing for a dataset that references a standard. def:Class is required when dataset follows SDTM, SEND, or ADaM."
   severity: Error

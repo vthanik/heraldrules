@@ -15,9 +15,9 @@ scope:
 check:
   all:
     - name: terminology
-      operator: non_empty
-    - name: nci_code
       operator: empty
+    - name: nci_code
+      operator: non_empty
 outcome:
   message: "NCI Codelist Code is missing for a CDISC CT codelist. Alias with C-Code is required for CodeList elements representing CDISC CT."
   severity: Error

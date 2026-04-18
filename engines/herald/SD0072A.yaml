@@ -1,0 +1,26 @@
+id: SD0072A
+version: 1
+status: Published
+standard: SDTM
+category: Conformance
+sensitivity: Record
+executability: Fully Executable
+description: >
+  Related Domain Abbreviation (RDOMAIN) must have a valid value of Domains
+  included in the study data. In the Related Records (RELREC) dataset,
+  every RDOMAIN reference must resolve to a domain dataset that was also
+  submitted -- otherwise the cross-reference cannot be verified.
+scope:
+  classes: []
+  domains: [RELREC]
+check:
+  all:
+    - name: RDOMAIN
+      operator: value_in_dataset_names
+outcome:
+  message: RDOMAIN value does not match any submitted domain dataset
+  severity: Error
+provenance:
+  source_doc: Pinnacle 21 Community Validator v4.1.0
+  authority: Herald-relay (pending FDA Validator v1.7 upstream source)
+  p21_reference: SD0072A

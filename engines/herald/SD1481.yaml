@@ -1,0 +1,26 @@
+id: SD1481
+version: 1
+status: Published
+standard: SDTM
+category: Conformance
+sensitivity: Record
+executability: Fully Executable
+description: >
+  In Associated Persons domains (APxxxx), the value of Sequence Number
+  (--SEQ) variable must be unique for each record within a domain. The
+  combination of (STUDYID, APID, --SEQ) identifies a unique AP record.
+scope:
+  classes: []
+  domains: [APDM, APMH, APCM, APDS, APPR, APRS, APSC, APSE, APTS, APVS]
+check:
+  all:
+    - name: ""
+      operator: wildcard_variable_unique
+      value: SEQ
+outcome:
+  message: Duplicate --SEQ value within AP domain
+  severity: Error
+provenance:
+  source_doc: Pinnacle 21 Community Validator v4.1.0
+  authority: Herald-relay (pending FDA Validator v1.7 upstream source)
+  p21_reference: SD1481

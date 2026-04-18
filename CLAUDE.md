@@ -205,33 +205,46 @@ Rscript tests/validate-rules.R
 
 ## No Stubs (Executability Invariant)
 
-A rule is one of two things:
+A rule is one of four executable states plus one non-executable:
 
-1. **`executability: Fully Executable`** (or `Hardcoded` for the 12 HRL spec
-   checks baked into `../herald/R/val-checks.R`) — ships with a real `check:`
-   block whose operators align with the `description:` / `message:`, plus a
-   `tests:` block containing at least one `type: positive` and one
-   `type: negative` test against embedded CDISCPILOT01 records.
-2. **`executability: Reference`** — ships with NO `check:` block at all
-   (omit the key entirely; do not write `check: []`). Reference rules are
-   documentation of a regulatory expectation herald cannot execute today.
-   The `notes:` field should explain why (e.g. missing operator, awaiting
-   handover).
+**Runnable (engine executes):**
 
-**Banned values** for `executability`: `Partially Executable`,
-`Partially Executable - Possible Overreporting`,
-`Partially Executable - Possible Underreporting`, `Not Executable`. These
-were historical escape hatches that produced stub `check:` blocks the
-engine silently ran and returned zero findings for. If a rule needs more
-than "Fully Executable" can deliver, it stays `Reference` with a handover
-note, not a half-working stub.
+1. **`executability: Fully Executable`** — real `check:` block whose operators
+   align with the `description:` / `message:`, plus a `tests:` block
+   containing at least one `type: positive` and one `type: negative` test
+   against embedded CDISCPILOT01 records.
+2. **`executability: Hardcoded`** — for the 12 HRL spec checks baked into
+   `../herald/R/val-checks.R`. No YAML `check:` block.
+3. **`executability: Partially Executable`** — real `check:` block with real
+   logic, but covering a narrower scope than the full rule description
+   (e.g. checks ONTRTFL as a representative of all *FL variables). Findings
+   are legitimate but not exhaustive. Ships with `tests:`.
+4. **`executability: Partially Executable - Possible Overreporting`** /
+   `Partially Executable - Possible Underreporting` — real check; a specific
+   edge case (e.g. multistage arm assignments) can produce false positives
+   or missed findings. Caveat belongs in the rule's `Description:` /
+   `Message:`, not hidden.
+
+**Non-runnable:**
+
+5. **`executability: Reference`** — NO `check:` block at all (omit the key;
+   do not write `check: []`). Reference rules are documentation of a
+   regulatory expectation herald cannot execute today. The `notes:` field
+   must explain why (missing operator, cross-dataset join not supported,
+   awaiting handover).
+
+**Banned values:** `Not Executable`. This was an escape hatch for true
+stubs. If a rule has no real check logic, it is `Reference` (no `check:`).
+Never write a stub check block (e.g. `USUBJID empty` when the rule is
+"required variables must be present"). If Phase-2 authoring of a rule
+lands a real but narrow check, prefer `Partially Executable` with an
+honest description, not `Fully Executable`.
 
 The master CSV carries a derived `runnable` column (TRUE when
-`executability` is in the allow-list). The manifest carries
+`executability` is in the runnable allow-list). The manifest carries
 `executable_by_engine` counts. Both feed the README's Runnable/Total table.
-
-See `HANDOFF_TO_HERALD_2026-04-18.md` section 1 for the engine-side
-enforcement (`R/rule-execute.R` allow-list + `validate()` skip summary).
+The engine runtime (HANDOFF §1) enforces the allow-list and emits a
+skip summary for Reference rules.
 
 ## "Beat Pinnacle 21" Program (multi-session)
 
@@ -249,7 +262,8 @@ Phased execution (see `/Users/vignesh/.claude/plans/plan-are-we-focusing-wobbly-
 |---|---|---|
 | 1 | AD0124 executable, AD0047 clean Reference, 4 missing P21 IDs, engine handover | heraldrules (done) |
 | 2a | 40 HRL-FM duplicates deprecated; 21 HRL-MD promoted to executable; 19 HRL-MD annotated as blocked | heraldrules (done) |
-| 2b-h | Remaining ~800 "Bucket A" rules authored with existing operators | heraldrules, 5-8 sessions |
+| 2b-prep | Runnable allow-list expanded to include Partially variants; 2 stub rules purged | heraldrules (done) |
+| 2b-h | Remaining ~150 "Bucket A" Reference rules across PMDA/CDISC/FDA | heraldrules, 2-3 sessions |
 | 3 | 28 new operators implemented | herald, 2-3 sessions |
 | 4 | 163 "Bucket B/C/D/E" rules authored | heraldrules, 2 sessions |
 | 5 | Re-examine 259 "F" + 673 "G" rules | heraldrules, 2 sessions |

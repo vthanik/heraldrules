@@ -13,7 +13,10 @@ if (!requireNamespace("yaml", quietly = TRUE)) stop("yaml required")
 
 cat("=== Building Manifest ===\n\n")
 
-RUNNABLE_STATES <- c("Fully Executable", "Hardcoded")
+RUNNABLE_STATES <- c("Fully Executable", "Hardcoded",
+                     "Partially Executable",
+                     "Partially Executable - Possible Overreporting",
+                     "Partially Executable - Possible Underreporting")
 
 is_runnable <- function(f) {
   r <- tryCatch(yaml::read_yaml(f), error = function(e) NULL)

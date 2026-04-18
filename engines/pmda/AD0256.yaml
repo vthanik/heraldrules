@@ -1,26 +1,20 @@
 id: AD0256
-version: 2
-status: Reference
+version: 1
+status: Published
 standard: ADaM
 category: ADaM Conformance
 sensitivity: Record
-executability: Partially Executable
-description: All subjects included into ADaM datasets should be present in ADSL dataset
-  and use the same Unique Subject Identifier (USUBJID).
+executability: Reference
+description: >
+  All subjects included in ADaM analysis datasets must be present in ADSL and
+  use the same Unique Subject Identifier (USUBJID). USUBJID in any BDS, OCCDS,
+  ADNCA, MDBDS, ADAE, or MDOCCDS dataset must be a value that exists in the
+  USUBJID column of ADSL.
 scope:
-  classes: []
-  domains:
+  classes:
     - BDS
-    - ADNCA
-    - MDBDS
     - OCCDS
-    - ADAE
-    - MDOCCDS
-    - ADAMOTHER
-check:
-  all:
-    - name: USUBJID
-      operator: empty
+  domains: []
 outcome:
   message: USUBJID value does not exist in the ADaM ADSL domain
   severity: Error
@@ -29,5 +23,11 @@ provenance:
   authority: PMDA
   rule_id: AD0256
   pmda_category: Error
+  p21_reference: AD0256
   ig_versions: []
-
+notes: >
+  Deferred to Reference pending the `consistent_population` cross-dataset
+  operator in the herald R package. This rule requires a join from the
+  current dataset's USUBJID to ADSL's USUBJID column, which today's
+  operator library cannot express. Activation plan is documented in
+  HANDOFF_TO_HERALD_2026-04-18.md section 4e.

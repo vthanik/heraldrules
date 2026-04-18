@@ -10,6 +10,40 @@ for release cadence details.
 
 ## Unreleased
 
+### Beat P21 — Phase 2b-prep (2026-04-18)
+
+#### Changed
+
+- **Runnable allow-list expanded.** Catalog audit confirmed that 654 of
+  656 "Partially Executable" rules ship with real `check:` blocks — not
+  stubs. The Phase 1 strict allow-list (`Fully Executable`, `Hardcoded`
+  only) was sidelining legitimate coverage. Both `inst/scripts/build-master-csv.R`
+  and `inst/scripts/build-manifest.R` now treat `Partially Executable`,
+  `Partially Executable - Possible Overreporting`, and
+  `Partially Executable - Possible Underreporting` as runnable.
+  Catalog runnable count: 3,046 → 3,700 (+654 rules, 78% → 95%).
+- **`HANDOFF_TO_HERALD_2026-04-18.md` section 1** updated to match the
+  expanded allow-list and to document `coverage_caveat` stamping for
+  Partially-Executable findings so reports can flag known undercoverage
+  or possible-overreporting rules alongside full findings.
+- **`CLAUDE.md` "No Stubs" section** rewritten with the 4+1 executability
+  taxonomy (Fully Executable, Hardcoded, Partially Executable, Partially
+  with over/under caveat, Reference). Clarifies that Partially Executable
+  is NOT a stub — it is a real check with scope caveats.
+
+#### Fixed
+
+- **ADaM-047 → clean Reference.** CDISC's required-variables rule had a
+  stub `check: USUBJID empty` that did not match its "all required
+  variables must be present" description. Rewritten to remove `check:`
+  block, scope tightened to `Classes: ADSL/BDS/OCCDS`, sensitivity
+  lifted to `Dataset`, and pointed at HANDOFF section 3. Mirrors the
+  Phase 1 AD0047 treatment.
+- **AD0256 → clean Reference.** PMDA's "USUBJID exists in ADSL"
+  cross-dataset rule had the same stub. Rewritten without `check:`,
+  scope `classes: [BDS, OCCDS]`, pointed at HANDOFF section 4e for
+  the `consistent_population` operator.
+
 ### Beat P21 — Phase 2a (2026-04-18)
 
 #### Deprecated

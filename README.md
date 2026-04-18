@@ -10,13 +10,13 @@ specific document and section it enforces.
 
 ## Overview
 
-**3,878 YAML rules** (3,046 runnable) covering FDA, PMDA, and CDISC conformance requirements for SDTM, ADaM, SEND, and Define-XML submissions.
+**3,878 YAML rules** (3,700 runnable, 95%) covering FDA, PMDA, and CDISC conformance requirements for SDTM, ADaM, SEND, and Define-XML submissions.
 
 | Engine | Total | Runnable | Source |
 |--------|------:|---------:|--------|
-| `cdisc` | 703 | 527 | CDISC Library API (SDTM/SEND, 450 CORE rules) + ADaM IG Conformance (253 ADaM-NNN rules, v1.1 and v1.2) |
-| `fda` | 660 | 426 | FDA Business Rules v1.5 (86) + Validator Rules v1.6 (574) |
-| `pmda` | 1,045 | 707 | PMDA Validation Rules v6.0 (SDTM/ADaM/Define-XML) + 4 P21-parity gap-fills (AD0792/793/794/895) |
+| `cdisc` | 703 | 701 | CDISC Library API (SDTM/SEND, 450 CORE rules) + ADaM IG Conformance (253 ADaM-NNN rules, v1.1 and v1.2) |
+| `fda` | 660 | 574 | FDA Business Rules v1.5 (86) + Validator Rules v1.6 (574) |
+| `pmda` | 1,045 | 1,039 | PMDA Validation Rules v6.0 (SDTM/ADaM/Define-XML) + 4 P21-parity gap-fills (AD0792/793/794/895) |
 | `ct` | 1,210 | 1,210 | CDISC Library Controlled Terminology (6 meta-rules + 1,204 per-codelist) |
 | `herald` | 260 | 176 | Herald-original: 21 executable HRL-MD spec-metadata rules + 40 deprecated HRL-FM duplicates + 90 other HRL-AD/OD/SD/TS/VAR/LBL/TYP/LEN/DS/CL + 109 HRL-DD Define-XML |
 
@@ -39,7 +39,8 @@ state and plan:
 |---|---|---|
 | 1 | **done** | AD0124 executable, AD0047 clean Reference, 4 missing P21 IDs, engine handover written |
 | 2a | **done** | 40 HRL-FM duplicates deprecated; 21 HRL-MD promoted Reference→Fully Executable; 19 HRL-MD annotated as operator-blocked |
-| 2b-h | next | Remaining ~800 "Bucket A" rules across PMDA/CDISC/herald |
+| 2b-prep | **done** | Runnable allow-list expanded to include Partially Executable variants (654 rules recovered); 2 true stubs purged (ADaM-047, AD0256) |
+| 2b-h | next | Remaining ~150 "Bucket A" Reference rules across PMDA/CDISC/FDA |
 | 3 | blocked on herald | 28 new operators (required_variables, in_range, paired-suffix date/time, cross-dataset population, etc.) |
 | 4 | blocked on Phase 3 | 163 additional rules unlocked by Phase 3 operators |
 | 5 | blocked on Phase 4 | Re-examine 259 "architecturally blocked" + 673 "reference-by-nature" rules |

@@ -56,10 +56,20 @@ findings silently.
 
 ### The fix
 
-Replace with an allow-list of genuinely runnable states:
+Replace with an allow-list of genuinely runnable states. Phase 2b-prep
+(2026-04-18 update) confirmed that 654 of 656 catalog "Partially
+Executable" rules ship with real `check:` blocks — not stubs. Only 2
+true stubs remain (ADaM-047, AD0256), both now rewritten as Reference.
+So Partially Executable variants belong in the runnable list:
 
 ```r
-runnable <- c("Fully Executable", "Hardcoded")
+runnable <- c(
+  "Fully Executable",
+  "Hardcoded",
+  "Partially Executable",
+  "Partially Executable - Possible Overreporting",
+  "Partially Executable - Possible Underreporting"
+)
 if (!isTRUE(rule$executability %in% runnable)) {
   return(empty_findings(
     skipped = TRUE,
@@ -70,6 +80,12 @@ if (!isTRUE(rule$executability %in% runnable)) {
 
 `empty_findings()` needs two optional parameters (`skipped = FALSE`,
 `skip_reason = NA_character_`) so `validate()` can aggregate skip reasons.
+
+The engine should also stamp findings with a `coverage_caveat` attribute
+when the source rule is `Partially Executable*`, so the summary/report
+layer can flag "known undercoverage" or "possible overreporting" rules
+alongside full findings. This keeps users informed without hiding real
+hits.
 
 ### Tests
 

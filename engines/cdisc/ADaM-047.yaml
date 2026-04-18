@@ -16,51 +16,36 @@ Authorities:
               Version: '1'
             Version: '1.0'
         Version: '1.1'
-Check:
-  all:
-    - name: USUBJID
-      operator: empty
 Core:
   Id: ADaM-047
   Status: Published
   Version: '1'
 Description: >-
-  All variables described as Required in the ADaM IG must be included in the dataset.
-  USUBJID is checked as the universally required subject identifier. Full coverage
-  requires checking all required variables per the IG for each dataset class.
-Executability: Partially Executable
+  All variables described as Required in the ADaM IG must be included in the
+  dataset (ADSL, BDS, OCCDS, ADAE). This rule covers every core structural
+  variable per the ADaM IG required-variable table.
+Executability: Reference
 Outcome:
-  Message: 'Required variable (USUBJID) is missing or null'
-Rule_Type: Record Data
+  Message: 'Required variable is not present'
+Rule_Type: Dataset Data
 Scope:
   Classes:
     Include:
-      - ALL
+      - ADSL
+      - BDS
+      - OCCDS
   Domains:
     Include:
       - ALL
-Sensitivity: Record
+Sensitivity: Dataset
 herald:
   ig_versions: ["1.1", "1.2"]
   source: CDISC ADaM Validation Rules XML (September 2015)
   catalogs:
     - ADaMIG 1.1
   fetched: '2026-04-12'
-
-tests:
-  - name: "USUBJID is present and populated"
-    type: positive
-    datasets:
-      ADSL:
-        variables: [STUDYID, USUBJID]
-        records:
-          - ["CDISCPILOT01", "01-701-1015"]
-    expected_findings: 0
-  - name: "USUBJID is null (required variable missing)"
-    type: negative
-    datasets:
-      ADSL:
-        variables: [STUDYID, USUBJID]
-        records:
-          - ["CDISCPILOT01", ""]
-    expected_findings: 1
+  notes: >
+    Deferred to Reference pending the `required_variables` operator in the
+    herald R package (today a no-op stub at ../herald/R/rule-operator.R:862).
+    Mirrors engines/pmda/AD0047. Activation plan is documented in
+    HANDOFF_TO_HERALD_2026-04-18.md section 3.

@@ -41,7 +41,10 @@ COLS <- c("rule_id", "source", "source_document", "source_url", "authority",
           "domains", "classes", "severity", "sensitivity", "executability",
           "status", "notes", "runnable")
 
-RUNNABLE_STATES <- c("Fully Executable", "Hardcoded")
+RUNNABLE_STATES <- c("Fully Executable", "Hardcoded",
+                     "Partially Executable",
+                     "Partially Executable - Possible Overreporting",
+                     "Partially Executable - Possible Underreporting")
 
 make_row <- function(...) {
   vals <- list(...)

@@ -166,50 +166,91 @@ cat(sprintf("  PMDA SDTM 3.3:  %d IDs\n", length(pmda_sdtm_33)))
 cat(sprintf("  PMDA SDTM 3.2:  %d IDs\n", length(pmda_sdtm_32)))
 cat(sprintf("  PMDA ADaM 1.1:  %d IDs\n", length(pmda_adam_11)))
 
+# --- Define-XML subsets (FDA subset + PMDA subset) ---------------------------
+
+pmda_define   <- filter_pmda("Define")
+
 # --- Generate configs (ADR-005: one authority per config) ---------------------
+#
+# The herald R package loads the selected engine config AND the always-on
+# herald.json bundle. Engine configs therefore carry only engine-owned rules
+# (no HRL-* from engines/herald/). Herald gap-fill rules live in herald.json.
+# Per-codelist CT rules (HRL-CT-* from engines/ct/) are CT-sourced and stay
+# with their authority bucket.
 
 cat("\nWriting configs...\n")
 
+# ---- Authority-scoped configs (no herald_ids) ------------------------------
+
 write_config("fda-sdtm-ig-3.3", "FDA", "SDTM-IG", "3.3",
-             c("CDISC SDTM-IG v3.3", "FDA Validator Rules v1.6", "Herald custom rules"),
-             c(cdisc_all, fda_sdtm, ct_ids, herald_ids))
+             c("CDISC SDTM-IG v3.3", "FDA Validator Rules v1.6"),
+             c(cdisc_all, fda_sdtm, ct_ids))
 
 write_config("fda-sdtm-ig-3.2", "FDA", "SDTM-IG", "3.2",
-             c("CDISC SDTM-IG v3.2", "FDA Validator Rules v1.6", "Herald custom rules"),
-             c(cdisc_all, fda_sdtm, ct_ids, herald_ids))
+             c("CDISC SDTM-IG v3.2", "FDA Validator Rules v1.6"),
+             c(cdisc_all, fda_sdtm, ct_ids))
 
-# FDA ADaM configs: use version-filtered CDISC rules (ADR-003 superset)
-# Note: FDA has no ADaM-specific validator rules; fda_sdtm covers ADaM datasets too
+# FDA has no ADaM-specific Validator rules; fda_sdtm covers ADaM datasets too
 write_config("fda-adam-ig-1.1", "FDA", "ADaM-IG", "1.1",
-             c("CDISC ADaM-IG v1.1", "FDA Validator Rules v1.6", "Herald custom rules"),
-             c(cdisc_adam_11, fda_sdtm, ct_ids, herald_ids))
+             c("CDISC ADaM-IG v1.1", "FDA Validator Rules v1.6"),
+             c(cdisc_adam_11, fda_sdtm, ct_ids))
 
 write_config("fda-adam-ig-1.2", "FDA", "ADaM-IG", "1.2",
-             c("CDISC ADaM-IG v1.2", "FDA Validator Rules v1.6", "Herald custom rules"),
-             c(cdisc_adam_12, fda_sdtm, ct_ids, herald_ids))
+             c("CDISC ADaM-IG v1.2", "FDA Validator Rules v1.6"),
+             c(cdisc_adam_12, fda_sdtm, ct_ids))
 
 write_config("fda-define-xml-2.1", "FDA", "Define-XML", "2.1",
-             c("CDISC Define-XML v2.1", "FDA Validator Rules v1.6", "Herald custom rules"),
-             c(fda_ids, ct_ids, herald_ids))
+             c("CDISC Define-XML v2.1", "FDA Validator Rules v1.6"),
+             c(fda_ids, ct_ids))
 
 write_config("pmda-sdtm-ig-3.3", "PMDA", "SDTM-IG", "3.3",
-             c("CDISC SDTM-IG v3.3", "PMDA Validation Rules v6.0", "Herald custom rules"),
-             c(cdisc_all, pmda_sdtm_33, ct_ids, herald_ids))
+             c("CDISC SDTM-IG v3.3", "PMDA Validation Rules v6.0"),
+             c(cdisc_all, pmda_sdtm_33, ct_ids))
 
 write_config("pmda-sdtm-ig-3.2", "PMDA", "SDTM-IG", "3.2",
-             c("CDISC SDTM-IG v3.2", "PMDA Validation Rules v6.0", "Herald custom rules"),
-             c(cdisc_all, pmda_sdtm_32, ct_ids, herald_ids))
+             c("CDISC SDTM-IG v3.2", "PMDA Validation Rules v6.0"),
+             c(cdisc_all, pmda_sdtm_32, ct_ids))
 
 write_config("pmda-adam-ig-1.1", "PMDA", "ADaM-IG", "1.1",
-             c("CDISC ADaM-IG v1.1", "PMDA Validation Rules v6.0", "Herald custom rules"),
-             c(cdisc_adam_11, pmda_adam_11, ct_ids, herald_ids))
+             c("CDISC ADaM-IG v1.1", "PMDA Validation Rules v6.0"),
+             c(cdisc_adam_11, pmda_adam_11, ct_ids))
 
 write_config("pmda-define-xml-2.1", "PMDA", "Define-XML", "2.1",
-             c("CDISC Define-XML v2.1", "PMDA Validation Rules v6.0", "Herald custom rules"),
-             c(filter_pmda("Define"), ct_ids, herald_ids))
+             c("CDISC Define-XML v2.1", "PMDA Validation Rules v6.0"),
+             c(pmda_define, ct_ids))
+
+# ---- Cross-engine "all" configs (FDA + PMDA + CDISC), version-scoped -------
+
+write_config("all-sdtm-ig-3.3", "Combined", "SDTM-IG", "3.3",
+             c("CDISC SDTM-IG v3.3", "FDA Validator Rules v1.6", "PMDA v6.0"),
+             c(cdisc_all, fda_sdtm, pmda_sdtm_33, ct_ids))
+
+write_config("all-sdtm-ig-3.2", "Combined", "SDTM-IG", "3.2",
+             c("CDISC SDTM-IG v3.2", "FDA Validator Rules v1.6", "PMDA v6.0"),
+             c(cdisc_all, fda_sdtm, pmda_sdtm_32, ct_ids))
+
+write_config("all-adam-ig-1.1", "Combined", "ADaM-IG", "1.1",
+             c("CDISC ADaM-IG v1.1", "FDA Validator Rules v1.6", "PMDA v6.0"),
+             c(cdisc_adam_11, fda_sdtm, pmda_adam_11, ct_ids))
+
+write_config("all-adam-ig-1.2", "Combined", "ADaM-IG", "1.2",
+             c("CDISC ADaM-IG v1.2", "FDA Validator Rules v1.6", "PMDA v6.0"),
+             c(cdisc_adam_12, fda_sdtm, pmda_adam_11, ct_ids))
+
+write_config("all-define-xml-2.1", "Combined", "Define-XML", "2.1",
+             c("CDISC Define-XML v2.1", "FDA Validator Rules v1.6", "PMDA v6.0"),
+             c(fda_ids, pmda_define, ct_ids))
+
+# ---- Herald gap-fill bundle (always-on, engine="herald") -------------------
+
+write_config("herald", "Herald", "All", "2026.2",
+             c("Herald gap-fill + spec checks + Define-XML validation"),
+             herald_ids)
+
+# ---- Catch-all config for power users (cross-standard, cross-version) -----
 
 write_config("all", "Combined", "All", "2026.2",
-             c("All herald rules"),
+             c("All herald rules (cross-standard, cross-version)"),
              c(filter_cdisc_by_ig("1.2"), fda_ids, pmda_ids, ct_ids, herald_ids))
 
 cat("\nDone.\n")

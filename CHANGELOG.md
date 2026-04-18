@@ -10,6 +10,35 @@ for release cadence details.
 
 ## Unreleased
 
+### Clean-slate rewrite — Phase 1d + 1e (2026-04-18, herald.json always-on + cross-engine configs)
+
+#### Added
+
+- **`configs/herald.json`** -- new always-on bundle containing the 262
+  rules from `engines/herald/` (HRL-AD/SD/MD/OD/TS/FM/DD/VAR/LBL/TYP/
+  LEN/DS/CL/KEY). The herald R package loads this alongside whichever
+  engine config the user picked via `engine=`. Selecting
+  `engine = "herald"` runs only this bundle (useful for gap-fill
+  debugging in isolation).
+- **5 new cross-engine configs** for `engine = "all"` resolution:
+  `all-sdtm-ig-3.3` (2,970 rules), `all-sdtm-ig-3.2` (2,970),
+  `all-adam-ig-1.1` (2,827), `all-adam-ig-1.2` (2,852),
+  `all-define-xml-2.1` (2,016). Each combines CDISC + FDA + PMDA + CT
+  scoped to that standard/version -- no HRL-* (lives in herald.json).
+
+#### Changed
+
+- Existing engine configs (`fda-*`, `pmda-*`) no longer include the
+  262 `engines/herald/` rules. Counts drop accordingly (e.g.
+  `fda-sdtm-ig-3.3`: 2,719 -> 2,457). The `HRL-CT-*` per-codelist
+  rules from `engines/ct/` stay with the CT bucket -- they're
+  CT-sourced, not herald gap-fill.
+- Catch-all `configs/all.json` kept at 3,859 rules (cross-standard,
+  cross-version) as a power-user escape hatch. Use `all-<std>-<ver>`
+  for normal cross-engine runs.
+
+Config total: 10 -> 16.
+
 ### Clean-slate rewrite — Phase 1b (2026-04-18, p21_id column on master CSV)
 
 #### Added

@@ -1,0 +1,6 @@
+fixture,domain,rule_id,expected_count,status,blocked_on,notes
+advs-parcat1-inconsistent,ADVS,AD0124,1,runnable_today,,"PARAMCD=SYSBP has PARCAT1 in {VITAL SIGNS, CARDIOVASCULAR}"
+advs-parcat1-consistent,ADVS,AD0124,0,runnable_today,,Control -- PARCAT1 is consistent within each PARAMCD
+adae-missing-aesev,ADAE,AD0047,1,blocked,required_variables,"AESEV column absent; AD0047 waits for herald required_variables operator"
+adae-complete,ADAE,AD0047,0,blocked,required_variables,Control -- all ADAE required variables present
+lb-lbstresu-inconsistent,LB,HRL-SD-015,2,runnable_today,,"ALT has 2 distinct LBSTRESU (U/L + IU/L); GLUC has 2 distinct LBSTRESU (mmol/L + mg/dL). not_consistent_within flags first row of each inconsistent group."

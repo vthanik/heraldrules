@@ -10,6 +10,29 @@ for release cadence details.
 
 ## Unreleased
 
+### Beat P21 — Phase 6 (2026-04-18)
+
+#### Added
+
+- **`inst/benchmarks/p21-parity/`** — regression harness proving that
+  herald + herald-rules reproduce the findings Pinnacle 21 Community
+  would emit on curated data. Ships with:
+  - 5 CSV fixtures under `fixtures/` (ADVS PARCAT1 inconsistent/consistent,
+    ADAE required-var missing/complete, LB LBSTRESU inconsistent).
+  - `expected-findings.csv` -- truth table with columns `fixture`,
+    `domain`, `rule_id`, `expected_count`, `status`, `blocked_on`, `notes`.
+  - `run-benchmark.R` -- loads fixtures, calls `herald::validate()`,
+    diffs actual to expected, exits non-zero on mismatch. Distinguishes
+    "blocked on herald operator" (visible SKIP lines) from "executed
+    and clean" so coverage gaps never go silent.
+  - `README.md` -- contract with herald, rationale, how to add new
+    fixtures, and which expectations light up first (ADAE AD0047 flips
+    from blocked to PASS once HANDOFF §3's `required_variables`
+    operator ships).
+- Harness runs cleanly in diagnostic mode when `herald` is not
+  installed, making it useful for catalog-side sanity checks without
+  requiring a full dev-environment.
+
 ### Beat P21 — Phase 2c (2026-04-18)
 
 #### Changed

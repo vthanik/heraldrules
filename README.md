@@ -42,6 +42,7 @@ state and plan:
 | 2b-prep | **done** | Runnable allow-list expanded to include Partially Executable variants (654 rules recovered); 2 true stubs purged (ADaM-047, AD0256) |
 | 2b | **done** | 86 FDA Business Rules schema-normalized; 1 remaining Not-Executable stub (ADaM-1047) purged to Reference |
 | 2c | **done** | 25 un-annotated herald Reference rules (ODM/SD/DD) tagged with exact operator blockers; HANDOFF §4h (XML) + §4i (ARM) added; 84 `check: []` stubs stripped; define validator fixed to distinguish Reference from executable |
+| 6 | **done** | `inst/benchmarks/p21-parity/` harness with 5 fixtures + truth table + diagnostic-mode runner -- regression floor for reviewer-cited findings |
 | 3 | blocked on herald | Implement the 56 operators specified in HANDOFF §4 to unlock ~230 additional rules |
 | 3 | blocked on herald | 28 new operators (required_variables, in_range, paired-suffix date/time, cross-dataset population, etc.) |
 | 4 | blocked on Phase 3 | 163 additional rules unlocked by Phase 3 operators |

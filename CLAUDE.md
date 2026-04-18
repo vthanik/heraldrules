@@ -265,6 +265,7 @@ Phased execution (see `/Users/vignesh/.claude/plans/plan-are-we-focusing-wobbly-
 | 2b-prep | Runnable allow-list expanded to include Partially variants; 2 stub rules purged | heraldrules (done) |
 | 2b | 86 FDA Business Rules schema-normalized; last Not Executable stub (ADaM-1047) purged | heraldrules (done) |
 | 2c | 25 herald Reference rules annotated; HANDOFF §4h/§4i added; 84 stubs stripped; define validator fixed | heraldrules (done) |
+| 6 | `inst/benchmarks/p21-parity/` harness + 5 fixtures + truth table + diagnostic-mode runner | heraldrules (done) |
 | 3 | Implement the 56 new herald operators (HANDOFF §4) to unlock ~230 rules | herald, 3-4 sessions |
 | 3 | 28 new operators implemented | herald, 2-3 sessions |
 | 4 | 163 "Bucket B/C/D/E" rules authored | heraldrules, 2 sessions |

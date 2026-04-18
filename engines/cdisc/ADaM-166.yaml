@@ -17,9 +17,9 @@ Authorities:
 Check:
   all:
     - name: BNRIND
-      operator: non_empty
-    - name: ANRIND
       operator: empty
+    - name: ANRIND
+      operator: non_empty
 Core:
   Id: ADaM-166
   Status: Published

@@ -16,9 +16,9 @@ scope:
 check:
   all:
     - name: --VAMT
-      operator: non_empty
-    - name: --TRTV
       operator: empty
+    - name: --TRTV
+      operator: non_empty
 outcome:
   message: Missing value for --TRTV when --VAMT is not null
   severity: Warning

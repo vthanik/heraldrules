@@ -46,6 +46,7 @@ state and plan:
 | 2d | **done** | Operator audit: 4 aliases renamed in catalog; 12 truly-missing operators documented as HANDOFF §4j; polarity-bug flagged for HRL-DD rules |
 | 2e | **done** | Polarity audit fixed 43 rules (19 tolerance-formula + 24 HRL-DD spec cross-reference) |
 | 2f | **done** | Polarity sweep remainder: 12 more HRL-DD rules (allowlist, consistency, length, 3-cond) fixed |
+| 2g | **done** | CDISC+PMDA polarity sweep: 198 `non_empty+empty` rules swapped. Cumulative polarity fix: 253 rules |
 | 3 | blocked on herald | Implement the 68 operators specified in HANDOFF §4 (a-j) to unlock ~260 additional rules |
 | 3 | blocked on herald | 28 new operators (required_variables, in_range, paired-suffix date/time, cross-dataset population, etc.) |
 | 4 | blocked on Phase 3 | 163 additional rules unlocked by Phase 3 operators |

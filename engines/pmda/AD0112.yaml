@@ -17,9 +17,9 @@ scope:
 check:
   all:
     - name: ARELTMU
-      operator: non_empty
-    - name: ARELTM
       operator: empty
+    - name: ARELTM
+      operator: non_empty
 outcome:
   message: 'Only one of these variables is populated: ARELTM, ARELTMU'
   severity: Error

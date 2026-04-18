@@ -18,9 +18,9 @@ scope:
 check:
   all:
     - name: BCHGCA1N
-      operator: non_empty
-    - name: BCHGCA1
       operator: empty
+    - name: BCHGCA1
+      operator: non_empty
 outcome:
   message: BCHGCAyN is present and BCHGCATy is not present
   severity: Error

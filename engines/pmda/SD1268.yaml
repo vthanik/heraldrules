@@ -15,9 +15,9 @@ scope:
 check:
   all:
     - name: TSVCDVER
-      operator: non_empty
-    - name: TSVCDREF
       operator: empty
+    - name: TSVCDREF
+      operator: non_empty
 outcome:
   message: TSVCDREF is null when TSVCDVER is populated
   severity: Warning

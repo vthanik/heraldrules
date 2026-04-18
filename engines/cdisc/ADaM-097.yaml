@@ -17,9 +17,9 @@ Authorities:
 Check:
   all:
     - name: TRTPG1N
-      operator: non_empty
-    - name: TRTPG1
       operator: empty
+    - name: TRTPG1
+      operator: non_empty
 Core:
   Id: ADaM-097
   Status: Published

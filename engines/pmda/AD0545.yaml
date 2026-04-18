@@ -18,9 +18,9 @@ scope:
 check:
   all:
     - name: CHGCAT1N
-      operator: non_empty
-    - name: CHGCAT1
       operator: empty
+    - name: CHGCAT1
+      operator: non_empty
 outcome:
   message: CHGCATyN is present and CHGCATy is not present
   severity: Error

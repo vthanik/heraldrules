@@ -17,9 +17,9 @@ Authorities:
 Check:
   all:
     - name: ONTR01FL
-      operator: non_empty
-    - name: ONTRTFL
       operator: empty
+    - name: ONTRTFL
+      operator: non_empty
 Core:
   Id: ADaM-651
   Status: Published

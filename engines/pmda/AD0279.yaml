@@ -17,9 +17,9 @@ scope:
 check:
   all:
     - name: AESEVN
-      operator: non_empty
-    - name: ASEVN
       operator: empty
+    - name: ASEVN
+      operator: non_empty
 outcome:
   message: Variable value != 1, 2, 3, or null
   severity: Error

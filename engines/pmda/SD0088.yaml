@@ -19,9 +19,9 @@ scope:
 check:
   all:
     - name: ARM
-      operator: non_empty
-    - name: RFENDTC
       operator: empty
+    - name: RFENDTC
+      operator: non_empty
 outcome:
   message: RFENDTC is not provided for a randomized subject
   severity: Warning

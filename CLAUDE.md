@@ -145,6 +145,13 @@ inversion classes are now resolved; HRL-DD rules are audited end-to-end.
 
 ### Known open issues (remaining)
 
+- **Un-audited CDISC/PMDA polarity patterns.** Phase 2g swept the
+  198 `non_empty+empty` rules. These other 2-condition patterns in
+  CDISC/PMDA still need per-rule verification (could be inverted or
+  legitimate): `non_empty+not_in` (51), `equal_to+not_equal_to` (40),
+  `non_empty+not_equal_to` (25), `non_empty+not_matches_regex` (18),
+  `equal_to+non_empty` (19), `equal_to+empty` (12), `non_empty+equal_to`
+  (8). Sample-test each before concluding.
 - **12 operators** are referenced by catalog YAMLs but absent from
   `../herald/R/rule-operator.R`. See HANDOFF §4j for the full list and
   recommended implementation order. Any rule using these fails silently
@@ -303,6 +310,7 @@ Phased execution (see `/Users/vignesh/.claude/plans/plan-are-we-focusing-wobbly-
 | 2d | Operator audit: 4 aliases renamed; 12 missing operators documented as HANDOFF §4j; polarity bug flagged | heraldrules (done) |
 | 2e | Polarity audit fixed 43 rules (19 tolerance + 24 HRL-DD spec cross-reference) | heraldrules (done) |
 | 2f | Polarity sweep remainder: 12 more HRL-DD rules fixed | heraldrules (done) |
+| 2g | CDISC+PMDA polarity sweep: 198 non_empty+empty rules swapped (cumulative 253) | heraldrules (done) |
 | 3 | Implement the 68 new herald operators (HANDOFF §4a-j) to unlock ~260 rules | herald, 3-4 sessions |
 | 3 | 28 new operators implemented | herald, 2-3 sessions |
 | 4 | 163 "Bucket B/C/D/E" rules authored | heraldrules, 2 sessions |

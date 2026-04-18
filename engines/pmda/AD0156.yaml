@@ -17,9 +17,9 @@ scope:
 check:
   all:
     - name: CRIT1FL
-      operator: non_empty
-    - name: CRIT1
       operator: empty
+    - name: CRIT1
+      operator: non_empty
 outcome:
   message: CRITyFL is present, but CRITy is not present
   severity: Error

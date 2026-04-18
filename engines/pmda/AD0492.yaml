@@ -18,9 +18,9 @@ scope:
 check:
   all:
     - name: SHIFT1
-      operator: non_empty
-    - name: BTOXGR
       operator: empty
+    - name: BTOXGR
+      operator: non_empty
 outcome:
   message: SHIFTy is present and all of the following variable pairs (BASECATy, AVALCATy),
     (BNRIND, ANRIND), (ByIND, AyIND), (BTOXGR, ATOXGR), (BTOXGRL, ATOXGRL), (BTOXGRH,

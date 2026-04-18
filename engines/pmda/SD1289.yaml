@@ -16,9 +16,9 @@ scope:
 check:
   all:
     - name: --PTCD
-      operator: non_empty
-    - name: --DECOD
       operator: empty
+    - name: --DECOD
+      operator: non_empty
 outcome:
   message: Missing value for --DECOD when --PTCD is populated
   severity: Error

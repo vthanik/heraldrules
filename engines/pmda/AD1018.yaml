@@ -17,9 +17,9 @@ scope:
 check:
   all:
     - name: ANL01FL
-      operator: non_empty
-    - name: ANL01FN
       operator: empty
+    - name: ANL01FN
+      operator: non_empty
 outcome:
   message: 'Illegal variable name: zz is not in [01-99] for ANLzzFL/FN'
   severity: Error

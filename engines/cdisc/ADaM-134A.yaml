@@ -17,9 +17,9 @@ Authorities:
 Check:
   all:
     - name: R2A1HI
-      operator: non_empty
-    - name: A1HI
       operator: empty
+    - name: A1HI
+      operator: non_empty
 Core:
   Id: ADaM-134A
   Status: Published

@@ -19,9 +19,9 @@ Authorities:
 Check:
   all:
     - name: ANL01FL
-      operator: non_empty
-    - name: ANL01FN
       operator: empty
+    - name: ANL01FN
+      operator: non_empty
 Core:
   Id: ADaM-1018
   Status: Published

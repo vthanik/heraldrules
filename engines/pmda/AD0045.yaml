@@ -23,9 +23,9 @@ scope:
 check:
   all:
     - name: ASTDT
-      operator: non_empty
-    - name: ASTDTM
       operator: empty
+    - name: ASTDTM
+      operator: non_empty
 outcome:
   message: '*DT and its corresponding *DTM variable have different date values'
   severity: Error

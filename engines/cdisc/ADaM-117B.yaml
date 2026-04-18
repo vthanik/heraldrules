@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: ATPT
-      operator: non_empty
-    - name: ATPTN
       operator: empty
+    - name: ATPTN
+      operator: non_empty
 Core:
   Id: ADaM-117B
   Status: Published

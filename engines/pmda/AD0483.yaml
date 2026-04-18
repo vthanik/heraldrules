@@ -19,9 +19,9 @@ scope:
 check:
   all:
     - name: AVISIT
-      operator: non_empty
-    - name: AVISITN
       operator: empty
+    - name: AVISITN
+      operator: non_empty
 outcome:
   message: Secondary variable BCHGCAyN is populated, but its primary variable BCHGCATy
     is not populated

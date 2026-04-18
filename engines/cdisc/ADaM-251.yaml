@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: CNSDTDSC
-      operator: non_empty
-    - name: CNSR
       operator: empty
+    - name: CNSR
+      operator: non_empty
 Core:
   Id: ADaM-251
   Status: Published

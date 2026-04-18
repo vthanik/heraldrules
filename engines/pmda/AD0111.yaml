@@ -18,9 +18,9 @@ scope:
 check:
   all:
     - name: ARELTM
-      operator: non_empty
-    - name: ARELTMU
       operator: empty
+    - name: ARELTMU
+      operator: non_empty
 outcome:
   message: ARELTM is present, but ARELTMU is not present
   severity: Error

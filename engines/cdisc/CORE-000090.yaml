@@ -69,9 +69,9 @@ Authorities:
 Check:
   all:
     - name: IDVAR
-      operator: non_empty
-    - name: RDOMAIN
       operator: empty
+    - name: RDOMAIN
+      operator: non_empty
 Core:
   Id: CORE-000090
   Status: Published

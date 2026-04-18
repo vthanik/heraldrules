@@ -19,9 +19,9 @@ Authorities:
 Check:
   all:
     - name: PARCAT1N
-      operator: non_empty
-    - name: PARCAT1
       operator: empty
+    - name: PARCAT1
+      operator: non_empty
 Core:
   Id: ADaM-126B
   Status: Published

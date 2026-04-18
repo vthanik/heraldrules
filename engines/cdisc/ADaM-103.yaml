@@ -19,9 +19,9 @@ Authorities:
 Check:
   all:
     - name: APERIOD
-      operator: non_empty
-    - name: TR01SDT
       operator: empty
+    - name: TR01SDT
+      operator: non_empty
 Core:
   Id: ADaM-103
   Status: Published

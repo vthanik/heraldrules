@@ -17,9 +17,9 @@ Authorities:
 Check:
   all:
     - name: ATOXGRHN
-      operator: non_empty
-    - name: ATOXGRH
       operator: empty
+    - name: ATOXGRH
+      operator: non_empty
 Core:
   Id: ADaM-1038
   Status: Published

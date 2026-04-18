@@ -13,9 +13,9 @@ scope:
 check:
   all:
     - name: AGE
-      operator: non_empty
-    - name: AGEU
       operator: empty
+    - name: AGEU
+      operator: non_empty
 outcome:
   message: For the same USUBJID, the ADSL.AGE != DM.AGE
   severity: Error

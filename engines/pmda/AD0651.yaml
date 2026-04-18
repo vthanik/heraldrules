@@ -16,9 +16,9 @@ scope:
 check:
   all:
     - name: ONTR01FL
-      operator: non_empty
-    - name: ONTRTFL
       operator: empty
+    - name: ONTRTFL
+      operator: non_empty
 outcome:
   message: ONTRxxFL is present but ONTRTFL is not present
   severity: Error

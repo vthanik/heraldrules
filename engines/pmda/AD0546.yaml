@@ -18,9 +18,9 @@ scope:
 check:
   all:
     - name: PCHGCA1N
-      operator: non_empty
-    - name: PCHGCA1
       operator: empty
+    - name: PCHGCA1
+      operator: non_empty
 outcome:
   message: PCHGCAyN is present and PCHGCATy is not present
   severity: Error

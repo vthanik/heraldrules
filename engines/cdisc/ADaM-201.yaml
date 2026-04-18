@@ -17,9 +17,9 @@ Authorities:
 Check:
   all:
     - name: TRTAG1N
-      operator: non_empty
-    - name: TRTAG1
       operator: empty
+    - name: TRTAG1
+      operator: non_empty
 Core:
   Id: ADaM-201
   Status: Published

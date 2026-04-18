@@ -20,9 +20,9 @@ Authorities:
 Check:
   all:
     - name: AVISITN
-      operator: non_empty
-    - name: AVISIT
       operator: empty
+    - name: AVISIT
+      operator: non_empty
 Core:
   Id: ADaM-482
   Status: Published

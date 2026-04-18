@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: BASE
-      operator: non_empty
-    - name: ABLFL
       operator: empty
+    - name: ABLFL
+      operator: non_empty
 Core:
   Id: ADaM-127-SD
   Status: Published

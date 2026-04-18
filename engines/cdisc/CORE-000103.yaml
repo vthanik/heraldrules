@@ -82,9 +82,9 @@ Authorities:
 Check:
   all:
     - name: --SCAT
-      operator: non_empty
-    - name: --CAT
       operator: empty
+    - name: --CAT
+      operator: non_empty
 Core:
   Id: CORE-000103
   Status: Published

@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: APHASE
-      operator: non_empty
-    - name: PHEDT
       operator: empty
+    - name: PHEDT
+      operator: non_empty
 Core:
   Id: ADaM-611
   Status: Published

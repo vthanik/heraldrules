@@ -19,9 +19,9 @@ Authorities:
 Check:
   all:
     - name: DOSAEONU
-      operator: non_empty
-    - name: DOSAEONA
       operator: empty
+    - name: DOSAEONA
+      operator: non_empty
 Core:
   Id: ADaM-274
   Status: Published

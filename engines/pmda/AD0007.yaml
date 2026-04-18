@@ -22,9 +22,9 @@ scope:
 check:
   all:
     - name: SAFFN
-      operator: non_empty
-    - name: SAFFL
       operator: empty
+    - name: SAFFL
+      operator: non_empty
 outcome:
   message: Secondary variable *FN is present, but its primary variable *FL is not
     present

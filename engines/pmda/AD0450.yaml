@@ -18,9 +18,9 @@ scope:
 check:
   all:
     - name: MCRIT1ML
-      operator: non_empty
-    - name: MCRIT1
       operator: empty
+    - name: MCRIT1
+      operator: non_empty
 outcome:
   message: MCRITyML is populated, but MCRITyMN is not populated
   severity: Error

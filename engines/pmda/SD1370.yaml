@@ -16,9 +16,9 @@ scope:
 check:
   all:
     - name: --STREFC
-      operator: non_empty
-    - name: --STREFN
       operator: empty
+    - name: --STREFN
+      operator: non_empty
 outcome:
   message: --STREFN is null when --STREFC is populated
   severity: Error

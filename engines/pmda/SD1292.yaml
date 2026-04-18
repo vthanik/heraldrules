@@ -16,9 +16,9 @@ scope:
 check:
   all:
     - name: --STTPT
-      operator: non_empty
-    - name: --STRTPT
       operator: empty
+    - name: --STRTPT
+      operator: non_empty
 outcome:
   message: Missing value for --STRTPT when --STTPT is populated
   severity: Warning

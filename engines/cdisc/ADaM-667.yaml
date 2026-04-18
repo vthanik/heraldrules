@@ -17,9 +17,9 @@ Authorities:
 Check:
   all:
     - name: DOSPCTDF
-      operator: non_empty
-    - name: NOMLDOS
       operator: empty
+    - name: NOMLDOS
+      operator: non_empty
 Core:
   Id: ADaM-667
   Status: Published

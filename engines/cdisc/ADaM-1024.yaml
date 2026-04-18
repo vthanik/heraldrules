@@ -17,9 +17,9 @@ Authorities:
 Check:
   all:
     - name: TRT01P
-      operator: non_empty
-    - name: APERIOD
       operator: empty
+    - name: APERIOD
+      operator: non_empty
 Core:
   Id: ADaM-1024
   Status: Published

@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: EVNTDESC
-      operator: non_empty
-    - name: CNSR
       operator: empty
+    - name: CNSR
+      operator: non_empty
 Core:
   Id: ADaM-250
   Status: Published

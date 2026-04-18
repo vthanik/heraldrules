@@ -71,9 +71,9 @@ Authorities:
 Check:
   all:
     - name: --VAMT
-      operator: non_empty
-    - name: --TRTV
       operator: empty
+    - name: --TRTV
+      operator: non_empty
 Core:
   Id: CORE-000100
   Status: Published

@@ -14,9 +14,9 @@ scope:
 check:
   all:
     - name: DECOD
-      operator: non_empty
-    - name: DECODORG
       operator: empty
+    - name: DECODORG
+      operator: non_empty
 outcome:
   message: 'Illegal variable name: y is not in [1-9] for original or prior MedDRA
     coding variables of form *ORGy'

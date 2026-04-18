@@ -21,9 +21,9 @@ scope:
 check:
   all:
     - name: APERIOD
-      operator: non_empty
-    - name: TR01EDT
       operator: empty
+    - name: TR01EDT
+      operator: non_empty
 outcome:
   message: There is no TRxxEDT variable in ADSL for every unique xx value of APERIOD
   severity: Warning

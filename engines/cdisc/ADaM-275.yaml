@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: DOSECUMU
-      operator: non_empty
-    - name: DOSECUM
       operator: empty
+    - name: DOSECUM
+      operator: non_empty
 Core:
   Id: ADaM-275
   Status: Published

@@ -17,9 +17,9 @@ Authorities:
 Check:
   all:
     - name: BCHGCAT1
-      operator: non_empty
-    - name: BCHGCA1N
       operator: empty
+    - name: BCHGCA1N
+      operator: non_empty
 Core:
   Id: ADaM-1029
   Status: Published

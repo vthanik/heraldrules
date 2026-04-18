@@ -50,9 +50,9 @@ Authorities:
 Check:
   all:
     - name: --STREFC
-      operator: non_empty
-    - name: --STREFN
       operator: empty
+    - name: --STREFN
+      operator: non_empty
 Core:
   Id: CORE-000295
   Status: Published

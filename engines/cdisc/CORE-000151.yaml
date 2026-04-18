@@ -136,9 +136,9 @@ Authorities:
 Check:
   all:
     - name: TSVAL1
-      operator: non_empty
-    - name: TSVAL
       operator: empty
+    - name: TSVAL
+      operator: non_empty
 Core:
   Id: CORE-000151
   Status: Published

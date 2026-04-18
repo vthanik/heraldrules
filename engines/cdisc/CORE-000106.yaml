@@ -67,9 +67,9 @@ Authorities:
 Check:
   all:
     - name: --ENTPT
-      operator: non_empty
-    - name: --ENRTPT
       operator: empty
+    - name: --ENRTPT
+      operator: non_empty
 Core:
   Id: CORE-000106
   Status: Published

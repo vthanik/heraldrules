@@ -17,9 +17,9 @@ scope:
 check:
   all:
     - name: AVALCA1N
-      operator: non_empty
-    - name: AVALCA1
       operator: empty
+    - name: AVALCA1
+      operator: non_empty
 outcome:
   message: AVALCAyN is present and AVALCATy is not present
   severity: Error

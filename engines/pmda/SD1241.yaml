@@ -16,9 +16,9 @@ scope:
 check:
   all:
     - name: --BODSYS
-      operator: non_empty
-    - name: --BDSYCD
       operator: empty
+    - name: --BDSYCD
+      operator: non_empty
 outcome:
   message: --BODSYS is not populated when --BDSYCD is populated
   severity: Warning

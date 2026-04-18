@@ -17,9 +17,9 @@ scope:
 check:
   all:
     - name: P01STDT
-      operator: non_empty
-    - name: TRT01P
       operator: empty
+    - name: TRT01P
+      operator: non_empty
 outcome:
   message: Variable is present, but TRTxxP is not present
   severity: Error

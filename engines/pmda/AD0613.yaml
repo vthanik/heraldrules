@@ -21,9 +21,9 @@ scope:
 check:
   all:
     - name: APHASE
-      operator: non_empty
-    - name: PHETM
       operator: empty
+    - name: PHETM
+      operator: non_empty
 outcome:
   message: APHASEN w has a PHETM != ADSL.PHwETM
   severity: Error

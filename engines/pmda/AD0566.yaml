@@ -18,9 +18,9 @@ scope:
 check:
   all:
     - name: PBCHGC1N
-      operator: non_empty
-    - name: PBCHGC1
       operator: empty
+    - name: PBCHGC1
+      operator: non_empty
 outcome:
   message: PBCHGCyN is present and PBCHGCAy is not present
   severity: Error

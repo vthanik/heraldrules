@@ -61,9 +61,9 @@ Authorities:
 Check:
   all:
     - name: --PTCD
-      operator: non_empty
-    - name: --DECOD
       operator: empty
+    - name: --DECOD
+      operator: non_empty
 Core:
   Id: CORE-000267
   Status: Published

@@ -16,9 +16,9 @@ scope:
 check:
   all:
     - name: R2A1LO
-      operator: non_empty
-    - name: A1LO
       operator: empty
+    - name: A1LO
+      operator: non_empty
 outcome:
   message: 'Calculation issue: R2AyLO is present, but AVAL and/or AyLO is not present'
   severity: Error

@@ -61,9 +61,9 @@ Authorities:
 Check:
   all:
     - name: --RESCAT
-      operator: non_empty
-    - name: --STRESC
       operator: empty
+    - name: --STRESC
+      operator: non_empty
 Core:
   Id: CORE-000101
   Status: Published

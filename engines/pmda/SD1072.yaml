@@ -17,9 +17,9 @@ scope:
 check:
   all:
     - name: IDVAR
-      operator: non_empty
-    - name: IDVARVAL
       operator: empty
+    - name: IDVARVAL
+      operator: non_empty
 outcome:
   message: Missing IDVAR value when RDOMAIN value is provided
   severity: Warning

@@ -13,9 +13,9 @@ scope:
 check:
   all:
     - name: STARTDT
-      operator: non_empty
-    - name: CNSR
       operator: empty
+    - name: CNSR
+      operator: non_empty
 outcome:
   message: STARTDT is present, but CNSR is not present
   severity: Error

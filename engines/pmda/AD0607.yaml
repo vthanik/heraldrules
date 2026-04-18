@@ -22,9 +22,9 @@ scope:
 check:
   all:
     - name: APHASE
-      operator: non_empty
-    - name: PHSTM
       operator: empty
+    - name: PHSTM
+      operator: non_empty
 outcome:
   message: APHASEN w has a PHSTM != ADSL.PHwSTM
   severity: Error

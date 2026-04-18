@@ -17,9 +17,9 @@ Authorities:
 Check:
   all:
     - name: TRTPN
-      operator: non_empty
-    - name: TRTP
       operator: empty
+    - name: TRTP
+      operator: non_empty
 Core:
   Id: ADaM-091-SD
   Status: Published

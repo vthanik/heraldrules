@@ -17,9 +17,9 @@ scope:
 check:
   all:
     - name: BNRIND
-      operator: non_empty
-    - name: ANRIND
       operator: empty
+    - name: ANRIND
+      operator: non_empty
 outcome:
   message: BNRIND is present, but ANRIND is not present
   severity: Error

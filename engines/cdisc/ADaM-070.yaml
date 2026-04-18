@@ -17,9 +17,9 @@ Authorities:
 Check:
   all:
     - name: TR01A1N
-      operator: non_empty
-    - name: TR01A1
       operator: empty
+    - name: TR01A1
+      operator: non_empty
 Core:
   Id: ADaM-070
   Status: Published

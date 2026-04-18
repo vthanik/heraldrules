@@ -17,9 +17,9 @@ Authorities:
 Check:
   all:
     - name: AVALCA1N
-      operator: non_empty
-    - name: AVALCA1
       operator: empty
+    - name: AVALCA1
+      operator: non_empty
 Core:
   Id: ADaM-543
   Status: Published

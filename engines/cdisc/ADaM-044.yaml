@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: ASTTM
-      operator: non_empty
-    - name: ASTDTM
       operator: empty
+    - name: ASTDTM
+      operator: non_empty
 Core:
   Id: ADaM-044
   Status: Published

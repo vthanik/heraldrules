@@ -18,9 +18,9 @@ scope:
 check:
   all:
     - name: SMQ01NAM
-      operator: non_empty
-    - name: SMQ01CD
       operator: empty
+    - name: SMQ01CD
+      operator: non_empty
 outcome:
   message: 'Illegal variable name: zz is not in [01-99] for SMQzz(NAM, CD, SC, SCN)'
   severity: Error

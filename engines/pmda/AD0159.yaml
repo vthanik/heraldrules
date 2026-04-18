@@ -21,9 +21,9 @@ scope:
 check:
   all:
     - name: AWTDIFF
-      operator: non_empty
-    - name: AWTARGET
       operator: empty
+    - name: AWTARGET
+      operator: non_empty
 outcome:
   message: 'Calculation issue: AWTDIFF is populated, but AWTARGET and/or one of [ADY,
     ARELTM] are not both present and populated'

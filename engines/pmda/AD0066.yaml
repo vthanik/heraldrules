@@ -16,9 +16,9 @@ scope:
 check:
   all:
     - name: TR01P1N
-      operator: non_empty
-    - name: TR01P1
       operator: empty
+    - name: TR01P1
+      operator: non_empty
 outcome:
   message: TRxxPGyN is present, but TRxxPGy is not present
   severity: Error

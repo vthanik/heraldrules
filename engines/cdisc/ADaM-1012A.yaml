@@ -20,9 +20,9 @@ Authorities:
 Check:
   all:
     - name: RACEN
-      operator: non_empty
-    - name: RACE
       operator: empty
+    - name: RACE
+      operator: non_empty
 Core:
   Id: ADaM-1012A
   Status: Published

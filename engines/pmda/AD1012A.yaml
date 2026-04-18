@@ -26,9 +26,9 @@ scope:
 check:
   all:
     - name: RACEN
-      operator: non_empty
-    - name: RACE
       operator: empty
+    - name: RACE
+      operator: non_empty
 outcome:
   message: Secondary variable is present, but its primary variable is not present
   severity: Error

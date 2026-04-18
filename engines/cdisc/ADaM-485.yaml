@@ -19,9 +19,9 @@ Authorities:
 Check:
   all:
     - name: PARAM
-      operator: non_empty
-    - name: PARAMN
       operator: empty
+    - name: PARAMN
+      operator: non_empty
 Core:
   Id: ADaM-485
   Status: Published

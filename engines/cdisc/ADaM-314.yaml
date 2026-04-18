@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: DECOD
-      operator: non_empty
-    - name: DECODORG
       operator: empty
+    - name: DECODORG
+      operator: non_empty
 Core:
   Id: ADaM-314
   Status: Published

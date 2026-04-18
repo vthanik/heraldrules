@@ -18,9 +18,9 @@ scope:
 check:
   all:
     - name: ATMF
-      operator: non_empty
-    - name: ATM
       operator: empty
+    - name: ATM
+      operator: non_empty
 outcome:
   message: '*TMF is populated, but *TM is not populated'
   severity: Error

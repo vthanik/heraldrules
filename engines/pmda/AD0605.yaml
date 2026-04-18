@@ -21,9 +21,9 @@ scope:
 check:
   all:
     - name: APHASE
-      operator: non_empty
-    - name: PHSDT
       operator: empty
+    - name: PHSDT
+      operator: non_empty
 outcome:
   message: APHASEN w has a PHSDT != ADSL.PHwSDT
   severity: Error

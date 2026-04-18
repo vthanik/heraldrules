@@ -15,9 +15,9 @@ scope:
 check:
   all:
     - name: DOSECUMU
-      operator: non_empty
-    - name: DOSECUM
       operator: empty
+    - name: DOSECUM
+      operator: non_empty
 outcome:
   message: Only one of DOSECUMU, DOSECUM is populated
   severity: Error

@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: AESEVN
-      operator: non_empty
-    - name: ASEVN
       operator: empty
+    - name: ASEVN
+      operator: non_empty
 Core:
   Id: ADaM-279
   Status: Published

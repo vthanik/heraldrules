@@ -10,6 +10,46 @@ for release cadence details.
 
 ## Unreleased
 
+### Beat P21 — Phase 2g (2026-04-18, CDISC+PMDA polarity sweep)
+
+#### Fixed
+
+Extended the Phase 2e/2f HRL-DD polarity audit to CDISC and PMDA
+engines. Scanned for the same inverted 2-condition patterns and
+sampled 8 rules (ADaM-007, 044, 064, 097, 1011, 1018, 102, 117B) --
+all followed the identical "IF X populated AND Y empty, flag" intent
+with `non_empty + empty` operators swapped the wrong way.
+
+**198 rules fixed** across `engines/cdisc/` and `engines/pmda/` via
+the same atomic swap applied in Phase 2e: `non_empty` <-> `empty`
+inside the check: block only. Covers ADaM-NNN primary/secondary
+variable pairing rules, TRT period variable coherence, PARAMCD-pair
+companions, and PMDA AD-series equivalents.
+
+Catalog runnable count unchanged at 3,700/3,878 (these rules were
+already counted runnable; they now produce correct findings where
+before they produced none or wrong findings). All three validators
+pass.
+
+#### To be audited in a later pass
+
+Other suspicious 2-condition patterns in CDISC/PMDA -- not verified
+this session, could be legitimately authored or also inverted:
+
+| Pattern | Count |
+|---|---:|
+| `non_empty + not_in` | 51 |
+| `equal_to + not_equal_to` | 40 |
+| `non_empty + not_equal_to` | 25 |
+| `non_empty + not_matches_regex` | 18 |
+| `equal_to + empty` | 12 |
+| `non_empty + equal_to` | 8 |
+| `equal_to + non_empty` | 19 |
+
+Documented in CLAUDE.md "Known open issues" for a focused follow-up.
+Cumulative polarity sweep (Phase 2e+2f+2g): **253 rules fixed** across
+tolerance-formula (19), HRL-DD (36), and CDISC/PMDA (198).
+
 ### Beat P21 — Phase 2f (2026-04-18, polarity sweep remainder)
 
 #### Fixed

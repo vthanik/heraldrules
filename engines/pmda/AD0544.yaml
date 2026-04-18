@@ -17,9 +17,9 @@ scope:
 check:
   all:
     - name: BASECA1N
-      operator: non_empty
-    - name: BASECA1
       operator: empty
+    - name: BASECA1
+      operator: non_empty
 outcome:
   message: BASECAyN is present and BASECATy is not present
   severity: Error

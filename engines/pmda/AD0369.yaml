@@ -22,9 +22,9 @@ scope:
 check:
   all:
     - name: ADTF
-      operator: non_empty
-    - name: ADT
       operator: empty
+    - name: ADT
+      operator: non_empty
 outcome:
   message: '*DTF is populated, but *DT or *DTM is not populated'
   severity: Error

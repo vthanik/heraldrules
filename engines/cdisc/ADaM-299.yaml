@@ -19,9 +19,9 @@ Authorities:
 Check:
   all:
     - name: SMQ01NAM
-      operator: non_empty
-    - name: SMQ01CD
       operator: empty
+    - name: SMQ01CD
+      operator: non_empty
 Core:
   Id: ADaM-299
   Status: Published

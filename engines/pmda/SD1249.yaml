@@ -14,10 +14,10 @@ scope:
 check:
   all:
     - name: EXTRT
-      operator: equal_to
+      operator: not_equal_to
       value: PLACEBO
     - name: EXDOSE
-      operator: not_equal_to
+      operator: equal_to
       value: 0
 outcome:
   message: EXDOSE does not equal 0 when EXTRT = 'PLACEBO'

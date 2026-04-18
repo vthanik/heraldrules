@@ -181,10 +181,10 @@ Authorities:
 Check:
   all:
     - name: ETCD
-      operator: equal_to
+      operator: not_equal_to
       value: UNPLAN
     - name: ELEMENT
-      operator: non_empty
+      operator: empty
 Core:
   Id: CORE-000009
   Status: Published

@@ -49,10 +49,10 @@ Authorities:
 Check:
   all:
     - name: EXTRT
-      operator: equal_to
+      operator: not_equal_to
       value: PLACEBO
     - name: EXDOSE
-      operator: not_equal_to
+      operator: equal_to
       value: 0
 Core:
   Id: CORE-000005

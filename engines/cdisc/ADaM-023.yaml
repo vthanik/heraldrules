@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: SAFFL
-      operator: non_empty
+      operator: empty
     - name: SAFFL
-      operator: not_in
+      operator: in
       value:
         - 'Y'
         - 'N'

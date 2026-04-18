@@ -16,9 +16,9 @@ scope:
 check:
   all:
     - name: AOCCIFL
-      operator: non_empty
+      operator: empty
     - name: AOCCIFL
-      operator: not_in
+      operator: in
       value:
         - 'Y'
 outcome:

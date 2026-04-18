@@ -17,10 +17,10 @@ scope:
 check:
   all:
     - name: ETCD
-      operator: equal_to
+      operator: not_equal_to
       value: UNPLAN
     - name: TAETORD
-      operator: non_empty
+      operator: empty
 outcome:
   message: TAETORD is populated, ETCD = 'UNPLAN'
   severity: Error

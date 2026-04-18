@@ -20,9 +20,9 @@ scope:
 check:
   all:
     - name: ONTRTFN
-      operator: non_empty
+      operator: empty
     - name: ONTRTFN
-      operator: not_in
+      operator: in
       value:
         - 0
         - 1

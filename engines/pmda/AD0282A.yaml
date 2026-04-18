@@ -19,9 +19,9 @@ scope:
 check:
   all:
     - name: ASEVN
-      operator: non_empty
+      operator: empty
     - name: ASEVN
-      operator: not_in
+      operator: in
       value:
         - 1
         - 2

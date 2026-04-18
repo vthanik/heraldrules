@@ -16,9 +16,9 @@ scope:
 check:
   all:
     - name: --SCAT
-      operator: non_empty
+      operator: empty
     - name: --SCAT
-      operator: equal_to
+      operator: not_equal_to
       value: --CAT
 outcome:
   message: Values for --CAT and --SCAT are identical

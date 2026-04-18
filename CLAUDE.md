@@ -145,13 +145,14 @@ inversion classes are now resolved; HRL-DD rules are audited end-to-end.
 
 ### Known open issues (remaining)
 
-- **Un-audited CDISC/PMDA polarity patterns.** Phase 2g swept the
-  198 `non_empty+empty` rules. These other 2-condition patterns in
-  CDISC/PMDA still need per-rule verification (could be inverted or
-  legitimate): `non_empty+not_in` (51), `equal_to+not_equal_to` (40),
-  `non_empty+not_equal_to` (25), `non_empty+not_matches_regex` (18),
-  `equal_to+non_empty` (19), `equal_to+empty` (12), `non_empty+equal_to`
-  (8). Sample-test each before concluding.
+- **3+-condition CDISC/PMDA rules** were not audited in Phase 2g/2h.
+  Each needs per-rule inspection since transforms can't be batched
+  safely. Patterns: `empty+empty+empty+within_tolerance_of_formula`
+  (6 correct — these are the Phase 2e tolerance fixes),
+  `empty+empty+empty+equal_to+within_tolerance_of_formula` (13 same),
+  `empty+empty+empty+empty` (2), `non_empty+non_empty` (20),
+  `empty+empty` (19), and various longer chains. Scan expected to
+  surface a few more inversions.
 - **12 operators** are referenced by catalog YAMLs but absent from
   `../herald/R/rule-operator.R`. See HANDOFF §4j for the full list and
   recommended implementation order. Any rule using these fails silently
@@ -311,6 +312,7 @@ Phased execution (see `/Users/vignesh/.claude/plans/plan-are-we-focusing-wobbly-
 | 2e | Polarity audit fixed 43 rules (19 tolerance + 24 HRL-DD spec cross-reference) | heraldrules (done) |
 | 2f | Polarity sweep remainder: 12 more HRL-DD rules fixed | heraldrules (done) |
 | 2g | CDISC+PMDA polarity sweep: 198 non_empty+empty rules swapped (cumulative 253) | heraldrules (done) |
+| 2h | Complete CDISC+PMDA 2-condition sweep: 173 more rules (cumulative 426) | heraldrules (done) |
 | 3 | Implement the 68 new herald operators (HANDOFF §4a-j) to unlock ~260 rules | herald, 3-4 sessions |
 | 3 | 28 new operators implemented | herald, 2-3 sessions |
 | 4 | 163 "Bucket B/C/D/E" rules authored | heraldrules, 2 sessions |

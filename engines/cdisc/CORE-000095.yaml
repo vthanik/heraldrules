@@ -77,9 +77,9 @@ Authorities:
 Check:
   all:
     - name: SEUPDES
-      operator: non_empty
+      operator: empty
     - name: ETCD
-      operator: not_equal_to
+      operator: equal_to
       value: UNPLAN
 Core:
   Id: CORE-000095

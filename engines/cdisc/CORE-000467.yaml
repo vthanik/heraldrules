@@ -34,10 +34,10 @@ Authorities:
 Check:
   all:
     - name: TSPARMCD
-      operator: equal_to
+      operator: not_equal_to
       value: STOPRULE
     - name: TSVAL
-      operator: empty
+      operator: non_empty
 Core:
   Id: CORE-000467
   Status: Published

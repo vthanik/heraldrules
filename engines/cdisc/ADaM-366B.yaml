@@ -19,9 +19,9 @@ Authorities:
 Check:
   all:
     - name: RANDDT
-      operator: non_empty
+      operator: empty
     - name: RANDFL
-      operator: not_equal_to
+      operator: equal_to
       value: 'Y'
 Core:
   Id: ADaM-366B

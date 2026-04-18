@@ -34,10 +34,10 @@ Authorities:
 Check:
   all:
     - name: TSPARMCD
-      operator: equal_to
+      operator: not_equal_to
       value: FCNTRY
     - name: TSVCDREF
-      operator: not_equal_to
+      operator: equal_to
       value: ISO 3166-1 alpha-3
 Core:
   Id: CORE-000339

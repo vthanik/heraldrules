@@ -15,9 +15,9 @@ scope:
 check:
   all:
     - name: RSUBJID
-      operator: non_empty
+      operator: empty
     - name: RSUBJID
-      operator: equal_to
+      operator: not_equal_to
       value: USUBJID
 outcome:
   message: RSUBJID is equal to USUBJID

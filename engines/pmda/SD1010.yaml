@@ -17,10 +17,10 @@ scope:
 check:
   all:
     - name: ETCD
-      operator: equal_to
+      operator: not_equal_to
       value: UNPLAN
     - name: ELEMENT
-      operator: non_empty
+      operator: empty
 outcome:
   message: ELEMENT value is populated when ETCD= 'UNPLAN'
   severity: Warning

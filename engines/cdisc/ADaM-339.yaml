@@ -18,10 +18,10 @@ Authorities:
 Check:
   all:
     - name: MCRIT1ML
-      operator: equal_to
+      operator: not_equal_to
       value: 'Y'
     - name: MCRIT1
-      operator: empty
+      operator: non_empty
 Core:
   Id: ADaM-339
   Status: Published

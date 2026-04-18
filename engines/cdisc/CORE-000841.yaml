@@ -43,10 +43,10 @@ Authorities:
 Check:
   all:
     - name: AEOUT
-      operator: equal_to
+      operator: not_equal_to
       value: FATAL
     - name: AEENDTC
-      operator: not_equal_to
+      operator: equal_to
       value: DTHDTC
 Core:
   Id: CORE-000841

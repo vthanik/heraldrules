@@ -17,10 +17,10 @@ Authorities:
 Check:
   all:
     - name: A1LO
-      operator: equal_to
+      operator: not_equal_to
       value: 0
     - name: R2A1LO
-      operator: non_empty
+      operator: empty
 Core:
   Id: ADaM-133C
   Status: Published

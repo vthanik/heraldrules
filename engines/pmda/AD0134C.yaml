@@ -17,10 +17,10 @@ scope:
 check:
   all:
     - name: A1HI
-      operator: equal_to
+      operator: not_equal_to
       value: 0
     - name: R2A1HI
-      operator: non_empty
+      operator: empty
 outcome:
   message: 'Calculation issue: AyHI = 0, but R2AyHI is populated'
   severity: Error

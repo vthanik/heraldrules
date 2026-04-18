@@ -19,9 +19,9 @@ Authorities:
 Check:
   all:
     - name: ADTF
-      operator: non_empty
+      operator: empty
     - name: ADTF
-      operator: not_in
+      operator: in
       value:
         - 'Y'
         - 'M'

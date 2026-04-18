@@ -75,11 +75,11 @@ Authorities:
 Check:
   all:
     - name: --LOBXFL
-      operator: equal_to
+      operator: not_equal_to
       value: 'Y'
       value_is_literal: yes
     - name: --STRESC
-      operator: empty
+      operator: non_empty
 Core:
   Id: CORE-000105
   Status: Published

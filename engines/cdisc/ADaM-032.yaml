@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: ENRLFN
-      operator: non_empty
+      operator: empty
     - name: ENRLFN
-      operator: not_in
+      operator: in
       value:
         - 0
         - 1

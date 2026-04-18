@@ -24,9 +24,9 @@ scope:
 check:
   all:
     - name: ADY
-      operator: non_empty
+      operator: empty
     - name: ADY
-      operator: equal_to
+      operator: not_equal_to
       value: 0
 outcome:
   message: '*DY = 0'

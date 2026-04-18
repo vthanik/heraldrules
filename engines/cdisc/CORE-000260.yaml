@@ -68,9 +68,9 @@ Authorities:
 Check:
   all:
     - name: --PRESP
-      operator: non_empty
+      operator: empty
     - name: --PRESP
-      operator: not_equal_to
+      operator: equal_to
       value: 'Y'
       value_is_literal: yes
 Core:

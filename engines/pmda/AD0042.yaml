@@ -23,9 +23,9 @@ scope:
 check:
   all:
     - name: AESTM
-      operator: non_empty
+      operator: empty
     - name: AESTM
-      operator: not_matches_regex
+      operator: matches_regex
       value: '^([0-1][0-9]|2[0-3]):[0-5][0-9](:[0-5][0-9])?$'
 outcome:
   message: '*TM does not have the ADaM required SAS time format'

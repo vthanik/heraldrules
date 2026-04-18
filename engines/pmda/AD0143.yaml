@@ -17,9 +17,9 @@ scope:
 check:
   all:
     - name: PARAMCD
-      operator: non_empty
+      operator: empty
     - name: PARAMCD
-      operator: not_matches_regex
+      operator: matches_regex
       value: '^[A-Za-z_][A-Za-z0-9_]{0,7}$'
 outcome:
   message: Illegal PARAMCD value

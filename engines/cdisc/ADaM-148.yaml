@@ -19,9 +19,9 @@ Authorities:
 Check:
   all:
     - name: PARAMN
-      operator: non_empty
+      operator: empty
     - name: PARAMN
-      operator: not_matches_regex
+      operator: matches_regex
       value: '^-?\d+$'
 Core:
   Id: ADaM-148

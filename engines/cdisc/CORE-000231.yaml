@@ -47,9 +47,9 @@ Authorities:
 Check:
   all:
     - name: RSUBJID
-      operator: non_empty
+      operator: empty
     - name: RSUBJID
-      operator: equal_to
+      operator: not_equal_to
       value: USUBJID
 Core:
   Id: CORE-000231

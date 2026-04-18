@@ -17,9 +17,9 @@ Authorities:
 Check:
   all:
     - name: ANL01FL
-      operator: non_empty
+      operator: empty
     - name: ANL01FL
-      operator: not_in
+      operator: in
       value:
         - 'Y'
         - 'N'

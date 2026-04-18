@@ -15,10 +15,10 @@ scope:
 check:
   all:
     - name: TRTEM1FL
-      operator: equal_to
+      operator: not_equal_to
       value: 'Y'
     - name: TRTEMFL
-      operator: not_equal_to
+      operator: equal_to
       value: 'Y'
 outcome:
   message: TRTEMwFL = Y and TRTEMFL != Y

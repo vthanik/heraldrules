@@ -65,10 +65,10 @@ Authorities:
 Check:
   all:
     - name: DSDECOD
-      operator: equal_to
+      operator: not_equal_to
       value: DEATH
     - name: DSSTDTC
-      operator: not_equal_to
+      operator: equal_to
       value: DTHDTC
 Core:
   Id: CORE-000034

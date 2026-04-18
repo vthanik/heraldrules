@@ -69,11 +69,11 @@ Authorities:
 Check:
   all:
     - name: QNAM
-      operator: equal_to
+      operator: not_equal_to
       value: AESOSP
       value_is_literal: yes
     - name: AESMIE
-      operator: not_equal_to
+      operator: equal_to
       value: 'Y'
 Core:
   Id: CORE-000597

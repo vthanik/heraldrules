@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: PPROTFN
-      operator: non_empty
+      operator: empty
     - name: PPROTFN
-      operator: not_in
+      operator: in
       value:
         - 0
         - 1

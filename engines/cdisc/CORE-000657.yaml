@@ -43,10 +43,10 @@ Authorities:
 Check:
   all:
     - name: AEOUT
-      operator: equal_to
+      operator: not_equal_to
       value: NOT RECOVERED/NOT RESOLVED
     - name: AEENDTC
-      operator: non_empty
+      operator: empty
 Core:
   Id: CORE-000657
   Status: Published

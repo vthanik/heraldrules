@@ -16,11 +16,11 @@ scope:
 check:
   all:
     - name: --LOBXFL
-      operator: equal_to
+      operator: not_equal_to
       value: 'Y'
       value_is_literal: yes
     - name: --STRESC
-      operator: empty
+      operator: non_empty
 outcome:
   message: --STRESC is null when --LOBXFL = 'Y'
   severity: Error

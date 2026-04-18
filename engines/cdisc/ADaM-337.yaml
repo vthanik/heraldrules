@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: MCRIT1ML
-      operator: non_empty
+      operator: empty
     - name: MCRIT1ML
-      operator: not_in
+      operator: in
       value:
         - 'Y'
 Core:

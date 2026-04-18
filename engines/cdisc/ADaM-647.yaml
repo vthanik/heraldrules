@@ -17,10 +17,10 @@ Authorities:
 Check:
   all:
     - name: TREM01FL
-      operator: equal_to
+      operator: not_equal_to
       value: 'Y'
     - name: TRTEMFL
-      operator: not_equal_to
+      operator: equal_to
       value: 'Y'
 Core:
   Id: ADaM-647

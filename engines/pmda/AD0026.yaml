@@ -15,9 +15,9 @@ scope:
 check:
   all:
     - name: SAFFN
-      operator: non_empty
+      operator: empty
     - name: SAFFN
-      operator: not_in
+      operator: in
       value:
         - 0
         - 1

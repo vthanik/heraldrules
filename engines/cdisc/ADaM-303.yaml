@@ -19,9 +19,9 @@ Authorities:
 Check:
   all:
     - name: CQ01NAM
-      operator: non_empty
+      operator: empty
     - name: CQ01NAM
-      operator: not_matches_regex
+      operator: matches_regex
       value: '^[A-Za-z0-9 /()-]+$'
 Core:
   Id: ADaM-303

@@ -18,10 +18,10 @@ scope:
 check:
   all:
     - name: MCRIT1ML
-      operator: equal_to
+      operator: not_equal_to
       value: 'Y'
     - name: MCRIT1
-      operator: empty
+      operator: non_empty
 outcome:
   message: MCRITy is not populated when MCRITyML is populated
   severity: Error

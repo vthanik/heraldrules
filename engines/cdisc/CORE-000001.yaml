@@ -64,11 +64,11 @@ Authorities:
 Check:
   all:
     - name: IECAT
-      operator: equal_to
+      operator: not_equal_to
       value: INCLUSION
       value_is_literal: yes
     - name: IEORRES
-      operator: not_equal_to
+      operator: equal_to
       value: 'N'
       value_is_literal: yes
 Core:

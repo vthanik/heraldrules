@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: ANL01FN
-      operator: non_empty
+      operator: empty
     - name: ANL01FN
-      operator: not_equal_to
+      operator: equal_to
       value: 1
 Core:
   Id: ADaM-036

@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: NCAXFN
-      operator: non_empty
+      operator: empty
     - name: NCAXFN
-      operator: not_in
+      operator: in
       value:
         - 1
 Core:

@@ -145,9 +145,9 @@ Authorities:
 Check:
   all:
     - name: --SCAT
-      operator: non_empty
+      operator: empty
     - name: --SCAT
-      operator: equal_to
+      operator: not_equal_to
       value: --CAT
 Core:
   Id: CORE-000237

@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: ITTFN
-      operator: non_empty
+      operator: empty
     - name: ITTFN
-      operator: not_in
+      operator: in
       value:
         - 0
         - 1

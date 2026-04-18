@@ -43,10 +43,10 @@ Authorities:
 Check:
   all:
     - name: DTHFL
-      operator: equal_to
+      operator: not_equal_to
       value: 'Y'
     - name: DTHDTC
-      operator: empty
+      operator: non_empty
 Core:
   Id: CORE-000705
   Status: Published

@@ -16,11 +16,11 @@ scope:
 check:
   all:
     - name: DSCAT
-      operator: equal_to
+      operator: not_equal_to
       value: PROTOCOL MILESTONE
       value_is_literal: yes
     - name: DSTERM
-      operator: not_equal_to
+      operator: equal_to
       value: DSDECOD
 outcome:
   message: DSDECOD is not the same as DSTERM when DSCAT='PROTOCOL MILESTONE'

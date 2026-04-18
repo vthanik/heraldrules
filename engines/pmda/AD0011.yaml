@@ -22,10 +22,10 @@ scope:
 check:
   all:
     - name: SAFFL
-      operator: equal_to
+      operator: not_equal_to
       value: 'N'
     - name: SAFFN
-      operator: not_equal_to
+      operator: equal_to
       value: 0
 outcome:
   message: '*FL = N and *FN != 0'

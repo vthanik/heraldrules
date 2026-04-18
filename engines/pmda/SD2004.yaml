@@ -16,9 +16,9 @@ scope:
 check:
   all:
     - name: DTHDTC
-      operator: non_empty
+      operator: empty
     - name: DTHFL
-      operator: not_equal_to
+      operator: equal_to
       value: 'Y'
 outcome:
   message: Missing value for DTHFL when DTHDTC is populated

@@ -40,10 +40,10 @@ Authorities:
 Check:
   all:
     - name: $HLTSUBJI
-      operator: equal_to
+      operator: not_equal_to
       value: 1
     - name: $INDIC
-      operator: not_equal_to
+      operator: equal_to
       value: 1
 Core:
   Id: CORE-000742

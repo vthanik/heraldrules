@@ -12,9 +12,9 @@ scope:
 check:
   all:
     - name: METABFL
-      operator: non_empty
+      operator: empty
     - name: METABFL
-      operator: not_equal_to
+      operator: equal_to
       value: 'Y'
 outcome:
   message: METABFL value is not Y or null

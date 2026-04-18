@@ -21,10 +21,10 @@ Authorities:
 Check:
   all:
     - name: DSCAT
-      operator: equal_to
+      operator: not_equal_to
       value: PROTOCOL MILESTONE
     - name: EPOCH
-      operator: non_empty
+      operator: empty
 Core:
   Id: CORE-000364
   Status: Published

@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: PKSUMXFN
-      operator: non_empty
+      operator: empty
     - name: PKSUMXFN
-      operator: not_in
+      operator: in
       value:
         - 1
 Core:

@@ -15,9 +15,9 @@ scope:
 check:
   all:
     - name: RANDDT
-      operator: non_empty
+      operator: empty
     - name: RANDFL
-      operator: not_equal_to
+      operator: equal_to
       value: 'Y'
 outcome:
   message: RANDFL value is not Y when RANDDT is populated

@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: COMPLFN
-      operator: non_empty
+      operator: empty
     - name: COMPLFN
-      operator: not_in
+      operator: in
       value:
         - 0
         - 1

@@ -18,10 +18,10 @@ Authorities:
 Check:
   all:
     - name: RANDFL
-      operator: equal_to
+      operator: not_equal_to
       value: 'Y'
     - name: RANDDT
-      operator: empty
+      operator: non_empty
 Core:
   Id: ADaM-366A
   Status: Published

@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: ABLFN
-      operator: non_empty
+      operator: empty
     - name: ABLFN
-      operator: not_equal_to
+      operator: equal_to
       value: 1
 Core:
   Id: ADaM-035

@@ -15,10 +15,10 @@ scope:
 check:
   all:
     - name: ABLFL
-      operator: equal_to
+      operator: not_equal_to
       value: 'Y'
     - name: BASETYPE
-      operator: non_empty
+      operator: empty
 outcome:
   message: Multiple baseline records exist for a unique USUBJID, PARAMCD, BASETYPE
   severity: Error

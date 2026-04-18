@@ -17,10 +17,10 @@ Authorities:
 Check:
   all:
     - name: ONTR01FL
-      operator: equal_to
+      operator: not_equal_to
       value: 'Y'
     - name: ONTRTFL
-      operator: not_equal_to
+      operator: equal_to
       value: 'Y'
 Core:
   Id: ADaM-649

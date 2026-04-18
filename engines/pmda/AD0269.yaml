@@ -22,9 +22,9 @@ scope:
 check:
   all:
     - name: TRTEMFL
-      operator: non_empty
+      operator: empty
     - name: TRTEMFL
-      operator: not_equal_to
+      operator: equal_to
       value: 'Y'
 outcome:
   message: Variable flag value is not Y or null

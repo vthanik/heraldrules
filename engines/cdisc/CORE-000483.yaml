@@ -34,10 +34,10 @@ Authorities:
 Check:
   all:
     - name: TSPARMCD
-      operator: equal_to
+      operator: not_equal_to
       value: PCLAS
     - name: TSVCDREF
-      operator: not_equal_to
+      operator: equal_to
       value: MED-RT
 Core:
   Id: CORE-000483

@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: AOCC01FL
-      operator: non_empty
+      operator: empty
     - name: AOCC01FL
-      operator: not_in
+      operator: in
       value:
         - 'Y'
 Core:

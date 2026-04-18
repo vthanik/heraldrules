@@ -18,10 +18,10 @@ Authorities:
 Check:
   all:
     - name: CNSR
-      operator: equal_to
+      operator: not_equal_to
       value: 1
     - name: EVNTDESC
-      operator: empty
+      operator: non_empty
 Core:
   Id: ADaM-247
   Status: Published

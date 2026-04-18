@@ -19,10 +19,10 @@ scope:
 check:
   all:
     - name: --OCCUR
-      operator: equal_to
+      operator: not_equal_to
       value: 'N'
     - name: --STRF
-      operator: non_empty
+      operator: empty
 outcome:
   message: Time point for non-occurred event or intervention is provided
   severity: Warning

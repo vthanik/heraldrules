@@ -12,9 +12,9 @@ scope:
 check:
   all:
     - name: PARAMN
-      operator: non_empty
+      operator: empty
     - name: PARAMN
-      operator: not_matches_regex
+      operator: matches_regex
       value: '^-?\d+$'
 outcome:
   message: PARAMN is not an integer

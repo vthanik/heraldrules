@@ -78,9 +78,9 @@ Authorities:
 Check:
   all:
     - name: --REASND
-      operator: non_empty
+      operator: empty
     - name: --STAT
-      operator: not_equal_to
+      operator: equal_to
       value: NOT DONE
 Core:
   Id: CORE-000225

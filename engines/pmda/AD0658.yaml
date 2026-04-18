@@ -14,9 +14,9 @@ scope:
 check:
   all:
     - name: NCAXFN
-      operator: non_empty
+      operator: empty
     - name: NCAXFN
-      operator: not_in
+      operator: in
       value:
         - 1
 outcome:

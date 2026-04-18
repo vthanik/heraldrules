@@ -20,9 +20,9 @@ Authorities:
 Check:
   all:
     - name: TRTEMFL
-      operator: non_empty
+      operator: empty
     - name: TRTEMFL
-      operator: not_equal_to
+      operator: equal_to
       value: 'Y'
 Core:
   Id: ADaM-269

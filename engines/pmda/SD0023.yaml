@@ -21,9 +21,9 @@ scope:
 check:
   all:
     - name: --REASND
-      operator: non_empty
+      operator: empty
     - name: --STAT
-      operator: not_equal_to
+      operator: equal_to
       value: NOT DONE
 outcome:
   message: Missing value for --STAT when --REASND is provided

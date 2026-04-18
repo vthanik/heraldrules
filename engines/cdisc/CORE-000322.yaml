@@ -19,11 +19,11 @@ Authorities:
 Check:
   all:
     - name: DSCAT
-      operator: equal_to
+      operator: not_equal_to
       value: PROTOCOL MILESTONE
       value_is_literal: yes
     - name: DSTERM
-      operator: not_equal_to
+      operator: equal_to
       value: DSDECOD
 Core:
   Id: CORE-000322

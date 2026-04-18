@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: FASFN
-      operator: non_empty
+      operator: empty
     - name: FASFN
-      operator: not_in
+      operator: in
       value:
         - 0
         - 1

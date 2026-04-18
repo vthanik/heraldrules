@@ -20,10 +20,10 @@ scope:
 check:
   all:
     - name: CNSR
-      operator: equal_to
+      operator: not_equal_to
       value: 1
     - name: EVNTDESC
-      operator: empty
+      operator: non_empty
 outcome:
   message: CNSR is populated, but AVAL, STARTDT, and one of [ADT, ADTM] are not populated
   severity: Error

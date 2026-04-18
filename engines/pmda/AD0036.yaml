@@ -15,9 +15,9 @@ scope:
 check:
   all:
     - name: ANL01FN
-      operator: non_empty
+      operator: empty
     - name: ANL01FN
-      operator: not_equal_to
+      operator: equal_to
       value: 1
 outcome:
   message: '*PFN value is not 1 or null'

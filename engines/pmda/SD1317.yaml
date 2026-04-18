@@ -18,10 +18,10 @@ scope:
 check:
   all:
     - name: DSDECOD
-      operator: equal_to
+      operator: not_equal_to
       value: DEATH
     - name: DSSTDTC
-      operator: not_equal_to
+      operator: equal_to
       value: DTHDTC
 outcome:
   message: DSSTDTC for DEATH record is not the same as DM.DTHDTC

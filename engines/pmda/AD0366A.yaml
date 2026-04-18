@@ -16,10 +16,10 @@ scope:
 check:
   all:
     - name: RANDFL
-      operator: equal_to
+      operator: not_equal_to
       value: 'Y'
     - name: RANDDT
-      operator: empty
+      operator: non_empty
 outcome:
   message: Missing value for RANDDT when RANDFL is Y
   severity: Error

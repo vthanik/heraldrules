@@ -10,6 +10,48 @@ for release cadence details.
 
 ## Unreleased
 
+### Beat P21 — Phase 2h (2026-04-18, complete CDISC+PMDA polarity sweep)
+
+#### Fixed
+
+Finished the CDISC+PMDA polarity audit begun in Phase 2g. Scanned
+all remaining 2-condition operator patterns, sampled 25+ rules
+across every suspicious combination, and confirmed each class has
+the same structural inversion per the passing-condition convention.
+
+**173 more rules fixed** across `engines/cdisc/` and `engines/pmda/`
+via a single-pass four-pair operator flip within the check: block:
+- `non_empty` <-> `empty`
+- `not_in` <-> `in`
+- `not_equal_to` <-> `equal_to`
+- `not_matches_regex` <-> `matches_regex`
+
+Pattern breakdown:
+- `non_empty + not_in` (51): *FL/*FN enumeration rules (ADaM-005,
+  -006, etc.), NCAXFN/PKSUMXFN PK exclusion flags, PMDA AD-series
+  equivalents.
+- `non_empty + not_equal_to` (25): *RFL/*PFL restricted-value flags
+  (ADaM-033/034/035), SDTM DTHFL/DTHDTC consistency.
+- `non_empty + not_matches_regex` (18): `*TM`/`*DT`/`*DTM` ISO 8601
+  format validators.
+- `non_empty + equal_to` (8 CDISC/PMDA, distinct from the already-
+  fixed HRL-DD 20): DY-not-zero rules, RSUBJID != USUBJID/POOLID.
+- `equal_to + non_empty` (19): CORE-000657 AEOUT-implies-AEENDTC,
+  ADaM-132A/133C/134C BASE=0 guards.
+- `equal_to + empty` (12): CNSR-implies-EVNTDESC, RANDFL-implies-
+  RANDDT, MCRITyML-implies-MCRITy.
+- `equal_to + not_equal_to` (40): *FL Y-implies-*FN 1 family, TREM
+  period-to-overall flag consistency, SD1317 DEATH date consistency.
+
+All three validators pass. Catalog runnable unchanged at 3,700/3,878;
+these rules now produce correct findings.
+
+**Cumulative polarity sweep (Phase 2e+2f+2g+2h): 426 rules fixed.**
+Before this session, roughly 11% of the runnable catalog was silently
+wrong. After: HRL-DD fully audited end-to-end, CDISC+PMDA 2-condition
+patterns swept. Remaining candidates are 3+-condition rules which
+need per-rule review (smaller batches expected).
+
 ### Beat P21 — Phase 2g (2026-04-18, CDISC+PMDA polarity sweep)
 
 #### Fixed

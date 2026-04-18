@@ -17,9 +17,9 @@ Authorities:
 Check:
   all:
     - name: CNSR
-      operator: non_empty
+      operator: empty
     - name: CNSR
-      operator: not_matches_regex
+      operator: matches_regex
       value: '^[0-9]+$'
 Core:
   Id: ADaM-169

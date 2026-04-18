@@ -17,10 +17,10 @@ Authorities:
 Check:
   all:
     - name: BASE
-      operator: equal_to
+      operator: not_equal_to
       value: 0
     - name: R2BASE
-      operator: non_empty
+      operator: empty
 Core:
   Id: ADaM-132A
   Status: Published

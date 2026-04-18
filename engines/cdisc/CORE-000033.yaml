@@ -59,10 +59,10 @@ Authorities:
 Check:
   all:
     - name: DSTERM
-      operator: equal_to
+      operator: not_equal_to
       value: COMPLETED
     - name: DSDECOD
-      operator: not_equal_to
+      operator: equal_to
       value: COMPLETED
 Core:
   Id: CORE-000033

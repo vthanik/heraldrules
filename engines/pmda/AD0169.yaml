@@ -19,9 +19,9 @@ scope:
 check:
   all:
     - name: CNSR
-      operator: non_empty
+      operator: empty
     - name: CNSR
-      operator: not_matches_regex
+      operator: matches_regex
       value: '^[0-9]+$'
 outcome:
   message: CNSR is not an integer >= 0

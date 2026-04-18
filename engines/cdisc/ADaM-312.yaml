@@ -18,9 +18,9 @@ Authorities:
 Check:
   all:
     - name: SMQ01SC
-      operator: non_empty
+      operator: empty
     - name: SMQ01SC
-      operator: not_in
+      operator: in
       value:
         - BROAD
         - NARROW

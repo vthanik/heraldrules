@@ -134,10 +134,10 @@ Authorities:
 Check:
   all:
     - name: --BLFL
-      operator: equal_to
+      operator: not_equal_to
       value: 'Y'
     - name: --STRESC
-      operator: empty
+      operator: non_empty
 Core:
   Id: CORE-000643
   Status: Published

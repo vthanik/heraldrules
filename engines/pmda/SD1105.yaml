@@ -15,10 +15,10 @@ scope:
 check:
   all:
     - name: DSCAT
-      operator: equal_to
+      operator: not_equal_to
       value: PROTOCOL MILESTONE
     - name: EPOCH
-      operator: non_empty
+      operator: empty
 outcome:
   message: EPOCH variable is populated when DSCAT equals 'PROTOCOL MILESTONE'
   severity: Warning

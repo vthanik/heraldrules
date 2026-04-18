@@ -15,9 +15,9 @@ scope:
 check:
   all:
     - name: ANL01FL
-      operator: non_empty
+      operator: empty
     - name: ANL01FL
-      operator: not_equal_to
+      operator: equal_to
       value: 'Y'
 outcome:
   message: '*PFL value is not Y or null'

@@ -18,9 +18,9 @@ scope:
 check:
   all:
     - name: ANL01FN
-      operator: non_empty
+      operator: empty
     - name: ANL01FN
-      operator: not_in
+      operator: in
       value:
         - 1
 outcome:

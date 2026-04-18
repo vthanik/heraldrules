@@ -313,6 +313,7 @@ Phased execution (see `/Users/vignesh/.claude/plans/plan-are-we-focusing-wobbly-
 | 2f | Polarity sweep remainder: 12 more HRL-DD rules fixed | heraldrules (done) |
 | 2g | CDISC+PMDA polarity sweep: 198 non_empty+empty rules swapped (cumulative 253) | heraldrules (done) |
 | 2h | Complete CDISC+PMDA 2-condition sweep: 173 more rules (cumulative 426) | heraldrules (done) |
+| 2i | HBPD03 P21-parity gap analysis; HRL-KEY-001 converted from Hardcoded to YAML; HRL-KEY-002 added; comprehensive HANDOFF §0..§7 rewrite with 28 operator bodies | heraldrules (done) |
 | 3 | Implement the 68 new herald operators (HANDOFF §4a-j) to unlock ~260 rules | herald, 3-4 sessions |
 | 3 | 28 new operators implemented | herald, 2-3 sessions |
 | 4 | 163 "Bucket B/C/D/E" rules authored | heraldrules, 2 sessions |
@@ -327,6 +328,7 @@ manifest + CHANGELOG in one atomic pass with CDISCPILOT01-based tests.
 
 - Never re-introduce P21 dependency (engines/core/ was deleted, rules/ was deleted)
 - Never bump version without explicit user approval
+- **No new `executability: Hardcoded` rules.** Any rewrite or update to an existing Hardcoded rule converts it to a proper YAML with a declarative `check:` block and operators — if the needed operator does not yet exist in herald, spec it in `HANDOFF_TO_HERALD_*.md`. The 12 pre-existing Hardcoded rules (HRL-VAR-001/002/003, HRL-LBL-001, HRL-TYP-001, HRL-LEN-001, HRL-DS-001, HRL-CL-001/002/010/020/021) are frozen for now but will follow the same YAML-first path when next touched. Phase 2i (2026-04-18) established this convention with HRL-KEY-001.
 - **Do NOT edit any rule YAML's `version:` field until the herald R package reaches CRAN.** Rule content edits are fine; the `version:` number stays at 1 across the pre-CRAN lifetime so downstream pipelines that key off it don't spuriously see drift.
 - **Never edit the sibling herald R package (`../herald/`) directly from this repo's Claude session.** When a rule change requires matching code in `R/val-checks.R`, `R/val-engine.R`, `R/rule-execute.R`, or any other herald file, write a handover note to `HANDOFF_TO_HERALD.md` (or a dated variant) describing the required changes, then let the user apply them in a fresh Claude session opened inside the herald repo. This keeps each repo's review, test, and commit boundaries clean. The global rule in `~/.claude/CLAUDE.md` about syncing sibling repos still applies — but the *execution* of the sync happens from the herald session, not here.
 - SEND rules deferred to post-CRAN release
@@ -356,6 +358,7 @@ ALL herald-authored rules use `HRL-{CAT}-NNN` prefix:
 | `HRL-TS-NNN` | Trial summary | `engines/herald/` | 5 rules |
 | `HRL-DD-NNN` | Define-XML spec | `engines/herald/define/` | 109 rules (HRL-DD-001..023 herald-original, HRL-DD-024..109 renamed from old DD0001..DD0086 to avoid collision with PMDA DD rules) |
 | `HRL-VAR/LBL/TYP/LEN/DS/CL-NNN` | Hardcoded spec checks | `engines/herald/` | 12 rules (CL: 001, 002, 010, 020, 021; remainder 7) |
+| `HRL-KEY-NNN` | Spec-driven key uniqueness / presence | `engines/herald/` | 2 rules (001 = duplicate composite key; 002 = declared key missing from data). Fully Executable, backed by new `duplicate_composite_key` and `required_variables` operators; **no Hardcoded fallback** — per Phase 2i directive (2026-04-18) rewritten rules move to YAML. |
 | `HRL-CT-NNNN` | CT per-codelist | `engines/ct/` | 1,210 rules |
 
 P21 IDs preserved in `p21_reference` provenance field. The `DDnnnn` bare prefix is now reserved for PMDA-authored rules in `engines/pmda/` (from PMDA Validation Rules v6.0). Previously DD prefix was shared with herald/define/ rules, which caused silent config deduplication and was resolved by renaming herald/define/DD00nn → HRL-DD-NNN where NNN = nn + 23.
@@ -365,10 +368,10 @@ P21 IDs preserved in `p21_reference` provenance field. The `DDnnnn` bare prefix 
 The herald R package (sibling repo at `../herald/` relative to this one) consumes rules from this catalog.
 
 ### Key Files in Herald R Package
-- `R/val-checks.R` -- 12 hardcoded HRL-* spec checks (`HRL-VAR-001/002/003`, `HRL-LBL-001`, `HRL-TYP-001`, `HRL-LEN-001`, `HRL-DS-001`, `HRL-CL-001/002/010/020/021`)
+- `R/val-checks.R` -- 12 hardcoded HRL-* spec checks (`HRL-VAR-001/002/003`, `HRL-LBL-001`, `HRL-TYP-001`, `HRL-LEN-001`, `HRL-DS-001`, `HRL-CL-001/002/010/020/021`). `check_key_uniqueness` (lines ~745-805) is slated for deletion in the Phase 2i HANDOFF — HRL-KEY-001 moves to YAML and routes through the operator dispatcher.
 - `R/val-engine.R` -- `validate()` orchestrator
-- `R/rule-execute.R` -- YAML rule execution, `grepl("^HRL-", rule_id)` routing
-- `R/rule-operator.R` -- Operator registry (96 core + 60 herald operators)
+- `R/rule-execute.R` -- YAML rule execution, `grepl("^HRL-", rule_id)` routing. Phase 2i HANDOFF adds `__spec_keys__` sentinel resolution so HRL-KEY-001 / HRL-KEY-002 can read `spec$ds_spec$keys` at execution time.
+- `R/rule-operator.R` -- Operator registry (96 core + 60 herald operators). Phase 2i HANDOFF grows this by 28 operators (22 missing + 6 stub replacements), including `duplicate_composite_key` and `required_variables`.
 - `R/rule-fetch.R` -- Rule resolution from herald-rules cache
 
 ### Herald ↔ Herald-Rules Sync

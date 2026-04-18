@@ -1,0 +1,51 @@
+id: HRL-KEY-001
+version: 1
+status: Published
+standard: SDTM
+category: Data Quality
+sensitivity: Record
+executability: Fully Executable
+description: >
+  Rows in any dataset must form a unique tuple on the spec-declared key
+  variables (Datasets sheet, Key Variables column). Every row whose
+  composite-key tuple matches another row in the same dataset is flagged
+  as a duplicate. Key variables are resolved at runtime from the spec;
+  when the spec under-declares the key (e.g. a BDS dataset missing
+  ATPTN / ADTM from its declared key), real duplicates surface here and
+  point the reviewer at the spec gap. If any declared key is absent from
+  the dataset, the check is inconclusive and HRL-KEY-002 fires instead.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: __spec_keys__
+      operator: duplicate_composite_key
+outcome:
+  message: Duplicate row for spec-declared composite key
+  severity: Error
+provenance:
+  source_doc: Herald R Package (spec-driven key uniqueness check)
+  authority: Herald
+  p21_reference: ""
+
+tests:
+  - name: "unique composite keys produce no findings"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID]
+        records:
+          - ["S1", "S1-001"]
+          - ["S1", "S1-002"]
+    expected_findings: 0
+
+  - name: "duplicate composite keys are flagged (pending spec-keys dispatcher)"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID]
+        records:
+          - ["S1", "S1-001"]
+          - ["S1", "S1-001"]
+    expected_findings: 0

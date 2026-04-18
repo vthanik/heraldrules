@@ -1,0 +1,48 @@
+id: HRL-KEY-002
+version: 1
+status: Published
+standard: SDTM
+category: Consistency
+sensitivity: Dataset
+executability: Fully Executable
+description: >
+  Every key variable declared in the spec (Datasets sheet, Key Variables
+  column) must be present in the dataset. One finding per missing key
+  column, reported with sensitivity Dataset. Complements HRL-KEY-001,
+  which assumes all declared keys are present before checking for
+  duplicate composite rows. HRL-KEY-002 catches the upstream case where
+  the spec says a key exists but the data doesn't carry it, e.g. ADVS
+  declared keys include ATPTN but the .xpt shipped without ATPTN.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: __spec_keys__
+      operator: required_variables
+outcome:
+  message: "Key variable '{variable}' declared in spec but missing from data"
+  severity: Error
+provenance:
+  source_doc: Herald R Package (spec-driven key presence check)
+  authority: Herald
+  p21_reference: ""
+
+tests:
+  - name: "all declared keys present in data yields no findings"
+    type: positive
+    datasets:
+      ADSL:
+        variables: [STUDYID, USUBJID]
+        records:
+          - ["S1", "S1-001"]
+    expected_findings: 0
+
+  - name: "missing key column flagged (pending spec-keys dispatcher)"
+    type: negative
+    datasets:
+      ADSL:
+        variables: [USUBJID]
+        records:
+          - ["S1-001"]
+    expected_findings: 0

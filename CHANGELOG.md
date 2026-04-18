@@ -10,6 +10,69 @@ for release cadence details.
 
 ## Unreleased
 
+### Beat P21 — Phase 2i (2026-04-18, HBPD03 P21-parity gap analysis + HRL-KEY YAML-first rewrite)
+
+#### Added
+
+Two new `engines/herald/` YAML rules, both `executability: Fully
+Executable`, resolve key-uniqueness checks at submission time by
+reading the spec's Datasets-sheet "Key Variables" column via a new
+`__spec_keys__` sentinel:
+
+- **HRL-KEY-001** — "Duplicate row for spec-declared composite key".
+  Replaces the hardcoded `check_key_uniqueness` in
+  `../herald/R/val-checks.R:745-805`. Uses a new
+  `duplicate_composite_key` operator (to be implemented in herald).
+  Per Phase 2i directive (user, 2026-04-18): rewrites of previously-
+  hardcoded rules move to YAML; no new `executability: Hardcoded`.
+- **HRL-KEY-002** — "Key variable declared in spec but missing from
+  data". Uses the `required_variables` operator (currently a stub at
+  `../herald/R/rule-operator.R:862`, to be implemented in the same
+  herald session). Fills the information-loss gap left by the
+  short-circuit fix in commit `f346c0a`: spec-declared keys absent
+  from data are now a named finding instead of being silently
+  swallowed.
+
+#### Updated
+
+- `CLAUDE.md` — Phase table gains Phase 2i; Herald Rule ID Convention
+  table gains `HRL-KEY-NNN` row; new top-level project rule: **no new
+  Hardcoded rules; rewrites convert to YAML**; Cross-Reference section
+  marks `check_key_uniqueness` for deletion and notes the operator
+  registry growth.
+- `HANDOFF_TO_HERALD_2026-04-18.md` — REWRITE from scratch with §0..§7
+  covering: HBPD03 root-cause, YAML-first rewrite of HRL-KEY-001,
+  `__spec_keys__` dispatcher, 28 operator implementations (22 missing
+  + 6 stub replacements) with exact line numbers / bodies / tests /
+  affected rule IDs, regression against the existing
+  `inst/benchmarks/p21-parity/` harness.
+- `tests/validate-herald-rules.R` — `known_cats` list gains `"KEY"`.
+- `herald-master-rules.csv`, `manifest.json`, `configs/*.json` —
+  regenerated; totals +2 herald YAMLs.
+
+#### Why (context)
+
+Fresh HBPD03 submit run (user, 2026-04-18) produced 7,452 findings;
+7,403 were HRL-KEY-001 spurious duplicate-flags. P21 Community v4.1.0
+produced just 1,221 findings across 6 rules for the same submission
+(AD0124 × 1,210, AD0047 × 8, AD1024/1025/1026 × 1 each, DD0101 × 1).
+Three root causes: (1) the hardcoded `check_key_uniqueness` silently
+reduced composite keys to whatever subset was present, flagging every
+BDS record at different timepoints as a duplicate; (2) herald's
+registry is missing 22 operators used by YAML rules (HANDOFF §4j
+documented 12; fresh audit surfaced 10 more), so e.g. ADaM-124-SD
+fails to fire on 1,210 real PARCAT1 inconsistencies; (3) six operators
+are registered as `rep(FALSE, length(x))` stubs, so their rules
+silently pass. Phase 2i produces a single-session herald plan that
+lands all three fixes atomically.
+
+#### Cumulative impact
+
+Runnable catalog after HANDOFF lands: 178 → ~205 herald engine rules
+(add HRL-KEY-001/002 + ~25 unlocks from stub/missing operators).
+Across the full catalog: ~1,300 → ~1,560 genuinely-firing rules once
+Phase 3 + Phase 2i operator batch ships.
+
 ### Beat P21 — Phase 2h (2026-04-18, complete CDISC+PMDA polarity sweep)
 
 #### Fixed

@@ -137,7 +137,7 @@ if (field_errors == 0L && id_errors == 0L) {
 cat("\n[3/7] Checking category codes and ID sequences...\n")
 
 known_cats <- c("AD", "FM", "MD", "OD", "SD", "TS", "VAR", "LBL", "TYP",
-                "LEN", "DS", "CL")
+                "LEN", "DS", "CL", "KEY")
 
 # Parse IDs into (category, number) pairs
 parsed_ids <- list()

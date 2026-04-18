@@ -15,13 +15,13 @@ scope:
 check:
   all:
     - name: data_type
-      operator: in
+      operator: not_in
       value:
         - text
         - integer
         - float
     - name: length
-      operator: empty
+      operator: non_empty
 outcome:
   message: "Length is missing but required when Data Type is text, integer, or float."
   severity: Error

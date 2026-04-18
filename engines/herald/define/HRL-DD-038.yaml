@@ -15,15 +15,15 @@ scope:
 check:
   all:
     - name: standard_name
-      operator: equal_to
+      operator: not_equal_to
       value: ADaMIG
     - name: standard_version
-      operator: not_in
+      operator: in
       value:
         - "1.0"
         - "1.1"
         - "1.2"
-        - "1.3" 
+        - "1.3"
 outcome:
   message: "ADaMIG version is not allowable. Must be one of: 1.0, 1.1, 1.2, 1.3."
   severity: Error

@@ -15,9 +15,9 @@ scope:
 check:
   all:
     - name: length
-      operator: non_empty
+      operator: empty
     - name: length
-      operator: less_than_or_equal_to
+      operator: greater_than
       value: 0
 outcome:
   message: "Length must be a positive integer."

@@ -15,11 +15,11 @@ scope:
 check:
   all:
     - name: reference_data
-      operator: equal_to
+      operator: not_equal_to
       value: "Yes"
     - name: repeating
-      operator: not_equal_to
-      value: "No" 
+      operator: equal_to
+      value: "No"
 outcome:
   message: "Repeating is not 'No' but Reference Data is 'Yes'. When IsReferenceData='Yes', Repeating must be 'No'."
   severity: Error

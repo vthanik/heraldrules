@@ -15,12 +15,12 @@ scope:
 check:
   all:
     - name: dataset
-      operator: non_empty
+      operator: empty
     - name: variable
-      operator: non_empty
+      operator: empty
     - name: __variable_exists_in_var_spec
       operator: equal_to
-      value: false
+      value: true
 outcome:
   message: "Dataset.Variable in ValueLevel does not exist in the Variables sheet."
   severity: Error

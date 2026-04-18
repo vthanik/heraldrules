@@ -15,10 +15,10 @@ scope:
 check:
   all:
     - name: data_type
-      operator: equal_to
+      operator: not_equal_to
       value: text
     - name: length
-      operator: greater_than
+      operator: less_than_or_equal_to
       value: 200
 outcome:
   message: "Text variable length exceeds 200 characters. SAS v5 Transport files restrict variable lengths to 200 characters."

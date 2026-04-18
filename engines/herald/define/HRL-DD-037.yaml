@@ -15,15 +15,15 @@ scope:
 check:
   all:
     - name: standard_name
-      operator: equal_to
+      operator: not_equal_to
       value: SDTMIG
     - name: standard_version
-      operator: not_in
+      operator: in
       value:
         - "3.1.2"
         - "3.2"
         - "3.3"
-        - "3.4" 
+        - "3.4"
 outcome:
   message: "SDTMIG version is not allowable. Must be one of: 3.1.2, 3.2, 3.3, 3.4."
   severity: Error

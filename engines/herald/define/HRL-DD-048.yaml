@@ -15,15 +15,15 @@ scope:
 check:
   all:
     - name: data_type
-      operator: not_in
+      operator: in
       value:
         - text
         - integer
         - float
     - name: data_type
-      operator: non_empty
+      operator: empty
     - name: length
-      operator: non_empty
+      operator: empty
 outcome:
   message: "Length should not be provided when Data Type is a date/time type. Length is only valid for text, integer, and float."
   severity: Warning

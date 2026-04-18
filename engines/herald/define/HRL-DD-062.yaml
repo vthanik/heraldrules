@@ -15,9 +15,9 @@ scope:
 check:
   all:
     - name: order
-      operator: non_empty
+      operator: empty
     - name: order
-      operator: less_than_or_equal_to
+      operator: greater_than
       value: 0
 outcome:
   message: "Variable order must be a positive integer."

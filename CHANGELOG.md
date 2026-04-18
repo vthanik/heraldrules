@@ -10,6 +10,59 @@ for release cadence details.
 
 ## Unreleased
 
+### Beat P21 — Phase 2f (2026-04-18, polarity sweep remainder)
+
+#### Fixed
+
+Completed the HRL-DD polarity audit begun in Phase 2e by inspecting
+every remaining 2-condition and 3-condition HRL-DD rule pattern.
+Twelve more rules had inverted operators per the passing-condition
+convention; each was fixed individually:
+
+- **HRL-DD-037, 038, 039** (version-allowlist rules): `equal_to` +
+  `not_in` → `not_equal_to` + `in`. Now correctly flags when
+  `standard_name` IS the target standard AND `standard_version` is
+  NOT in the allowable list.
+- **HRL-DD-042** (`reference_data` + `repeating` consistency):
+  `equal_to Yes` + `not_equal_to No` → `not_equal_to Yes` +
+  `equal_to No`. Flags when reference_data IS Yes AND repeating is
+  NOT No.
+- **HRL-DD-047** (Length required for text/integer/float): `in` +
+  `empty` → `not_in` + `non_empty`. Flags when data_type IS in list
+  AND length IS empty.
+- **HRL-DD-050, 062** (positive-integer validators): `non_empty` +
+  `less_than_or_equal_to 0` → `empty` + `greater_than 0`. Flags when
+  value is populated AND <= 0.
+- **HRL-DD-051** (text length <= 200 for SAS v5): `equal_to text` +
+  `greater_than 200` → `not_equal_to text` + `less_than_or_equal_to
+  200`. Flags when data_type IS text AND length > 200.
+- **HRL-DD-048** (Length must be empty for non-text/integer/float):
+  `not_in` + `non_empty` + `non_empty` → `in` + `empty` + `empty`.
+  Flags when data_type is NOT in list AND both fields are populated.
+- **HRL-DD-058** (SDTM Source enumeration): `equal_to Tabulation` +
+  `non_empty` + `not_in` → `not_equal_to Tabulation` + `empty` +
+  `in`. Flags when purpose IS Tabulation AND source IS populated AND
+  NOT in enumeration.
+- **HRL-DD-069** (Dataset.Variable exists in Variables sheet):
+  `non_empty` + `non_empty` + `equal_to false` → `empty` + `empty` +
+  `equal_to true`. Flags when dataset populated AND variable
+  populated AND the computed existence field is false (does not
+  exist).
+- **HRL-DD-107** (Extended codelist terms): `non_empty` +
+  `equal_to true` + `not_equal_to Yes` → `empty` + `equal_to false`
+  + `equal_to Yes`. Flags when terminology populated AND term is not
+  in CT AND ExtendedValue flag is not Yes.
+
+These were verified against `../herald/R/rule-operator.R:131-132`
+(empty flags when populated, non_empty flags when empty) and the
+operator table in `CLAUDE.md`. The 7 remaining HRL-DD rules using
+these patterns (HRL-DD-019/020/021/022/023, 035, 055, 056, 057, 059,
+060, 061, 070) were inspected and confirmed already correct.
+
+Total polarity sweep (Phase 2e + 2f): **55 rules fixed** across the
+tolerance-formula family (19) and the HRL-DD Define-XML family (36).
+All three validators pass. No version bumps.
+
 ### Beat P21 — Phase 2e (2026-04-18, polarity audit)
 
 #### Fixed

@@ -15,13 +15,13 @@ scope:
 check:
   all:
     - name: terminology
-      operator: non_empty
+      operator: empty
     - name: __term_not_in_ct
       operator: equal_to
-      value: true
+      value: false
     - name: __extended_value_flag
-      operator: not_equal_to
-      value: "Yes" 
+      operator: equal_to
+      value: "Yes"
 outcome:
   message: "Codelist term is not in standard CT but is not flagged as extended. Set def:ExtendedValue='Yes' for sponsor-added terms."
   severity: Error

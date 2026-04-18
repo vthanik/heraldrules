@@ -15,12 +15,12 @@ scope:
 check:
   all:
     - name: purpose
-      operator: equal_to
+      operator: not_equal_to
       value: Tabulation
     - name: source
-      operator: non_empty
+      operator: empty
     - name: source
-      operator: not_in
+      operator: in
       value:
         - Subject
         - Investigator

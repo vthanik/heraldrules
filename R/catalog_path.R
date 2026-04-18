@@ -110,6 +110,32 @@ load_ct <- function(package = c("sdtm", "adam")) {
   readRDS(path)
 }
 
+#' Rule catalog content version
+#'
+#' Returns the NCI-EVS-aligned quarterly version of the rule catalog
+#' bundled with this install of `heraldrules`. Distinct from the
+#' package version in DESCRIPTION (which follows CRAN semver). Use
+#' this to report to sponsors which CT quarter + rule snapshot their
+#' validation run was based on.
+#'
+#' @return Character scalar in `"YYYY.Q"` form, e.g. `"2026.2"`.
+#' @export
+#' @examples
+#' catalog_version()
+catalog_version <- function() {
+  path <- system.file("rules", "manifest.json", package = "heraldrules")
+  if (!nzchar(path)) return(NA_character_)
+  m <- jsonlite::fromJSON(path, simplifyVector = TRUE)
+  # The "all" config carries the canonical catalog-content version
+  cfgs <- m$configs
+  if (is.null(cfgs)) return(NA_character_)
+  hit <- cfgs[cfgs$file == "all.json", "version", drop = TRUE]
+  if (length(hit) >= 1L && nzchar(as.character(hit[[1L]]))) {
+    return(as.character(hit[[1L]]))
+  }
+  NA_character_
+}
+
 #' P21 Community rule-id translation map
 #'
 #' Returns a two-column data frame mapping every herald rule_id to its

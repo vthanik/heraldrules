@@ -1,7 +1,7 @@
 Package: heraldrules
 Type: Package
 Title: Regulatory Validation Rule Catalog for 'herald'
-Version: 2026.2.3
+Version: 0.1.0
 Authors@R: person("Vignesh", "Thanikachalam",
                   email = "vthanik@users.noreply.github.com",
                   role = c("aut", "cre"))

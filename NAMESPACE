@@ -2,6 +2,7 @@
 
 export(available_configs)
 export(catalog_path)
+export(catalog_version)
 export(load_catalog)
 export(load_ct)
 export(p21_id_map)

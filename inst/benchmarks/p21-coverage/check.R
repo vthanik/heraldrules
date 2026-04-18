@@ -92,6 +92,29 @@ best_status <- function(p21_id) {
 status <- vapply(all_p21, best_status, character(1))
 tab <- table(status)
 
+# -- Effective coverage: Partial-with-real-check also runs -------------------
+# A Partial P21 ID is "effectively running" when at least one of its herald
+# rule YAMLs ships a real check: block (any operator, including
+# manual_review which fires advisory findings). Only truly blocked rules
+# are those with best_status Reference or UNMAPPED.
+#
+# We don't re-parse every YAML; the manifest / configs already know which
+# rules get included in a runnable config. Instead we use a simpler proxy:
+# a rule counts as "effectively running" iff its p21_id has any herald row
+# whose executability is in the RUNNABLE allow-list (Fully Executable,
+# Hardcoded, or any Partially Executable flavour).
+.runnable_execs <- c(
+  "Fully Executable", "Hardcoded",
+  "Partially Executable",
+  "Partially Executable - Possible Overreporting",
+  "Partially Executable - Possible Underreporting"
+)
+is_effectively_running <- function(p21_id) {
+  rows <- m[m$p21_id == p21_id, , drop = FALSE]
+  any(rows$executability %in% .runnable_execs)
+}
+eff_running <- vapply(all_p21, is_effectively_running, logical(1))
+
 # -- report -------------------------------------------------------------------
 
 cat("============================================================\n")
@@ -106,6 +129,15 @@ cat(" Best available herald executability per P21 ID:\n")
 for (k in names(tab)) {
   cat(sprintf("   %-24s %4d  (%5.1f%%)\n", k, tab[[k]], 100 * tab[[k]] / length(all_p21)))
 }
+cat("------------------------------------------------------------\n")
+cat(sprintf(" STRICT coverage    (Fully Executable only): %d / %d  (%5.1f%%)\n",
+            sum(status %in% c("Fully Executable", "Hardcoded")),
+            length(all_p21),
+            100 * sum(status %in% c("Fully Executable", "Hardcoded")) / length(all_p21)))
+cat(sprintf(" EFFECTIVE coverage (runs + produces findings): %d / %d  (%5.1f%%)\n",
+            sum(eff_running),
+            length(all_p21),
+            100 * sum(eff_running) / length(all_p21)))
 cat("------------------------------------------------------------\n")
 
 need_work <- names(status[!status %in% c("Fully Executable", "Hardcoded")])

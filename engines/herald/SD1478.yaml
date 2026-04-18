@@ -1,0 +1,30 @@
+id: SD1478
+version: 1
+status: Published
+standard: SDTM
+category: Conformance
+sensitivity: Record
+executability: Fully Executable
+description: >
+  All subjects should have at least one Last Observation Before Exposure
+  (--LOBXFL = 'Y') record in the EG, LB, LC, MB, MS, PC, and VS domains.
+  Missing baseline flags prevent reviewers from identifying the
+  pre-exposure reference values for signals analysis.
+scope:
+  classes: []
+  domains: [EG, LB, LC, MB, MS, PC, VS]
+check:
+  all:
+    - name: ""
+      operator: groupwise_value_present
+      value:
+        group_by: USUBJID
+        wildcard_suffix: LOBXFL
+        required_value: "Y"
+outcome:
+  message: Subject has no --LOBXFL = 'Y' record in domain
+  severity: Warning
+provenance:
+  source_doc: Pinnacle 21 Community Validator v4.1.0
+  authority: Herald-relay (pending FDA Validator v1.7 upstream source)
+  p21_reference: SD1478

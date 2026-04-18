@@ -15,9 +15,9 @@ scope:
 check:
   all:
     - name: dataset
-      operator: not_empty
+      operator: non_empty
     - name: variable
-      operator: not_empty
+      operator: non_empty
     - name: __variable_exists_in_var_spec
       operator: equal_to
       value: false

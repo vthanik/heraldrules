@@ -41,7 +41,10 @@ max_length
 min_length
 length_less_than_or_equal_to
 length_greater_than
+longer_than
 shorter_than
+has_equal_length
+has_different_length
 
 # Set / codelist
 in
@@ -63,6 +66,8 @@ is_valid_url
 
 # Uniqueness / sequence
 is_unique
+is_unique_set
+is_not_unique_set
 not_unique
 unique
 

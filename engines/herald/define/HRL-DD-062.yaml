@@ -15,7 +15,7 @@ scope:
 check:
   all:
     - name: order
-      operator: not_empty
+      operator: non_empty
     - name: order
       operator: less_than_or_equal_to
       value: 0

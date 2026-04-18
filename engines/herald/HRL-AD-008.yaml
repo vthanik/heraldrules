@@ -13,7 +13,7 @@ scope:
 check:
   all:
     - name: __shared_variables__
-      operator: length_match
+      operator: has_equal_length
       value: __cross_dataset__
 outcome:
   message: Variable name present in both %domain% and ADSL do not have identical lengths

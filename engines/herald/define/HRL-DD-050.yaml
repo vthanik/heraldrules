@@ -15,7 +15,7 @@ scope:
 check:
   all:
     - name: length
-      operator: not_empty
+      operator: non_empty
     - name: length
       operator: less_than_or_equal_to
       value: 0

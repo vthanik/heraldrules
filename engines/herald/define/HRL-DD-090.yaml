@@ -15,7 +15,7 @@ scope:
 check:
   all:
     - name: codelist_id
-      operator: not_empty
+      operator: non_empty
     - name: __codelist_exists_in_cl_spec
       operator: equal_to
       value: false

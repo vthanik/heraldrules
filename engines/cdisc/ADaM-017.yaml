@@ -19,7 +19,7 @@ Authorities:
 Check:
   all:
     - name: PARAM
-      operator: length_greater_than
+      operator: longer_than
       value: 200
 Core:
   Id: ADaM-017

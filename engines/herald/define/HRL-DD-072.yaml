@@ -15,7 +15,7 @@ scope:
 check:
   all:
     - name: name
-      operator: not_unique
+      operator: is_unique_set
 outcome:
   message: "Codelist Name is not unique. The Name must be unique within the set of CodeList elements."
   severity: Error

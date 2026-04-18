@@ -15,7 +15,7 @@ scope:
 check:
   all:
     - name: document_id
-      operator: not_empty
+      operator: non_empty
     - name: __document_exists_in_doc_spec
       operator: equal_to
       value: false

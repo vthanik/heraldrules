@@ -18,7 +18,7 @@ check:
       operator: equal_to
       value: Tabulation
     - name: source
-      operator: not_empty
+      operator: non_empty
     - name: source
       operator: not_in
       value:

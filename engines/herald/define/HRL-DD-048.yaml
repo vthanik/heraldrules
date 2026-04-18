@@ -21,9 +21,9 @@ check:
         - integer
         - float
     - name: data_type
-      operator: not_empty
+      operator: non_empty
     - name: length
-      operator: not_empty
+      operator: non_empty
 outcome:
   message: "Length should not be provided when Data Type is a date/time type. Length is only valid for text, integer, and float."
   severity: Warning

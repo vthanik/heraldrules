@@ -10,6 +10,41 @@ for release cadence details.
 
 ## Unreleased
 
+### Beat P21 — Phase 2d (2026-04-18, operator audit)
+
+#### Fixed
+
+- Catalog audit compared every operator name referenced in YAML
+  `check:` blocks against the 164 operators defined in
+  `../herald/R/rule-operator.R`. Four name aliases were renamed in the
+  catalog (each semantically equivalent under the passing-convention):
+  - `not_empty` → `non_empty`: 31 replacements across 29 HRL-DD rules.
+  - `length_greater_than` → `longer_than`: 2 CDISC rules (ADaM-017, -017-SD).
+  - `length_match` → `has_equal_length`: 2 HRL-AD rules.
+  - `not_unique` → `is_unique_set`: 1 HRL-DD rule (DD-072).
+- `tests/allowed-operators.txt` extended with the newly-used operator
+  names (`longer_than`, `has_equal_length`, `has_different_length`,
+  `is_unique_set`, `is_not_unique_set`).
+
+#### Deferred (documented in HANDOFF §4j)
+
+- 12 operator names are still referenced by catalog YAMLs but are
+  absent from herald's registry. They are enumerated with
+  usage counts, sample rule IDs, and a recommended implementation
+  order in `HANDOFF_TO_HERALD_2026-04-18.md` section 4j. Highest-impact
+  item: `not_within_tolerance_of_formula` (19 rules; likely polarity
+  error — the intended semantic is already covered by herald's
+  `within_tolerance_of_formula`).
+- `CLAUDE.md` "Known open polarity issues (2026-04)" section added,
+  flagging a suspected HRL-DD-wide polarity bug similar to the 2025-04
+  HRL-SD/TS fix (HRL-DD-031 currently uses `non_empty` as an
+  IF-populated pre-condition which is inverted per the CLAUDE.md
+  passing-condition convention).
+
+Total new operators now requested from herald across HANDOFF §4a–4j:
+**68 operators unlocking ~260 additional rules**, moving runnable
+coverage from 3,700 (95%) to ~3,800 (~98%) once all land.
+
 ### Beat P21 — Phase 6 (2026-04-18)
 
 #### Added

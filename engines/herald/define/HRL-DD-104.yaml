@@ -15,7 +15,7 @@ scope:
 check:
   all:
     - name: purpose
-      operator: not_empty
+      operator: non_empty
     - name: __purpose_in_adam_ct
       operator: equal_to
       value: false

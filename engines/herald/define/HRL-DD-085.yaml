@@ -15,7 +15,7 @@ scope:
 check:
   all:
     - name: comment_id
-      operator: not_empty
+      operator: non_empty
     - name: __comment_exists
       operator: equal_to
       value: false

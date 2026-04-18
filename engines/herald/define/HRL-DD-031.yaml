@@ -15,7 +15,7 @@ scope:
 check:
   all:
     - name: standard
-      operator: not_empty
+      operator: non_empty
     - name: class
       operator: empty
 outcome:

@@ -15,7 +15,7 @@ scope:
 check:
   all:
     - name: terminology
-      operator: not_empty
+      operator: non_empty
     - name: __term_not_in_ct
       operator: equal_to
       value: true

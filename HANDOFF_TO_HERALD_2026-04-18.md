@@ -373,6 +373,46 @@ rules are deprecated duplicates (40 HRL-FM) and genuinely-guidance FDA
 Business Rules (86) that are Reference by nature and do not admit
 mechanical checks.
 
+### 4j. Catalog-referenced operators missing from `rule-operator.R`
+
+Phase 2d audit compared every operator name appearing in catalog YAML
+`check:` blocks against the 164 operators defined in
+`../herald/R/rule-operator.R`. Four name-aliases were resolved in the
+catalog side (`not_empty` -> `non_empty`, `length_greater_than` ->
+`longer_than`, `length_match` -> `has_equal_length`, `not_unique` ->
+`is_unique_set`). The following 12 operator names are still referenced
+by catalog YAMLs but are absent from herald's registry. Until herald
+adds them, any rule using these operators fails silently at runtime.
+
+| Operator | Uses | Sample rule IDs | Semantics required |
+|---|---:|---|---|
+| `not_within_tolerance_of_formula` | 19 | ADaM-131, ADaM-223, AD0223, AD0225 | **Important.** Likely a polarity error -- herald has `within_tolerance_of_formula` which already flags when the formula is violated. These 19 rules should either be renamed to `within_tolerance_of_formula` (if pre-conditions are inverted too) or herald should add a genuine `not_within_tolerance_of_formula` alias. Needs a focused polarity-audit session similar to the 2025-04 HRL-SD/TS fix (see CLAUDE.md). |
+| `not_consistent_with_variable` | 15 | ADaM-092-SD through ADaM-095-SD | Same as `not_consistent_within` but grouping is a variable reference, not a literal column name. Merge with HANDOFF §4c. |
+| `not_character` | 8 | ADaM-1027..1035 (v1.2 type-assertion rules) | Type-check: flag when `x` is not character. |
+| `less_than_variable` | 5 | ADaM-084, ADaM-099-SD, ADaM-121 | Cross-column: flag when `x >= value_col`. Cousin of `not_equal_to_variable` which already exists. |
+| `label_match` | 2 | HRL-AD-001, HRL-AD-006 | Variable label comparison across SDTM<->ADaM. Needs spec access (variable metadata). |
+| `format_match` | 2 | HRL-AD-002, HRL-AD-007 | Variable format comparison across SDTM<->ADaM. Needs spec access. |
+| `no_matching_record` | 2 | HRL-SD-012, HRL-SD-013 | Cross-dataset: flag when no row matches the join key. Cousin of HANDOFF §4e `consistent_population`. |
+| `not_numeric` | 2 | ADaM-1027, ADaM-1030 | Type-check: flag when `x` is not coercible to numeric. |
+| `type_match` | 2 | HRL-AD-013, HRL-AD-014 | Variable type comparison across SDTM<->ADaM. Needs spec access. |
+| `adsl_consistency_check` | 1 | ADaM-1046 | ADSL-level dataset consistency assertion; likely a wrapper over several sub-checks. Needs a narrower spec. |
+| `exists_in_dataset` | 1 | HRL-AD-021 | Cross-dataset existence: flag when `x` is not present in the reference dataset. Subset of §4e `consistent_population`. |
+| `not_in_define_vlm` | 1 | HRL-DD-015 | Define.xml VLM cross-reference. Merge with §4g. |
+
+Recommended implementation order for §4j:
+
+1. `not_character`, `not_numeric` (trivial; 10 rules unlocked together).
+2. `less_than_variable` (cousin of existing `not_equal_to_variable`).
+3. `not_consistent_with_variable` (cousin of existing `not_consistent_within`; 15 rules).
+4. `no_matching_record`, `exists_in_dataset` -- resolve together with §4e.
+5. `label_match`, `format_match`, `type_match` -- resolve together with §4g spec-metadata routing.
+6. `adsl_consistency_check` -- narrow-spec needed; may become multiple finer checks.
+7. `not_within_tolerance_of_formula` (19 rules) -- schedule a polarity-audit session; either rename YAMLs to `within_tolerance_of_formula` or ship the negative form as a true alias.
+
+These 12 operators added to the 56 already specified in sections 4a-i
+bring the total to **68 new operators** unlocking **~260 additional
+rules** and moving runnable coverage to ~98% of the catalog.
+
 ---
 
 ## 5. Regression fixtures

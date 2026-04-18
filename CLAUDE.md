@@ -116,6 +116,24 @@ check:
 
 These 12 HRL-SD rules had all operators inverted (treated `check:` as violation template instead of passing template): HRL-SD-010, 011, 012, 013, 014, 016, 017, 018, 020, 021. HRL-TS-002 and HRL-TS-004 had `any:` where `all:` was needed.
 
+### Known open polarity issues (2026-04, Phase 2d audit)
+
+- **HRL-DD Define-XML rules** may have the same polarity issue as the
+  HRL-SD/TS rules fixed in 2025-04. Spot check: HRL-DD-031 currently
+  uses `non_empty` as an IF-populated pre-condition — per the passing
+  convention, IF-populated pre-conditions should use `empty` (which
+  flags when populated). Needs a focused polarity audit across all 109
+  HRL-DD rules before Phase 3 (engine) goes live.
+- **`not_within_tolerance_of_formula`** (19 rules across CDISC + PMDA,
+  including AD0223, AD0225, AD0131, AD0132) references an operator
+  that does not exist in herald. Likely a polarity error: herald has
+  `within_tolerance_of_formula` which already flags when the formula
+  is violated, making the explicit "not_" form wrong. Resolve together
+  with the HRL-DD polarity audit.
+- 12 other operators are referenced by catalog YAMLs but absent from
+  `../herald/R/rule-operator.R`. See HANDOFF §4j for the full list and
+  recommended implementation order.
+
 ---
 
 ## Quarterly Refresh
@@ -266,7 +284,8 @@ Phased execution (see `/Users/vignesh/.claude/plans/plan-are-we-focusing-wobbly-
 | 2b | 86 FDA Business Rules schema-normalized; last Not Executable stub (ADaM-1047) purged | heraldrules (done) |
 | 2c | 25 herald Reference rules annotated; HANDOFF §4h/§4i added; 84 stubs stripped; define validator fixed | heraldrules (done) |
 | 6 | `inst/benchmarks/p21-parity/` harness + 5 fixtures + truth table + diagnostic-mode runner | heraldrules (done) |
-| 3 | Implement the 56 new herald operators (HANDOFF §4) to unlock ~230 rules | herald, 3-4 sessions |
+| 2d | Operator audit: 4 aliases renamed; 12 missing operators documented as HANDOFF §4j; polarity bug flagged | heraldrules (done) |
+| 3 | Implement the 68 new herald operators (HANDOFF §4a-j) to unlock ~260 rules | herald, 3-4 sessions |
 | 3 | 28 new operators implemented | herald, 2-3 sessions |
 | 4 | 163 "Bucket B/C/D/E" rules authored | heraldrules, 2 sessions |
 | 5 | Re-examine 259 "F" + 673 "G" rules | heraldrules, 2 sessions |

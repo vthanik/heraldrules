@@ -207,7 +207,8 @@
     "HRL-TYP-001",
     "HRL-VAR-001",
     "HRL-VAR-002",
-    "HRL-VAR-003"
+    "HRL-VAR-003",
+    "SD1480"
   ],
   "severity_overrides": []
 }

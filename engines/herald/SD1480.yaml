@@ -1,0 +1,25 @@
+id: SD1480
+version: 1
+status: Published
+standard: SDTM
+category: Conformance
+sensitivity: Record
+executability: Fully Executable
+description: >
+  In the Associated Persons Demographics (APDM) domain, there should only
+  be one record per associated person (Associated Persons Identifier APID).
+  Duplicate APID values within APDM indicate a data integrity issue.
+scope:
+  classes: []
+  domains: [APDM]
+check:
+  all:
+    - name: APID
+      operator: is_unique
+outcome:
+  message: Duplicate APID in APDM within STUDYID
+  severity: Error
+provenance:
+  source_doc: Pinnacle 21 Community Validator v4.1.0
+  authority: Herald-relay (pending FDA Validator v1.7 upstream source)
+  p21_reference: SD1480

@@ -1,0 +1,30 @@
+id: SD1483
+version: 1
+status: Published
+standard: SDTM
+category: Conformance
+sensitivity: Record
+executability: Fully Executable
+description: >
+  All SQAPxxxx (Supplemental Qualifiers for Associated Persons) domain
+  records are associated with a single parent record and must have a
+  unique combination of Study Identifier (STUDYID), Associated Persons
+  Identifier (APID), and Qualifier Name (QNAM). Duplicate tuples
+  indicate that the same qualifier has been recorded more than once
+  for the same associated person in the same study.
+scope:
+  classes: []
+  domains: [SQAPDM, SQAPMH, SQAPCM, SQAPDS, SQAPPR, SQAPRS, SQAPSC, SQAPSE, SQAPTS, SQAPVS]
+check:
+  all:
+    - name: ""
+      operator: composite_key_unique
+      value:
+        keys: [STUDYID, APID, QNAM]
+outcome:
+  message: Duplicate (STUDYID, APID, QNAM) tuple in SQAP domain
+  severity: Error
+provenance:
+  source_doc: Pinnacle 21 Community Validator v4.1.0
+  authority: Herald-relay (pending FDA Validator v1.7 upstream source)
+  p21_reference: SD1483

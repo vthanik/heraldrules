@@ -1,0 +1,145 @@
+{
+  "schema_version": 2,
+  "herald_min_version": "0.1.0",
+  "generated": "2026-04-18T15:19:54Z",
+  "sources": {
+    "cdisc": "CDISC Library API (library.cdisc.org)",
+    "fda": "FDA Validator Rules v1.6 (December 2022) + Business Rules v1.5",
+    "pmda": "PMDA Validation Rules v6.0 (March 2025)",
+    "ct": "NCI EVS CDISC Controlled Terminology (2025-09-26)",
+    "herald": "Herald-original rules (gap-fill for P21 parity)"
+  },
+  "stats": {
+    "total_engine_rules": 3864,
+    "executable_engine_rules": 3702,
+    "by_engine": {
+      "cdisc": 703,
+      "ct": 1210,
+      "fda": 644,
+      "herald": 262,
+      "pmda": 1045
+    },
+    "executable_by_engine": {
+      "cdisc": 701,
+      "ct": 1210,
+      "fda": 574,
+      "herald": 178,
+      "pmda": 1039
+    },
+    "configs": 16
+  },
+  "configs": [
+    {
+      "file": "all-adam-ig-1.1.json",
+      "authority": "Combined",
+      "standard": "ADaM-IG",
+      "version": "1.1",
+      "rule_count": 2827
+    },
+    {
+      "file": "all-adam-ig-1.2.json",
+      "authority": "Combined",
+      "standard": "ADaM-IG",
+      "version": "1.2",
+      "rule_count": 2852
+    },
+    {
+      "file": "all-define-xml-2.1.json",
+      "authority": "Combined",
+      "standard": "Define-XML",
+      "version": "2.1",
+      "rule_count": 2016
+    },
+    {
+      "file": "all-sdtm-ig-3.2.json",
+      "authority": "Combined",
+      "standard": "SDTM-IG",
+      "version": "3.2",
+      "rule_count": 2970
+    },
+    {
+      "file": "all-sdtm-ig-3.3.json",
+      "authority": "Combined",
+      "standard": "SDTM-IG",
+      "version": "3.3",
+      "rule_count": 2970
+    },
+    {
+      "file": "all.json",
+      "authority": "Combined",
+      "standard": "All",
+      "version": "2026.2",
+      "rule_count": 3859
+    },
+    {
+      "file": "fda-adam-ig-1.1.json",
+      "authority": "FDA",
+      "standard": "ADaM-IG",
+      "version": "1.1",
+      "rule_count": 2457
+    },
+    {
+      "file": "fda-adam-ig-1.2.json",
+      "authority": "FDA",
+      "standard": "ADaM-IG",
+      "version": "1.2",
+      "rule_count": 2482
+    },
+    {
+      "file": "fda-define-xml-2.1.json",
+      "authority": "FDA",
+      "standard": "Define-XML",
+      "version": "2.1",
+      "rule_count": 1854
+    },
+    {
+      "file": "fda-sdtm-ig-3.2.json",
+      "authority": "FDA",
+      "standard": "SDTM-IG",
+      "version": "3.2",
+      "rule_count": 2457
+    },
+    {
+      "file": "fda-sdtm-ig-3.3.json",
+      "authority": "FDA",
+      "standard": "SDTM-IG",
+      "version": "3.3",
+      "rule_count": 2457
+    },
+    {
+      "file": "herald.json",
+      "authority": "Herald",
+      "standard": "All",
+      "version": "2026.2",
+      "rule_count": 262
+    },
+    {
+      "file": "pmda-adam-ig-1.1.json",
+      "authority": "PMDA",
+      "standard": "ADaM-IG",
+      "version": "1.1",
+      "rule_count": 2253
+    },
+    {
+      "file": "pmda-define-xml-2.1.json",
+      "authority": "PMDA",
+      "standard": "Define-XML",
+      "version": "2.1",
+      "rule_count": 1372
+    },
+    {
+      "file": "pmda-sdtm-ig-3.2.json",
+      "authority": "PMDA",
+      "standard": "SDTM-IG",
+      "version": "3.2",
+      "rule_count": 2396
+    },
+    {
+      "file": "pmda-sdtm-ig-3.3.json",
+      "authority": "PMDA",
+      "standard": "SDTM-IG",
+      "version": "3.3",
+      "rule_count": 2396
+    }
+  ]
+}

@@ -10,6 +10,56 @@ for release cadence details.
 
 ## Unreleased
 
+### Clean-slate rewrite — Phase 1f (2026-04-18, promote to CRAN package)
+
+#### Added
+
+The repo is now a valid CRAN R package alongside its role as the rule
+authoring source. The herald R package depends on it via
+`Imports: heraldrules` (see the rnaturalearth / rnaturalearthdata
+precedent for the split).
+
+- **DESCRIPTION** -- full R package metadata (`Package:`,
+  `Authors@R:`, `Imports: jsonlite, tools`, MIT license via
+  `LICENSE + file LICENSE`).
+- **NAMESPACE** -- exports 6 functions: `catalog_path()`,
+  `load_catalog()`, `rules_db_path()`, `available_configs()`,
+  `load_ct()`, `p21_id_map()`.
+- **R/catalog_path.R** -- all six accessors + session-memoised rule
+  database read. The herald R package calls `load_catalog(config_id)`
+  to get a filtered list of rule records; it never reads loose YAMLs.
+- **man/** -- roxygen2-generated `.Rd` files for every export.
+- **inst/rules/rules.json.gz** -- flat database of 3,864 rule records
+  (one copy each), 479 KB. Every record carries an explicit
+  `p21_id` resolved at build time.
+- **inst/rules/configs/\*.json.gz** -- 16 slim configs (id-only),
+  0.7-9.4 KB each, 88 KB total.
+- **inst/rules/ct/sdtm-ct.rds** + **adam-ct.rds** --
+  xz-compressed NCI-EVS CT.
+- **inst/rules/p21-id-map.csv.gz** -- gzipped rule_id <-> p21_id
+  translation table.
+- **inst/scripts/build-cran-package.R** -- one-shot compiler that
+  reads every YAML + config + CT and emits the above payload.
+- **.Rbuildignore** -- drops loose YAMLs, authoring CSVs, build
+  scripts, benchmarks, HANDOFF docs, CLAUDE.md, tasks, tests/validate-*
+  from the CRAN tarball. Only the compiled payload ships.
+
+#### Sizes
+
+Authoring tree (stays in GitHub): 26 MB. CRAN tarball: **1.0 MB**.
+That's 5 percent of the 20 MB cap the reviewer will flag and
+comfortably under the 5 MB "ideal" mark. `inst/rules/` payload
+itself is 1.05 MB post-compression.
+
+#### Smoke test
+
+    library(heraldrules)
+    available_configs()                                  # 16 ids
+    r <- load_catalog("fda-sdtm-ig-3.3")                 # 2,457 rules
+    r[["FDAV-SD0001"]]$p21_id                            # "SD0001"
+    r[["FDAV-CT2002"]]$p21_id                            # "CT2002"
+    load_catalog("herald")                               # 262 HRL-* rules
+
 ### Clean-slate rewrite — Phase 1d + 1e (2026-04-18, herald.json always-on + cross-engine configs)
 
 #### Added

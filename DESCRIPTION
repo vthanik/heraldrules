@@ -1,24 +1,24 @@
-Title: Herald Validation Rule Catalog
-Version: 2026.2.2
-Maintainer: Vignesh <vthanik@users.noreply.github.com>
-License: MIT
+Package: heraldrules
+Type: Package
+Title: Regulatory Validation Rule Catalog for 'herald'
+Version: 2026.2.3
+Authors@R: person("Vignesh", "Thanikachalam",
+                  email = "vthanik@users.noreply.github.com",
+                  role = c("aut", "cre"))
+Description: Compiled rule catalog that the 'herald' R package consumes to
+    validate clinical-trial datasets against FDA, PMDA, and CDISC
+    regulatory expectations. Ships CDISC CORE, FDA Validator, FDA
+    Business, PMDA Validation, and NCI-EVS Controlled Terminology
+    rules as pre-compiled gzipped JSON, plus herald-specific gap-fill
+    and Define-XML spec checks. Rule authoring happens upstream in the
+    herald-rules GitHub repository; only the compiled artifacts ship.
+License: MIT + file LICENSE
 URL: https://github.com/vthanik/heraldrules
-
-Description:
-  Source-of-truth rule catalog for the herald R package.
-  Contains 3,593 regulatory validation rules (YAML/JSON) covering
-  CDISC conformance, FDA Business and Validator rules, PMDA rules,
-  NCI EVS controlled terminology, and Herald-original gap-fill rules.
-
-  This is NOT an R package. It is a versioned rule catalog:
-    1. Rules are authored and validated here (see tests/)
-    2. Quarterly refreshes run via inst/scripts/refresh-all.R
-    3. At herald release time, copy into herald/inst/rules/:
-         cp -r engines configs ct manifest.json ../herald/inst/rules/
-
-Engines:
-  cdisc/     450 rules  CDISC Library conformance rules
-  fda/       644 rules  FDA Business Rules v1.5 + Validator Rules v1.6
-  pmda/    1,041 rules  PMDA Validation Rules v6.0
-  ct/      1,210 rules  Per-codelist controlled terminology rules
-  herald/    232 rules  Herald gap-fill and hardcoded spec checks
+BugReports: https://github.com/vthanik/heraldrules/issues
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports:
+    jsonlite,
+    tools
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3

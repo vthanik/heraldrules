@@ -1,0 +1,29 @@
+id: SD1485
+version: 1
+status: Published
+standard: SDTM
+category: Conformance
+sensitivity: Study
+executability: Fully Executable
+description: >
+  Per FDA Study Data Technical Conformance Guide, when the Laboratory Test
+  Results (LB) domain is present in a submission, an additional custom
+  domain called Laboratory Test Conversions (LC) -- structured identically
+  to LB -- should also be present to document unit conversions and
+  standardizations applied to LB values.
+scope:
+  classes: []
+  domains: []
+check:
+  all:
+    - name: LB
+      operator: dataset_exists
+      value:
+        dataset: LC
+outcome:
+  message: LC domain missing when LB domain is present
+  severity: Warning
+provenance:
+  source_doc: Pinnacle 21 Community Validator v4.1.0 / FDA Study Data TCG
+  authority: Herald-relay (pending FDA Validator v1.7 upstream source)
+  p21_reference: SD1485

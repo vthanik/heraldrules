@@ -1,0 +1,31 @@
+id: AD2001
+version: 1
+status: Published
+standard: ADaM
+category: Consistency
+sensitivity: Record
+executability: Fully Executable
+description: >
+  Every Unique Subject Identifier (USUBJID) present in the ADaM Analysis
+  Subject Level (ADSL) dataset must also exist in the Study Data Tabulation
+  Model (SDTM) Demographics (DM) domain. Subjects appearing in ADSL but
+  not in DM indicate an upstream derivation error or a subject-exclusion
+  mismatch between SDTM and ADaM.
+scope:
+  classes: []
+  domains: [ADSL]
+check:
+  all:
+    - name: USUBJID
+      operator: no_matching_record
+      value:
+        reference_dataset: DM
+        by: USUBJID
+outcome:
+  message: >
+    USUBJID in ADSL does not exist in SDTM DM
+  severity: Error
+provenance:
+  source_doc: Pinnacle 21 Community Validator v4.1.0
+  authority: Herald-relay (pending FDA/CDISC ADaM IG upstream source)
+  p21_reference: AD2001

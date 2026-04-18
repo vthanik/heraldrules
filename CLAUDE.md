@@ -203,6 +203,61 @@ for f in sorted(glob.glob('configs/*.json')):
 Rscript tests/validate-rules.R
 ```
 
+## No Stubs (Executability Invariant)
+
+A rule is one of two things:
+
+1. **`executability: Fully Executable`** (or `Hardcoded` for the 12 HRL spec
+   checks baked into `../herald/R/val-checks.R`) — ships with a real `check:`
+   block whose operators align with the `description:` / `message:`, plus a
+   `tests:` block containing at least one `type: positive` and one
+   `type: negative` test against embedded CDISCPILOT01 records.
+2. **`executability: Reference`** — ships with NO `check:` block at all
+   (omit the key entirely; do not write `check: []`). Reference rules are
+   documentation of a regulatory expectation herald cannot execute today.
+   The `notes:` field should explain why (e.g. missing operator, awaiting
+   handover).
+
+**Banned values** for `executability`: `Partially Executable`,
+`Partially Executable - Possible Overreporting`,
+`Partially Executable - Possible Underreporting`, `Not Executable`. These
+were historical escape hatches that produced stub `check:` blocks the
+engine silently ran and returned zero findings for. If a rule needs more
+than "Fully Executable" can deliver, it stays `Reference` with a handover
+note, not a half-working stub.
+
+The master CSV carries a derived `runnable` column (TRUE when
+`executability` is in the allow-list). The manifest carries
+`executable_by_engine` counts. Both feed the README's Runnable/Total table.
+
+See `HANDOFF_TO_HERALD_2026-04-18.md` section 1 for the engine-side
+enforcement (`R/rule-execute.R` allow-list + `validate()` skip summary).
+
+## "Beat Pinnacle 21" Program (multi-session)
+
+Herald's product goal is to be the open-source, R-native replacement for
+P21 Community. The catalog today:
+
+- 3,874 YAML rules total.
+- ~1,300 genuinely runnable (Fully Executable / Hardcoded).
+- ~2,500 `Reference` (documentation only, not executed).
+- Ceiling (with ~28 new herald operators + re-examination): ~85% runnable.
+
+Phased execution (see `/Users/vignesh/.claude/plans/plan-are-we-focusing-wobbly-stallman.md`):
+
+| Phase | Scope | Where |
+|---|---|---|
+| 1 | AD0124 executable, AD0047 clean Reference, 6 missing P21 IDs, engine handover | heraldrules (done) |
+| 2 | 864 "Bucket A" rules authored with existing operators | heraldrules, 5-8 sessions |
+| 3 | 28 new operators implemented | herald, 2-3 sessions |
+| 4 | 163 "Bucket B/C/D/E" rules authored | heraldrules, 2 sessions |
+| 5 | Re-examine 259 "F" + 673 "G" rules | heraldrules, 2 sessions |
+| 6 | P21 parity benchmark harness | heraldrules + herald, 1 session |
+| 7 | Launch prep (Reference rename, CRAN smoke) | 1 session |
+
+Each heraldrules batch uses the `rule-sync` skill: YAML + CSV + configs +
+manifest + CHANGELOG in one atomic pass with CDISCPILOT01-based tests.
+
 ## Rules
 
 - Never re-introduce P21 dependency (engines/core/ was deleted, rules/ was deleted)

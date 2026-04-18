@@ -1,0 +1,31 @@
+id: AD0793
+version: 1
+status: Published
+standard: ADaM
+category: ADaM Conformance
+sensitivity: Record
+executability: Reference
+description: >
+  On a given record, a variable with a suffix of STM has a value greater than
+  a value of a variable with the same root and a suffix of ETM, and both
+  variables are populated. (Paired *STM / *ETM time variables must obey
+  start <= end.)
+scope:
+  classes: []
+  domains:
+    - ADSL
+    - BDS
+    - OCCDS
+    - ADAE
+    - ADAMOTHER
+outcome:
+  message: "*STM is greater than *ETM"
+  severity: Error
+provenance:
+  source_doc: P21 Community ADaM Validation Rules
+  authority: Herald
+  p21_reference: AD0793
+  ig_versions: []
+notes: >
+  Deferred to Reference pending a herald `paired_suffix_time_order` operator
+  (not yet implemented). Activation plan in HANDOFF_TO_HERALD.md section 4.

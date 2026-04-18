@@ -1,11 +1,15 @@
 id: AD0047
-version: 2
-status: Reference
+version: 1
+status: Published
 standard: ADaM
 category: ADaM Conformance
-sensitivity: Record
-executability: Partially Executable
-description: Variables described in ADaM as Required must be included in the dataset.
+sensitivity: Dataset
+executability: Reference
+description: >
+  Variables described as Required in the applicable ADaM Implementation Guide
+  (ADSL, BDS, OCCDS, ADNCA, ADAE, ADAMOTHER) must be present in the dataset.
+  Covers every core structural variable (STUDYID, USUBJID, domain-specific key
+  variables such as PARAMCD/AVAL for BDS, AETERM/AESEV for OCCDS AE, etc.).
 scope:
   classes: []
   domains:
@@ -18,10 +22,6 @@ scope:
     - ADAE
     - MDOCCDS
     - ADAMOTHER
-check:
-  all:
-    - name: USUBJID
-      operator: empty
 outcome:
   message: Required variable is not present
   severity: Error
@@ -30,5 +30,11 @@ provenance:
   authority: PMDA
   rule_id: AD0047
   pmda_category: Error
+  p21_reference: AD0047
   ig_versions: []
-
+notes: >
+  Deferred to Reference pending the `required_variables` operator in the herald
+  R package (today a no-op stub at ../herald/R/rule-operator.R:862). Activation
+  plan is documented in HANDOFF_TO_HERALD.md section 3. Once the operator is
+  implemented with per-domain IG-driven required-variable lists, this rule will
+  be promoted to Fully Executable with CDISCPILOT01 positive/negative tests.

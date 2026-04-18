@@ -7,19 +7,37 @@ repo_root <- getwd()
 if (grepl("inst/scripts$", repo_root)) repo_root <- normalizePath(file.path(repo_root, "..", ".."))
 
 if (!requireNamespace("jsonlite", quietly = TRUE)) stop("jsonlite required")
+if (!requireNamespace("yaml", quietly = TRUE)) stop("yaml required")
+
+`%||%` <- function(x, y) if (is.null(x) || length(x) == 0L || all(is.na(x))) y else x
 
 cat("=== Building Manifest ===\n\n")
 
-# Count engine files
+RUNNABLE_STATES <- c("Fully Executable", "Hardcoded")
+
+is_runnable <- function(f) {
+  r <- tryCatch(yaml::read_yaml(f), error = function(e) NULL)
+  if (is.null(r)) return(FALSE)
+  exec <- r$executability %||% r$Executability %||% ""
+  exec %in% RUNNABLE_STATES
+}
+
+# Count engine files, and of those, how many are runnable.
 engines <- c("cdisc", "ct", "fda", "herald", "pmda")
 by_engine <- list()
+executable_by_engine <- list()
 total_engine <- 0L
+total_executable <- 0L
 for (eng in engines) {
   d <- file.path(repo_root, "engines", eng)
-  n <- length(list.files(d, pattern = "\\.yaml$", recursive = TRUE))
+  files <- list.files(d, pattern = "\\.yaml$", recursive = TRUE, full.names = TRUE)
+  n <- length(files)
+  nexec <- sum(vapply(files, is_runnable, logical(1)))
   by_engine[[eng]] <- n
+  executable_by_engine[[eng]] <- nexec
   total_engine <- total_engine + n
-  cat(sprintf("  engines/%s: %d\n", eng, n))
+  total_executable <- total_executable + nexec
+  cat(sprintf("  engines/%s: %d total, %d runnable\n", eng, n, nexec))
 }
 
 # Count configs
@@ -52,7 +70,9 @@ manifest <- list(
   ),
   stats = list(
     total_engine_rules = total_engine,
+    executable_engine_rules = total_executable,
     by_engine = by_engine,
+    executable_by_engine = executable_by_engine,
     configs = n_configs
   ),
   configs = config_summaries
@@ -60,5 +80,6 @@ manifest <- list(
 
 out <- file.path(repo_root, "manifest.json")
 writeLines(jsonlite::toJSON(manifest, auto_unbox = TRUE, pretty = TRUE), out)
-cat(sprintf("\nTotal: %d engine rules, %d configs\n", total_engine, n_configs))
+cat(sprintf("\nTotal: %d engine rules (%d runnable, %d reference), %d configs\n",
+            total_engine, total_executable, total_engine - total_executable, n_configs))
 cat(sprintf("Written: %s\n", out))

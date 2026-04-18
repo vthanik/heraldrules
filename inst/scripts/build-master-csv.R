@@ -39,7 +39,9 @@ COLS <- c("rule_id", "source", "source_document", "source_url", "authority",
           "standard", "ig_versions", "rule_type", "publisher_id",
           "conformance_rule_origin", "cited_guidance", "message", "description",
           "domains", "classes", "severity", "sensitivity", "executability",
-          "status", "notes")
+          "status", "notes", "runnable")
+
+RUNNABLE_STATES <- c("Fully Executable", "Hardcoded")
 
 make_row <- function(...) {
   vals <- list(...)
@@ -192,7 +194,72 @@ pmda_df <- rbind(
   do.call(rbind, parse_pmda_sheet(pmda_xlsx, "ADaM Rules", "ADaM")),
   do.call(rbind, parse_pmda_sheet(pmda_xlsx, "Define-XML Rules", "Define-XML"))
 )
-cat(sprintf("   %d rules\n", nrow(pmda_df)))
+cat(sprintf("   %d rules from Excel\n", nrow(pmda_df)))
+
+# Overlay YAML executability/status for any rule whose engines/pmda/<id>.yaml
+# exists (YAMLs are the ground truth for what herald actually runs). Also
+# append YAML-only rules whose IDs were never in the PMDA spreadsheet
+# (e.g. herald-authored rules catalogued in engines/pmda/).
+pmda_yaml_dir <- file.path(repo_root, "engines", "pmda")
+pmda_yaml_files <- list.files(pmda_yaml_dir, pattern = "\\.yaml$", full.names = TRUE)
+pmda_yaml_rows <- lapply(pmda_yaml_files, function(f) {
+  tryCatch({
+    r <- yaml::read_yaml(f)
+    rid <- r$id %||% ""
+    if (!nzchar(rid)) return(NULL)
+    list(
+      rule_id = rid,
+      executability = r$executability %||% "",
+      status = r$status %||% "",
+      yaml_message = r$outcome$message %||% "",
+      yaml_description = r$description %||% "",
+      yaml_standard = r$standard %||% "",
+      yaml_domains = paste(unlist(r$scope$domains), collapse = ", "),
+      yaml_severity = r$outcome$severity %||% "",
+      yaml_notes = r$notes %||% ""
+    )
+  }, error = function(e) NULL)
+})
+pmda_yaml_rows <- Filter(Negate(is.null), pmda_yaml_rows)
+pmda_yaml_ids <- vapply(pmda_yaml_rows, `[[`, character(1), "rule_id")
+
+# Overlay on existing Excel rows
+for (yrow in pmda_yaml_rows) {
+  m <- which(pmda_df$rule_id == yrow$rule_id)
+  if (length(m) > 0L) {
+    if (nzchar(yrow$executability)) pmda_df$executability[m] <- yrow$executability
+    if (nzchar(yrow$status)) pmda_df$status[m] <- yrow$status
+  }
+}
+
+# Append YAML-only rules (rule_ids not found in Excel)
+missing_in_excel <- setdiff(pmda_yaml_ids, pmda_df$rule_id)
+if (length(missing_in_excel) > 0L) {
+  cat(sprintf("   %d YAML-only PMDA rules (herald-authored, not in spreadsheet)\n",
+              length(missing_in_excel)))
+  extras <- lapply(missing_in_excel, function(rid) {
+    yrow <- pmda_yaml_rows[[which(pmda_yaml_ids == rid)]]
+    std <- yrow$yaml_standard
+    if (!nzchar(std)) {
+      std <- if (grepl("^SD", rid)) "SDTM" else if (grepl("^AD", rid)) "ADaM" else "ADaM"
+    }
+    make_row(
+      rule_id = rid,
+      source = "Herald (P21 parity, PMDA directory)",
+      source_document = "P21 Community Validation Rules",
+      authority = "Herald", standard = std,
+      message = yrow$yaml_message,
+      description = yrow$yaml_description,
+      domains = yrow$yaml_domains,
+      severity = yrow$yaml_severity,
+      executability = yrow$executability,
+      status = yrow$status,
+      notes = yrow$yaml_notes
+    )
+  })
+  pmda_df <- rbind(pmda_df, do.call(rbind, extras))
+}
+cat(sprintf("   %d rules total (after YAML overlay)\n", nrow(pmda_df)))
 
 # =============================================================================
 # 4. Herald engine rules (engines/herald/ + engines/herald/define/)
@@ -281,6 +348,12 @@ cat(sprintf("   %d rules\n", nrow(ct_df)))
 # COMBINE (all engines -- no P21 dependency)
 # =============================================================================
 master <- rbind(cdisc_df, fda_df, pmda_df, herald_df, ct_df)
+
+# Derive `runnable` boolean: TRUE when herald's engine will actually execute
+# the rule (i.e. executability is `Fully Executable` or `Hardcoded`). All
+# other states (`Reference`, `Partially Executable`, empty) are documentation
+# only. See HANDOFF_TO_HERALD_2026-04-18.md section 1.
+master$runnable <- ifelse(master$executability %in% RUNNABLE_STATES, "TRUE", "FALSE")
 
 cat(sprintf("\n=== MASTER CSV ===\n"))
 cat(sprintf("Total: %d rules\n", nrow(master)))

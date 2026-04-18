@@ -1,0 +1,32 @@
+id: AD0794
+version: 1
+status: Published
+standard: ADaM
+category: ADaM Conformance
+sensitivity: Record
+executability: Reference
+description: >
+  On a given record, a variable with a suffix of SDTM has a value greater than
+  a value of a variable with the same root and a suffix of EDTM, and both
+  variables are populated. (Paired *SDTM / *EDTM datetime variables must obey
+  start <= end.)
+scope:
+  classes: []
+  domains:
+    - ADSL
+    - BDS
+    - OCCDS
+    - ADAE
+    - ADAMOTHER
+outcome:
+  message: "*SDTM is greater than *EDTM"
+  severity: Error
+provenance:
+  source_doc: P21 Community ADaM Validation Rules
+  authority: Herald
+  p21_reference: AD0794
+  ig_versions: []
+notes: >
+  Deferred to Reference pending a herald `paired_suffix_datetime_order`
+  operator (not yet implemented). Activation plan in HANDOFF_TO_HERALD.md
+  section 4.

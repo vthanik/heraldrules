@@ -10,6 +10,66 @@ for release cadence details.
 
 ## Unreleased
 
+### Beat P21 — Phase 1 (2026-04-18)
+
+#### Added
+
+- **AD0124** (PMDA) promoted to `executability: Fully Executable`.
+  Replaces a stub `check:` block with real logic: uses the existing
+  `not_consistent_within` operator on PARCAT1 grouped by PARAMCD.
+  Scope extended to ADVS/ADLB/ADEG/ADQS/ADLBH/ADPC/ADPP/BDS/ADNCA/MDBDS.
+  Ships with CDISCPILOT01 positive + negative tests. Resolves a gap
+  surfaced by the user's P21 Community run (~1,210 findings on ADVS that
+  herald was missing).
+- **AD0792, AD0793, AD0794, AD0895** — four new Reference YAMLs under
+  `engines/pmda/` for P21 ADaM rule IDs absent from every upstream source
+  (CDISC / FDA Excel / PMDA Excel). Each includes the P21 message /
+  description verbatim and an activation plan pointing to
+  `HANDOFF_TO_HERALD_2026-04-18.md` section 4. AD2001 deliberately
+  excluded per user request. SD1071 was NOT added — verification during
+  rebuild confirmed it already ships via FDA Validator Rules v1.6
+  (`engines/fda/FDAV-SD1071.yaml` + matching Excel-sourced CSV row).
+- **`runnable` column** on `herald-master-rules.csv`. Derived from
+  `executability`: TRUE when in the allow-list (`Fully Executable`,
+  `Hardcoded`), FALSE otherwise.
+- **`executable_by_engine` + `executable_engine_rules` stats** in
+  `manifest.json`. Makes the runnable vs. catalogued split visible at
+  the engine level.
+- **`HANDOFF_TO_HERALD_2026-04-18.md`** — the engine-side work plan:
+  honesty guard in `R/rule-execute.R`, `validate()` skip-summary, real
+  `required_variables` operator, and the 28-operator specification that
+  unlocks ~163 additional rules across Buckets B/C/D/E.
+
+#### Changed
+
+- **AD0047** (PMDA) rewritten as a clean Reference entry. Previous
+  version had a stub `check:` (`USUBJID empty`) that did not match the
+  rule's description. New version omits `check:` entirely and points at
+  the handover document for activation.
+- **`inst/scripts/build-master-csv.R`** — emits the new `runnable`
+  column; overlays YAML `executability`/`status` on PMDA rows sourced
+  from the spreadsheet; appends PMDA-directory YAMLs whose IDs are not
+  in the spreadsheet (YAML is authoritative for what herald runs).
+- **`inst/scripts/build-manifest.R`** — counts runnable YAMLs per engine
+  by parsing `executability`; writes `executable_by_engine` and
+  `executable_engine_rules` into `manifest.json`.
+- **`README.md`** — overview table now shows Total / Runnable per engine;
+  new "Beat Pinnacle 21" roadmap section.
+- **`CLAUDE.md`** — new "No Stubs" invariant section defines the
+  two-state executability model (`Fully Executable` + tests, or
+  `Reference` with no `check:` block) and lists banned values. New
+  "Beat Pinnacle 21" Program section documents the seven-phase plan.
+
+#### Deprecated
+
+- Executability values `Partially Executable`,
+  `Partially Executable - Possible Overreporting`,
+  `Partially Executable - Possible Underreporting`, `Not Executable`.
+  Existing rules still carrying these values remain in place for now
+  (Phase 2 work will sweep them); no new rule may use them. The engine
+  change in `HANDOFF_TO_HERALD_2026-04-18.md` section 1 will cause any
+  non-allow-list value to short-circuit with a skip record.
+
 ### Added
 
 - **HRL-CL-002** — Codelist type mismatch between variable and referenced

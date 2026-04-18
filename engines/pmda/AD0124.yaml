@@ -1,30 +1,65 @@
 id: AD0124
 version: 1
-status: Reference
+status: Published
 standard: ADaM
 category: ADaM Conformance
 sensitivity: Record
 executability: Fully Executable
-description: Within a study, all PARCATy values must be the same for each unique value
-  of PARAMCD when PARAMCD is populated. A Parameter can only be categorized once.
-  However, that Category can be used across PARAMs.
+description: >
+  Within a study, all PARCAT1 values must be the same for each unique value of
+  PARAMCD when PARAMCD is populated. A parameter can only be categorized once;
+  the same category value may be used across multiple parameters, but a single
+  parameter must not appear under two different PARCAT1 values.
 scope:
   classes: []
   domains:
+    - ADVS
+    - ADLB
+    - ADEG
+    - ADQS
+    - ADLBH
+    - ADPC
+    - ADPP
     - BDS
     - ADNCA
     - MDBDS
 check:
   all:
-    - name: __variable__
-      operator: consistent_within_subject
+    - name: PARAMCD
+      operator: non_empty
+    - name: PARCAT1
+      operator: not_consistent_within
+      value: PARAMCD
 outcome:
-  message: Inconsistent value for PARCATy within a unique PARAMCD
+  message: Inconsistent value for PARCAT1 within a unique PARAMCD
   severity: Error
 provenance:
   source_doc: PMDA Validation Rules v6.0
   authority: PMDA
   rule_id: AD0124
   pmda_category: Error
+  p21_reference: AD0124
   ig_versions: []
 
+tests:
+  - name: "AD0124 -- consistent PARCAT1 within each PARAMCD"
+    type: positive
+    datasets:
+      ADVS:
+        variables: [STUDYID, USUBJID, PARAMCD, PARCAT1, AVAL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SYSBP", "VITAL SIGNS", "120"]
+          - ["CDISCPILOT01", "01-701-1023", "SYSBP", "VITAL SIGNS", "118"]
+          - ["CDISCPILOT01", "01-701-1015", "DIABP", "VITAL SIGNS", "80"]
+          - ["CDISCPILOT01", "01-701-1023", "PULSE", "VITAL SIGNS", "72"]
+    expected_findings: 0
+  - name: "AD0124 -- one PARAMCD has two distinct PARCAT1 values"
+    type: negative
+    datasets:
+      ADVS:
+        variables: [STUDYID, USUBJID, PARAMCD, PARCAT1, AVAL]
+        records:
+          - ["CDISCPILOT01", "01-701-1015", "SYSBP", "VITAL SIGNS", "120"]
+          - ["CDISCPILOT01", "01-701-1023", "SYSBP", "CARDIOVASCULAR", "118"]
+          - ["CDISCPILOT01", "01-701-1015", "DIABP", "VITAL SIGNS", "80"]
+    expected_findings: 1

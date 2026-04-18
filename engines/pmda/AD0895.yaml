@@ -1,0 +1,34 @@
+id: AD0895
+version: 1
+status: Published
+standard: ADaM
+category: ADaM Conformance
+sensitivity: Record
+executability: Reference
+description: >
+  Within a study, all Category y (*CATy) variable values must be the same for
+  each unique value of the variable it categorizes within a PARAMCD. This rule
+  covers AVALC:AVALCATy and BASEC:BASECATy specifically; AD0221 covers
+  AVAL:AVALCATy, BASE:BASECATy, CHG:CHGCATy, PCHG:PCHGCATy, and BCHG:BCHGCATy.
+  A category value may recur across different parent values, but a single
+  AVALC (or BASEC) must not map to two distinct AVALCATy (or BASECATy) values.
+scope:
+  classes: []
+  domains:
+    - BDS
+    - ADNCA
+    - MDBDS
+outcome:
+  message: Inconsistent value for *CATy
+  severity: Error
+provenance:
+  source_doc: P21 Community ADaM Validation Rules
+  authority: Herald
+  p21_reference: AD0895
+  ig_versions: []
+notes: >
+  Deferred to Reference pending a herald group-consistency operator for the
+  AVALC:AVALCATy / BASEC:BASECATy nested-grouping case. Today
+  `not_consistent_within` takes a single grouping column; AD0895 requires
+  consistency within (PARAMCD, parent-value) pairs. Activation plan in
+  HANDOFF_TO_HERALD.md section 4.

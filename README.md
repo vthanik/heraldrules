@@ -10,15 +10,45 @@ specific document and section it enforces.
 
 ## Overview
 
-**3,870 YAML rules** covering FDA, PMDA, and CDISC conformance requirements for SDTM, ADaM, SEND, and Define-XML submissions.
+**3,878 YAML rules** (3,025 runnable) covering FDA, PMDA, and CDISC conformance requirements for SDTM, ADaM, SEND, and Define-XML submissions.
 
-| Engine | Rules | Source |
-|--------|------:|--------|
-| `cdisc` | 703 | CDISC Library API (SDTM/SEND, 450 CORE rules) + ADaM IG Conformance (253 ADaM-NNN rules, v1.1 and v1.2) |
-| `fda` | 660 | FDA Business Rules v1.5 (86) + Validator Rules v1.6 (574) |
-| `pmda` | 1,041 | PMDA Validation Rules v6.0 (SDTM/ADaM/Define-XML) |
-| `ct` | 1,210 | CDISC Library Controlled Terminology (6 meta-rules + 1,204 per-codelist) |
-| `herald` | 260 | Herald-original: 151 gap-fill + hardcoded checks (HRL-AD/FM/MD/OD/SD/TS/VAR/LBL/TYP/LEN/DS/CL) + 109 Define-XML spec (HRL-DD-001..109) |
+| Engine | Total | Runnable | Source |
+|--------|------:|---------:|--------|
+| `cdisc` | 703 | 527 | CDISC Library API (SDTM/SEND, 450 CORE rules) + ADaM IG Conformance (253 ADaM-NNN rules, v1.1 and v1.2) |
+| `fda` | 660 | 426 | FDA Business Rules v1.5 (86) + Validator Rules v1.6 (574) |
+| `pmda` | 1,045 | 707 | PMDA Validation Rules v6.0 (SDTM/ADaM/Define-XML) + 4 P21-parity gap-fills (AD0792/793/794/895) |
+| `ct` | 1,210 | 1,210 | CDISC Library Controlled Terminology (6 meta-rules + 1,204 per-codelist) |
+| `herald` | 260 | 155 | Herald-original: 151 gap-fill + hardcoded checks (HRL-AD/FM/MD/OD/SD/TS/VAR/LBL/TYP/LEN/DS/CL) + 109 Define-XML spec (HRL-DD-001..109) |
+
+**Runnable vs catalogued.** A rule is *runnable* when its
+`executability` is `Fully Executable` or `Hardcoded` — the herald engine
+executes these against your data. A rule is *catalogued* (i.e.
+`executability: Reference`) when it documents a regulatory expectation
+herald cannot execute today — either a missing operator, a missing data
+source, or a guidance-level statement. Live counts per engine are in
+`manifest.json` under `stats.executable_by_engine`. The master CSV's
+`runnable` column is the per-rule ground truth.
+
+## Beat Pinnacle 21 — program roadmap
+
+herald-rules + herald together are executing a multi-session program to
+reach parity with (and ultimately exceed) Pinnacle 21 Community. Current
+state and plan:
+
+| Phase | Status | Scope |
+|---|---|---|
+| 1 | **done** | AD0124 executable, AD0047 clean Reference, 6 missing P21 IDs, engine handover written |
+| 2 | next | 864 "Bucket A" rules that are already expressible with existing operators |
+| 3 | blocked on herald | 28 new operators (required_variables, in_range, paired-suffix date/time, cross-dataset population, etc.) |
+| 4 | blocked on Phase 3 | 163 additional rules unlocked by Phase 3 operators |
+| 5 | blocked on Phase 4 | Re-examine 259 "architecturally blocked" + 673 "reference-by-nature" rules |
+| 6 | blocked on Phase 5 | P21-parity benchmark harness (`inst/benchmarks/p21-parity/`) |
+| 7 | blocked on Phase 6 | Launch prep, CRAN smoke, v0.x tag |
+
+Engine-side work (herald R package) is tracked in
+[`HANDOFF_TO_HERALD_2026-04-18.md`](HANDOFF_TO_HERALD_2026-04-18.md) — the
+honesty guard in `R/rule-execute.R`, the `validate()` skip-summary, the
+`required_variables` operator, and the full 28-operator specification.
 
 ## Repository Structure
 

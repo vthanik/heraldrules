@@ -15,9 +15,9 @@ scope:
 check:
   all:
     - name: TRTP
-      operator: empty
+      operator: non_empty
     - name: TRTA
-      operator: empty
+      operator: non_empty
 outcome:
   message: SDTM.EX is present, but neither ADSL TRTEDT nor TRTEDTM are present
   severity: Error

@@ -16,7 +16,7 @@ scope:
 check:
   all:
     - name: --TRT
-      operator: equal_to
+      operator: not_equal_to
       value: OTHER
 outcome:
   message: --TRT equals 'OTHER'

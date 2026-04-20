@@ -16,7 +16,7 @@ scope:
 check:
   all:
     - name: --TERM
-      operator: equal_to
+      operator: not_equal_to
       value: MULTIPLE
 outcome:
   message: --TERM equals 'MULTIPLE'

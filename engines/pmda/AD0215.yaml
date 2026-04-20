@@ -15,7 +15,7 @@ scope:
 check:
   all:
     - name: RACEGR1
-      operator: empty
+      operator: non_empty
 outcome:
   message: 'Illegal variable name: y is not in [1-9] for RACEGRy(N)'
   severity: Error

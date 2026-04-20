@@ -13,7 +13,7 @@ scope:
 check:
   all:
     - name: SEX
-      operator: empty
+      operator: non_empty
 outcome:
   message: For the same USUBJID, the ADSL.SEX != DM.SEX
   severity: Error

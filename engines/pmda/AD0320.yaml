@@ -13,7 +13,7 @@ scope:
 check:
   all:
     - name: STUDYID
-      operator: empty
+      operator: non_empty
 outcome:
   message: Non-standard dataset label
   severity: Error

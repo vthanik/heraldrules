@@ -16,9 +16,9 @@ scope:
 check:
   all:
     - name: AVAL
-      operator: empty
+      operator: non_empty
     - name: AVALC
-      operator: empty
+      operator: non_empty
 outcome:
   message: Neither AVAL nor AVALC are present in dataset
   severity: Error

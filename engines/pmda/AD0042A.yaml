@@ -21,7 +21,7 @@ scope:
 check:
   all:
     - name: AESTM
-      operator: empty
+      operator: non_empty
 outcome:
   message: '*TM variable has missing SAS Time Format'
   severity: Error

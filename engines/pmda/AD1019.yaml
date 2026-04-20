@@ -15,9 +15,9 @@ scope:
 check:
   all:
     - name: TRT01P
-      operator: empty
+      operator: non_empty
     - name: TRT02P
-      operator: empty
+      operator: non_empty
 outcome:
   message: 'Illegal variable name: xx is not in [01-99] for an ADSL trial date'
   severity: Error

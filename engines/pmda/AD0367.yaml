@@ -13,7 +13,7 @@ scope:
 check:
   all:
     - name: ACTARM
-      operator: empty
+      operator: non_empty
 outcome:
   message: For the same USUBJID, the ADSL.ACTARM != DM.ACTARM
   severity: Error

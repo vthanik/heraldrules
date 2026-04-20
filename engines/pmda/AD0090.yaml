@@ -20,9 +20,9 @@ scope:
 check:
   all:
     - name: TRTP
-      operator: empty
+      operator: non_empty
     - name: TRTA
-      operator: empty
+      operator: non_empty
 outcome:
   message: None of the subject-level or record-level treatment variables defined in
     the IG are present

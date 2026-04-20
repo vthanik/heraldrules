@@ -13,13 +13,13 @@ scope:
 check:
   all:
     - name: SAFFL
-      operator: empty
+      operator: non_empty
     - name: ITTFL
-      operator: empty
+      operator: non_empty
     - name: COMPLFL
-      operator: empty
+      operator: non_empty
     - name: ENRLFL
-      operator: empty
+      operator: non_empty
 outcome:
   message: '*FL subject-population flag variable is not present'
   severity: Error

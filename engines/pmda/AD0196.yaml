@@ -20,7 +20,7 @@ scope:
 check:
   all:
     - name: PARAMCD
-      operator: empty
+      operator: non_empty
 outcome:
   message: Required Variable value is null
   severity: Error

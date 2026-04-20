@@ -4,8 +4,14 @@ status: Reference
 standard: ADaM
 category: ADaM Conformance
 sensitivity: Record
-executability: Partially Executable
-description: The SAS TYPE for *DTM variable must be equal Num.
+executability: Reference
+description: The SAS TYPE for *DTM variable must be equal Num. HERALD NOTE:
+  demoted to Reference because the check requires SAS column metadata
+  (TYPE attribute) rather than string-value validation. R's POSIXct
+  representation does not round-trip through the ISO-8601-T regex the
+  YAML encodes, so the previous check fired on every populated row of
+  ADVS/ADLB/ADQS. Promote back once column-metadata-aware operators
+  land in the executor.
 scope:
   classes: []
   domains:

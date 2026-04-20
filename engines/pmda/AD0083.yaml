@@ -14,7 +14,7 @@ scope:
 check:
   all:
     - name: TRTSDT
-      operator: empty
+      operator: non_empty
 outcome:
   message: TRTSDT != TR01SDT
   severity: Warning

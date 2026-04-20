@@ -13,7 +13,7 @@ scope:
 check:
   all:
     - name: ARM
-      operator: empty
+      operator: non_empty
 outcome:
   message: For the same USUBJID, the ADSL.ARM != DM.ARM
   severity: Error
